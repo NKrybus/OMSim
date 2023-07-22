@@ -1,0 +1,11 @@
+<map id="/home/runner/work/OMSim/OMSim/common/include/OMSimPMTResponse.hh" name="/home/runner/work/OMSim/OMSim/common/include/OMSimPMTResponse.hh">
+<area shape="rect" id="node1" title=" " alt="" coords="823,5,1019,61"/>
+<area shape="rect" id="node2" href="$_o_m_sim_p_m_t_response_8cc.html" title="PMT response simulator." alt="" coords="354,117,671,158"/>
+<area shape="rect" id="node3" href="$_o_m_sim_analysis_manager_8hh.html" title=" " alt="" coords="696,109,951,165"/>
+<area shape="rect" id="node8" href="$_o_m_sim_tracking_action_8cc.html" title=" " alt="" coords="931,213,1140,269"/>
+<area shape="rect" id="node9" href="$_o_m_sim__effective__area_8cc.html" title="Main for the calculation of effective areas." alt="" coords="1164,213,1360,269"/>
+<area shape="rect" id="node4" href="$_o_m_sim_analysis_manager_8cc.html" title=" " alt="" coords="461,213,687,269"/>
+<area shape="rect" id="node5" href="$_o_m_sim_event_action_8cc.html" title=" " alt="" coords="711,213,907,269"/>
+<area shape="rect" id="node6" href="$_o_m_sim_run_action_8cc.html" title=" " alt="" coords="5,213,201,269"/>
+<area shape="rect" id="node7" href="$_o_m_sim_stepping_action_8cc.html" title=" " alt="" coords="225,213,437,269"/>
+</map>

@@ -1,0 +1,9 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node1" href="$classabc_data_file.html" title="This is an abstract base class that provides an interface for handling data files in the simulation." alt="" coords="5,56,104,83"/>
+<area shape="rect" id="node2" href="$class_reflective_surface.html" title="This class is responsible for defining new reflective surfaces using data parsed from a JSON file." alt="" coords="152,31,288,57"/>
+<area shape="rect" id="node3" href="$classabc_material_data.html" title="Abstract base class for material data extraction from a json file." alt="" coords="155,81,285,108"/>
+<area shape="rect" id="node4" href="$class_ice_cube_ice.html" title="This class is responsible for the creation and property extraction of IceCube&#39;s ice." alt="" coords="381,5,475,32"/>
+<area shape="rect" id="node5" href="$class_no_optics.html" title="This class is responsible for handling materials without defined optical properties." alt="" coords="387,56,469,83"/>
+<area shape="rect" id="node6" href="$class_refraction_and_absorption.html" title="This class is responsible for handling materials with both a defined refractive index and absorption ..." alt="" coords="336,107,520,133"/>
+<area shape="rect" id="node7" href="$class_refraction_only.html" title="This class is responsible for handling materials with only defined refractive index." alt="" coords="369,157,487,184"/>
+</map>

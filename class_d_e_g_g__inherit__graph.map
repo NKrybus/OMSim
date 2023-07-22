@@ -1,0 +1,4 @@
+<map id="DEGG" name="DEGG">
+<area shape="rect" id="node1" title="Construction of the DEGG detector geometry." alt="" coords="63,80,123,107"/>
+<area shape="rect" id="node2" href="$classabc_detector_component.html" title="Abstract base class used for constructing detector components." alt="" coords="5,5,181,32"/>
+</map>
