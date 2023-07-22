@@ -1,0 +1,119 @@
+\hypertarget{class_parameter_table}{}\doxysection{Parameter\+Table Class Reference}
+\label{class_parameter_table}\index{ParameterTable@{ParameterTable}}
+
+
+Inheritance diagram for Parameter\+Table\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=187pt]{class_parameter_table__inherit__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_parameter_table_a6acdd356fb3153bcc463f29e495c211d}{Parameter\+Table}} ()
+\item 
+G4bool \mbox{\hyperlink{class_parameter_table_afd0aa495dfeeb68bf370c3ea8390192d}{check\+If\+Key\+In\+Table}} (G4\+String p\+Key)
+\item 
+G4double \mbox{\hyperlink{class_parameter_table_aa7546560723ba3b94c08229266b27307}{get\+Value\+With\+Unit}} (G4\+String p\+Key, G4\+String p\+Parameter)
+\item 
+{\footnotesize template$<$typename T $>$ }\\T \mbox{\hyperlink{class_parameter_table_adb1234ccb47c9e44ecd7f8c5cb9e0407}{get\+Value}} (G4\+String p\+Key, G4\+String p\+Parameter)
+\item 
+pt\+::ptree \mbox{\hyperlink{class_parameter_table_a131ddfbbf38d27b59f454a4ec96b2b9e}{append\+And\+Return\+Tree}} (G4\+String p\+File\+Name)
+\item 
+pt\+::ptree \mbox{\hyperlink{class_parameter_table_a042ee0eca2c9daa755d7a472608e6d66}{get\+JSONTree}} (G4\+String p\+Key)
+\item 
+{\footnotesize template$<$typename T $>$ }\\void \mbox{\hyperlink{class_parameter_table_a3c2a94b50a41341c104b5b1585d15efc}{parse\+Key\+Content\+To\+Vector}} (std\+::vector$<$ T $>$ \&p\+Vector, pt\+::ptree p\+Tree, std\+::basic\+\_\+string$<$ char $>$ p\+Key, G4double p\+Scaling, bool p\+Inverse)
+\item 
+{\footnotesize template$<$typename T $>$ }\\void \mbox{\hyperlink{class_parameter_table_a9862489604c6a5b4683709dc6bdc5799}{parse\+Key\+Content\+To\+Vector}} (std\+::vector$<$ T $>$ \&p\+Vector, std\+::basic\+\_\+string$<$ char $>$ p\+Map\+Key, std\+::basic\+\_\+string$<$ char $>$ p\+Key, G4double p\+Scaling, bool p\+Inverse)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_parameter_table_a6acdd356fb3153bcc463f29e495c211d}\label{class_parameter_table_a6acdd356fb3153bcc463f29e495c211d}} 
+\index{ParameterTable@{ParameterTable}!ParameterTable@{ParameterTable}}
+\index{ParameterTable@{ParameterTable}!ParameterTable@{ParameterTable}}
+\doxysubsubsection{\texorpdfstring{ParameterTable()}{ParameterTable()}}
+{\footnotesize\ttfamily Parameter\+Table\+::\+Parameter\+Table (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_parameter_table_a131ddfbbf38d27b59f454a4ec96b2b9e}\label{class_parameter_table_a131ddfbbf38d27b59f454a4ec96b2b9e}} 
+\index{ParameterTable@{ParameterTable}!appendAndReturnTree@{appendAndReturnTree}}
+\index{appendAndReturnTree@{appendAndReturnTree}!ParameterTable@{ParameterTable}}
+\doxysubsubsection{\texorpdfstring{appendAndReturnTree()}{appendAndReturnTree()}}
+{\footnotesize\ttfamily pt\+::ptree Parameter\+Table\+::append\+And\+Return\+Tree (\begin{DoxyParamCaption}\item[{G4\+String}]{p\+File\+Name }\end{DoxyParamCaption})}
+
+Appends information of json-\/file containing PMT/\+OM parameters to a vector of ptrees 
+\begin{DoxyParams}{Parameters}
+{\em p\+File\+Name} & Name of file containing json \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_parameter_table_afd0aa495dfeeb68bf370c3ea8390192d}\label{class_parameter_table_afd0aa495dfeeb68bf370c3ea8390192d}} 
+\index{ParameterTable@{ParameterTable}!checkIfKeyInTable@{checkIfKeyInTable}}
+\index{checkIfKeyInTable@{checkIfKeyInTable}!ParameterTable@{ParameterTable}}
+\doxysubsubsection{\texorpdfstring{checkIfKeyInTable()}{checkIfKeyInTable()}}
+{\footnotesize\ttfamily G4bool Parameter\+Table\+::check\+If\+Key\+In\+Table (\begin{DoxyParamCaption}\item[{G4\+String}]{p\+Key }\end{DoxyParamCaption})}
+
+Check if key in table \mbox{\Hypertarget{class_parameter_table_a042ee0eca2c9daa755d7a472608e6d66}\label{class_parameter_table_a042ee0eca2c9daa755d7a472608e6d66}} 
+\index{ParameterTable@{ParameterTable}!getJSONTree@{getJSONTree}}
+\index{getJSONTree@{getJSONTree}!ParameterTable@{ParameterTable}}
+\doxysubsubsection{\texorpdfstring{getJSONTree()}{getJSONTree()}}
+{\footnotesize\ttfamily pt\+::ptree Parameter\+Table\+::get\+JSONTree (\begin{DoxyParamCaption}\item[{G4\+String}]{p\+Key }\end{DoxyParamCaption})}
+
+Get values from a p\+Tree with its unit, transforming it to a G4double 
+\begin{DoxyParams}{Parameters}
+{\em p\+Key} & Name of json tree in file \\
+\hline
+{\em p\+Parameter} & Name of parameter in json tree \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+G4double of the value and its unit 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_parameter_table_adb1234ccb47c9e44ecd7f8c5cb9e0407}\label{class_parameter_table_adb1234ccb47c9e44ecd7f8c5cb9e0407}} 
+\index{ParameterTable@{ParameterTable}!getValue@{getValue}}
+\index{getValue@{getValue}!ParameterTable@{ParameterTable}}
+\doxysubsubsection{\texorpdfstring{getValue()}{getValue()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+T Parameter\+Table\+::get\+Value (\begin{DoxyParamCaption}\item[{G4\+String}]{p\+Key,  }\item[{G4\+String}]{p\+Parameter }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_parameter_table_aa7546560723ba3b94c08229266b27307}\label{class_parameter_table_aa7546560723ba3b94c08229266b27307}} 
+\index{ParameterTable@{ParameterTable}!getValueWithUnit@{getValueWithUnit}}
+\index{getValueWithUnit@{getValueWithUnit}!ParameterTable@{ParameterTable}}
+\doxysubsubsection{\texorpdfstring{getValueWithUnit()}{getValueWithUnit()}}
+{\footnotesize\ttfamily G4double Parameter\+Table\+::get\+Value\+With\+Unit (\begin{DoxyParamCaption}\item[{G4\+String}]{p\+Key,  }\item[{G4\+String}]{p\+Parameter }\end{DoxyParamCaption})}
+
+Get values from a p\+Tree with its unit, transforming it to a G4double 
+\begin{DoxyParams}{Parameters}
+{\em p\+Key} & Name of json tree in file \\
+\hline
+{\em p\+Parameter} & Name of parameter in json tree \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+G4double of the value and its unit 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_parameter_table_a3c2a94b50a41341c104b5b1585d15efc}\label{class_parameter_table_a3c2a94b50a41341c104b5b1585d15efc}} 
+\index{ParameterTable@{ParameterTable}!parseKeyContentToVector@{parseKeyContentToVector}}
+\index{parseKeyContentToVector@{parseKeyContentToVector}!ParameterTable@{ParameterTable}}
+\doxysubsubsection{\texorpdfstring{parseKeyContentToVector()}{parseKeyContentToVector()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+void Parameter\+Table\+::parse\+Key\+Content\+To\+Vector (\begin{DoxyParamCaption}\item[{std\+::vector$<$ T $>$ \&}]{p\+Vector,  }\item[{pt\+::ptree}]{p\+Tree,  }\item[{std\+::basic\+\_\+string$<$ char $>$}]{p\+Key,  }\item[{G4double}]{p\+Scaling,  }\item[{bool}]{p\+Inverse }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_parameter_table_a9862489604c6a5b4683709dc6bdc5799}\label{class_parameter_table_a9862489604c6a5b4683709dc6bdc5799}} 
+\index{ParameterTable@{ParameterTable}!parseKeyContentToVector@{parseKeyContentToVector}}
+\index{parseKeyContentToVector@{parseKeyContentToVector}!ParameterTable@{ParameterTable}}
+\doxysubsubsection{\texorpdfstring{parseKeyContentToVector()}{parseKeyContentToVector()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+void Parameter\+Table\+::parse\+Key\+Content\+To\+Vector (\begin{DoxyParamCaption}\item[{std\+::vector$<$ T $>$ \&}]{p\+Vector,  }\item[{std\+::basic\+\_\+string$<$ char $>$}]{p\+Map\+Key,  }\item[{std\+::basic\+\_\+string$<$ char $>$}]{p\+Key,  }\item[{G4double}]{p\+Scaling,  }\item[{bool}]{p\+Inverse }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/runner/work/\+OMSim/\+OMSim/common/include/\mbox{\hyperlink{_o_m_sim_input_data_8hh}{OMSim\+Input\+Data.\+hh}}\item 
+/home/runner/work/\+OMSim/\+OMSim/common/src/\mbox{\hyperlink{_o_m_sim_input_data_8cc}{OMSim\+Input\+Data.\+cc}}\end{DoxyCompactItemize}

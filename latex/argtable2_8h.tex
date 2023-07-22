@@ -1,0 +1,437 @@
+\hypertarget{argtable2_8h}{}\doxysection{/home/runner/work/\+OMSim/\+OMSim/common/include/argtable2.h File Reference}
+\label{argtable2_8h}\index{/home/runner/work/OMSim/OMSim/common/include/argtable2.h@{/home/runner/work/OMSim/OMSim/common/include/argtable2.h}}
+Include dependency graph for argtable2.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=286pt]{argtable2_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=227pt]{argtable2_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structarg__hdr}{arg\+\_\+hdr}}
+\item 
+struct \mbox{\hyperlink{structarg__rem}{arg\+\_\+rem}}
+\item 
+struct \mbox{\hyperlink{structarg__lit}{arg\+\_\+lit}}
+\item 
+struct \mbox{\hyperlink{structarg__int}{arg\+\_\+int}}
+\item 
+struct \mbox{\hyperlink{structarg__dbl}{arg\+\_\+dbl}}
+\item 
+struct \mbox{\hyperlink{structarg__str}{arg\+\_\+str}}
+\item 
+struct \mbox{\hyperlink{structarg__rex}{arg\+\_\+rex}}
+\item 
+struct \mbox{\hyperlink{structarg__file}{arg\+\_\+file}}
+\item 
+struct \mbox{\hyperlink{structarg__date}{arg\+\_\+date}}
+\item 
+struct \mbox{\hyperlink{structarg__end}{arg\+\_\+end}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef void() \mbox{\hyperlink{argtable2_8h_a1c5c57843fe8b3f6004b78eb77572312}{arg\+\_\+resetfn}}(void $\ast$parent)
+\item 
+typedef int() \mbox{\hyperlink{argtable2_8h_a19e030eee0001d5bf7fc8bbc364fe2df}{arg\+\_\+scanfn}}(void $\ast$parent, const char $\ast$argval)
+\item 
+typedef int() \mbox{\hyperlink{argtable2_8h_aeadd5c98b2ad5eeaf0a23bda04d5415a}{arg\+\_\+checkfn}}(void $\ast$parent)
+\item 
+typedef void() \mbox{\hyperlink{argtable2_8h_a57cf10f8e29d61c764352e430b3f3515}{arg\+\_\+errorfn}}(void $\ast$parent, FILE $\ast$fp, int error, const char $\ast$argval, const char $\ast$progname)
+\end{DoxyCompactItemize}
+\doxysubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \{ \mbox{\hyperlink{argtable2_8h_a06fc87d81c62e9abb8790b6e5713c55ba38f1d2657ea16773bb34ec94e163dae9}{ARG\+\_\+\+TERMINATOR}} =0x1
+, \mbox{\hyperlink{argtable2_8h_a06fc87d81c62e9abb8790b6e5713c55ba3d8c282f54c138d131127133f1433277}{ARG\+\_\+\+HASVALUE}} =0x2
+, \mbox{\hyperlink{argtable2_8h_a06fc87d81c62e9abb8790b6e5713c55ba4b0e54c851a32a398bc4dc1d486b910f}{ARG\+\_\+\+HASOPTVALUE}} =0x4
+ \}
+\item 
+enum \{ \newline
+\mbox{\hyperlink{argtable2_8h_adf764cbdea00d65edcd07bb9953ad2b7a8cfca8045fbaf7720564faaaf2484f96}{ARG\+\_\+\+ELIMIT}} =1
+, \mbox{\hyperlink{argtable2_8h_adf764cbdea00d65edcd07bb9953ad2b7a09f77d69d752e0ef7101902fd621b016}{ARG\+\_\+\+EMALLOC}}
+, \mbox{\hyperlink{argtable2_8h_adf764cbdea00d65edcd07bb9953ad2b7a8cd9d22e00057703b217d9e362d13470}{ARG\+\_\+\+ENOMATCH}}
+, \mbox{\hyperlink{argtable2_8h_adf764cbdea00d65edcd07bb9953ad2b7a18a92d5aecef851da73cf5b24e185bb8}{ARG\+\_\+\+ELONGOPT}}
+, \newline
+\mbox{\hyperlink{argtable2_8h_adf764cbdea00d65edcd07bb9953ad2b7ae4067004d4ad1180857a29f913b46506}{ARG\+\_\+\+EMISSARG}}
+ \}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structarg__rem}{arg\+\_\+rem}} $\ast$ \mbox{\hyperlink{argtable2_8h_a1090832bd32b8fa2a59aaf50a900dbac}{arg\+\_\+rem}} (const char $\ast$datatype, const char $\ast$glossary)
+\item 
+struct \mbox{\hyperlink{structarg__lit}{arg\+\_\+lit}} $\ast$ \mbox{\hyperlink{argtable2_8h_a5a7350a6e3afafbec675d0c8564ce8f8}{arg\+\_\+lit0}} (const char $\ast$shortopts, const char $\ast$longopts, const char $\ast$glossary)
+\item 
+struct \mbox{\hyperlink{structarg__lit}{arg\+\_\+lit}} $\ast$ \mbox{\hyperlink{argtable2_8h_a6104d9bac720537302aec190e6e14473}{arg\+\_\+lit1}} (const char $\ast$shortopts, const char $\ast$longopts, const char $\ast$glossary)
+\item 
+struct \mbox{\hyperlink{structarg__lit}{arg\+\_\+lit}} $\ast$ \mbox{\hyperlink{argtable2_8h_a4bb833c67535c4cca3a97b466a3b9fe9}{arg\+\_\+litn}} (const char $\ast$shortopts, const char $\ast$longopts, int mincount, int maxcount, const char $\ast$glossary)
+\item 
+struct arg\+\_\+key $\ast$ \mbox{\hyperlink{argtable2_8h_aa248b656988a2c21fd16826812eb0415}{arg\+\_\+key0}} (const char $\ast$keyword, int flags, const char $\ast$glossary)
+\item 
+struct arg\+\_\+key $\ast$ \mbox{\hyperlink{argtable2_8h_aa3ac325572353d476e884c61a3d6c5a1}{arg\+\_\+key1}} (const char $\ast$keyword, int flags, const char $\ast$glossary)
+\item 
+struct arg\+\_\+key $\ast$ \mbox{\hyperlink{argtable2_8h_a0985cd9abcfda7e1c2cbe52865615214}{arg\+\_\+keyn}} (const char $\ast$keyword, int flags, int mincount, int maxcount, const char $\ast$glossary)
+\item 
+struct \mbox{\hyperlink{structarg__int}{arg\+\_\+int}} $\ast$ \mbox{\hyperlink{argtable2_8h_ab6ffbc05760e61761b37dedacd73f2bc}{arg\+\_\+int0}} (const char $\ast$shortopts, const char $\ast$longopts, const char $\ast$datatype, const char $\ast$glossary)
+\item 
+struct \mbox{\hyperlink{structarg__int}{arg\+\_\+int}} $\ast$ \mbox{\hyperlink{argtable2_8h_a879d7141dc666fbd08887ade639f12f5}{arg\+\_\+int1}} (const char $\ast$shortopts, const char $\ast$longopts, const char $\ast$datatype, const char $\ast$glossary)
+\item 
+struct \mbox{\hyperlink{structarg__int}{arg\+\_\+int}} $\ast$ \mbox{\hyperlink{argtable2_8h_abc72a7b240c69612778a38ccf5046704}{arg\+\_\+intn}} (const char $\ast$shortopts, const char $\ast$longopts, const char $\ast$datatype, int mincount, int maxcount, const char $\ast$glossary)
+\item 
+struct \mbox{\hyperlink{structarg__dbl}{arg\+\_\+dbl}} $\ast$ \mbox{\hyperlink{argtable2_8h_ad0cfa02571d6902a9c468b336f3db827}{arg\+\_\+dbl0}} (const char $\ast$shortopts, const char $\ast$longopts, const char $\ast$datatype, const char $\ast$glossary)
+\item 
+struct \mbox{\hyperlink{structarg__dbl}{arg\+\_\+dbl}} $\ast$ \mbox{\hyperlink{argtable2_8h_a48551f212c7e5bc49038a1c7c9a2a2f8}{arg\+\_\+dbl1}} (const char $\ast$shortopts, const char $\ast$longopts, const char $\ast$datatype, const char $\ast$glossary)
+\item 
+struct \mbox{\hyperlink{structarg__dbl}{arg\+\_\+dbl}} $\ast$ \mbox{\hyperlink{argtable2_8h_a5b0f0115fbe995d278be3c6eae6e0204}{arg\+\_\+dbln}} (const char $\ast$shortopts, const char $\ast$longopts, const char $\ast$datatype, int mincount, int maxcount, const char $\ast$glossary)
+\item 
+struct \mbox{\hyperlink{structarg__str}{arg\+\_\+str}} $\ast$ \mbox{\hyperlink{argtable2_8h_a8796e6f5761d2441bdd691836e20b543}{arg\+\_\+str0}} (const char $\ast$shortopts, const char $\ast$longopts, const char $\ast$datatype, const char $\ast$glossary)
+\item 
+struct \mbox{\hyperlink{structarg__str}{arg\+\_\+str}} $\ast$ \mbox{\hyperlink{argtable2_8h_a5f14745eb6d9da6a9d5a9f23b13f57b3}{arg\+\_\+str1}} (const char $\ast$shortopts, const char $\ast$longopts, const char $\ast$datatype, const char $\ast$glossary)
+\item 
+struct \mbox{\hyperlink{structarg__str}{arg\+\_\+str}} $\ast$ \mbox{\hyperlink{argtable2_8h_aec76e8f308610c74ee771d35e8b9feae}{arg\+\_\+strn}} (const char $\ast$shortopts, const char $\ast$longopts, const char $\ast$datatype, int mincount, int maxcount, const char $\ast$glossary)
+\item 
+struct \mbox{\hyperlink{structarg__rex}{arg\+\_\+rex}} $\ast$ \mbox{\hyperlink{argtable2_8h_a59a8b41e1f27c253f57c4aadcfa511bc}{arg\+\_\+rex0}} (const char $\ast$shortopts, const char $\ast$longopts, const char $\ast$pattern, const char $\ast$datatype, int flags, const char $\ast$glossary)
+\item 
+struct \mbox{\hyperlink{structarg__rex}{arg\+\_\+rex}} $\ast$ \mbox{\hyperlink{argtable2_8h_a9509ea6b48cf9bfe1eb3bcaef0c57469}{arg\+\_\+rex1}} (const char $\ast$shortopts, const char $\ast$longopts, const char $\ast$pattern, const char $\ast$datatype, int flags, const char $\ast$glossary)
+\item 
+struct \mbox{\hyperlink{structarg__rex}{arg\+\_\+rex}} $\ast$ \mbox{\hyperlink{argtable2_8h_abda8e957230e058d75b00bead75a713c}{arg\+\_\+rexn}} (const char $\ast$shortopts, const char $\ast$longopts, const char $\ast$pattern, const char $\ast$datatype, int mincount, int maxcount, int flags, const char $\ast$glossary)
+\item 
+struct \mbox{\hyperlink{structarg__file}{arg\+\_\+file}} $\ast$ \mbox{\hyperlink{argtable2_8h_a25391ccb246d28820adbf87c4e1e16a4}{arg\+\_\+file0}} (const char $\ast$shortopts, const char $\ast$longopts, const char $\ast$datatype, const char $\ast$glossary)
+\item 
+struct \mbox{\hyperlink{structarg__file}{arg\+\_\+file}} $\ast$ \mbox{\hyperlink{argtable2_8h_a455ec8d5017891d44064005e2427cf50}{arg\+\_\+file1}} (const char $\ast$shortopts, const char $\ast$longopts, const char $\ast$datatype, const char $\ast$glossary)
+\item 
+struct \mbox{\hyperlink{structarg__file}{arg\+\_\+file}} $\ast$ \mbox{\hyperlink{argtable2_8h_a2cb406c5952de2b8ed5f9c9b9754a233}{arg\+\_\+filen}} (const char $\ast$shortopts, const char $\ast$longopts, const char $\ast$datatype, int mincount, int maxcount, const char $\ast$glossary)
+\item 
+struct \mbox{\hyperlink{structarg__date}{arg\+\_\+date}} $\ast$ \mbox{\hyperlink{argtable2_8h_a78781946018846ed1742d3468b8717f3}{arg\+\_\+date0}} (const char $\ast$shortopts, const char $\ast$longopts, const char $\ast$format, const char $\ast$datatype, const char $\ast$glossary)
+\item 
+struct \mbox{\hyperlink{structarg__date}{arg\+\_\+date}} $\ast$ \mbox{\hyperlink{argtable2_8h_aa285f116e59e46811e191f9b9a8a6ecb}{arg\+\_\+date1}} (const char $\ast$shortopts, const char $\ast$longopts, const char $\ast$format, const char $\ast$datatype, const char $\ast$glossary)
+\item 
+struct \mbox{\hyperlink{structarg__date}{arg\+\_\+date}} $\ast$ \mbox{\hyperlink{argtable2_8h_a3f6f59e7acb0b321de6ddf9c714e6be7}{arg\+\_\+daten}} (const char $\ast$shortopts, const char $\ast$longopts, const char $\ast$format, const char $\ast$datatype, int mincount, int maxcount, const char $\ast$glossary)
+\item 
+struct \mbox{\hyperlink{structarg__end}{arg\+\_\+end}} $\ast$ \mbox{\hyperlink{argtable2_8h_a10f93e5ba1dfdd5d5596ef8b00ae6331}{arg\+\_\+end}} (int maxerrors)
+\item 
+int \mbox{\hyperlink{argtable2_8h_a16b06e1766d5b79f77f402bb3d440bd6}{arg\+\_\+nullcheck}} (void $\ast$$\ast$argtable)
+\item 
+int \mbox{\hyperlink{argtable2_8h_acc71e118e4cf18ec0d1ebde858774716}{arg\+\_\+parse}} (int argc, char $\ast$$\ast$argv, void $\ast$$\ast$argtable)
+\item 
+void \mbox{\hyperlink{argtable2_8h_adaff52d6414f9c30cf3eceb1ce5d6af3}{arg\+\_\+print\+\_\+option}} (FILE $\ast$fp, const char $\ast$shortopts, const char $\ast$longopts, const char $\ast$datatype, const char $\ast$suffix)
+\item 
+void \mbox{\hyperlink{argtable2_8h_ac7afc05ac874e98133488cb365d7a21e}{arg\+\_\+print\+\_\+syntax}} (FILE $\ast$fp, void $\ast$$\ast$argtable, const char $\ast$suffix)
+\item 
+void \mbox{\hyperlink{argtable2_8h_abbbc79fb60ce047c46735b448f418bda}{arg\+\_\+print\+\_\+syntaxv}} (FILE $\ast$fp, void $\ast$$\ast$argtable, const char $\ast$suffix)
+\item 
+void \mbox{\hyperlink{argtable2_8h_af204e089d53b2b38b42f8f6e12f31473}{arg\+\_\+print\+\_\+glossary}} (FILE $\ast$fp, void $\ast$$\ast$argtable, const char $\ast$format)
+\item 
+void \mbox{\hyperlink{argtable2_8h_a47da6314033b00f78fcf5acb77995262}{arg\+\_\+print\+\_\+glossary\+\_\+gnu}} (FILE $\ast$fp, void $\ast$$\ast$argtable)
+\item 
+void \mbox{\hyperlink{argtable2_8h_aee900390860098e87646707fe35cb1b4}{arg\+\_\+print\+\_\+errors}} (FILE $\ast$fp, struct \mbox{\hyperlink{structarg__end}{arg\+\_\+end}} $\ast$end, const char $\ast$progname)
+\item 
+void \mbox{\hyperlink{argtable2_8h_a7b5e3f921fe7c9af5dd9d2e8aa789ee1}{arg\+\_\+freetable}} (void $\ast$$\ast$argtable, size\+\_\+t n)
+\item 
+void \mbox{\hyperlink{argtable2_8h_ab0cd8099641e0a42c37279a540bdc439}{arg\+\_\+free}} (void $\ast$$\ast$argtable)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Typedef Documentation}
+\mbox{\Hypertarget{argtable2_8h_aeadd5c98b2ad5eeaf0a23bda04d5415a}\label{argtable2_8h_aeadd5c98b2ad5eeaf0a23bda04d5415a}} 
+\index{argtable2.h@{argtable2.h}!arg\_checkfn@{arg\_checkfn}}
+\index{arg\_checkfn@{arg\_checkfn}!argtable2.h@{argtable2.h}}
+\doxysubsubsection{\texorpdfstring{arg\_checkfn}{arg\_checkfn}}
+{\footnotesize\ttfamily typedef int() arg\+\_\+checkfn(void $\ast$parent)}
+
+\mbox{\Hypertarget{argtable2_8h_a57cf10f8e29d61c764352e430b3f3515}\label{argtable2_8h_a57cf10f8e29d61c764352e430b3f3515}} 
+\index{argtable2.h@{argtable2.h}!arg\_errorfn@{arg\_errorfn}}
+\index{arg\_errorfn@{arg\_errorfn}!argtable2.h@{argtable2.h}}
+\doxysubsubsection{\texorpdfstring{arg\_errorfn}{arg\_errorfn}}
+{\footnotesize\ttfamily typedef void() arg\+\_\+errorfn(void $\ast$parent, FILE $\ast$fp, int error, const char $\ast$argval, const char $\ast$progname)}
+
+\mbox{\Hypertarget{argtable2_8h_a1c5c57843fe8b3f6004b78eb77572312}\label{argtable2_8h_a1c5c57843fe8b3f6004b78eb77572312}} 
+\index{argtable2.h@{argtable2.h}!arg\_resetfn@{arg\_resetfn}}
+\index{arg\_resetfn@{arg\_resetfn}!argtable2.h@{argtable2.h}}
+\doxysubsubsection{\texorpdfstring{arg\_resetfn}{arg\_resetfn}}
+{\footnotesize\ttfamily typedef void() arg\+\_\+resetfn(void $\ast$parent)}
+
+\mbox{\Hypertarget{argtable2_8h_a19e030eee0001d5bf7fc8bbc364fe2df}\label{argtable2_8h_a19e030eee0001d5bf7fc8bbc364fe2df}} 
+\index{argtable2.h@{argtable2.h}!arg\_scanfn@{arg\_scanfn}}
+\index{arg\_scanfn@{arg\_scanfn}!argtable2.h@{argtable2.h}}
+\doxysubsubsection{\texorpdfstring{arg\_scanfn}{arg\_scanfn}}
+{\footnotesize\ttfamily typedef int() arg\+\_\+scanfn(void $\ast$parent, const char $\ast$argval)}
+
+
+
+\doxysubsection{Enumeration Type Documentation}
+\mbox{\Hypertarget{argtable2_8h_a06fc87d81c62e9abb8790b6e5713c55b}\label{argtable2_8h_a06fc87d81c62e9abb8790b6e5713c55b}} 
+\doxysubsubsection{\texorpdfstring{anonymous enum}{anonymous enum}}
+{\footnotesize\ttfamily anonymous enum}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ARG\_TERMINATOR@{ARG\_TERMINATOR}!argtable2.h@{argtable2.h}}\index{argtable2.h@{argtable2.h}!ARG\_TERMINATOR@{ARG\_TERMINATOR}}}\mbox{\Hypertarget{argtable2_8h_a06fc87d81c62e9abb8790b6e5713c55ba38f1d2657ea16773bb34ec94e163dae9}\label{argtable2_8h_a06fc87d81c62e9abb8790b6e5713c55ba38f1d2657ea16773bb34ec94e163dae9}} 
+ARG\+\_\+\+TERMINATOR&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ARG\_HASVALUE@{ARG\_HASVALUE}!argtable2.h@{argtable2.h}}\index{argtable2.h@{argtable2.h}!ARG\_HASVALUE@{ARG\_HASVALUE}}}\mbox{\Hypertarget{argtable2_8h_a06fc87d81c62e9abb8790b6e5713c55ba3d8c282f54c138d131127133f1433277}\label{argtable2_8h_a06fc87d81c62e9abb8790b6e5713c55ba3d8c282f54c138d131127133f1433277}} 
+ARG\+\_\+\+HASVALUE&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ARG\_HASOPTVALUE@{ARG\_HASOPTVALUE}!argtable2.h@{argtable2.h}}\index{argtable2.h@{argtable2.h}!ARG\_HASOPTVALUE@{ARG\_HASOPTVALUE}}}\mbox{\Hypertarget{argtable2_8h_a06fc87d81c62e9abb8790b6e5713c55ba4b0e54c851a32a398bc4dc1d486b910f}\label{argtable2_8h_a06fc87d81c62e9abb8790b6e5713c55ba4b0e54c851a32a398bc4dc1d486b910f}} 
+ARG\+\_\+\+HASOPTVALUE&\\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{argtable2_8h_adf764cbdea00d65edcd07bb9953ad2b7}\label{argtable2_8h_adf764cbdea00d65edcd07bb9953ad2b7}} 
+\doxysubsubsection{\texorpdfstring{anonymous enum}{anonymous enum}}
+{\footnotesize\ttfamily anonymous enum}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ARG\_ELIMIT@{ARG\_ELIMIT}!argtable2.h@{argtable2.h}}\index{argtable2.h@{argtable2.h}!ARG\_ELIMIT@{ARG\_ELIMIT}}}\mbox{\Hypertarget{argtable2_8h_adf764cbdea00d65edcd07bb9953ad2b7a8cfca8045fbaf7720564faaaf2484f96}\label{argtable2_8h_adf764cbdea00d65edcd07bb9953ad2b7a8cfca8045fbaf7720564faaaf2484f96}} 
+ARG\+\_\+\+ELIMIT&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ARG\_EMALLOC@{ARG\_EMALLOC}!argtable2.h@{argtable2.h}}\index{argtable2.h@{argtable2.h}!ARG\_EMALLOC@{ARG\_EMALLOC}}}\mbox{\Hypertarget{argtable2_8h_adf764cbdea00d65edcd07bb9953ad2b7a09f77d69d752e0ef7101902fd621b016}\label{argtable2_8h_adf764cbdea00d65edcd07bb9953ad2b7a09f77d69d752e0ef7101902fd621b016}} 
+ARG\+\_\+\+EMALLOC&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ARG\_ENOMATCH@{ARG\_ENOMATCH}!argtable2.h@{argtable2.h}}\index{argtable2.h@{argtable2.h}!ARG\_ENOMATCH@{ARG\_ENOMATCH}}}\mbox{\Hypertarget{argtable2_8h_adf764cbdea00d65edcd07bb9953ad2b7a8cd9d22e00057703b217d9e362d13470}\label{argtable2_8h_adf764cbdea00d65edcd07bb9953ad2b7a8cd9d22e00057703b217d9e362d13470}} 
+ARG\+\_\+\+ENOMATCH&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ARG\_ELONGOPT@{ARG\_ELONGOPT}!argtable2.h@{argtable2.h}}\index{argtable2.h@{argtable2.h}!ARG\_ELONGOPT@{ARG\_ELONGOPT}}}\mbox{\Hypertarget{argtable2_8h_adf764cbdea00d65edcd07bb9953ad2b7a18a92d5aecef851da73cf5b24e185bb8}\label{argtable2_8h_adf764cbdea00d65edcd07bb9953ad2b7a18a92d5aecef851da73cf5b24e185bb8}} 
+ARG\+\_\+\+ELONGOPT&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ARG\_EMISSARG@{ARG\_EMISSARG}!argtable2.h@{argtable2.h}}\index{argtable2.h@{argtable2.h}!ARG\_EMISSARG@{ARG\_EMISSARG}}}\mbox{\Hypertarget{argtable2_8h_adf764cbdea00d65edcd07bb9953ad2b7ae4067004d4ad1180857a29f913b46506}\label{argtable2_8h_adf764cbdea00d65edcd07bb9953ad2b7ae4067004d4ad1180857a29f913b46506}} 
+ARG\+\_\+\+EMISSARG&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{argtable2_8h_a78781946018846ed1742d3468b8717f3}\label{argtable2_8h_a78781946018846ed1742d3468b8717f3}} 
+\index{argtable2.h@{argtable2.h}!arg\_date0@{arg\_date0}}
+\index{arg\_date0@{arg\_date0}!argtable2.h@{argtable2.h}}
+\doxysubsubsection{\texorpdfstring{arg\_date0()}{arg\_date0()}}
+{\footnotesize\ttfamily struct \mbox{\hyperlink{structarg__date}{arg\+\_\+date}}$\ast$ arg\+\_\+date0 (\begin{DoxyParamCaption}\item[{const char $\ast$}]{shortopts,  }\item[{const char $\ast$}]{longopts,  }\item[{const char $\ast$}]{format,  }\item[{const char $\ast$}]{datatype,  }\item[{const char $\ast$}]{glossary }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{argtable2_8h_aa285f116e59e46811e191f9b9a8a6ecb}\label{argtable2_8h_aa285f116e59e46811e191f9b9a8a6ecb}} 
+\index{argtable2.h@{argtable2.h}!arg\_date1@{arg\_date1}}
+\index{arg\_date1@{arg\_date1}!argtable2.h@{argtable2.h}}
+\doxysubsubsection{\texorpdfstring{arg\_date1()}{arg\_date1()}}
+{\footnotesize\ttfamily struct \mbox{\hyperlink{structarg__date}{arg\+\_\+date}}$\ast$ arg\+\_\+date1 (\begin{DoxyParamCaption}\item[{const char $\ast$}]{shortopts,  }\item[{const char $\ast$}]{longopts,  }\item[{const char $\ast$}]{format,  }\item[{const char $\ast$}]{datatype,  }\item[{const char $\ast$}]{glossary }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{argtable2_8h_a3f6f59e7acb0b321de6ddf9c714e6be7}\label{argtable2_8h_a3f6f59e7acb0b321de6ddf9c714e6be7}} 
+\index{argtable2.h@{argtable2.h}!arg\_daten@{arg\_daten}}
+\index{arg\_daten@{arg\_daten}!argtable2.h@{argtable2.h}}
+\doxysubsubsection{\texorpdfstring{arg\_daten()}{arg\_daten()}}
+{\footnotesize\ttfamily struct \mbox{\hyperlink{structarg__date}{arg\+\_\+date}}$\ast$ arg\+\_\+daten (\begin{DoxyParamCaption}\item[{const char $\ast$}]{shortopts,  }\item[{const char $\ast$}]{longopts,  }\item[{const char $\ast$}]{format,  }\item[{const char $\ast$}]{datatype,  }\item[{int}]{mincount,  }\item[{int}]{maxcount,  }\item[{const char $\ast$}]{glossary }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{argtable2_8h_ad0cfa02571d6902a9c468b336f3db827}\label{argtable2_8h_ad0cfa02571d6902a9c468b336f3db827}} 
+\index{argtable2.h@{argtable2.h}!arg\_dbl0@{arg\_dbl0}}
+\index{arg\_dbl0@{arg\_dbl0}!argtable2.h@{argtable2.h}}
+\doxysubsubsection{\texorpdfstring{arg\_dbl0()}{arg\_dbl0()}}
+{\footnotesize\ttfamily struct \mbox{\hyperlink{structarg__dbl}{arg\+\_\+dbl}}$\ast$ arg\+\_\+dbl0 (\begin{DoxyParamCaption}\item[{const char $\ast$}]{shortopts,  }\item[{const char $\ast$}]{longopts,  }\item[{const char $\ast$}]{datatype,  }\item[{const char $\ast$}]{glossary }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{argtable2_8h_a48551f212c7e5bc49038a1c7c9a2a2f8}\label{argtable2_8h_a48551f212c7e5bc49038a1c7c9a2a2f8}} 
+\index{argtable2.h@{argtable2.h}!arg\_dbl1@{arg\_dbl1}}
+\index{arg\_dbl1@{arg\_dbl1}!argtable2.h@{argtable2.h}}
+\doxysubsubsection{\texorpdfstring{arg\_dbl1()}{arg\_dbl1()}}
+{\footnotesize\ttfamily struct \mbox{\hyperlink{structarg__dbl}{arg\+\_\+dbl}}$\ast$ arg\+\_\+dbl1 (\begin{DoxyParamCaption}\item[{const char $\ast$}]{shortopts,  }\item[{const char $\ast$}]{longopts,  }\item[{const char $\ast$}]{datatype,  }\item[{const char $\ast$}]{glossary }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{argtable2_8h_a5b0f0115fbe995d278be3c6eae6e0204}\label{argtable2_8h_a5b0f0115fbe995d278be3c6eae6e0204}} 
+\index{argtable2.h@{argtable2.h}!arg\_dbln@{arg\_dbln}}
+\index{arg\_dbln@{arg\_dbln}!argtable2.h@{argtable2.h}}
+\doxysubsubsection{\texorpdfstring{arg\_dbln()}{arg\_dbln()}}
+{\footnotesize\ttfamily struct \mbox{\hyperlink{structarg__dbl}{arg\+\_\+dbl}}$\ast$ arg\+\_\+dbln (\begin{DoxyParamCaption}\item[{const char $\ast$}]{shortopts,  }\item[{const char $\ast$}]{longopts,  }\item[{const char $\ast$}]{datatype,  }\item[{int}]{mincount,  }\item[{int}]{maxcount,  }\item[{const char $\ast$}]{glossary }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{argtable2_8h_a10f93e5ba1dfdd5d5596ef8b00ae6331}\label{argtable2_8h_a10f93e5ba1dfdd5d5596ef8b00ae6331}} 
+\index{argtable2.h@{argtable2.h}!arg\_end@{arg\_end}}
+\index{arg\_end@{arg\_end}!argtable2.h@{argtable2.h}}
+\doxysubsubsection{\texorpdfstring{arg\_end()}{arg\_end()}}
+{\footnotesize\ttfamily struct \mbox{\hyperlink{structarg__end}{arg\+\_\+end}}$\ast$ \mbox{\hyperlink{structarg__end}{arg\+\_\+end}} (\begin{DoxyParamCaption}\item[{int}]{maxerrors }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{argtable2_8h_a25391ccb246d28820adbf87c4e1e16a4}\label{argtable2_8h_a25391ccb246d28820adbf87c4e1e16a4}} 
+\index{argtable2.h@{argtable2.h}!arg\_file0@{arg\_file0}}
+\index{arg\_file0@{arg\_file0}!argtable2.h@{argtable2.h}}
+\doxysubsubsection{\texorpdfstring{arg\_file0()}{arg\_file0()}}
+{\footnotesize\ttfamily struct \mbox{\hyperlink{structarg__file}{arg\+\_\+file}}$\ast$ arg\+\_\+file0 (\begin{DoxyParamCaption}\item[{const char $\ast$}]{shortopts,  }\item[{const char $\ast$}]{longopts,  }\item[{const char $\ast$}]{datatype,  }\item[{const char $\ast$}]{glossary }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{argtable2_8h_a455ec8d5017891d44064005e2427cf50}\label{argtable2_8h_a455ec8d5017891d44064005e2427cf50}} 
+\index{argtable2.h@{argtable2.h}!arg\_file1@{arg\_file1}}
+\index{arg\_file1@{arg\_file1}!argtable2.h@{argtable2.h}}
+\doxysubsubsection{\texorpdfstring{arg\_file1()}{arg\_file1()}}
+{\footnotesize\ttfamily struct \mbox{\hyperlink{structarg__file}{arg\+\_\+file}}$\ast$ arg\+\_\+file1 (\begin{DoxyParamCaption}\item[{const char $\ast$}]{shortopts,  }\item[{const char $\ast$}]{longopts,  }\item[{const char $\ast$}]{datatype,  }\item[{const char $\ast$}]{glossary }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{argtable2_8h_a2cb406c5952de2b8ed5f9c9b9754a233}\label{argtable2_8h_a2cb406c5952de2b8ed5f9c9b9754a233}} 
+\index{argtable2.h@{argtable2.h}!arg\_filen@{arg\_filen}}
+\index{arg\_filen@{arg\_filen}!argtable2.h@{argtable2.h}}
+\doxysubsubsection{\texorpdfstring{arg\_filen()}{arg\_filen()}}
+{\footnotesize\ttfamily struct \mbox{\hyperlink{structarg__file}{arg\+\_\+file}}$\ast$ arg\+\_\+filen (\begin{DoxyParamCaption}\item[{const char $\ast$}]{shortopts,  }\item[{const char $\ast$}]{longopts,  }\item[{const char $\ast$}]{datatype,  }\item[{int}]{mincount,  }\item[{int}]{maxcount,  }\item[{const char $\ast$}]{glossary }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{argtable2_8h_ab0cd8099641e0a42c37279a540bdc439}\label{argtable2_8h_ab0cd8099641e0a42c37279a540bdc439}} 
+\index{argtable2.h@{argtable2.h}!arg\_free@{arg\_free}}
+\index{arg\_free@{arg\_free}!argtable2.h@{argtable2.h}}
+\doxysubsubsection{\texorpdfstring{arg\_free()}{arg\_free()}}
+{\footnotesize\ttfamily void arg\+\_\+free (\begin{DoxyParamCaption}\item[{void $\ast$$\ast$}]{argtable }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{argtable2_8h_a7b5e3f921fe7c9af5dd9d2e8aa789ee1}\label{argtable2_8h_a7b5e3f921fe7c9af5dd9d2e8aa789ee1}} 
+\index{argtable2.h@{argtable2.h}!arg\_freetable@{arg\_freetable}}
+\index{arg\_freetable@{arg\_freetable}!argtable2.h@{argtable2.h}}
+\doxysubsubsection{\texorpdfstring{arg\_freetable()}{arg\_freetable()}}
+{\footnotesize\ttfamily void arg\+\_\+freetable (\begin{DoxyParamCaption}\item[{void $\ast$$\ast$}]{argtable,  }\item[{size\+\_\+t}]{n }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{argtable2_8h_ab6ffbc05760e61761b37dedacd73f2bc}\label{argtable2_8h_ab6ffbc05760e61761b37dedacd73f2bc}} 
+\index{argtable2.h@{argtable2.h}!arg\_int0@{arg\_int0}}
+\index{arg\_int0@{arg\_int0}!argtable2.h@{argtable2.h}}
+\doxysubsubsection{\texorpdfstring{arg\_int0()}{arg\_int0()}}
+{\footnotesize\ttfamily struct \mbox{\hyperlink{structarg__int}{arg\+\_\+int}}$\ast$ arg\+\_\+int0 (\begin{DoxyParamCaption}\item[{const char $\ast$}]{shortopts,  }\item[{const char $\ast$}]{longopts,  }\item[{const char $\ast$}]{datatype,  }\item[{const char $\ast$}]{glossary }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{argtable2_8h_a879d7141dc666fbd08887ade639f12f5}\label{argtable2_8h_a879d7141dc666fbd08887ade639f12f5}} 
+\index{argtable2.h@{argtable2.h}!arg\_int1@{arg\_int1}}
+\index{arg\_int1@{arg\_int1}!argtable2.h@{argtable2.h}}
+\doxysubsubsection{\texorpdfstring{arg\_int1()}{arg\_int1()}}
+{\footnotesize\ttfamily struct \mbox{\hyperlink{structarg__int}{arg\+\_\+int}}$\ast$ arg\+\_\+int1 (\begin{DoxyParamCaption}\item[{const char $\ast$}]{shortopts,  }\item[{const char $\ast$}]{longopts,  }\item[{const char $\ast$}]{datatype,  }\item[{const char $\ast$}]{glossary }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{argtable2_8h_abc72a7b240c69612778a38ccf5046704}\label{argtable2_8h_abc72a7b240c69612778a38ccf5046704}} 
+\index{argtable2.h@{argtable2.h}!arg\_intn@{arg\_intn}}
+\index{arg\_intn@{arg\_intn}!argtable2.h@{argtable2.h}}
+\doxysubsubsection{\texorpdfstring{arg\_intn()}{arg\_intn()}}
+{\footnotesize\ttfamily struct \mbox{\hyperlink{structarg__int}{arg\+\_\+int}}$\ast$ arg\+\_\+intn (\begin{DoxyParamCaption}\item[{const char $\ast$}]{shortopts,  }\item[{const char $\ast$}]{longopts,  }\item[{const char $\ast$}]{datatype,  }\item[{int}]{mincount,  }\item[{int}]{maxcount,  }\item[{const char $\ast$}]{glossary }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{argtable2_8h_aa248b656988a2c21fd16826812eb0415}\label{argtable2_8h_aa248b656988a2c21fd16826812eb0415}} 
+\index{argtable2.h@{argtable2.h}!arg\_key0@{arg\_key0}}
+\index{arg\_key0@{arg\_key0}!argtable2.h@{argtable2.h}}
+\doxysubsubsection{\texorpdfstring{arg\_key0()}{arg\_key0()}}
+{\footnotesize\ttfamily struct arg\+\_\+key$\ast$ arg\+\_\+key0 (\begin{DoxyParamCaption}\item[{const char $\ast$}]{keyword,  }\item[{int}]{flags,  }\item[{const char $\ast$}]{glossary }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{argtable2_8h_aa3ac325572353d476e884c61a3d6c5a1}\label{argtable2_8h_aa3ac325572353d476e884c61a3d6c5a1}} 
+\index{argtable2.h@{argtable2.h}!arg\_key1@{arg\_key1}}
+\index{arg\_key1@{arg\_key1}!argtable2.h@{argtable2.h}}
+\doxysubsubsection{\texorpdfstring{arg\_key1()}{arg\_key1()}}
+{\footnotesize\ttfamily struct arg\+\_\+key$\ast$ arg\+\_\+key1 (\begin{DoxyParamCaption}\item[{const char $\ast$}]{keyword,  }\item[{int}]{flags,  }\item[{const char $\ast$}]{glossary }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{argtable2_8h_a0985cd9abcfda7e1c2cbe52865615214}\label{argtable2_8h_a0985cd9abcfda7e1c2cbe52865615214}} 
+\index{argtable2.h@{argtable2.h}!arg\_keyn@{arg\_keyn}}
+\index{arg\_keyn@{arg\_keyn}!argtable2.h@{argtable2.h}}
+\doxysubsubsection{\texorpdfstring{arg\_keyn()}{arg\_keyn()}}
+{\footnotesize\ttfamily struct arg\+\_\+key$\ast$ arg\+\_\+keyn (\begin{DoxyParamCaption}\item[{const char $\ast$}]{keyword,  }\item[{int}]{flags,  }\item[{int}]{mincount,  }\item[{int}]{maxcount,  }\item[{const char $\ast$}]{glossary }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{argtable2_8h_a5a7350a6e3afafbec675d0c8564ce8f8}\label{argtable2_8h_a5a7350a6e3afafbec675d0c8564ce8f8}} 
+\index{argtable2.h@{argtable2.h}!arg\_lit0@{arg\_lit0}}
+\index{arg\_lit0@{arg\_lit0}!argtable2.h@{argtable2.h}}
+\doxysubsubsection{\texorpdfstring{arg\_lit0()}{arg\_lit0()}}
+{\footnotesize\ttfamily struct \mbox{\hyperlink{structarg__lit}{arg\+\_\+lit}}$\ast$ arg\+\_\+lit0 (\begin{DoxyParamCaption}\item[{const char $\ast$}]{shortopts,  }\item[{const char $\ast$}]{longopts,  }\item[{const char $\ast$}]{glossary }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{argtable2_8h_a6104d9bac720537302aec190e6e14473}\label{argtable2_8h_a6104d9bac720537302aec190e6e14473}} 
+\index{argtable2.h@{argtable2.h}!arg\_lit1@{arg\_lit1}}
+\index{arg\_lit1@{arg\_lit1}!argtable2.h@{argtable2.h}}
+\doxysubsubsection{\texorpdfstring{arg\_lit1()}{arg\_lit1()}}
+{\footnotesize\ttfamily struct \mbox{\hyperlink{structarg__lit}{arg\+\_\+lit}}$\ast$ arg\+\_\+lit1 (\begin{DoxyParamCaption}\item[{const char $\ast$}]{shortopts,  }\item[{const char $\ast$}]{longopts,  }\item[{const char $\ast$}]{glossary }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{argtable2_8h_a4bb833c67535c4cca3a97b466a3b9fe9}\label{argtable2_8h_a4bb833c67535c4cca3a97b466a3b9fe9}} 
+\index{argtable2.h@{argtable2.h}!arg\_litn@{arg\_litn}}
+\index{arg\_litn@{arg\_litn}!argtable2.h@{argtable2.h}}
+\doxysubsubsection{\texorpdfstring{arg\_litn()}{arg\_litn()}}
+{\footnotesize\ttfamily struct \mbox{\hyperlink{structarg__lit}{arg\+\_\+lit}}$\ast$ arg\+\_\+litn (\begin{DoxyParamCaption}\item[{const char $\ast$}]{shortopts,  }\item[{const char $\ast$}]{longopts,  }\item[{int}]{mincount,  }\item[{int}]{maxcount,  }\item[{const char $\ast$}]{glossary }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{argtable2_8h_a16b06e1766d5b79f77f402bb3d440bd6}\label{argtable2_8h_a16b06e1766d5b79f77f402bb3d440bd6}} 
+\index{argtable2.h@{argtable2.h}!arg\_nullcheck@{arg\_nullcheck}}
+\index{arg\_nullcheck@{arg\_nullcheck}!argtable2.h@{argtable2.h}}
+\doxysubsubsection{\texorpdfstring{arg\_nullcheck()}{arg\_nullcheck()}}
+{\footnotesize\ttfamily int arg\+\_\+nullcheck (\begin{DoxyParamCaption}\item[{void $\ast$$\ast$}]{argtable }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{argtable2_8h_acc71e118e4cf18ec0d1ebde858774716}\label{argtable2_8h_acc71e118e4cf18ec0d1ebde858774716}} 
+\index{argtable2.h@{argtable2.h}!arg\_parse@{arg\_parse}}
+\index{arg\_parse@{arg\_parse}!argtable2.h@{argtable2.h}}
+\doxysubsubsection{\texorpdfstring{arg\_parse()}{arg\_parse()}}
+{\footnotesize\ttfamily int arg\+\_\+parse (\begin{DoxyParamCaption}\item[{int}]{argc,  }\item[{char $\ast$$\ast$}]{argv,  }\item[{void $\ast$$\ast$}]{argtable }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{argtable2_8h_aee900390860098e87646707fe35cb1b4}\label{argtable2_8h_aee900390860098e87646707fe35cb1b4}} 
+\index{argtable2.h@{argtable2.h}!arg\_print\_errors@{arg\_print\_errors}}
+\index{arg\_print\_errors@{arg\_print\_errors}!argtable2.h@{argtable2.h}}
+\doxysubsubsection{\texorpdfstring{arg\_print\_errors()}{arg\_print\_errors()}}
+{\footnotesize\ttfamily void arg\+\_\+print\+\_\+errors (\begin{DoxyParamCaption}\item[{FILE $\ast$}]{fp,  }\item[{struct \mbox{\hyperlink{structarg__end}{arg\+\_\+end}} $\ast$}]{end,  }\item[{const char $\ast$}]{progname }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{argtable2_8h_af204e089d53b2b38b42f8f6e12f31473}\label{argtable2_8h_af204e089d53b2b38b42f8f6e12f31473}} 
+\index{argtable2.h@{argtable2.h}!arg\_print\_glossary@{arg\_print\_glossary}}
+\index{arg\_print\_glossary@{arg\_print\_glossary}!argtable2.h@{argtable2.h}}
+\doxysubsubsection{\texorpdfstring{arg\_print\_glossary()}{arg\_print\_glossary()}}
+{\footnotesize\ttfamily void arg\+\_\+print\+\_\+glossary (\begin{DoxyParamCaption}\item[{FILE $\ast$}]{fp,  }\item[{void $\ast$$\ast$}]{argtable,  }\item[{const char $\ast$}]{format }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{argtable2_8h_a47da6314033b00f78fcf5acb77995262}\label{argtable2_8h_a47da6314033b00f78fcf5acb77995262}} 
+\index{argtable2.h@{argtable2.h}!arg\_print\_glossary\_gnu@{arg\_print\_glossary\_gnu}}
+\index{arg\_print\_glossary\_gnu@{arg\_print\_glossary\_gnu}!argtable2.h@{argtable2.h}}
+\doxysubsubsection{\texorpdfstring{arg\_print\_glossary\_gnu()}{arg\_print\_glossary\_gnu()}}
+{\footnotesize\ttfamily void arg\+\_\+print\+\_\+glossary\+\_\+gnu (\begin{DoxyParamCaption}\item[{FILE $\ast$}]{fp,  }\item[{void $\ast$$\ast$}]{argtable }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{argtable2_8h_adaff52d6414f9c30cf3eceb1ce5d6af3}\label{argtable2_8h_adaff52d6414f9c30cf3eceb1ce5d6af3}} 
+\index{argtable2.h@{argtable2.h}!arg\_print\_option@{arg\_print\_option}}
+\index{arg\_print\_option@{arg\_print\_option}!argtable2.h@{argtable2.h}}
+\doxysubsubsection{\texorpdfstring{arg\_print\_option()}{arg\_print\_option()}}
+{\footnotesize\ttfamily void arg\+\_\+print\+\_\+option (\begin{DoxyParamCaption}\item[{FILE $\ast$}]{fp,  }\item[{const char $\ast$}]{shortopts,  }\item[{const char $\ast$}]{longopts,  }\item[{const char $\ast$}]{datatype,  }\item[{const char $\ast$}]{suffix }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{argtable2_8h_ac7afc05ac874e98133488cb365d7a21e}\label{argtable2_8h_ac7afc05ac874e98133488cb365d7a21e}} 
+\index{argtable2.h@{argtable2.h}!arg\_print\_syntax@{arg\_print\_syntax}}
+\index{arg\_print\_syntax@{arg\_print\_syntax}!argtable2.h@{argtable2.h}}
+\doxysubsubsection{\texorpdfstring{arg\_print\_syntax()}{arg\_print\_syntax()}}
+{\footnotesize\ttfamily void arg\+\_\+print\+\_\+syntax (\begin{DoxyParamCaption}\item[{FILE $\ast$}]{fp,  }\item[{void $\ast$$\ast$}]{argtable,  }\item[{const char $\ast$}]{suffix }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{argtable2_8h_abbbc79fb60ce047c46735b448f418bda}\label{argtable2_8h_abbbc79fb60ce047c46735b448f418bda}} 
+\index{argtable2.h@{argtable2.h}!arg\_print\_syntaxv@{arg\_print\_syntaxv}}
+\index{arg\_print\_syntaxv@{arg\_print\_syntaxv}!argtable2.h@{argtable2.h}}
+\doxysubsubsection{\texorpdfstring{arg\_print\_syntaxv()}{arg\_print\_syntaxv()}}
+{\footnotesize\ttfamily void arg\+\_\+print\+\_\+syntaxv (\begin{DoxyParamCaption}\item[{FILE $\ast$}]{fp,  }\item[{void $\ast$$\ast$}]{argtable,  }\item[{const char $\ast$}]{suffix }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{argtable2_8h_a1090832bd32b8fa2a59aaf50a900dbac}\label{argtable2_8h_a1090832bd32b8fa2a59aaf50a900dbac}} 
+\index{argtable2.h@{argtable2.h}!arg\_rem@{arg\_rem}}
+\index{arg\_rem@{arg\_rem}!argtable2.h@{argtable2.h}}
+\doxysubsubsection{\texorpdfstring{arg\_rem()}{arg\_rem()}}
+{\footnotesize\ttfamily struct \mbox{\hyperlink{structarg__rem}{arg\+\_\+rem}}$\ast$ \mbox{\hyperlink{structarg__rem}{arg\+\_\+rem}} (\begin{DoxyParamCaption}\item[{const char $\ast$}]{datatype,  }\item[{const char $\ast$}]{glossary }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{argtable2_8h_a59a8b41e1f27c253f57c4aadcfa511bc}\label{argtable2_8h_a59a8b41e1f27c253f57c4aadcfa511bc}} 
+\index{argtable2.h@{argtable2.h}!arg\_rex0@{arg\_rex0}}
+\index{arg\_rex0@{arg\_rex0}!argtable2.h@{argtable2.h}}
+\doxysubsubsection{\texorpdfstring{arg\_rex0()}{arg\_rex0()}}
+{\footnotesize\ttfamily struct \mbox{\hyperlink{structarg__rex}{arg\+\_\+rex}}$\ast$ arg\+\_\+rex0 (\begin{DoxyParamCaption}\item[{const char $\ast$}]{shortopts,  }\item[{const char $\ast$}]{longopts,  }\item[{const char $\ast$}]{pattern,  }\item[{const char $\ast$}]{datatype,  }\item[{int}]{flags,  }\item[{const char $\ast$}]{glossary }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{argtable2_8h_a9509ea6b48cf9bfe1eb3bcaef0c57469}\label{argtable2_8h_a9509ea6b48cf9bfe1eb3bcaef0c57469}} 
+\index{argtable2.h@{argtable2.h}!arg\_rex1@{arg\_rex1}}
+\index{arg\_rex1@{arg\_rex1}!argtable2.h@{argtable2.h}}
+\doxysubsubsection{\texorpdfstring{arg\_rex1()}{arg\_rex1()}}
+{\footnotesize\ttfamily struct \mbox{\hyperlink{structarg__rex}{arg\+\_\+rex}}$\ast$ arg\+\_\+rex1 (\begin{DoxyParamCaption}\item[{const char $\ast$}]{shortopts,  }\item[{const char $\ast$}]{longopts,  }\item[{const char $\ast$}]{pattern,  }\item[{const char $\ast$}]{datatype,  }\item[{int}]{flags,  }\item[{const char $\ast$}]{glossary }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{argtable2_8h_abda8e957230e058d75b00bead75a713c}\label{argtable2_8h_abda8e957230e058d75b00bead75a713c}} 
+\index{argtable2.h@{argtable2.h}!arg\_rexn@{arg\_rexn}}
+\index{arg\_rexn@{arg\_rexn}!argtable2.h@{argtable2.h}}
+\doxysubsubsection{\texorpdfstring{arg\_rexn()}{arg\_rexn()}}
+{\footnotesize\ttfamily struct \mbox{\hyperlink{structarg__rex}{arg\+\_\+rex}}$\ast$ arg\+\_\+rexn (\begin{DoxyParamCaption}\item[{const char $\ast$}]{shortopts,  }\item[{const char $\ast$}]{longopts,  }\item[{const char $\ast$}]{pattern,  }\item[{const char $\ast$}]{datatype,  }\item[{int}]{mincount,  }\item[{int}]{maxcount,  }\item[{int}]{flags,  }\item[{const char $\ast$}]{glossary }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{argtable2_8h_a8796e6f5761d2441bdd691836e20b543}\label{argtable2_8h_a8796e6f5761d2441bdd691836e20b543}} 
+\index{argtable2.h@{argtable2.h}!arg\_str0@{arg\_str0}}
+\index{arg\_str0@{arg\_str0}!argtable2.h@{argtable2.h}}
+\doxysubsubsection{\texorpdfstring{arg\_str0()}{arg\_str0()}}
+{\footnotesize\ttfamily struct \mbox{\hyperlink{structarg__str}{arg\+\_\+str}}$\ast$ arg\+\_\+str0 (\begin{DoxyParamCaption}\item[{const char $\ast$}]{shortopts,  }\item[{const char $\ast$}]{longopts,  }\item[{const char $\ast$}]{datatype,  }\item[{const char $\ast$}]{glossary }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{argtable2_8h_a5f14745eb6d9da6a9d5a9f23b13f57b3}\label{argtable2_8h_a5f14745eb6d9da6a9d5a9f23b13f57b3}} 
+\index{argtable2.h@{argtable2.h}!arg\_str1@{arg\_str1}}
+\index{arg\_str1@{arg\_str1}!argtable2.h@{argtable2.h}}
+\doxysubsubsection{\texorpdfstring{arg\_str1()}{arg\_str1()}}
+{\footnotesize\ttfamily struct \mbox{\hyperlink{structarg__str}{arg\+\_\+str}}$\ast$ arg\+\_\+str1 (\begin{DoxyParamCaption}\item[{const char $\ast$}]{shortopts,  }\item[{const char $\ast$}]{longopts,  }\item[{const char $\ast$}]{datatype,  }\item[{const char $\ast$}]{glossary }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{argtable2_8h_aec76e8f308610c74ee771d35e8b9feae}\label{argtable2_8h_aec76e8f308610c74ee771d35e8b9feae}} 
+\index{argtable2.h@{argtable2.h}!arg\_strn@{arg\_strn}}
+\index{arg\_strn@{arg\_strn}!argtable2.h@{argtable2.h}}
+\doxysubsubsection{\texorpdfstring{arg\_strn()}{arg\_strn()}}
+{\footnotesize\ttfamily struct \mbox{\hyperlink{structarg__str}{arg\+\_\+str}}$\ast$ arg\+\_\+strn (\begin{DoxyParamCaption}\item[{const char $\ast$}]{shortopts,  }\item[{const char $\ast$}]{longopts,  }\item[{const char $\ast$}]{datatype,  }\item[{int}]{mincount,  }\item[{int}]{maxcount,  }\item[{const char $\ast$}]{glossary }\end{DoxyParamCaption})}
+

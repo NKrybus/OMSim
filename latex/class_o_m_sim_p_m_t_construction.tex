@@ -1,0 +1,168 @@
+\hypertarget{class_o_m_sim_p_m_t_construction}{}\doxysection{OMSim\+PMTConstruction Class Reference}
+\label{class_o_m_sim_p_m_t_construction}\index{OMSimPMTConstruction@{OMSimPMTConstruction}}
+
+
+Inheritance diagram for OMSim\+PMTConstruction\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=214pt]{class_o_m_sim_p_m_t_construction__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for OMSim\+PMTConstruction\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=214pt]{class_o_m_sim_p_m_t_construction__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_o_m_sim_p_m_t_construction_a272ed7058afad0b7d7f848c0881b8187}{OMSim\+PMTConstruction}} (\mbox{\hyperlink{class_input_data_manager}{Input\+Data\+Manager}} $\ast$p\+Data)
+\item 
+void \mbox{\hyperlink{class_o_m_sim_p_m_t_construction_a5ab3a93d9e44fb38004cfd9d30c6d6aa}{construction}} ()
+\item 
+G4double \mbox{\hyperlink{class_o_m_sim_p_m_t_construction_ac64dc266245d000c3611f70f603d77c1}{Get\+Distance\+PMTCenter\+To\+PMTtip}} ()
+\item 
+G4double \mbox{\hyperlink{class_o_m_sim_p_m_t_construction_aa6283af20e934d1a54e31e9dd89e3545}{Get\+Max\+PMTMax\+Radius}} ()
+\item 
+G4\+VSolid $\ast$ \mbox{\hyperlink{class_o_m_sim_p_m_t_construction_a137754f8320cba1cbe0e5b7399624885}{Get\+PMTSolid}} ()
+\item 
+G4\+Logical\+Volume $\ast$ \mbox{\hyperlink{class_o_m_sim_p_m_t_construction_a878d48c215e90d3dfda1546ec126466c}{Get\+Logical\+Volume}} ()
+\item 
+void \mbox{\hyperlink{class_o_m_sim_p_m_t_construction_a1f7915c14fc9eee203f861e59f26f333}{place\+It}} (G4\+Three\+Vector p\+Position, G4\+Rotation\+Matrix p\+Rotation, G4\+Logical\+Volume $\ast$\&p\+Mother, G4\+String p\+Name\+Extension=\char`\"{}\char`\"{})
+\item 
+void \mbox{\hyperlink{class_o_m_sim_p_m_t_construction_a4960a7f095c1948985bf48bc3c0ae6f9}{place\+It}} (G4\+Transform3D p\+Trans, G4\+Logical\+Volume $\ast$\&p\+Mother, G4\+String p\+Name\+Extension=\char`\"{}\char`\"{})
+\item 
+void \mbox{\hyperlink{class_o_m_sim_p_m_t_construction_ab9d55def87d576c93a1b82b5ace9c81b}{Select\+PMT}} (G4\+String p\+PMTto\+Select)
+\item 
+void \mbox{\hyperlink{class_o_m_sim_p_m_t_construction_aace3a42269c427164d1d8f10d32dc7e2}{Simulate\+Internal\+Reflections}} ()
+\item 
+void \mbox{\hyperlink{class_o_m_sim_p_m_t_construction_a7de71bd9a78233ae61258277879379c9}{Simulate\+HACoating}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_o_m_sim_p_m_t_construction_a272ed7058afad0b7d7f848c0881b8187}\label{class_o_m_sim_p_m_t_construction_a272ed7058afad0b7d7f848c0881b8187}} 
+\index{OMSimPMTConstruction@{OMSimPMTConstruction}!OMSimPMTConstruction@{OMSimPMTConstruction}}
+\index{OMSimPMTConstruction@{OMSimPMTConstruction}!OMSimPMTConstruction@{OMSimPMTConstruction}}
+\doxysubsubsection{\texorpdfstring{OMSimPMTConstruction()}{OMSimPMTConstruction()}}
+{\footnotesize\ttfamily OMSim\+PMTConstruction\+::\+OMSim\+PMTConstruction (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_input_data_manager}{Input\+Data\+Manager}} $\ast$}]{p\+Data }\end{DoxyParamCaption})}
+
+Constructor of the class. The Input\+Data instance has to be passed here in order to avoid loading the input data twice and redifining the same materials. 
+\begin{DoxyParams}{Parameters}
+{\em p\+Data} & OMSim\+Input\+Data instance \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_o_m_sim_p_m_t_construction_a5ab3a93d9e44fb38004cfd9d30c6d6aa}\label{class_o_m_sim_p_m_t_construction_a5ab3a93d9e44fb38004cfd9d30c6d6aa}} 
+\index{OMSimPMTConstruction@{OMSimPMTConstruction}!construction@{construction}}
+\index{construction@{construction}!OMSimPMTConstruction@{OMSimPMTConstruction}}
+\doxysubsubsection{\texorpdfstring{construction()}{construction()}}
+{\footnotesize\ttfamily void OMSim\+PMTConstruction\+::construction (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Constructs the PMT Solid. 
+
+Implements \mbox{\hyperlink{classabc_detector_component_a8e7f01c218d5f093e80e46b33a0672bf}{abc\+Detector\+Component}}.
+
+\mbox{\Hypertarget{class_o_m_sim_p_m_t_construction_ac64dc266245d000c3611f70f603d77c1}\label{class_o_m_sim_p_m_t_construction_ac64dc266245d000c3611f70f603d77c1}} 
+\index{OMSimPMTConstruction@{OMSimPMTConstruction}!GetDistancePMTCenterToPMTtip@{GetDistancePMTCenterToPMTtip}}
+\index{GetDistancePMTCenterToPMTtip@{GetDistancePMTCenterToPMTtip}!OMSimPMTConstruction@{OMSimPMTConstruction}}
+\doxysubsubsection{\texorpdfstring{GetDistancePMTCenterToPMTtip()}{GetDistancePMTCenterToPMTtip()}}
+{\footnotesize\ttfamily G4double OMSim\+PMTConstruction\+::\+Get\+Distance\+PMTCenter\+To\+PMTtip (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns the distance between the 0.\+0 position of the PMT solid volume and the plane normal to the PMT frontal tip. \begin{DoxyReturn}{Returns}
+G4double 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_o_m_sim_p_m_t_construction_a878d48c215e90d3dfda1546ec126466c}\label{class_o_m_sim_p_m_t_construction_a878d48c215e90d3dfda1546ec126466c}} 
+\index{OMSimPMTConstruction@{OMSimPMTConstruction}!GetLogicalVolume@{GetLogicalVolume}}
+\index{GetLogicalVolume@{GetLogicalVolume}!OMSimPMTConstruction@{OMSimPMTConstruction}}
+\doxysubsubsection{\texorpdfstring{GetLogicalVolume()}{GetLogicalVolume()}}
+{\footnotesize\ttfamily G4\+Logical\+Volume $\ast$ OMSim\+PMTConstruction\+::\+Get\+Logical\+Volume (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+It returns the member logical volume. To be used if you want to append the PMT in an \mbox{\hyperlink{classabc_detector_component}{abc\+Detector\+Component}}. For placements use place\+It method. \mbox{\Hypertarget{class_o_m_sim_p_m_t_construction_aa6283af20e934d1a54e31e9dd89e3545}\label{class_o_m_sim_p_m_t_construction_aa6283af20e934d1a54e31e9dd89e3545}} 
+\index{OMSimPMTConstruction@{OMSimPMTConstruction}!GetMaxPMTMaxRadius@{GetMaxPMTMaxRadius}}
+\index{GetMaxPMTMaxRadius@{GetMaxPMTMaxRadius}!OMSimPMTConstruction@{OMSimPMTConstruction}}
+\doxysubsubsection{\texorpdfstring{GetMaxPMTMaxRadius()}{GetMaxPMTMaxRadius()}}
+{\footnotesize\ttfamily G4double OMSim\+PMTConstruction\+::\+Get\+Max\+PMTMax\+Radius (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns the maximal radius of the frontal part of the PMT. \begin{DoxyReturn}{Returns}
+G4double 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_o_m_sim_p_m_t_construction_a137754f8320cba1cbe0e5b7399624885}\label{class_o_m_sim_p_m_t_construction_a137754f8320cba1cbe0e5b7399624885}} 
+\index{OMSimPMTConstruction@{OMSimPMTConstruction}!GetPMTSolid@{GetPMTSolid}}
+\index{GetPMTSolid@{GetPMTSolid}!OMSimPMTConstruction@{OMSimPMTConstruction}}
+\doxysubsubsection{\texorpdfstring{GetPMTSolid()}{GetPMTSolid()}}
+{\footnotesize\ttfamily G4\+VSolid $\ast$ OMSim\+PMTConstruction\+::\+Get\+PMTSolid (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns the solid of the constructed PMT. \begin{DoxyReturn}{Returns}
+G4\+Union\+Solid of the PMT 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_o_m_sim_p_m_t_construction_a1f7915c14fc9eee203f861e59f26f333}\label{class_o_m_sim_p_m_t_construction_a1f7915c14fc9eee203f861e59f26f333}} 
+\index{OMSimPMTConstruction@{OMSimPMTConstruction}!placeIt@{placeIt}}
+\index{placeIt@{placeIt}!OMSimPMTConstruction@{OMSimPMTConstruction}}
+\doxysubsubsection{\texorpdfstring{placeIt()}{placeIt()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void OMSim\+PMTConstruction\+::place\+It (\begin{DoxyParamCaption}\item[{G4\+Three\+Vector}]{p\+Position,  }\item[{G4\+Rotation\+Matrix}]{p\+Rotation,  }\item[{G4\+Logical\+Volume $\ast$\&}]{p\+Mother,  }\item[{G4\+String}]{p\+Name\+Extension = {\ttfamily \char`\"{}\char`\"{}} }\end{DoxyParamCaption})}
+
+Placement of the PMT and definition of Logical\+Border\+Surfaces in case internal reflections are needed. 
+\begin{DoxyParams}{Parameters}
+{\em p\+Position} & G4\+Three\+Vector with position of the module (as in G4\+PVPlacement()) \\
+\hline
+{\em p\+Rotation} & G4\+Rotation\+Matrix with rotation of the module (as in G4\+PVPlacement()) \\
+\hline
+{\em p\+Mother} & G4\+Logical\+Volume where the module is going to be placed (as in G4\+PVPlacement()) \\
+\hline
+{\em p\+Name\+Extension} & G4\+String name of the physical volume. You should not have two physicals with the same name \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_o_m_sim_p_m_t_construction_a4960a7f095c1948985bf48bc3c0ae6f9}\label{class_o_m_sim_p_m_t_construction_a4960a7f095c1948985bf48bc3c0ae6f9}} 
+\index{OMSimPMTConstruction@{OMSimPMTConstruction}!placeIt@{placeIt}}
+\index{placeIt@{placeIt}!OMSimPMTConstruction@{OMSimPMTConstruction}}
+\doxysubsubsection{\texorpdfstring{placeIt()}{placeIt()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void OMSim\+PMTConstruction\+::place\+It (\begin{DoxyParamCaption}\item[{G4\+Transform3D}]{p\+Transform,  }\item[{G4\+Logical\+Volume $\ast$\&}]{p\+Mother,  }\item[{G4\+String}]{p\+Name\+Extension = {\ttfamily \char`\"{}\char`\"{}} }\end{DoxyParamCaption})}
+
+\begin{DoxySeeAlso}{See also}
+PMT\+::place\+It 
+\end{DoxySeeAlso}
+
+\begin{DoxyParams}{Parameters}
+{\em p\+Transform} & G4\+Transform3D with position \& rotation of PMT \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_o_m_sim_p_m_t_construction_ab9d55def87d576c93a1b82b5ace9c81b}\label{class_o_m_sim_p_m_t_construction_ab9d55def87d576c93a1b82b5ace9c81b}} 
+\index{OMSimPMTConstruction@{OMSimPMTConstruction}!SelectPMT@{SelectPMT}}
+\index{SelectPMT@{SelectPMT}!OMSimPMTConstruction@{OMSimPMTConstruction}}
+\doxysubsubsection{\texorpdfstring{SelectPMT()}{SelectPMT()}}
+{\footnotesize\ttfamily void OMSim\+PMTConstruction\+::\+Select\+PMT (\begin{DoxyParamCaption}\item[{G4\+String}]{p\+PMTto\+Select }\end{DoxyParamCaption})}
+
+Select PMT model to use and assigns m\+PMT class. 
+\begin{DoxyParams}{Parameters}
+{\em G4\+String} & p\+PMTto\+Select string with the name of the PMT model \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_o_m_sim_p_m_t_construction_a7de71bd9a78233ae61258277879379c9}\label{class_o_m_sim_p_m_t_construction_a7de71bd9a78233ae61258277879379c9}} 
+\index{OMSimPMTConstruction@{OMSimPMTConstruction}!SimulateHACoating@{SimulateHACoating}}
+\index{SimulateHACoating@{SimulateHACoating}!OMSimPMTConstruction@{OMSimPMTConstruction}}
+\doxysubsubsection{\texorpdfstring{SimulateHACoating()}{SimulateHACoating()}}
+{\footnotesize\ttfamily void OMSim\+PMTConstruction\+::\+Simulate\+HACoating (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_o_m_sim_p_m_t_construction_aace3a42269c427164d1d8f10d32dc7e2}\label{class_o_m_sim_p_m_t_construction_aace3a42269c427164d1d8f10d32dc7e2}} 
+\index{OMSimPMTConstruction@{OMSimPMTConstruction}!SimulateInternalReflections@{SimulateInternalReflections}}
+\index{SimulateInternalReflections@{SimulateInternalReflections}!OMSimPMTConstruction@{OMSimPMTConstruction}}
+\doxysubsubsection{\texorpdfstring{SimulateInternalReflections()}{SimulateInternalReflections()}}
+{\footnotesize\ttfamily void OMSim\+PMTConstruction\+::\+Simulate\+Internal\+Reflections (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+The PMT is constructed allowing internal reflections (in the mirrored part opposite to the photocathode). Do not use it if you really don\textquotesingle{}t need it!! 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/runner/work/\+OMSim/\+OMSim/common/include/\mbox{\hyperlink{_o_m_sim_p_m_t_construction_8hh}{OMSim\+PMTConstruction.\+hh}}\item 
+/home/runner/work/\+OMSim/\+OMSim/common/src/\mbox{\hyperlink{_o_m_sim_p_m_t_construction_8cc}{OMSim\+PMTConstruction.\+cc}}\end{DoxyCompactItemize}

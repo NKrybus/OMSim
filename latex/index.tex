@@ -1,0 +1,48 @@
+\label{index_md__home_runner_work_OMSim_OMSim_README}%
+\Hypertarget{index_md__home_runner_work_OMSim_OMSim_README}%
+ {\bfseries{OMSim}} is a Geant4 framework for the simulation of optical modules of the Ice\+Cube Observatory. It has been mostly developed by the Münster Ice\+Cube Group during different master and PhD theses. The project is separated into different modules depending on the study (e.\+g. background investigations with radioactive decays, or sensitivity studies), each with its own main \& executable. These modules share common files (in the \char`\"{}common\char`\"{} folder) which, for example, define geometries from modules and PMTs or also material properties.
+
+Please check the different Modules in the \href{https://martinunland.github.io/OMSim}{\texttt{ documentation}} for further details and examples.\hypertarget{index_autotoc_md1}{}\doxysection{Installation}\label{index_autotoc_md1}
+\hypertarget{index_autotoc_md2}{}\doxysubsubsection{Installing Geant4}\label{index_autotoc_md2}
+First you should install Geant4 following \href{https://geant4-userdoc.web.cern.ch/UsersGuides/InstallationGuide/html/installguide.html}{\texttt{ the guide provided by cern}}. OMSim is currently optimised for Geant4-\/11.\+1.\+2. If you want to use the visualisation tools of Geant, you should include the following cmake options\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{-\/DGEANT4\_INSTALL\_DATA=ON -\/DGEANT4\_USE\_GDML=ON -\/DGEANT4\_USE\_OPENGL\_X11=ON -\/DGEANT4\_USE\_QT=ON -\/DGEANT4\_USE\_RAYTRACER\_X11=ON -\/DGEANT4\_USE\_XM=ON}
+
+\end{DoxyCode}
+
+
+There are a few dependencies. You can install them using the following command\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{apt-\/get -\/y install libxerces-\/c-\/dev libxmu-\/dev libxpm-\/dev libglu1-\/mesa-\/dev qtbase5-\/dev libmotif-\/dev libargtable2-\/0 libboost-\/all-\/dev}
+
+\end{DoxyCode}
+ If you needed to install more, add a comment it in the Git project, so we can complete the above command 😊\hypertarget{index_autotoc_md3}{}\doxysubsubsection{Compiling OMSim}\label{index_autotoc_md3}
+
+\begin{DoxyItemize}
+\item Clone this branch.
+\item Check {\itshape CMake\+Lists.\+txt} and change the paths with the Geant4 bins and libraries of your system
+\item Make a new folder named e.\+g. \char`\"{}build\char`\"{}
+\item From the build folder run cmake as follows 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{cmake -\/D4Geant4\_DIR=YOUR\_G4\_INSTALL/lib/Geant4-\/11.1.1/ ..}
+
+\end{DoxyCode}
+ where \char`\"{}\+YOUR\+\_\+\+G4\+\_\+\+INSTALL\char`\"{} is the path to the install folder of Geant4 in your system.
+\end{DoxyItemize}
+
+\begin{DoxyNote}{Note}
+If you have to compile the project several times you should add an alias in your bashrc, e.\+g. 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{alias mycmake="{}cmake -\/D4Geant4\_DIR=YOUR\_G4\_INSTALL/lib/Geant4-\/11.1.1/"{}}
+
+\end{DoxyCode}
+
+\end{DoxyNote}
+
+\begin{DoxyItemize}
+\item Finally, just run {\ttfamily make} or {\ttfamily make -\/j N} where N is number of cores you want to use for the compilation. 
+\end{DoxyItemize}

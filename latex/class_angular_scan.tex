@@ -1,0 +1,73 @@
+\hypertarget{class_angular_scan}{}\doxysection{Angular\+Scan Class Reference}
+\label{class_angular_scan}\index{AngularScan@{AngularScan}}
+
+
+Class for defining and running simple GPS beam configurations with angular scans.  
+
+
+
+
+\doxysubsection{Detailed Description}
+The \mbox{\hyperlink{class_angular_scan}{Angular\+Scan}} class provides functionalities to configure and run simple GPS beam configurations with angular scans. It allows setting the beam radius, beam distance, and wavelength of the photons to be generated. It also supports specifying the angle of incidence with respect to the target and performs the simulation for each angular configuration. \doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_angular_scan_af7d054657e56a97db60274f30ff737e6}{Angular\+Scan}} (G4double p\+Beam\+Radius, G4double p\+Beam\+Distance, G4double p\+Wavelength)
+\item 
+\mbox{\hyperlink{class_angular_scan_a050c9c2066f662a1d7868b4dac0e5795}{$\sim$\+Angular\+Scan}} ()
+\item 
+void \mbox{\hyperlink{class_angular_scan_a0603ef7f2b297de98ad466145ff122e4}{configure\+Scan}} ()
+\begin{DoxyCompactList}\small\item\em Configure the GPS settings, such as the particle properties, beam position and direction. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_angular_scan_a465f642ebbe30fc94f9ed8ec6e554ef4}{run\+Single\+Angular\+Scan}} (G4double p\+Phi, G4double p\+Theta)
+\begin{DoxyCompactList}\small\item\em Run a single angular scan with the specified angles. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_angular_scan_af7d054657e56a97db60274f30ff737e6}\label{class_angular_scan_af7d054657e56a97db60274f30ff737e6}} 
+\index{AngularScan@{AngularScan}!AngularScan@{AngularScan}}
+\index{AngularScan@{AngularScan}!AngularScan@{AngularScan}}
+\doxysubsubsection{\texorpdfstring{AngularScan()}{AngularScan()}}
+{\footnotesize\ttfamily Angular\+Scan\+::\+Angular\+Scan (\begin{DoxyParamCaption}\item[{G4double}]{p\+Beam\+Radius,  }\item[{G4double}]{p\+Beam\+Distance,  }\item[{G4double}]{p\+Wavelength }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+Beam\+Radius} & The radius of the beam. \\
+\hline
+{\em p\+Beam\+Distance} & The distance of the beam from the origin. \\
+\hline
+{\em p\+Wavelength} & The wavelength of the photons to be generated. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_angular_scan_a050c9c2066f662a1d7868b4dac0e5795}\label{class_angular_scan_a050c9c2066f662a1d7868b4dac0e5795}} 
+\index{AngularScan@{AngularScan}!````~AngularScan@{$\sim$AngularScan}}
+\index{````~AngularScan@{$\sim$AngularScan}!AngularScan@{AngularScan}}
+\doxysubsubsection{\texorpdfstring{$\sim$AngularScan()}{~AngularScan()}}
+{\footnotesize\ttfamily Angular\+Scan\+::$\sim$\+Angular\+Scan (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_angular_scan_a0603ef7f2b297de98ad466145ff122e4}\label{class_angular_scan_a0603ef7f2b297de98ad466145ff122e4}} 
+\index{AngularScan@{AngularScan}!configureScan@{configureScan}}
+\index{configureScan@{configureScan}!AngularScan@{AngularScan}}
+\doxysubsubsection{\texorpdfstring{configureScan()}{configureScan()}}
+{\footnotesize\ttfamily void Angular\+Scan\+::configure\+Scan (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_angular_scan_a465f642ebbe30fc94f9ed8ec6e554ef4}\label{class_angular_scan_a465f642ebbe30fc94f9ed8ec6e554ef4}} 
+\index{AngularScan@{AngularScan}!runSingleAngularScan@{runSingleAngularScan}}
+\index{runSingleAngularScan@{runSingleAngularScan}!AngularScan@{AngularScan}}
+\doxysubsubsection{\texorpdfstring{runSingleAngularScan()}{runSingleAngularScan()}}
+{\footnotesize\ttfamily void Angular\+Scan\+::run\+Single\+Angular\+Scan (\begin{DoxyParamCaption}\item[{G4double}]{p\+Phi,  }\item[{G4double}]{p\+Theta }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+Phi} & The azimuthal angle in degrees. \\
+\hline
+{\em p\+Theta} & The polar angle in degrees. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/runner/work/\+OMSim/\+OMSim/effective\+\_\+area/include/\mbox{\hyperlink{_o_m_sim_simple_g_p_s_beams_8hh}{OMSim\+Simple\+GPSBeams.\+hh}}\item 
+/home/runner/work/\+OMSim/\+OMSim/effective\+\_\+area/src/\mbox{\hyperlink{_o_m_sim_simple_g_p_s_beams_8cc}{OMSim\+Simple\+GPSBeams.\+cc}}\end{DoxyCompactItemize}

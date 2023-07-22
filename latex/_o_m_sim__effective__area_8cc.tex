@@ -1,0 +1,63 @@
+\hypertarget{_o_m_sim__effective__area_8cc}{}\doxysection{/home/runner/work/\+OMSim/\+OMSim/\+OMSim\+\_\+effective\+\_\+area.cc File Reference}
+\label{_o_m_sim__effective__area_8cc}\index{/home/runner/work/OMSim/OMSim/OMSim\_effective\_area.cc@{/home/runner/work/OMSim/OMSim/OMSim\_effective\_area.cc}}
+
+
+Main for the calculation of effective areas.  
+
+
+Include dependency graph for OMSim\+\_\+effective\+\_\+area.\+cc\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_o_m_sim__effective__area_8cc__incl}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Detailed Description}
+The effective area of a module is calculated simulating a plane wave from a certain direction. The photon generation is made with the module \mbox{\hyperlink{class_angular_scan}{Angular\+Scan}}, running the method run\+Single\+Angular\+Scan(phi, theta) once for each direction to be investigated. Important command line arguments\+:
+
+\begin{DoxyParagraph}{--input-\/file (-\/i)}
+The input file to be processed. This should be a valid file path.
+\end{DoxyParagraph}
+\begin{DoxyParagraph}{--output-\/file (-\/o)}
+The output file to which the results should be written. This should be a valid file path.
+\end{DoxyParagraph}
+\begin{DoxyParagraph}{--verbose (-\/v)}
+Enables verbose mode, providing detailed logging information.
+\end{DoxyParagraph}
+\begin{DoxyParagraph}{--threads (-\/t)}
+Specifies the number of threads to use for processing. This should be an integer.
+\end{DoxyParagraph}
+\begin{DoxyParagraph}{--phi (-\/p)}
+The phi angle for the plane wave simulation. This should be a float.
+\end{DoxyParagraph}
+\begin{DoxyParagraph}{--theta (-\/t)}
+The theta angle for the plane wave simulation. This should be a float.
+\end{DoxyParagraph}
+\begin{DoxyParagraph}{--seed (-\/s)}
+The seed for the random number generator. This should be an integer. 
+\end{DoxyParagraph}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{_o_m_sim__effective__area_8cc_a7bd7dd668d147313cbdf684d9d29c0b0}{OMSim}} ()
+\item 
+int \mbox{\hyperlink{_o_m_sim__effective__area_8cc_a0ddf1224851353fc92bfbff6f499fa97}{main}} (int argc, char $\ast$argv\mbox{[}$\,$\mbox{]})
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{_o_m_sim__effective__area_8cc_a0ddf1224851353fc92bfbff6f499fa97}\label{_o_m_sim__effective__area_8cc_a0ddf1224851353fc92bfbff6f499fa97}} 
+\index{OMSim\_effective\_area.cc@{OMSim\_effective\_area.cc}!main@{main}}
+\index{main@{main}!OMSim\_effective\_area.cc@{OMSim\_effective\_area.cc}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}\item[{int}]{argc,  }\item[{char $\ast$}]{argv\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_o_m_sim__effective__area_8cc_a7bd7dd668d147313cbdf684d9d29c0b0}\label{_o_m_sim__effective__area_8cc_a7bd7dd668d147313cbdf684d9d29c0b0}} 
+\index{OMSim\_effective\_area.cc@{OMSim\_effective\_area.cc}!OMSim@{OMSim}}
+\index{OMSim@{OMSim}!OMSim\_effective\_area.cc@{OMSim\_effective\_area.cc}}
+\doxysubsubsection{\texorpdfstring{OMSim()}{OMSim()}}
+{\footnotesize\ttfamily int OMSim (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
