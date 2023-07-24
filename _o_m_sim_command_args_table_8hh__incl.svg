@@ -12,7 +12,7 @@
 <!-- Node1 -->
 <g id="node1" class="node">
 <title>Node1</title>
-<g id="a_node1"><a xlink:title=" ">
+<g id="a_node1"><a xlink:title="Definition of the OMSimCommandArgsTable singleton class, which controls user args.">
 <polygon fill="#bfbfbf" stroke="black" points="102,-56.5 102,-75.5 266,-75.5 266,-56.5 102,-56.5"/>
 <text text-anchor="middle" x="184" y="-63.5" font-family="Helvetica,sans-Serif" font-size="10.00">OMSimCommandArgsTable.hh</text>
 </a>

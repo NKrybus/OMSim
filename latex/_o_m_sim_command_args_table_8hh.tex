@@ -1,5 +1,10 @@
 \hypertarget{_o_m_sim_command_args_table_8hh}{}\doxysection{OMSim\+Command\+Args\+Table.\+hh File Reference}
 \label{_o_m_sim_command_args_table_8hh}\index{OMSimCommandArgsTable.hh@{OMSimCommandArgsTable.hh}}
+
+
+Definition of the \mbox{\hyperlink{class_o_m_sim_command_args_table}{OMSim\+Command\+Args\+Table}} singleton class, which controls user args.  
+
+
 Include dependency graph for OMSim\+Command\+Args\+Table.\+hh\+:
 \nopagebreak
 \begin{figure}[H]
@@ -16,16 +21,22 @@ This graph shows which files directly or indirectly include this file\+:
 \includegraphics[width=350pt]{_o_m_sim_command_args_table_8hh__dep__incl}
 \end{center}
 \end{figure}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyAuthor}{Author}
+Martin Unland, 
+\end{DoxyAuthor}
 \doxysubsection*{Classes}
 \begin{DoxyCompactItemize}
 \item 
 class \mbox{\hyperlink{class_o_m_sim_command_args_table}{OMSim\+Command\+Args\+Table}}
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em A singleton class used to hold and manipulate OMSim command arguments. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Macros}
 \begin{DoxyCompactItemize}
 \item 
 \#define \mbox{\hyperlink{_o_m_sim_command_args_table_8hh_aa41bdc30fcdd046324b69c10b14d4524}{WRITE\+\_\+\+TO\+\_\+\+JSON\+\_\+\+IF\+\_\+\+TYPE\+\_\+\+MATCHES}}(VARIANT,  TYPE)
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Writes a key-\/value pair to a JSON file if the value type matches TYPE. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{Macro Definition Documentation}
@@ -44,3 +55,6 @@ class \mbox{\hyperlink{class_o_m_sim_command_args_table}{OMSim\+Command\+Args\+T
 \DoxyCodeLine{    \}}
 
 \end{DoxyCode}
+\begin{DoxyNote}{Note}
+This macro is used inside the {\ttfamily \mbox{\hyperlink{class_o_m_sim_command_args_table_a6fb17dd732c161995c47d89d21042b6e}{OMSim\+Command\+Args\+Table\+::write\+To\+Json()}}} method. 
+\end{DoxyNote}

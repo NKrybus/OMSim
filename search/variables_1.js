@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['basename_906',['basename',['../structarg__file.html#a0765b5bbb8698b4e4c93b8613010568b',1,'arg_file']]],
-  ['blanklinetoken_907',['BlankLineToken',['../namespace_c_a_d_mesh_1_1_file.html#a52dbab7b4730ccb08a07f813a7b44a74',1,'CADMesh::File']]]
+  ['blanklinetoken_776',['BlankLineToken',['../namespace_c_a_d_mesh_1_1_file.html#a52dbab7b4730ccb08a07f813a7b44a74',1,'CADMesh::File']]]
 ];

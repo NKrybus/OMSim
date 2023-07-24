@@ -26,16 +26,6 @@ var hierarchy =
       [ "pDOM", "classp_d_o_m.html", null ]
     ] ],
     [ "AngularScan", "class_angular_scan.html", null ],
-    [ "arg_date", "structarg__date.html", null ],
-    [ "arg_dbl", "structarg__dbl.html", null ],
-    [ "arg_end", "structarg__end.html", null ],
-    [ "arg_file", "structarg__file.html", null ],
-    [ "arg_hdr", "structarg__hdr.html", null ],
-    [ "arg_int", "structarg__int.html", null ],
-    [ "arg_lit", "structarg__lit.html", null ],
-    [ "arg_rem", "structarg__rem.html", null ],
-    [ "arg_rex", "structarg__rex.html", null ],
-    [ "arg_str", "structarg__str.html", null ],
     [ "CADMesh::CADMeshTemplate< T >", "class_c_a_d_mesh_1_1_c_a_d_mesh_template.html", null ],
     [ "CADMesh::CADMeshTemplate< TessellatedMesh >", "class_c_a_d_mesh_1_1_c_a_d_mesh_template.html", [
       [ "CADMesh::TessellatedMesh", "class_c_a_d_mesh_1_1_tessellated_mesh.html", null ]

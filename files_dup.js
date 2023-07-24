@@ -4,7 +4,6 @@ var files_dup =
     [ "abcDetectorComponent.hh", "abc_detector_component_8hh.html", [
       [ "Component", "structabc_detector_component_1_1_component.html", "structabc_detector_component_1_1_component" ]
     ] ],
-    [ "argtable2.h", "argtable2_8h.html", "argtable2_8h" ],
     [ "CADMesh.hh", "_c_a_d_mesh_8hh.html", "_c_a_d_mesh_8hh" ],
     [ "common.h", "common_8h.html", null ],
     [ "effectiveArea.h", "effective_area_8h.html", null ],

@@ -2,6 +2,7 @@ var group__common =
 [
     [ "Installing Geant4", "index.html#autotoc_md2", null ],
     [ "Compiling OMSim", "index.html#autotoc_md3", null ],
+    [ "OMSimCommandArgsTable.hh", "_o_m_sim_command_args_table_8hh.html", null ],
     [ "OMSimUIinterface.hh", "_o_m_sim_u_iinterface_8hh.html", null ],
     [ "abcDetectorComponent.cc", "abc_detector_component_8cc.html", null ],
     [ "OMSimDataFileTypes.cc", "_o_m_sim_data_file_types_8cc.html", null ],
@@ -50,6 +51,16 @@ var group__common =
       [ "mRedVis", "classabc_detector_component.html#ad11572a6790aec6251f863a3899452af", null ],
       [ "mSteelVis", "classabc_detector_component.html#ad57eb4a0be4c50d570d436d559178ba3", null ],
       [ "mWhite", "classabc_detector_component.html#ad57a37961439b26587d55ba4e3c6603b", null ]
+    ] ],
+    [ "OMSimCommandArgsTable", "class_o_m_sim_command_args_table.html", [
+      [ "Key", "class_o_m_sim_command_args_table.html#a83cfd0564d03cb198f91926cd5c4f731", null ],
+      [ "Value", "class_o_m_sim_command_args_table.html#a696523e7750390e2a8f1cc4dd9871ddc", null ],
+      [ "finalize", "class_o_m_sim_command_args_table.html#acd0700b601ac3b3279657ad1bc1363e8", null ],
+      [ "get", "class_o_m_sim_command_args_table.html#ae82f3f1a5af7b4db346bca48727794d9", null ],
+      [ "getInstance", "class_o_m_sim_command_args_table.html#a2a6179839e4ed5f503e52fca917c84c2", null ],
+      [ "keyExists", "class_o_m_sim_command_args_table.html#a1a27862e2bad8372154ce2d88c31cc3c", null ],
+      [ "setParameter", "class_o_m_sim_command_args_table.html#a763a528077ea65f06d7905c962a62587", null ],
+      [ "writeToJson", "class_o_m_sim_command_args_table.html#a6fb17dd732c161995c47d89d21042b6e", null ]
     ] ],
     [ "abcDataFile", "classabc_data_file.html", [
       [ "abcDataFile", "classabc_data_file.html#afa294a5fd58c6c3911d1a57683f7688a", null ],

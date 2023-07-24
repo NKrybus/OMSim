@@ -246,7 +246,7 @@
 <!-- Node40 -->
 <g id="node40" class="node">
 <title>Node40</title>
-<g id="a_node40"><a xlink:href="_o_m_sim_command_args_table_8hh.html" target="_top" xlink:title=" ">
+<g id="a_node40"><a xlink:href="_o_m_sim_command_args_table_8hh.html" target="_top" xlink:title="Definition of the OMSimCommandArgsTable singleton class, which controls user args.">
 <polygon fill="white" stroke="black" points="2039.5,-291.5 2039.5,-310.5 2203.5,-310.5 2203.5,-291.5 2039.5,-291.5"/>
 <text text-anchor="middle" x="2121.5" y="-298.5" font-family="Helvetica,sans-Serif" font-size="10.00">OMSimCommandArgsTable.hh</text>
 </a>

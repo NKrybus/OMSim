@@ -1,6 +1,14 @@
 \hypertarget{class_o_m_sim_command_args_table}{}\doxysection{OMSim\+Command\+Args\+Table Class Reference}
 \label{class_o_m_sim_command_args_table}\index{OMSimCommandArgsTable@{OMSimCommandArgsTable}}
-\doxysubsection*{Public Types}
+
+
+A singleton class used to hold and manipulate OMSim command arguments.  
+
+
+
+
+\doxysubsection{Detailed Description}
+This class uses a map to hold key-\/value pairs of simulation command arguments. In principle it is just a wrapper around the map created by the boost library to avoid users changing the arg values after initialisation. The class also provides a method to write the parameters to a JSON file. \doxysubsection*{Public Types}
 \begin{DoxyCompactItemize}
 \item 
 using \mbox{\hyperlink{class_o_m_sim_command_args_table_a83cfd0564d03cb198f91926cd5c4f731}{Key}} = std\+::string
@@ -11,20 +19,20 @@ using \mbox{\hyperlink{class_o_m_sim_command_args_table_a696523e7750390e2a8f1cc4
 \begin{DoxyCompactItemize}
 \item 
 void \mbox{\hyperlink{class_o_m_sim_command_args_table_a763a528077ea65f06d7905c962a62587}{set\+Parameter}} (const \mbox{\hyperlink{class_o_m_sim_command_args_table_a83cfd0564d03cb198f91926cd5c4f731}{Key}} \&key, const \mbox{\hyperlink{class_o_m_sim_command_args_table_a696523e7750390e2a8f1cc4dd9871ddc}{Value}} \&value)
-\item 
+\begin{DoxyCompactList}\small\item\em Sets a parameter in the arg table. \end{DoxyCompactList}\item 
 {\footnotesize template$<$typename T $>$ }\\T \mbox{\hyperlink{class_o_m_sim_command_args_table_ae82f3f1a5af7b4db346bca48727794d9}{get}} (const std\+::string \&key)
-\item 
+\begin{DoxyCompactList}\small\item\em Retrieves a parameter from the table. \end{DoxyCompactList}\item 
 bool \mbox{\hyperlink{class_o_m_sim_command_args_table_a1a27862e2bad8372154ce2d88c31cc3c}{key\+Exists}} (const \mbox{\hyperlink{class_o_m_sim_command_args_table_a83cfd0564d03cb198f91926cd5c4f731}{Key}} \&key) const
 \item 
 void \mbox{\hyperlink{class_o_m_sim_command_args_table_a6fb17dd732c161995c47d89d21042b6e}{write\+To\+Json}} (std\+::string l\+File\+Name)
-\item 
+\begin{DoxyCompactList}\small\item\em Writes the parameters to a JSON-\/formatted file. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_o_m_sim_command_args_table_acd0700b601ac3b3279657ad1bc1363e8}{finalize}} ()
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Finalizes the table, preventing any further modifications. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Static Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
 static \mbox{\hyperlink{class_o_m_sim_command_args_table}{OMSim\+Command\+Args\+Table}} \& \mbox{\hyperlink{class_o_m_sim_command_args_table_a2a6179839e4ed5f503e52fca917c84c2}{get\+Instance}} ()
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Retrieves the instance of the singleton. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{Member Typedef Documentation}
@@ -56,12 +64,28 @@ static \mbox{\hyperlink{class_o_m_sim_command_args_table}{OMSim\+Command\+Args\+
 {\footnotesize\ttfamily template$<$typename T $>$ \\
 T OMSim\+Command\+Args\+Table\+::get (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{key }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
+
+\begin{DoxyParams}{Parameters}
+{\em key} & The key for the parameter. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The parameter value. 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em std\+::invalid\+\_\+argument} & If the parameter is not of type T, or if the key does not exist. \\
+\hline
+\end{DoxyExceptions}
 \mbox{\Hypertarget{class_o_m_sim_command_args_table_a2a6179839e4ed5f503e52fca917c84c2}\label{class_o_m_sim_command_args_table_a2a6179839e4ed5f503e52fca917c84c2}} 
 \index{OMSimCommandArgsTable@{OMSimCommandArgsTable}!getInstance@{getInstance}}
 \index{getInstance@{getInstance}!OMSimCommandArgsTable@{OMSimCommandArgsTable}}
 \doxysubsubsection{\texorpdfstring{getInstance()}{getInstance()}}
 {\footnotesize\ttfamily static \mbox{\hyperlink{class_o_m_sim_command_args_table}{OMSim\+Command\+Args\+Table}}\& OMSim\+Command\+Args\+Table\+::get\+Instance (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
 
+\begin{DoxyReturn}{Returns}
+The instance of \mbox{\hyperlink{class_o_m_sim_command_args_table}{OMSim\+Command\+Args\+Table}}. 
+\end{DoxyReturn}
 \mbox{\Hypertarget{class_o_m_sim_command_args_table_a1a27862e2bad8372154ce2d88c31cc3c}\label{class_o_m_sim_command_args_table_a1a27862e2bad8372154ce2d88c31cc3c}} 
 \index{OMSimCommandArgsTable@{OMSimCommandArgsTable}!keyExists@{keyExists}}
 \index{keyExists@{keyExists}!OMSimCommandArgsTable@{OMSimCommandArgsTable}}
@@ -74,12 +98,34 @@ T OMSim\+Command\+Args\+Table\+::get (\begin{DoxyParamCaption}\item[{const std\+
 \doxysubsubsection{\texorpdfstring{setParameter()}{setParameter()}}
 {\footnotesize\ttfamily void OMSim\+Command\+Args\+Table\+::set\+Parameter (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_o_m_sim_command_args_table_a83cfd0564d03cb198f91926cd5c4f731}{Key}} \&}]{key,  }\item[{const \mbox{\hyperlink{class_o_m_sim_command_args_table_a696523e7750390e2a8f1cc4dd9871ddc}{Value}} \&}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
+
+\begin{DoxyParams}{Parameters}
+{\em key} & The key for the parameter. \\
+\hline
+{\em value} & The value for the parameter. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em std\+::runtime\+\_\+error} & If the table is already finalized (i.\+e. somebody is trying to set a new arg parameter after args were parsed (?!)). \\
+\hline
+\end{DoxyExceptions}
 \mbox{\Hypertarget{class_o_m_sim_command_args_table_a6fb17dd732c161995c47d89d21042b6e}\label{class_o_m_sim_command_args_table_a6fb17dd732c161995c47d89d21042b6e}} 
 \index{OMSimCommandArgsTable@{OMSimCommandArgsTable}!writeToJson@{writeToJson}}
 \index{writeToJson@{writeToJson}!OMSimCommandArgsTable@{OMSimCommandArgsTable}}
 \doxysubsubsection{\texorpdfstring{writeToJson()}{writeToJson()}}
 {\footnotesize\ttfamily void OMSim\+Command\+Args\+Table\+::write\+To\+Json (\begin{DoxyParamCaption}\item[{std\+::string}]{l\+File\+Name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
+
+\begin{DoxyParams}{Parameters}
+{\em l\+File\+Name} & The name of the JSON file. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em std\+::runtime\+\_\+error} & If the file fails to open. \\
+\hline
+\end{DoxyExceptions}
 
 
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
