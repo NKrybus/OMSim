@@ -16,8 +16,41 @@ During the design of a module its sensitivity is optimised by considering the op
 
 After simulating \$N\$ photons from a plane of area $A_{\mathrm{rad}}$ (which has to be larger than the projected area of the \mbox{\hyperlink{classm_d_o_m}{m\+DOM}}), the effective area is calculated as \[ A_{\mathrm{eff}}(\theta, \phi) = \frac{N_{\mathrm{det}}(\theta, \phi)}{N}\cdot A_{\mathrm{rad}}, \] where $N_{\mathrm{det}}$ is the number of photons detected by the module. To optimise the sensitivity over multiple directions, $A_{\mathrm{eff}}(\theta, \phi)$ is calculated for various angle pairs, and the mean effective area, $\overline{A}_{\mathrm{eff}}$, is determined. The $n$ angle pairs are chosen using healpix, which separates a sphere into $n$ pixels of equal area. Thus, \[ \overline{A}_{\mathrm{eff}} = \frac{1}{n}\sum_{i=1}^n A_{\mathrm{eff}}(\theta_i, \phi_i). \]
 
-Since the effective area is wavelength dependent, the calculation must be repeated for different wavelengths. Wavelengths shorter than 300nm are absorbed by the pressure vessel, whereas the QE of the PMT approaches zero at wavelengths longer than 700nm.\hypertarget{group___effective_area_exampleEA}{}\doxysubsubsection{Example using healpix}\label{group___effective_area_exampleEA}
-In the following a toy example of the usage of the effective area module is given. Although there are c++ healpix libraries, in my opinion the easiest way of getting the angle pair coordinates is using Healpy in python. You can just save the angle pairs in a text file and load them in OMSim. ~\newline
+Since the effective area is wavelength dependent, the calculation must be repeated for different wavelengths. Wavelengths shorter than 300nm are absorbed by the pressure vessel, whereas the QE of the PMT approaches zero at wavelengths longer than 700nm.\hypertarget{group___effective_area_exampleEA}{}\doxysubsubsection{Example using healpy}\label{group___effective_area_exampleEA}
+In the following a toy example of the usage of the effective area module is given. Although there are c++ healpix libraries, in my opinion the easiest way of getting the angle pair coordinates is using Healpy in python.
+
+In principle for short simulations you could run OMSim directly from python using the angles from healpy as input parameters\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keyword}{import} healpy \textcolor{keyword}{as} hp}
+\DoxyCodeLine{\textcolor{keyword}{import} numpy \textcolor{keyword}{as} np}
+\DoxyCodeLine{\textcolor{keyword}{from} os \textcolor{keyword}{import} system}
+\DoxyCodeLine{}
+\DoxyCodeLine{NSIDE=8 \textcolor{comment}{\#only powers of 2 allowed, the larger, the more pixels are calculated}}
+\DoxyCodeLine{NPIX=hp.nside2npix(NSIDE)}
+\DoxyCodeLine{thetas, phis = np.degrees(hp.pix2ang(nside=8,ipix=np.arange(NPIX)))}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{keywordflow}{for} theta, phi \textcolor{keywordflow}{in} zip(thetas, phis):}
+\DoxyCodeLine{     system(\textcolor{stringliteral}{"{}./OMSim\_effective\_area -\/n 10000 -\/e 1 -\/d 460 -\/q -\/m 1 -\/c -\/t  "{}}+str(g[0,i])+\textcolor{stringliteral}{"{} -\/f "{}}+str(g[1,i])+ \textcolor{stringliteral}{"{} -\/o Data\_mDOM\_new.txt"{}})}
+
+\end{DoxyCode}
+
+
+However, this is {\bfseries{very}} inefficient. The best is to save the angle pairs into a file and pass it as argument. If you give a file as argument, the arg theta and phi are ignored.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keyword}{import} healpy \textcolor{keyword}{as} hp}
+\DoxyCodeLine{\textcolor{keyword}{import} numpy \textcolor{keyword}{as} np}
+\DoxyCodeLine{\textcolor{keyword}{from} os \textcolor{keyword}{import} system}
+\DoxyCodeLine{}
+\DoxyCodeLine{NSIDE=8 \textcolor{comment}{\#only powers of 2 allowed, the larger, the more pixels are calculated}}
+\DoxyCodeLine{NPIX=hp.nside2npix(NSIDE)}
+\DoxyCodeLine{thetas, phis = np.degrees(hp.pix2ang(nside=8,ipix=np.arange(NPIX)))}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{keywordflow}{for} theta, phi \textcolor{keywordflow}{in} zip(thetas, phis):}
+\DoxyCodeLine{     system(\textcolor{stringliteral}{"{}./OMSim\_effective\_area -\/n 10000 -\/e 1 -\/d 460 -\/q -\/m 1 -\/c -\/t  "{}}+str(g[0,i])+\textcolor{stringliteral}{"{} -\/f "{}}+str(g[1,i])+ \textcolor{stringliteral}{"{} -\/o Data\_mDOM\_new.txt"{}})}
+
+\end{DoxyCode}
  \doxysubsection*{Files}
 \begin{DoxyCompactItemize}
 \item 

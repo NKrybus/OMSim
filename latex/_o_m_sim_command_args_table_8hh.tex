@@ -1,5 +1,5 @@
-\hypertarget{_o_m_sim_command_args_table_8hh}{}\doxysection{/home/runner/work/\+OMSim/\+OMSim/common/include/\+OMSim\+Command\+Args\+Table.hh File Reference}
-\label{_o_m_sim_command_args_table_8hh}\index{/home/runner/work/OMSim/OMSim/common/include/OMSimCommandArgsTable.hh@{/home/runner/work/OMSim/OMSim/common/include/OMSimCommandArgsTable.hh}}
+\hypertarget{_o_m_sim_command_args_table_8hh}{}\doxysection{OMSim\+Command\+Args\+Table.\+hh File Reference}
+\label{_o_m_sim_command_args_table_8hh}\index{OMSimCommandArgsTable.hh@{OMSimCommandArgsTable.hh}}
 Include dependency graph for OMSim\+Command\+Args\+Table.\+hh\+:
 \nopagebreak
 \begin{figure}[H]
@@ -21,3 +21,26 @@ This graph shows which files directly or indirectly include this file\+:
 \item 
 class \mbox{\hyperlink{class_o_m_sim_command_args_table}{OMSim\+Command\+Args\+Table}}
 \end{DoxyCompactItemize}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{_o_m_sim_command_args_table_8hh_aa41bdc30fcdd046324b69c10b14d4524}{WRITE\+\_\+\+TO\+\_\+\+JSON\+\_\+\+IF\+\_\+\+TYPE\+\_\+\+MATCHES}}(VARIANT,  TYPE)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{_o_m_sim_command_args_table_8hh_aa41bdc30fcdd046324b69c10b14d4524}\label{_o_m_sim_command_args_table_8hh_aa41bdc30fcdd046324b69c10b14d4524}} 
+\index{OMSimCommandArgsTable.hh@{OMSimCommandArgsTable.hh}!WRITE\_TO\_JSON\_IF\_TYPE\_MATCHES@{WRITE\_TO\_JSON\_IF\_TYPE\_MATCHES}}
+\index{WRITE\_TO\_JSON\_IF\_TYPE\_MATCHES@{WRITE\_TO\_JSON\_IF\_TYPE\_MATCHES}!OMSimCommandArgsTable.hh@{OMSimCommandArgsTable.hh}}
+\doxysubsubsection{\texorpdfstring{WRITE\_TO\_JSON\_IF\_TYPE\_MATCHES}{WRITE\_TO\_JSON\_IF\_TYPE\_MATCHES}}
+{\footnotesize\ttfamily \#define WRITE\+\_\+\+TO\+\_\+\+JSON\+\_\+\+IF\+\_\+\+TYPE\+\_\+\+MATCHES(\begin{DoxyParamCaption}\item[{}]{VARIANT,  }\item[{}]{TYPE }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{    \textcolor{keywordflow}{if} (type == \textcolor{keyword}{typeid}(TYPE)) \{                       \(\backslash\)}
+\DoxyCodeLine{        outFile << \textcolor{stringliteral}{"{}\(\backslash\)t\(\backslash\)"{}"{}} << kv.first << \textcolor{stringliteral}{"{}\(\backslash\)"{}: "{}}       \(\backslash\)}
+\DoxyCodeLine{        << boost::any\_cast<TYPE>(VARIANT) << \textcolor{stringliteral}{"{},\(\backslash\)n"{}};   \(\backslash\)}
+\DoxyCodeLine{        continue;                                     \(\backslash\)}
+\DoxyCodeLine{    \}}
+
+\end{DoxyCode}

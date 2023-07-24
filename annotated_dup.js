@@ -34,6 +34,7 @@ var annotated_dup =
     [ "DEGG", "class_d_e_g_g.html", "class_d_e_g_g" ],
     [ "DEggHarness", "class_d_egg_harness.html", "class_d_egg_harness" ],
     [ "GlobalPosition", "struct_global_position.html", "struct_global_position" ],
+    [ "HitStats", "struct_hit_stats.html", "struct_hit_stats" ],
     [ "IceCubeIce", "class_ice_cube_ice.html", "class_ice_cube_ice" ],
     [ "InputDataManager", "class_input_data_manager.html", "class_input_data_manager" ],
     [ "LOM16", "class_l_o_m16.html", "class_l_o_m16" ],

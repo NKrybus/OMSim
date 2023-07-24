@@ -1,18 +1,18 @@
-<map id="/home/runner/work/OMSim/OMSim/effective_area/src/OMSimSimpleGPSBeams.cc" name="/home/runner/work/OMSim/OMSim/effective_area/src/OMSimSimpleGPSBeams.cc">
-<area shape="rect" id="node1" title="Defines the AngularScan class for simple GPS beam configurations." alt="" coords="343,5,573,61"/>
-<area shape="rect" id="node2" href="$_o_m_sim_simple_g_p_s_beams_8hh.html" title=" " alt="" coords="93,109,298,136"/>
-<area shape="rect" id="node4" href="$_o_m_sim_u_iinterface_8hh.html" title="The OMSimUIinterface class provides a singleton interface to Geant4&#39;s UI manager." alt="" coords="377,109,539,136"/>
-<area shape="rect" id="node16" title=" " alt="" coords="563,109,721,136"/>
-<area shape="rect" id="node3" title=" " alt="" coords="5,259,95,285"/>
-<area shape="rect" id="node5" title=" " alt="" coords="358,184,433,211"/>
-<area shape="rect" id="node6" title=" " alt="" coords="565,259,623,285"/>
-<area shape="rect" id="node7" title=" " alt="" coords="457,184,587,211"/>
-<area shape="rect" id="node8" href="$_o_m_sim_logger_8hh.html" title=" " alt="" coords="663,184,795,211"/>
-<area shape="rect" id="node11" href="$_o_m_sim_command_args_table_8hh.html" title=" " alt="" coords="115,184,334,211"/>
-<area shape="rect" id="node9" title=" " alt="" coords="671,259,738,285"/>
-<area shape="rect" id="node10" title=" " alt="" coords="762,259,826,285"/>
-<area shape="rect" id="node12" title=" " alt="" coords="255,259,306,285"/>
-<area shape="rect" id="node13" title=" " alt="" coords="331,259,399,285"/>
-<area shape="rect" id="node14" title=" " alt="" coords="423,259,509,285"/>
-<area shape="rect" id="node15" title=" " alt="" coords="119,259,231,285"/>
+<map id="OMSimSimpleGPSBeams.cc" name="OMSimSimpleGPSBeams.cc">
+<area shape="rect" id="node1" title="Defines the AngularScan class for simple GPS beam configurations." alt="" coords="357,5,559,32"/>
+<area shape="rect" id="node2" href="$_o_m_sim_simple_g_p_s_beams_8hh.html" title=" " alt="" coords="93,80,298,107"/>
+<area shape="rect" id="node4" href="$_o_m_sim_u_iinterface_8hh.html" title="The OMSimUIinterface class provides a singleton interface to Geant4&#39;s UI manager." alt="" coords="377,80,539,107"/>
+<area shape="rect" id="node16" title=" " alt="" coords="563,80,721,107"/>
+<area shape="rect" id="node3" title=" " alt="" coords="5,229,95,256"/>
+<area shape="rect" id="node5" title=" " alt="" coords="358,155,433,181"/>
+<area shape="rect" id="node6" title=" " alt="" coords="565,229,623,256"/>
+<area shape="rect" id="node7" title=" " alt="" coords="457,155,587,181"/>
+<area shape="rect" id="node8" href="$_o_m_sim_logger_8hh.html" title=" " alt="" coords="663,155,795,181"/>
+<area shape="rect" id="node11" href="$_o_m_sim_command_args_table_8hh.html" title=" " alt="" coords="115,155,334,181"/>
+<area shape="rect" id="node9" title=" " alt="" coords="671,229,738,256"/>
+<area shape="rect" id="node10" title=" " alt="" coords="762,229,826,256"/>
+<area shape="rect" id="node12" title=" " alt="" coords="255,229,306,256"/>
+<area shape="rect" id="node13" title=" " alt="" coords="331,229,399,256"/>
+<area shape="rect" id="node14" title=" " alt="" coords="423,229,509,256"/>
+<area shape="rect" id="node15" title=" " alt="" coords="119,229,231,256"/>
 </map>

@@ -137,6 +137,10 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ae82f3f1a5af7b4db346bca48727794d9"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
 <tr class="memitem:ae82f3f1a5af7b4db346bca48727794d9"><td class="memTemplItemLeft" align="right" valign="top">T&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_o_m_sim_command_args_table.html#ae82f3f1a5af7b4db346bca48727794d9">get</a> (const std::string &amp;key)</td></tr>
 <tr class="separator:ae82f3f1a5af7b4db346bca48727794d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1a27862e2bad8372154ce2d88c31cc3c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_m_sim_command_args_table.html#a1a27862e2bad8372154ce2d88c31cc3c">keyExists</a> (const <a class="el" href="class_o_m_sim_command_args_table.html#a83cfd0564d03cb198f91926cd5c4f731">Key</a> &amp;key) const</td></tr>
+<tr class="separator:a1a27862e2bad8372154ce2d88c31cc3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6fb17dd732c161995c47d89d21042b6e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_m_sim_command_args_table.html#a6fb17dd732c161995c47d89d21042b6e">writeToJson</a> (std::string lFileName)</td></tr>
+<tr class="separator:a6fb17dd732c161995c47d89d21042b6e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acd0700b601ac3b3279657ad1bc1363e8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_m_sim_command_args_table.html#acd0700b601ac3b3279657ad1bc1363e8">finalize</a> ()</td></tr>
 <tr class="separator:acd0700b601ac3b3279657ad1bc1363e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -253,6 +257,32 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
+<a id="a1a27862e2bad8372154ce2d88c31cc3c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1a27862e2bad8372154ce2d88c31cc3c">&#9670;&nbsp;</a></span>keyExists()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool OMSimCommandArgsTable::keyExists </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_o_m_sim_command_args_table.html#a83cfd0564d03cb198f91926cd5c4f731">Key</a> &amp;&#160;</td>
+          <td class="paramname"><em>key</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a763a528077ea65f06d7905c962a62587"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a763a528077ea65f06d7905c962a62587">&#9670;&nbsp;</a></span>setParameter()</h2>
 
@@ -289,8 +319,34 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
+<a id="a6fb17dd732c161995c47d89d21042b6e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6fb17dd732c161995c47d89d21042b6e">&#9670;&nbsp;</a></span>writeToJson()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void OMSimCommandArgsTable::writeToJson </td>
+          <td>(</td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>lFileName</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>/home/runner/work/OMSim/OMSim/common/include/<a class="el" href="_o_m_sim_command_args_table_8hh_source.html">OMSimCommandArgsTable.hh</a></li>
+<li><a class="el" href="_o_m_sim_command_args_table_8hh_source.html">OMSimCommandArgsTable.hh</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
@@ -298,7 +354,7 @@ template&lt;typename T &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="class_o_m_sim_command_args_table.html">OMSimCommandArgsTable</a></li>
-    <li class="footer">Generated on Sat Jul 22 2023 16:15:44 for OMSim by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Mon Jul 24 2023 13:03:50 for OMSim by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

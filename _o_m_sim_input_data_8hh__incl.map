@@ -1,9 +1,9 @@
-<map id="/home/runner/work/OMSim/OMSim/common/include/OMSimInputData.hh" name="/home/runner/work/OMSim/OMSim/common/include/OMSimInputData.hh">
-<area shape="rect" id="node1" title=" " alt="" coords="391,5,587,61"/>
-<area shape="rect" id="node2" title=" " alt="" coords="5,109,156,151"/>
-<area shape="rect" id="node3" title=" " alt="" coords="180,109,331,151"/>
-<area shape="rect" id="node4" title=" " alt="" coords="355,117,470,143"/>
-<area shape="rect" id="node5" title=" " alt="" coords="495,117,637,143"/>
-<area shape="rect" id="node6" title=" " alt="" coords="661,117,852,143"/>
-<area shape="rect" id="node7" title=" " alt="" coords="876,117,1035,143"/>
+<map id="OMSimInputData.hh" name="OMSimInputData.hh">
+<area shape="rect" id="node1" title=" " alt="" coords="412,5,565,32"/>
+<area shape="rect" id="node2" title=" " alt="" coords="5,80,156,121"/>
+<area shape="rect" id="node3" title=" " alt="" coords="180,80,331,121"/>
+<area shape="rect" id="node4" title=" " alt="" coords="355,87,470,114"/>
+<area shape="rect" id="node5" title=" " alt="" coords="495,87,637,114"/>
+<area shape="rect" id="node6" title=" " alt="" coords="661,87,852,114"/>
+<area shape="rect" id="node7" title=" " alt="" coords="876,87,1035,114"/>
 </map>

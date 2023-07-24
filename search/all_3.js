@@ -23,10 +23,10 @@ var searchData=
   ['constructparticle_100',['ConstructParticle',['../class_o_m_sim_physics_list.html#a8bf61a70f663c754304fc56073e3ac95',1,'OMSimPhysicsList']]],
   ['constructprocess_101',['ConstructProcess',['../class_o_m_sim_physics_list.html#a52292caf7091b6a7666c07f29189a9d1',1,'OMSimPhysicsList']]],
   ['count_102',['count',['../structarg__date.html#a50d9e3b29f556f30830bf07e4cc3bda1',1,'arg_date::count()'],['../structarg__end.html#ae2996b25150e53ce4986c22f031492bd',1,'arg_end::count()'],['../structarg__file.html#a5390027dbb693cbcc7630c96e5bdde83',1,'arg_file::count()'],['../structarg__rex.html#aaf9bd8bfb7d71e067c33dcaaa172fcad',1,'arg_rex::count()'],['../structarg__str.html#aaa99fd17e707232cb78e96fafb003d4f',1,'arg_str::count()'],['../structarg__dbl.html#ab94e4d551bc7888e444dc1c7d040dfbb',1,'arg_dbl::count()'],['../structarg__int.html#ac27c689313154ed186702d101c8157db',1,'arg_int::count()'],['../structarg__lit.html#ab60f65d2cba968ee42e089047a39cf1c',1,'arg_lit::count()']]],
-  ['creatematerial_103',['createMaterial',['../classabc_material_data.html#abd444fe5c9bf9ea0ad3629e448bd0d4e',1,'abcMaterialData']]],
-  ['critical_104',['CRITICAL',['../_o_m_sim_logger_8hh.html#ae0233515480e60d29bcc731469976e02',1,'OMSimLogger.hh']]],
-  ['critical_5fcolour_105',['CRITICAL_COLOUR',['../_o_m_sim_logger_8hh.html#ae090dfefb34eb7a753d2bd5d39af3d27',1,'OMSimLogger.hh']]],
-  ['current_5fevent_5fid_106',['current_event_id',['../class_o_m_sim_analysis_manager.html#a3e2e791ff823c7b04edc57ceeaf9041d',1,'OMSimAnalysisManager']]],
+  ['counthits_103',['CountHits',['../class_o_m_sim_analysis_manager.html#a727c6c0fef3aedb8610e8925facbf76e',1,'OMSimAnalysisManager']]],
+  ['creatematerial_104',['createMaterial',['../classabc_material_data.html#abd444fe5c9bf9ea0ad3629e448bd0d4e',1,'abcMaterialData']]],
+  ['critical_105',['CRITICAL',['../_o_m_sim_logger_8hh.html#ae0233515480e60d29bcc731469976e02',1,'OMSimLogger.hh']]],
+  ['critical_5fcolour_106',['CRITICAL_COLOUR',['../_o_m_sim_logger_8hh.html#ae090dfefb34eb7a753d2bd5d39af3d27',1,'OMSimLogger.hh']]],
   ['exceptions_107',['Exceptions',['../namespace_c_a_d_mesh_1_1_exceptions.html',1,'CADMesh']]],
   ['file_108',['File',['../namespace_c_a_d_mesh_1_1_file.html',1,'CADMesh']]]
 ];

@@ -1,10 +1,10 @@
-<map id="/home/runner/work/OMSim/OMSim/common/include/OMSimMDOMFlasher.hh" name="/home/runner/work/OMSim/OMSim/common/include/OMSimMDOMFlasher.hh">
-<area shape="rect" id="node1" title=" " alt="" coords="563,5,759,61"/>
-<area shape="rect" id="node2" href="$_o_m_sim_m_d_o_m_8hh.html" title=" " alt="" coords="604,109,800,165"/>
-<area shape="rect" id="node3" href="$_o_m_sim_m_d_o_m_8cc.html" title="Construction of mDOM." alt="" coords="5,221,276,262"/>
-<area shape="rect" id="node4" href="$_o_m_sim_m_d_o_m_flasher_8cc.html" title=" " alt="" coords="301,221,618,262"/>
-<area shape="rect" id="node7" href="$_o_m_sim_detector_construction_8cc.html" title="User defined detector." alt="" coords="871,317,1123,373"/>
-<area shape="rect" id="node5" href="$_o_m_sim_m_d_o_m_harness_8cc.html" title="Construction of mDOM harness." alt="" coords="999,221,1322,262"/>
-<area shape="rect" id="node6" href="$_o_m_sim_detector_construction_8hh.html" title=" " alt="" coords="642,213,925,269"/>
-<area shape="rect" id="node8" href="$_o_m_sim__effective__area_8cc.html" title="Main for the calculation of effective areas." alt="" coords="651,317,847,373"/>
+<map id="OMSimMDOMFlasher.hh" name="OMSimMDOMFlasher.hh">
+<area shape="rect" id="node1" title=" " alt="" coords="301,5,481,32"/>
+<area shape="rect" id="node2" href="$_o_m_sim_m_d_o_m_8hh.html" title=" " alt="" coords="353,80,487,107"/>
+<area shape="rect" id="node3" href="$_o_m_sim_m_d_o_m_8cc.html" title="Construction of mDOM." alt="" coords="5,155,136,181"/>
+<area shape="rect" id="node4" href="$_o_m_sim_m_d_o_m_flasher_8cc.html" title=" " alt="" coords="160,155,339,181"/>
+<area shape="rect" id="node7" href="$_o_m_sim_detector_construction_8cc.html" title="User defined detector." alt="" coords="554,229,779,256"/>
+<area shape="rect" id="node5" href="$_o_m_sim_m_d_o_m_harness_8cc.html" title="Construction of mDOM harness." alt="" coords="664,155,848,181"/>
+<area shape="rect" id="node6" href="$_o_m_sim_detector_construction_8hh.html" title=" " alt="" coords="363,155,589,181"/>
+<area shape="rect" id="node8" href="$_o_m_sim__effective__area_8cc.html" title="Main for the calculation of effective areas." alt="" coords="343,229,529,256"/>
 </map>
