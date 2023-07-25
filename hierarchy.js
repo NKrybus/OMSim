@@ -57,6 +57,7 @@ var hierarchy =
     [ "CADMesh::File::Item", "struct_c_a_d_mesh_1_1_file_1_1_item.html", null ],
     [ "CADMesh::File::Lexer", "class_c_a_d_mesh_1_1_file_1_1_lexer.html", null ],
     [ "CADMesh::Mesh", "class_c_a_d_mesh_1_1_mesh.html", null ],
+    [ "OMSim", "class_o_m_sim.html", null ],
     [ "OMSimAnalysisManager", "class_o_m_sim_analysis_manager.html", null ],
     [ "OMSimCommandArgsTable", "class_o_m_sim_command_args_table.html", null ],
     [ "OMSimPMTResponse", "class_o_m_sim_p_m_t_response.html", null ],

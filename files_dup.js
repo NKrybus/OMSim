@@ -7,6 +7,10 @@ var files_dup =
     [ "CADMesh.hh", "_c_a_d_mesh_8hh.html", "_c_a_d_mesh_8hh" ],
     [ "common.h", "common_8h.html", null ],
     [ "effectiveArea.h", "effective_area_8h.html", null ],
+    [ "OMSim.cc", "_o_m_sim_8cc.html", null ],
+    [ "OMSim.h", "_o_m_sim_8h.html", [
+      [ "OMSim", "class_o_m_sim.html", "class_o_m_sim" ]
+    ] ],
     [ "OMSim_effective_area.cc", "_o_m_sim__effective__area_8cc.html", "_o_m_sim__effective__area_8cc" ],
     [ "OMSimAnalysisManager.cc", "_o_m_sim_analysis_manager_8cc.html", null ],
     [ "OMSimAnalysisManager.hh", "_o_m_sim_analysis_manager_8hh.html", [

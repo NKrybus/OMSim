@@ -1,5 +1,7 @@
 <map id="OMSimPrimaryGeneratorAction.hh" name="OMSimPrimaryGeneratorAction.hh">
-<area shape="rect" id="node1" title=" " alt="" coords="124,5,371,32"/>
-<area shape="rect" id="node2" href="$_o_m_sim_primary_generator_action_8cc.html" title=" " alt="" coords="5,80,249,107"/>
-<area shape="rect" id="node3" href="$_o_m_sim__effective__area_8cc.html" title="Main for the calculation of effective areas." alt="" coords="274,80,461,107"/>
+<area shape="rect" id="node1" title=" " alt="" coords="87,5,333,32"/>
+<area shape="rect" id="node2" href="$_o_m_sim_8h.html" title=" " alt="" coords="91,80,172,107"/>
+<area shape="rect" id="node4" href="$_o_m_sim__effective__area_8cc.html" title="Main for the calculation of effective areas." alt="" coords="117,155,303,181"/>
+<area shape="rect" id="node5" href="$_o_m_sim_primary_generator_action_8cc.html" title=" " alt="" coords="248,80,492,107"/>
+<area shape="rect" id="node3" href="$_o_m_sim_8cc.html" title=" " alt="" coords="5,155,92,181"/>
 </map>
