@@ -2,6 +2,7 @@ var group__common =
 [
     [ "Installing Geant4", "index.html#autotoc_md2", null ],
     [ "Compiling OMSim", "index.html#autotoc_md3", null ],
+    [ "OMSim.hh", "_o_m_sim_8hh.html", null ],
     [ "OMSimCommandArgsTable.hh", "_o_m_sim_command_args_table_8hh.html", null ],
     [ "OMSimUIinterface.hh", "_o_m_sim_u_iinterface_8hh.html", null ],
     [ "abcDetectorComponent.cc", "abc_detector_component_8cc.html", null ],
@@ -52,6 +53,13 @@ var group__common =
       [ "mSteelVis", "classabc_detector_component.html#ad57eb4a0be4c50d570d436d559178ba3", null ],
       [ "mWhite", "classabc_detector_component.html#ad57a37961439b26587d55ba4e3c6603b", null ]
     ] ],
+    [ "OMSim", "class_o_m_sim.html", [
+      [ "OMSim", "class_o_m_sim.html#afc01df8f57a1303823b79ffd79088a89", null ],
+      [ "~OMSim", "class_o_m_sim.html#a61d63cc8b99c7ac89ecce97720fbb41a", null ],
+      [ "ensure_output_directory_exists", "class_o_m_sim.html#a994135b2e3edc213bdacd58b657c98c9", null ],
+      [ "initialiseSimulation", "class_o_m_sim.html#a215ae29aab195daa3ef15868e70ab2c1", null ],
+      [ "mGeneralArgs", "class_o_m_sim.html#a8eb0d1638af500069fc4e6a2f998b356", null ]
+    ] ],
     [ "OMSimCommandArgsTable", "class_o_m_sim_command_args_table.html", [
       [ "Key", "class_o_m_sim_command_args_table.html#a83cfd0564d03cb198f91926cd5c4f731", null ],
       [ "Value", "class_o_m_sim_command_args_table.html#a696523e7750390e2a8f1cc4dd9871ddc", null ],
@@ -60,7 +68,7 @@ var group__common =
       [ "getInstance", "class_o_m_sim_command_args_table.html#a2a6179839e4ed5f503e52fca917c84c2", null ],
       [ "keyExists", "class_o_m_sim_command_args_table.html#a1a27862e2bad8372154ce2d88c31cc3c", null ],
       [ "setParameter", "class_o_m_sim_command_args_table.html#a763a528077ea65f06d7905c962a62587", null ],
-      [ "writeToJson", "class_o_m_sim_command_args_table.html#a6fb17dd732c161995c47d89d21042b6e", null ]
+      [ "writeToJson", "class_o_m_sim_command_args_table.html#a4f90935ea49fb19c1ae77b826dbdb410", null ]
     ] ],
     [ "abcDataFile", "classabc_data_file.html", [
       [ "abcDataFile", "classabc_data_file.html#afa294a5fd58c6c3911d1a57683f7688a", null ],

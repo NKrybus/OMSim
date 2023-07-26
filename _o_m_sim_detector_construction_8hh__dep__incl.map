@@ -1,7 +1,7 @@
 <map id="OMSimDetectorConstruction.hh" name="OMSimDetectorConstruction.hh">
-<area shape="rect" id="node1" title=" " alt="" coords="97,5,323,32"/>
-<area shape="rect" id="node2" href="$_o_m_sim_8h.html" title=" " alt="" coords="91,80,172,107"/>
-<area shape="rect" id="node4" href="$_o_m_sim__effective__area_8cc.html" title="Main for the calculation of effective areas." alt="" coords="117,155,303,181"/>
-<area shape="rect" id="node5" href="$_o_m_sim_detector_construction_8cc.html" title="User defined detector." alt="" coords="247,80,472,107"/>
+<area shape="rect" id="node1" title=" " alt="" coords="106,5,333,32"/>
+<area shape="rect" id="node2" href="$_o_m_sim_8hh.html" title="Main simulation class for the Optical Module (OM) simulation." alt="" coords="84,80,173,107"/>
+<area shape="rect" id="node5" href="$_o_m_sim_detector_construction_8cc.html" title="User defined detector." alt="" coords="197,80,423,107"/>
 <area shape="rect" id="node3" href="$_o_m_sim_8cc.html" title=" " alt="" coords="5,155,92,181"/>
+<area shape="rect" id="node4" href="$_o_m_sim__effective__area_8cc.html" title="Main for the calculation of effective areas." alt="" coords="117,155,303,181"/>
 </map>

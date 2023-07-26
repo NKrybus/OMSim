@@ -5,7 +5,7 @@
 <area shape="rect" id="node4" href="$_o_m_sim_m_d_o_m_harness_8cc.html" title="Construction of mDOM harness." alt="" coords="363,80,547,107"/>
 <area shape="rect" id="node5" href="$_o_m_sim_detector_construction_8hh.html" title=" " alt="" coords="571,80,797,107"/>
 <area shape="rect" id="node9" href="$_o_m_sim_detector_construction_8cc.html" title="User defined detector." alt="" coords="722,155,947,181"/>
-<area shape="rect" id="node6" href="$_o_m_sim_8h.html" title=" " alt="" coords="566,155,647,181"/>
-<area shape="rect" id="node8" href="$_o_m_sim__effective__area_8cc.html" title="Main for the calculation of effective areas." alt="" coords="592,229,779,256"/>
-<area shape="rect" id="node7" href="$_o_m_sim_8cc.html" title=" " alt="" coords="481,229,567,256"/>
+<area shape="rect" id="node6" href="$_o_m_sim_8hh.html" title="Main simulation class for the Optical Module (OM) simulation." alt="" coords="609,155,698,181"/>
+<area shape="rect" id="node7" href="$_o_m_sim_8cc.html" title=" " alt="" coords="530,229,617,256"/>
+<area shape="rect" id="node8" href="$_o_m_sim__effective__area_8cc.html" title="Main for the calculation of effective areas." alt="" coords="641,229,828,256"/>
 </map>

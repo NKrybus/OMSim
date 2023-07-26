@@ -120,36 +120,35 @@ $(document).ready(function(){initNavTree('_o_m_sim_primary_generator_action_8hh_
 <a href="_o_m_sim_primary_generator_action_8hh.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef OMSimPrimaryGeneratorAction_h</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define OMSimPrimaryGeneratorAction_h 1</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;G4VUserPrimaryGeneratorAction.hh&quot;</span></div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &quot;globals.hh&quot;</span></div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160; </div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="keyword">class </span>G4GeneralParticleSource;</div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="keyword">class </span>G4Event;</div>
-<div class="line"><a name="l00009"></a><span class="lineno"><a class="line" href="class_o_m_sim_primary_generator_action.html">    9</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_o_m_sim_primary_generator_action.html">OMSimPrimaryGeneratorAction</a> : <span class="keyword">public</span> G4VUserPrimaryGeneratorAction</div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;{</div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    <a class="code" href="class_o_m_sim_primary_generator_action.html#af46a133334c7b9424c5d682ce1e04116">OMSimPrimaryGeneratorAction</a>();</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    <a class="code" href="class_o_m_sim_primary_generator_action.html#a208bfb4d81ea2f2b1c9762c2322bac20">~OMSimPrimaryGeneratorAction</a>();</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_o_m_sim_primary_generator_action.html#add3404f43902d7d268744eed9bc7c49b">GeneratePrimaries</a>(G4Event* anEvent);</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    G4GeneralParticleSource* particleSource;</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;};</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="ttc" id="aclass_o_m_sim_primary_generator_action_html"><div class="ttname"><a href="class_o_m_sim_primary_generator_action.html">OMSimPrimaryGeneratorAction</a></div><div class="ttdef"><b>Definition:</b> OMSimPrimaryGeneratorAction.hh:10</div></div>
-<div class="ttc" id="aclass_o_m_sim_primary_generator_action_html_a208bfb4d81ea2f2b1c9762c2322bac20"><div class="ttname"><a href="class_o_m_sim_primary_generator_action.html#a208bfb4d81ea2f2b1c9762c2322bac20">OMSimPrimaryGeneratorAction::~OMSimPrimaryGeneratorAction</a></div><div class="ttdeci">~OMSimPrimaryGeneratorAction()</div><div class="ttdef"><b>Definition:</b> OMSimPrimaryGeneratorAction.cc:16</div></div>
-<div class="ttc" id="aclass_o_m_sim_primary_generator_action_html_add3404f43902d7d268744eed9bc7c49b"><div class="ttname"><a href="class_o_m_sim_primary_generator_action.html#add3404f43902d7d268744eed9bc7c49b">OMSimPrimaryGeneratorAction::GeneratePrimaries</a></div><div class="ttdeci">void GeneratePrimaries(G4Event *anEvent)</div><div class="ttdef"><b>Definition:</b> OMSimPrimaryGeneratorAction.cc:21</div></div>
-<div class="ttc" id="aclass_o_m_sim_primary_generator_action_html_af46a133334c7b9424c5d682ce1e04116"><div class="ttname"><a href="class_o_m_sim_primary_generator_action.html#af46a133334c7b9424c5d682ce1e04116">OMSimPrimaryGeneratorAction::OMSimPrimaryGeneratorAction</a></div><div class="ttdeci">OMSimPrimaryGeneratorAction()</div><div class="ttdef"><b>Definition:</b> OMSimPrimaryGeneratorAction.cc:10</div></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;G4VUserPrimaryGeneratorAction.hh&gt;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160; </div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="keyword">class </span>G4GeneralParticleSource;</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="keyword">class </span>G4Event;</div>
+<div class="line"><a name="l00008"></a><span class="lineno"><a class="line" href="class_o_m_sim_primary_generator_action.html">    8</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_o_m_sim_primary_generator_action.html">OMSimPrimaryGeneratorAction</a> : <span class="keyword">public</span> G4VUserPrimaryGeneratorAction</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;{</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    <a class="code" href="class_o_m_sim_primary_generator_action.html#af46a133334c7b9424c5d682ce1e04116">OMSimPrimaryGeneratorAction</a>();</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    <a class="code" href="class_o_m_sim_primary_generator_action.html#a208bfb4d81ea2f2b1c9762c2322bac20">~OMSimPrimaryGeneratorAction</a>();</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160; </div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_o_m_sim_primary_generator_action.html#add3404f43902d7d268744eed9bc7c49b">GeneratePrimaries</a>(G4Event* anEvent);</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    G4GeneralParticleSource* particleSource;</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;};</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="ttc" id="aclass_o_m_sim_primary_generator_action_html"><div class="ttname"><a href="class_o_m_sim_primary_generator_action.html">OMSimPrimaryGeneratorAction</a></div><div class="ttdef"><b>Definition:</b> OMSimPrimaryGeneratorAction.hh:9</div></div>
+<div class="ttc" id="aclass_o_m_sim_primary_generator_action_html_a208bfb4d81ea2f2b1c9762c2322bac20"><div class="ttname"><a href="class_o_m_sim_primary_generator_action.html#a208bfb4d81ea2f2b1c9762c2322bac20">OMSimPrimaryGeneratorAction::~OMSimPrimaryGeneratorAction</a></div><div class="ttdeci">~OMSimPrimaryGeneratorAction()</div><div class="ttdef"><b>Definition:</b> OMSimPrimaryGeneratorAction.cc:14</div></div>
+<div class="ttc" id="aclass_o_m_sim_primary_generator_action_html_add3404f43902d7d268744eed9bc7c49b"><div class="ttname"><a href="class_o_m_sim_primary_generator_action.html#add3404f43902d7d268744eed9bc7c49b">OMSimPrimaryGeneratorAction::GeneratePrimaries</a></div><div class="ttdeci">void GeneratePrimaries(G4Event *anEvent)</div><div class="ttdef"><b>Definition:</b> OMSimPrimaryGeneratorAction.cc:19</div></div>
+<div class="ttc" id="aclass_o_m_sim_primary_generator_action_html_af46a133334c7b9424c5d682ce1e04116"><div class="ttname"><a href="class_o_m_sim_primary_generator_action.html#af46a133334c7b9424c5d682ce1e04116">OMSimPrimaryGeneratorAction::OMSimPrimaryGeneratorAction</a></div><div class="ttdeci">OMSimPrimaryGeneratorAction()</div><div class="ttdef"><b>Definition:</b> OMSimPrimaryGeneratorAction.cc:8</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_bdd9a5d540de89e9fe90efdfc6973a4f.html">common</a></li><li class="navelem"><a class="el" href="dir_11fbc4217d50ab21044e5ad6614aede5.html">include</a></li><li class="navelem"><a class="el" href="_o_m_sim_primary_generator_action_8hh.html">OMSimPrimaryGeneratorAction.hh</a></li>
-    <li class="footer">Generated on Tue Jul 25 2023 16:26:41 for OMSim by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Wed Jul 26 2023 15:38:45 for OMSim by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

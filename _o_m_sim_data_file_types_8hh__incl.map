@@ -1,9 +1,7 @@
 <map id="OMSimDataFileTypes.hh" name="OMSimDataFileTypes.hh">
-<area shape="rect" id="node1" title=" " alt="" coords="399,5,579,32"/>
-<area shape="rect" id="node2" title=" " alt="" coords="5,80,156,121"/>
-<area shape="rect" id="node3" title=" " alt="" coords="180,80,331,121"/>
-<area shape="rect" id="node4" title=" " alt="" coords="355,87,470,114"/>
-<area shape="rect" id="node5" title=" " alt="" coords="495,87,637,114"/>
-<area shape="rect" id="node6" title=" " alt="" coords="661,87,852,114"/>
-<area shape="rect" id="node7" title=" " alt="" coords="876,87,1035,114"/>
+<area shape="rect" id="node1" title=" " alt="" coords="276,5,456,32"/>
+<area shape="rect" id="node2" title=" " alt="" coords="5,87,148,114"/>
+<area shape="rect" id="node3" title=" " alt="" coords="172,87,363,114"/>
+<area shape="rect" id="node4" title=" " alt="" coords="387,87,545,114"/>
+<area shape="rect" id="node5" title=" " alt="" coords="569,80,720,121"/>
 </map>

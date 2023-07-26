@@ -123,7 +123,7 @@ $(document).ready(function(){initNavTree('class_o_m_sim_command_args_table.html'
 </div><!--header-->
 <div class="contents">
 
-<p>A singleton class used to hold and manipulate <a class="el" href="class_o_m_sim.html">OMSim</a> command arguments.  
+<p>A singleton class used to hold and manipulate <a class="el" href="class_o_m_sim.html" title="Controls the main simulation process.">OMSim</a> command arguments.  
  <a href="class_o_m_sim_command_args_table.html#details">More...</a></p>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>This class uses a map to hold key-value pairs of simulation command arguments. In principle it is just a wrapper around the map created by the boost library to avoid users changing the arg values after initialisation. The class also provides a method to write the parameters to a JSON file. </p>
@@ -146,9 +146,9 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ae82f3f1a5af7b4db346bca48727794d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1a27862e2bad8372154ce2d88c31cc3c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_m_sim_command_args_table.html#a1a27862e2bad8372154ce2d88c31cc3c">keyExists</a> (const <a class="el" href="class_o_m_sim_command_args_table.html#a83cfd0564d03cb198f91926cd5c4f731">Key</a> &amp;key) const</td></tr>
 <tr class="separator:a1a27862e2bad8372154ce2d88c31cc3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6fb17dd732c161995c47d89d21042b6e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_m_sim_command_args_table.html#a6fb17dd732c161995c47d89d21042b6e">writeToJson</a> (std::string lFileName)</td></tr>
-<tr class="memdesc:a6fb17dd732c161995c47d89d21042b6e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Writes the parameters to a JSON-formatted file.  <a href="class_o_m_sim_command_args_table.html#a6fb17dd732c161995c47d89d21042b6e">More...</a><br /></td></tr>
-<tr class="separator:a6fb17dd732c161995c47d89d21042b6e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4f90935ea49fb19c1ae77b826dbdb410"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_m_sim_command_args_table.html#a4f90935ea49fb19c1ae77b826dbdb410">writeToJson</a> (std::string pFileName)</td></tr>
+<tr class="memdesc:a4f90935ea49fb19c1ae77b826dbdb410"><td class="mdescLeft">&#160;</td><td class="mdescRight">Writes the parameters to a JSON-formatted file.  <a href="class_o_m_sim_command_args_table.html#a4f90935ea49fb19c1ae77b826dbdb410">More...</a><br /></td></tr>
+<tr class="separator:a4f90935ea49fb19c1ae77b826dbdb410"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acd0700b601ac3b3279657ad1bc1363e8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_m_sim_command_args_table.html#acd0700b601ac3b3279657ad1bc1363e8">finalize</a> ()</td></tr>
 <tr class="memdesc:acd0700b601ac3b3279657ad1bc1363e8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Finalizes the table, setting a random seed if none was provided. mFinalized is set to true preventing any further modifications.  <a href="class_o_m_sim_command_args_table.html#acd0700b601ac3b3279657ad1bc1363e8">More...</a><br /></td></tr>
 <tr class="separator:acd0700b601ac3b3279657ad1bc1363e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -356,8 +356,8 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
-<a id="a6fb17dd732c161995c47d89d21042b6e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6fb17dd732c161995c47d89d21042b6e">&#9670;&nbsp;</a></span>writeToJson()</h2>
+<a id="a4f90935ea49fb19c1ae77b826dbdb410"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4f90935ea49fb19c1ae77b826dbdb410">&#9670;&nbsp;</a></span>writeToJson()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -369,7 +369,7 @@ template&lt;typename T &gt; </div>
           <td class="memname">void OMSimCommandArgsTable::writeToJson </td>
           <td>(</td>
           <td class="paramtype">std::string&#160;</td>
-          <td class="paramname"><em>lFileName</em></td><td>)</td>
+          <td class="paramname"><em>pFileName</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -381,7 +381,7 @@ template&lt;typename T &gt; </div>
 </div><div class="memdoc">
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">lFileName</td><td>The name of the JSON file. </td></tr>
+    <tr><td class="paramname">pFileName</td><td>The name of the JSON file. </td></tr>
   </table>
   </dd>
 </dl>
@@ -403,7 +403,7 @@ template&lt;typename T &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="class_o_m_sim_command_args_table.html">OMSimCommandArgsTable</a></li>
-    <li class="footer">Generated on Tue Jul 25 2023 16:26:41 for OMSim by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Wed Jul 26 2023 15:38:45 for OMSim by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

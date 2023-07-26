@@ -25,12 +25,15 @@ In principle for short simulations you could run \mbox{\hyperlink{class_o_m_sim}
 \DoxyCodeLine{\textcolor{keyword}{import} numpy \textcolor{keyword}{as} np}
 \DoxyCodeLine{\textcolor{keyword}{from} os \textcolor{keyword}{import} system}
 \DoxyCodeLine{}
-\DoxyCodeLine{NSIDE=8 \textcolor{comment}{\#only powers of 2 allowed, the larger, the more pixels are calculated}}
-\DoxyCodeLine{NPIX=hp.nside2npix(NSIDE)}
-\DoxyCodeLine{thetas, phis = np.degrees(hp.pix2ang(nside=8,ipix=np.arange(NPIX)))}
+\DoxyCodeLine{NSIDE = 8 \textcolor{comment}{\#only powers of 2 allowed, the larger, the more pixels are calculated}}
+\DoxyCodeLine{NPIX = hp.nside2npix(NSIDE)}
+\DoxyCodeLine{thetas, phis = np.degrees(hp.pix2ang(nside=NSIDE, ipix=np.arange(NPIX)))}
 \DoxyCodeLine{}
-\DoxyCodeLine{\textcolor{keywordflow}{for} theta, phi \textcolor{keywordflow}{in} zip(thetas, phis):}
-\DoxyCodeLine{     system(\textcolor{stringliteral}{"{}./OMSim\_effective\_area -\/n 10000 -\/e 1 -\/d 460 -\/q -\/m 1 -\/c -\/t  "{}}+str(g[0,i])+\textcolor{stringliteral}{"{} -\/f "{}}+str(g[1,i])+ \textcolor{stringliteral}{"{} -\/o Data\_mDOM\_new.txt"{}})}
+\DoxyCodeLine{\textcolor{keywordflow}{for} i, (theta, phi) \textcolor{keywordflow}{in} enumerate(zip(thetas, phis)):}
+\DoxyCodeLine{    \textcolor{keywordflow}{if} i==0:}
+\DoxyCodeLine{        system(f\textcolor{stringliteral}{"{}./OMSim\_effective\_area -\/n 10000 -\/-\/environment 1 -\/r 300 -\/t \{theta\} -\/f  \{phi\} -\/-\/output\_file output"{}})}
+\DoxyCodeLine{    \textcolor{keywordflow}{else}:}
+\DoxyCodeLine{        system(f\textcolor{stringliteral}{"{}./OMSim\_effective\_area -\/n 10000 -\/-\/environment 1 -\/r 300 -\/t \{theta\} -\/f  \{phi\} -\/-\/output\_file output.txt -\/-\/no\_header"{}})}
 
 \end{DoxyCode}
 
@@ -43,15 +46,17 @@ However, this is {\bfseries{very}} inefficient. The best is to save the angle pa
 \DoxyCodeLine{\textcolor{keyword}{import} numpy \textcolor{keyword}{as} np}
 \DoxyCodeLine{\textcolor{keyword}{from} os \textcolor{keyword}{import} system}
 \DoxyCodeLine{}
-\DoxyCodeLine{NSIDE=8 \textcolor{comment}{\#only powers of 2 allowed, the larger, the more pixels are calculated}}
-\DoxyCodeLine{NPIX=hp.nside2npix(NSIDE)}
-\DoxyCodeLine{thetas, phis = np.degrees(hp.pix2ang(nside=8,ipix=np.arange(NPIX)))}
-\DoxyCodeLine{}
-\DoxyCodeLine{\textcolor{keywordflow}{for} theta, phi \textcolor{keywordflow}{in} zip(thetas, phis):}
-\DoxyCodeLine{     system(\textcolor{stringliteral}{"{}./OMSim\_effective\_area -\/n 10000 -\/e 1 -\/d 460 -\/q -\/m 1 -\/c -\/t  "{}}+str(g[0,i])+\textcolor{stringliteral}{"{} -\/f "{}}+str(g[1,i])+ \textcolor{stringliteral}{"{} -\/o Data\_mDOM\_new.txt"{}})}
+\DoxyCodeLine{NSIDE = 8 \textcolor{comment}{\#only powers of 2 allowed, the larger, the more pixels are calculated}}
+\DoxyCodeLine{NPIX = hp.nside2npix(NSIDE)}
+\DoxyCodeLine{thetas, phis = np.degrees(hp.pix2ang(nside=NSIDE, ipix=np.arange(NPIX)))}
+\DoxyCodeLine{fname = \textcolor{stringliteral}{"{}angle\_pairs.txt"{}}}
+\DoxyCodeLine{np.savetxt(fname, np.column\_stack((thetas, phis)))}
+\DoxyCodeLine{system(f\textcolor{stringliteral}{"{}./OMSim\_effective\_area -\/n 10000 -\/-\/environment 1 -\/r 300 -\/-\/angles\_file \{fname\} -\/-\/output\_file output"{}})}
 
 \end{DoxyCode}
- \doxysubsection*{Files}
+
+
+In my PC the first code block needs 51 seconds (tested with NSIDE=2) , the second block only 14 seconds (as simulation has to be initialised only once). \doxysubsection*{Files}
 \begin{DoxyCompactItemize}
 \item 
 file \mbox{\hyperlink{_o_m_sim_simple_g_p_s_beams_8cc}{OMSim\+Simple\+GPSBeams.\+cc}}

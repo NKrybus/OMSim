@@ -8,9 +8,7 @@ var files_dup =
     [ "common.h", "common_8h.html", null ],
     [ "effectiveArea.h", "effective_area_8h.html", null ],
     [ "OMSim.cc", "_o_m_sim_8cc.html", null ],
-    [ "OMSim.h", "_o_m_sim_8h.html", [
-      [ "OMSim", "class_o_m_sim.html", "class_o_m_sim" ]
-    ] ],
+    [ "OMSim.hh", "_o_m_sim_8hh.html", null ],
     [ "OMSim_effective_area.cc", "_o_m_sim__effective__area_8cc.html", "_o_m_sim__effective__area_8cc" ],
     [ "OMSimAnalysisManager.cc", "_o_m_sim_analysis_manager_8cc.html", null ],
     [ "OMSimAnalysisManager.hh", "_o_m_sim_analysis_manager_8hh.html", [
@@ -41,9 +39,13 @@ var files_dup =
     ] ],
     [ "OMSimLogger.hh", "_o_m_sim_logger_8hh.html", "_o_m_sim_logger_8hh" ],
     [ "OMSimLOM16.cc", "_o_m_sim_l_o_m16_8cc.html", null ],
-    [ "OMSimLOM16.hh", "_o_m_sim_l_o_m16_8hh.html", "_o_m_sim_l_o_m16_8hh" ],
+    [ "OMSimLOM16.hh", "_o_m_sim_l_o_m16_8hh.html", [
+      [ "LOM16", "class_l_o_m16.html", "class_l_o_m16" ]
+    ] ],
     [ "OMSimLOM18.cc", "_o_m_sim_l_o_m18_8cc.html", null ],
-    [ "OMSimLOM18.hh", "_o_m_sim_l_o_m18_8hh.html", "_o_m_sim_l_o_m18_8hh" ],
+    [ "OMSimLOM18.hh", "_o_m_sim_l_o_m18_8hh.html", [
+      [ "LOM18", "class_l_o_m18.html", "class_l_o_m18" ]
+    ] ],
     [ "OMSimMDOM.cc", "_o_m_sim_m_d_o_m_8cc.html", null ],
     [ "OMSimMDOM.hh", "_o_m_sim_m_d_o_m_8hh.html", [
       [ "mDOM", "classm_d_o_m.html", "classm_d_o_m" ]

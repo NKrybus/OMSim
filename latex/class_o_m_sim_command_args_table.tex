@@ -24,7 +24,7 @@ void \mbox{\hyperlink{class_o_m_sim_command_args_table_a763a528077ea65f06d7905c9
 \begin{DoxyCompactList}\small\item\em Retrieves a parameter from the table. \end{DoxyCompactList}\item 
 bool \mbox{\hyperlink{class_o_m_sim_command_args_table_a1a27862e2bad8372154ce2d88c31cc3c}{key\+Exists}} (const \mbox{\hyperlink{class_o_m_sim_command_args_table_a83cfd0564d03cb198f91926cd5c4f731}{Key}} \&key) const
 \item 
-void \mbox{\hyperlink{class_o_m_sim_command_args_table_a6fb17dd732c161995c47d89d21042b6e}{write\+To\+Json}} (std\+::string l\+File\+Name)
+void \mbox{\hyperlink{class_o_m_sim_command_args_table_a4f90935ea49fb19c1ae77b826dbdb410}{write\+To\+Json}} (std\+::string p\+File\+Name)
 \begin{DoxyCompactList}\small\item\em Writes the parameters to a JSON-\/formatted file. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_o_m_sim_command_args_table_acd0700b601ac3b3279657ad1bc1363e8}{finalize}} ()
 \begin{DoxyCompactList}\small\item\em Finalizes the table, setting a random seed if none was provided. m\+Finalized is set to true preventing any further modifications. \end{DoxyCompactList}\end{DoxyCompactItemize}
@@ -110,15 +110,15 @@ The instance of \mbox{\hyperlink{class_o_m_sim_command_args_table}{OMSim\+Comman
 {\em std\+::runtime\+\_\+error} & If the table is already finalized (i.\+e. somebody is trying to set a new arg parameter after args were parsed (?!)). \\
 \hline
 \end{DoxyExceptions}
-\mbox{\Hypertarget{class_o_m_sim_command_args_table_a6fb17dd732c161995c47d89d21042b6e}\label{class_o_m_sim_command_args_table_a6fb17dd732c161995c47d89d21042b6e}} 
+\mbox{\Hypertarget{class_o_m_sim_command_args_table_a4f90935ea49fb19c1ae77b826dbdb410}\label{class_o_m_sim_command_args_table_a4f90935ea49fb19c1ae77b826dbdb410}} 
 \index{OMSimCommandArgsTable@{OMSimCommandArgsTable}!writeToJson@{writeToJson}}
 \index{writeToJson@{writeToJson}!OMSimCommandArgsTable@{OMSimCommandArgsTable}}
 \doxysubsubsection{\texorpdfstring{writeToJson()}{writeToJson()}}
-{\footnotesize\ttfamily void OMSim\+Command\+Args\+Table\+::write\+To\+Json (\begin{DoxyParamCaption}\item[{std\+::string}]{l\+File\+Name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+{\footnotesize\ttfamily void OMSim\+Command\+Args\+Table\+::write\+To\+Json (\begin{DoxyParamCaption}\item[{std\+::string}]{p\+File\+Name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
 
 \begin{DoxyParams}{Parameters}
-{\em l\+File\+Name} & The name of the JSON file. \\
+{\em p\+File\+Name} & The name of the JSON file. \\
 \hline
 \end{DoxyParams}
 

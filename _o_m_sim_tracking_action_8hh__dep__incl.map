@@ -1,8 +1,8 @@
 <map id="OMSimTrackingAction.hh" name="OMSimTrackingAction.hh">
-<area shape="rect" id="node1" title=" " alt="" coords="178,5,362,32"/>
-<area shape="rect" id="node2" href="$_o_m_sim_8h.html" title=" " alt="" coords="91,80,172,107"/>
-<area shape="rect" id="node4" href="$_o_m_sim__effective__area_8cc.html" title="Main for the calculation of effective areas." alt="" coords="117,155,303,181"/>
-<area shape="rect" id="node5" href="$_o_m_sim_event_action_8cc.html" title=" " alt="" coords="247,80,413,107"/>
-<area shape="rect" id="node6" href="$_o_m_sim_tracking_action_8cc.html" title=" " alt="" coords="437,80,620,107"/>
+<area shape="rect" id="node1" title=" " alt="" coords="189,5,373,32"/>
+<area shape="rect" id="node2" href="$_o_m_sim_8hh.html" title="Main simulation class for the Optical Module (OM) simulation." alt="" coords="84,80,173,107"/>
+<area shape="rect" id="node5" href="$_o_m_sim_event_action_8cc.html" title=" " alt="" coords="198,80,363,107"/>
+<area shape="rect" id="node6" href="$_o_m_sim_tracking_action_8cc.html" title=" " alt="" coords="388,80,571,107"/>
 <area shape="rect" id="node3" href="$_o_m_sim_8cc.html" title=" " alt="" coords="5,155,92,181"/>
+<area shape="rect" id="node4" href="$_o_m_sim__effective__area_8cc.html" title="Main for the calculation of effective areas." alt="" coords="117,155,303,181"/>
 </map>
