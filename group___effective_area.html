@@ -148,7 +148,7 @@ Example using healpy</h2>
 <div class="line">    <span class="keywordflow">if</span> i==0:</div>
 <div class="line">        system(f<span class="stringliteral">&quot;./OMSim_effective_area -n 10000 --environment 1 -r 300 -t {theta} -f  {phi} --output_file output&quot;</span>)</div>
 <div class="line">    <span class="keywordflow">else</span>:</div>
-<div class="line">        system(f<span class="stringliteral">&quot;./OMSim_effective_area -n 10000 --environment 1 -r 300 -t {theta} -f  {phi} --output_file output.txt --no_header&quot;</span>)</div>
+<div class="line">        system(f<span class="stringliteral">&quot;./OMSim_effective_area -n 10000 --environment 1 -r 300 -t {theta} -f  {phi} --output_file output --no_header&quot;</span>)</div>
 </div><!-- fragment --><p>However, this is <b>very</b> inefficient. The best is to save the angle pairs into a file and pass it as argument. If you give a file as argument, the arg theta and phi are ignored.</p>
 <div class="fragment"><div class="line"><span class="keyword">import</span> healpy <span class="keyword">as</span> hp</div>
 <div class="line"><span class="keyword">import</span> numpy <span class="keyword">as</span> np</div>
@@ -182,7 +182,7 @@ Classes</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Wed Jul 26 2023 15:38:45 for OMSim by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Thu Jul 27 2023 13:52:36 for OMSim by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>
