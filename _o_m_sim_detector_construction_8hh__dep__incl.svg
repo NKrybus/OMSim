@@ -36,7 +36,7 @@
 <!-- Node5 -->
 <g id="node5" class="node">
 <title>Node5</title>
-<g id="a_node5"><a xlink:href="_o_m_sim_detector_construction_8cc.html" target="_top" xlink:title="User defined detector.">
+<g id="a_node5"><a xlink:href="_o_m_sim_detector_construction_8cc.html" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="black" points="144,-56.5 144,-75.5 313,-75.5 313,-56.5 144,-56.5"/>
 <text text-anchor="middle" x="228.5" y="-63.5" font-family="Helvetica,sans-Serif" font-size="10.00">OMSimDetectorConstruction.cc</text>
 </a>

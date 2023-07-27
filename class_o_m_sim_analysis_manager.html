@@ -119,9 +119,12 @@ $(document).ready(function(){initNavTree('class_o_m_sim_analysis_manager.html','
 <a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="class_o_m_sim_analysis_manager-members.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">OMSimAnalysisManager Class Reference</div>  </div>
+<div class="title">OMSimAnalysisManager Class Reference<div class="ingroups"><a class="el" href="group___effective_area.html">Effective area</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>This class is responsible for managing info of detected photons and writing the results in the desired format.  
+</p>
 <div class="dynheader">
 Collaboration diagram for OMSimAnalysisManager:</div>
 <div class="dyncontent">
@@ -132,12 +135,16 @@ Collaboration diagram for OMSimAnalysisManager:</div>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a727c6c0fef3aedb8610e8925facbf76e"><td class="memItemLeft" align="right" valign="top">std::vector&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_m_sim_analysis_manager.html#a727c6c0fef3aedb8610e8925facbf76e">CountHits</a> ()</td></tr>
+<tr class="memdesc:a727c6c0fef3aedb8610e8925facbf76e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Counts the number of hits for each PMT.  <a href="class_o_m_sim_analysis_manager.html#a727c6c0fef3aedb8610e8925facbf76e">More...</a><br /></td></tr>
 <tr class="separator:a727c6c0fef3aedb8610e8925facbf76e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa2f22d9a16124d9cb7d100e7c64e4006"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_m_sim_analysis_manager.html#aa2f22d9a16124d9cb7d100e7c64e4006">Reset</a> ()</td></tr>
+<tr class="memdesc:aa2f22d9a16124d9cb7d100e7c64e4006"><td class="mdescLeft">&#160;</td><td class="mdescRight">Empties the <a class="el" href="struct_hit_stats.html" title="A structure to store information of photon hits.">HitStats</a> struct.  <a href="class_o_m_sim_analysis_manager.html#aa2f22d9a16124d9cb7d100e7c64e4006">More...</a><br /></td></tr>
 <tr class="separator:aa2f22d9a16124d9cb7d100e7c64e4006"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a41aa94a56238f26418351ae484a78a7e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_m_sim_analysis_manager.html#a41aa94a56238f26418351ae484a78a7e">WriteScan</a> (G4double pPhi, G4double pTheta)</td></tr>
+<tr class="memdesc:a41aa94a56238f26418351ae484a78a7e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Writes a scan result to the output file.  <a href="class_o_m_sim_analysis_manager.html#a41aa94a56238f26418351ae484a78a7e">More...</a><br /></td></tr>
 <tr class="separator:a41aa94a56238f26418351ae484a78a7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1a13249dd3722aaacbb1c41d10418648"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_m_sim_analysis_manager.html#a1a13249dd3722aaacbb1c41d10418648">WriteHeader</a> ()</td></tr>
+<tr class="memdesc:a1a13249dd3722aaacbb1c41d10418648"><td class="mdescLeft">&#160;</td><td class="mdescRight">Writes a header to the output file.  <a href="class_o_m_sim_analysis_manager.html#a1a13249dd3722aaacbb1c41d10418648">More...</a><br /></td></tr>
 <tr class="separator:a1a13249dd3722aaacbb1c41d10418648"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
@@ -171,6 +178,7 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd>A vector containing the counts of hits for each PMT. </dd></dl>
 
 </div>
 </div>
@@ -258,6 +266,13 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pPhi</td><td>The phi angle used in the scan to be written to the output file. </td></tr>
+    <tr><td class="paramname">pTheta</td><td>The phi angle used in the scan to be written to the output file. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -328,7 +343,7 @@ Public Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="class_o_m_sim_analysis_manager.html">OMSimAnalysisManager</a></li>
-    <li class="footer">Generated on Thu Jul 27 2023 13:52:36 for OMSim by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Thu Jul 27 2023 16:12:50 for OMSim by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

@@ -2,6 +2,11 @@
 \label{class_o_m_sim_detector_construction}\index{OMSimDetectorConstruction@{OMSimDetectorConstruction}}
 
 
+Class for detector construction in the effective area simulation.  
+
+
+
+
 Inheritance diagram for OMSim\+Detector\+Construction\+:
 \nopagebreak
 \begin{figure}[H]
@@ -28,7 +33,7 @@ Collaboration diagram for OMSim\+Detector\+Construction\+:
 \mbox{\hyperlink{class_o_m_sim_detector_construction_a7068d06e9367d657b52b6a1ddeac621d}{$\sim$\+OMSim\+Detector\+Construction}} ()
 \item 
 G4\+VPhysical\+Volume $\ast$ \mbox{\hyperlink{class_o_m_sim_detector_construction_a9e16ad5da3921b502473b303609caad0}{Construct}} ()
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Constructs the selected detector from the command line argument and returns the physical world volume. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Public Attributes}
 \begin{DoxyCompactItemize}
 \item 
@@ -58,8 +63,8 @@ G4\+VPhysical\+Volume $\ast$ \mbox{\hyperlink{class_o_m_sim_detector_constructio
 \doxysubsubsection{\texorpdfstring{Construct()}{Construct()}}
 {\footnotesize\ttfamily G4\+VPhysical\+Volume $\ast$ OMSim\+Detector\+Construction\+::\+Construct (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
-Construct all solids needed for your study. Call OMSim\+OMConstruction for simulations with optical modules and \mbox{\hyperlink{class_o_m_sim_p_m_t_construction}{OMSim\+PMTConstruction}} for simulations with only PMTs. \begin{DoxyReturn}{Returns}
-World physical for the main 
+\begin{DoxyReturn}{Returns}
+Pointer to the physical world volume 
 \end{DoxyReturn}
 
 

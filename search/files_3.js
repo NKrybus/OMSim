@@ -1,10 +1,12 @@
 var searchData=
 [
-  ['omsim_2ecc_525',['OMSim.cc',['../_o_m_sim_8cc.html',1,'']]],
-  ['omsim_2ehh_526',['OMSim.hh',['../_o_m_sim_8hh.html',1,'']]],
-  ['omsim_5feffective_5farea_2ecc_527',['OMSim_effective_area.cc',['../_o_m_sim__effective__area_8cc.html',1,'']]],
-  ['omsimanalysismanager_2ecc_528',['OMSimAnalysisManager.cc',['../_o_m_sim_analysis_manager_8cc.html',1,'']]],
-  ['omsimanalysismanager_2ehh_529',['OMSimAnalysisManager.hh',['../_o_m_sim_analysis_manager_8hh.html',1,'']]],
+  ['omsim_2ecc_523',['OMSim.cc',['../_o_m_sim_8cc.html',1,'']]],
+  ['omsim_2ehh_524',['OMSim.hh',['../_o_m_sim_8hh.html',1,'']]],
+  ['omsim_5feffective_5farea_2ecc_525',['OMSim_effective_area.cc',['../_o_m_sim__effective__area_8cc.html',1,'']]],
+  ['omsimanalysismanager_2ecc_526',['OMSimAnalysisManager.cc',['../_o_m_sim_analysis_manager_8cc.html',1,'']]],
+  ['omsimanalysismanager_2ehh_527',['OMSimAnalysisManager.hh',['../_o_m_sim_analysis_manager_8hh.html',1,'']]],
+  ['omsimangularscan_2ecc_528',['OMSimAngularScan.cc',['../_o_m_sim_angular_scan_8cc.html',1,'']]],
+  ['omsimangularscan_2ehh_529',['OMSimAngularScan.hh',['../_o_m_sim_angular_scan_8hh.html',1,'']]],
   ['omsimcommandargstable_2ehh_530',['OMSimCommandArgsTable.hh',['../_o_m_sim_command_args_table_8hh.html',1,'']]],
   ['omsimdatafiletypes_2ecc_531',['OMSimDataFileTypes.cc',['../_o_m_sim_data_file_types_8cc.html',1,'']]],
   ['omsimdatafiletypes_2ehh_532',['OMSimDataFileTypes.hh',['../_o_m_sim_data_file_types_8hh.html',1,'']]],
@@ -39,13 +41,10 @@ var searchData=
   ['omsimpmtresponse_2ehh_561',['OMSimPMTResponse.hh',['../_o_m_sim_p_m_t_response_8hh.html',1,'']]],
   ['omsimprimarygeneratoraction_2ecc_562',['OMSimPrimaryGeneratorAction.cc',['../_o_m_sim_primary_generator_action_8cc.html',1,'']]],
   ['omsimprimarygeneratoraction_2ehh_563',['OMSimPrimaryGeneratorAction.hh',['../_o_m_sim_primary_generator_action_8hh.html',1,'']]],
-  ['omsimrunaction_2ecc_564',['OMSimRunAction.cc',['../_o_m_sim_run_action_8cc.html',1,'']]],
-  ['omsimrunaction_2ehh_565',['OMSimRunAction.hh',['../_o_m_sim_run_action_8hh.html',1,'']]],
-  ['omsimsimplegpsbeams_2ecc_566',['OMSimSimpleGPSBeams.cc',['../_o_m_sim_simple_g_p_s_beams_8cc.html',1,'']]],
-  ['omsimsimplegpsbeams_2ehh_567',['OMSimSimpleGPSBeams.hh',['../_o_m_sim_simple_g_p_s_beams_8hh.html',1,'']]],
-  ['omsimsteppingaction_2ecc_568',['OMSimSteppingAction.cc',['../_o_m_sim_stepping_action_8cc.html',1,'']]],
-  ['omsimsteppingaction_2ehh_569',['OMSimSteppingAction.hh',['../_o_m_sim_stepping_action_8hh.html',1,'']]],
-  ['omsimtrackingaction_2ecc_570',['OMSimTrackingAction.cc',['../_o_m_sim_tracking_action_8cc.html',1,'']]],
-  ['omsimtrackingaction_2ehh_571',['OMSimTrackingAction.hh',['../_o_m_sim_tracking_action_8hh.html',1,'']]],
-  ['omsimuiinterface_2ehh_572',['OMSimUIinterface.hh',['../_o_m_sim_u_iinterface_8hh.html',1,'']]]
+  ['omsimrunaction_2ehh_564',['OMSimRunAction.hh',['../_o_m_sim_run_action_8hh.html',1,'']]],
+  ['omsimsteppingaction_2ecc_565',['OMSimSteppingAction.cc',['../_o_m_sim_stepping_action_8cc.html',1,'']]],
+  ['omsimsteppingaction_2ehh_566',['OMSimSteppingAction.hh',['../_o_m_sim_stepping_action_8hh.html',1,'']]],
+  ['omsimtrackingaction_2ecc_567',['OMSimTrackingAction.cc',['../_o_m_sim_tracking_action_8cc.html',1,'']]],
+  ['omsimtrackingaction_2ehh_568',['OMSimTrackingAction.hh',['../_o_m_sim_tracking_action_8hh.html',1,'']]],
+  ['omsimuiinterface_2ehh_569',['OMSimUIinterface.hh',['../_o_m_sim_u_iinterface_8hh.html',1,'']]]
 ];

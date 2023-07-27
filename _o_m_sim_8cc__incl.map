@@ -1,52 +1,52 @@
 <map id="OMSim.cc" name="OMSim.cc">
-<area shape="rect" id="node1" title=" " alt="" coords="2353,5,2439,32"/>
-<area shape="rect" id="node2" href="$_o_m_sim_8hh.html" title="Main simulation class for the Optical Module (OM) simulation." alt="" coords="2310,80,2399,107"/>
-<area shape="rect" id="node50" title=" " alt="" coords="3331,155,3531,181"/>
-<area shape="rect" id="node3" href="$_o_m_sim_detector_construction_8hh.html" title=" " alt="" coords="3080,155,3307,181"/>
-<area shape="rect" id="node18" href="$_o_m_sim_physics_list_8hh.html" title=" " alt="" coords="1435,155,1597,181"/>
-<area shape="rect" id="node21" href="$_o_m_sim_primary_generator_action_8hh.html" title=" " alt="" coords="1801,155,2047,181"/>
-<area shape="rect" id="node23" href="$_o_m_sim_run_action_8hh.html" title=" " alt="" coords="1621,155,1776,181"/>
-<area shape="rect" id="node25" href="$_o_m_sim_event_action_8hh.html" title=" " alt="" coords="2071,155,2238,181"/>
-<area shape="rect" id="node28" href="$_o_m_sim_tracking_action_8hh.html" title=" " alt="" coords="2263,155,2447,181"/>
-<area shape="rect" id="node30" href="$_o_m_sim_stepping_action_8hh.html" title=" " alt="" coords="652,155,839,181"/>
-<area shape="rect" id="node35" href="$_o_m_sim_analysis_manager_8hh.html" title=" " alt="" coords="309,155,509,181"/>
-<area shape="rect" id="node42" href="$_o_m_sim_u_iinterface_8hh.html" title="The OMSimUIinterface class provides a singleton interface to Geant4&#39;s UI manager." alt="" coords="1179,155,1341,181"/>
-<area shape="rect" id="node46" title=" " alt="" coords="2471,155,2612,181"/>
-<area shape="rect" id="node47" title=" " alt="" coords="2637,155,2779,181"/>
-<area shape="rect" id="node48" title=" " alt="" coords="2803,155,2941,181"/>
-<area shape="rect" id="node49" title=" " alt="" coords="2965,155,3056,181"/>
-<area shape="rect" id="node4" title=" " alt="" coords="3180,229,3335,256"/>
-<area shape="rect" id="node5" title=" " alt="" coords="3359,229,3441,256"/>
-<area shape="rect" id="node6" title=" " alt="" coords="3466,229,3638,256"/>
-<area shape="rect" id="node7" title=" " alt="" coords="2660,229,2897,256"/>
-<area shape="rect" id="node8" href="$_o_m_sim_input_data_8hh.html" title=" " alt="" coords="2817,453,2970,480"/>
-<area shape="rect" id="node12" href="$_o_m_sim_p_m_t_construction_8hh.html" title=" " alt="" coords="2898,304,3097,331"/>
-<area shape="rect" id="node16" href="$_o_m_sim_m_d_o_m_8hh.html" title=" " alt="" coords="2921,229,3055,256"/>
-<area shape="rect" id="node9" title=" " alt="" coords="2915,528,3066,569"/>
-<area shape="rect" id="node10" title=" " alt="" coords="2701,535,2891,562"/>
-<area shape="rect" id="node11" title=" " alt="" coords="1318,535,1477,562"/>
-<area shape="rect" id="node13" href="$abc_detector_component_8hh.html" title=" " alt="" coords="2795,379,2991,405"/>
-<area shape="rect" id="node14" title=" " alt="" coords="2640,379,2771,405"/>
-<area shape="rect" id="node15" title=" " alt="" coords="3015,379,3105,405"/>
-<area shape="rect" id="node17" href="$_o_m_sim_m_d_o_m_flasher_8hh.html" title=" " alt="" coords="2694,304,2874,331"/>
-<area shape="rect" id="node19" title=" " alt="" coords="1393,229,1564,256"/>
-<area shape="rect" id="node20" title=" " alt="" coords="1589,229,1678,256"/>
-<area shape="rect" id="node22" title=" " alt="" coords="1883,229,2139,256"/>
-<area shape="rect" id="node24" title=" " alt="" coords="1702,229,1858,256"/>
-<area shape="rect" id="node26" title=" " alt="" coords="2245,229,2413,256"/>
-<area shape="rect" id="node27" title=" " alt="" coords="2163,229,2221,256"/>
-<area shape="rect" id="node29" title=" " alt="" coords="2438,229,2623,256"/>
-<area shape="rect" id="node31" title=" " alt="" coords="333,304,430,331"/>
-<area shape="rect" id="node32" title=" " alt="" coords="447,229,545,256"/>
-<area shape="rect" id="node33" title=" " alt="" coords="570,229,707,256"/>
-<area shape="rect" id="node34" title=" " alt="" coords="783,229,971,256"/>
-<area shape="rect" id="node36" href="$_o_m_sim_p_m_t_response_8hh.html" title=" " alt="" coords="54,229,234,256"/>
-<area shape="rect" id="node40" title=" " alt="" coords="258,229,321,256"/>
-<area shape="rect" id="node41" title=" " alt="" coords="787,304,861,331"/>
-<area shape="rect" id="node37" title=" " alt="" coords="5,304,56,331"/>
-<area shape="rect" id="node38" title=" " alt="" coords="81,304,162,331"/>
-<area shape="rect" id="node39" title=" " alt="" coords="186,304,257,331"/>
-<area shape="rect" id="node43" href="$_o_m_sim_command_args_table_8hh.html" title="Definition of the OMSimCommandArgsTable singleton class, which controls user args." alt="" coords="1151,229,1369,256"/>
-<area shape="rect" id="node45" title=" " alt="" coords="996,229,1127,256"/>
-<area shape="rect" id="node44" href="$_o_m_sim_logger_8hh.html" title=" " alt="" coords="1194,304,1326,331"/>
+<area shape="rect" id="node1" title=" " alt="" coords="1408,5,1495,32"/>
+<area shape="rect" id="node2" href="$_o_m_sim_8hh.html" title="Main simulation class for the Optical Module (OM) simulation." alt="" coords="1365,80,1455,107"/>
+<area shape="rect" id="node50" title=" " alt="" coords="2489,155,2689,181"/>
+<area shape="rect" id="node3" href="$_o_m_sim_detector_construction_8hh.html" title=" " alt="" coords="1782,155,2009,181"/>
+<area shape="rect" id="node17" href="$_o_m_sim_physics_list_8hh.html" title=" " alt="" coords="2033,155,2195,181"/>
+<area shape="rect" id="node19" href="$_o_m_sim_primary_generator_action_8hh.html" title=" " alt="" coords="2219,155,2465,181"/>
+<area shape="rect" id="node21" href="$_o_m_sim_run_action_8hh.html" title=" " alt="" coords="75,155,230,181"/>
+<area shape="rect" id="node23" href="$_o_m_sim_event_action_8hh.html" title=" " alt="" coords="324,155,491,181"/>
+<area shape="rect" id="node26" href="$_o_m_sim_tracking_action_8hh.html" title=" " alt="" coords="517,155,701,181"/>
+<area shape="rect" id="node28" href="$_o_m_sim_stepping_action_8hh.html" title=" " alt="" coords="725,155,911,181"/>
+<area shape="rect" id="node30" href="$_o_m_sim_analysis_manager_8hh.html" title=" " alt="" coords="883,229,1083,256"/>
+<area shape="rect" id="node38" href="$_o_m_sim_u_iinterface_8hh.html" title="The OMSimUIinterface class provides a singleton interface to Geant4&#39;s UI manager." alt="" coords="987,155,1148,181"/>
+<area shape="rect" id="node46" title=" " alt="" coords="1173,155,1314,181"/>
+<area shape="rect" id="node47" title=" " alt="" coords="1339,155,1481,181"/>
+<area shape="rect" id="node48" title=" " alt="" coords="1505,155,1643,181"/>
+<area shape="rect" id="node49" title=" " alt="" coords="1667,155,1758,181"/>
+<area shape="rect" id="node4" href="$_o_m_sim_m_d_o_m_8hh.html" title=" " alt="" coords="1873,229,2006,256"/>
+<area shape="rect" id="node15" title=" " alt="" coords="1505,229,1587,256"/>
+<area shape="rect" id="node16" title=" " alt="" coords="1611,229,1849,256"/>
+<area shape="rect" id="node5" href="$_o_m_sim_m_d_o_m_flasher_8hh.html" title=" " alt="" coords="1647,304,1827,331"/>
+<area shape="rect" id="node13" href="$_o_m_sim_p_m_t_construction_8hh.html" title=" " alt="" coords="1851,304,2049,331"/>
+<area shape="rect" id="node6" href="$abc_detector_component_8hh.html" title=" " alt="" coords="1837,379,2033,405"/>
+<area shape="rect" id="node11" title=" " alt="" coords="1682,379,1813,405"/>
+<area shape="rect" id="node12" title=" " alt="" coords="1535,379,1658,405"/>
+<area shape="rect" id="node7" href="$_o_m_sim_input_data_8hh.html" title=" " alt="" coords="1391,453,1544,480"/>
+<area shape="rect" id="node9" title=" " alt="" coords="1780,453,1923,480"/>
+<area shape="rect" id="node10" title=" " alt="" coords="1947,453,2091,480"/>
+<area shape="rect" id="node8" title=" " alt="" coords="1091,528,1249,555"/>
+<area shape="rect" id="node14" title=" " alt="" coords="2057,379,2147,405"/>
+<area shape="rect" id="node18" title=" " alt="" coords="2030,229,2201,256"/>
+<area shape="rect" id="node20" title=" " alt="" coords="2225,229,2481,256"/>
+<area shape="rect" id="node22" title=" " alt="" coords="5,229,161,256"/>
+<area shape="rect" id="node24" title=" " alt="" coords="186,229,354,256"/>
+<area shape="rect" id="node25" title=" " alt="" coords="378,229,437,256"/>
+<area shape="rect" id="node27" title=" " alt="" coords="461,229,647,256"/>
+<area shape="rect" id="node29" title=" " alt="" coords="671,229,859,256"/>
+<area shape="rect" id="node31" href="$_o_m_sim_p_m_t_response_8hh.html" title=" " alt="" coords="697,304,877,331"/>
+<area shape="rect" id="node36" title=" " alt="" coords="901,304,1039,331"/>
+<area shape="rect" id="node37" title=" " alt="" coords="1063,304,1136,331"/>
+<area shape="rect" id="node32" title=" " alt="" coords="783,379,880,405"/>
+<area shape="rect" id="node33" title=" " alt="" coords="905,379,955,405"/>
+<area shape="rect" id="node34" title=" " alt="" coords="980,379,1061,405"/>
+<area shape="rect" id="node35" title=" " alt="" coords="636,379,707,405"/>
+<area shape="rect" id="node39" href="$_o_m_sim_command_args_table_8hh.html" title="Definition of the OMSimCommandArgsTable singleton class, which controls user args." alt="" coords="1107,229,1326,256"/>
+<area shape="rect" id="node45" title=" " alt="" coords="1350,229,1481,256"/>
+<area shape="rect" id="node40" href="$_o_m_sim_logger_8hh.html" title=" " alt="" coords="1412,304,1544,331"/>
+<area shape="rect" id="node43" title=" " alt="" coords="1161,304,1273,331"/>
+<area shape="rect" id="node44" title=" " alt="" coords="1297,304,1387,331"/>
+<area shape="rect" id="node41" title=" " alt="" coords="1445,379,1511,405"/>
+<area shape="rect" id="node42" title=" " alt="" coords="1357,379,1421,405"/>
 </map>

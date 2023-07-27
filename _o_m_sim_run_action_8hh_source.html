@@ -120,38 +120,34 @@ $(document).ready(function(){initNavTree('_o_m_sim_run_action_8hh_source.html','
 <a href="_o_m_sim_run_action_8hh.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef OMSimRunAction_h</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define OMSimRunAction_h 1</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;G4UserRunAction.hh&quot;</span></div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &quot;globals.hh&quot;</span></div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160; </div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="keyword">class </span>G4Run;</div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
-<div class="line"><a name="l00009"></a><span class="lineno"><a class="line" href="class_o_m_sim_run_action.html">    9</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_o_m_sim_run_action.html">OMSimRunAction</a> : <span class="keyword">public</span> G4UserRunAction</div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;{</div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;  <a class="code" href="class_o_m_sim_run_action.html#a246293feafa8e1e635d6f53641309c20">OMSimRunAction</a>();</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;  <a class="code" href="class_o_m_sim_run_action.html#aef8f7b1786567e557557aef9ffd113a3">~OMSimRunAction</a>();</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_o_m_sim_run_action.html#ac9c4ebd4441429c469f6e6d0be5ce5df">BeginOfRunAction</a>(<span class="keyword">const</span> G4Run*);</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_o_m_sim_run_action.html#a6b835c29c62a2ceaf172378bfaac387d">EndOfRunAction</a>(<span class="keyword">const</span> G4Run*);</div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;G4UserRunAction.hh&gt;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160; </div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="keyword">class </span>G4Run;</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
+<div class="line"><a name="l00008"></a><span class="lineno"><a class="line" href="class_o_m_sim_run_action.html">    8</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_o_m_sim_run_action.html">OMSimRunAction</a> : <span class="keyword">public</span> G4UserRunAction</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;{</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00011"></a><span class="lineno"><a class="line" href="class_o_m_sim_run_action.html#a246293feafa8e1e635d6f53641309c20">   11</a></span>&#160;  <a class="code" href="class_o_m_sim_run_action.html#a246293feafa8e1e635d6f53641309c20">OMSimRunAction</a>(){};</div>
+<div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="class_o_m_sim_run_action.html#aef8f7b1786567e557557aef9ffd113a3">   12</a></span>&#160;  <a class="code" href="class_o_m_sim_run_action.html#aef8f7b1786567e557557aef9ffd113a3">~OMSimRunAction</a>(){};</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160; </div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="class_o_m_sim_run_action.html#ac9c4ebd4441429c469f6e6d0be5ce5df">   15</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_o_m_sim_run_action.html#ac9c4ebd4441429c469f6e6d0be5ce5df">BeginOfRunAction</a>(<span class="keyword">const</span> G4Run*){};</div>
+<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="class_o_m_sim_run_action.html#a6b835c29c62a2ceaf172378bfaac387d">   16</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_o_m_sim_run_action.html#a6b835c29c62a2ceaf172378bfaac387d">EndOfRunAction</a>(<span class="keyword">const</span> G4Run*){};</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;};</div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160; </div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;  <span class="keywordtype">double</span> startingtime;</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;};</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="ttc" id="aclass_o_m_sim_run_action_html"><div class="ttname"><a href="class_o_m_sim_run_action.html">OMSimRunAction</a></div><div class="ttdef"><b>Definition:</b> OMSimRunAction.hh:10</div></div>
-<div class="ttc" id="aclass_o_m_sim_run_action_html_a246293feafa8e1e635d6f53641309c20"><div class="ttname"><a href="class_o_m_sim_run_action.html#a246293feafa8e1e635d6f53641309c20">OMSimRunAction::OMSimRunAction</a></div><div class="ttdeci">OMSimRunAction()</div><div class="ttdef"><b>Definition:</b> OMSimRunAction.cc:14</div></div>
-<div class="ttc" id="aclass_o_m_sim_run_action_html_a6b835c29c62a2ceaf172378bfaac387d"><div class="ttname"><a href="class_o_m_sim_run_action.html#a6b835c29c62a2ceaf172378bfaac387d">OMSimRunAction::EndOfRunAction</a></div><div class="ttdeci">void EndOfRunAction(const G4Run *)</div><div class="ttdef"><b>Definition:</b> OMSimRunAction.cc:23</div></div>
-<div class="ttc" id="aclass_o_m_sim_run_action_html_ac9c4ebd4441429c469f6e6d0be5ce5df"><div class="ttname"><a href="class_o_m_sim_run_action.html#ac9c4ebd4441429c469f6e6d0be5ce5df">OMSimRunAction::BeginOfRunAction</a></div><div class="ttdeci">void BeginOfRunAction(const G4Run *)</div><div class="ttdef"><b>Definition:</b> OMSimRunAction.cc:17</div></div>
-<div class="ttc" id="aclass_o_m_sim_run_action_html_aef8f7b1786567e557557aef9ffd113a3"><div class="ttname"><a href="class_o_m_sim_run_action.html#aef8f7b1786567e557557aef9ffd113a3">OMSimRunAction::~OMSimRunAction</a></div><div class="ttdeci">~OMSimRunAction()</div><div class="ttdef"><b>Definition:</b> OMSimRunAction.cc:15</div></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="ttc" id="aclass_o_m_sim_run_action_html"><div class="ttname"><a href="class_o_m_sim_run_action.html">OMSimRunAction</a></div><div class="ttdef"><b>Definition:</b> OMSimRunAction.hh:9</div></div>
+<div class="ttc" id="aclass_o_m_sim_run_action_html_a246293feafa8e1e635d6f53641309c20"><div class="ttname"><a href="class_o_m_sim_run_action.html#a246293feafa8e1e635d6f53641309c20">OMSimRunAction::OMSimRunAction</a></div><div class="ttdeci">OMSimRunAction()</div><div class="ttdef"><b>Definition:</b> OMSimRunAction.hh:11</div></div>
+<div class="ttc" id="aclass_o_m_sim_run_action_html_a6b835c29c62a2ceaf172378bfaac387d"><div class="ttname"><a href="class_o_m_sim_run_action.html#a6b835c29c62a2ceaf172378bfaac387d">OMSimRunAction::EndOfRunAction</a></div><div class="ttdeci">void EndOfRunAction(const G4Run *)</div><div class="ttdef"><b>Definition:</b> OMSimRunAction.hh:16</div></div>
+<div class="ttc" id="aclass_o_m_sim_run_action_html_ac9c4ebd4441429c469f6e6d0be5ce5df"><div class="ttname"><a href="class_o_m_sim_run_action.html#ac9c4ebd4441429c469f6e6d0be5ce5df">OMSimRunAction::BeginOfRunAction</a></div><div class="ttdeci">void BeginOfRunAction(const G4Run *)</div><div class="ttdef"><b>Definition:</b> OMSimRunAction.hh:15</div></div>
+<div class="ttc" id="aclass_o_m_sim_run_action_html_aef8f7b1786567e557557aef9ffd113a3"><div class="ttname"><a href="class_o_m_sim_run_action.html#aef8f7b1786567e557557aef9ffd113a3">OMSimRunAction::~OMSimRunAction</a></div><div class="ttdeci">~OMSimRunAction()</div><div class="ttdef"><b>Definition:</b> OMSimRunAction.hh:12</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_0508a806709bbb036eb481438c5edd07.html">effective_area</a></li><li class="navelem"><a class="el" href="dir_067620130b80b08c0f6387663e9785ff.html">include</a></li><li class="navelem"><a class="el" href="_o_m_sim_run_action_8hh.html">OMSimRunAction.hh</a></li>
-    <li class="footer">Generated on Thu Jul 27 2023 13:52:36 for OMSim by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Thu Jul 27 2023 16:12:50 for OMSim by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

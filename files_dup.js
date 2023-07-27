@@ -12,9 +12,10 @@ var files_dup =
     [ "OMSim_effective_area.cc", "_o_m_sim__effective__area_8cc.html", "_o_m_sim__effective__area_8cc" ],
     [ "OMSimAnalysisManager.cc", "_o_m_sim_analysis_manager_8cc.html", null ],
     [ "OMSimAnalysisManager.hh", "_o_m_sim_analysis_manager_8hh.html", [
-      [ "HitStats", "struct_hit_stats.html", "struct_hit_stats" ],
-      [ "OMSimAnalysisManager", "class_o_m_sim_analysis_manager.html", "class_o_m_sim_analysis_manager" ]
+      [ "HitStats", "struct_hit_stats.html", "struct_hit_stats" ]
     ] ],
+    [ "OMSimAngularScan.cc", "_o_m_sim_angular_scan_8cc.html", null ],
+    [ "OMSimAngularScan.hh", "_o_m_sim_angular_scan_8hh.html", null ],
     [ "OMSimCommandArgsTable.hh", "_o_m_sim_command_args_table_8hh.html", "_o_m_sim_command_args_table_8hh" ],
     [ "OMSimDataFileTypes.cc", "_o_m_sim_data_file_types_8cc.html", null ],
     [ "OMSimDataFileTypes.hh", "_o_m_sim_data_file_types_8hh.html", null ],
@@ -25,9 +26,7 @@ var files_dup =
       [ "DEggHarness", "class_d_egg_harness.html", "class_d_egg_harness" ]
     ] ],
     [ "OMSimDetectorConstruction.cc", "_o_m_sim_detector_construction_8cc.html", null ],
-    [ "OMSimDetectorConstruction.hh", "_o_m_sim_detector_construction_8hh.html", [
-      [ "OMSimDetectorConstruction", "class_o_m_sim_detector_construction.html", "class_o_m_sim_detector_construction" ]
-    ] ],
+    [ "OMSimDetectorConstruction.hh", "_o_m_sim_detector_construction_8hh.html", null ],
     [ "OMSimEventAction.cc", "_o_m_sim_event_action_8cc.html", null ],
     [ "OMSimEventAction.hh", "_o_m_sim_event_action_8hh.html", [
       [ "OMSimEventAction", "class_o_m_sim_event_action.html", "class_o_m_sim_event_action" ]
@@ -78,12 +77,9 @@ var files_dup =
     [ "OMSimPrimaryGeneratorAction.hh", "_o_m_sim_primary_generator_action_8hh.html", [
       [ "OMSimPrimaryGeneratorAction", "class_o_m_sim_primary_generator_action.html", "class_o_m_sim_primary_generator_action" ]
     ] ],
-    [ "OMSimRunAction.cc", "_o_m_sim_run_action_8cc.html", null ],
     [ "OMSimRunAction.hh", "_o_m_sim_run_action_8hh.html", [
       [ "OMSimRunAction", "class_o_m_sim_run_action.html", "class_o_m_sim_run_action" ]
     ] ],
-    [ "OMSimSimpleGPSBeams.cc", "_o_m_sim_simple_g_p_s_beams_8cc.html", null ],
-    [ "OMSimSimpleGPSBeams.hh", "_o_m_sim_simple_g_p_s_beams_8hh.html", null ],
     [ "OMSimSteppingAction.cc", "_o_m_sim_stepping_action_8cc.html", null ],
     [ "OMSimSteppingAction.hh", "_o_m_sim_stepping_action_8hh.html", [
       [ "OMSimSteppingAction", "class_o_m_sim_stepping_action.html", "class_o_m_sim_stepping_action" ]

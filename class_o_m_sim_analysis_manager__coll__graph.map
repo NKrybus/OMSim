@@ -1,4 +1,4 @@
 <map id="OMSimAnalysisManager" name="OMSimAnalysisManager">
-<area shape="rect" id="node1" title=" " alt="" coords="5,95,187,121"/>
-<area shape="rect" id="node2" href="$struct_hit_stats.html" title=" " alt="" coords="59,5,133,32"/>
+<area shape="rect" id="node1" title="This class is responsible for managing info of detected photons and writing the results in the desire..." alt="" coords="5,95,187,121"/>
+<area shape="rect" id="node2" href="$struct_hit_stats.html" title="A structure to store information of photon hits." alt="" coords="59,5,133,32"/>
 </map>

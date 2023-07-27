@@ -59,12 +59,14 @@ However, this is {\bfseries{very}} inefficient. The best is to save the angle pa
 In my PC the first code block needs 51 seconds (tested with NSIDE=2) , the second block only 14 seconds (as simulation has to be initialised only once). \doxysubsection*{Files}
 \begin{DoxyCompactItemize}
 \item 
-file \mbox{\hyperlink{_o_m_sim_simple_g_p_s_beams_8cc}{OMSim\+Simple\+GPSBeams.\+cc}}
-\begin{DoxyCompactList}\small\item\em Defines the \mbox{\hyperlink{class_angular_scan}{Angular\+Scan}} class for simple GPS beam configurations. \end{DoxyCompactList}\item 
 file \mbox{\hyperlink{_o_m_sim__effective__area_8cc}{OMSim\+\_\+effective\+\_\+area.\+cc}}
 \begin{DoxyCompactList}\small\item\em Main for the calculation of effective areas. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Classes}
 \begin{DoxyCompactItemize}
 \item 
+class \mbox{\hyperlink{class_o_m_sim_analysis_manager}{OMSim\+Analysis\+Manager}}
+\begin{DoxyCompactList}\small\item\em This class is responsible for managing info of detected photons and writing the results in the desired format. \end{DoxyCompactList}\item 
 class \mbox{\hyperlink{class_angular_scan}{Angular\+Scan}}
-\begin{DoxyCompactList}\small\item\em Class for defining and running simple GPS beam configurations with angular scans. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Class for defining and running simple GPS beam configurations with angular scans. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_o_m_sim_detector_construction}{OMSim\+Detector\+Construction}}
+\begin{DoxyCompactList}\small\item\em Class for detector construction in the effective area simulation. \end{DoxyCompactList}\end{DoxyCompactItemize}

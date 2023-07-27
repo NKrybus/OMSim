@@ -121,37 +121,36 @@ $(document).ready(function(){initNavTree('_o_m_sim_event_action_8hh_source.html'
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define OMSimEventAction_h 1</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;G4UserEventAction.hh&quot;</span></div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160; </div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="keyword">class </span>G4Event;</div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160; </div>
-<div class="line"><a name="l00010"></a><span class="lineno"><a class="line" href="class_o_m_sim_event_action.html">   10</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_o_m_sim_event_action.html">OMSimEventAction</a> : <span class="keyword">public</span> G4UserEventAction</div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;{</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;        <a class="code" href="class_o_m_sim_event_action.html#ab8aaaeecc185bbaef63665f673356506">OMSimEventAction</a>();</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;        <a class="code" href="class_o_m_sim_event_action.html#ae04b5b7339c3a0820eb71278c1eb8a96">~OMSimEventAction</a>();</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; </div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_o_m_sim_event_action.html#a74d668030a1b6b461c942e87203c90b9">BeginOfEventAction</a>(<span class="keyword">const</span> G4Event*);</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_o_m_sim_event_action.html#a10298c7dff0337cec4ee06a25ca9c116">EndOfEventAction</a>(<span class="keyword">const</span> G4Event*);</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;};</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="ttc" id="aclass_o_m_sim_event_action_html"><div class="ttname"><a href="class_o_m_sim_event_action.html">OMSimEventAction</a></div><div class="ttdef"><b>Definition:</b> OMSimEventAction.hh:11</div></div>
-<div class="ttc" id="aclass_o_m_sim_event_action_html_a10298c7dff0337cec4ee06a25ca9c116"><div class="ttname"><a href="class_o_m_sim_event_action.html#a10298c7dff0337cec4ee06a25ca9c116">OMSimEventAction::EndOfEventAction</a></div><div class="ttdeci">void EndOfEventAction(const G4Event *)</div><div class="ttdef"><b>Definition:</b> OMSimEventAction.cc:27</div></div>
-<div class="ttc" id="aclass_o_m_sim_event_action_html_a74d668030a1b6b461c942e87203c90b9"><div class="ttname"><a href="class_o_m_sim_event_action.html#a74d668030a1b6b461c942e87203c90b9">OMSimEventAction::BeginOfEventAction</a></div><div class="ttdeci">void BeginOfEventAction(const G4Event *)</div><div class="ttdef"><b>Definition:</b> OMSimEventAction.cc:22</div></div>
-<div class="ttc" id="aclass_o_m_sim_event_action_html_ab8aaaeecc185bbaef63665f673356506"><div class="ttname"><a href="class_o_m_sim_event_action.html#ab8aaaeecc185bbaef63665f673356506">OMSimEventAction::OMSimEventAction</a></div><div class="ttdeci">OMSimEventAction()</div><div class="ttdef"><b>Definition:</b> OMSimEventAction.cc:16</div></div>
-<div class="ttc" id="aclass_o_m_sim_event_action_html_ae04b5b7339c3a0820eb71278c1eb8a96"><div class="ttname"><a href="class_o_m_sim_event_action.html#ae04b5b7339c3a0820eb71278c1eb8a96">OMSimEventAction::~OMSimEventAction</a></div><div class="ttdeci">~OMSimEventAction()</div><div class="ttdef"><b>Definition:</b> OMSimEventAction.cc:19</div></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160; </div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="keyword">class </span>G4Event;</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
+<div class="line"><a name="l00009"></a><span class="lineno"><a class="line" href="class_o_m_sim_event_action.html">    9</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_o_m_sim_event_action.html">OMSimEventAction</a> : <span class="keyword">public</span> G4UserEventAction</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;{</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;        <a class="code" href="class_o_m_sim_event_action.html#ab8aaaeecc185bbaef63665f673356506">OMSimEventAction</a>();</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;        <a class="code" href="class_o_m_sim_event_action.html#ae04b5b7339c3a0820eb71278c1eb8a96">~OMSimEventAction</a>();</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_o_m_sim_event_action.html#a74d668030a1b6b461c942e87203c90b9">BeginOfEventAction</a>(<span class="keyword">const</span> G4Event*);</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_o_m_sim_event_action.html#a10298c7dff0337cec4ee06a25ca9c116">EndOfEventAction</a>(<span class="keyword">const</span> G4Event*);</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160; </div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;};</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="ttc" id="aclass_o_m_sim_event_action_html"><div class="ttname"><a href="class_o_m_sim_event_action.html">OMSimEventAction</a></div><div class="ttdef"><b>Definition:</b> OMSimEventAction.hh:10</div></div>
+<div class="ttc" id="aclass_o_m_sim_event_action_html_a10298c7dff0337cec4ee06a25ca9c116"><div class="ttname"><a href="class_o_m_sim_event_action.html#a10298c7dff0337cec4ee06a25ca9c116">OMSimEventAction::EndOfEventAction</a></div><div class="ttdeci">void EndOfEventAction(const G4Event *)</div><div class="ttdef"><b>Definition:</b> OMSimEventAction.cc:16</div></div>
+<div class="ttc" id="aclass_o_m_sim_event_action_html_a74d668030a1b6b461c942e87203c90b9"><div class="ttname"><a href="class_o_m_sim_event_action.html#a74d668030a1b6b461c942e87203c90b9">OMSimEventAction::BeginOfEventAction</a></div><div class="ttdeci">void BeginOfEventAction(const G4Event *)</div><div class="ttdef"><b>Definition:</b> OMSimEventAction.cc:11</div></div>
+<div class="ttc" id="aclass_o_m_sim_event_action_html_ab8aaaeecc185bbaef63665f673356506"><div class="ttname"><a href="class_o_m_sim_event_action.html#ab8aaaeecc185bbaef63665f673356506">OMSimEventAction::OMSimEventAction</a></div><div class="ttdeci">OMSimEventAction()</div><div class="ttdef"><b>Definition:</b> OMSimEventAction.cc:5</div></div>
+<div class="ttc" id="aclass_o_m_sim_event_action_html_ae04b5b7339c3a0820eb71278c1eb8a96"><div class="ttname"><a href="class_o_m_sim_event_action.html#ae04b5b7339c3a0820eb71278c1eb8a96">OMSimEventAction::~OMSimEventAction</a></div><div class="ttdeci">~OMSimEventAction()</div><div class="ttdef"><b>Definition:</b> OMSimEventAction.cc:8</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_0508a806709bbb036eb481438c5edd07.html">effective_area</a></li><li class="navelem"><a class="el" href="dir_067620130b80b08c0f6387663e9785ff.html">include</a></li><li class="navelem"><a class="el" href="_o_m_sim_event_action_8hh.html">OMSimEventAction.hh</a></li>
-    <li class="footer">Generated on Thu Jul 27 2023 13:52:36 for OMSim by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Thu Jul 27 2023 16:12:50 for OMSim by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

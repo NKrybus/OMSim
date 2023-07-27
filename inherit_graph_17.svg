@@ -21,7 +21,7 @@
 <!-- Node0 -->
 <g id="node2" class="node">
 <title>Node0</title>
-<g id="a_node2"><a xlink:href="class_o_m_sim_detector_construction.html" target="_top" xlink:title=" ">
+<g id="a_node2"><a xlink:href="class_o_m_sim_detector_construction.html" target="_top" xlink:title="Class for detector construction in the effective area simulation.">
 <polygon fill="white" stroke="black" points="199,-0.5 199,-19.5 354,-19.5 354,-0.5 199,-0.5"/>
 <text text-anchor="middle" x="276.5" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">OMSimDetectorConstruction</text>
 </a>

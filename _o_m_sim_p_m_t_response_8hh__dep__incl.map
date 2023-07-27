@@ -1,13 +1,12 @@
 <map id="OMSimPMTResponse.hh" name="OMSimPMTResponse.hh">
-<area shape="rect" id="node1" title=" " alt="" coords="596,5,776,32"/>
-<area shape="rect" id="node2" href="$_o_m_sim_p_m_t_response_8cc.html" title="PMT response simulator." alt="" coords="383,80,562,107"/>
-<area shape="rect" id="node3" href="$_o_m_sim_analysis_manager_8hh.html" title=" " alt="" coords="586,80,786,107"/>
-<area shape="rect" id="node11" href="$_o_m_sim_tracking_action_8cc.html" title=" " alt="" coords="996,155,1179,181"/>
+<area shape="rect" id="node1" title=" " alt="" coords="305,5,485,32"/>
+<area shape="rect" id="node2" href="$_o_m_sim_p_m_t_response_8cc.html" title="PMT response simulator." alt="" coords="199,80,378,107"/>
+<area shape="rect" id="node3" href="$_o_m_sim_analysis_manager_8hh.html" title=" " alt="" coords="402,80,602,107"/>
 <area shape="rect" id="node4" href="$_o_m_sim_8hh.html" title="Main simulation class for the Optical Module (OM) simulation." alt="" coords="84,155,173,181"/>
 <area shape="rect" id="node7" href="$_o_m_sim_analysis_manager_8cc.html" title=" " alt="" coords="197,155,396,181"/>
 <area shape="rect" id="node8" href="$_o_m_sim_event_action_8cc.html" title=" " alt="" coords="419,155,585,181"/>
-<area shape="rect" id="node9" href="$_o_m_sim_run_action_8cc.html" title=" " alt="" coords="609,155,763,181"/>
-<area shape="rect" id="node10" href="$_o_m_sim_stepping_action_8cc.html" title=" " alt="" coords="787,155,972,181"/>
+<area shape="rect" id="node9" href="$_o_m_sim_stepping_action_8cc.html" title=" " alt="" coords="609,155,795,181"/>
+<area shape="rect" id="node10" href="$_o_m_sim_tracking_action_8cc.html" title=" " alt="" coords="819,155,1001,181"/>
 <area shape="rect" id="node5" href="$_o_m_sim_8cc.html" title=" " alt="" coords="5,229,92,256"/>
 <area shape="rect" id="node6" href="$_o_m_sim__effective__area_8cc.html" title="Main for the calculation of effective areas." alt="" coords="117,229,303,256"/>
 </map>

@@ -1,12 +1,12 @@
 <map id="OMSimMDOMFlasher.hh" name="OMSimMDOMFlasher.hh">
-<area shape="rect" id="node1" title=" " alt="" coords="579,5,759,32"/>
-<area shape="rect" id="node2" href="$_o_m_sim_m_d_o_m_8hh.html" title=" " alt="" coords="503,80,636,107"/>
-<area shape="rect" id="node10" href="$_o_m_sim_detector_construction_8cc.html" title="User defined detector." alt="" coords="737,229,962,256"/>
+<area shape="rect" id="node1" title=" " alt="" coords="262,5,442,32"/>
+<area shape="rect" id="node2" href="$_o_m_sim_m_d_o_m_8hh.html" title=" " alt="" coords="285,80,419,107"/>
 <area shape="rect" id="node3" href="$_o_m_sim_m_d_o_m_8cc.html" title="Construction of mDOM." alt="" coords="5,155,136,181"/>
 <area shape="rect" id="node4" href="$_o_m_sim_m_d_o_m_flasher_8cc.html" title=" " alt="" coords="160,155,339,181"/>
 <area shape="rect" id="node5" href="$_o_m_sim_m_d_o_m_harness_8cc.html" title="Construction of mDOM harness." alt="" coords="363,155,547,181"/>
 <area shape="rect" id="node6" href="$_o_m_sim_detector_construction_8hh.html" title=" " alt="" coords="571,155,797,181"/>
-<area shape="rect" id="node7" href="$_o_m_sim_8hh.html" title="Main simulation class for the Optical Module (OM) simulation." alt="" coords="623,229,713,256"/>
-<area shape="rect" id="node8" href="$_o_m_sim_8cc.html" title=" " alt="" coords="545,304,631,331"/>
-<area shape="rect" id="node9" href="$_o_m_sim__effective__area_8cc.html" title="Main for the calculation of effective areas." alt="" coords="656,304,843,331"/>
+<area shape="rect" id="node7" href="$_o_m_sim_8hh.html" title="Main simulation class for the Optical Module (OM) simulation." alt="" coords="549,229,638,256"/>
+<area shape="rect" id="node10" href="$_o_m_sim_detector_construction_8cc.html" title=" " alt="" coords="662,229,887,256"/>
+<area shape="rect" id="node8" href="$_o_m_sim_8cc.html" title=" " alt="" coords="470,304,557,331"/>
+<area shape="rect" id="node9" href="$_o_m_sim__effective__area_8cc.html" title="Main for the calculation of effective areas." alt="" coords="581,304,768,331"/>
 </map>

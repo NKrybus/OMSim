@@ -2,6 +2,11 @@
 \label{class_o_m_sim_analysis_manager}\index{OMSimAnalysisManager@{OMSimAnalysisManager}}
 
 
+This class is responsible for managing info of detected photons and writing the results in the desired format.  
+
+
+
+
 Collaboration diagram for OMSim\+Analysis\+Manager\+:
 \nopagebreak
 \begin{figure}[H]
@@ -14,13 +19,13 @@ Collaboration diagram for OMSim\+Analysis\+Manager\+:
 \begin{DoxyCompactItemize}
 \item 
 std\+::vector$<$ double $>$ \mbox{\hyperlink{class_o_m_sim_analysis_manager_a727c6c0fef3aedb8610e8925facbf76e}{Count\+Hits}} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Counts the number of hits for each PMT. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_o_m_sim_analysis_manager_aa2f22d9a16124d9cb7d100e7c64e4006}{Reset}} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Empties the \mbox{\hyperlink{struct_hit_stats}{Hit\+Stats}} struct. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_o_m_sim_analysis_manager_a41aa94a56238f26418351ae484a78a7e}{Write\+Scan}} (G4double p\+Phi, G4double p\+Theta)
-\item 
+\begin{DoxyCompactList}\small\item\em Writes a scan result to the output file. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_o_m_sim_analysis_manager_a1a13249dd3722aaacbb1c41d10418648}{Write\+Header}} ()
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Writes a header to the output file. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Static Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
@@ -46,6 +51,9 @@ G4long \mbox{\hyperlink{class_o_m_sim_analysis_manager_acbda5b58e03bb9b1f6104ced
 \doxysubsubsection{\texorpdfstring{CountHits()}{CountHits()}}
 {\footnotesize\ttfamily std\+::vector$<$ double $>$ OMSim\+Analysis\+Manager\+::\+Count\+Hits (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
+\begin{DoxyReturn}{Returns}
+A vector containing the counts of hits for each PMT. 
+\end{DoxyReturn}
 \mbox{\Hypertarget{class_o_m_sim_analysis_manager_af14993ee34e8cb229313c33469e6d76a}\label{class_o_m_sim_analysis_manager_af14993ee34e8cb229313c33469e6d76a}} 
 \index{OMSimAnalysisManager@{OMSimAnalysisManager}!getInstance@{getInstance}}
 \index{getInstance@{getInstance}!OMSimAnalysisManager@{OMSimAnalysisManager}}
@@ -70,6 +78,13 @@ G4long \mbox{\hyperlink{class_o_m_sim_analysis_manager_acbda5b58e03bb9b1f6104ced
 \doxysubsubsection{\texorpdfstring{WriteScan()}{WriteScan()}}
 {\footnotesize\ttfamily void OMSim\+Analysis\+Manager\+::\+Write\+Scan (\begin{DoxyParamCaption}\item[{G4double}]{p\+Phi,  }\item[{G4double}]{p\+Theta }\end{DoxyParamCaption})}
 
+
+\begin{DoxyParams}{Parameters}
+{\em p\+Phi} & The phi angle used in the scan to be written to the output file. \\
+\hline
+{\em p\+Theta} & The phi angle used in the scan to be written to the output file. \\
+\hline
+\end{DoxyParams}
 
 
 \doxysubsection{Member Data Documentation}
