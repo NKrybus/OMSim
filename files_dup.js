@@ -73,6 +73,7 @@ var files_dup =
     [ "OMSimMDOMHarness.hh", "_o_m_sim_m_d_o_m_harness_8hh.html", [
       [ "mDOMHarness", "classm_d_o_m_harness.html", "classm_d_o_m_harness" ]
     ] ],
+    [ "OMSimOpticalModule.hh", "_o_m_sim_optical_module_8hh.html", null ],
     [ "OMSimPDOM.cc", "_o_m_sim_p_d_o_m_8cc.html", null ],
     [ "OMSimPDOM.hh", "_o_m_sim_p_d_o_m_8hh.html", null ],
     [ "effective_area/src/OMSimPhysicsList.cc", "effective__area_2src_2_o_m_sim_physics_list_8cc.html", null ],

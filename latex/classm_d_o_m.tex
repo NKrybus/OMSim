@@ -46,11 +46,13 @@ std\+::vector$<$ G4\+Transform3D $>$ \mbox{\hyperlink{classm_d_o_m_a0ea5b69f3884
 \item 
 std\+::vector$<$ std\+::vector$<$ G4double $>$ $>$ \mbox{\hyperlink{classm_d_o_m_a33d632b787f897dfb6320e246690e62d}{m\+LED\+\_\+\+Ang\+From\+Sphere}}
 \item 
-G4double \mbox{\hyperlink{classm_d_o_m_a95b140aba4a12a051763b981a6d5ffc1}{m\+Glass\+Out\+Rad}} = 176.\+5$\ast$mm
+const G4double \mbox{\hyperlink{classm_d_o_m_ae28cf6f87440b664735f77854076219a}{m\+Cylinder\+Angle}} = 2.\+8$\ast$deg
 \item 
-G4double \mbox{\hyperlink{classm_d_o_m_a8ebcc057212a406425f938b5822652b5}{m\+Cyl\+High}} = 27.\+5$\ast$mm
+const G4double \mbox{\hyperlink{classm_d_o_m_a0a150a538f8bbaa720cc3876fcc74c54}{m\+Glass\+Out\+Rad}} = 176.\+5$\ast$mm
 \item 
-G4double \mbox{\hyperlink{classm_d_o_m_accd2b944cf289a6a24108558377e805c}{m\+Glass\+In\+Rad}} = \mbox{\hyperlink{classm_d_o_m_a95b140aba4a12a051763b981a6d5ffc1}{m\+Glass\+Out\+Rad}} -\/ m\+Glass\+Thick
+const G4double \mbox{\hyperlink{classm_d_o_m_a84365c931fe3226e18f78638b10b637d}{m\+Cyl\+High}} = 27.\+5$\ast$mm
+\item 
+const G4double \mbox{\hyperlink{classm_d_o_m_aedf09daf267a3c3b2dd9602c05f07636}{m\+Glass\+In\+Rad}} = \mbox{\hyperlink{classm_d_o_m_a0a150a538f8bbaa720cc3876fcc74c54}{m\+Glass\+Out\+Rad}} -\/ m\+Glass\+Thick
 \end{DoxyCompactItemize}
 \doxysubsection*{Additional Inherited Members}
 
@@ -123,23 +125,29 @@ This method triggers the flasher at the given index in the specified module.
 
 
 \doxysubsection{Member Data Documentation}
-\mbox{\Hypertarget{classm_d_o_m_a8ebcc057212a406425f938b5822652b5}\label{classm_d_o_m_a8ebcc057212a406425f938b5822652b5}} 
+\mbox{\Hypertarget{classm_d_o_m_a84365c931fe3226e18f78638b10b637d}\label{classm_d_o_m_a84365c931fe3226e18f78638b10b637d}} 
 \index{mDOM@{mDOM}!mCylHigh@{mCylHigh}}
 \index{mCylHigh@{mCylHigh}!mDOM@{mDOM}}
 \doxysubsubsection{\texorpdfstring{mCylHigh}{mCylHigh}}
-{\footnotesize\ttfamily G4double m\+DOM\+::m\+Cyl\+High = 27.\+5$\ast$mm}
+{\footnotesize\ttfamily const G4double m\+DOM\+::m\+Cyl\+High = 27.\+5$\ast$mm}
 
-\mbox{\Hypertarget{classm_d_o_m_accd2b944cf289a6a24108558377e805c}\label{classm_d_o_m_accd2b944cf289a6a24108558377e805c}} 
+\mbox{\Hypertarget{classm_d_o_m_ae28cf6f87440b664735f77854076219a}\label{classm_d_o_m_ae28cf6f87440b664735f77854076219a}} 
+\index{mDOM@{mDOM}!mCylinderAngle@{mCylinderAngle}}
+\index{mCylinderAngle@{mCylinderAngle}!mDOM@{mDOM}}
+\doxysubsubsection{\texorpdfstring{mCylinderAngle}{mCylinderAngle}}
+{\footnotesize\ttfamily const G4double m\+DOM\+::m\+Cylinder\+Angle = 2.\+8$\ast$deg}
+
+\mbox{\Hypertarget{classm_d_o_m_aedf09daf267a3c3b2dd9602c05f07636}\label{classm_d_o_m_aedf09daf267a3c3b2dd9602c05f07636}} 
 \index{mDOM@{mDOM}!mGlassInRad@{mGlassInRad}}
 \index{mGlassInRad@{mGlassInRad}!mDOM@{mDOM}}
 \doxysubsubsection{\texorpdfstring{mGlassInRad}{mGlassInRad}}
-{\footnotesize\ttfamily G4double m\+DOM\+::m\+Glass\+In\+Rad = \mbox{\hyperlink{classm_d_o_m_a95b140aba4a12a051763b981a6d5ffc1}{m\+Glass\+Out\+Rad}} -\/ m\+Glass\+Thick}
+{\footnotesize\ttfamily const G4double m\+DOM\+::m\+Glass\+In\+Rad = \mbox{\hyperlink{classm_d_o_m_a0a150a538f8bbaa720cc3876fcc74c54}{m\+Glass\+Out\+Rad}} -\/ m\+Glass\+Thick}
 
-\mbox{\Hypertarget{classm_d_o_m_a95b140aba4a12a051763b981a6d5ffc1}\label{classm_d_o_m_a95b140aba4a12a051763b981a6d5ffc1}} 
+\mbox{\Hypertarget{classm_d_o_m_a0a150a538f8bbaa720cc3876fcc74c54}\label{classm_d_o_m_a0a150a538f8bbaa720cc3876fcc74c54}} 
 \index{mDOM@{mDOM}!mGlassOutRad@{mGlassOutRad}}
 \index{mGlassOutRad@{mGlassOutRad}!mDOM@{mDOM}}
 \doxysubsubsection{\texorpdfstring{mGlassOutRad}{mGlassOutRad}}
-{\footnotesize\ttfamily G4double m\+DOM\+::m\+Glass\+Out\+Rad = 176.\+5$\ast$mm}
+{\footnotesize\ttfamily const G4double m\+DOM\+::m\+Glass\+Out\+Rad = 176.\+5$\ast$mm}
 
 \mbox{\Hypertarget{classm_d_o_m_a33d632b787f897dfb6320e246690e62d}\label{classm_d_o_m_a33d632b787f897dfb6320e246690e62d}} 
 \index{mDOM@{mDOM}!mLED\_AngFromSphere@{mLED\_AngFromSphere}}

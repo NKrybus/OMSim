@@ -56,12 +56,6 @@ var group__common =
       [ "mSteelVis", "classabc_detector_component.html#ad57eb4a0be4c50d570d436d559178ba3", null ],
       [ "mWhite", "classabc_detector_component.html#ad57a37961439b26587d55ba4e3c6603b", null ]
     ] ],
-    [ "OpticalModule", "class_optical_module.html", [
-      [ "get_number_of_PMTs", "class_optical_module.html#ad38b514b9dca7f456f7b228490acd5df", null ],
-      [ "get_PMT_manager", "class_optical_module.html#acfea011f895ea19d5e64178835d0a2cd", null ],
-      [ "get_pressure_vessel_weight", "class_optical_module.html#aa4d4ddc44febd627c780529347161e62", null ],
-      [ "mPMTManager", "class_optical_module.html#a90bdd6e11b76eb6e1c620bcdc3863e3b", null ]
-    ] ],
     [ "OMSim", "class_o_m_sim.html", [
       [ "OMSim", "class_o_m_sim.html#afc01df8f57a1303823b79ffd79088a89", null ],
       [ "~OMSim", "class_o_m_sim.html#a61d63cc8b99c7ac89ecce97720fbb41a", null ],
@@ -125,12 +119,24 @@ var group__common =
       [ "getSurfaceType", "class_reflective_surface.html#ae3e32d0fa4d3fba60478f4aaa3d537c5", null ],
       [ "mOpticalSurface", "class_reflective_surface.html#a366da1b1126e219615c342b9bc9a4e16", null ]
     ] ],
+    [ "OMSimUIinterface", "class_o_m_sim_u_iinterface.html", [
+      [ "applyCommand", "class_o_m_sim_u_iinterface.html#ab38089a4fb48f97b36b2f1278cfd76d3", null ],
+      [ "getInstance", "class_o_m_sim_u_iinterface.html#a42aab88ea8ba7886c93407279e7770f8", null ],
+      [ "runBeamOn", "class_o_m_sim_u_iinterface.html#a671add7257f9229071a509b8677789d2", null ],
+      [ "setUI", "class_o_m_sim_u_iinterface.html#ae66ce7c3befd8cc22460a1a6939eb5e1", null ]
+    ] ],
     [ "DEGG", "class_d_e_g_g.html", [
       [ "DEGG", "class_d_e_g_g.html#a93dc17fd3d8523e54ad70a42925ff4f1", null ],
       [ "~DEGG", "class_d_e_g_g.html#a943f7bfe01d8646165b4873c7b57a388", null ],
       [ "construction", "class_d_e_g_g.html#ac36a2968b6da47bd35dc1f4d14e93904", null ],
       [ "get_number_of_PMTs", "class_d_e_g_g.html#a5053207b877477ef1815e6502e145045", null ],
       [ "get_pressure_vessel_weight", "class_d_e_g_g.html#a523390f0737234af8abbe86d8c2f2078", null ]
+    ] ],
+    [ "OpticalModule", "class_optical_module.html", [
+      [ "get_number_of_PMTs", "class_optical_module.html#ad38b514b9dca7f456f7b228490acd5df", null ],
+      [ "get_PMT_manager", "class_optical_module.html#acfea011f895ea19d5e64178835d0a2cd", null ],
+      [ "get_pressure_vessel_weight", "class_optical_module.html#aa4d4ddc44febd627c780529347161e62", null ],
+      [ "mPMTManager", "class_optical_module.html#a90bdd6e11b76eb6e1c620bcdc3863e3b", null ]
     ] ],
     [ "pDOM", "classp_d_o_m.html", [
       [ "pDOM", "classp_d_o_m.html#a8702e858160254f80acfbf15b38053c3", null ],
@@ -139,11 +145,5 @@ var group__common =
       [ "get_number_of_PMTs", "classp_d_o_m.html#a8a3dbeed4c571c80c952c6a229dc139e", null ],
       [ "get_pressure_vessel_weight", "classp_d_o_m.html#a34dc6c8630ef4eef2ef2918c0d31a8c8", null ],
       [ "mPlaceHarness", "classp_d_o_m.html#ac2957c4f838bb9cc9ced72e424691df5", null ]
-    ] ],
-    [ "OMSimUIinterface", "class_o_m_sim_u_iinterface.html", [
-      [ "applyCommand", "class_o_m_sim_u_iinterface.html#ab38089a4fb48f97b36b2f1278cfd76d3", null ],
-      [ "getInstance", "class_o_m_sim_u_iinterface.html#a42aab88ea8ba7886c93407279e7770f8", null ],
-      [ "runBeamOn", "class_o_m_sim_u_iinterface.html#a671add7257f9229071a509b8677789d2", null ],
-      [ "setUI", "class_o_m_sim_u_iinterface.html#ae66ce7c3befd8cc22460a1a6939eb5e1", null ]
     ] ]
 ];
