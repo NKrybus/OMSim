@@ -59,9 +59,9 @@ var group__common =
     [ "OMSim", "class_o_m_sim.html", [
       [ "OMSim", "class_o_m_sim.html#afc01df8f57a1303823b79ffd79088a89", null ],
       [ "~OMSim", "class_o_m_sim.html#a61d63cc8b99c7ac89ecce97720fbb41a", null ],
-      [ "ensure_output_directory_exists", "class_o_m_sim.html#a994135b2e3edc213bdacd58b657c98c9", null ],
-      [ "initialise_simulation", "class_o_m_sim.html#a6ce66c37ec256ac376a895aa898a99de", null ],
-      [ "start_visualisation", "class_o_m_sim.html#ae1977724cf6cf164bfdfb3e41cbea609", null ],
+      [ "ensureOutputDirectoryExists", "class_o_m_sim.html#a5fdec07501bb76199f652ac95bd1e961", null ],
+      [ "initialiseSimulation", "class_o_m_sim.html#a215ae29aab195daa3ef15868e70ab2c1", null ],
+      [ "startVisualisation", "class_o_m_sim.html#a42d86958aba31a17fb0c8a39fbc9c9b5", null ],
       [ "mGeneralArgs", "class_o_m_sim.html#a8eb0d1638af500069fc4e6a2f998b356", null ]
     ] ],
     [ "OMSimCommandArgsTable", "class_o_m_sim_command_args_table.html", [
@@ -90,7 +90,7 @@ var group__common =
       [ "extractAbsorptionLength", "classabc_material_data.html#a0ae68961031fd55ab0356112f49aedd0", null ],
       [ "extractInformation", "classabc_material_data.html#acca9fc268907f29e89960699cadb0b53", null ],
       [ "extractRefractionIndex", "classabc_material_data.html#a2a5b07c86c18825c5eca27818ad6268c", null ],
-      [ "GetState", "classabc_material_data.html#a4a48da457edfd34f1d85cd00c2626484", null ],
+      [ "getState", "classabc_material_data.html#a8fee96bfd62337bcaefd70ba42b35aa6", null ],
       [ "mMatDatBase", "classabc_material_data.html#ae6950e6c0751095c9601fb561eacc1e0", null ],
       [ "mMaterial", "classabc_material_data.html#af94d1f778c1998286f35cae107a3a167", null ],
       [ "mMPT", "classabc_material_data.html#a598d1d21330a101855229b2fb08357a9", null ]
@@ -129,21 +129,21 @@ var group__common =
       [ "DEGG", "class_d_e_g_g.html#a93dc17fd3d8523e54ad70a42925ff4f1", null ],
       [ "~DEGG", "class_d_e_g_g.html#a943f7bfe01d8646165b4873c7b57a388", null ],
       [ "construction", "class_d_e_g_g.html#ac36a2968b6da47bd35dc1f4d14e93904", null ],
-      [ "get_number_of_PMTs", "class_d_e_g_g.html#a5053207b877477ef1815e6502e145045", null ],
-      [ "get_pressure_vessel_weight", "class_d_e_g_g.html#a523390f0737234af8abbe86d8c2f2078", null ]
+      [ "getNumberOfPMTs", "class_d_e_g_g.html#a322fe20cae9cfce1b05817c0ac3f1393", null ],
+      [ "getPressureVesselWeight", "class_d_e_g_g.html#affbc4905f52992f3d1f206f26466c076", null ]
     ] ],
     [ "OpticalModule", "class_optical_module.html", [
-      [ "get_number_of_PMTs", "class_optical_module.html#ad38b514b9dca7f456f7b228490acd5df", null ],
-      [ "get_PMT_manager", "class_optical_module.html#acfea011f895ea19d5e64178835d0a2cd", null ],
-      [ "get_pressure_vessel_weight", "class_optical_module.html#aa4d4ddc44febd627c780529347161e62", null ],
+      [ "getNumberOfPMTs", "class_optical_module.html#a851f73098f123c00dbe5a783e2b650ff", null ],
+      [ "getPMTmanager", "class_optical_module.html#a4bbc93f99a32d030fc2b3b8d4e247777", null ],
+      [ "getPressureVesselWeight", "class_optical_module.html#ab559dfa88537ceba930183a4c0eafbfd", null ],
       [ "mPMTManager", "class_optical_module.html#a90bdd6e11b76eb6e1c620bcdc3863e3b", null ]
     ] ],
     [ "pDOM", "classp_d_o_m.html", [
       [ "pDOM", "classp_d_o_m.html#a8702e858160254f80acfbf15b38053c3", null ],
       [ "~pDOM", "classp_d_o_m.html#aff85691171a4d8a8a1ad30ba1721b8c1", null ],
       [ "construction", "classp_d_o_m.html#a6fc9511f8287a69ef498167162a92ec4", null ],
-      [ "get_number_of_PMTs", "classp_d_o_m.html#a8a3dbeed4c571c80c952c6a229dc139e", null ],
-      [ "get_pressure_vessel_weight", "classp_d_o_m.html#a34dc6c8630ef4eef2ef2918c0d31a8c8", null ],
+      [ "getNumberOfPMTs", "classp_d_o_m.html#a1e2c5cf50a25e2b234d9326f4fbbee9d", null ],
+      [ "getPressureVesselWeight", "classp_d_o_m.html#aff18b63813f3940d3cc8c0c49a3595d5", null ],
       [ "mPlaceHarness", "classp_d_o_m.html#ac2957c4f838bb9cc9ced72e424691df5", null ]
     ] ]
 ];

@@ -27,21 +27,23 @@ Collaboration diagram for OMSim\+PMTConstruction\+:
 \item 
 void \mbox{\hyperlink{class_o_m_sim_p_m_t_construction_a5ab3a93d9e44fb38004cfd9d30c6d6aa}{construction}} ()
 \item 
-G4double \mbox{\hyperlink{class_o_m_sim_p_m_t_construction_ac64dc266245d000c3611f70f603d77c1}{Get\+Distance\+PMTCenter\+To\+PMTtip}} ()
+G4double \mbox{\hyperlink{class_o_m_sim_p_m_t_construction_a9c780686ad7ab5cb712c494b7e1b20a5}{get\+Distance\+PMTCenter\+To\+Tip}} ()
 \item 
-G4double \mbox{\hyperlink{class_o_m_sim_p_m_t_construction_aa6283af20e934d1a54e31e9dd89e3545}{Get\+Max\+PMTMax\+Radius}} ()
+G4double \mbox{\hyperlink{class_o_m_sim_p_m_t_construction_adcf95adc7d522883934e592e3c551617}{get\+Max\+PMTRadius}} ()
 \item 
-G4\+VSolid $\ast$ \mbox{\hyperlink{class_o_m_sim_p_m_t_construction_a137754f8320cba1cbe0e5b7399624885}{Get\+PMTSolid}} ()
+G4\+VSolid $\ast$ \mbox{\hyperlink{class_o_m_sim_p_m_t_construction_a869ff1b5f34736e14784d1a3fc4d94a1}{get\+PMTSolid}} ()
 \item 
-G4\+Logical\+Volume $\ast$ \mbox{\hyperlink{class_o_m_sim_p_m_t_construction_a878d48c215e90d3dfda1546ec126466c}{Get\+Logical\+Volume}} ()
+G4\+Logical\+Volume $\ast$ \mbox{\hyperlink{class_o_m_sim_p_m_t_construction_af3b6282d6a0c3caa3f13244cdf2ed65a}{get\+Logical\+Volume}} ()
+\item 
+double \mbox{\hyperlink{class_o_m_sim_p_m_t_construction_a548f6bb3f8f5287d908329948a659c66}{get\+PMTGlass\+Weight}} ()
 \item 
 void \mbox{\hyperlink{class_o_m_sim_p_m_t_construction_a1f7915c14fc9eee203f861e59f26f333}{place\+It}} (G4\+Three\+Vector p\+Position, G4\+Rotation\+Matrix p\+Rotation, G4\+Logical\+Volume $\ast$\&p\+Mother, G4\+String p\+Name\+Extension=\char`\"{}\char`\"{})
 \item 
 void \mbox{\hyperlink{class_o_m_sim_p_m_t_construction_a4960a7f095c1948985bf48bc3c0ae6f9}{place\+It}} (G4\+Transform3D p\+Trans, G4\+Logical\+Volume $\ast$\&p\+Mother, G4\+String p\+Name\+Extension=\char`\"{}\char`\"{})
 \item 
-void \mbox{\hyperlink{class_o_m_sim_p_m_t_construction_ab9d55def87d576c93a1b82b5ace9c81b}{Select\+PMT}} (G4\+String p\+PMTto\+Select)
+void \mbox{\hyperlink{class_o_m_sim_p_m_t_construction_a1a8373e9ae3095062edb477245133a9e}{select\+PMT}} (G4\+String p\+PMTto\+Select)
 \item 
-void \mbox{\hyperlink{class_o_m_sim_p_m_t_construction_a7de71bd9a78233ae61258277879379c9}{Simulate\+HACoating}} ()
+void \mbox{\hyperlink{class_o_m_sim_p_m_t_construction_a42777eb8747cd3eaad5dfe52824313a7}{include\+HAcoating}} ()
 \end{DoxyCompactItemize}
 \doxysubsection*{Additional Inherited Members}
 
@@ -71,39 +73,51 @@ Constructs the PMT Solid.
 
 Implements \mbox{\hyperlink{classabc_detector_component_a8e7f01c218d5f093e80e46b33a0672bf}{abc\+Detector\+Component}}.
 
-\mbox{\Hypertarget{class_o_m_sim_p_m_t_construction_ac64dc266245d000c3611f70f603d77c1}\label{class_o_m_sim_p_m_t_construction_ac64dc266245d000c3611f70f603d77c1}} 
-\index{OMSimPMTConstruction@{OMSimPMTConstruction}!GetDistancePMTCenterToPMTtip@{GetDistancePMTCenterToPMTtip}}
-\index{GetDistancePMTCenterToPMTtip@{GetDistancePMTCenterToPMTtip}!OMSimPMTConstruction@{OMSimPMTConstruction}}
-\doxysubsubsection{\texorpdfstring{GetDistancePMTCenterToPMTtip()}{GetDistancePMTCenterToPMTtip()}}
-{\footnotesize\ttfamily G4double OMSim\+PMTConstruction\+::\+Get\+Distance\+PMTCenter\+To\+PMTtip (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+\mbox{\Hypertarget{class_o_m_sim_p_m_t_construction_a9c780686ad7ab5cb712c494b7e1b20a5}\label{class_o_m_sim_p_m_t_construction_a9c780686ad7ab5cb712c494b7e1b20a5}} 
+\index{OMSimPMTConstruction@{OMSimPMTConstruction}!getDistancePMTCenterToTip@{getDistancePMTCenterToTip}}
+\index{getDistancePMTCenterToTip@{getDistancePMTCenterToTip}!OMSimPMTConstruction@{OMSimPMTConstruction}}
+\doxysubsubsection{\texorpdfstring{getDistancePMTCenterToTip()}{getDistancePMTCenterToTip()}}
+{\footnotesize\ttfamily G4double OMSim\+PMTConstruction\+::get\+Distance\+PMTCenter\+To\+Tip (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
 Returns the distance between the 0.\+0 position of the PMT solid volume and the plane normal to the PMT frontal tip. \begin{DoxyReturn}{Returns}
 G4double 
 \end{DoxyReturn}
-\mbox{\Hypertarget{class_o_m_sim_p_m_t_construction_a878d48c215e90d3dfda1546ec126466c}\label{class_o_m_sim_p_m_t_construction_a878d48c215e90d3dfda1546ec126466c}} 
-\index{OMSimPMTConstruction@{OMSimPMTConstruction}!GetLogicalVolume@{GetLogicalVolume}}
-\index{GetLogicalVolume@{GetLogicalVolume}!OMSimPMTConstruction@{OMSimPMTConstruction}}
-\doxysubsubsection{\texorpdfstring{GetLogicalVolume()}{GetLogicalVolume()}}
-{\footnotesize\ttfamily G4\+Logical\+Volume $\ast$ OMSim\+PMTConstruction\+::\+Get\+Logical\+Volume (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+\mbox{\Hypertarget{class_o_m_sim_p_m_t_construction_af3b6282d6a0c3caa3f13244cdf2ed65a}\label{class_o_m_sim_p_m_t_construction_af3b6282d6a0c3caa3f13244cdf2ed65a}} 
+\index{OMSimPMTConstruction@{OMSimPMTConstruction}!getLogicalVolume@{getLogicalVolume}}
+\index{getLogicalVolume@{getLogicalVolume}!OMSimPMTConstruction@{OMSimPMTConstruction}}
+\doxysubsubsection{\texorpdfstring{getLogicalVolume()}{getLogicalVolume()}}
+{\footnotesize\ttfamily G4\+Logical\+Volume $\ast$ OMSim\+PMTConstruction\+::get\+Logical\+Volume (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
-It returns the member logical volume. To be used if you want to append the PMT in an \mbox{\hyperlink{classabc_detector_component}{abc\+Detector\+Component}}. For placements use place\+It method. \mbox{\Hypertarget{class_o_m_sim_p_m_t_construction_aa6283af20e934d1a54e31e9dd89e3545}\label{class_o_m_sim_p_m_t_construction_aa6283af20e934d1a54e31e9dd89e3545}} 
-\index{OMSimPMTConstruction@{OMSimPMTConstruction}!GetMaxPMTMaxRadius@{GetMaxPMTMaxRadius}}
-\index{GetMaxPMTMaxRadius@{GetMaxPMTMaxRadius}!OMSimPMTConstruction@{OMSimPMTConstruction}}
-\doxysubsubsection{\texorpdfstring{GetMaxPMTMaxRadius()}{GetMaxPMTMaxRadius()}}
-{\footnotesize\ttfamily G4double OMSim\+PMTConstruction\+::\+Get\+Max\+PMTMax\+Radius (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+It returns the bulb glass logical volume (PMT mother). \mbox{\Hypertarget{class_o_m_sim_p_m_t_construction_adcf95adc7d522883934e592e3c551617}\label{class_o_m_sim_p_m_t_construction_adcf95adc7d522883934e592e3c551617}} 
+\index{OMSimPMTConstruction@{OMSimPMTConstruction}!getMaxPMTRadius@{getMaxPMTRadius}}
+\index{getMaxPMTRadius@{getMaxPMTRadius}!OMSimPMTConstruction@{OMSimPMTConstruction}}
+\doxysubsubsection{\texorpdfstring{getMaxPMTRadius()}{getMaxPMTRadius()}}
+{\footnotesize\ttfamily G4double OMSim\+PMTConstruction\+::get\+Max\+PMTRadius (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
 Returns the maximal radius of the frontal part of the PMT. \begin{DoxyReturn}{Returns}
 G4double 
 \end{DoxyReturn}
-\mbox{\Hypertarget{class_o_m_sim_p_m_t_construction_a137754f8320cba1cbe0e5b7399624885}\label{class_o_m_sim_p_m_t_construction_a137754f8320cba1cbe0e5b7399624885}} 
-\index{OMSimPMTConstruction@{OMSimPMTConstruction}!GetPMTSolid@{GetPMTSolid}}
-\index{GetPMTSolid@{GetPMTSolid}!OMSimPMTConstruction@{OMSimPMTConstruction}}
-\doxysubsubsection{\texorpdfstring{GetPMTSolid()}{GetPMTSolid()}}
-{\footnotesize\ttfamily G4\+VSolid $\ast$ OMSim\+PMTConstruction\+::\+Get\+PMTSolid (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+\mbox{\Hypertarget{class_o_m_sim_p_m_t_construction_a548f6bb3f8f5287d908329948a659c66}\label{class_o_m_sim_p_m_t_construction_a548f6bb3f8f5287d908329948a659c66}} 
+\index{OMSimPMTConstruction@{OMSimPMTConstruction}!getPMTGlassWeight@{getPMTGlassWeight}}
+\index{getPMTGlassWeight@{getPMTGlassWeight}!OMSimPMTConstruction@{OMSimPMTConstruction}}
+\doxysubsubsection{\texorpdfstring{getPMTGlassWeight()}{getPMTGlassWeight()}}
+{\footnotesize\ttfamily double OMSim\+PMTConstruction\+::get\+PMTGlass\+Weight (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_o_m_sim_p_m_t_construction_a869ff1b5f34736e14784d1a3fc4d94a1}\label{class_o_m_sim_p_m_t_construction_a869ff1b5f34736e14784d1a3fc4d94a1}} 
+\index{OMSimPMTConstruction@{OMSimPMTConstruction}!getPMTSolid@{getPMTSolid}}
+\index{getPMTSolid@{getPMTSolid}!OMSimPMTConstruction@{OMSimPMTConstruction}}
+\doxysubsubsection{\texorpdfstring{getPMTSolid()}{getPMTSolid()}}
+{\footnotesize\ttfamily G4\+VSolid $\ast$ OMSim\+PMTConstruction\+::get\+PMTSolid (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
 Returns the solid of the constructed PMT. \begin{DoxyReturn}{Returns}
 G4\+Union\+Solid of the PMT 
 \end{DoxyReturn}
+\mbox{\Hypertarget{class_o_m_sim_p_m_t_construction_a42777eb8747cd3eaad5dfe52824313a7}\label{class_o_m_sim_p_m_t_construction_a42777eb8747cd3eaad5dfe52824313a7}} 
+\index{OMSimPMTConstruction@{OMSimPMTConstruction}!includeHAcoating@{includeHAcoating}}
+\index{includeHAcoating@{includeHAcoating}!OMSimPMTConstruction@{OMSimPMTConstruction}}
+\doxysubsubsection{\texorpdfstring{includeHAcoating()}{includeHAcoating()}}
+{\footnotesize\ttfamily void OMSim\+PMTConstruction\+::include\+HAcoating (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
 \mbox{\Hypertarget{class_o_m_sim_p_m_t_construction_a1f7915c14fc9eee203f861e59f26f333}\label{class_o_m_sim_p_m_t_construction_a1f7915c14fc9eee203f861e59f26f333}} 
 \index{OMSimPMTConstruction@{OMSimPMTConstruction}!placeIt@{placeIt}}
 \index{placeIt@{placeIt}!OMSimPMTConstruction@{OMSimPMTConstruction}}
@@ -135,23 +149,17 @@ PMT\+::place\+It
 {\em p\+Transform} & G4\+Transform3D with position \& rotation of PMT \\
 \hline
 \end{DoxyParams}
-\mbox{\Hypertarget{class_o_m_sim_p_m_t_construction_ab9d55def87d576c93a1b82b5ace9c81b}\label{class_o_m_sim_p_m_t_construction_ab9d55def87d576c93a1b82b5ace9c81b}} 
-\index{OMSimPMTConstruction@{OMSimPMTConstruction}!SelectPMT@{SelectPMT}}
-\index{SelectPMT@{SelectPMT}!OMSimPMTConstruction@{OMSimPMTConstruction}}
-\doxysubsubsection{\texorpdfstring{SelectPMT()}{SelectPMT()}}
-{\footnotesize\ttfamily void OMSim\+PMTConstruction\+::\+Select\+PMT (\begin{DoxyParamCaption}\item[{G4\+String}]{p\+PMTto\+Select }\end{DoxyParamCaption})}
+\mbox{\Hypertarget{class_o_m_sim_p_m_t_construction_a1a8373e9ae3095062edb477245133a9e}\label{class_o_m_sim_p_m_t_construction_a1a8373e9ae3095062edb477245133a9e}} 
+\index{OMSimPMTConstruction@{OMSimPMTConstruction}!selectPMT@{selectPMT}}
+\index{selectPMT@{selectPMT}!OMSimPMTConstruction@{OMSimPMTConstruction}}
+\doxysubsubsection{\texorpdfstring{selectPMT()}{selectPMT()}}
+{\footnotesize\ttfamily void OMSim\+PMTConstruction\+::select\+PMT (\begin{DoxyParamCaption}\item[{G4\+String}]{p\+PMTto\+Select }\end{DoxyParamCaption})}
 
 Select PMT model to use and assigns m\+PMT class. 
 \begin{DoxyParams}{Parameters}
 {\em G4\+String} & p\+PMTto\+Select string with the name of the PMT model \\
 \hline
 \end{DoxyParams}
-\mbox{\Hypertarget{class_o_m_sim_p_m_t_construction_a7de71bd9a78233ae61258277879379c9}\label{class_o_m_sim_p_m_t_construction_a7de71bd9a78233ae61258277879379c9}} 
-\index{OMSimPMTConstruction@{OMSimPMTConstruction}!SimulateHACoating@{SimulateHACoating}}
-\index{SimulateHACoating@{SimulateHACoating}!OMSimPMTConstruction@{OMSimPMTConstruction}}
-\doxysubsubsection{\texorpdfstring{SimulateHACoating()}{SimulateHACoating()}}
-{\footnotesize\ttfamily void OMSim\+PMTConstruction\+::\+Simulate\+HACoating (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
-
 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
