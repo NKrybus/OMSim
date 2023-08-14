@@ -1,8 +1,10 @@
 <map id="OMSimUIinterface.hh" name="OMSimUIinterface.hh">
-<area shape="rect" id="node1" title="The OMSimUIinterface class provides a singleton interface to Geant4&#39;s UI manager." alt="" coords="207,5,368,32"/>
-<area shape="rect" id="node2" href="$_o_m_sim_8hh.html" title="Main simulation class for the Optical Module (OM) simulation." alt="" coords="84,80,173,107"/>
-<area shape="rect" id="node5" href="$_o_m_sim_m_d_o_m_flasher_8cc.html" title=" " alt="" coords="198,80,377,107"/>
-<area shape="rect" id="node6" href="$_o_m_sim_angular_scan_8cc.html" title=" " alt="" coords="401,80,569,107"/>
+<area shape="rect" id="node1" title="The OMSimUIinterface class provides a singleton interface to Geant4&#39;s UI manager." alt="" coords="387,5,548,32"/>
+<area shape="rect" id="node2" href="$_o_m_sim_8hh.html" title="Main simulation class for the Optical Module (OM) simulation." alt="" coords="165,80,255,107"/>
+<area shape="rect" id="node6" href="$_o_m_sim_m_d_o_m_flasher_8cc.html" title=" " alt="" coords="279,80,458,107"/>
+<area shape="rect" id="node7" href="$_o_m_sim_angular_scan_8cc.html" title=" " alt="" coords="482,80,650,107"/>
+<area shape="rect" id="node8" href="$_o_m_sim_decays_g_p_s_8cc.html" title=" " alt="" coords="675,80,836,107"/>
 <area shape="rect" id="node3" href="$_o_m_sim_8cc.html" title=" " alt="" coords="5,155,92,181"/>
 <area shape="rect" id="node4" href="$_o_m_sim__effective__area_8cc.html" title="Main for the calculation of effective areas." alt="" coords="117,155,303,181"/>
+<area shape="rect" id="node5" href="$_o_m_sim__radioactive__decays_8cc.html" title=" " alt="" coords="328,155,548,181"/>
 </map>

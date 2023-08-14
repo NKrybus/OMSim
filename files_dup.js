@@ -10,8 +10,13 @@ var files_dup =
     [ "OMSim.cc", "_o_m_sim_8cc.html", null ],
     [ "OMSim.hh", "_o_m_sim_8hh.html", null ],
     [ "OMSim_effective_area.cc", "_o_m_sim__effective__area_8cc.html", "_o_m_sim__effective__area_8cc" ],
-    [ "OMSimAnalysisManager.cc", "_o_m_sim_analysis_manager_8cc.html", null ],
-    [ "OMSimAnalysisManager.hh", "_o_m_sim_analysis_manager_8hh.html", [
+    [ "OMSim_radioactive_decays.cc", "_o_m_sim__radioactive__decays_8cc.html", "_o_m_sim__radioactive__decays_8cc" ],
+    [ "effective_area/src/OMSimAnalysisManager.cc", "effective__area_2src_2_o_m_sim_analysis_manager_8cc.html", null ],
+    [ "radioactive_decays/src/OMSimAnalysisManager.cc", "radioactive__decays_2src_2_o_m_sim_analysis_manager_8cc.html", null ],
+    [ "effective_area/include/OMSimAnalysisManager.hh", "effective__area_2include_2_o_m_sim_analysis_manager_8hh.html", [
+      [ "HitStats", "struct_hit_stats.html", "struct_hit_stats" ]
+    ] ],
+    [ "radioactive_decays/include/OMSimAnalysisManager.hh", "radioactive__decays_2include_2_o_m_sim_analysis_manager_8hh.html", [
       [ "HitStats", "struct_hit_stats.html", "struct_hit_stats" ]
     ] ],
     [ "OMSimAngularScan.cc", "_o_m_sim_angular_scan_8cc.html", null ],
@@ -19,16 +24,26 @@ var files_dup =
     [ "OMSimCommandArgsTable.hh", "_o_m_sim_command_args_table_8hh.html", "_o_m_sim_command_args_table_8hh" ],
     [ "OMSimDataFileTypes.cc", "_o_m_sim_data_file_types_8cc.html", null ],
     [ "OMSimDataFileTypes.hh", "_o_m_sim_data_file_types_8hh.html", null ],
+    [ "OMSimDecaysGPS.cc", "_o_m_sim_decays_g_p_s_8cc.html", null ],
+    [ "OMSimDecaysGPS.hh", "_o_m_sim_decays_g_p_s_8hh.html", [
+      [ "IsotopeDecays", "class_isotope_decays.html", "class_isotope_decays" ]
+    ] ],
     [ "OMSimDEGG.cc", "_o_m_sim_d_e_g_g_8cc.html", null ],
     [ "OMSimDEGG.hh", "_o_m_sim_d_e_g_g_8hh.html", null ],
     [ "OMSimDEGGHarness.cc", "_o_m_sim_d_e_g_g_harness_8cc.html", null ],
     [ "OMSimDEGGHarness.hh", "_o_m_sim_d_e_g_g_harness_8hh.html", [
       [ "DEggHarness", "class_d_egg_harness.html", "class_d_egg_harness" ]
     ] ],
-    [ "OMSimDetectorConstruction.cc", "_o_m_sim_detector_construction_8cc.html", null ],
-    [ "OMSimDetectorConstruction.hh", "_o_m_sim_detector_construction_8hh.html", null ],
-    [ "OMSimEventAction.cc", "_o_m_sim_event_action_8cc.html", null ],
-    [ "OMSimEventAction.hh", "_o_m_sim_event_action_8hh.html", [
+    [ "effective_area/src/OMSimDetectorConstruction.cc", "effective__area_2src_2_o_m_sim_detector_construction_8cc.html", null ],
+    [ "radioactive_decays/src/OMSimDetectorConstruction.cc", "radioactive__decays_2src_2_o_m_sim_detector_construction_8cc.html", null ],
+    [ "effective_area/include/OMSimDetectorConstruction.hh", "effective__area_2include_2_o_m_sim_detector_construction_8hh.html", null ],
+    [ "radioactive_decays/include/OMSimDetectorConstruction.hh", "radioactive__decays_2include_2_o_m_sim_detector_construction_8hh.html", null ],
+    [ "effective_area/src/OMSimEventAction.cc", "effective__area_2src_2_o_m_sim_event_action_8cc.html", null ],
+    [ "radioactive_decays/src/OMSimEventAction.cc", "radioactive__decays_2src_2_o_m_sim_event_action_8cc.html", null ],
+    [ "effective_area/include/OMSimEventAction.hh", "effective__area_2include_2_o_m_sim_event_action_8hh.html", [
+      [ "OMSimEventAction", "class_o_m_sim_event_action.html", "class_o_m_sim_event_action" ]
+    ] ],
+    [ "radioactive_decays/include/OMSimEventAction.hh", "radioactive__decays_2include_2_o_m_sim_event_action_8hh.html", [
       [ "OMSimEventAction", "class_o_m_sim_event_action.html", "class_o_m_sim_event_action" ]
     ] ],
     [ "OMSimInputData.cc", "_o_m_sim_input_data_8cc.html", null ],
@@ -60,8 +75,12 @@ var files_dup =
     ] ],
     [ "OMSimPDOM.cc", "_o_m_sim_p_d_o_m_8cc.html", null ],
     [ "OMSimPDOM.hh", "_o_m_sim_p_d_o_m_8hh.html", null ],
-    [ "OMSimPhysicsList.cc", "_o_m_sim_physics_list_8cc.html", null ],
-    [ "OMSimPhysicsList.hh", "_o_m_sim_physics_list_8hh.html", [
+    [ "effective_area/src/OMSimPhysicsList.cc", "effective__area_2src_2_o_m_sim_physics_list_8cc.html", null ],
+    [ "radioactive_decays/src/OMSimPhysicsList.cc", "radioactive__decays_2src_2_o_m_sim_physics_list_8cc.html", null ],
+    [ "effective_area/include/OMSimPhysicsList.hh", "effective__area_2include_2_o_m_sim_physics_list_8hh.html", [
+      [ "OMSimPhysicsList", "class_o_m_sim_physics_list.html", "class_o_m_sim_physics_list" ]
+    ] ],
+    [ "radioactive_decays/include/OMSimPhysicsList.hh", "radioactive__decays_2include_2_o_m_sim_physics_list_8hh.html", [
       [ "OMSimPhysicsList", "class_o_m_sim_physics_list.html", "class_o_m_sim_physics_list" ]
     ] ],
     [ "OMSimPMTConstruction.cc", "_o_m_sim_p_m_t_construction_8cc.html", null ],
@@ -77,15 +96,26 @@ var files_dup =
     [ "OMSimPrimaryGeneratorAction.hh", "_o_m_sim_primary_generator_action_8hh.html", [
       [ "OMSimPrimaryGeneratorAction", "class_o_m_sim_primary_generator_action.html", "class_o_m_sim_primary_generator_action" ]
     ] ],
-    [ "OMSimRunAction.hh", "_o_m_sim_run_action_8hh.html", [
+    [ "effective_area/include/OMSimRunAction.hh", "effective__area_2include_2_o_m_sim_run_action_8hh.html", [
       [ "OMSimRunAction", "class_o_m_sim_run_action.html", "class_o_m_sim_run_action" ]
     ] ],
-    [ "OMSimSteppingAction.cc", "_o_m_sim_stepping_action_8cc.html", null ],
-    [ "OMSimSteppingAction.hh", "_o_m_sim_stepping_action_8hh.html", [
+    [ "radioactive_decays/include/OMSimRunAction.hh", "radioactive__decays_2include_2_o_m_sim_run_action_8hh.html", [
+      [ "OMSimRunAction", "class_o_m_sim_run_action.html", "class_o_m_sim_run_action" ]
+    ] ],
+    [ "effective_area/src/OMSimSteppingAction.cc", "effective__area_2src_2_o_m_sim_stepping_action_8cc.html", null ],
+    [ "radioactive_decays/src/OMSimSteppingAction.cc", "radioactive__decays_2src_2_o_m_sim_stepping_action_8cc.html", null ],
+    [ "effective_area/include/OMSimSteppingAction.hh", "effective__area_2include_2_o_m_sim_stepping_action_8hh.html", [
       [ "OMSimSteppingAction", "class_o_m_sim_stepping_action.html", "class_o_m_sim_stepping_action" ]
     ] ],
-    [ "OMSimTrackingAction.cc", "_o_m_sim_tracking_action_8cc.html", "_o_m_sim_tracking_action_8cc" ],
-    [ "OMSimTrackingAction.hh", "_o_m_sim_tracking_action_8hh.html", [
+    [ "radioactive_decays/include/OMSimSteppingAction.hh", "radioactive__decays_2include_2_o_m_sim_stepping_action_8hh.html", [
+      [ "OMSimSteppingAction", "class_o_m_sim_stepping_action.html", "class_o_m_sim_stepping_action" ]
+    ] ],
+    [ "effective_area/src/OMSimTrackingAction.cc", "effective__area_2src_2_o_m_sim_tracking_action_8cc.html", "effective__area_2src_2_o_m_sim_tracking_action_8cc" ],
+    [ "radioactive_decays/src/OMSimTrackingAction.cc", "radioactive__decays_2src_2_o_m_sim_tracking_action_8cc.html", "radioactive__decays_2src_2_o_m_sim_tracking_action_8cc" ],
+    [ "effective_area/include/OMSimTrackingAction.hh", "effective__area_2include_2_o_m_sim_tracking_action_8hh.html", [
+      [ "OMSimTrackingAction", "class_o_m_sim_tracking_action.html", "class_o_m_sim_tracking_action" ]
+    ] ],
+    [ "radioactive_decays/include/OMSimTrackingAction.hh", "radioactive__decays_2include_2_o_m_sim_tracking_action_8hh.html", [
       [ "OMSimTrackingAction", "class_o_m_sim_tracking_action.html", "class_o_m_sim_tracking_action" ]
     ] ],
     [ "OMSimUIinterface.hh", "_o_m_sim_u_iinterface_8hh.html", null ]

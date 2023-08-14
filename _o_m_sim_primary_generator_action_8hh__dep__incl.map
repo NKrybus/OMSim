@@ -1,7 +1,8 @@
 <map id="OMSimPrimaryGeneratorAction.hh" name="OMSimPrimaryGeneratorAction.hh">
-<area shape="rect" id="node1" title=" " alt="" coords="100,5,347,32"/>
-<area shape="rect" id="node2" href="$_o_m_sim_8hh.html" title="Main simulation class for the Optical Module (OM) simulation." alt="" coords="84,80,173,107"/>
-<area shape="rect" id="node5" href="$_o_m_sim_primary_generator_action_8cc.html" title=" " alt="" coords="197,80,441,107"/>
+<area shape="rect" id="node1" title=" " alt="" coords="181,5,428,32"/>
+<area shape="rect" id="node2" href="$_o_m_sim_8hh.html" title="Main simulation class for the Optical Module (OM) simulation." alt="" coords="165,80,255,107"/>
+<area shape="rect" id="node6" href="$_o_m_sim_primary_generator_action_8cc.html" title=" " alt="" coords="279,80,523,107"/>
 <area shape="rect" id="node3" href="$_o_m_sim_8cc.html" title=" " alt="" coords="5,155,92,181"/>
 <area shape="rect" id="node4" href="$_o_m_sim__effective__area_8cc.html" title="Main for the calculation of effective areas." alt="" coords="117,155,303,181"/>
+<area shape="rect" id="node5" href="$_o_m_sim__radioactive__decays_8cc.html" title=" " alt="" coords="328,155,548,181"/>
 </map>

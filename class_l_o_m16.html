@@ -115,7 +115,6 @@ $(document).ready(function(){initNavTree('class_l_o_m16.html',''); initResizable
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="class_l_o_m16-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">LOM16 Class Reference</div>  </div>
@@ -124,13 +123,13 @@ $(document).ready(function(){initNavTree('class_l_o_m16.html',''); initResizable
 <div class="dynheader">
 Inheritance diagram for LOM16:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_l_o_m16__inherit__graph.svg" width="187" height="112"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_l_o_m16__inherit__graph.svg" width="187" height="187"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <div class="dynheader">
 Collaboration diagram for LOM16:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_l_o_m16__coll__graph.svg" width="187" height="279"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_l_o_m16__coll__graph.svg" width="299" height="444"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
@@ -142,6 +141,14 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a93c141790620554394cdf9864096d011"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab837d810e22d601fc1a298ba0dfddd48"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_l_o_m16.html#ab837d810e22d601fc1a298ba0dfddd48">construction</a> ()</td></tr>
 <tr class="separator:ab837d810e22d601fc1a298ba0dfddd48"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abd3ad7bb93d7d27efc11657250199546"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_l_o_m16.html#abd3ad7bb93d7d27efc11657250199546">get_pressure_vessel_weight</a> ()</td></tr>
+<tr class="memdesc:abd3ad7bb93d7d27efc11657250199546"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns weight of pressure vessel in kg.  <a href="class_l_o_m16.html#abd3ad7bb93d7d27efc11657250199546">More...</a><br /></td></tr>
+<tr class="separator:abd3ad7bb93d7d27efc11657250199546"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7869f108d4d89441e6f536536763af96"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_l_o_m16.html#a7869f108d4d89441e6f536536763af96">get_number_of_PMTs</a> ()</td></tr>
+<tr class="separator:a7869f108d4d89441e6f536536763af96"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_class_optical_module"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_optical_module')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_optical_module.html">OpticalModule</a></td></tr>
+<tr class="memitem:acfea011f895ea19d5e64178835d0a2cd inherit pub_methods_class_optical_module"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_o_m_sim_p_m_t_construction.html">OMSimPMTConstruction</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_optical_module.html#acfea011f895ea19d5e64178835d0a2cd">get_PMT_manager</a> ()</td></tr>
+<tr class="separator:acfea011f895ea19d5e64178835d0a2cd inherit pub_methods_class_optical_module"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classabc_detector_component"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classabc_detector_component')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classabc_detector_component.html">abcDetectorComponent</a></td></tr>
 <tr class="memitem:a49a4c0e7138f1c0ed90736f80dc41377 inherit pub_methods_classabc_detector_component"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classabc_detector_component.html#a49a4c0e7138f1c0ed90736f80dc41377">abcDetectorComponent</a> ()</td></tr>
 <tr class="separator:a49a4c0e7138f1c0ed90736f80dc41377 inherit pub_methods_classabc_detector_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -176,10 +183,8 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a53c7979298ef9eda66b44f0a3c4f2e6b inherit pub_methods_classabc_detector_component"><td class="mdescLeft">&#160;</td><td class="mdescRight">Subtracts components from a given solid volume.  <a href="classabc_detector_component.html#a53c7979298ef9eda66b44f0a3c4f2e6b">More...</a><br /></td></tr>
 <tr class="separator:a53c7979298ef9eda66b44f0a3c4f2e6b inherit pub_methods_classabc_detector_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
-Public Attributes</h2></td></tr>
-<tr class="memitem:a2f84dd44e9bc09e47527154c4cd17e4a"><td class="memItemLeft" align="right" valign="top">G4String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_l_o_m16.html#a2f84dd44e9bc09e47527154c4cd17e4a">mDataKey</a> = &quot;om_LOM16&quot;</td></tr>
-<tr class="separator:a2f84dd44e9bc09e47527154c4cd17e4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
+Additional Inherited Members</h2></td></tr>
 <tr class="inherit_header pub_attribs_classabc_detector_component"><td colspan="2" onclick="javascript:toggleInherit('pub_attribs_classabc_detector_component')"><img src="closed.png" alt="-"/>&#160;Public Attributes inherited from <a class="el" href="classabc_detector_component.html">abcDetectorComponent</a></td></tr>
 <tr class="memitem:af50c1e99e08ed19b5c9dcf5c7af3074f inherit pub_attribs_classabc_detector_component"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_input_data_manager.html">InputDataManager</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classabc_detector_component.html#af50c1e99e08ed19b5c9dcf5c7af3074f">mData</a></td></tr>
 <tr class="separator:af50c1e99e08ed19b5c9dcf5c7af3074f inherit pub_attribs_classabc_detector_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -195,9 +200,9 @@ Public Attributes</h2></td></tr>
 <tr class="separator:aa830916e7f5f8ae31eb31e3c37c9841e inherit pub_attribs_classabc_detector_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a87f97f72739f905f6c9d23a75849d15f inherit pub_attribs_classabc_detector_component"><td class="memItemLeft" align="right" valign="top">std::map&lt; G4String, G4PVPlacement * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classabc_detector_component.html#a87f97f72739f905f6c9d23a75849d15f">mLastPhysicals</a></td></tr>
 <tr class="separator:a87f97f72739f905f6c9d23a75849d15f inherit pub_attribs_classabc_detector_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
-Additional Inherited Members</h2></td></tr>
+<tr class="inherit_header pro_attribs_class_optical_module"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_class_optical_module')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="class_optical_module.html">OpticalModule</a></td></tr>
+<tr class="memitem:a90bdd6e11b76eb6e1c620bcdc3863e3b inherit pro_attribs_class_optical_module"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_o_m_sim_p_m_t_construction.html">OMSimPMTConstruction</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_optical_module.html#a90bdd6e11b76eb6e1c620bcdc3863e3b">mPMTManager</a></td></tr>
+<tr class="separator:a90bdd6e11b76eb6e1c620bcdc3863e3b inherit pro_attribs_class_optical_module"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_attribs_classabc_detector_component"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_classabc_detector_component')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="classabc_detector_component.html">abcDetectorComponent</a></td></tr>
 <tr class="memitem:ac1148f128706991ad6c1aac7a3c1fda2 inherit pro_attribs_classabc_detector_component"><td class="memItemLeft" align="right" valign="top">const G4VisAttributes *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classabc_detector_component.html#ac1148f128706991ad6c1aac7a3c1fda2">mGlassVis</a> = new G4VisAttributes(G4Colour(0.7, 0.7, 0.8, 0.25))</td></tr>
 <tr class="separator:ac1148f128706991ad6c1aac7a3c1fda2 inherit pro_attribs_classabc_detector_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -306,18 +311,57 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<h2 class="groupheader">Member Data Documentation</h2>
-<a id="a2f84dd44e9bc09e47527154c4cd17e4a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2f84dd44e9bc09e47527154c4cd17e4a">&#9670;&nbsp;</a></span>mDataKey</h2>
+<a id="a7869f108d4d89441e6f536536763af96"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7869f108d4d89441e6f536536763af96">&#9670;&nbsp;</a></span>get_number_of_PMTs()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">G4String LOM16::mDataKey = &quot;om_LOM16&quot;</td>
+          <td class="memname">int LOM16::get_number_of_PMTs </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
+
+<p>Implements <a class="el" href="class_optical_module.html#ad38b514b9dca7f456f7b228490acd5df">OpticalModule</a>.</p>
+
+</div>
+</div>
+<a id="abd3ad7bb93d7d27efc11657250199546"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abd3ad7bb93d7d27efc11657250199546">&#9670;&nbsp;</a></span>get_pressure_vessel_weight()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double LOM16::get_pressure_vessel_weight </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implements <a class="el" href="class_optical_module.html#aa4d4ddc44febd627c780529347161e62">OpticalModule</a>.</p>
 
 </div>
 </div>
@@ -331,7 +375,7 @@ Additional Inherited Members</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="class_l_o_m16.html">LOM16</a></li>
-    <li class="footer">Generated on Thu Jul 27 2023 16:12:50 for OMSim by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Mon Aug 14 2023 14:22:16 for OMSim by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

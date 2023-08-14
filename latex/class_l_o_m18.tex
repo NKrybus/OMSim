@@ -17,7 +17,7 @@ Collaboration diagram for LOM18\+:
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=212pt]{class_l_o_m18__coll__graph}
+\includegraphics[width=296pt]{class_l_o_m18__coll__graph}
 \end{center}
 \end{figure}
 \doxysubsection*{Public Member Functions}
@@ -28,15 +28,17 @@ Collaboration diagram for LOM18\+:
 \mbox{\hyperlink{class_l_o_m18_a0848ca1897198702b8711134ac694bc3}{$\sim$\+LOM18}} ()
 \item 
 void \mbox{\hyperlink{class_l_o_m18_a0744107f29517a84a06b2544e81b00e0}{construction}} ()
+\item 
+double \mbox{\hyperlink{class_l_o_m18_add389470d6a041bcac2ae31416b543c3}{get\+\_\+pressure\+\_\+vessel\+\_\+weight}} ()
+\begin{DoxyCompactList}\small\item\em Returns weight of pressure vessel in kg. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_l_o_m18_a723ddde465745adcb544f6884dc44d0e}{get\+\_\+number\+\_\+of\+\_\+\+PMTs}} ()
 \end{DoxyCompactItemize}
 \doxysubsection*{Public Attributes}
 \begin{DoxyCompactItemize}
 \item 
-G4double \mbox{\hyperlink{class_l_o_m18_a8d3a63b84358091b09f920a6f07d36d2}{m\+Cylinder\+Angle}}
+G4double \mbox{\hyperlink{class_l_o_m18_a8d3a63b84358091b09f920a6f07d36d2}{m\+Cylinder\+Angle}} = 1.\+5$\ast$deg
 \item 
 G4double \mbox{\hyperlink{class_l_o_m18_acf14b281761a789c531b4402c2eefc2f}{m\+Glass\+Out\+Rad}}
-\item 
-G4\+String \mbox{\hyperlink{class_l_o_m18_a3cfd019d461a4338a617176ec263bf92}{m\+Data\+Key}} = \char`\"{}om\+\_\+\+LOM18\char`\"{}
 \end{DoxyCompactItemize}
 \doxysubsection*{Additional Inherited Members}
 
@@ -67,6 +69,26 @@ Placement function which appends all components into an \mbox{\hyperlink{classab
 
 Implements \mbox{\hyperlink{classabc_detector_component_a8e7f01c218d5f093e80e46b33a0672bf}{abc\+Detector\+Component}}.
 
+\mbox{\Hypertarget{class_l_o_m18_a723ddde465745adcb544f6884dc44d0e}\label{class_l_o_m18_a723ddde465745adcb544f6884dc44d0e}} 
+\index{LOM18@{LOM18}!get\_number\_of\_PMTs@{get\_number\_of\_PMTs}}
+\index{get\_number\_of\_PMTs@{get\_number\_of\_PMTs}!LOM18@{LOM18}}
+\doxysubsubsection{\texorpdfstring{get\_number\_of\_PMTs()}{get\_number\_of\_PMTs()}}
+{\footnotesize\ttfamily int LOM18\+::get\+\_\+number\+\_\+of\+\_\+\+PMTs (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{class_optical_module_ad38b514b9dca7f456f7b228490acd5df}{Optical\+Module}}.
+
+\mbox{\Hypertarget{class_l_o_m18_add389470d6a041bcac2ae31416b543c3}\label{class_l_o_m18_add389470d6a041bcac2ae31416b543c3}} 
+\index{LOM18@{LOM18}!get\_pressure\_vessel\_weight@{get\_pressure\_vessel\_weight}}
+\index{get\_pressure\_vessel\_weight@{get\_pressure\_vessel\_weight}!LOM18@{LOM18}}
+\doxysubsubsection{\texorpdfstring{get\_pressure\_vessel\_weight()}{get\_pressure\_vessel\_weight()}}
+{\footnotesize\ttfamily double LOM18\+::get\+\_\+pressure\+\_\+vessel\+\_\+weight (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{class_optical_module_aa4d4ddc44febd627c780529347161e62}{Optical\+Module}}.
+
 
 
 \doxysubsection{Member Data Documentation}
@@ -74,13 +96,7 @@ Implements \mbox{\hyperlink{classabc_detector_component_a8e7f01c218d5f093e80e46b
 \index{LOM18@{LOM18}!mCylinderAngle@{mCylinderAngle}}
 \index{mCylinderAngle@{mCylinderAngle}!LOM18@{LOM18}}
 \doxysubsubsection{\texorpdfstring{mCylinderAngle}{mCylinderAngle}}
-{\footnotesize\ttfamily G4double LOM18\+::m\+Cylinder\+Angle}
-
-\mbox{\Hypertarget{class_l_o_m18_a3cfd019d461a4338a617176ec263bf92}\label{class_l_o_m18_a3cfd019d461a4338a617176ec263bf92}} 
-\index{LOM18@{LOM18}!mDataKey@{mDataKey}}
-\index{mDataKey@{mDataKey}!LOM18@{LOM18}}
-\doxysubsubsection{\texorpdfstring{mDataKey}{mDataKey}}
-{\footnotesize\ttfamily G4\+String LOM18\+::m\+Data\+Key = \char`\"{}om\+\_\+\+LOM18\char`\"{}}
+{\footnotesize\ttfamily G4double LOM18\+::m\+Cylinder\+Angle = 1.\+5$\ast$deg}
 
 \mbox{\Hypertarget{class_l_o_m18_acf14b281761a789c531b4402c2eefc2f}\label{class_l_o_m18_acf14b281761a789c531b4402c2eefc2f}} 
 \index{LOM18@{LOM18}!mGlassOutRad@{mGlassOutRad}}

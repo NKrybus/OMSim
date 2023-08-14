@@ -17,7 +17,7 @@ Collaboration diagram for m\+DOM\+:
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=212pt]{classm_d_o_m__coll__graph}
+\includegraphics[width=296pt]{classm_d_o_m__coll__graph}
 \end{center}
 \end{figure}
 \doxysubsection*{Public Member Functions}
@@ -29,6 +29,10 @@ Collaboration diagram for m\+DOM\+:
 \item 
 void \mbox{\hyperlink{classm_d_o_m_a115f5e689062ac82b8f55a18f7f96376}{construction}} ()
 \item 
+double \mbox{\hyperlink{classm_d_o_m_a4c121cb1fb365dae9cfe6544cc8c11bb}{get\+\_\+pressure\+\_\+vessel\+\_\+weight}} ()
+\begin{DoxyCompactList}\small\item\em Returns weight of pressure vessel in kg. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classm_d_o_m_a0f77cd4b06c68a8a22d63c6fe8eaf3c5}{get\+\_\+number\+\_\+of\+\_\+\+PMTs}} ()
+\item 
 void \mbox{\hyperlink{classm_d_o_m_adf748d77a8bae2516db1ba79b805841b}{run\+Beam\+On\+Flasher}} (G4int p\+Module\+Index, G4int p\+LEDIndex)
 \begin{DoxyCompactList}\small\item\em run/beam\+On the specified flasher. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classm_d_o_m_a48e3f7091cebec1b23d96c33580ec3e5}{set\+Navigator}} (G4\+Navigator $\ast$p\+Navigator)
@@ -36,19 +40,17 @@ void \mbox{\hyperlink{classm_d_o_m_a48e3f7091cebec1b23d96c33580ec3e5}{set\+Navig
 \doxysubsection*{Public Attributes}
 \begin{DoxyCompactItemize}
 \item 
-G4double \mbox{\hyperlink{classm_d_o_m_a82fb3050e851ea057c6c448e318c39e3}{m\+Cylinder\+Angle}}
-\item 
-G4double \mbox{\hyperlink{classm_d_o_m_a95b140aba4a12a051763b981a6d5ffc1}{m\+Glass\+Out\+Rad}}
-\item 
-G4double \mbox{\hyperlink{classm_d_o_m_a8ebcc057212a406425f938b5822652b5}{m\+Cyl\+High}}
-\item 
-G4\+String \mbox{\hyperlink{classm_d_o_m_adb285afa4a9c2ab9d6c530591ec2d1e6}{m\+Data\+Key}} = \char`\"{}om\+\_\+m\+DOM\char`\"{}
-\item 
 G4int \mbox{\hyperlink{classm_d_o_m_a106b05be669675201404fb8954642048}{m\+Nr\+Total\+LED}}
 \item 
 std\+::vector$<$ G4\+Transform3D $>$ \mbox{\hyperlink{classm_d_o_m_a0ea5b69f38842184f0ec6f0c65c328ed}{m\+LEDTransformers}}
 \item 
 std\+::vector$<$ std\+::vector$<$ G4double $>$ $>$ \mbox{\hyperlink{classm_d_o_m_a33d632b787f897dfb6320e246690e62d}{m\+LED\+\_\+\+Ang\+From\+Sphere}}
+\item 
+G4double \mbox{\hyperlink{classm_d_o_m_a95b140aba4a12a051763b981a6d5ffc1}{m\+Glass\+Out\+Rad}} = 176.\+5$\ast$mm
+\item 
+G4double \mbox{\hyperlink{classm_d_o_m_a8ebcc057212a406425f938b5822652b5}{m\+Cyl\+High}} = 27.\+5$\ast$mm
+\item 
+G4double \mbox{\hyperlink{classm_d_o_m_accd2b944cf289a6a24108558377e805c}{m\+Glass\+In\+Rad}} = \mbox{\hyperlink{classm_d_o_m_a95b140aba4a12a051763b981a6d5ffc1}{m\+Glass\+Out\+Rad}} -\/ m\+Glass\+Thick
 \end{DoxyCompactItemize}
 \doxysubsection*{Additional Inherited Members}
 
@@ -79,6 +81,26 @@ std\+::vector$<$ std\+::vector$<$ G4double $>$ $>$ \mbox{\hyperlink{classm_d_o_m
 
 Implements \mbox{\hyperlink{classabc_detector_component_a8e7f01c218d5f093e80e46b33a0672bf}{abc\+Detector\+Component}}.
 
+\mbox{\Hypertarget{classm_d_o_m_a0f77cd4b06c68a8a22d63c6fe8eaf3c5}\label{classm_d_o_m_a0f77cd4b06c68a8a22d63c6fe8eaf3c5}} 
+\index{mDOM@{mDOM}!get\_number\_of\_PMTs@{get\_number\_of\_PMTs}}
+\index{get\_number\_of\_PMTs@{get\_number\_of\_PMTs}!mDOM@{mDOM}}
+\doxysubsubsection{\texorpdfstring{get\_number\_of\_PMTs()}{get\_number\_of\_PMTs()}}
+{\footnotesize\ttfamily int m\+DOM\+::get\+\_\+number\+\_\+of\+\_\+\+PMTs (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{class_optical_module_ad38b514b9dca7f456f7b228490acd5df}{Optical\+Module}}.
+
+\mbox{\Hypertarget{classm_d_o_m_a4c121cb1fb365dae9cfe6544cc8c11bb}\label{classm_d_o_m_a4c121cb1fb365dae9cfe6544cc8c11bb}} 
+\index{mDOM@{mDOM}!get\_pressure\_vessel\_weight@{get\_pressure\_vessel\_weight}}
+\index{get\_pressure\_vessel\_weight@{get\_pressure\_vessel\_weight}!mDOM@{mDOM}}
+\doxysubsubsection{\texorpdfstring{get\_pressure\_vessel\_weight()}{get\_pressure\_vessel\_weight()}}
+{\footnotesize\ttfamily double m\+DOM\+::get\+\_\+pressure\+\_\+vessel\+\_\+weight (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{class_optical_module_aa4d4ddc44febd627c780529347161e62}{Optical\+Module}}.
+
 \mbox{\Hypertarget{classm_d_o_m_adf748d77a8bae2516db1ba79b805841b}\label{classm_d_o_m_adf748d77a8bae2516db1ba79b805841b}} 
 \index{mDOM@{mDOM}!runBeamOnFlasher@{runBeamOnFlasher}}
 \index{runBeamOnFlasher@{runBeamOnFlasher}!mDOM@{mDOM}}
@@ -105,25 +127,19 @@ This method triggers the flasher at the given index in the specified module.
 \index{mDOM@{mDOM}!mCylHigh@{mCylHigh}}
 \index{mCylHigh@{mCylHigh}!mDOM@{mDOM}}
 \doxysubsubsection{\texorpdfstring{mCylHigh}{mCylHigh}}
-{\footnotesize\ttfamily G4double m\+DOM\+::m\+Cyl\+High}
+{\footnotesize\ttfamily G4double m\+DOM\+::m\+Cyl\+High = 27.\+5$\ast$mm}
 
-\mbox{\Hypertarget{classm_d_o_m_a82fb3050e851ea057c6c448e318c39e3}\label{classm_d_o_m_a82fb3050e851ea057c6c448e318c39e3}} 
-\index{mDOM@{mDOM}!mCylinderAngle@{mCylinderAngle}}
-\index{mCylinderAngle@{mCylinderAngle}!mDOM@{mDOM}}
-\doxysubsubsection{\texorpdfstring{mCylinderAngle}{mCylinderAngle}}
-{\footnotesize\ttfamily G4double m\+DOM\+::m\+Cylinder\+Angle}
-
-\mbox{\Hypertarget{classm_d_o_m_adb285afa4a9c2ab9d6c530591ec2d1e6}\label{classm_d_o_m_adb285afa4a9c2ab9d6c530591ec2d1e6}} 
-\index{mDOM@{mDOM}!mDataKey@{mDataKey}}
-\index{mDataKey@{mDataKey}!mDOM@{mDOM}}
-\doxysubsubsection{\texorpdfstring{mDataKey}{mDataKey}}
-{\footnotesize\ttfamily G4\+String m\+DOM\+::m\+Data\+Key = \char`\"{}om\+\_\+m\+DOM\char`\"{}}
+\mbox{\Hypertarget{classm_d_o_m_accd2b944cf289a6a24108558377e805c}\label{classm_d_o_m_accd2b944cf289a6a24108558377e805c}} 
+\index{mDOM@{mDOM}!mGlassInRad@{mGlassInRad}}
+\index{mGlassInRad@{mGlassInRad}!mDOM@{mDOM}}
+\doxysubsubsection{\texorpdfstring{mGlassInRad}{mGlassInRad}}
+{\footnotesize\ttfamily G4double m\+DOM\+::m\+Glass\+In\+Rad = \mbox{\hyperlink{classm_d_o_m_a95b140aba4a12a051763b981a6d5ffc1}{m\+Glass\+Out\+Rad}} -\/ m\+Glass\+Thick}
 
 \mbox{\Hypertarget{classm_d_o_m_a95b140aba4a12a051763b981a6d5ffc1}\label{classm_d_o_m_a95b140aba4a12a051763b981a6d5ffc1}} 
 \index{mDOM@{mDOM}!mGlassOutRad@{mGlassOutRad}}
 \index{mGlassOutRad@{mGlassOutRad}!mDOM@{mDOM}}
 \doxysubsubsection{\texorpdfstring{mGlassOutRad}{mGlassOutRad}}
-{\footnotesize\ttfamily G4double m\+DOM\+::m\+Glass\+Out\+Rad}
+{\footnotesize\ttfamily G4double m\+DOM\+::m\+Glass\+Out\+Rad = 176.\+5$\ast$mm}
 
 \mbox{\Hypertarget{classm_d_o_m_a33d632b787f897dfb6320e246690e62d}\label{classm_d_o_m_a33d632b787f897dfb6320e246690e62d}} 
 \index{mDOM@{mDOM}!mLED\_AngFromSphere@{mLED\_AngFromSphere}}

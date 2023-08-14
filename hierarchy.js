@@ -15,15 +15,17 @@ var hierarchy =
       ] ]
     ] ],
     [ "abcDetectorComponent", "classabc_detector_component.html", [
-      [ "DEGG", "class_d_e_g_g.html", null ],
       [ "DEggHarness", "class_d_egg_harness.html", null ],
-      [ "LOM16", "class_l_o_m16.html", null ],
-      [ "LOM18", "class_l_o_m18.html", null ],
       [ "OMSimPMTConstruction", "class_o_m_sim_p_m_t_construction.html", null ],
-      [ "mDOM", "classm_d_o_m.html", null ],
+      [ "OpticalModule", "class_optical_module.html", [
+        [ "DEGG", "class_d_e_g_g.html", null ],
+        [ "LOM16", "class_l_o_m16.html", null ],
+        [ "LOM18", "class_l_o_m18.html", null ],
+        [ "mDOM", "classm_d_o_m.html", null ],
+        [ "pDOM", "classp_d_o_m.html", null ]
+      ] ],
       [ "mDOMFlasher", "classm_d_o_m_flasher.html", null ],
-      [ "mDOMHarness", "classm_d_o_m_harness.html", null ],
-      [ "pDOM", "classp_d_o_m.html", null ]
+      [ "mDOMHarness", "classm_d_o_m_harness.html", null ]
     ] ],
     [ "AngularScan", "class_angular_scan.html", null ],
     [ "CADMesh::CADMeshTemplate< T >", "class_c_a_d_mesh_1_1_c_a_d_mesh_template.html", null ],
@@ -32,21 +34,27 @@ var hierarchy =
     ] ],
     [ "abcDetectorComponent::Component", "structabc_detector_component_1_1_component.html", null ],
     [ "G4UserEventAction", null, [
+      [ "OMSimEventAction", "class_o_m_sim_event_action.html", null ],
       [ "OMSimEventAction", "class_o_m_sim_event_action.html", null ]
     ] ],
     [ "G4UserRunAction", null, [
+      [ "OMSimRunAction", "class_o_m_sim_run_action.html", null ],
       [ "OMSimRunAction", "class_o_m_sim_run_action.html", null ]
     ] ],
     [ "G4UserSteppingAction", null, [
+      [ "OMSimSteppingAction", "class_o_m_sim_stepping_action.html", null ],
       [ "OMSimSteppingAction", "class_o_m_sim_stepping_action.html", null ]
     ] ],
     [ "G4UserTrackingAction", null, [
+      [ "OMSimTrackingAction", "class_o_m_sim_tracking_action.html", null ],
       [ "OMSimTrackingAction", "class_o_m_sim_tracking_action.html", null ]
     ] ],
     [ "G4VUserDetectorConstruction", null, [
+      [ "OMSimDetectorConstruction", "class_o_m_sim_detector_construction.html", null ],
       [ "OMSimDetectorConstruction", "class_o_m_sim_detector_construction.html", null ]
     ] ],
     [ "G4VUserPhysicsList", null, [
+      [ "OMSimPhysicsList", "class_o_m_sim_physics_list.html", null ],
       [ "OMSimPhysicsList", "class_o_m_sim_physics_list.html", null ]
     ] ],
     [ "G4VUserPrimaryGeneratorAction", null, [
@@ -54,6 +62,7 @@ var hierarchy =
     ] ],
     [ "GlobalPosition", "struct_global_position.html", null ],
     [ "HitStats", "struct_hit_stats.html", null ],
+    [ "IsotopeDecays", "class_isotope_decays.html", null ],
     [ "CADMesh::File::Item", "struct_c_a_d_mesh_1_1_file_1_1_item.html", null ],
     [ "CADMesh::File::Lexer", "class_c_a_d_mesh_1_1_file_1_1_lexer.html", null ],
     [ "CADMesh::Mesh", "class_c_a_d_mesh_1_1_mesh.html", null ],

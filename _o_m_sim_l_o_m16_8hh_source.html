@@ -122,83 +122,104 @@ $(document).ready(function(){initNavTree('_o_m_sim_l_o_m16_8hh_source.html','');
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_o_m_sim_p_m_t_construction_8hh.html">OMSimPMTConstruction.hh</a>&quot;</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160; </div>
-<div class="line"><a name="l00006"></a><span class="lineno"><a class="line" href="class_l_o_m16.html">    6</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_l_o_m16.html">LOM16</a> : <span class="keyword">public</span> <a class="code" href="classabc_detector_component.html">abcDetectorComponent</a></div>
+<div class="line"><a name="l00006"></a><span class="lineno"><a class="line" href="class_l_o_m16.html">    6</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_l_o_m16.html">LOM16</a> : <span class="keyword">public</span> <a class="code" href="class_optical_module.html">OpticalModule</a></div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;{</div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="keyword">public</span>:</div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;    <a class="code" href="class_l_o_m16.html#a1f077aaff6dce0e39c9518e202b62df0">LOM16</a>(<a class="code" href="class_input_data_manager.html">InputDataManager</a>* pData, G4bool pPlaceHarness = <span class="keyword">false</span>);</div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;    <a class="code" href="class_l_o_m16.html#a93c141790620554394cdf9864096d011">~LOM16</a>();</div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_l_o_m16.html#ab837d810e22d601fc1a298ba0dfddd48">construction</a>();</div>
-<div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="class_l_o_m16.html#a2f84dd44e9bc09e47527154c4cd17e4a">   12</a></span>&#160;    G4String <a class="code" href="class_l_o_m16.html#a2f84dd44e9bc09e47527154c4cd17e4a">mDataKey</a> = <span class="stringliteral">&quot;om_LOM16&quot;</span>;</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160; </div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;  </div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; </div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <a class="code" href="class_o_m_sim_p_m_t_construction.html">OMSimPMTConstruction</a>* mPMTManager;</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160; </div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <span class="comment">//functions</span></div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <span class="keywordtype">void</span> getSharedData();</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    G4UnionSolid* pressureVessel(<span class="keyword">const</span> G4double pOutRad, G4String pSuffix);</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <span class="comment">//Lom specific functions</span></div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <span class="keywordtype">void</span> placeCADSupportStructure();</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="keywordtype">void</span> appendEquatorBand();</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    </div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <span class="comment">//for gelpad and PMT creation</span></div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <span class="keywordtype">void</span> placePMTsAndGelpads(G4VSolid* lGelSolid,G4LogicalVolume* lGelLogical);</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <span class="keywordtype">void</span> setPMTAndGelpadPositions();</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <span class="keywordtype">void</span> createGelpadLogicalVolumes(G4VSolid* lGelSolid);</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="keywordtype">void</span> placePMTs(G4LogicalVolume* lInnerVolumeLogical);</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="keywordtype">void</span> placeGelpads(G4LogicalVolume* lInnerVolumeLogical);</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="comment">//selection variables</span></div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    G4bool mPlaceHarness = <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    G4bool mHarnessUnion = <span class="keyword">true</span>; <span class="comment">//it should be true for the first module that you build, and then false</span></div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="comment">//vectors for positions and rotations</span></div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    std::vector&lt;G4ThreeVector&gt; mPMTPositions;</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    std::vector&lt;G4ThreeVector&gt; mGelpadPositions;</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    std::vector&lt;G4double&gt; mPMT_theta;</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    std::vector&lt;G4double&gt; mPMT_phi;</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="comment">//Shared data from jSON file</span></div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    G4double mGlassOutRad;</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    G4int mNrPolarPMTs;</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    G4int mNrEqPMTs;</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    G4int mTotalNrPMTs;</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="comment">//helper variables</span></div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    std::stringstream mConverter;</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    std::stringstream mConverter2;</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160; </div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="comment">//for gelpads</span></div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    G4double mGelPadDZ;</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160; </div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="comment">//logical of gelpads</span></div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    std::vector&lt;G4LogicalVolume*&gt; mGelPad_logical;</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160; </div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160; </div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;};</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160; </div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="comment">//</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="class_l_o_m16.html#abd3ad7bb93d7d27efc11657250199546">   12</a></span>&#160;    <span class="keywordtype">double</span> <a class="code" href="class_l_o_m16.html#abd3ad7bb93d7d27efc11657250199546">get_pressure_vessel_weight</a>() {<span class="keywordflow">return</span> 5.38+5.35;};</div>
+<div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="class_l_o_m16.html#a7869f108d4d89441e6f536536763af96">   13</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_l_o_m16.html#a7869f108d4d89441e6f536536763af96">get_number_of_PMTs</a>() { <span class="keywordflow">return</span> mTotalNrPMTs;};</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    </div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    G4UnionSolid* pressureVessel(<span class="keyword">const</span> G4double pOutRad, G4String pSuffix);</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <span class="comment">//Lom specific functions</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <span class="keywordtype">void</span> placeCADSupportStructure();</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <span class="keywordtype">void</span> appendEquatorBand();</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    </div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <span class="comment">//for gelpad and PMT creation</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <span class="keywordtype">void</span> placePMTsAndGelpads(G4VSolid* lGelSolid,G4LogicalVolume* lGelLogical);</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="keywordtype">void</span> setPMTAndGelpadPositions();</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="keywordtype">void</span> createGelpadLogicalVolumes(G4VSolid* lGelSolid);</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <span class="keywordtype">void</span> placePMTs(G4LogicalVolume* lInnerVolumeLogical);</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <span class="keywordtype">void</span> placeGelpads(G4LogicalVolume* lInnerVolumeLogical);</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <span class="comment">//selection variables</span></div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    G4bool mPlaceHarness = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    G4bool mHarnessUnion = <span class="keyword">true</span>; <span class="comment">//it should be true for the first module that you build, and then false</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="comment">//vectors for positions and rotations</span></div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    std::vector&lt;G4ThreeVector&gt; mPMTPositions;</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    std::vector&lt;G4ThreeVector&gt; mGelpadPositions;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    std::vector&lt;G4double&gt; mPMT_theta;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    std::vector&lt;G4double&gt; mPMT_phi;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="comment">//helper variables</span></div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    std::stringstream mConverter;</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    std::stringstream mConverter2;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="comment">//logical of gelpads</span></div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    std::vector&lt;G4LogicalVolume*&gt; mGelPad_logical;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    G4String mPMTModel =  <span class="stringliteral">&quot;pmt_Hamamatsu_4inch&quot;</span>;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    G4double mInternalCAD_x = 68.248*mm;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    G4double mInternalCAD_y = 0*mm;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    G4double mInternalCAD_z = -124.218*mm;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    G4double mGelPadDZ = 30.0*mm;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    G4double mGlassOutRad = 153.2*mm;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    G4double mGlassThick = 12.0*mm;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    G4double mGlassInRad = mGlassOutRad - mGlassThick;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    G4double mCylHigh = 68.8*mm;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    G4double mCylinderAngle = 2.5*deg;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    G4double mGelThicknessFrontPMT = 3.6*mm;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    G4double mGelThickness = 4.5*mm;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    G4double mEqPMTrOffset = 2.6*mm;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    G4double mEqPMTzOffset = 62.5*mm;</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    G4double mRefConeHalfZ = 15*mm;</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    G4double mRefConeSheetThickness = 0.5*mm;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    G4double mRefConeToHolder = 1.55*mm;</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    G4double mThetaPolar = 36.0*deg;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    G4double mThetaEquatorial = 62.0*deg;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    G4int mNrPolarPMTs = 4;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    G4int mNrEqPMTs = 4;</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    G4double mPolEqPMTPhiPhase = 45.0*deg;</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    G4double mEqTiltAngle = 15.0*deg;</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    G4double mPolPadOpeningAngle = 30.0*deg;</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    G4double mEqPadOpeningAngle = 22.0*deg;</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    G4double mCylinderAngle = 2.8*deg;</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    G4int mTotalNrPMTs = (mNrPolarPMTs + mNrEqPMTs) * 2;</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160; </div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    G4double mCenterModuleToBottomPMTPolar = 70.9 * mm;</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    G4double mCenterModuleToBottomPMTPolar = 25.4 * mm; </div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160; </div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    G4double mPMToffset;</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    G4double mMaxPMTRadius;</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160; </div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    G4double mEqBandWidth = 45 * mm; <span class="comment">//Total width (both halves)</span></div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    G4double mEqBandThickness = 1 * mm; <span class="comment">//Thickness since its a 3D object</span></div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;};</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160; </div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;<span class="comment">//</span></div>
 <div class="ttc" id="a_o_m_sim_p_m_t_construction_8hh_html"><div class="ttname"><a href="_o_m_sim_p_m_t_construction_8hh.html">OMSimPMTConstruction.hh</a></div></div>
 <div class="ttc" id="aclass_input_data_manager_html"><div class="ttname"><a href="class_input_data_manager.html">InputDataManager</a></div><div class="ttdef"><b>Definition:</b> OMSimInputData.hh:63</div></div>
 <div class="ttc" id="aclass_l_o_m16_html"><div class="ttname"><a href="class_l_o_m16.html">LOM16</a></div><div class="ttdef"><b>Definition:</b> OMSimLOM16.hh:7</div></div>
-<div class="ttc" id="aclass_l_o_m16_html_a1f077aaff6dce0e39c9518e202b62df0"><div class="ttname"><a href="class_l_o_m16.html#a1f077aaff6dce0e39c9518e202b62df0">LOM16::LOM16</a></div><div class="ttdeci">LOM16(InputDataManager *pData, G4bool pPlaceHarness=false)</div><div class="ttdef"><b>Definition:</b> OMSimLOM16.cc:34</div></div>
-<div class="ttc" id="aclass_l_o_m16_html_a2f84dd44e9bc09e47527154c4cd17e4a"><div class="ttname"><a href="class_l_o_m16.html#a2f84dd44e9bc09e47527154c4cd17e4a">LOM16::mDataKey</a></div><div class="ttdeci">G4String mDataKey</div><div class="ttdef"><b>Definition:</b> OMSimLOM16.hh:12</div></div>
-<div class="ttc" id="aclass_l_o_m16_html_a93c141790620554394cdf9864096d011"><div class="ttname"><a href="class_l_o_m16.html#a93c141790620554394cdf9864096d011">LOM16::~LOM16</a></div><div class="ttdeci">~LOM16()</div><div class="ttdef"><b>Definition:</b> OMSimLOM16.cc:28</div></div>
-<div class="ttc" id="aclass_l_o_m16_html_ab837d810e22d601fc1a298ba0dfddd48"><div class="ttname"><a href="class_l_o_m16.html#ab837d810e22d601fc1a298ba0dfddd48">LOM16::construction</a></div><div class="ttdeci">void construction()</div><div class="ttdef"><b>Definition:</b> OMSimLOM16.cc:64</div></div>
-<div class="ttc" id="aclass_o_m_sim_p_m_t_construction_html"><div class="ttname"><a href="class_o_m_sim_p_m_t_construction.html">OMSimPMTConstruction</a></div><div class="ttdef"><b>Definition:</b> OMSimPMTConstruction.hh:12</div></div>
-<div class="ttc" id="aclassabc_detector_component_html"><div class="ttname"><a href="classabc_detector_component.html">abcDetectorComponent</a></div><div class="ttdoc">Abstract base class used for constructing detector components.</div><div class="ttdef"><b>Definition:</b> abcDetectorComponent.hh:22</div></div>
+<div class="ttc" id="aclass_l_o_m16_html_a1f077aaff6dce0e39c9518e202b62df0"><div class="ttname"><a href="class_l_o_m16.html#a1f077aaff6dce0e39c9518e202b62df0">LOM16::LOM16</a></div><div class="ttdeci">LOM16(InputDataManager *pData, G4bool pPlaceHarness=false)</div><div class="ttdef"><b>Definition:</b> OMSimLOM16.cc:28</div></div>
+<div class="ttc" id="aclass_l_o_m16_html_a7869f108d4d89441e6f536536763af96"><div class="ttname"><a href="class_l_o_m16.html#a7869f108d4d89441e6f536536763af96">LOM16::get_number_of_PMTs</a></div><div class="ttdeci">int get_number_of_PMTs()</div><div class="ttdef"><b>Definition:</b> OMSimLOM16.hh:13</div></div>
+<div class="ttc" id="aclass_l_o_m16_html_a93c141790620554394cdf9864096d011"><div class="ttname"><a href="class_l_o_m16.html#a93c141790620554394cdf9864096d011">LOM16::~LOM16</a></div><div class="ttdeci">~LOM16()</div><div class="ttdef"><b>Definition:</b> OMSimLOM16.cc:22</div></div>
+<div class="ttc" id="aclass_l_o_m16_html_ab837d810e22d601fc1a298ba0dfddd48"><div class="ttname"><a href="class_l_o_m16.html#ab837d810e22d601fc1a298ba0dfddd48">LOM16::construction</a></div><div class="ttdeci">void construction()</div><div class="ttdef"><b>Definition:</b> OMSimLOM16.cc:50</div></div>
+<div class="ttc" id="aclass_l_o_m16_html_abd3ad7bb93d7d27efc11657250199546"><div class="ttname"><a href="class_l_o_m16.html#abd3ad7bb93d7d27efc11657250199546">LOM16::get_pressure_vessel_weight</a></div><div class="ttdeci">double get_pressure_vessel_weight()</div><div class="ttdoc">Returns weight of pressure vessel in kg.</div><div class="ttdef"><b>Definition:</b> OMSimLOM16.hh:12</div></div>
+<div class="ttc" id="aclass_optical_module_html"><div class="ttname"><a href="class_optical_module.html">OpticalModule</a></div><div class="ttdoc">Base class for OMs works as interface.</div><div class="ttdef"><b>Definition:</b> abcDetectorComponent.hh:96</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_bdd9a5d540de89e9fe90efdfc6973a4f.html">common</a></li><li class="navelem"><a class="el" href="dir_11fbc4217d50ab21044e5ad6614aede5.html">include</a></li><li class="navelem"><a class="el" href="_o_m_sim_l_o_m16_8hh.html">OMSimLOM16.hh</a></li>
-    <li class="footer">Generated on Thu Jul 27 2023 16:12:50 for OMSim by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Mon Aug 14 2023 14:22:16 for OMSim by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

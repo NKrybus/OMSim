@@ -8,6 +8,9 @@ var group__common =
     [ "abcDetectorComponent.cc", "abc_detector_component_8cc.html", null ],
     [ "OMSimDataFileTypes.cc", "_o_m_sim_data_file_types_8cc.html", null ],
     [ "OMSimDEGG.cc", "_o_m_sim_d_e_g_g_8cc.html", null ],
+    [ "OMSimLOM16.cc", "_o_m_sim_l_o_m16_8cc.html", null ],
+    [ "OMSimLOM18.cc", "_o_m_sim_l_o_m18_8cc.html", null ],
+    [ "OMSimMDOM.cc", "_o_m_sim_m_d_o_m_8cc.html", null ],
     [ "OMSimPDOM.cc", "_o_m_sim_p_d_o_m_8cc.html", null ],
     [ "abcDetectorComponent", "classabc_detector_component.html", [
       [ "Component", "structabc_detector_component_1_1_component.html", [
@@ -52,6 +55,12 @@ var group__common =
       [ "mRedVis", "classabc_detector_component.html#ad11572a6790aec6251f863a3899452af", null ],
       [ "mSteelVis", "classabc_detector_component.html#ad57eb4a0be4c50d570d436d559178ba3", null ],
       [ "mWhite", "classabc_detector_component.html#ad57a37961439b26587d55ba4e3c6603b", null ]
+    ] ],
+    [ "OpticalModule", "class_optical_module.html", [
+      [ "get_number_of_PMTs", "class_optical_module.html#ad38b514b9dca7f456f7b228490acd5df", null ],
+      [ "get_PMT_manager", "class_optical_module.html#acfea011f895ea19d5e64178835d0a2cd", null ],
+      [ "get_pressure_vessel_weight", "class_optical_module.html#aa4d4ddc44febd627c780529347161e62", null ],
+      [ "mPMTManager", "class_optical_module.html#a90bdd6e11b76eb6e1c620bcdc3863e3b", null ]
     ] ],
     [ "OMSim", "class_o_m_sim.html", [
       [ "OMSim", "class_o_m_sim.html#afc01df8f57a1303823b79ffd79088a89", null ],
@@ -119,12 +128,16 @@ var group__common =
     [ "DEGG", "class_d_e_g_g.html", [
       [ "DEGG", "class_d_e_g_g.html#a93dc17fd3d8523e54ad70a42925ff4f1", null ],
       [ "~DEGG", "class_d_e_g_g.html#a943f7bfe01d8646165b4873c7b57a388", null ],
-      [ "construction", "class_d_e_g_g.html#ac36a2968b6da47bd35dc1f4d14e93904", null ]
+      [ "construction", "class_d_e_g_g.html#ac36a2968b6da47bd35dc1f4d14e93904", null ],
+      [ "get_number_of_PMTs", "class_d_e_g_g.html#a5053207b877477ef1815e6502e145045", null ],
+      [ "get_pressure_vessel_weight", "class_d_e_g_g.html#a523390f0737234af8abbe86d8c2f2078", null ]
     ] ],
     [ "pDOM", "classp_d_o_m.html", [
       [ "pDOM", "classp_d_o_m.html#a8702e858160254f80acfbf15b38053c3", null ],
       [ "~pDOM", "classp_d_o_m.html#aff85691171a4d8a8a1ad30ba1721b8c1", null ],
       [ "construction", "classp_d_o_m.html#a6fc9511f8287a69ef498167162a92ec4", null ],
+      [ "get_number_of_PMTs", "classp_d_o_m.html#a8a3dbeed4c571c80c952c6a229dc139e", null ],
+      [ "get_pressure_vessel_weight", "classp_d_o_m.html#a34dc6c8630ef4eef2ef2918c0d31a8c8", null ],
       [ "mPlaceHarness", "classp_d_o_m.html#ac2957c4f838bb9cc9ced72e424691df5", null ]
     ] ],
     [ "OMSimUIinterface", "class_o_m_sim_u_iinterface.html", [

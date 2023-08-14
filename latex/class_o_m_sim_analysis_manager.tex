@@ -25,9 +25,19 @@ void \mbox{\hyperlink{class_o_m_sim_analysis_manager_aa2f22d9a16124d9cb7d100e7c6
 void \mbox{\hyperlink{class_o_m_sim_analysis_manager_a41aa94a56238f26418351ae484a78a7e}{Write\+Scan}} (G4double p\+Phi, G4double p\+Theta)
 \begin{DoxyCompactList}\small\item\em Writes a scan result to the output file. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_o_m_sim_analysis_manager_a1a13249dd3722aaacbb1c41d10418648}{Write\+Header}} ()
-\begin{DoxyCompactList}\small\item\em Writes a header to the output file. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Writes a header to the output file. \end{DoxyCompactList}\item 
+std\+::vector$<$ double $>$ \mbox{\hyperlink{class_o_m_sim_analysis_manager_ada8dc75ab70dc4c35e48eaf3178080c1}{Count\+Hits}} ()
+\item 
+void \mbox{\hyperlink{class_o_m_sim_analysis_manager_aa2f22d9a16124d9cb7d100e7c64e4006}{Reset}} ()
+\item 
+void \mbox{\hyperlink{class_o_m_sim_analysis_manager_a41aa94a56238f26418351ae484a78a7e}{Write\+Scan}} (G4double p\+Phi, G4double p\+Theta)
+\item 
+void \mbox{\hyperlink{class_o_m_sim_analysis_manager_a1a13249dd3722aaacbb1c41d10418648}{Write\+Header}} ()
+\end{DoxyCompactItemize}
 \doxysubsection*{Static Public Member Functions}
 \begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_o_m_sim_analysis_manager}{OMSim\+Analysis\+Manager}} \& \mbox{\hyperlink{class_o_m_sim_analysis_manager_af14993ee34e8cb229313c33469e6d76a}{get\+Instance}} ()
 \item 
 static \mbox{\hyperlink{class_o_m_sim_analysis_manager}{OMSim\+Analysis\+Manager}} \& \mbox{\hyperlink{class_o_m_sim_analysis_manager_af14993ee34e8cb229313c33469e6d76a}{get\+Instance}} ()
 \end{DoxyCompactItemize}
@@ -48,34 +58,58 @@ G4long \mbox{\hyperlink{class_o_m_sim_analysis_manager_acbda5b58e03bb9b1f6104ced
 \mbox{\Hypertarget{class_o_m_sim_analysis_manager_a727c6c0fef3aedb8610e8925facbf76e}\label{class_o_m_sim_analysis_manager_a727c6c0fef3aedb8610e8925facbf76e}} 
 \index{OMSimAnalysisManager@{OMSimAnalysisManager}!CountHits@{CountHits}}
 \index{CountHits@{CountHits}!OMSimAnalysisManager@{OMSimAnalysisManager}}
-\doxysubsubsection{\texorpdfstring{CountHits()}{CountHits()}}
+\doxysubsubsection{\texorpdfstring{CountHits()}{CountHits()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
 {\footnotesize\ttfamily std\+::vector$<$ double $>$ OMSim\+Analysis\+Manager\+::\+Count\+Hits (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
 \begin{DoxyReturn}{Returns}
 A vector containing the counts of hits for each PMT. 
 \end{DoxyReturn}
+\mbox{\Hypertarget{class_o_m_sim_analysis_manager_ada8dc75ab70dc4c35e48eaf3178080c1}\label{class_o_m_sim_analysis_manager_ada8dc75ab70dc4c35e48eaf3178080c1}} 
+\index{OMSimAnalysisManager@{OMSimAnalysisManager}!CountHits@{CountHits}}
+\index{CountHits@{CountHits}!OMSimAnalysisManager@{OMSimAnalysisManager}}
+\doxysubsubsection{\texorpdfstring{CountHits()}{CountHits()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily std\+::vector$<$double$>$ OMSim\+Analysis\+Manager\+::\+Count\+Hits (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
 \mbox{\Hypertarget{class_o_m_sim_analysis_manager_af14993ee34e8cb229313c33469e6d76a}\label{class_o_m_sim_analysis_manager_af14993ee34e8cb229313c33469e6d76a}} 
 \index{OMSimAnalysisManager@{OMSimAnalysisManager}!getInstance@{getInstance}}
 \index{getInstance@{getInstance}!OMSimAnalysisManager@{OMSimAnalysisManager}}
-\doxysubsubsection{\texorpdfstring{getInstance()}{getInstance()}}
+\doxysubsubsection{\texorpdfstring{getInstance()}{getInstance()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{class_o_m_sim_analysis_manager}{OMSim\+Analysis\+Manager}}\& OMSim\+Analysis\+Manager\+::get\+Instance (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_o_m_sim_analysis_manager_af14993ee34e8cb229313c33469e6d76a}\label{class_o_m_sim_analysis_manager_af14993ee34e8cb229313c33469e6d76a}} 
+\index{OMSimAnalysisManager@{OMSimAnalysisManager}!getInstance@{getInstance}}
+\index{getInstance@{getInstance}!OMSimAnalysisManager@{OMSimAnalysisManager}}
+\doxysubsubsection{\texorpdfstring{getInstance()}{getInstance()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
 {\footnotesize\ttfamily static \mbox{\hyperlink{class_o_m_sim_analysis_manager}{OMSim\+Analysis\+Manager}}\& OMSim\+Analysis\+Manager\+::get\+Instance (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
 
 \mbox{\Hypertarget{class_o_m_sim_analysis_manager_aa2f22d9a16124d9cb7d100e7c64e4006}\label{class_o_m_sim_analysis_manager_aa2f22d9a16124d9cb7d100e7c64e4006}} 
 \index{OMSimAnalysisManager@{OMSimAnalysisManager}!Reset@{Reset}}
 \index{Reset@{Reset}!OMSimAnalysisManager@{OMSimAnalysisManager}}
-\doxysubsubsection{\texorpdfstring{Reset()}{Reset()}}
+\doxysubsubsection{\texorpdfstring{Reset()}{Reset()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void OMSim\+Analysis\+Manager\+::\+Reset (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_o_m_sim_analysis_manager_aa2f22d9a16124d9cb7d100e7c64e4006}\label{class_o_m_sim_analysis_manager_aa2f22d9a16124d9cb7d100e7c64e4006}} 
+\index{OMSimAnalysisManager@{OMSimAnalysisManager}!Reset@{Reset}}
+\index{Reset@{Reset}!OMSimAnalysisManager@{OMSimAnalysisManager}}
+\doxysubsubsection{\texorpdfstring{Reset()}{Reset()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
 {\footnotesize\ttfamily void OMSim\+Analysis\+Manager\+::\+Reset (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
 \mbox{\Hypertarget{class_o_m_sim_analysis_manager_a1a13249dd3722aaacbb1c41d10418648}\label{class_o_m_sim_analysis_manager_a1a13249dd3722aaacbb1c41d10418648}} 
 \index{OMSimAnalysisManager@{OMSimAnalysisManager}!WriteHeader@{WriteHeader}}
 \index{WriteHeader@{WriteHeader}!OMSimAnalysisManager@{OMSimAnalysisManager}}
-\doxysubsubsection{\texorpdfstring{WriteHeader()}{WriteHeader()}}
+\doxysubsubsection{\texorpdfstring{WriteHeader()}{WriteHeader()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void OMSim\+Analysis\+Manager\+::\+Write\+Header (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_o_m_sim_analysis_manager_a1a13249dd3722aaacbb1c41d10418648}\label{class_o_m_sim_analysis_manager_a1a13249dd3722aaacbb1c41d10418648}} 
+\index{OMSimAnalysisManager@{OMSimAnalysisManager}!WriteHeader@{WriteHeader}}
+\index{WriteHeader@{WriteHeader}!OMSimAnalysisManager@{OMSimAnalysisManager}}
+\doxysubsubsection{\texorpdfstring{WriteHeader()}{WriteHeader()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
 {\footnotesize\ttfamily void OMSim\+Analysis\+Manager\+::\+Write\+Header (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
 \mbox{\Hypertarget{class_o_m_sim_analysis_manager_a41aa94a56238f26418351ae484a78a7e}\label{class_o_m_sim_analysis_manager_a41aa94a56238f26418351ae484a78a7e}} 
 \index{OMSimAnalysisManager@{OMSimAnalysisManager}!WriteScan@{WriteScan}}
 \index{WriteScan@{WriteScan}!OMSimAnalysisManager@{OMSimAnalysisManager}}
-\doxysubsubsection{\texorpdfstring{WriteScan()}{WriteScan()}}
+\doxysubsubsection{\texorpdfstring{WriteScan()}{WriteScan()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
 {\footnotesize\ttfamily void OMSim\+Analysis\+Manager\+::\+Write\+Scan (\begin{DoxyParamCaption}\item[{G4double}]{p\+Phi,  }\item[{G4double}]{p\+Theta }\end{DoxyParamCaption})}
 
 
@@ -85,6 +119,12 @@ A vector containing the counts of hits for each PMT.
 {\em p\+Theta} & The phi angle used in the scan to be written to the output file. \\
 \hline
 \end{DoxyParams}
+\mbox{\Hypertarget{class_o_m_sim_analysis_manager_a41aa94a56238f26418351ae484a78a7e}\label{class_o_m_sim_analysis_manager_a41aa94a56238f26418351ae484a78a7e}} 
+\index{OMSimAnalysisManager@{OMSimAnalysisManager}!WriteScan@{WriteScan}}
+\index{WriteScan@{WriteScan}!OMSimAnalysisManager@{OMSimAnalysisManager}}
+\doxysubsubsection{\texorpdfstring{WriteScan()}{WriteScan()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void OMSim\+Analysis\+Manager\+::\+Write\+Scan (\begin{DoxyParamCaption}\item[{G4double}]{p\+Phi,  }\item[{G4double}]{p\+Theta }\end{DoxyParamCaption})}
+
 
 
 \doxysubsection{Member Data Documentation}
@@ -116,5 +156,5 @@ A vector containing the counts of hits for each PMT.
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-\mbox{\hyperlink{_o_m_sim_analysis_manager_8hh}{OMSim\+Analysis\+Manager.\+hh}}\item 
-\mbox{\hyperlink{_o_m_sim_analysis_manager_8cc}{OMSim\+Analysis\+Manager.\+cc}}\end{DoxyCompactItemize}
+\mbox{\hyperlink{effective__area_2include_2_o_m_sim_analysis_manager_8hh}{effective\+\_\+area/include/\+OMSim\+Analysis\+Manager.\+hh}}\item 
+\mbox{\hyperlink{effective__area_2src_2_o_m_sim_analysis_manager_8cc}{effective\+\_\+area/src/\+OMSim\+Analysis\+Manager.\+cc}}\end{DoxyCompactItemize}
