@@ -33,6 +33,8 @@ var hierarchy =
       [ "CADMesh::TessellatedMesh", "class_c_a_d_mesh_1_1_tessellated_mesh.html", null ]
     ] ],
     [ "abcDetectorComponent::Component", "structabc_detector_component_1_1_component.html", null ],
+    [ "DecayStats", "struct_decay_stats.html", null ],
+    [ "EventInfoManager", "class_event_info_manager.html", null ],
     [ "G4UserEventAction", null, [
       [ "OMSimEventAction", "class_o_m_sim_event_action.html", null ],
       [ "OMSimEventAction", "class_o_m_sim_event_action.html", null ]
@@ -72,8 +74,10 @@ var hierarchy =
     [ "CADMesh::File::Lexer", "class_c_a_d_mesh_1_1_file_1_1_lexer.html", null ],
     [ "CADMesh::Mesh", "class_c_a_d_mesh_1_1_mesh.html", null ],
     [ "OMSim", "class_o_m_sim.html", null ],
-    [ "OMSimAnalysisManager", "class_o_m_sim_analysis_manager.html", null ],
     [ "OMSimCommandArgsTable", "class_o_m_sim_command_args_table.html", null ],
+    [ "OMSimHitManager", "class_o_m_sim_hit_manager.html", [
+      [ "OMSimEffectiveAreaAnalyisis", "class_o_m_sim_effective_area_analyisis.html", null ]
+    ] ],
     [ "OMSimPMTResponse", "class_o_m_sim_p_m_t_response.html", null ],
     [ "OMSimUIinterface", "class_o_m_sim_u_iinterface.html", null ],
     [ "ParameterTable", "class_parameter_table.html", [

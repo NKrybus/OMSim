@@ -1,10 +1,12 @@
 var searchData=
 [
-  ['warning_533',['WARNING',['../_o_m_sim_logger_8hh.html#a5cb439d9f933fde4cf23caa370c030e7',1,'OMSimLogger.hh']]],
-  ['warning_5fcolour_534',['WARNING_COLOUR',['../_o_m_sim_logger_8hh.html#aacffe5f468c8f8b0af384c6445dedde9',1,'OMSimLogger.hh']]],
-  ['wordtoken_535',['WordToken',['../namespace_c_a_d_mesh_1_1_file.html#a250ed8013d4c26e960ee00bfeace697d',1,'CADMesh::File']]],
-  ['write_5fto_5fjson_5fif_5ftype_5fmatches_536',['WRITE_TO_JSON_IF_TYPE_MATCHES',['../_o_m_sim_command_args_table_8hh.html#aa41bdc30fcdd046324b69c10b14d4524',1,'OMSimCommandArgsTable.hh']]],
-  ['writeheader_537',['writeHeader',['../class_o_m_sim_analysis_manager.html#a8cdbe3d8381d8bce57c2dd318abad787',1,'OMSimAnalysisManager::writeHeader()'],['../class_o_m_sim_analysis_manager.html#a8cdbe3d8381d8bce57c2dd318abad787',1,'OMSimAnalysisManager::writeHeader()']]],
-  ['writescan_538',['writeScan',['../class_o_m_sim_analysis_manager.html#aa2ae9a4e6a97ee683c8170ebd881244e',1,'OMSimAnalysisManager::writeScan(G4double pPhi, G4double pTheta)'],['../class_o_m_sim_analysis_manager.html#aa2ae9a4e6a97ee683c8170ebd881244e',1,'OMSimAnalysisManager::writeScan(G4double pPhi, G4double pTheta)']]],
-  ['writetojson_539',['writeToJson',['../class_o_m_sim_command_args_table.html#a4f90935ea49fb19c1ae77b826dbdb410',1,'OMSimCommandArgsTable']]]
+  ['warning_544',['WARNING',['../_o_m_sim_logger_8hh.html#a5cb439d9f933fde4cf23caa370c030e7',1,'OMSimLogger.hh']]],
+  ['warning_5fcolour_545',['WARNING_COLOUR',['../_o_m_sim_logger_8hh.html#aacffe5f468c8f8b0af384c6445dedde9',1,'OMSimLogger.hh']]],
+  ['wordtoken_546',['WordToken',['../namespace_c_a_d_mesh_1_1_file.html#a250ed8013d4c26e960ee00bfeace697d',1,'CADMesh::File']]],
+  ['write_5fto_5fjson_5fif_5ftype_5fmatches_547',['WRITE_TO_JSON_IF_TYPE_MATCHES',['../_o_m_sim_command_args_table_8hh.html#aa41bdc30fcdd046324b69c10b14d4524',1,'OMSimCommandArgsTable.hh']]],
+  ['writedecaydata_548',['writeDecayData',['../class_o_m_sim_hit_manager.html#a936ba58ff6fe0162d6686b01536f7f60',1,'OMSimHitManager']]],
+  ['writeheader_549',['writeHeader',['../class_o_m_sim_effective_area_analyisis.html#a8d49aa6cccb6e98ebb9a084284ce47b9',1,'OMSimEffectiveAreaAnalyisis::writeHeader()'],['../class_o_m_sim_hit_manager.html#a1fffeb3d5a2fdd50e4b4dab28d71c150',1,'OMSimHitManager::writeHeader()']]],
+  ['writemultiplicity_550',['writeMultiplicity',['../class_o_m_sim_hit_manager.html#a7ad8b002e3c7ae16f0f0ce976a4da269',1,'OMSimHitManager']]],
+  ['writescan_551',['writeScan',['../class_o_m_sim_effective_area_analyisis.html#ad9b76bc60e5f3629a9c693c2a30f539d',1,'OMSimEffectiveAreaAnalyisis::writeScan()'],['../class_o_m_sim_hit_manager.html#a17e748749cd0c35f5291fb4f6fe8cb0f',1,'OMSimHitManager::writeScan()']]],
+  ['writetojson_552',['writeToJson',['../class_o_m_sim_command_args_table.html#a4f90935ea49fb19c1ae77b826dbdb410',1,'OMSimCommandArgsTable']]]
 ];

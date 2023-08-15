@@ -14,13 +14,10 @@ var files_dup =
     [ "OMSim.hh", "_o_m_sim_8hh.html", null ],
     [ "OMSim_effective_area.cc", "_o_m_sim__effective__area_8cc.html", "_o_m_sim__effective__area_8cc" ],
     [ "OMSim_radioactive_decays.cc", "_o_m_sim__radioactive__decays_8cc.html", "_o_m_sim__radioactive__decays_8cc" ],
-    [ "effective_area/src/OMSimAnalysisManager.cc", "effective__area_2src_2_o_m_sim_analysis_manager_8cc.html", null ],
-    [ "radioactive_decays/src/OMSimAnalysisManager.cc", "radioactive__decays_2src_2_o_m_sim_analysis_manager_8cc.html", null ],
-    [ "effective_area/include/OMSimAnalysisManager.hh", "effective__area_2include_2_o_m_sim_analysis_manager_8hh.html", [
-      [ "HitStats", "struct_hit_stats.html", "struct_hit_stats" ]
-    ] ],
-    [ "radioactive_decays/include/OMSimAnalysisManager.hh", "radioactive__decays_2include_2_o_m_sim_analysis_manager_8hh.html", [
-      [ "HitStats", "struct_hit_stats.html", "struct_hit_stats" ]
+    [ "OMSimAnalysisManager.cc", "_o_m_sim_analysis_manager_8cc.html", null ],
+    [ "OMSimAnalysisManager.hh", "_o_m_sim_analysis_manager_8hh.html", [
+      [ "HitStats", "struct_hit_stats.html", "struct_hit_stats" ],
+      [ "DecayStats", "struct_decay_stats.html", "struct_decay_stats" ]
     ] ],
     [ "OMSimAngularScan.cc", "_o_m_sim_angular_scan_8cc.html", null ],
     [ "OMSimAngularScan.hh", "_o_m_sim_angular_scan_8hh.html", null ],
@@ -41,10 +38,13 @@ var files_dup =
     [ "radioactive_decays/src/OMSimDetectorConstruction.cc", "radioactive__decays_2src_2_o_m_sim_detector_construction_8cc.html", null ],
     [ "effective_area/include/OMSimDetectorConstruction.hh", "effective__area_2include_2_o_m_sim_detector_construction_8hh.html", null ],
     [ "radioactive_decays/include/OMSimDetectorConstruction.hh", "radioactive__decays_2include_2_o_m_sim_detector_construction_8hh.html", null ],
-    [ "effective_area/src/OMSimEventAction.cc", "effective__area_2src_2_o_m_sim_event_action_8cc.html", null ],
+    [ "OMSimEffectiveAreaAnalyisis.cc", "_o_m_sim_effective_area_analyisis_8cc.html", null ],
+    [ "OMSimEffectiveAreaAnalyisis.hh", "_o_m_sim_effective_area_analyisis_8hh.html", null ],
+    [ "common/framework/src/OMSimEventAction.cc", "common_2framework_2src_2_o_m_sim_event_action_8cc.html", null ],
     [ "radioactive_decays/src/OMSimEventAction.cc", "radioactive__decays_2src_2_o_m_sim_event_action_8cc.html", null ],
-    [ "effective_area/include/OMSimEventAction.hh", "effective__area_2include_2_o_m_sim_event_action_8hh.html", [
-      [ "OMSimEventAction", "class_o_m_sim_event_action.html", "class_o_m_sim_event_action" ]
+    [ "common/framework/include/OMSimEventAction.hh", "common_2framework_2include_2_o_m_sim_event_action_8hh.html", [
+      [ "OMSimEventAction", "class_o_m_sim_event_action.html", "class_o_m_sim_event_action" ],
+      [ "EventInfoManager", "class_event_info_manager.html", "class_event_info_manager" ]
     ] ],
     [ "radioactive_decays/include/OMSimEventAction.hh", "radioactive__decays_2include_2_o_m_sim_event_action_8hh.html", [
       [ "OMSimEventAction", "class_o_m_sim_event_action.html", "class_o_m_sim_event_action" ]
@@ -54,6 +54,10 @@ var files_dup =
     [ "OMSimG4Scintillation.cc", "_o_m_sim_g4_scintillation_8cc.html", null ],
     [ "OMSimG4Scintillation.hh", "_o_m_sim_g4_scintillation_8hh.html", [
       [ "OMSimG4Scintillation", "class_o_m_sim_g4_scintillation.html", "class_o_m_sim_g4_scintillation" ]
+    ] ],
+    [ "OMSimHitManager.cc", "_o_m_sim_hit_manager_8cc.html", null ],
+    [ "OMSimHitManager.hh", "_o_m_sim_hit_manager_8hh.html", [
+      [ "HitStats", "struct_hit_stats.html", "struct_hit_stats" ]
     ] ],
     [ "OMSimInputData.cc", "_o_m_sim_input_data_8cc.html", null ],
     [ "OMSimInputData.hh", "_o_m_sim_input_data_8hh.html", [

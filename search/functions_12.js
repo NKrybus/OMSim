@@ -1,6 +1,8 @@
 var searchData=
 [
-  ['writeheader_948',['writeHeader',['../class_o_m_sim_analysis_manager.html#a8cdbe3d8381d8bce57c2dd318abad787',1,'OMSimAnalysisManager::writeHeader()'],['../class_o_m_sim_analysis_manager.html#a8cdbe3d8381d8bce57c2dd318abad787',1,'OMSimAnalysisManager::writeHeader()']]],
-  ['writescan_949',['writeScan',['../class_o_m_sim_analysis_manager.html#aa2ae9a4e6a97ee683c8170ebd881244e',1,'OMSimAnalysisManager::writeScan(G4double pPhi, G4double pTheta)'],['../class_o_m_sim_analysis_manager.html#aa2ae9a4e6a97ee683c8170ebd881244e',1,'OMSimAnalysisManager::writeScan(G4double pPhi, G4double pTheta)']]],
-  ['writetojson_950',['writeToJson',['../class_o_m_sim_command_args_table.html#a4f90935ea49fb19c1ae77b826dbdb410',1,'OMSimCommandArgsTable']]]
+  ['writedecaydata_972',['writeDecayData',['../class_o_m_sim_hit_manager.html#a936ba58ff6fe0162d6686b01536f7f60',1,'OMSimHitManager']]],
+  ['writeheader_973',['writeHeader',['../class_o_m_sim_effective_area_analyisis.html#a8d49aa6cccb6e98ebb9a084284ce47b9',1,'OMSimEffectiveAreaAnalyisis::writeHeader()'],['../class_o_m_sim_hit_manager.html#a1fffeb3d5a2fdd50e4b4dab28d71c150',1,'OMSimHitManager::writeHeader()']]],
+  ['writemultiplicity_974',['writeMultiplicity',['../class_o_m_sim_hit_manager.html#a7ad8b002e3c7ae16f0f0ce976a4da269',1,'OMSimHitManager']]],
+  ['writescan_975',['writeScan',['../class_o_m_sim_effective_area_analyisis.html#ad9b76bc60e5f3629a9c693c2a30f539d',1,'OMSimEffectiveAreaAnalyisis::writeScan()'],['../class_o_m_sim_hit_manager.html#a17e748749cd0c35f5291fb4f6fe8cb0f',1,'OMSimHitManager::writeScan()']]],
+  ['writetojson_976',['writeToJson',['../class_o_m_sim_command_args_table.html#a4f90935ea49fb19c1ae77b826dbdb410',1,'OMSimCommandArgsTable']]]
 ];

@@ -1,0 +1,213 @@
+\hypertarget{class_o_m_sim_hit_manager}{}\doxysection{OMSim\+Hit\+Manager Class Reference}
+\label{class_o_m_sim_hit_manager}\index{OMSimHitManager@{OMSimHitManager}}
+
+
+This class is responsible for managing info of detected photons and writing the results in the desired format.  
+
+
+
+
+Inheritance diagram for OMSim\+Hit\+Manager\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=241pt]{class_o_m_sim_hit_manager__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for OMSim\+Hit\+Manager\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=189pt]{class_o_m_sim_hit_manager__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_o_m_sim_hit_manager_a5ed0f165e4ecbd647f76d21e086c30da}{append\+Hit\+Info}} (G4double global\+Time, G4double local\+Time, G4double track\+Length, G4double energy, G4int PMTHit\+Number, G4\+Three\+Vector momentum\+Direction, G4\+Three\+Vector global\+Pos, G4\+Three\+Vector local\+Pos, G4double distance, \mbox{\hyperlink{struct_o_m_sim_p_m_t_response_1_1_p_m_t_pulse}{OMSim\+PMTResponse\+::\+PMTPulse}} response)
+\item 
+void \mbox{\hyperlink{class_o_m_sim_hit_manager_a00bb034e7751905f8a8229de3f8a39b1}{reset}} ()
+\begin{DoxyCompactList}\small\item\em Empties the \mbox{\hyperlink{struct_hit_stats}{Hit\+Stats}} struct. \end{DoxyCompactList}\item 
+std\+::vector$<$ double $>$ \mbox{\hyperlink{class_o_m_sim_hit_manager_a1f1c545657fe7cc059fcffdd5f7a1fcc}{count\+Hits}} ()
+\item 
+void \mbox{\hyperlink{class_o_m_sim_hit_manager_a00bb034e7751905f8a8229de3f8a39b1}{reset}} ()
+\item 
+void \mbox{\hyperlink{class_o_m_sim_hit_manager_a17e748749cd0c35f5291fb4f6fe8cb0f}{write\+Scan}} (G4double p\+Phi, G4double p\+Theta)
+\begin{DoxyCompactList}\small\item\em Writes a scan result to the output file. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_o_m_sim_hit_manager_a1fffeb3d5a2fdd50e4b4dab28d71c150}{write\+Header}} ()
+\begin{DoxyCompactList}\small\item\em Writes a header to the output file. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_o_m_sim_hit_manager_ad7a080177556c552c173ddd3d43eb0bc}{append\+Decay}} (G4\+String p\+Particle\+Name, G4double p\+Time, G4\+Three\+Vector p\+Position\+Vector)
+\item 
+std\+::vector$<$ int $>$ \mbox{\hyperlink{class_o_m_sim_hit_manager_acb822b38b0e2cc2c699148eed2bb281f}{calculate\+Multiplicity}} (const G4double time\+Window, std\+::size\+\_\+t PMT\+\_\+\+COUNT)
+\item 
+void \mbox{\hyperlink{class_o_m_sim_hit_manager_a7ad8b002e3c7ae16f0f0ce976a4da269}{write\+Multiplicity}} (const std\+::vector$<$ int $>$ \&p\+Multiplicity)
+\item 
+void \mbox{\hyperlink{class_o_m_sim_hit_manager_a936ba58ff6fe0162d6686b01536f7f60}{write\+Decay\+Data}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_o_m_sim_hit_manager}{OMSim\+Hit\+Manager}} \& \mbox{\hyperlink{class_o_m_sim_hit_manager_a50c9ec0b924aa860533de79aa6fd3a47}{get\+Instance}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+G4\+String \mbox{\hyperlink{class_o_m_sim_hit_manager_a4d3c71e94db9055dd071ef1f554ed079}{m\+Output\+File\+Name}}
+\item 
+G4long \mbox{\hyperlink{class_o_m_sim_hit_manager_a05e4ac7fed203ff95293656565a316bd}{m\+Current\+Event\+Number}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ double $>$ \mbox{\hyperlink{class_o_m_sim_hit_manager_ac251b3e39c5f0ed79f3656a9ac7bc0de}{count\+Hits}} ()
+\begin{DoxyCompactList}\small\item\em Counts the number of hits for each PMT. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_o_m_sim_hit_manager_a5cec10e41685343e1549768995f137e6}{OMSim\+Hit\+Manager}} ()
+\item 
+virtual \mbox{\hyperlink{class_o_m_sim_hit_manager_adbffe89697b9cb15da53e29e9709a8de}{$\sim$\+OMSim\+Hit\+Manager}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::fstream \mbox{\hyperlink{class_o_m_sim_hit_manager_ada77962622fcf1e55f2ab604ec07db1f}{m\+Datafile}}
+\item 
+\mbox{\hyperlink{struct_hit_stats}{Hit\+Stats}} \mbox{\hyperlink{class_o_m_sim_hit_manager_a778a85dac7b9578c5e339deea0cbbd5a}{m\+Hits}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_o_m_sim_hit_manager_a5cec10e41685343e1549768995f137e6}\label{class_o_m_sim_hit_manager_a5cec10e41685343e1549768995f137e6}} 
+\index{OMSimHitManager@{OMSimHitManager}!OMSimHitManager@{OMSimHitManager}}
+\index{OMSimHitManager@{OMSimHitManager}!OMSimHitManager@{OMSimHitManager}}
+\doxysubsubsection{\texorpdfstring{OMSimHitManager()}{OMSimHitManager()}}
+{\footnotesize\ttfamily OMSim\+Hit\+Manager\+::\+OMSim\+Hit\+Manager (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_o_m_sim_hit_manager_adbffe89697b9cb15da53e29e9709a8de}\label{class_o_m_sim_hit_manager_adbffe89697b9cb15da53e29e9709a8de}} 
+\index{OMSimHitManager@{OMSimHitManager}!````~OMSimHitManager@{$\sim$OMSimHitManager}}
+\index{````~OMSimHitManager@{$\sim$OMSimHitManager}!OMSimHitManager@{OMSimHitManager}}
+\doxysubsubsection{\texorpdfstring{$\sim$OMSimHitManager()}{~OMSimHitManager()}}
+{\footnotesize\ttfamily virtual OMSim\+Hit\+Manager\+::$\sim$\+OMSim\+Hit\+Manager (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_o_m_sim_hit_manager_ad7a080177556c552c173ddd3d43eb0bc}\label{class_o_m_sim_hit_manager_ad7a080177556c552c173ddd3d43eb0bc}} 
+\index{OMSimHitManager@{OMSimHitManager}!appendDecay@{appendDecay}}
+\index{appendDecay@{appendDecay}!OMSimHitManager@{OMSimHitManager}}
+\doxysubsubsection{\texorpdfstring{appendDecay()}{appendDecay()}}
+{\footnotesize\ttfamily void OMSim\+Hit\+Manager\+::append\+Decay (\begin{DoxyParamCaption}\item[{G4\+String}]{p\+Particle\+Name,  }\item[{G4double}]{p\+Time,  }\item[{G4\+Three\+Vector}]{p\+Position\+Vector }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_o_m_sim_hit_manager_a5ed0f165e4ecbd647f76d21e086c30da}\label{class_o_m_sim_hit_manager_a5ed0f165e4ecbd647f76d21e086c30da}} 
+\index{OMSimHitManager@{OMSimHitManager}!appendHitInfo@{appendHitInfo}}
+\index{appendHitInfo@{appendHitInfo}!OMSimHitManager@{OMSimHitManager}}
+\doxysubsubsection{\texorpdfstring{appendHitInfo()}{appendHitInfo()}}
+{\footnotesize\ttfamily void OMSim\+Hit\+Manager\+::append\+Hit\+Info (\begin{DoxyParamCaption}\item[{G4double}]{global\+Time,  }\item[{G4double}]{local\+Time,  }\item[{G4double}]{track\+Length,  }\item[{G4double}]{energy,  }\item[{G4int}]{PMTHit\+Number,  }\item[{G4\+Three\+Vector}]{momentum\+Direction,  }\item[{G4\+Three\+Vector}]{global\+Pos,  }\item[{G4\+Three\+Vector}]{local\+Pos,  }\item[{G4double}]{distance,  }\item[{\mbox{\hyperlink{struct_o_m_sim_p_m_t_response_1_1_p_m_t_pulse}{OMSim\+PMTResponse\+::\+PMTPulse}}}]{response }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_o_m_sim_hit_manager_acb822b38b0e2cc2c699148eed2bb281f}\label{class_o_m_sim_hit_manager_acb822b38b0e2cc2c699148eed2bb281f}} 
+\index{OMSimHitManager@{OMSimHitManager}!calculateMultiplicity@{calculateMultiplicity}}
+\index{calculateMultiplicity@{calculateMultiplicity}!OMSimHitManager@{OMSimHitManager}}
+\doxysubsubsection{\texorpdfstring{calculateMultiplicity()}{calculateMultiplicity()}}
+{\footnotesize\ttfamily std\+::vector$<$ int $>$ OMSim\+Hit\+Manager\+::calculate\+Multiplicity (\begin{DoxyParamCaption}\item[{const G4double}]{time\+Window,  }\item[{std\+::size\+\_\+t}]{PMT\+\_\+\+COUNT }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_o_m_sim_hit_manager_ac251b3e39c5f0ed79f3656a9ac7bc0de}\label{class_o_m_sim_hit_manager_ac251b3e39c5f0ed79f3656a9ac7bc0de}} 
+\index{OMSimHitManager@{OMSimHitManager}!countHits@{countHits}}
+\index{countHits@{countHits}!OMSimHitManager@{OMSimHitManager}}
+\doxysubsubsection{\texorpdfstring{countHits()}{countHits()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily std\+::vector$<$ double $>$ OMSim\+Hit\+Manager\+::count\+Hits (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyReturn}{Returns}
+A vector containing the counts of hits for each PMT. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_o_m_sim_hit_manager_a1f1c545657fe7cc059fcffdd5f7a1fcc}\label{class_o_m_sim_hit_manager_a1f1c545657fe7cc059fcffdd5f7a1fcc}} 
+\index{OMSimHitManager@{OMSimHitManager}!countHits@{countHits}}
+\index{countHits@{countHits}!OMSimHitManager@{OMSimHitManager}}
+\doxysubsubsection{\texorpdfstring{countHits()}{countHits()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily std\+::vector$<$double$>$ OMSim\+Hit\+Manager\+::count\+Hits (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_o_m_sim_hit_manager_a50c9ec0b924aa860533de79aa6fd3a47}\label{class_o_m_sim_hit_manager_a50c9ec0b924aa860533de79aa6fd3a47}} 
+\index{OMSimHitManager@{OMSimHitManager}!getInstance@{getInstance}}
+\index{getInstance@{getInstance}!OMSimHitManager@{OMSimHitManager}}
+\doxysubsubsection{\texorpdfstring{getInstance()}{getInstance()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{class_o_m_sim_hit_manager}{OMSim\+Hit\+Manager}}\& OMSim\+Hit\+Manager\+::get\+Instance (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_o_m_sim_hit_manager_a00bb034e7751905f8a8229de3f8a39b1}\label{class_o_m_sim_hit_manager_a00bb034e7751905f8a8229de3f8a39b1}} 
+\index{OMSimHitManager@{OMSimHitManager}!reset@{reset}}
+\index{reset@{reset}!OMSimHitManager@{OMSimHitManager}}
+\doxysubsubsection{\texorpdfstring{reset()}{reset()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void OMSim\+Hit\+Manager\+::reset (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_o_m_sim_hit_manager_a00bb034e7751905f8a8229de3f8a39b1}\label{class_o_m_sim_hit_manager_a00bb034e7751905f8a8229de3f8a39b1}} 
+\index{OMSimHitManager@{OMSimHitManager}!reset@{reset}}
+\index{reset@{reset}!OMSimHitManager@{OMSimHitManager}}
+\doxysubsubsection{\texorpdfstring{reset()}{reset()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void OMSim\+Hit\+Manager\+::reset (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_o_m_sim_hit_manager_a936ba58ff6fe0162d6686b01536f7f60}\label{class_o_m_sim_hit_manager_a936ba58ff6fe0162d6686b01536f7f60}} 
+\index{OMSimHitManager@{OMSimHitManager}!writeDecayData@{writeDecayData}}
+\index{writeDecayData@{writeDecayData}!OMSimHitManager@{OMSimHitManager}}
+\doxysubsubsection{\texorpdfstring{writeDecayData()}{writeDecayData()}}
+{\footnotesize\ttfamily void OMSim\+Hit\+Manager\+::write\+Decay\+Data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_o_m_sim_hit_manager_a1fffeb3d5a2fdd50e4b4dab28d71c150}\label{class_o_m_sim_hit_manager_a1fffeb3d5a2fdd50e4b4dab28d71c150}} 
+\index{OMSimHitManager@{OMSimHitManager}!writeHeader@{writeHeader}}
+\index{writeHeader@{writeHeader}!OMSimHitManager@{OMSimHitManager}}
+\doxysubsubsection{\texorpdfstring{writeHeader()}{writeHeader()}}
+{\footnotesize\ttfamily void OMSim\+Hit\+Manager\+::write\+Header (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_o_m_sim_hit_manager_a7ad8b002e3c7ae16f0f0ce976a4da269}\label{class_o_m_sim_hit_manager_a7ad8b002e3c7ae16f0f0ce976a4da269}} 
+\index{OMSimHitManager@{OMSimHitManager}!writeMultiplicity@{writeMultiplicity}}
+\index{writeMultiplicity@{writeMultiplicity}!OMSimHitManager@{OMSimHitManager}}
+\doxysubsubsection{\texorpdfstring{writeMultiplicity()}{writeMultiplicity()}}
+{\footnotesize\ttfamily void OMSim\+Hit\+Manager\+::write\+Multiplicity (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ int $>$ \&}]{p\+Multiplicity }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_o_m_sim_hit_manager_a17e748749cd0c35f5291fb4f6fe8cb0f}\label{class_o_m_sim_hit_manager_a17e748749cd0c35f5291fb4f6fe8cb0f}} 
+\index{OMSimHitManager@{OMSimHitManager}!writeScan@{writeScan}}
+\index{writeScan@{writeScan}!OMSimHitManager@{OMSimHitManager}}
+\doxysubsubsection{\texorpdfstring{writeScan()}{writeScan()}}
+{\footnotesize\ttfamily void OMSim\+Hit\+Manager\+::write\+Scan (\begin{DoxyParamCaption}\item[{G4double}]{p\+Phi,  }\item[{G4double}]{p\+Theta }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+Phi} & The phi angle used in the scan to be written to the output file. \\
+\hline
+{\em p\+Theta} & The phi angle used in the scan to be written to the output file. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_o_m_sim_hit_manager_a05e4ac7fed203ff95293656565a316bd}\label{class_o_m_sim_hit_manager_a05e4ac7fed203ff95293656565a316bd}} 
+\index{OMSimHitManager@{OMSimHitManager}!mCurrentEventNumber@{mCurrentEventNumber}}
+\index{mCurrentEventNumber@{mCurrentEventNumber}!OMSimHitManager@{OMSimHitManager}}
+\doxysubsubsection{\texorpdfstring{mCurrentEventNumber}{mCurrentEventNumber}}
+{\footnotesize\ttfamily G4long OMSim\+Hit\+Manager\+::m\+Current\+Event\+Number}
+
+\mbox{\Hypertarget{class_o_m_sim_hit_manager_ada77962622fcf1e55f2ab604ec07db1f}\label{class_o_m_sim_hit_manager_ada77962622fcf1e55f2ab604ec07db1f}} 
+\index{OMSimHitManager@{OMSimHitManager}!mDatafile@{mDatafile}}
+\index{mDatafile@{mDatafile}!OMSimHitManager@{OMSimHitManager}}
+\doxysubsubsection{\texorpdfstring{mDatafile}{mDatafile}}
+{\footnotesize\ttfamily std\+::fstream OMSim\+Hit\+Manager\+::m\+Datafile\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_o_m_sim_hit_manager_a778a85dac7b9578c5e339deea0cbbd5a}\label{class_o_m_sim_hit_manager_a778a85dac7b9578c5e339deea0cbbd5a}} 
+\index{OMSimHitManager@{OMSimHitManager}!mHits@{mHits}}
+\index{mHits@{mHits}!OMSimHitManager@{OMSimHitManager}}
+\doxysubsubsection{\texorpdfstring{mHits}{mHits}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_hit_stats}{Hit\+Stats}} OMSim\+Hit\+Manager\+::m\+Hits\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_o_m_sim_hit_manager_a4d3c71e94db9055dd071ef1f554ed079}\label{class_o_m_sim_hit_manager_a4d3c71e94db9055dd071ef1f554ed079}} 
+\index{OMSimHitManager@{OMSimHitManager}!mOutputFileName@{mOutputFileName}}
+\index{mOutputFileName@{mOutputFileName}!OMSimHitManager@{OMSimHitManager}}
+\doxysubsubsection{\texorpdfstring{mOutputFileName}{mOutputFileName}}
+{\footnotesize\ttfamily G4\+String OMSim\+Hit\+Manager\+::m\+Output\+File\+Name}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_o_m_sim_hit_manager_8hh}{OMSim\+Hit\+Manager.\+hh}}\item 
+\mbox{\hyperlink{_o_m_sim_analysis_manager_8hh}{OMSim\+Analysis\+Manager.\+hh}}\item 
+\mbox{\hyperlink{_o_m_sim_hit_manager_8cc}{OMSim\+Hit\+Manager.\+cc}}\item 
+\mbox{\hyperlink{_o_m_sim_analysis_manager_8cc}{OMSim\+Analysis\+Manager.\+cc}}\end{DoxyCompactItemize}

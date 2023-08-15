@@ -1,19 +1,4 @@
 var searchData=
 [
-  ['objreader_591',['OBJReader',['../class_c_a_d_mesh_1_1_file_1_1_o_b_j_reader.html',1,'CADMesh::File']]],
-  ['omsim_592',['OMSim',['../class_o_m_sim.html',1,'']]],
-  ['omsimanalysismanager_593',['OMSimAnalysisManager',['../class_o_m_sim_analysis_manager.html',1,'']]],
-  ['omsimcommandargstable_594',['OMSimCommandArgsTable',['../class_o_m_sim_command_args_table.html',1,'']]],
-  ['omsimdetectorconstruction_595',['OMSimDetectorConstruction',['../class_o_m_sim_detector_construction.html',1,'']]],
-  ['omsimeventaction_596',['OMSimEventAction',['../class_o_m_sim_event_action.html',1,'']]],
-  ['omsimg4scintillation_597',['OMSimG4Scintillation',['../class_o_m_sim_g4_scintillation.html',1,'']]],
-  ['omsimphysicslist_598',['OMSimPhysicsList',['../class_o_m_sim_physics_list.html',1,'']]],
-  ['omsimpmtconstruction_599',['OMSimPMTConstruction',['../class_o_m_sim_p_m_t_construction.html',1,'']]],
-  ['omsimpmtresponse_600',['OMSimPMTResponse',['../class_o_m_sim_p_m_t_response.html',1,'']]],
-  ['omsimprimarygeneratoraction_601',['OMSimPrimaryGeneratorAction',['../class_o_m_sim_primary_generator_action.html',1,'']]],
-  ['omsimrunaction_602',['OMSimRunAction',['../class_o_m_sim_run_action.html',1,'']]],
-  ['omsimsteppingaction_603',['OMSimSteppingAction',['../class_o_m_sim_stepping_action.html',1,'']]],
-  ['omsimtrackingaction_604',['OMSimTrackingAction',['../class_o_m_sim_tracking_action.html',1,'']]],
-  ['omsimuiinterface_605',['OMSimUIinterface',['../class_o_m_sim_u_iinterface.html',1,'']]],
-  ['opticalmodule_606',['OpticalModule',['../class_optical_module.html',1,'']]]
+  ['nooptics_606',['NoOptics',['../class_no_optics.html',1,'']]]
 ];
