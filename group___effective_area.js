@@ -3,6 +3,7 @@ var group___effective_area =
     [ "OMSim_effective_area.cc", "_o_m_sim__effective__area_8cc.html", null ],
     [ "OMSim_effective_area.cc", "_o_m_sim__effective__area_8cc.html", null ],
     [ "OMSimAnalysisManager", "class_o_m_sim_analysis_manager.html", [
+      [ "appendDecay", "class_o_m_sim_analysis_manager.html#ab1c9f688a2a65dc668587128d602814c", null ],
       [ "countHits", "class_o_m_sim_analysis_manager.html#a7b26ce71d330192e13f6fdca4b69f83c", null ],
       [ "countHits", "class_o_m_sim_analysis_manager.html#a2dbeadfece03b42df6db201e192328da", null ],
       [ "getInstance", "class_o_m_sim_analysis_manager.html#af14993ee34e8cb229313c33469e6d76a", null ],

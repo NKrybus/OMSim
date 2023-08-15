@@ -7,6 +7,9 @@ var files_dup =
     [ "CADMesh.hh", "_c_a_d_mesh_8hh.html", "_c_a_d_mesh_8hh" ],
     [ "common.h", "common_8h.html", null ],
     [ "effectiveArea.h", "effective_area_8h.html", null ],
+    [ "G4Scintillation.hh", "_g4_scintillation_8hh.html", [
+      [ "OMSimG4Scintillation", "class_o_m_sim_g4_scintillation.html", "class_o_m_sim_g4_scintillation" ]
+    ] ],
     [ "OMSim.cc", "_o_m_sim_8cc.html", null ],
     [ "OMSim.hh", "_o_m_sim_8hh.html", null ],
     [ "OMSim_effective_area.cc", "_o_m_sim__effective__area_8cc.html", "_o_m_sim__effective__area_8cc" ],
@@ -45,6 +48,12 @@ var files_dup =
     ] ],
     [ "radioactive_decays/include/OMSimEventAction.hh", "radioactive__decays_2include_2_o_m_sim_event_action_8hh.html", [
       [ "OMSimEventAction", "class_o_m_sim_event_action.html", "class_o_m_sim_event_action" ]
+    ] ],
+    [ "OMSimG4RadioactiveDecay.cc", "_o_m_sim_g4_radioactive_decay_8cc.html", null ],
+    [ "OMSimG4RadioactiveDecay.hh", "_o_m_sim_g4_radioactive_decay_8hh.html", "_o_m_sim_g4_radioactive_decay_8hh" ],
+    [ "OMSimG4Scintillation.cc", "_o_m_sim_g4_scintillation_8cc.html", null ],
+    [ "OMSimG4Scintillation.hh", "_o_m_sim_g4_scintillation_8hh.html", [
+      [ "OMSimG4Scintillation", "class_o_m_sim_g4_scintillation.html", "class_o_m_sim_g4_scintillation" ]
     ] ],
     [ "OMSimInputData.cc", "_o_m_sim_input_data_8cc.html", null ],
     [ "OMSimInputData.hh", "_o_m_sim_input_data_8hh.html", [

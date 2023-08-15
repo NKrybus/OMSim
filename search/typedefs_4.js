@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['triangles_947',['Triangles',['../namespace_c_a_d_mesh.html#abc2a065365670b632368c1ab6fd050de',1,'CADMesh']]]
+  ['points_1094',['Points',['../namespace_c_a_d_mesh.html#aaac9c5652c718b65240a000fab32df30',1,'CADMesh']]]
 ];

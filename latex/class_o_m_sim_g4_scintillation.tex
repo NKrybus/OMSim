@@ -1,0 +1,582 @@
+\hypertarget{class_o_m_sim_g4_scintillation}{}\doxysection{OMSim\+G4\+Scintillation Class Reference}
+\label{class_o_m_sim_g4_scintillation}\index{OMSimG4Scintillation@{OMSimG4Scintillation}}
+
+
+Inheritance diagram for OMSim\+G4\+Scintillation\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=217pt]{class_o_m_sim_g4_scintillation__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for OMSim\+G4\+Scintillation\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=217pt]{class_o_m_sim_g4_scintillation__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_o_m_sim_g4_scintillation_a8eaa160526dd9167f4472b31f11d73a2}{OMSim\+G4\+Scintillation}} (const G4\+String \&process\+Name=\char`\"{}Scintillation\char`\"{}, G4\+Process\+Type type=f\+Electromagnetic)
+\item 
+\mbox{\hyperlink{class_o_m_sim_g4_scintillation_a15600256132884f510df8c172057f699}{$\sim$\+OMSim\+G4\+Scintillation}} ()
+\item 
+\mbox{\hyperlink{class_o_m_sim_g4_scintillation_aa519da92a0bef3ca2fd2a92bcfdbb5de}{OMSim\+G4\+Scintillation}} (const \mbox{\hyperlink{class_o_m_sim_g4_scintillation}{OMSim\+G4\+Scintillation}} \&right)=delete
+\item 
+\mbox{\hyperlink{class_o_m_sim_g4_scintillation}{OMSim\+G4\+Scintillation}} \& \mbox{\hyperlink{class_o_m_sim_g4_scintillation_a63222479c6138d25e1915540c4a8561d}{operator=}} (const \mbox{\hyperlink{class_o_m_sim_g4_scintillation}{OMSim\+G4\+Scintillation}} \&right)=delete
+\item 
+G4bool \mbox{\hyperlink{class_o_m_sim_g4_scintillation_ab04365263a4ba747d13689bab32b9e6e}{Is\+Applicable}} (const G4\+Particle\+Definition \&a\+Particle\+Type) override
+\item 
+void \mbox{\hyperlink{class_o_m_sim_g4_scintillation_a912972f60a37dfbf30ab18fbadf087e7}{Process\+Description}} (std\+::ostream \&) const override
+\item 
+void \mbox{\hyperlink{class_o_m_sim_g4_scintillation_a5f629400ff4c836455b5841dad77ed23}{Dump\+Info}} () const override
+\item 
+void \mbox{\hyperlink{class_o_m_sim_g4_scintillation_ab952ecd9987e9aa6d666b76acc942123}{Build\+Physics\+Table}} (const G4\+Particle\+Definition \&a\+Particle\+Type) override
+\item 
+void \mbox{\hyperlink{class_o_m_sim_g4_scintillation_a6a5cd1216acbb358bf7dce3a64f40cb9}{Prepare\+Physics\+Table}} (const G4\+Particle\+Definition \&part) override
+\item 
+void \mbox{\hyperlink{class_o_m_sim_g4_scintillation_a9d6025f7785c766ab53c4686bcaad610}{Initialise}} ()
+\item 
+G4double \mbox{\hyperlink{class_o_m_sim_g4_scintillation_a3bc8d26ab87c8afb2bac4f00453a4000}{Get\+Mean\+Free\+Path}} (const G4\+Track \&a\+Track, G4double, G4\+Force\+Condition $\ast$) override
+\item 
+G4double \mbox{\hyperlink{class_o_m_sim_g4_scintillation_a8587c2ae466cdd7281d5053da86df190}{Get\+Mean\+Life\+Time}} (const G4\+Track \&a\+Track, G4\+Force\+Condition $\ast$) override
+\item 
+G4\+VParticle\+Change $\ast$ \mbox{\hyperlink{class_o_m_sim_g4_scintillation_ad66327a37ea93be7eadca9f1c7a494ba}{Post\+Step\+Do\+It}} (const G4\+Track \&a\+Track, const G4\+Step \&a\+Step) override
+\item 
+G4\+VParticle\+Change $\ast$ \mbox{\hyperlink{class_o_m_sim_g4_scintillation_a1ab6f916bd26e5443d0f56238bc2df0e}{At\+Rest\+Do\+It}} (const G4\+Track \&a\+Track, const G4\+Step \&a\+Step) override
+\item 
+G4double \mbox{\hyperlink{class_o_m_sim_g4_scintillation_a7a4ffade8b87db7e370b0f45326f0d4c}{Get\+Scintillation\+Yield\+By\+Particle\+Type}} (const G4\+Track \&a\+Track, const G4\+Step \&a\+Step, G4double \&yield1, G4double \&yield2, G4double \&yield3)
+\item 
+void \mbox{\hyperlink{class_o_m_sim_g4_scintillation_ab3d326c57a509401293751cdf63641d8}{Set\+Track\+Secondaries\+First}} (const G4bool state)
+\item 
+G4bool \mbox{\hyperlink{class_o_m_sim_g4_scintillation_acfa7b08d020811cb44a4631cca53753a}{Get\+Track\+Secondaries\+First}} () const
+\item 
+void \mbox{\hyperlink{class_o_m_sim_g4_scintillation_a136cdd00f76f00faa5b53ac495437ceb}{Set\+Finite\+Rise\+Time}} (const G4bool state)
+\item 
+G4bool \mbox{\hyperlink{class_o_m_sim_g4_scintillation_add2303def42c0504dd361100ac852837}{Get\+Finite\+Rise\+Time}} () const
+\item 
+G4\+Physics\+Table $\ast$ \mbox{\hyperlink{class_o_m_sim_g4_scintillation_a5d4f7a535fb8c2559115075111842794}{Get\+Integral\+Table1}} () const
+\item 
+G4\+Physics\+Table $\ast$ \mbox{\hyperlink{class_o_m_sim_g4_scintillation_ae5c4392d7d5cbe21e9f7469301f2990a}{Get\+Integral\+Table2}} () const
+\item 
+G4\+Physics\+Table $\ast$ \mbox{\hyperlink{class_o_m_sim_g4_scintillation_a327b57293ccff4eb880019897a9a5b95}{Get\+Integral\+Table3}} () const
+\item 
+void \mbox{\hyperlink{class_o_m_sim_g4_scintillation_a82af8cb0c28c55e8f2913aee8b5aa47f}{Add\+Saturation}} (G4\+Em\+Saturation $\ast$sat)
+\item 
+void \mbox{\hyperlink{class_o_m_sim_g4_scintillation_afbf4f3adb47f1ea2ed9226c206f05c13}{Remove\+Saturation}} ()
+\item 
+G4\+Em\+Saturation $\ast$ \mbox{\hyperlink{class_o_m_sim_g4_scintillation_af37239792a034d934b07bb41fe9d8e8b}{Get\+Saturation}} () const
+\item 
+void \mbox{\hyperlink{class_o_m_sim_g4_scintillation_a5bdd943e152a9eefe153c077957af9f3}{Set\+Scintillation\+By\+Particle\+Type}} (const G4bool)
+\item 
+G4bool \mbox{\hyperlink{class_o_m_sim_g4_scintillation_a29992f824b183379f57a6402faa22b23}{Get\+Scintillation\+By\+Particle\+Type}} () const
+\item 
+void \mbox{\hyperlink{class_o_m_sim_g4_scintillation_a9ce8c0b91c714c0da60fb82fcbe4ca32}{Set\+Scintillation\+Track\+Info}} (const G4bool track\+Type)
+\item 
+G4bool \mbox{\hyperlink{class_o_m_sim_g4_scintillation_a88151995516413fe691c925d37086133}{Get\+Scintillation\+Track\+Info}} () const
+\item 
+void \mbox{\hyperlink{class_o_m_sim_g4_scintillation_ab33b6682970380b38556e55399e7c9bb}{Set\+Stack\+Photons}} (const G4bool)
+\item 
+G4bool \mbox{\hyperlink{class_o_m_sim_g4_scintillation_a88dcac0697ccd2e7189d6d9045764dc5}{Get\+Stack\+Photons}} () const
+\item 
+G4int \mbox{\hyperlink{class_o_m_sim_g4_scintillation_aea1624b2a2c60cae1f59aec337fd7be3}{Get\+Num\+Photons}} () const
+\item 
+void \mbox{\hyperlink{class_o_m_sim_g4_scintillation_a697ecdd386ee8628c4c95d2c79bd3506}{Dump\+Physics\+Table}} () const
+\item 
+void \mbox{\hyperlink{class_o_m_sim_g4_scintillation_a70516d239033b37a9b79f59b57127617}{Set\+Verbose\+Level}} (G4int)
+\item 
+\mbox{\hyperlink{class_o_m_sim_g4_scintillation_a8eaa160526dd9167f4472b31f11d73a2}{OMSim\+G4\+Scintillation}} (const G4\+String \&process\+Name=\char`\"{}Scintillation\char`\"{}, G4\+Process\+Type type=f\+Electromagnetic)
+\item 
+\mbox{\hyperlink{class_o_m_sim_g4_scintillation_a15600256132884f510df8c172057f699}{$\sim$\+OMSim\+G4\+Scintillation}} ()
+\item 
+\mbox{\hyperlink{class_o_m_sim_g4_scintillation_aa519da92a0bef3ca2fd2a92bcfdbb5de}{OMSim\+G4\+Scintillation}} (const \mbox{\hyperlink{class_o_m_sim_g4_scintillation}{OMSim\+G4\+Scintillation}} \&right)=delete
+\item 
+\mbox{\hyperlink{class_o_m_sim_g4_scintillation}{OMSim\+G4\+Scintillation}} \& \mbox{\hyperlink{class_o_m_sim_g4_scintillation_a63222479c6138d25e1915540c4a8561d}{operator=}} (const \mbox{\hyperlink{class_o_m_sim_g4_scintillation}{OMSim\+G4\+Scintillation}} \&right)=delete
+\item 
+G4bool \mbox{\hyperlink{class_o_m_sim_g4_scintillation_ab04365263a4ba747d13689bab32b9e6e}{Is\+Applicable}} (const G4\+Particle\+Definition \&a\+Particle\+Type) override
+\item 
+void \mbox{\hyperlink{class_o_m_sim_g4_scintillation_a912972f60a37dfbf30ab18fbadf087e7}{Process\+Description}} (std\+::ostream \&) const override
+\item 
+void \mbox{\hyperlink{class_o_m_sim_g4_scintillation_a5f629400ff4c836455b5841dad77ed23}{Dump\+Info}} () const override
+\item 
+void \mbox{\hyperlink{class_o_m_sim_g4_scintillation_ab952ecd9987e9aa6d666b76acc942123}{Build\+Physics\+Table}} (const G4\+Particle\+Definition \&a\+Particle\+Type) override
+\item 
+void \mbox{\hyperlink{class_o_m_sim_g4_scintillation_a6a5cd1216acbb358bf7dce3a64f40cb9}{Prepare\+Physics\+Table}} (const G4\+Particle\+Definition \&part) override
+\item 
+void \mbox{\hyperlink{class_o_m_sim_g4_scintillation_a9d6025f7785c766ab53c4686bcaad610}{Initialise}} ()
+\item 
+G4double \mbox{\hyperlink{class_o_m_sim_g4_scintillation_a3bc8d26ab87c8afb2bac4f00453a4000}{Get\+Mean\+Free\+Path}} (const G4\+Track \&a\+Track, G4double, G4\+Force\+Condition $\ast$) override
+\item 
+G4double \mbox{\hyperlink{class_o_m_sim_g4_scintillation_a8587c2ae466cdd7281d5053da86df190}{Get\+Mean\+Life\+Time}} (const G4\+Track \&a\+Track, G4\+Force\+Condition $\ast$) override
+\item 
+G4\+VParticle\+Change $\ast$ \mbox{\hyperlink{class_o_m_sim_g4_scintillation_a2f17a510a8f9f34049d63f8e03518c78}{Post\+Step\+Do\+It}} (const G4\+Track \&a\+Track, const G4\+Step \&a\+Step) override
+\item 
+G4\+VParticle\+Change $\ast$ \mbox{\hyperlink{class_o_m_sim_g4_scintillation_a067b14fb92df905cb6cc0ec14b1d22fb}{At\+Rest\+Do\+It}} (const G4\+Track \&a\+Track, const G4\+Step \&a\+Step) override
+\item 
+G4double \mbox{\hyperlink{class_o_m_sim_g4_scintillation_a7a4ffade8b87db7e370b0f45326f0d4c}{Get\+Scintillation\+Yield\+By\+Particle\+Type}} (const G4\+Track \&a\+Track, const G4\+Step \&a\+Step, G4double \&yield1, G4double \&yield2, G4double \&yield3)
+\item 
+void \mbox{\hyperlink{class_o_m_sim_g4_scintillation_ab3d326c57a509401293751cdf63641d8}{Set\+Track\+Secondaries\+First}} (const G4bool state)
+\item 
+G4bool \mbox{\hyperlink{class_o_m_sim_g4_scintillation_acfa7b08d020811cb44a4631cca53753a}{Get\+Track\+Secondaries\+First}} () const
+\item 
+void \mbox{\hyperlink{class_o_m_sim_g4_scintillation_a136cdd00f76f00faa5b53ac495437ceb}{Set\+Finite\+Rise\+Time}} (const G4bool state)
+\item 
+G4bool \mbox{\hyperlink{class_o_m_sim_g4_scintillation_add2303def42c0504dd361100ac852837}{Get\+Finite\+Rise\+Time}} () const
+\item 
+G4\+Physics\+Table $\ast$ \mbox{\hyperlink{class_o_m_sim_g4_scintillation_a746bdee7e344607dd4e739f9cc074dcb}{Get\+Integral\+Table1}} () const
+\item 
+G4\+Physics\+Table $\ast$ \mbox{\hyperlink{class_o_m_sim_g4_scintillation_a9efab07bb95a235b41b994b4524a297b}{Get\+Integral\+Table2}} () const
+\item 
+G4\+Physics\+Table $\ast$ \mbox{\hyperlink{class_o_m_sim_g4_scintillation_af7ded94634df291967b84cbf0076d89c}{Get\+Integral\+Table3}} () const
+\item 
+void \mbox{\hyperlink{class_o_m_sim_g4_scintillation_a82af8cb0c28c55e8f2913aee8b5aa47f}{Add\+Saturation}} (G4\+Em\+Saturation $\ast$sat)
+\item 
+void \mbox{\hyperlink{class_o_m_sim_g4_scintillation_afbf4f3adb47f1ea2ed9226c206f05c13}{Remove\+Saturation}} ()
+\item 
+G4\+Em\+Saturation $\ast$ \mbox{\hyperlink{class_o_m_sim_g4_scintillation_ac325bcdc56b814f2586834c9e58ba098}{Get\+Saturation}} () const
+\item 
+void \mbox{\hyperlink{class_o_m_sim_g4_scintillation_a5bdd943e152a9eefe153c077957af9f3}{Set\+Scintillation\+By\+Particle\+Type}} (const G4bool)
+\item 
+G4bool \mbox{\hyperlink{class_o_m_sim_g4_scintillation_a29992f824b183379f57a6402faa22b23}{Get\+Scintillation\+By\+Particle\+Type}} () const
+\item 
+void \mbox{\hyperlink{class_o_m_sim_g4_scintillation_a9ce8c0b91c714c0da60fb82fcbe4ca32}{Set\+Scintillation\+Track\+Info}} (const G4bool track\+Type)
+\item 
+G4bool \mbox{\hyperlink{class_o_m_sim_g4_scintillation_a88151995516413fe691c925d37086133}{Get\+Scintillation\+Track\+Info}} () const
+\item 
+void \mbox{\hyperlink{class_o_m_sim_g4_scintillation_ab33b6682970380b38556e55399e7c9bb}{Set\+Stack\+Photons}} (const G4bool)
+\item 
+G4bool \mbox{\hyperlink{class_o_m_sim_g4_scintillation_a88dcac0697ccd2e7189d6d9045764dc5}{Get\+Stack\+Photons}} () const
+\item 
+G4int \mbox{\hyperlink{class_o_m_sim_g4_scintillation_aea1624b2a2c60cae1f59aec337fd7be3}{Get\+Num\+Photons}} () const
+\item 
+void \mbox{\hyperlink{class_o_m_sim_g4_scintillation_a697ecdd386ee8628c4c95d2c79bd3506}{Dump\+Physics\+Table}} () const
+\item 
+void \mbox{\hyperlink{class_o_m_sim_g4_scintillation_a70516d239033b37a9b79f59b57127617}{Set\+Verbose\+Level}} (G4int)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_o_m_sim_g4_scintillation_a8eaa160526dd9167f4472b31f11d73a2}\label{class_o_m_sim_g4_scintillation_a8eaa160526dd9167f4472b31f11d73a2}} 
+\index{OMSimG4Scintillation@{OMSimG4Scintillation}!OMSimG4Scintillation@{OMSimG4Scintillation}}
+\index{OMSimG4Scintillation@{OMSimG4Scintillation}!OMSimG4Scintillation@{OMSimG4Scintillation}}
+\doxysubsubsection{\texorpdfstring{OMSimG4Scintillation()}{OMSimG4Scintillation()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily OMSim\+G4\+Scintillation\+::\+OMSim\+G4\+Scintillation (\begin{DoxyParamCaption}\item[{const G4\+String \&}]{process\+Name = {\ttfamily \char`\"{}Scintillation\char`\"{}},  }\item[{G4\+Process\+Type}]{type = {\ttfamily fElectromagnetic} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+\mbox{\Hypertarget{class_o_m_sim_g4_scintillation_a15600256132884f510df8c172057f699}\label{class_o_m_sim_g4_scintillation_a15600256132884f510df8c172057f699}} 
+\index{OMSimG4Scintillation@{OMSimG4Scintillation}!````~OMSimG4Scintillation@{$\sim$OMSimG4Scintillation}}
+\index{````~OMSimG4Scintillation@{$\sim$OMSimG4Scintillation}!OMSimG4Scintillation@{OMSimG4Scintillation}}
+\doxysubsubsection{\texorpdfstring{$\sim$OMSimG4Scintillation()}{~OMSimG4Scintillation()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily OMSim\+G4\+Scintillation\+::$\sim$\+OMSim\+G4\+Scintillation (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_o_m_sim_g4_scintillation_aa519da92a0bef3ca2fd2a92bcfdbb5de}\label{class_o_m_sim_g4_scintillation_aa519da92a0bef3ca2fd2a92bcfdbb5de}} 
+\index{OMSimG4Scintillation@{OMSimG4Scintillation}!OMSimG4Scintillation@{OMSimG4Scintillation}}
+\index{OMSimG4Scintillation@{OMSimG4Scintillation}!OMSimG4Scintillation@{OMSimG4Scintillation}}
+\doxysubsubsection{\texorpdfstring{OMSimG4Scintillation()}{OMSimG4Scintillation()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily OMSim\+G4\+Scintillation\+::\+OMSim\+G4\+Scintillation (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_o_m_sim_g4_scintillation}{OMSim\+G4\+Scintillation}} \&}]{right }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+\mbox{\Hypertarget{class_o_m_sim_g4_scintillation_a8eaa160526dd9167f4472b31f11d73a2}\label{class_o_m_sim_g4_scintillation_a8eaa160526dd9167f4472b31f11d73a2}} 
+\index{OMSimG4Scintillation@{OMSimG4Scintillation}!OMSimG4Scintillation@{OMSimG4Scintillation}}
+\index{OMSimG4Scintillation@{OMSimG4Scintillation}!OMSimG4Scintillation@{OMSimG4Scintillation}}
+\doxysubsubsection{\texorpdfstring{OMSimG4Scintillation()}{OMSimG4Scintillation()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily OMSim\+G4\+Scintillation\+::\+OMSim\+G4\+Scintillation (\begin{DoxyParamCaption}\item[{const G4\+String \&}]{process\+Name = {\ttfamily \char`\"{}Scintillation\char`\"{}},  }\item[{G4\+Process\+Type}]{type = {\ttfamily fElectromagnetic} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+\mbox{\Hypertarget{class_o_m_sim_g4_scintillation_a15600256132884f510df8c172057f699}\label{class_o_m_sim_g4_scintillation_a15600256132884f510df8c172057f699}} 
+\index{OMSimG4Scintillation@{OMSimG4Scintillation}!````~OMSimG4Scintillation@{$\sim$OMSimG4Scintillation}}
+\index{````~OMSimG4Scintillation@{$\sim$OMSimG4Scintillation}!OMSimG4Scintillation@{OMSimG4Scintillation}}
+\doxysubsubsection{\texorpdfstring{$\sim$OMSimG4Scintillation()}{~OMSimG4Scintillation()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily OMSim\+G4\+Scintillation\+::$\sim$\+OMSim\+G4\+Scintillation (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_o_m_sim_g4_scintillation_aa519da92a0bef3ca2fd2a92bcfdbb5de}\label{class_o_m_sim_g4_scintillation_aa519da92a0bef3ca2fd2a92bcfdbb5de}} 
+\index{OMSimG4Scintillation@{OMSimG4Scintillation}!OMSimG4Scintillation@{OMSimG4Scintillation}}
+\index{OMSimG4Scintillation@{OMSimG4Scintillation}!OMSimG4Scintillation@{OMSimG4Scintillation}}
+\doxysubsubsection{\texorpdfstring{OMSimG4Scintillation()}{OMSimG4Scintillation()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily OMSim\+G4\+Scintillation\+::\+OMSim\+G4\+Scintillation (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_o_m_sim_g4_scintillation}{OMSim\+G4\+Scintillation}} \&}]{right }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_o_m_sim_g4_scintillation_a82af8cb0c28c55e8f2913aee8b5aa47f}\label{class_o_m_sim_g4_scintillation_a82af8cb0c28c55e8f2913aee8b5aa47f}} 
+\index{OMSimG4Scintillation@{OMSimG4Scintillation}!AddSaturation@{AddSaturation}}
+\index{AddSaturation@{AddSaturation}!OMSimG4Scintillation@{OMSimG4Scintillation}}
+\doxysubsubsection{\texorpdfstring{AddSaturation()}{AddSaturation()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void OMSim\+G4\+Scintillation\+::\+Add\+Saturation (\begin{DoxyParamCaption}\item[{G4\+Em\+Saturation $\ast$}]{sat }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_o_m_sim_g4_scintillation_a82af8cb0c28c55e8f2913aee8b5aa47f}\label{class_o_m_sim_g4_scintillation_a82af8cb0c28c55e8f2913aee8b5aa47f}} 
+\index{OMSimG4Scintillation@{OMSimG4Scintillation}!AddSaturation@{AddSaturation}}
+\index{AddSaturation@{AddSaturation}!OMSimG4Scintillation@{OMSimG4Scintillation}}
+\doxysubsubsection{\texorpdfstring{AddSaturation()}{AddSaturation()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void OMSim\+G4\+Scintillation\+::\+Add\+Saturation (\begin{DoxyParamCaption}\item[{G4\+Em\+Saturation $\ast$}]{sat }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_o_m_sim_g4_scintillation_a1ab6f916bd26e5443d0f56238bc2df0e}\label{class_o_m_sim_g4_scintillation_a1ab6f916bd26e5443d0f56238bc2df0e}} 
+\index{OMSimG4Scintillation@{OMSimG4Scintillation}!AtRestDoIt@{AtRestDoIt}}
+\index{AtRestDoIt@{AtRestDoIt}!OMSimG4Scintillation@{OMSimG4Scintillation}}
+\doxysubsubsection{\texorpdfstring{AtRestDoIt()}{AtRestDoIt()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily G4\+VParticle\+Change $\ast$ OMSim\+G4\+Scintillation\+::\+At\+Rest\+Do\+It (\begin{DoxyParamCaption}\item[{const G4\+Track \&}]{a\+Track,  }\item[{const G4\+Step \&}]{a\+Step }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}}
+
+\mbox{\Hypertarget{class_o_m_sim_g4_scintillation_a067b14fb92df905cb6cc0ec14b1d22fb}\label{class_o_m_sim_g4_scintillation_a067b14fb92df905cb6cc0ec14b1d22fb}} 
+\index{OMSimG4Scintillation@{OMSimG4Scintillation}!AtRestDoIt@{AtRestDoIt}}
+\index{AtRestDoIt@{AtRestDoIt}!OMSimG4Scintillation@{OMSimG4Scintillation}}
+\doxysubsubsection{\texorpdfstring{AtRestDoIt()}{AtRestDoIt()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily G4\+VParticle\+Change$\ast$ OMSim\+G4\+Scintillation\+::\+At\+Rest\+Do\+It (\begin{DoxyParamCaption}\item[{const G4\+Track \&}]{a\+Track,  }\item[{const G4\+Step \&}]{a\+Step }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}}
+
+\mbox{\Hypertarget{class_o_m_sim_g4_scintillation_ab952ecd9987e9aa6d666b76acc942123}\label{class_o_m_sim_g4_scintillation_ab952ecd9987e9aa6d666b76acc942123}} 
+\index{OMSimG4Scintillation@{OMSimG4Scintillation}!BuildPhysicsTable@{BuildPhysicsTable}}
+\index{BuildPhysicsTable@{BuildPhysicsTable}!OMSimG4Scintillation@{OMSimG4Scintillation}}
+\doxysubsubsection{\texorpdfstring{BuildPhysicsTable()}{BuildPhysicsTable()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void OMSim\+G4\+Scintillation\+::\+Build\+Physics\+Table (\begin{DoxyParamCaption}\item[{const G4\+Particle\+Definition \&}]{a\+Particle\+Type }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}}
+
+\mbox{\Hypertarget{class_o_m_sim_g4_scintillation_ab952ecd9987e9aa6d666b76acc942123}\label{class_o_m_sim_g4_scintillation_ab952ecd9987e9aa6d666b76acc942123}} 
+\index{OMSimG4Scintillation@{OMSimG4Scintillation}!BuildPhysicsTable@{BuildPhysicsTable}}
+\index{BuildPhysicsTable@{BuildPhysicsTable}!OMSimG4Scintillation@{OMSimG4Scintillation}}
+\doxysubsubsection{\texorpdfstring{BuildPhysicsTable()}{BuildPhysicsTable()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void OMSim\+G4\+Scintillation\+::\+Build\+Physics\+Table (\begin{DoxyParamCaption}\item[{const G4\+Particle\+Definition \&}]{a\+Particle\+Type }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}}
+
+\mbox{\Hypertarget{class_o_m_sim_g4_scintillation_a5f629400ff4c836455b5841dad77ed23}\label{class_o_m_sim_g4_scintillation_a5f629400ff4c836455b5841dad77ed23}} 
+\index{OMSimG4Scintillation@{OMSimG4Scintillation}!DumpInfo@{DumpInfo}}
+\index{DumpInfo@{DumpInfo}!OMSimG4Scintillation@{OMSimG4Scintillation}}
+\doxysubsubsection{\texorpdfstring{DumpInfo()}{DumpInfo()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void OMSim\+G4\+Scintillation\+::\+Dump\+Info (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}}
+
+\mbox{\Hypertarget{class_o_m_sim_g4_scintillation_a5f629400ff4c836455b5841dad77ed23}\label{class_o_m_sim_g4_scintillation_a5f629400ff4c836455b5841dad77ed23}} 
+\index{OMSimG4Scintillation@{OMSimG4Scintillation}!DumpInfo@{DumpInfo}}
+\index{DumpInfo@{DumpInfo}!OMSimG4Scintillation@{OMSimG4Scintillation}}
+\doxysubsubsection{\texorpdfstring{DumpInfo()}{DumpInfo()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void OMSim\+G4\+Scintillation\+::\+Dump\+Info (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}}
+
+\mbox{\Hypertarget{class_o_m_sim_g4_scintillation_a697ecdd386ee8628c4c95d2c79bd3506}\label{class_o_m_sim_g4_scintillation_a697ecdd386ee8628c4c95d2c79bd3506}} 
+\index{OMSimG4Scintillation@{OMSimG4Scintillation}!DumpPhysicsTable@{DumpPhysicsTable}}
+\index{DumpPhysicsTable@{DumpPhysicsTable}!OMSimG4Scintillation@{OMSimG4Scintillation}}
+\doxysubsubsection{\texorpdfstring{DumpPhysicsTable()}{DumpPhysicsTable()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void OMSim\+G4\+Scintillation\+::\+Dump\+Physics\+Table (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{class_o_m_sim_g4_scintillation_a697ecdd386ee8628c4c95d2c79bd3506}\label{class_o_m_sim_g4_scintillation_a697ecdd386ee8628c4c95d2c79bd3506}} 
+\index{OMSimG4Scintillation@{OMSimG4Scintillation}!DumpPhysicsTable@{DumpPhysicsTable}}
+\index{DumpPhysicsTable@{DumpPhysicsTable}!OMSimG4Scintillation@{OMSimG4Scintillation}}
+\doxysubsubsection{\texorpdfstring{DumpPhysicsTable()}{DumpPhysicsTable()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void OMSim\+G4\+Scintillation\+::\+Dump\+Physics\+Table (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{class_o_m_sim_g4_scintillation_add2303def42c0504dd361100ac852837}\label{class_o_m_sim_g4_scintillation_add2303def42c0504dd361100ac852837}} 
+\index{OMSimG4Scintillation@{OMSimG4Scintillation}!GetFiniteRiseTime@{GetFiniteRiseTime}}
+\index{GetFiniteRiseTime@{GetFiniteRiseTime}!OMSimG4Scintillation@{OMSimG4Scintillation}}
+\doxysubsubsection{\texorpdfstring{GetFiniteRiseTime()}{GetFiniteRiseTime()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily G4bool OMSim\+G4\+Scintillation\+::\+Get\+Finite\+Rise\+Time (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_o_m_sim_g4_scintillation_add2303def42c0504dd361100ac852837}\label{class_o_m_sim_g4_scintillation_add2303def42c0504dd361100ac852837}} 
+\index{OMSimG4Scintillation@{OMSimG4Scintillation}!GetFiniteRiseTime@{GetFiniteRiseTime}}
+\index{GetFiniteRiseTime@{GetFiniteRiseTime}!OMSimG4Scintillation@{OMSimG4Scintillation}}
+\doxysubsubsection{\texorpdfstring{GetFiniteRiseTime()}{GetFiniteRiseTime()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily G4bool OMSim\+G4\+Scintillation\+::\+Get\+Finite\+Rise\+Time (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{class_o_m_sim_g4_scintillation_a5d4f7a535fb8c2559115075111842794}\label{class_o_m_sim_g4_scintillation_a5d4f7a535fb8c2559115075111842794}} 
+\index{OMSimG4Scintillation@{OMSimG4Scintillation}!GetIntegralTable1@{GetIntegralTable1}}
+\index{GetIntegralTable1@{GetIntegralTable1}!OMSimG4Scintillation@{OMSimG4Scintillation}}
+\doxysubsubsection{\texorpdfstring{GetIntegralTable1()}{GetIntegralTable1()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily G4\+Physics\+Table $\ast$ OMSim\+G4\+Scintillation\+::\+Get\+Integral\+Table1 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_o_m_sim_g4_scintillation_a746bdee7e344607dd4e739f9cc074dcb}\label{class_o_m_sim_g4_scintillation_a746bdee7e344607dd4e739f9cc074dcb}} 
+\index{OMSimG4Scintillation@{OMSimG4Scintillation}!GetIntegralTable1@{GetIntegralTable1}}
+\index{GetIntegralTable1@{GetIntegralTable1}!OMSimG4Scintillation@{OMSimG4Scintillation}}
+\doxysubsubsection{\texorpdfstring{GetIntegralTable1()}{GetIntegralTable1()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily G4\+Physics\+Table$\ast$ OMSim\+G4\+Scintillation\+::\+Get\+Integral\+Table1 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{class_o_m_sim_g4_scintillation_ae5c4392d7d5cbe21e9f7469301f2990a}\label{class_o_m_sim_g4_scintillation_ae5c4392d7d5cbe21e9f7469301f2990a}} 
+\index{OMSimG4Scintillation@{OMSimG4Scintillation}!GetIntegralTable2@{GetIntegralTable2}}
+\index{GetIntegralTable2@{GetIntegralTable2}!OMSimG4Scintillation@{OMSimG4Scintillation}}
+\doxysubsubsection{\texorpdfstring{GetIntegralTable2()}{GetIntegralTable2()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily G4\+Physics\+Table $\ast$ OMSim\+G4\+Scintillation\+::\+Get\+Integral\+Table2 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_o_m_sim_g4_scintillation_a9efab07bb95a235b41b994b4524a297b}\label{class_o_m_sim_g4_scintillation_a9efab07bb95a235b41b994b4524a297b}} 
+\index{OMSimG4Scintillation@{OMSimG4Scintillation}!GetIntegralTable2@{GetIntegralTable2}}
+\index{GetIntegralTable2@{GetIntegralTable2}!OMSimG4Scintillation@{OMSimG4Scintillation}}
+\doxysubsubsection{\texorpdfstring{GetIntegralTable2()}{GetIntegralTable2()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily G4\+Physics\+Table$\ast$ OMSim\+G4\+Scintillation\+::\+Get\+Integral\+Table2 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{class_o_m_sim_g4_scintillation_a327b57293ccff4eb880019897a9a5b95}\label{class_o_m_sim_g4_scintillation_a327b57293ccff4eb880019897a9a5b95}} 
+\index{OMSimG4Scintillation@{OMSimG4Scintillation}!GetIntegralTable3@{GetIntegralTable3}}
+\index{GetIntegralTable3@{GetIntegralTable3}!OMSimG4Scintillation@{OMSimG4Scintillation}}
+\doxysubsubsection{\texorpdfstring{GetIntegralTable3()}{GetIntegralTable3()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily G4\+Physics\+Table $\ast$ OMSim\+G4\+Scintillation\+::\+Get\+Integral\+Table3 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_o_m_sim_g4_scintillation_af7ded94634df291967b84cbf0076d89c}\label{class_o_m_sim_g4_scintillation_af7ded94634df291967b84cbf0076d89c}} 
+\index{OMSimG4Scintillation@{OMSimG4Scintillation}!GetIntegralTable3@{GetIntegralTable3}}
+\index{GetIntegralTable3@{GetIntegralTable3}!OMSimG4Scintillation@{OMSimG4Scintillation}}
+\doxysubsubsection{\texorpdfstring{GetIntegralTable3()}{GetIntegralTable3()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily G4\+Physics\+Table$\ast$ OMSim\+G4\+Scintillation\+::\+Get\+Integral\+Table3 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{class_o_m_sim_g4_scintillation_a3bc8d26ab87c8afb2bac4f00453a4000}\label{class_o_m_sim_g4_scintillation_a3bc8d26ab87c8afb2bac4f00453a4000}} 
+\index{OMSimG4Scintillation@{OMSimG4Scintillation}!GetMeanFreePath@{GetMeanFreePath}}
+\index{GetMeanFreePath@{GetMeanFreePath}!OMSimG4Scintillation@{OMSimG4Scintillation}}
+\doxysubsubsection{\texorpdfstring{GetMeanFreePath()}{GetMeanFreePath()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily G4double OMSim\+G4\+Scintillation\+::\+Get\+Mean\+Free\+Path (\begin{DoxyParamCaption}\item[{const G4\+Track \&}]{a\+Track,  }\item[{G4double}]{,  }\item[{G4\+Force\+Condition $\ast$}]{condition }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}}
+
+\mbox{\Hypertarget{class_o_m_sim_g4_scintillation_a3bc8d26ab87c8afb2bac4f00453a4000}\label{class_o_m_sim_g4_scintillation_a3bc8d26ab87c8afb2bac4f00453a4000}} 
+\index{OMSimG4Scintillation@{OMSimG4Scintillation}!GetMeanFreePath@{GetMeanFreePath}}
+\index{GetMeanFreePath@{GetMeanFreePath}!OMSimG4Scintillation@{OMSimG4Scintillation}}
+\doxysubsubsection{\texorpdfstring{GetMeanFreePath()}{GetMeanFreePath()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily G4double OMSim\+G4\+Scintillation\+::\+Get\+Mean\+Free\+Path (\begin{DoxyParamCaption}\item[{const G4\+Track \&}]{a\+Track,  }\item[{G4double}]{,  }\item[{G4\+Force\+Condition $\ast$}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}}
+
+\mbox{\Hypertarget{class_o_m_sim_g4_scintillation_a8587c2ae466cdd7281d5053da86df190}\label{class_o_m_sim_g4_scintillation_a8587c2ae466cdd7281d5053da86df190}} 
+\index{OMSimG4Scintillation@{OMSimG4Scintillation}!GetMeanLifeTime@{GetMeanLifeTime}}
+\index{GetMeanLifeTime@{GetMeanLifeTime}!OMSimG4Scintillation@{OMSimG4Scintillation}}
+\doxysubsubsection{\texorpdfstring{GetMeanLifeTime()}{GetMeanLifeTime()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily G4double OMSim\+G4\+Scintillation\+::\+Get\+Mean\+Life\+Time (\begin{DoxyParamCaption}\item[{const G4\+Track \&}]{a\+Track,  }\item[{G4\+Force\+Condition $\ast$}]{condition }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}}
+
+\mbox{\Hypertarget{class_o_m_sim_g4_scintillation_a8587c2ae466cdd7281d5053da86df190}\label{class_o_m_sim_g4_scintillation_a8587c2ae466cdd7281d5053da86df190}} 
+\index{OMSimG4Scintillation@{OMSimG4Scintillation}!GetMeanLifeTime@{GetMeanLifeTime}}
+\index{GetMeanLifeTime@{GetMeanLifeTime}!OMSimG4Scintillation@{OMSimG4Scintillation}}
+\doxysubsubsection{\texorpdfstring{GetMeanLifeTime()}{GetMeanLifeTime()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily G4double OMSim\+G4\+Scintillation\+::\+Get\+Mean\+Life\+Time (\begin{DoxyParamCaption}\item[{const G4\+Track \&}]{a\+Track,  }\item[{G4\+Force\+Condition $\ast$}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}}
+
+\mbox{\Hypertarget{class_o_m_sim_g4_scintillation_aea1624b2a2c60cae1f59aec337fd7be3}\label{class_o_m_sim_g4_scintillation_aea1624b2a2c60cae1f59aec337fd7be3}} 
+\index{OMSimG4Scintillation@{OMSimG4Scintillation}!GetNumPhotons@{GetNumPhotons}}
+\index{GetNumPhotons@{GetNumPhotons}!OMSimG4Scintillation@{OMSimG4Scintillation}}
+\doxysubsubsection{\texorpdfstring{GetNumPhotons()}{GetNumPhotons()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily G4int OMSim\+G4\+Scintillation\+::\+Get\+Num\+Photons (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_o_m_sim_g4_scintillation_aea1624b2a2c60cae1f59aec337fd7be3}\label{class_o_m_sim_g4_scintillation_aea1624b2a2c60cae1f59aec337fd7be3}} 
+\index{OMSimG4Scintillation@{OMSimG4Scintillation}!GetNumPhotons@{GetNumPhotons}}
+\index{GetNumPhotons@{GetNumPhotons}!OMSimG4Scintillation@{OMSimG4Scintillation}}
+\doxysubsubsection{\texorpdfstring{GetNumPhotons()}{GetNumPhotons()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily G4int OMSim\+G4\+Scintillation\+::\+Get\+Num\+Photons (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{class_o_m_sim_g4_scintillation_af37239792a034d934b07bb41fe9d8e8b}\label{class_o_m_sim_g4_scintillation_af37239792a034d934b07bb41fe9d8e8b}} 
+\index{OMSimG4Scintillation@{OMSimG4Scintillation}!GetSaturation@{GetSaturation}}
+\index{GetSaturation@{GetSaturation}!OMSimG4Scintillation@{OMSimG4Scintillation}}
+\doxysubsubsection{\texorpdfstring{GetSaturation()}{GetSaturation()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily G4\+Em\+Saturation $\ast$ OMSim\+G4\+Scintillation\+::\+Get\+Saturation (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_o_m_sim_g4_scintillation_ac325bcdc56b814f2586834c9e58ba098}\label{class_o_m_sim_g4_scintillation_ac325bcdc56b814f2586834c9e58ba098}} 
+\index{OMSimG4Scintillation@{OMSimG4Scintillation}!GetSaturation@{GetSaturation}}
+\index{GetSaturation@{GetSaturation}!OMSimG4Scintillation@{OMSimG4Scintillation}}
+\doxysubsubsection{\texorpdfstring{GetSaturation()}{GetSaturation()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily G4\+Em\+Saturation$\ast$ OMSim\+G4\+Scintillation\+::\+Get\+Saturation (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{class_o_m_sim_g4_scintillation_a29992f824b183379f57a6402faa22b23}\label{class_o_m_sim_g4_scintillation_a29992f824b183379f57a6402faa22b23}} 
+\index{OMSimG4Scintillation@{OMSimG4Scintillation}!GetScintillationByParticleType@{GetScintillationByParticleType}}
+\index{GetScintillationByParticleType@{GetScintillationByParticleType}!OMSimG4Scintillation@{OMSimG4Scintillation}}
+\doxysubsubsection{\texorpdfstring{GetScintillationByParticleType()}{GetScintillationByParticleType()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily G4bool OMSim\+G4\+Scintillation\+::\+Get\+Scintillation\+By\+Particle\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_o_m_sim_g4_scintillation_a29992f824b183379f57a6402faa22b23}\label{class_o_m_sim_g4_scintillation_a29992f824b183379f57a6402faa22b23}} 
+\index{OMSimG4Scintillation@{OMSimG4Scintillation}!GetScintillationByParticleType@{GetScintillationByParticleType}}
+\index{GetScintillationByParticleType@{GetScintillationByParticleType}!OMSimG4Scintillation@{OMSimG4Scintillation}}
+\doxysubsubsection{\texorpdfstring{GetScintillationByParticleType()}{GetScintillationByParticleType()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily G4bool OMSim\+G4\+Scintillation\+::\+Get\+Scintillation\+By\+Particle\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{class_o_m_sim_g4_scintillation_a88151995516413fe691c925d37086133}\label{class_o_m_sim_g4_scintillation_a88151995516413fe691c925d37086133}} 
+\index{OMSimG4Scintillation@{OMSimG4Scintillation}!GetScintillationTrackInfo@{GetScintillationTrackInfo}}
+\index{GetScintillationTrackInfo@{GetScintillationTrackInfo}!OMSimG4Scintillation@{OMSimG4Scintillation}}
+\doxysubsubsection{\texorpdfstring{GetScintillationTrackInfo()}{GetScintillationTrackInfo()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily G4bool OMSim\+G4\+Scintillation\+::\+Get\+Scintillation\+Track\+Info (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_o_m_sim_g4_scintillation_a88151995516413fe691c925d37086133}\label{class_o_m_sim_g4_scintillation_a88151995516413fe691c925d37086133}} 
+\index{OMSimG4Scintillation@{OMSimG4Scintillation}!GetScintillationTrackInfo@{GetScintillationTrackInfo}}
+\index{GetScintillationTrackInfo@{GetScintillationTrackInfo}!OMSimG4Scintillation@{OMSimG4Scintillation}}
+\doxysubsubsection{\texorpdfstring{GetScintillationTrackInfo()}{GetScintillationTrackInfo()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily G4bool OMSim\+G4\+Scintillation\+::\+Get\+Scintillation\+Track\+Info (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{class_o_m_sim_g4_scintillation_a7a4ffade8b87db7e370b0f45326f0d4c}\label{class_o_m_sim_g4_scintillation_a7a4ffade8b87db7e370b0f45326f0d4c}} 
+\index{OMSimG4Scintillation@{OMSimG4Scintillation}!GetScintillationYieldByParticleType@{GetScintillationYieldByParticleType}}
+\index{GetScintillationYieldByParticleType@{GetScintillationYieldByParticleType}!OMSimG4Scintillation@{OMSimG4Scintillation}}
+\doxysubsubsection{\texorpdfstring{GetScintillationYieldByParticleType()}{GetScintillationYieldByParticleType()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily G4double OMSim\+G4\+Scintillation\+::\+Get\+Scintillation\+Yield\+By\+Particle\+Type (\begin{DoxyParamCaption}\item[{const G4\+Track \&}]{a\+Track,  }\item[{const G4\+Step \&}]{a\+Step,  }\item[{G4double \&}]{yield1,  }\item[{G4double \&}]{yield2,  }\item[{G4double \&}]{yield3 }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_o_m_sim_g4_scintillation_a7a4ffade8b87db7e370b0f45326f0d4c}\label{class_o_m_sim_g4_scintillation_a7a4ffade8b87db7e370b0f45326f0d4c}} 
+\index{OMSimG4Scintillation@{OMSimG4Scintillation}!GetScintillationYieldByParticleType@{GetScintillationYieldByParticleType}}
+\index{GetScintillationYieldByParticleType@{GetScintillationYieldByParticleType}!OMSimG4Scintillation@{OMSimG4Scintillation}}
+\doxysubsubsection{\texorpdfstring{GetScintillationYieldByParticleType()}{GetScintillationYieldByParticleType()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily G4double OMSim\+G4\+Scintillation\+::\+Get\+Scintillation\+Yield\+By\+Particle\+Type (\begin{DoxyParamCaption}\item[{const G4\+Track \&}]{a\+Track,  }\item[{const G4\+Step \&}]{a\+Step,  }\item[{G4double \&}]{yield1,  }\item[{G4double \&}]{yield2,  }\item[{G4double \&}]{yield3 }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_o_m_sim_g4_scintillation_a88dcac0697ccd2e7189d6d9045764dc5}\label{class_o_m_sim_g4_scintillation_a88dcac0697ccd2e7189d6d9045764dc5}} 
+\index{OMSimG4Scintillation@{OMSimG4Scintillation}!GetStackPhotons@{GetStackPhotons}}
+\index{GetStackPhotons@{GetStackPhotons}!OMSimG4Scintillation@{OMSimG4Scintillation}}
+\doxysubsubsection{\texorpdfstring{GetStackPhotons()}{GetStackPhotons()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily G4bool OMSim\+G4\+Scintillation\+::\+Get\+Stack\+Photons (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_o_m_sim_g4_scintillation_a88dcac0697ccd2e7189d6d9045764dc5}\label{class_o_m_sim_g4_scintillation_a88dcac0697ccd2e7189d6d9045764dc5}} 
+\index{OMSimG4Scintillation@{OMSimG4Scintillation}!GetStackPhotons@{GetStackPhotons}}
+\index{GetStackPhotons@{GetStackPhotons}!OMSimG4Scintillation@{OMSimG4Scintillation}}
+\doxysubsubsection{\texorpdfstring{GetStackPhotons()}{GetStackPhotons()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily G4bool OMSim\+G4\+Scintillation\+::\+Get\+Stack\+Photons (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{class_o_m_sim_g4_scintillation_acfa7b08d020811cb44a4631cca53753a}\label{class_o_m_sim_g4_scintillation_acfa7b08d020811cb44a4631cca53753a}} 
+\index{OMSimG4Scintillation@{OMSimG4Scintillation}!GetTrackSecondariesFirst@{GetTrackSecondariesFirst}}
+\index{GetTrackSecondariesFirst@{GetTrackSecondariesFirst}!OMSimG4Scintillation@{OMSimG4Scintillation}}
+\doxysubsubsection{\texorpdfstring{GetTrackSecondariesFirst()}{GetTrackSecondariesFirst()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily G4bool OMSim\+G4\+Scintillation\+::\+Get\+Track\+Secondaries\+First (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_o_m_sim_g4_scintillation_acfa7b08d020811cb44a4631cca53753a}\label{class_o_m_sim_g4_scintillation_acfa7b08d020811cb44a4631cca53753a}} 
+\index{OMSimG4Scintillation@{OMSimG4Scintillation}!GetTrackSecondariesFirst@{GetTrackSecondariesFirst}}
+\index{GetTrackSecondariesFirst@{GetTrackSecondariesFirst}!OMSimG4Scintillation@{OMSimG4Scintillation}}
+\doxysubsubsection{\texorpdfstring{GetTrackSecondariesFirst()}{GetTrackSecondariesFirst()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily G4bool OMSim\+G4\+Scintillation\+::\+Get\+Track\+Secondaries\+First (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{class_o_m_sim_g4_scintillation_a9d6025f7785c766ab53c4686bcaad610}\label{class_o_m_sim_g4_scintillation_a9d6025f7785c766ab53c4686bcaad610}} 
+\index{OMSimG4Scintillation@{OMSimG4Scintillation}!Initialise@{Initialise}}
+\index{Initialise@{Initialise}!OMSimG4Scintillation@{OMSimG4Scintillation}}
+\doxysubsubsection{\texorpdfstring{Initialise()}{Initialise()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void OMSim\+G4\+Scintillation\+::\+Initialise (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_o_m_sim_g4_scintillation_a9d6025f7785c766ab53c4686bcaad610}\label{class_o_m_sim_g4_scintillation_a9d6025f7785c766ab53c4686bcaad610}} 
+\index{OMSimG4Scintillation@{OMSimG4Scintillation}!Initialise@{Initialise}}
+\index{Initialise@{Initialise}!OMSimG4Scintillation@{OMSimG4Scintillation}}
+\doxysubsubsection{\texorpdfstring{Initialise()}{Initialise()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void OMSim\+G4\+Scintillation\+::\+Initialise (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_o_m_sim_g4_scintillation_ab04365263a4ba747d13689bab32b9e6e}\label{class_o_m_sim_g4_scintillation_ab04365263a4ba747d13689bab32b9e6e}} 
+\index{OMSimG4Scintillation@{OMSimG4Scintillation}!IsApplicable@{IsApplicable}}
+\index{IsApplicable@{IsApplicable}!OMSimG4Scintillation@{OMSimG4Scintillation}}
+\doxysubsubsection{\texorpdfstring{IsApplicable()}{IsApplicable()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily G4bool OMSim\+G4\+Scintillation\+::\+Is\+Applicable (\begin{DoxyParamCaption}\item[{const G4\+Particle\+Definition \&}]{a\+Particle\+Type }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}}
+
+\mbox{\Hypertarget{class_o_m_sim_g4_scintillation_ab04365263a4ba747d13689bab32b9e6e}\label{class_o_m_sim_g4_scintillation_ab04365263a4ba747d13689bab32b9e6e}} 
+\index{OMSimG4Scintillation@{OMSimG4Scintillation}!IsApplicable@{IsApplicable}}
+\index{IsApplicable@{IsApplicable}!OMSimG4Scintillation@{OMSimG4Scintillation}}
+\doxysubsubsection{\texorpdfstring{IsApplicable()}{IsApplicable()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily G4bool OMSim\+G4\+Scintillation\+::\+Is\+Applicable (\begin{DoxyParamCaption}\item[{const G4\+Particle\+Definition \&}]{a\+Particle\+Type }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}}
+
+\mbox{\Hypertarget{class_o_m_sim_g4_scintillation_a63222479c6138d25e1915540c4a8561d}\label{class_o_m_sim_g4_scintillation_a63222479c6138d25e1915540c4a8561d}} 
+\index{OMSimG4Scintillation@{OMSimG4Scintillation}!operator=@{operator=}}
+\index{operator=@{operator=}!OMSimG4Scintillation@{OMSimG4Scintillation}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_o_m_sim_g4_scintillation}{OMSim\+G4\+Scintillation}}\& OMSim\+G4\+Scintillation\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_o_m_sim_g4_scintillation}{OMSim\+G4\+Scintillation}} \&}]{right }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+\mbox{\Hypertarget{class_o_m_sim_g4_scintillation_a63222479c6138d25e1915540c4a8561d}\label{class_o_m_sim_g4_scintillation_a63222479c6138d25e1915540c4a8561d}} 
+\index{OMSimG4Scintillation@{OMSimG4Scintillation}!operator=@{operator=}}
+\index{operator=@{operator=}!OMSimG4Scintillation@{OMSimG4Scintillation}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_o_m_sim_g4_scintillation}{OMSim\+G4\+Scintillation}}\& OMSim\+G4\+Scintillation\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_o_m_sim_g4_scintillation}{OMSim\+G4\+Scintillation}} \&}]{right }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+\mbox{\Hypertarget{class_o_m_sim_g4_scintillation_ad66327a37ea93be7eadca9f1c7a494ba}\label{class_o_m_sim_g4_scintillation_ad66327a37ea93be7eadca9f1c7a494ba}} 
+\index{OMSimG4Scintillation@{OMSimG4Scintillation}!PostStepDoIt@{PostStepDoIt}}
+\index{PostStepDoIt@{PostStepDoIt}!OMSimG4Scintillation@{OMSimG4Scintillation}}
+\doxysubsubsection{\texorpdfstring{PostStepDoIt()}{PostStepDoIt()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily G4\+VParticle\+Change $\ast$ OMSim\+G4\+Scintillation\+::\+Post\+Step\+Do\+It (\begin{DoxyParamCaption}\item[{const G4\+Track \&}]{a\+Track,  }\item[{const G4\+Step \&}]{a\+Step }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}}
+
+\mbox{\Hypertarget{class_o_m_sim_g4_scintillation_a2f17a510a8f9f34049d63f8e03518c78}\label{class_o_m_sim_g4_scintillation_a2f17a510a8f9f34049d63f8e03518c78}} 
+\index{OMSimG4Scintillation@{OMSimG4Scintillation}!PostStepDoIt@{PostStepDoIt}}
+\index{PostStepDoIt@{PostStepDoIt}!OMSimG4Scintillation@{OMSimG4Scintillation}}
+\doxysubsubsection{\texorpdfstring{PostStepDoIt()}{PostStepDoIt()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily G4\+VParticle\+Change$\ast$ OMSim\+G4\+Scintillation\+::\+Post\+Step\+Do\+It (\begin{DoxyParamCaption}\item[{const G4\+Track \&}]{a\+Track,  }\item[{const G4\+Step \&}]{a\+Step }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}}
+
+\mbox{\Hypertarget{class_o_m_sim_g4_scintillation_a6a5cd1216acbb358bf7dce3a64f40cb9}\label{class_o_m_sim_g4_scintillation_a6a5cd1216acbb358bf7dce3a64f40cb9}} 
+\index{OMSimG4Scintillation@{OMSimG4Scintillation}!PreparePhysicsTable@{PreparePhysicsTable}}
+\index{PreparePhysicsTable@{PreparePhysicsTable}!OMSimG4Scintillation@{OMSimG4Scintillation}}
+\doxysubsubsection{\texorpdfstring{PreparePhysicsTable()}{PreparePhysicsTable()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void OMSim\+G4\+Scintillation\+::\+Prepare\+Physics\+Table (\begin{DoxyParamCaption}\item[{const G4\+Particle\+Definition \&}]{part }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}}
+
+\mbox{\Hypertarget{class_o_m_sim_g4_scintillation_a6a5cd1216acbb358bf7dce3a64f40cb9}\label{class_o_m_sim_g4_scintillation_a6a5cd1216acbb358bf7dce3a64f40cb9}} 
+\index{OMSimG4Scintillation@{OMSimG4Scintillation}!PreparePhysicsTable@{PreparePhysicsTable}}
+\index{PreparePhysicsTable@{PreparePhysicsTable}!OMSimG4Scintillation@{OMSimG4Scintillation}}
+\doxysubsubsection{\texorpdfstring{PreparePhysicsTable()}{PreparePhysicsTable()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void OMSim\+G4\+Scintillation\+::\+Prepare\+Physics\+Table (\begin{DoxyParamCaption}\item[{const G4\+Particle\+Definition \&}]{part }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}}
+
+\mbox{\Hypertarget{class_o_m_sim_g4_scintillation_a912972f60a37dfbf30ab18fbadf087e7}\label{class_o_m_sim_g4_scintillation_a912972f60a37dfbf30ab18fbadf087e7}} 
+\index{OMSimG4Scintillation@{OMSimG4Scintillation}!ProcessDescription@{ProcessDescription}}
+\index{ProcessDescription@{ProcessDescription}!OMSimG4Scintillation@{OMSimG4Scintillation}}
+\doxysubsubsection{\texorpdfstring{ProcessDescription()}{ProcessDescription()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void OMSim\+G4\+Scintillation\+::\+Process\+Description (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{out }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}}
+
+\mbox{\Hypertarget{class_o_m_sim_g4_scintillation_a912972f60a37dfbf30ab18fbadf087e7}\label{class_o_m_sim_g4_scintillation_a912972f60a37dfbf30ab18fbadf087e7}} 
+\index{OMSimG4Scintillation@{OMSimG4Scintillation}!ProcessDescription@{ProcessDescription}}
+\index{ProcessDescription@{ProcessDescription}!OMSimG4Scintillation@{OMSimG4Scintillation}}
+\doxysubsubsection{\texorpdfstring{ProcessDescription()}{ProcessDescription()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void OMSim\+G4\+Scintillation\+::\+Process\+Description (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}}
+
+\mbox{\Hypertarget{class_o_m_sim_g4_scintillation_afbf4f3adb47f1ea2ed9226c206f05c13}\label{class_o_m_sim_g4_scintillation_afbf4f3adb47f1ea2ed9226c206f05c13}} 
+\index{OMSimG4Scintillation@{OMSimG4Scintillation}!RemoveSaturation@{RemoveSaturation}}
+\index{RemoveSaturation@{RemoveSaturation}!OMSimG4Scintillation@{OMSimG4Scintillation}}
+\doxysubsubsection{\texorpdfstring{RemoveSaturation()}{RemoveSaturation()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void OMSim\+G4\+Scintillation\+::\+Remove\+Saturation (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_o_m_sim_g4_scintillation_afbf4f3adb47f1ea2ed9226c206f05c13}\label{class_o_m_sim_g4_scintillation_afbf4f3adb47f1ea2ed9226c206f05c13}} 
+\index{OMSimG4Scintillation@{OMSimG4Scintillation}!RemoveSaturation@{RemoveSaturation}}
+\index{RemoveSaturation@{RemoveSaturation}!OMSimG4Scintillation@{OMSimG4Scintillation}}
+\doxysubsubsection{\texorpdfstring{RemoveSaturation()}{RemoveSaturation()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void OMSim\+G4\+Scintillation\+::\+Remove\+Saturation (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_o_m_sim_g4_scintillation_a136cdd00f76f00faa5b53ac495437ceb}\label{class_o_m_sim_g4_scintillation_a136cdd00f76f00faa5b53ac495437ceb}} 
+\index{OMSimG4Scintillation@{OMSimG4Scintillation}!SetFiniteRiseTime@{SetFiniteRiseTime}}
+\index{SetFiniteRiseTime@{SetFiniteRiseTime}!OMSimG4Scintillation@{OMSimG4Scintillation}}
+\doxysubsubsection{\texorpdfstring{SetFiniteRiseTime()}{SetFiniteRiseTime()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void OMSim\+G4\+Scintillation\+::\+Set\+Finite\+Rise\+Time (\begin{DoxyParamCaption}\item[{const G4bool}]{state }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_o_m_sim_g4_scintillation_a136cdd00f76f00faa5b53ac495437ceb}\label{class_o_m_sim_g4_scintillation_a136cdd00f76f00faa5b53ac495437ceb}} 
+\index{OMSimG4Scintillation@{OMSimG4Scintillation}!SetFiniteRiseTime@{SetFiniteRiseTime}}
+\index{SetFiniteRiseTime@{SetFiniteRiseTime}!OMSimG4Scintillation@{OMSimG4Scintillation}}
+\doxysubsubsection{\texorpdfstring{SetFiniteRiseTime()}{SetFiniteRiseTime()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void OMSim\+G4\+Scintillation\+::\+Set\+Finite\+Rise\+Time (\begin{DoxyParamCaption}\item[{const G4bool}]{state }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_o_m_sim_g4_scintillation_a5bdd943e152a9eefe153c077957af9f3}\label{class_o_m_sim_g4_scintillation_a5bdd943e152a9eefe153c077957af9f3}} 
+\index{OMSimG4Scintillation@{OMSimG4Scintillation}!SetScintillationByParticleType@{SetScintillationByParticleType}}
+\index{SetScintillationByParticleType@{SetScintillationByParticleType}!OMSimG4Scintillation@{OMSimG4Scintillation}}
+\doxysubsubsection{\texorpdfstring{SetScintillationByParticleType()}{SetScintillationByParticleType()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void OMSim\+G4\+Scintillation\+::\+Set\+Scintillation\+By\+Particle\+Type (\begin{DoxyParamCaption}\item[{const G4bool}]{scint\+Type }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_o_m_sim_g4_scintillation_a5bdd943e152a9eefe153c077957af9f3}\label{class_o_m_sim_g4_scintillation_a5bdd943e152a9eefe153c077957af9f3}} 
+\index{OMSimG4Scintillation@{OMSimG4Scintillation}!SetScintillationByParticleType@{SetScintillationByParticleType}}
+\index{SetScintillationByParticleType@{SetScintillationByParticleType}!OMSimG4Scintillation@{OMSimG4Scintillation}}
+\doxysubsubsection{\texorpdfstring{SetScintillationByParticleType()}{SetScintillationByParticleType()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void OMSim\+G4\+Scintillation\+::\+Set\+Scintillation\+By\+Particle\+Type (\begin{DoxyParamCaption}\item[{const}]{G4bool }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_o_m_sim_g4_scintillation_a9ce8c0b91c714c0da60fb82fcbe4ca32}\label{class_o_m_sim_g4_scintillation_a9ce8c0b91c714c0da60fb82fcbe4ca32}} 
+\index{OMSimG4Scintillation@{OMSimG4Scintillation}!SetScintillationTrackInfo@{SetScintillationTrackInfo}}
+\index{SetScintillationTrackInfo@{SetScintillationTrackInfo}!OMSimG4Scintillation@{OMSimG4Scintillation}}
+\doxysubsubsection{\texorpdfstring{SetScintillationTrackInfo()}{SetScintillationTrackInfo()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void OMSim\+G4\+Scintillation\+::\+Set\+Scintillation\+Track\+Info (\begin{DoxyParamCaption}\item[{const G4bool}]{track\+Type }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_o_m_sim_g4_scintillation_a9ce8c0b91c714c0da60fb82fcbe4ca32}\label{class_o_m_sim_g4_scintillation_a9ce8c0b91c714c0da60fb82fcbe4ca32}} 
+\index{OMSimG4Scintillation@{OMSimG4Scintillation}!SetScintillationTrackInfo@{SetScintillationTrackInfo}}
+\index{SetScintillationTrackInfo@{SetScintillationTrackInfo}!OMSimG4Scintillation@{OMSimG4Scintillation}}
+\doxysubsubsection{\texorpdfstring{SetScintillationTrackInfo()}{SetScintillationTrackInfo()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void OMSim\+G4\+Scintillation\+::\+Set\+Scintillation\+Track\+Info (\begin{DoxyParamCaption}\item[{const G4bool}]{track\+Type }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_o_m_sim_g4_scintillation_ab33b6682970380b38556e55399e7c9bb}\label{class_o_m_sim_g4_scintillation_ab33b6682970380b38556e55399e7c9bb}} 
+\index{OMSimG4Scintillation@{OMSimG4Scintillation}!SetStackPhotons@{SetStackPhotons}}
+\index{SetStackPhotons@{SetStackPhotons}!OMSimG4Scintillation@{OMSimG4Scintillation}}
+\doxysubsubsection{\texorpdfstring{SetStackPhotons()}{SetStackPhotons()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void OMSim\+G4\+Scintillation\+::\+Set\+Stack\+Photons (\begin{DoxyParamCaption}\item[{const G4bool}]{stacking\+Flag }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_o_m_sim_g4_scintillation_ab33b6682970380b38556e55399e7c9bb}\label{class_o_m_sim_g4_scintillation_ab33b6682970380b38556e55399e7c9bb}} 
+\index{OMSimG4Scintillation@{OMSimG4Scintillation}!SetStackPhotons@{SetStackPhotons}}
+\index{SetStackPhotons@{SetStackPhotons}!OMSimG4Scintillation@{OMSimG4Scintillation}}
+\doxysubsubsection{\texorpdfstring{SetStackPhotons()}{SetStackPhotons()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void OMSim\+G4\+Scintillation\+::\+Set\+Stack\+Photons (\begin{DoxyParamCaption}\item[{const}]{G4bool }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_o_m_sim_g4_scintillation_ab3d326c57a509401293751cdf63641d8}\label{class_o_m_sim_g4_scintillation_ab3d326c57a509401293751cdf63641d8}} 
+\index{OMSimG4Scintillation@{OMSimG4Scintillation}!SetTrackSecondariesFirst@{SetTrackSecondariesFirst}}
+\index{SetTrackSecondariesFirst@{SetTrackSecondariesFirst}!OMSimG4Scintillation@{OMSimG4Scintillation}}
+\doxysubsubsection{\texorpdfstring{SetTrackSecondariesFirst()}{SetTrackSecondariesFirst()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void OMSim\+G4\+Scintillation\+::\+Set\+Track\+Secondaries\+First (\begin{DoxyParamCaption}\item[{const G4bool}]{state }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_o_m_sim_g4_scintillation_ab3d326c57a509401293751cdf63641d8}\label{class_o_m_sim_g4_scintillation_ab3d326c57a509401293751cdf63641d8}} 
+\index{OMSimG4Scintillation@{OMSimG4Scintillation}!SetTrackSecondariesFirst@{SetTrackSecondariesFirst}}
+\index{SetTrackSecondariesFirst@{SetTrackSecondariesFirst}!OMSimG4Scintillation@{OMSimG4Scintillation}}
+\doxysubsubsection{\texorpdfstring{SetTrackSecondariesFirst()}{SetTrackSecondariesFirst()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void OMSim\+G4\+Scintillation\+::\+Set\+Track\+Secondaries\+First (\begin{DoxyParamCaption}\item[{const G4bool}]{state }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_o_m_sim_g4_scintillation_a70516d239033b37a9b79f59b57127617}\label{class_o_m_sim_g4_scintillation_a70516d239033b37a9b79f59b57127617}} 
+\index{OMSimG4Scintillation@{OMSimG4Scintillation}!SetVerboseLevel@{SetVerboseLevel}}
+\index{SetVerboseLevel@{SetVerboseLevel}!OMSimG4Scintillation@{OMSimG4Scintillation}}
+\doxysubsubsection{\texorpdfstring{SetVerboseLevel()}{SetVerboseLevel()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void OMSim\+G4\+Scintillation\+::\+Set\+Verbose\+Level (\begin{DoxyParamCaption}\item[{G4int}]{verbose }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_o_m_sim_g4_scintillation_a70516d239033b37a9b79f59b57127617}\label{class_o_m_sim_g4_scintillation_a70516d239033b37a9b79f59b57127617}} 
+\index{OMSimG4Scintillation@{OMSimG4Scintillation}!SetVerboseLevel@{SetVerboseLevel}}
+\index{SetVerboseLevel@{SetVerboseLevel}!OMSimG4Scintillation@{OMSimG4Scintillation}}
+\doxysubsubsection{\texorpdfstring{SetVerboseLevel()}{SetVerboseLevel()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void OMSim\+G4\+Scintillation\+::\+Set\+Verbose\+Level (\begin{DoxyParamCaption}\item[{G4int}]{ }\end{DoxyParamCaption})}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_g4_scintillation_8hh}{G4\+Scintillation.\+hh}}\item 
+\mbox{\hyperlink{_o_m_sim_g4_scintillation_8hh}{OMSim\+G4\+Scintillation.\+hh}}\item 
+\mbox{\hyperlink{_o_m_sim_g4_scintillation_8cc}{OMSim\+G4\+Scintillation.\+cc}}\end{DoxyCompactItemize}

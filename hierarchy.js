@@ -49,6 +49,11 @@ var hierarchy =
       [ "OMSimTrackingAction", "class_o_m_sim_tracking_action.html", null ],
       [ "OMSimTrackingAction", "class_o_m_sim_tracking_action.html", null ]
     ] ],
+    [ "G4VRestDiscreteProcess", null, [
+      [ "G4RadioactiveDecay", "class_g4_radioactive_decay.html", null ],
+      [ "OMSimG4Scintillation", "class_o_m_sim_g4_scintillation.html", null ],
+      [ "OMSimG4Scintillation", "class_o_m_sim_g4_scintillation.html", null ]
+    ] ],
     [ "G4VUserDetectorConstruction", null, [
       [ "OMSimDetectorConstruction", "class_o_m_sim_detector_construction.html", null ],
       [ "OMSimDetectorConstruction", "class_o_m_sim_detector_construction.html", null ]
