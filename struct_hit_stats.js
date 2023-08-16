@@ -1,14 +1,14 @@
 var struct_hit_stats =
 [
-    [ "event_distance", "struct_hit_stats.html#a903b130ef88b086013f18f58e68f2453", null ],
-    [ "event_id", "struct_hit_stats.html#acea6fd160775f8d90b02cd27bce46ad1", null ],
-    [ "hit_time", "struct_hit_stats.html#aa3c2524709d265a618cd745696267015", null ],
-    [ "photon_direction", "struct_hit_stats.html#ab857894de5de61e9573a7208ad58110a", null ],
-    [ "photon_energy", "struct_hit_stats.html#a2712d5eefdbf05465ad8bbf69145f5dd", null ],
-    [ "photon_flight_time", "struct_hit_stats.html#a0689216e0ebb19e5d3b991a51d8bbc0e", null ],
-    [ "photon_global_position", "struct_hit_stats.html#ad4ae7ff7cbed6c71495440f0cc864774", null ],
-    [ "photon_local_position", "struct_hit_stats.html#a5824cc6e01e472512c7c6023ea9a1ecf", null ],
-    [ "photon_track_length", "struct_hit_stats.html#a8e7c3ad9de6e57319a854a65ddf5f837", null ],
-    [ "PMT_hit", "struct_hit_stats.html#a679333c39e1a836e21a1b5593721ecbd", null ],
-    [ "PMT_response", "struct_hit_stats.html#a3180acf212880ca1061e2e5cd7f0e81a", null ]
+    [ "event_distance", "struct_hit_stats.html#a239bb18751a36e1056f408438bef3626", null ],
+    [ "event_id", "struct_hit_stats.html#a083785d39bbb36d3b96c013d72871bfb", null ],
+    [ "hit_time", "struct_hit_stats.html#aa98810da31bcafce33d1150f9040b179", null ],
+    [ "photon_direction", "struct_hit_stats.html#aad96ef4ac7b91e41f8e51ed9436c10d3", null ],
+    [ "photon_energy", "struct_hit_stats.html#a43c2be1edf587134e143b989ed027a45", null ],
+    [ "photon_flight_time", "struct_hit_stats.html#aed7c609a2bba96df75f0e202d609b283", null ],
+    [ "photon_global_position", "struct_hit_stats.html#a1655bb023dccf89fc34621487f845626", null ],
+    [ "photon_local_position", "struct_hit_stats.html#a83f200ce2f28b1ccba57172a5be54c19", null ],
+    [ "photon_track_length", "struct_hit_stats.html#a3cc8289263dedf3bee11a8bf3d6055b4", null ],
+    [ "PMT_hit", "struct_hit_stats.html#a82366d3fe8420fc7ce3d8a235c28823a", null ],
+    [ "PMT_response", "struct_hit_stats.html#a59e4bb359b5434d19aafdb3d963f08b2", null ]
 ];

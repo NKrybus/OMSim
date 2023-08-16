@@ -32,11 +32,12 @@ var searchData=
   ['skiplinebreak_960',['SkipLineBreak',['../class_c_a_d_mesh_1_1_file_1_1_lexer.html#a7c2f8991ac21fcac13b5109b219f3dfe',1,'CADMesh::File::Lexer']]],
   ['skiplinebreaks_961',['SkipLineBreaks',['../class_c_a_d_mesh_1_1_file_1_1_lexer.html#a29023ab72bd40455b2cb6ee448ecc6c0',1,'CADMesh::File::Lexer']]],
   ['skipwhitespace_962',['SkipWhiteSpace',['../class_c_a_d_mesh_1_1_file_1_1_lexer.html#ac0c1b8c93a8cad839502d8e10f11acf2',1,'CADMesh::File::Lexer']]],
-  ['sortvectorbyreference_963',['sortVectorByReference',['../classabc_data_file.html#a3c104cd7ecc9722cfd4b29360018b7ee',1,'abcDataFile']]],
-  ['splitstringbydelimiter_964',['splitStringByDelimiter',['../_o_m_sim_tracking_action_8cc.html#a98bca333230c874207e654a1c0988692',1,'splitStringByDelimiter(G4String const &amp;s, char delim):&#160;OMSimTrackingAction.cc'],['../_o_m_sim_tracking_action_8cc.html#a0c3c24dae9d87f31f312c13a734780ed',1,'splitStringByDelimiter(char *cs, char d):&#160;OMSimTrackingAction.cc']]],
-  ['startofa_965',['StartOfA',['../class_c_a_d_mesh_1_1_file_1_1_lexer.html#a90b382cb05fae9192e30782d30b880e5',1,'CADMesh::File::Lexer']]],
-  ['startvisualisation_966',['startVisualisation',['../class_o_m_sim.html#a42d86958aba31a17fb0c8a39fbc9c9b5',1,'OMSim']]],
-  ['stlreader_967',['STLReader',['../class_c_a_d_mesh_1_1_file_1_1_s_t_l_reader.html#ac225b702546fbe94c08fe5fbc7e28d16',1,'CADMesh::File::STLReader']]],
-  ['string_968',['String',['../class_c_a_d_mesh_1_1_file_1_1_lexer.html#a751aa6f8623fcfd184479c34d50d0b20',1,'CADMesh::File::Lexer']]],
-  ['substracttovolume_969',['substractToVolume',['../classabc_detector_component.html#aaf0d85ee9a57f6bda0d48c4dad2b6dc5',1,'abcDetectorComponent::substractToVolume(G4VSolid *pInputVolume, G4ThreeVector pSubstractionPos, G4RotationMatrix pSubstractionRot, G4String pNewVolumeName)'],['../classabc_detector_component.html#a53c7979298ef9eda66b44f0a3c4f2e6b',1,'abcDetectorComponent::substractToVolume(G4VSolid *pInputVolume, G4Transform3D pTrans, G4String pNewVolumeName)']]]
+  ['sorthitstatsbytime_963',['sortHitStatsByTime',['../class_o_m_sim_hit_manager.html#a853b6fb70a189840b7ffa42c74af5b09',1,'OMSimHitManager']]],
+  ['sortvectorbyreference_964',['sortVectorByReference',['../classabc_data_file.html#a3c104cd7ecc9722cfd4b29360018b7ee',1,'abcDataFile']]],
+  ['splitstringbydelimiter_965',['splitStringByDelimiter',['../_o_m_sim_tracking_action_8cc.html#a98bca333230c874207e654a1c0988692',1,'splitStringByDelimiter(G4String const &amp;s, char delim):&#160;OMSimTrackingAction.cc'],['../_o_m_sim_tracking_action_8cc.html#a0c3c24dae9d87f31f312c13a734780ed',1,'splitStringByDelimiter(char *cs, char d):&#160;OMSimTrackingAction.cc']]],
+  ['startofa_966',['StartOfA',['../class_c_a_d_mesh_1_1_file_1_1_lexer.html#a90b382cb05fae9192e30782d30b880e5',1,'CADMesh::File::Lexer']]],
+  ['startvisualisation_967',['startVisualisation',['../class_o_m_sim.html#a42d86958aba31a17fb0c8a39fbc9c9b5',1,'OMSim']]],
+  ['stlreader_968',['STLReader',['../class_c_a_d_mesh_1_1_file_1_1_s_t_l_reader.html#ac225b702546fbe94c08fe5fbc7e28d16',1,'CADMesh::File::STLReader']]],
+  ['string_969',['String',['../class_c_a_d_mesh_1_1_file_1_1_lexer.html#a751aa6f8623fcfd184479c34d50d0b20',1,'CADMesh::File::Lexer']]],
+  ['substracttovolume_970',['substractToVolume',['../classabc_detector_component.html#aaf0d85ee9a57f6bda0d48c4dad2b6dc5',1,'abcDetectorComponent::substractToVolume(G4VSolid *pInputVolume, G4ThreeVector pSubstractionPos, G4RotationMatrix pSubstractionRot, G4String pNewVolumeName)'],['../classabc_detector_component.html#a53c7979298ef9eda66b44f0a3c4f2e6b',1,'abcDetectorComponent::substractToVolume(G4VSolid *pInputVolume, G4Transform3D pTrans, G4String pNewVolumeName)']]]
 ];

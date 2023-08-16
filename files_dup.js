@@ -14,15 +14,15 @@ var files_dup =
     [ "OMSim.hh", "_o_m_sim_8hh.html", null ],
     [ "OMSim_effective_area.cc", "_o_m_sim__effective__area_8cc.html", "_o_m_sim__effective__area_8cc" ],
     [ "OMSim_radioactive_decays.cc", "_o_m_sim__radioactive__decays_8cc.html", "_o_m_sim__radioactive__decays_8cc" ],
-    [ "OMSimAnalysisManager.cc", "_o_m_sim_analysis_manager_8cc.html", null ],
-    [ "OMSimAnalysisManager.hh", "_o_m_sim_analysis_manager_8hh.html", [
-      [ "DecayStats", "struct_decay_stats.html", "struct_decay_stats" ]
-    ] ],
     [ "OMSimAngularScan.cc", "_o_m_sim_angular_scan_8cc.html", null ],
     [ "OMSimAngularScan.hh", "_o_m_sim_angular_scan_8hh.html", null ],
     [ "OMSimCommandArgsTable.hh", "_o_m_sim_command_args_table_8hh.html", "_o_m_sim_command_args_table_8hh" ],
     [ "OMSimDataFileTypes.cc", "_o_m_sim_data_file_types_8cc.html", null ],
     [ "OMSimDataFileTypes.hh", "_o_m_sim_data_file_types_8hh.html", null ],
+    [ "OMSimDecaysAnalysis.cc", "_o_m_sim_decays_analysis_8cc.html", null ],
+    [ "OMSimDecaysAnalysis.hh", "_o_m_sim_decays_analysis_8hh.html", [
+      [ "OMSimDecaysAnalysis", "class_o_m_sim_decays_analysis.html", "class_o_m_sim_decays_analysis" ]
+    ] ],
     [ "OMSimDecaysGPS.cc", "_o_m_sim_decays_g_p_s_8cc.html", null ],
     [ "OMSimDecaysGPS.hh", "_o_m_sim_decays_g_p_s_8hh.html", [
       [ "IsotopeDecays", "class_isotope_decays.html", "class_isotope_decays" ]
@@ -56,7 +56,7 @@ var files_dup =
     [ "OMSimG4Scintillation.hh", "_o_m_sim_g4_scintillation_8hh.html", [
       [ "OMSimG4Scintillation", "class_o_m_sim_g4_scintillation.html", "class_o_m_sim_g4_scintillation" ]
     ] ],
-    [ "OMSimHitManager.cc", "_o_m_sim_hit_manager_8cc.html", null ],
+    [ "OMSimHitManager.cc", "_o_m_sim_hit_manager_8cc.html", "_o_m_sim_hit_manager_8cc" ],
     [ "OMSimHitManager.hh", "_o_m_sim_hit_manager_8hh.html", null ],
     [ "OMSimInputData.cc", "_o_m_sim_input_data_8cc.html", null ],
     [ "OMSimInputData.hh", "_o_m_sim_input_data_8hh.html", [
