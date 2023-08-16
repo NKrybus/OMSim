@@ -1,41 +1,35 @@
 \hypertarget{class_o_m_sim_effective_area_analyisis}{}\doxysection{OMSim\+Effective\+Area\+Analyisis Class Reference}
 \label{class_o_m_sim_effective_area_analyisis}\index{OMSimEffectiveAreaAnalyisis@{OMSimEffectiveAreaAnalyisis}}
-
-
-Inheritance diagram for OMSim\+Effective\+Area\+Analyisis\+:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=241pt]{class_o_m_sim_effective_area_analyisis__inherit__graph}
-\end{center}
-\end{figure}
-
-
-Collaboration diagram for OMSim\+Effective\+Area\+Analyisis\+:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=241pt]{class_o_m_sim_effective_area_analyisis__coll__graph}
-\end{center}
-\end{figure}
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
 void \mbox{\hyperlink{class_o_m_sim_effective_area_analyisis_ad9b76bc60e5f3629a9c693c2a30f539d}{write\+Scan}} (G4double p\+Phi, G4double p\+Theta)
 \begin{DoxyCompactList}\small\item\em Writes a scan result to the output file. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_o_m_sim_effective_area_analyisis_a8d49aa6cccb6e98ebb9a084284ce47b9}{write\+Header}} ()
-\begin{DoxyCompactList}\small\item\em Writes a header to the output file. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Writes a header to the output file. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structeffective_area_result}{effective\+Area\+Result}} \mbox{\hyperlink{class_o_m_sim_effective_area_analyisis_aa9380b8148a1a0846b2f026d7dfa0046}{calculate\+Effective\+Area}} (double p\+Hits)
+\end{DoxyCompactItemize}
 \doxysubsection*{Static Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
 static \mbox{\hyperlink{class_o_m_sim_effective_area_analyisis}{OMSim\+Effective\+Area\+Analyisis}} \& \mbox{\hyperlink{class_o_m_sim_effective_area_analyisis_a8325fa41dcfb3dafc2815749191e730d}{get\+Instance}} ()
 \end{DoxyCompactItemize}
-\doxysubsection*{Additional Inherited Members}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+G4\+String \mbox{\hyperlink{class_o_m_sim_effective_area_analyisis_a93a35ab4f557df790de84ec0ab5e9fab}{m\+Output\+File\+Name}}
+\item 
+std\+::fstream \mbox{\hyperlink{class_o_m_sim_effective_area_analyisis_ac392f952bcc7e92c303e8e371b00c594}{m\+Datafile}}
+\end{DoxyCompactItemize}
 
 
 \doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_o_m_sim_effective_area_analyisis_aa9380b8148a1a0846b2f026d7dfa0046}\label{class_o_m_sim_effective_area_analyisis_aa9380b8148a1a0846b2f026d7dfa0046}} 
+\index{OMSimEffectiveAreaAnalyisis@{OMSimEffectiveAreaAnalyisis}!calculateEffectiveArea@{calculateEffectiveArea}}
+\index{calculateEffectiveArea@{calculateEffectiveArea}!OMSimEffectiveAreaAnalyisis@{OMSimEffectiveAreaAnalyisis}}
+\doxysubsubsection{\texorpdfstring{calculateEffectiveArea()}{calculateEffectiveArea()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structeffective_area_result}{effective\+Area\+Result}} OMSim\+Effective\+Area\+Analyisis\+::calculate\+Effective\+Area (\begin{DoxyParamCaption}\item[{double}]{p\+Hits }\end{DoxyParamCaption})}
+
 \mbox{\Hypertarget{class_o_m_sim_effective_area_analyisis_a8325fa41dcfb3dafc2815749191e730d}\label{class_o_m_sim_effective_area_analyisis_a8325fa41dcfb3dafc2815749191e730d}} 
 \index{OMSimEffectiveAreaAnalyisis@{OMSimEffectiveAreaAnalyisis}!getInstance@{getInstance}}
 \index{getInstance@{getInstance}!OMSimEffectiveAreaAnalyisis@{OMSimEffectiveAreaAnalyisis}}
@@ -61,6 +55,21 @@ static \mbox{\hyperlink{class_o_m_sim_effective_area_analyisis}{OMSim\+Effective
 {\em p\+Theta} & The phi angle used in the scan to be written to the output file. \\
 \hline
 \end{DoxyParams}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_o_m_sim_effective_area_analyisis_ac392f952bcc7e92c303e8e371b00c594}\label{class_o_m_sim_effective_area_analyisis_ac392f952bcc7e92c303e8e371b00c594}} 
+\index{OMSimEffectiveAreaAnalyisis@{OMSimEffectiveAreaAnalyisis}!mDatafile@{mDatafile}}
+\index{mDatafile@{mDatafile}!OMSimEffectiveAreaAnalyisis@{OMSimEffectiveAreaAnalyisis}}
+\doxysubsubsection{\texorpdfstring{mDatafile}{mDatafile}}
+{\footnotesize\ttfamily std\+::fstream OMSim\+Effective\+Area\+Analyisis\+::m\+Datafile}
+
+\mbox{\Hypertarget{class_o_m_sim_effective_area_analyisis_a93a35ab4f557df790de84ec0ab5e9fab}\label{class_o_m_sim_effective_area_analyisis_a93a35ab4f557df790de84ec0ab5e9fab}} 
+\index{OMSimEffectiveAreaAnalyisis@{OMSimEffectiveAreaAnalyisis}!mOutputFileName@{mOutputFileName}}
+\index{mOutputFileName@{mOutputFileName}!OMSimEffectiveAreaAnalyisis@{OMSimEffectiveAreaAnalyisis}}
+\doxysubsubsection{\texorpdfstring{mOutputFileName}{mOutputFileName}}
+{\footnotesize\ttfamily G4\+String OMSim\+Effective\+Area\+Analyisis\+::m\+Output\+File\+Name}
+
 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}

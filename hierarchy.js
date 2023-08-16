@@ -34,6 +34,7 @@ var hierarchy =
     ] ],
     [ "abcDetectorComponent::Component", "structabc_detector_component_1_1_component.html", null ],
     [ "DecayStats", "struct_decay_stats.html", null ],
+    [ "effectiveAreaResult", "structeffective_area_result.html", null ],
     [ "EventInfoManager", "class_event_info_manager.html", null ],
     [ "G4UserEventAction", null, [
       [ "OMSimEventAction", "class_o_m_sim_event_action.html", null ],
@@ -48,7 +49,6 @@ var hierarchy =
       [ "OMSimSteppingAction", "class_o_m_sim_stepping_action.html", null ]
     ] ],
     [ "G4UserTrackingAction", null, [
-      [ "OMSimTrackingAction", "class_o_m_sim_tracking_action.html", null ],
       [ "OMSimTrackingAction", "class_o_m_sim_tracking_action.html", null ]
     ] ],
     [ "G4VRestDiscreteProcess", null, [
@@ -75,9 +75,8 @@ var hierarchy =
     [ "CADMesh::Mesh", "class_c_a_d_mesh_1_1_mesh.html", null ],
     [ "OMSim", "class_o_m_sim.html", null ],
     [ "OMSimCommandArgsTable", "class_o_m_sim_command_args_table.html", null ],
-    [ "OMSimHitManager", "class_o_m_sim_hit_manager.html", [
-      [ "OMSimEffectiveAreaAnalyisis", "class_o_m_sim_effective_area_analyisis.html", null ]
-    ] ],
+    [ "OMSimEffectiveAreaAnalyisis", "class_o_m_sim_effective_area_analyisis.html", null ],
+    [ "OMSimHitManager", "class_o_m_sim_hit_manager.html", null ],
     [ "OMSimPMTResponse", "class_o_m_sim_p_m_t_response.html", null ],
     [ "OMSimUIinterface", "class_o_m_sim_u_iinterface.html", null ],
     [ "ParameterTable", "class_parameter_table.html", [

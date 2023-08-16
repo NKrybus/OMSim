@@ -39,7 +39,9 @@ var files_dup =
     [ "effective_area/include/OMSimDetectorConstruction.hh", "effective__area_2include_2_o_m_sim_detector_construction_8hh.html", null ],
     [ "radioactive_decays/include/OMSimDetectorConstruction.hh", "radioactive__decays_2include_2_o_m_sim_detector_construction_8hh.html", null ],
     [ "OMSimEffectiveAreaAnalyisis.cc", "_o_m_sim_effective_area_analyisis_8cc.html", null ],
-    [ "OMSimEffectiveAreaAnalyisis.hh", "_o_m_sim_effective_area_analyisis_8hh.html", null ],
+    [ "OMSimEffectiveAreaAnalyisis.hh", "_o_m_sim_effective_area_analyisis_8hh.html", [
+      [ "effectiveAreaResult", "structeffective_area_result.html", "structeffective_area_result" ]
+    ] ],
     [ "common/framework/src/OMSimEventAction.cc", "common_2framework_2src_2_o_m_sim_event_action_8cc.html", null ],
     [ "radioactive_decays/src/OMSimEventAction.cc", "radioactive__decays_2src_2_o_m_sim_event_action_8cc.html", null ],
     [ "common/framework/include/OMSimEventAction.hh", "common_2framework_2include_2_o_m_sim_event_action_8hh.html", [
@@ -124,12 +126,8 @@ var files_dup =
     [ "radioactive_decays/include/OMSimSteppingAction.hh", "radioactive__decays_2include_2_o_m_sim_stepping_action_8hh.html", [
       [ "OMSimSteppingAction", "class_o_m_sim_stepping_action.html", "class_o_m_sim_stepping_action" ]
     ] ],
-    [ "effective_area/src/OMSimTrackingAction.cc", "effective__area_2src_2_o_m_sim_tracking_action_8cc.html", "effective__area_2src_2_o_m_sim_tracking_action_8cc" ],
-    [ "radioactive_decays/src/OMSimTrackingAction.cc", "radioactive__decays_2src_2_o_m_sim_tracking_action_8cc.html", "radioactive__decays_2src_2_o_m_sim_tracking_action_8cc" ],
-    [ "effective_area/include/OMSimTrackingAction.hh", "effective__area_2include_2_o_m_sim_tracking_action_8hh.html", [
-      [ "OMSimTrackingAction", "class_o_m_sim_tracking_action.html", "class_o_m_sim_tracking_action" ]
-    ] ],
-    [ "radioactive_decays/include/OMSimTrackingAction.hh", "radioactive__decays_2include_2_o_m_sim_tracking_action_8hh.html", [
+    [ "OMSimTrackingAction.cc", "_o_m_sim_tracking_action_8cc.html", "_o_m_sim_tracking_action_8cc" ],
+    [ "OMSimTrackingAction.hh", "_o_m_sim_tracking_action_8hh.html", [
       [ "OMSimTrackingAction", "class_o_m_sim_tracking_action.html", "class_o_m_sim_tracking_action" ]
     ] ],
     [ "OMSimUIinterface.hh", "_o_m_sim_u_iinterface_8hh.html", null ]

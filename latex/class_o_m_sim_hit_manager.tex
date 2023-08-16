@@ -7,16 +7,6 @@ This class is responsible for managing info of detected photons and writing the 
 
 
 
-Inheritance diagram for OMSim\+Hit\+Manager\+:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=241pt]{class_o_m_sim_hit_manager__inherit__graph}
-\end{center}
-\end{figure}
-
-
 Collaboration diagram for OMSim\+Hit\+Manager\+:
 \nopagebreak
 \begin{figure}[H]
@@ -32,6 +22,8 @@ void \mbox{\hyperlink{class_o_m_sim_hit_manager_a5ed0f165e4ecbd647f76d21e086c30d
 \item 
 void \mbox{\hyperlink{class_o_m_sim_hit_manager_a00bb034e7751905f8a8229de3f8a39b1}{reset}} ()
 \begin{DoxyCompactList}\small\item\em Empties the \mbox{\hyperlink{struct_hit_stats}{Hit\+Stats}} struct. \end{DoxyCompactList}\item 
+std\+::vector$<$ double $>$ \mbox{\hyperlink{class_o_m_sim_hit_manager_ac251b3e39c5f0ed79f3656a9ac7bc0de}{count\+Hits}} ()
+\begin{DoxyCompactList}\small\item\em Counts the number of hits for each PMT. \end{DoxyCompactList}\item 
 std\+::vector$<$ double $>$ \mbox{\hyperlink{class_o_m_sim_hit_manager_a1f1c545657fe7cc059fcffdd5f7a1fcc}{count\+Hits}} ()
 \item 
 void \mbox{\hyperlink{class_o_m_sim_hit_manager_a00bb034e7751905f8a8229de3f8a39b1}{reset}} ()
@@ -52,45 +44,20 @@ void \mbox{\hyperlink{class_o_m_sim_hit_manager_a936ba58ff6fe0162d6686b01536f7f6
 \begin{DoxyCompactItemize}
 \item 
 static \mbox{\hyperlink{class_o_m_sim_hit_manager}{OMSim\+Hit\+Manager}} \& \mbox{\hyperlink{class_o_m_sim_hit_manager_a50c9ec0b924aa860533de79aa6fd3a47}{get\+Instance}} ()
+\item 
+static \mbox{\hyperlink{class_o_m_sim_hit_manager}{OMSim\+Hit\+Manager}} \& \mbox{\hyperlink{class_o_m_sim_hit_manager_a50c9ec0b924aa860533de79aa6fd3a47}{get\+Instance}} ()
 \end{DoxyCompactItemize}
 \doxysubsection*{Public Attributes}
 \begin{DoxyCompactItemize}
 \item 
+\mbox{\hyperlink{struct_hit_stats}{Hit\+Stats}} \mbox{\hyperlink{class_o_m_sim_hit_manager_a778a85dac7b9578c5e339deea0cbbd5a}{m\+Hits}}
+\item 
 G4\+String \mbox{\hyperlink{class_o_m_sim_hit_manager_a4d3c71e94db9055dd071ef1f554ed079}{m\+Output\+File\+Name}}
-\item 
-G4long \mbox{\hyperlink{class_o_m_sim_hit_manager_a05e4ac7fed203ff95293656565a316bd}{m\+Current\+Event\+Number}}
-\end{DoxyCompactItemize}
-\doxysubsection*{Protected Member Functions}
-\begin{DoxyCompactItemize}
-\item 
-std\+::vector$<$ double $>$ \mbox{\hyperlink{class_o_m_sim_hit_manager_ac251b3e39c5f0ed79f3656a9ac7bc0de}{count\+Hits}} ()
-\begin{DoxyCompactList}\small\item\em Counts the number of hits for each PMT. \end{DoxyCompactList}\item 
-\mbox{\hyperlink{class_o_m_sim_hit_manager_a5cec10e41685343e1549768995f137e6}{OMSim\+Hit\+Manager}} ()
-\item 
-virtual \mbox{\hyperlink{class_o_m_sim_hit_manager_adbffe89697b9cb15da53e29e9709a8de}{$\sim$\+OMSim\+Hit\+Manager}} ()
-\end{DoxyCompactItemize}
-\doxysubsection*{Protected Attributes}
-\begin{DoxyCompactItemize}
 \item 
 std\+::fstream \mbox{\hyperlink{class_o_m_sim_hit_manager_ada77962622fcf1e55f2ab604ec07db1f}{m\+Datafile}}
 \item 
-\mbox{\hyperlink{struct_hit_stats}{Hit\+Stats}} \mbox{\hyperlink{class_o_m_sim_hit_manager_a778a85dac7b9578c5e339deea0cbbd5a}{m\+Hits}}
+G4long \mbox{\hyperlink{class_o_m_sim_hit_manager_a05e4ac7fed203ff95293656565a316bd}{m\+Current\+Event\+Number}}
 \end{DoxyCompactItemize}
-
-
-\doxysubsection{Constructor \& Destructor Documentation}
-\mbox{\Hypertarget{class_o_m_sim_hit_manager_a5cec10e41685343e1549768995f137e6}\label{class_o_m_sim_hit_manager_a5cec10e41685343e1549768995f137e6}} 
-\index{OMSimHitManager@{OMSimHitManager}!OMSimHitManager@{OMSimHitManager}}
-\index{OMSimHitManager@{OMSimHitManager}!OMSimHitManager@{OMSimHitManager}}
-\doxysubsubsection{\texorpdfstring{OMSimHitManager()}{OMSimHitManager()}}
-{\footnotesize\ttfamily OMSim\+Hit\+Manager\+::\+OMSim\+Hit\+Manager (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
-
-\mbox{\Hypertarget{class_o_m_sim_hit_manager_adbffe89697b9cb15da53e29e9709a8de}\label{class_o_m_sim_hit_manager_adbffe89697b9cb15da53e29e9709a8de}} 
-\index{OMSimHitManager@{OMSimHitManager}!````~OMSimHitManager@{$\sim$OMSimHitManager}}
-\index{````~OMSimHitManager@{$\sim$OMSimHitManager}!OMSimHitManager@{OMSimHitManager}}
-\doxysubsubsection{\texorpdfstring{$\sim$OMSimHitManager()}{~OMSimHitManager()}}
-{\footnotesize\ttfamily virtual OMSim\+Hit\+Manager\+::$\sim$\+OMSim\+Hit\+Manager (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}
-
 
 
 \doxysubsection{Member Function Documentation}
@@ -116,7 +83,7 @@ std\+::fstream \mbox{\hyperlink{class_o_m_sim_hit_manager_ada77962622fcf1e55f2ab
 \index{OMSimHitManager@{OMSimHitManager}!countHits@{countHits}}
 \index{countHits@{countHits}!OMSimHitManager@{OMSimHitManager}}
 \doxysubsubsection{\texorpdfstring{countHits()}{countHits()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
-{\footnotesize\ttfamily std\+::vector$<$ double $>$ OMSim\+Hit\+Manager\+::count\+Hits (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+{\footnotesize\ttfamily std\+::vector$<$ double $>$ OMSim\+Hit\+Manager\+::count\+Hits (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
 \begin{DoxyReturn}{Returns}
 A vector containing the counts of hits for each PMT. 
@@ -130,7 +97,13 @@ A vector containing the counts of hits for each PMT.
 \mbox{\Hypertarget{class_o_m_sim_hit_manager_a50c9ec0b924aa860533de79aa6fd3a47}\label{class_o_m_sim_hit_manager_a50c9ec0b924aa860533de79aa6fd3a47}} 
 \index{OMSimHitManager@{OMSimHitManager}!getInstance@{getInstance}}
 \index{getInstance@{getInstance}!OMSimHitManager@{OMSimHitManager}}
-\doxysubsubsection{\texorpdfstring{getInstance()}{getInstance()}}
+\doxysubsubsection{\texorpdfstring{getInstance()}{getInstance()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{class_o_m_sim_hit_manager}{OMSim\+Hit\+Manager}}\& OMSim\+Hit\+Manager\+::get\+Instance (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_o_m_sim_hit_manager_a50c9ec0b924aa860533de79aa6fd3a47}\label{class_o_m_sim_hit_manager_a50c9ec0b924aa860533de79aa6fd3a47}} 
+\index{OMSimHitManager@{OMSimHitManager}!getInstance@{getInstance}}
+\index{getInstance@{getInstance}!OMSimHitManager@{OMSimHitManager}}
+\doxysubsubsection{\texorpdfstring{getInstance()}{getInstance()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
 {\footnotesize\ttfamily static \mbox{\hyperlink{class_o_m_sim_hit_manager}{OMSim\+Hit\+Manager}}\& OMSim\+Hit\+Manager\+::get\+Instance (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
 
 \mbox{\Hypertarget{class_o_m_sim_hit_manager_a00bb034e7751905f8a8229de3f8a39b1}\label{class_o_m_sim_hit_manager_a00bb034e7751905f8a8229de3f8a39b1}} 
@@ -189,13 +162,13 @@ A vector containing the counts of hits for each PMT.
 \index{OMSimHitManager@{OMSimHitManager}!mDatafile@{mDatafile}}
 \index{mDatafile@{mDatafile}!OMSimHitManager@{OMSimHitManager}}
 \doxysubsubsection{\texorpdfstring{mDatafile}{mDatafile}}
-{\footnotesize\ttfamily std\+::fstream OMSim\+Hit\+Manager\+::m\+Datafile\hspace{0.3cm}{\ttfamily [protected]}}
+{\footnotesize\ttfamily std\+::fstream OMSim\+Hit\+Manager\+::m\+Datafile}
 
 \mbox{\Hypertarget{class_o_m_sim_hit_manager_a778a85dac7b9578c5e339deea0cbbd5a}\label{class_o_m_sim_hit_manager_a778a85dac7b9578c5e339deea0cbbd5a}} 
 \index{OMSimHitManager@{OMSimHitManager}!mHits@{mHits}}
 \index{mHits@{mHits}!OMSimHitManager@{OMSimHitManager}}
 \doxysubsubsection{\texorpdfstring{mHits}{mHits}}
-{\footnotesize\ttfamily \mbox{\hyperlink{struct_hit_stats}{Hit\+Stats}} OMSim\+Hit\+Manager\+::m\+Hits\hspace{0.3cm}{\ttfamily [protected]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_hit_stats}{Hit\+Stats}} OMSim\+Hit\+Manager\+::m\+Hits}
 
 \mbox{\Hypertarget{class_o_m_sim_hit_manager_a4d3c71e94db9055dd071ef1f554ed079}\label{class_o_m_sim_hit_manager_a4d3c71e94db9055dd071ef1f554ed079}} 
 \index{OMSimHitManager@{OMSimHitManager}!mOutputFileName@{mOutputFileName}}

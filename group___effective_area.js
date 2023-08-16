@@ -18,18 +18,20 @@ var group___effective_area =
       [ "mWorldPhysical", "class_o_m_sim_detector_construction.html#a699963cdf8af1e2f82a61227b9f08c20", null ]
     ] ],
     [ "OMSimEffectiveAreaAnalyisis", "class_o_m_sim_effective_area_analyisis.html", [
+      [ "calculateEffectiveArea", "class_o_m_sim_effective_area_analyisis.html#aa9380b8148a1a0846b2f026d7dfa0046", null ],
       [ "getInstance", "class_o_m_sim_effective_area_analyisis.html#a8325fa41dcfb3dafc2815749191e730d", null ],
       [ "writeHeader", "class_o_m_sim_effective_area_analyisis.html#a8d49aa6cccb6e98ebb9a084284ce47b9", null ],
-      [ "writeScan", "class_o_m_sim_effective_area_analyisis.html#ad9b76bc60e5f3629a9c693c2a30f539d", null ]
+      [ "writeScan", "class_o_m_sim_effective_area_analyisis.html#ad9b76bc60e5f3629a9c693c2a30f539d", null ],
+      [ "mDatafile", "class_o_m_sim_effective_area_analyisis.html#ac392f952bcc7e92c303e8e371b00c594", null ],
+      [ "mOutputFileName", "class_o_m_sim_effective_area_analyisis.html#a93a35ab4f557df790de84ec0ab5e9fab", null ]
     ] ],
     [ "OMSimHitManager", "class_o_m_sim_hit_manager.html", [
-      [ "OMSimHitManager", "class_o_m_sim_hit_manager.html#a5cec10e41685343e1549768995f137e6", null ],
-      [ "~OMSimHitManager", "class_o_m_sim_hit_manager.html#adbffe89697b9cb15da53e29e9709a8de", null ],
       [ "appendDecay", "class_o_m_sim_hit_manager.html#ad7a080177556c552c173ddd3d43eb0bc", null ],
       [ "appendHitInfo", "class_o_m_sim_hit_manager.html#a5ed0f165e4ecbd647f76d21e086c30da", null ],
       [ "calculateMultiplicity", "class_o_m_sim_hit_manager.html#acb822b38b0e2cc2c699148eed2bb281f", null ],
       [ "countHits", "class_o_m_sim_hit_manager.html#ac251b3e39c5f0ed79f3656a9ac7bc0de", null ],
       [ "countHits", "class_o_m_sim_hit_manager.html#a1f1c545657fe7cc059fcffdd5f7a1fcc", null ],
+      [ "getInstance", "class_o_m_sim_hit_manager.html#a50c9ec0b924aa860533de79aa6fd3a47", null ],
       [ "getInstance", "class_o_m_sim_hit_manager.html#a50c9ec0b924aa860533de79aa6fd3a47", null ],
       [ "reset", "class_o_m_sim_hit_manager.html#a00bb034e7751905f8a8229de3f8a39b1", null ],
       [ "reset", "class_o_m_sim_hit_manager.html#a00bb034e7751905f8a8229de3f8a39b1", null ],

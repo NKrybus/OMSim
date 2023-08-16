@@ -24,6 +24,7 @@ var annotated_dup =
     [ "DecayStats", "struct_decay_stats.html", "struct_decay_stats" ],
     [ "DEGG", "class_d_e_g_g.html", "class_d_e_g_g" ],
     [ "DEggHarness", "class_d_egg_harness.html", "class_d_egg_harness" ],
+    [ "effectiveAreaResult", "structeffective_area_result.html", "structeffective_area_result" ],
     [ "EventInfoManager", "class_event_info_manager.html", "class_event_info_manager" ],
     [ "G4RadioactiveDecay", "class_g4_radioactive_decay.html", "class_g4_radioactive_decay" ],
     [ "GlobalPosition", "struct_global_position.html", "struct_global_position" ],

@@ -117,8 +117,6 @@ $(document).ready(function(){initNavTree('class_o_m_sim_hit_manager.html',''); i
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
-<a href="#pro-methods">Protected Member Functions</a> &#124;
-<a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="class_o_m_sim_hit_manager-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">OMSimHitManager Class Reference<div class="ingroups"><a class="el" href="group__common.html">Common stuff</a> &#124; <a class="el" href="group___effective_area.html">Effective area</a></div></div>  </div>
@@ -127,12 +125,6 @@ $(document).ready(function(){initNavTree('class_o_m_sim_hit_manager.html',''); i
 
 <p>This class is responsible for managing info of detected photons and writing the results in the desired format.  
 </p>
-<div class="dynheader">
-Inheritance diagram for OMSimHitManager:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_o_m_sim_hit_manager__inherit__graph.svg" width="226" height="112"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
-<center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <div class="dynheader">
 Collaboration diagram for OMSimHitManager:</div>
 <div class="dyncontent">
@@ -147,6 +139,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a00bb034e7751905f8a8229de3f8a39b1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_m_sim_hit_manager.html#a00bb034e7751905f8a8229de3f8a39b1">reset</a> ()</td></tr>
 <tr class="memdesc:a00bb034e7751905f8a8229de3f8a39b1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Empties the <a class="el" href="struct_hit_stats.html" title="A structure to store information of photon hits.">HitStats</a> struct.  <a href="class_o_m_sim_hit_manager.html#a00bb034e7751905f8a8229de3f8a39b1">More...</a><br /></td></tr>
 <tr class="separator:a00bb034e7751905f8a8229de3f8a39b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac251b3e39c5f0ed79f3656a9ac7bc0de"><td class="memItemLeft" align="right" valign="top">std::vector&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_m_sim_hit_manager.html#ac251b3e39c5f0ed79f3656a9ac7bc0de">countHits</a> ()</td></tr>
+<tr class="memdesc:ac251b3e39c5f0ed79f3656a9ac7bc0de"><td class="mdescLeft">&#160;</td><td class="mdescRight">Counts the number of hits for each PMT.  <a href="class_o_m_sim_hit_manager.html#ac251b3e39c5f0ed79f3656a9ac7bc0de">More...</a><br /></td></tr>
+<tr class="separator:ac251b3e39c5f0ed79f3656a9ac7bc0de"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1f1c545657fe7cc059fcffdd5f7a1fcc"><td class="memItemLeft" align="right" valign="top">std::vector&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_m_sim_hit_manager.html#a1f1c545657fe7cc059fcffdd5f7a1fcc">countHits</a> ()</td></tr>
 <tr class="separator:a1f1c545657fe7cc059fcffdd5f7a1fcc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a00bb034e7751905f8a8229de3f8a39b1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_m_sim_hit_manager.html#a00bb034e7751905f8a8229de3f8a39b1">reset</a> ()</td></tr>
@@ -170,82 +165,20 @@ Public Member Functions</h2></td></tr>
 Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a50c9ec0b924aa860533de79aa6fd3a47"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_o_m_sim_hit_manager.html">OMSimHitManager</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_m_sim_hit_manager.html#a50c9ec0b924aa860533de79aa6fd3a47">getInstance</a> ()</td></tr>
 <tr class="separator:a50c9ec0b924aa860533de79aa6fd3a47"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a50c9ec0b924aa860533de79aa6fd3a47"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_o_m_sim_hit_manager.html">OMSimHitManager</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_m_sim_hit_manager.html#a50c9ec0b924aa860533de79aa6fd3a47">getInstance</a> ()</td></tr>
+<tr class="separator:a50c9ec0b924aa860533de79aa6fd3a47"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:a4d3c71e94db9055dd071ef1f554ed079"><td class="memItemLeft" align="right" valign="top">G4String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_m_sim_hit_manager.html#a4d3c71e94db9055dd071ef1f554ed079">mOutputFileName</a></td></tr>
-<tr class="separator:a4d3c71e94db9055dd071ef1f554ed079"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a05e4ac7fed203ff95293656565a316bd"><td class="memItemLeft" align="right" valign="top">G4long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_m_sim_hit_manager.html#a05e4ac7fed203ff95293656565a316bd">mCurrentEventNumber</a></td></tr>
-<tr class="separator:a05e4ac7fed203ff95293656565a316bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
-Protected Member Functions</h2></td></tr>
-<tr class="memitem:ac251b3e39c5f0ed79f3656a9ac7bc0de"><td class="memItemLeft" align="right" valign="top">std::vector&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_m_sim_hit_manager.html#ac251b3e39c5f0ed79f3656a9ac7bc0de">countHits</a> ()</td></tr>
-<tr class="memdesc:ac251b3e39c5f0ed79f3656a9ac7bc0de"><td class="mdescLeft">&#160;</td><td class="mdescRight">Counts the number of hits for each PMT.  <a href="class_o_m_sim_hit_manager.html#ac251b3e39c5f0ed79f3656a9ac7bc0de">More...</a><br /></td></tr>
-<tr class="separator:ac251b3e39c5f0ed79f3656a9ac7bc0de"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5cec10e41685343e1549768995f137e6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_m_sim_hit_manager.html#a5cec10e41685343e1549768995f137e6">OMSimHitManager</a> ()</td></tr>
-<tr class="separator:a5cec10e41685343e1549768995f137e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adbffe89697b9cb15da53e29e9709a8de"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_m_sim_hit_manager.html#adbffe89697b9cb15da53e29e9709a8de">~OMSimHitManager</a> ()</td></tr>
-<tr class="separator:adbffe89697b9cb15da53e29e9709a8de"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
-Protected Attributes</h2></td></tr>
-<tr class="memitem:ada77962622fcf1e55f2ab604ec07db1f"><td class="memItemLeft" align="right" valign="top">std::fstream&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_m_sim_hit_manager.html#ada77962622fcf1e55f2ab604ec07db1f">mDatafile</a></td></tr>
-<tr class="separator:ada77962622fcf1e55f2ab604ec07db1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a778a85dac7b9578c5e339deea0cbbd5a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_hit_stats.html">HitStats</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_m_sim_hit_manager.html#a778a85dac7b9578c5e339deea0cbbd5a">mHits</a></td></tr>
 <tr class="separator:a778a85dac7b9578c5e339deea0cbbd5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4d3c71e94db9055dd071ef1f554ed079"><td class="memItemLeft" align="right" valign="top">G4String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_m_sim_hit_manager.html#a4d3c71e94db9055dd071ef1f554ed079">mOutputFileName</a></td></tr>
+<tr class="separator:a4d3c71e94db9055dd071ef1f554ed079"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ada77962622fcf1e55f2ab604ec07db1f"><td class="memItemLeft" align="right" valign="top">std::fstream&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_m_sim_hit_manager.html#ada77962622fcf1e55f2ab604ec07db1f">mDatafile</a></td></tr>
+<tr class="separator:ada77962622fcf1e55f2ab604ec07db1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a05e4ac7fed203ff95293656565a316bd"><td class="memItemLeft" align="right" valign="top">G4long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_m_sim_hit_manager.html#a05e4ac7fed203ff95293656565a316bd">mCurrentEventNumber</a></td></tr>
+<tr class="separator:a05e4ac7fed203ff95293656565a316bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a5cec10e41685343e1549768995f137e6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5cec10e41685343e1549768995f137e6">&#9670;&nbsp;</a></span>OMSimHitManager()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">OMSimHitManager::OMSimHitManager </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="adbffe89697b9cb15da53e29e9709a8de"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adbffe89697b9cb15da53e29e9709a8de">&#9670;&nbsp;</a></span>~OMSimHitManager()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual OMSimHitManager::~OMSimHitManager </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <h2 class="groupheader">Member Function Documentation</h2>
 <a id="ad7a080177556c552c173ddd3d43eb0bc"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ad7a080177556c552c173ddd3d43eb0bc">&#9670;&nbsp;</a></span>appendDecay()</h2>
@@ -398,9 +331,6 @@ Protected Attributes</h2></td></tr>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">std::vector&lt; double &gt; OMSimHitManager::countHits </td>
@@ -409,11 +339,6 @@ Protected Attributes</h2></td></tr>
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>A vector containing the counts of hits for each PMT. </dd></dl>
 
@@ -437,7 +362,32 @@ Protected Attributes</h2></td></tr>
 </div>
 </div>
 <a id="a50c9ec0b924aa860533de79aa6fd3a47"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a50c9ec0b924aa860533de79aa6fd3a47">&#9670;&nbsp;</a></span>getInstance()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a50c9ec0b924aa860533de79aa6fd3a47">&#9670;&nbsp;</a></span>getInstance() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="class_o_m_sim_hit_manager.html">OMSimHitManager</a>&amp; OMSimHitManager::getInstance </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a50c9ec0b924aa860533de79aa6fd3a47"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a50c9ec0b924aa860533de79aa6fd3a47">&#9670;&nbsp;</a></span>getInstance() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -602,19 +552,11 @@ Protected Attributes</h2></td></tr>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">std::fstream OMSimHitManager::mDatafile</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 </div>
@@ -624,19 +566,11 @@ Protected Attributes</h2></td></tr>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="struct_hit_stats.html">HitStats</a> OMSimHitManager::mHits</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 </div>
@@ -667,7 +601,7 @@ Protected Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="class_o_m_sim_hit_manager.html">OMSimHitManager</a></li>
-    <li class="footer">Generated on Tue Aug 15 2023 16:44:52 for OMSim by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Wed Aug 16 2023 14:23:27 for OMSim by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

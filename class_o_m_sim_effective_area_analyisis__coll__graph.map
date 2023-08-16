@@ -1,5 +1,0 @@
-<map id="OMSimEffectiveAreaAnalyisis" name="OMSimEffectiveAreaAnalyisis">
-<area shape="rect" id="node1" title=" " alt="" coords="5,171,220,197"/>
-<area shape="rect" id="node2" href="$class_o_m_sim_hit_manager.html" title="This class is responsible for managing info of detected photons and writing the results in the desire..." alt="" coords="40,95,185,121"/>
-<area shape="rect" id="node3" href="$struct_hit_stats.html" title="A structure to store information of photon hits." alt="" coords="75,5,150,32"/>
-</map>
