@@ -1,5 +1,7 @@
 var NAVTREEINDEX3 =
 {
+"classabc_material_data.html#a2a5b07c86c18825c5eca27818ad6268c":[2,0,16,4],
+"classabc_material_data.html#a598d1d21330a101855229b2fb08357a9":[2,0,16,8],
 "classabc_material_data.html#a8fee96bfd62337bcaefd70ba42b35aa6":[2,0,16,5],
 "classabc_material_data.html#abd444fe5c9bf9ea0ad3629e448bd0d4e":[2,0,16,1],
 "classabc_material_data.html#acca9fc268907f29e89960699cadb0b53":[2,0,16,3],
@@ -57,8 +59,8 @@ var NAVTREEINDEX3 =
 "effective_area_8h.html":[3,0,4],
 "effective_area_8h_source.html":[3,0,4],
 "files.html":[3,0],
-"functions.html":[4,3,0,0],
 "functions.html":[4,3,0],
+"functions.html":[4,3,0,0],
 "functions_b.html":[4,3,0,1],
 "functions_c.html":[4,3,0,2],
 "functions_d.html":[4,3,0,3],

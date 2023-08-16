@@ -125,25 +125,26 @@ $(document).ready(function(){initNavTree('class_o_m_sim_hit_manager.html',''); i
 
 <p>This class is responsible for managing info of detected photons and writing the results in the desired format.  
 </p>
-<div class="dynheader">
-Collaboration diagram for OMSimHitManager:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_o_m_sim_hit_manager__coll__graph.svg" width="156" height="127"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
-<center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a5ed0f165e4ecbd647f76d21e086c30da"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_m_sim_hit_manager.html#a5ed0f165e4ecbd647f76d21e086c30da">appendHitInfo</a> (G4double globalTime, G4double localTime, G4double trackLength, G4double energy, G4int PMTHitNumber, G4ThreeVector momentumDirection, G4ThreeVector globalPos, G4ThreeVector localPos, G4double distance, <a class="el" href="struct_o_m_sim_p_m_t_response_1_1_p_m_t_pulse.html">OMSimPMTResponse::PMTPulse</a> response)</td></tr>
-<tr class="separator:a5ed0f165e4ecbd647f76d21e086c30da"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a004f73261c6ef3e30ff27b0e13da0a1b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_m_sim_hit_manager.html#a004f73261c6ef3e30ff27b0e13da0a1b">appendHitInfo</a> (G4double globalTime, G4double localTime, G4double trackLength, G4double energy, G4int PMTHitNumber, G4ThreeVector momentumDirection, G4ThreeVector globalPos, G4ThreeVector localPos, G4double distance, <a class="el" href="struct_o_m_sim_p_m_t_response_1_1_p_m_t_pulse.html">OMSimPMTResponse::PMTPulse</a> response, G4int moduleIndex=0)</td></tr>
+<tr class="separator:a004f73261c6ef3e30ff27b0e13da0a1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a00bb034e7751905f8a8229de3f8a39b1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_m_sim_hit_manager.html#a00bb034e7751905f8a8229de3f8a39b1">reset</a> ()</td></tr>
-<tr class="memdesc:a00bb034e7751905f8a8229de3f8a39b1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Empties the <a class="el" href="struct_hit_stats.html" title="A structure to store information of photon hits.">HitStats</a> struct.  <a href="class_o_m_sim_hit_manager.html#a00bb034e7751905f8a8229de3f8a39b1">More...</a><br /></td></tr>
+<tr class="memdesc:a00bb034e7751905f8a8229de3f8a39b1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Empties the <a class="el" href="struct_hit_stats.html" title="A structure to store information of photon hits.">HitStats</a> structs.  <a href="class_o_m_sim_hit_manager.html#a00bb034e7751905f8a8229de3f8a39b1">More...</a><br /></td></tr>
 <tr class="separator:a00bb034e7751905f8a8229de3f8a39b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a94235892734a635dea9147aac72c313e"><td class="memItemLeft" align="right" valign="top">std::vector&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_m_sim_hit_manager.html#a94235892734a635dea9147aac72c313e">countHits</a> (int moduleIndex=0)</td></tr>
+<tr class="memdesc:a94235892734a635dea9147aac72c313e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Counts the number of hits for each PMT in a module .  <a href="class_o_m_sim_hit_manager.html#a94235892734a635dea9147aac72c313e">More...</a><br /></td></tr>
+<tr class="separator:a94235892734a635dea9147aac72c313e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a56f146720ea46769606167d35a6e59f4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_m_sim_hit_manager.html#a56f146720ea46769606167d35a6e59f4">setNumberOfPMTs</a> (int pNumberOfPMTs)</td></tr>
+<tr class="memdesc:a56f146720ea46769606167d35a6e59f4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Empties the <a class="el" href="struct_hit_stats.html" title="A structure to store information of photon hits.">HitStats</a> struct.  <a href="class_o_m_sim_hit_manager.html#a56f146720ea46769606167d35a6e59f4">More...</a><br /></td></tr>
+<tr class="separator:a56f146720ea46769606167d35a6e59f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a50074acb44cd2a8bacffe00599add044"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_hit_stats.html">HitStats</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_m_sim_hit_manager.html#a50074acb44cd2a8bacffe00599add044">getHitsOfModule</a> (int moduleIndex=0)</td></tr>
+<tr class="memdesc:a50074acb44cd2a8bacffe00599add044"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns struct of hit information for a module index (defaults to module 0, in case only a single module is simulated you don't have to provide a nr)  <a href="class_o_m_sim_hit_manager.html#a50074acb44cd2a8bacffe00599add044">More...</a><br /></td></tr>
+<tr class="separator:a50074acb44cd2a8bacffe00599add044"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac251b3e39c5f0ed79f3656a9ac7bc0de"><td class="memItemLeft" align="right" valign="top">std::vector&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_m_sim_hit_manager.html#ac251b3e39c5f0ed79f3656a9ac7bc0de">countHits</a> ()</td></tr>
 <tr class="memdesc:ac251b3e39c5f0ed79f3656a9ac7bc0de"><td class="mdescLeft">&#160;</td><td class="mdescRight">Counts the number of hits for each PMT.  <a href="class_o_m_sim_hit_manager.html#ac251b3e39c5f0ed79f3656a9ac7bc0de">More...</a><br /></td></tr>
 <tr class="separator:ac251b3e39c5f0ed79f3656a9ac7bc0de"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1f1c545657fe7cc059fcffdd5f7a1fcc"><td class="memItemLeft" align="right" valign="top">std::vector&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_m_sim_hit_manager.html#a1f1c545657fe7cc059fcffdd5f7a1fcc">countHits</a> ()</td></tr>
-<tr class="separator:a1f1c545657fe7cc059fcffdd5f7a1fcc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a00bb034e7751905f8a8229de3f8a39b1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_m_sim_hit_manager.html#a00bb034e7751905f8a8229de3f8a39b1">reset</a> ()</td></tr>
 <tr class="separator:a00bb034e7751905f8a8229de3f8a39b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a17e748749cd0c35f5291fb4f6fe8cb0f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_m_sim_hit_manager.html#a17e748749cd0c35f5291fb4f6fe8cb0f">writeScan</a> (G4double pPhi, G4double pTheta)</td></tr>
@@ -170,8 +171,6 @@ Static Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:a778a85dac7b9578c5e339deea0cbbd5a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_hit_stats.html">HitStats</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_m_sim_hit_manager.html#a778a85dac7b9578c5e339deea0cbbd5a">mHits</a></td></tr>
-<tr class="separator:a778a85dac7b9578c5e339deea0cbbd5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4d3c71e94db9055dd071ef1f554ed079"><td class="memItemLeft" align="right" valign="top">G4String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_m_sim_hit_manager.html#a4d3c71e94db9055dd071ef1f554ed079">mOutputFileName</a></td></tr>
 <tr class="separator:a4d3c71e94db9055dd071ef1f554ed079"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ada77962622fcf1e55f2ab604ec07db1f"><td class="memItemLeft" align="right" valign="top">std::fstream&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_m_sim_hit_manager.html#ada77962622fcf1e55f2ab604ec07db1f">mDatafile</a></td></tr>
@@ -222,8 +221,8 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a5ed0f165e4ecbd647f76d21e086c30da"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5ed0f165e4ecbd647f76d21e086c30da">&#9670;&nbsp;</a></span>appendHitInfo()</h2>
+<a id="a004f73261c6ef3e30ff27b0e13da0a1b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a004f73261c6ef3e30ff27b0e13da0a1b">&#9670;&nbsp;</a></span>appendHitInfo()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -286,7 +285,13 @@ Public Attributes</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype"><a class="el" href="struct_o_m_sim_p_m_t_response_1_1_p_m_t_pulse.html">OMSimPMTResponse::PMTPulse</a>&#160;</td>
-          <td class="paramname"><em>response</em>&#160;</td>
+          <td class="paramname"><em>response</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">G4int&#160;</td>
+          <td class="paramname"><em>moduleIndex</em> = <code>0</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -344,20 +349,46 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a1f1c545657fe7cc059fcffdd5f7a1fcc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1f1c545657fe7cc059fcffdd5f7a1fcc">&#9670;&nbsp;</a></span>countHits() <span class="overload">[2/2]</span></h2>
+<a id="a94235892734a635dea9147aac72c313e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a94235892734a635dea9147aac72c313e">&#9670;&nbsp;</a></span>countHits() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">std::vector&lt;double&gt; OMSimHitManager::countHits </td>
+          <td class="memname">std::vector&lt; double &gt; OMSimHitManager::countHits </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>moduleNumber</em> = <code>0</code></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd>A vector containing the counts of hits for each PMT. </dd></dl>
+
+</div>
+</div>
+<a id="a50074acb44cd2a8bacffe00599add044"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a50074acb44cd2a8bacffe00599add044">&#9670;&nbsp;</a></span>getHitsOfModule()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_hit_stats.html">HitStats</a> OMSimHitManager::getHitsOfModule </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>moduleIndex</em> = <code>0</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">moduleIndex</td><td>Module index for which we are getting the information (default 0) </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -425,6 +456,7 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Empties the <a class="el" href="struct_hit_stats.html" title="A structure to store information of photon hits.">HitStats</a> struct. </p>
 
 </div>
 </div>
@@ -438,6 +470,24 @@ Public Attributes</h2></td></tr>
           <td class="memname">void OMSimHitManager::reset </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a56f146720ea46769606167d35a6e59f4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a56f146720ea46769606167d35a6e59f4">&#9670;&nbsp;</a></span>setNumberOfPMTs()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void OMSimHitManager::setNumberOfPMTs </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>pNumberOfPMTs</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -561,20 +611,6 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a778a85dac7b9578c5e339deea0cbbd5a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a778a85dac7b9578c5e339deea0cbbd5a">&#9670;&nbsp;</a></span>mHits</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="struct_hit_stats.html">HitStats</a> OMSimHitManager::mHits</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="a4d3c71e94db9055dd071ef1f554ed079"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a4d3c71e94db9055dd071ef1f554ed079">&#9670;&nbsp;</a></span>mOutputFileName</h2>
 
@@ -601,7 +637,7 @@ Public Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="class_o_m_sim_hit_manager.html">OMSimHitManager</a></li>
-    <li class="footer">Generated on Wed Aug 16 2023 14:23:27 for OMSim by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Wed Aug 16 2023 15:50:31 for OMSim by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>
