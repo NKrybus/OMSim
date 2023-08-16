@@ -123,24 +123,28 @@ $(document).ready(function(){initNavTree('class_o_m_sim_hit_manager.html',''); i
 </div><!--header-->
 <div class="contents">
 
-<p>This class is responsible for managing info of detected photons and writing the results in the desired format.  
-</p>
-<table class="memberdecls">
+<p>Manages detected photon information.  
+ <a href="class_o_m_sim_hit_manager.html#details">More...</a></p>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>This class is responsible for managing info of detected photons and writing the results in the desired format.</p>
+<p>This class is responsible for storing, managing, and providing access to the hit information related to detected photons across multiple optical modules. The manager can be accessed via a singleton pattern, ensuring a unified access point for photon hit data. </p>
+</div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a004f73261c6ef3e30ff27b0e13da0a1b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_m_sim_hit_manager.html#a004f73261c6ef3e30ff27b0e13da0a1b">appendHitInfo</a> (G4double globalTime, G4double localTime, G4double trackLength, G4double energy, G4int PMTHitNumber, G4ThreeVector momentumDirection, G4ThreeVector globalPos, G4ThreeVector localPos, G4double distance, <a class="el" href="struct_o_m_sim_p_m_t_response_1_1_p_m_t_pulse.html">OMSimPMTResponse::PMTPulse</a> response, G4int moduleIndex=0)</td></tr>
+<tr class="memdesc:a004f73261c6ef3e30ff27b0e13da0a1b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Appends hit information for a detected photon to the corresponding module's hit data.  <a href="class_o_m_sim_hit_manager.html#a004f73261c6ef3e30ff27b0e13da0a1b">More...</a><br /></td></tr>
 <tr class="separator:a004f73261c6ef3e30ff27b0e13da0a1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a00bb034e7751905f8a8229de3f8a39b1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_m_sim_hit_manager.html#a00bb034e7751905f8a8229de3f8a39b1">reset</a> ()</td></tr>
-<tr class="memdesc:a00bb034e7751905f8a8229de3f8a39b1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Empties the <a class="el" href="struct_hit_stats.html" title="A structure to store information of photon hits.">HitStats</a> structs.  <a href="class_o_m_sim_hit_manager.html#a00bb034e7751905f8a8229de3f8a39b1">More...</a><br /></td></tr>
+<tr class="memdesc:a00bb034e7751905f8a8229de3f8a39b1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resets hit information for all modules.  <a href="class_o_m_sim_hit_manager.html#a00bb034e7751905f8a8229de3f8a39b1">More...</a><br /></td></tr>
 <tr class="separator:a00bb034e7751905f8a8229de3f8a39b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a94235892734a635dea9147aac72c313e"><td class="memItemLeft" align="right" valign="top">std::vector&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_m_sim_hit_manager.html#a94235892734a635dea9147aac72c313e">countHits</a> (int moduleIndex=0)</td></tr>
-<tr class="memdesc:a94235892734a635dea9147aac72c313e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Counts the number of hits for each PMT in a module .  <a href="class_o_m_sim_hit_manager.html#a94235892734a635dea9147aac72c313e">More...</a><br /></td></tr>
+<tr class="memdesc:a94235892734a635dea9147aac72c313e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Counts hits for a specified module.  <a href="class_o_m_sim_hit_manager.html#a94235892734a635dea9147aac72c313e">More...</a><br /></td></tr>
 <tr class="separator:a94235892734a635dea9147aac72c313e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a56f146720ea46769606167d35a6e59f4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_m_sim_hit_manager.html#a56f146720ea46769606167d35a6e59f4">setNumberOfPMTs</a> (int pNumberOfPMTs)</td></tr>
-<tr class="memdesc:a56f146720ea46769606167d35a6e59f4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Empties the <a class="el" href="struct_hit_stats.html" title="A structure to store information of photon hits.">HitStats</a> struct.  <a href="class_o_m_sim_hit_manager.html#a56f146720ea46769606167d35a6e59f4">More...</a><br /></td></tr>
-<tr class="separator:a56f146720ea46769606167d35a6e59f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeabbd61eeb69b719cbb2adc85e6e0d6b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_m_sim_hit_manager.html#aeabbd61eeb69b719cbb2adc85e6e0d6b">setNumberOfPMTs</a> (int pNumberOfPMTs, int moduleIndex=0)</td></tr>
+<tr class="memdesc:aeabbd61eeb69b719cbb2adc85e6e0d6b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Saves the number of PMTs in a module.  <a href="class_o_m_sim_hit_manager.html#aeabbd61eeb69b719cbb2adc85e6e0d6b">More...</a><br /></td></tr>
+<tr class="separator:aeabbd61eeb69b719cbb2adc85e6e0d6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a50074acb44cd2a8bacffe00599add044"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_hit_stats.html">HitStats</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_m_sim_hit_manager.html#a50074acb44cd2a8bacffe00599add044">getHitsOfModule</a> (int moduleIndex=0)</td></tr>
-<tr class="memdesc:a50074acb44cd2a8bacffe00599add044"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns struct of hit information for a module index (defaults to module 0, in case only a single module is simulated you don't have to provide a nr)  <a href="class_o_m_sim_hit_manager.html#a50074acb44cd2a8bacffe00599add044">More...</a><br /></td></tr>
+<tr class="memdesc:a50074acb44cd2a8bacffe00599add044"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves the hit statistics for a specified module.  <a href="class_o_m_sim_hit_manager.html#a50074acb44cd2a8bacffe00599add044">More...</a><br /></td></tr>
 <tr class="separator:a50074acb44cd2a8bacffe00599add044"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac251b3e39c5f0ed79f3656a9ac7bc0de"><td class="memItemLeft" align="right" valign="top">std::vector&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_m_sim_hit_manager.html#ac251b3e39c5f0ed79f3656a9ac7bc0de">countHits</a> ()</td></tr>
 <tr class="memdesc:ac251b3e39c5f0ed79f3656a9ac7bc0de"><td class="mdescLeft">&#160;</td><td class="mdescRight">Counts the number of hits for each PMT.  <a href="class_o_m_sim_hit_manager.html#ac251b3e39c5f0ed79f3656a9ac7bc0de">More...</a><br /></td></tr>
@@ -165,6 +169,7 @@ Public Member Functions</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a50c9ec0b924aa860533de79aa6fd3a47"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_o_m_sim_hit_manager.html">OMSimHitManager</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_m_sim_hit_manager.html#a50c9ec0b924aa860533de79aa6fd3a47">getInstance</a> ()</td></tr>
+<tr class="memdesc:a50c9ec0b924aa860533de79aa6fd3a47"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the singleton instance of the <a class="el" href="class_o_m_sim_hit_manager.html" title="Manages detected photon information.">OMSimHitManager</a>.  <a href="class_o_m_sim_hit_manager.html#a50c9ec0b924aa860533de79aa6fd3a47">More...</a><br /></td></tr>
 <tr class="separator:a50c9ec0b924aa860533de79aa6fd3a47"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a50c9ec0b924aa860533de79aa6fd3a47"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_o_m_sim_hit_manager.html">OMSimHitManager</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_m_sim_hit_manager.html#a50c9ec0b924aa860533de79aa6fd3a47">getInstance</a> ()</td></tr>
 <tr class="separator:a50c9ec0b924aa860533de79aa6fd3a47"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -291,7 +296,7 @@ Public Attributes</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">G4int&#160;</td>
-          <td class="paramname"><em>moduleIndex</em> = <code>0</code>&#160;</td>
+          <td class="paramname"><em>moduleNumber</em> = <code>0</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -300,6 +305,24 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>This method appends hit information to the corresponding module's <code><a class="el" href="struct_hit_stats.html" title="A structure to store information about detected photon hits.">HitStats</a></code> structure in the manager. If the specified module number is not yet in the manager, a new <code><a class="el" href="struct_hit_stats.html" title="A structure to store information about detected photon hits.">HitStats</a></code> structure is created for it.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">globalTime</td><td>Time of detection. </td></tr>
+    <tr><td class="paramname">localTime</td><td>Photon flight time. </td></tr>
+    <tr><td class="paramname">trackLength</td><td>Length of the photon's path before hitting. </td></tr>
+    <tr><td class="paramname">energy</td><td>Energy of the detected photon. </td></tr>
+    <tr><td class="paramname">PMTHitNumber</td><td>ID of the PMT that detected the photon. </td></tr>
+    <tr><td class="paramname">momentumDirection</td><td>Momentum direction of the photon at the time of detection. </td></tr>
+    <tr><td class="paramname">globalPos</td><td>Global position of the detected photon. </td></tr>
+    <tr><td class="paramname">localPos</td><td>Local position of the detected photon within the PMT. </td></tr>
+    <tr><td class="paramname">distance</td><td>Distance between generation and detection of photon. </td></tr>
+    <tr><td class="paramname">response</td><td>PMT's response to the detected photon, encapsulated as a <code>PMTPulse</code>. </td></tr>
+    <tr><td class="paramname">moduleNumber</td><td>ID of the module in which the photon was detected.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>Note</dt><dd>This method should be called every time a photon is detected in a PMT. </dd></dl>
 
 </div>
 </div>
@@ -364,7 +387,13 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="section return"><dt>Returns</dt><dd>A vector containing the counts of hits for each PMT. </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">moduleIndex</td><td>Index of the module for which to count hits. Default is 0. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A vector containing the hit count for each PMT in the specified module. </dd></dl>
 
 </div>
 </div>
@@ -378,17 +407,18 @@ Public Attributes</h2></td></tr>
           <td class="memname"><a class="el" href="struct_hit_stats.html">HitStats</a> OMSimHitManager::getHitsOfModule </td>
           <td>(</td>
           <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>moduleIndex</em> = <code>0</code></td><td>)</td>
+          <td class="paramname"><em>pModuleIndex</em> = <code>0</code></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">moduleIndex</td><td>Module index for which we are getting the information (default 0) </td></tr>
+    <tr><td class="paramname">moduleIndex</td><td>Index of the module for which to retrieve hit statistics. Default is 0. </td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>A <a class="el" href="struct_hit_stats.html" title="A structure to store information about detected photon hits.">HitStats</a> structure containing hit information for the specified module. </dd></dl>
 
 </div>
 </div>
@@ -414,6 +444,7 @@ Public Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd>A reference to the singleton instance. </dd></dl>
 
 </div>
 </div>
@@ -456,7 +487,7 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Empties the <a class="el" href="struct_hit_stats.html" title="A structure to store information of photon hits.">HitStats</a> struct. </p>
+<p>Empties the <a class="el" href="struct_hit_stats.html" title="A structure to store information about detected photon hits.">HitStats</a> struct. </p>
 
 </div>
 </div>
@@ -477,8 +508,8 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a56f146720ea46769606167d35a6e59f4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a56f146720ea46769606167d35a6e59f4">&#9670;&nbsp;</a></span>setNumberOfPMTs()</h2>
+<a id="aeabbd61eeb69b719cbb2adc85e6e0d6b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeabbd61eeb69b719cbb2adc85e6e0d6b">&#9670;&nbsp;</a></span>setNumberOfPMTs()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -487,11 +518,28 @@ Public Attributes</h2></td></tr>
           <td class="memname">void OMSimHitManager::setNumberOfPMTs </td>
           <td>(</td>
           <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>pNumberOfPMTs</em></td><td>)</td>
+          <td class="paramname"><em>pNumberOfPMTs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>pModuleIndex</em> = <code>0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pNumberOfPMTs</td><td>Nr of PMTs in OM </td></tr>
+    <tr><td class="paramname">pModuleIndex</td><td>Module index for which we are getting the information (default 0) </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -637,7 +685,7 @@ Public Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="class_o_m_sim_hit_manager.html">OMSimHitManager</a></li>
-    <li class="footer">Generated on Wed Aug 16 2023 15:50:31 for OMSim by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Wed Aug 16 2023 16:19:05 for OMSim by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

@@ -16,7 +16,6 @@ var files_dup =
     [ "OMSim_radioactive_decays.cc", "_o_m_sim__radioactive__decays_8cc.html", "_o_m_sim__radioactive__decays_8cc" ],
     [ "OMSimAnalysisManager.cc", "_o_m_sim_analysis_manager_8cc.html", null ],
     [ "OMSimAnalysisManager.hh", "_o_m_sim_analysis_manager_8hh.html", [
-      [ "HitStats", "struct_hit_stats.html", "struct_hit_stats" ],
       [ "DecayStats", "struct_decay_stats.html", "struct_decay_stats" ]
     ] ],
     [ "OMSimAngularScan.cc", "_o_m_sim_angular_scan_8cc.html", null ],
@@ -58,9 +57,7 @@ var files_dup =
       [ "OMSimG4Scintillation", "class_o_m_sim_g4_scintillation.html", "class_o_m_sim_g4_scintillation" ]
     ] ],
     [ "OMSimHitManager.cc", "_o_m_sim_hit_manager_8cc.html", null ],
-    [ "OMSimHitManager.hh", "_o_m_sim_hit_manager_8hh.html", [
-      [ "HitStats", "struct_hit_stats.html", "struct_hit_stats" ]
-    ] ],
+    [ "OMSimHitManager.hh", "_o_m_sim_hit_manager_8hh.html", null ],
     [ "OMSimInputData.cc", "_o_m_sim_input_data_8cc.html", null ],
     [ "OMSimInputData.hh", "_o_m_sim_input_data_8hh.html", [
       [ "ParameterTable", "class_parameter_table.html", "class_parameter_table" ],

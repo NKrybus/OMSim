@@ -119,6 +119,19 @@ var group__common =
       [ "getSurfaceType", "class_reflective_surface.html#ae3e32d0fa4d3fba60478f4aaa3d537c5", null ],
       [ "mOpticalSurface", "class_reflective_surface.html#a366da1b1126e219615c342b9bc9a4e16", null ]
     ] ],
+    [ "HitStats", "struct_hit_stats.html", [
+      [ "event_distance", "struct_hit_stats.html#a903b130ef88b086013f18f58e68f2453", null ],
+      [ "event_id", "struct_hit_stats.html#acea6fd160775f8d90b02cd27bce46ad1", null ],
+      [ "hit_time", "struct_hit_stats.html#aa3c2524709d265a618cd745696267015", null ],
+      [ "photon_direction", "struct_hit_stats.html#ab857894de5de61e9573a7208ad58110a", null ],
+      [ "photon_energy", "struct_hit_stats.html#a2712d5eefdbf05465ad8bbf69145f5dd", null ],
+      [ "photon_flight_time", "struct_hit_stats.html#a0689216e0ebb19e5d3b991a51d8bbc0e", null ],
+      [ "photon_global_position", "struct_hit_stats.html#ad4ae7ff7cbed6c71495440f0cc864774", null ],
+      [ "photon_local_position", "struct_hit_stats.html#a5824cc6e01e472512c7c6023ea9a1ecf", null ],
+      [ "photon_track_length", "struct_hit_stats.html#a8e7c3ad9de6e57319a854a65ddf5f837", null ],
+      [ "PMT_hit", "struct_hit_stats.html#a679333c39e1a836e21a1b5593721ecbd", null ],
+      [ "PMT_response", "struct_hit_stats.html#a3180acf212880ca1061e2e5cd7f0e81a", null ]
+    ] ],
     [ "OMSimHitManager", "class_o_m_sim_hit_manager.html", [
       [ "appendDecay", "class_o_m_sim_hit_manager.html#ad7a080177556c552c173ddd3d43eb0bc", null ],
       [ "appendHitInfo", "class_o_m_sim_hit_manager.html#a004f73261c6ef3e30ff27b0e13da0a1b", null ],
@@ -130,7 +143,7 @@ var group__common =
       [ "getInstance", "class_o_m_sim_hit_manager.html#a50c9ec0b924aa860533de79aa6fd3a47", null ],
       [ "reset", "class_o_m_sim_hit_manager.html#a00bb034e7751905f8a8229de3f8a39b1", null ],
       [ "reset", "class_o_m_sim_hit_manager.html#a00bb034e7751905f8a8229de3f8a39b1", null ],
-      [ "setNumberOfPMTs", "class_o_m_sim_hit_manager.html#a56f146720ea46769606167d35a6e59f4", null ],
+      [ "setNumberOfPMTs", "class_o_m_sim_hit_manager.html#aeabbd61eeb69b719cbb2adc85e6e0d6b", null ],
       [ "writeDecayData", "class_o_m_sim_hit_manager.html#a936ba58ff6fe0162d6686b01536f7f60", null ],
       [ "writeHeader", "class_o_m_sim_hit_manager.html#a1fffeb3d5a2fdd50e4b4dab28d71c150", null ],
       [ "writeMultiplicity", "class_o_m_sim_hit_manager.html#a7ad8b002e3c7ae16f0f0ce976a4da269", null ],

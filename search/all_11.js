@@ -15,7 +15,7 @@ var searchData=
   ['setmeshes_485',['SetMeshes',['../class_c_a_d_mesh_1_1_file_1_1_reader.html#ae80a5e692f18b66fc78b8d42c5e186a2',1,'CADMesh::File::Reader']]],
   ['setnavigator_486',['setNavigator',['../classm_d_o_m.html#a48e3f7091cebec1b23d96c33580ec3e5',1,'mDOM::setNavigator()'],['../classm_d_o_m_flasher.html#ae656273965d98ea994392fbec081c214',1,'mDOMFlasher::setNavigator()']]],
   ['setnucleuslimits_487',['SetNucleusLimits',['../class_g4_radioactive_decay.html#adfc1885bba313fea9c5974dc280c0115',1,'G4RadioactiveDecay']]],
-  ['setnumberofpmts_488',['setNumberOfPMTs',['../class_o_m_sim_hit_manager.html#a56f146720ea46769606167d35a6e59f4',1,'OMSimHitManager']]],
+  ['setnumberofpmts_488',['setNumberOfPMTs',['../class_o_m_sim_hit_manager.html#aeabbd61eeb69b719cbb2adc85e6e0d6b',1,'OMSimHitManager']]],
   ['setoffset_489',['SetOffset',['../class_c_a_d_mesh_1_1_c_a_d_mesh_template.html#a927ce172aa578d6cf232a788e8c30327',1,'CADMesh::CADMeshTemplate::SetOffset(G4double x, G4double y, G4double z)'],['../class_c_a_d_mesh_1_1_c_a_d_mesh_template.html#a6b0adece76056fe53ec1d7cdc3bd6895',1,'CADMesh::CADMeshTemplate::SetOffset(G4ThreeVector offset)']]],
   ['setparameter_490',['setParameter',['../class_o_m_sim_command_args_table.html#a763a528077ea65f06d7905c962a62587',1,'OMSimCommandArgsTable']]],
   ['setreverse_491',['SetReverse',['../class_c_a_d_mesh_1_1_tessellated_mesh.html#adefcfdc4914fae9494899de26b843bb6',1,'CADMesh::TessellatedMesh']]],

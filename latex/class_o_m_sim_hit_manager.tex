@@ -2,22 +2,27 @@
 \label{class_o_m_sim_hit_manager}\index{OMSimHitManager@{OMSimHitManager}}
 
 
-This class is responsible for managing info of detected photons and writing the results in the desired format.  
+Manages detected photon information.  
 
 
-\doxysubsection*{Public Member Functions}
+
+
+\doxysubsection{Detailed Description}
+This class is responsible for managing info of detected photons and writing the results in the desired format.
+
+This class is responsible for storing, managing, and providing access to the hit information related to detected photons across multiple optical modules. The manager can be accessed via a singleton pattern, ensuring a unified access point for photon hit data. \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
 void \mbox{\hyperlink{class_o_m_sim_hit_manager_a004f73261c6ef3e30ff27b0e13da0a1b}{append\+Hit\+Info}} (G4double global\+Time, G4double local\+Time, G4double track\+Length, G4double energy, G4int PMTHit\+Number, G4\+Three\+Vector momentum\+Direction, G4\+Three\+Vector global\+Pos, G4\+Three\+Vector local\+Pos, G4double distance, \mbox{\hyperlink{struct_o_m_sim_p_m_t_response_1_1_p_m_t_pulse}{OMSim\+PMTResponse\+::\+PMTPulse}} response, G4int module\+Index=0)
-\item 
+\begin{DoxyCompactList}\small\item\em Appends hit information for a detected photon to the corresponding module\textquotesingle{}s hit data. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_o_m_sim_hit_manager_a00bb034e7751905f8a8229de3f8a39b1}{reset}} ()
-\begin{DoxyCompactList}\small\item\em Empties the \mbox{\hyperlink{struct_hit_stats}{Hit\+Stats}} structs. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Resets hit information for all modules. \end{DoxyCompactList}\item 
 std\+::vector$<$ double $>$ \mbox{\hyperlink{class_o_m_sim_hit_manager_a94235892734a635dea9147aac72c313e}{count\+Hits}} (int module\+Index=0)
-\begin{DoxyCompactList}\small\item\em Counts the number of hits for each PMT in a module . \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{class_o_m_sim_hit_manager_a56f146720ea46769606167d35a6e59f4}{set\+Number\+Of\+PMTs}} (int p\+Number\+Of\+PMTs)
-\begin{DoxyCompactList}\small\item\em Empties the \mbox{\hyperlink{struct_hit_stats}{Hit\+Stats}} struct. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Counts hits for a specified module. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_o_m_sim_hit_manager_aeabbd61eeb69b719cbb2adc85e6e0d6b}{set\+Number\+Of\+PMTs}} (int p\+Number\+Of\+PMTs, int module\+Index=0)
+\begin{DoxyCompactList}\small\item\em Saves the number of PMTs in a module. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{struct_hit_stats}{Hit\+Stats}} \mbox{\hyperlink{class_o_m_sim_hit_manager_a50074acb44cd2a8bacffe00599add044}{get\+Hits\+Of\+Module}} (int module\+Index=0)
-\begin{DoxyCompactList}\small\item\em Returns struct of hit information for a module index (defaults to module 0, in case only a single module is simulated you don\textquotesingle{}t have to provide a nr) \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Retrieves the hit statistics for a specified module. \end{DoxyCompactList}\item 
 std\+::vector$<$ double $>$ \mbox{\hyperlink{class_o_m_sim_hit_manager_ac251b3e39c5f0ed79f3656a9ac7bc0de}{count\+Hits}} ()
 \begin{DoxyCompactList}\small\item\em Counts the number of hits for each PMT. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_o_m_sim_hit_manager_a00bb034e7751905f8a8229de3f8a39b1}{reset}} ()
@@ -38,7 +43,7 @@ void \mbox{\hyperlink{class_o_m_sim_hit_manager_a936ba58ff6fe0162d6686b01536f7f6
 \begin{DoxyCompactItemize}
 \item 
 static \mbox{\hyperlink{class_o_m_sim_hit_manager}{OMSim\+Hit\+Manager}} \& \mbox{\hyperlink{class_o_m_sim_hit_manager_a50c9ec0b924aa860533de79aa6fd3a47}{get\+Instance}} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Returns the singleton instance of the \mbox{\hyperlink{class_o_m_sim_hit_manager}{OMSim\+Hit\+Manager}}. \end{DoxyCompactList}\item 
 static \mbox{\hyperlink{class_o_m_sim_hit_manager}{OMSim\+Hit\+Manager}} \& \mbox{\hyperlink{class_o_m_sim_hit_manager_a50c9ec0b924aa860533de79aa6fd3a47}{get\+Instance}} ()
 \end{DoxyCompactItemize}
 \doxysubsection*{Public Attributes}
@@ -63,8 +68,38 @@ G4long \mbox{\hyperlink{class_o_m_sim_hit_manager_a05e4ac7fed203ff95293656565a31
 \index{OMSimHitManager@{OMSimHitManager}!appendHitInfo@{appendHitInfo}}
 \index{appendHitInfo@{appendHitInfo}!OMSimHitManager@{OMSimHitManager}}
 \doxysubsubsection{\texorpdfstring{appendHitInfo()}{appendHitInfo()}}
-{\footnotesize\ttfamily void OMSim\+Hit\+Manager\+::append\+Hit\+Info (\begin{DoxyParamCaption}\item[{G4double}]{global\+Time,  }\item[{G4double}]{local\+Time,  }\item[{G4double}]{track\+Length,  }\item[{G4double}]{energy,  }\item[{G4int}]{PMTHit\+Number,  }\item[{G4\+Three\+Vector}]{momentum\+Direction,  }\item[{G4\+Three\+Vector}]{global\+Pos,  }\item[{G4\+Three\+Vector}]{local\+Pos,  }\item[{G4double}]{distance,  }\item[{\mbox{\hyperlink{struct_o_m_sim_p_m_t_response_1_1_p_m_t_pulse}{OMSim\+PMTResponse\+::\+PMTPulse}}}]{response,  }\item[{G4int}]{module\+Index = {\ttfamily 0} }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void OMSim\+Hit\+Manager\+::append\+Hit\+Info (\begin{DoxyParamCaption}\item[{G4double}]{global\+Time,  }\item[{G4double}]{local\+Time,  }\item[{G4double}]{track\+Length,  }\item[{G4double}]{energy,  }\item[{G4int}]{PMTHit\+Number,  }\item[{G4\+Three\+Vector}]{momentum\+Direction,  }\item[{G4\+Three\+Vector}]{global\+Pos,  }\item[{G4\+Three\+Vector}]{local\+Pos,  }\item[{G4double}]{distance,  }\item[{\mbox{\hyperlink{struct_o_m_sim_p_m_t_response_1_1_p_m_t_pulse}{OMSim\+PMTResponse\+::\+PMTPulse}}}]{response,  }\item[{G4int}]{module\+Number = {\ttfamily 0} }\end{DoxyParamCaption})}
 
+This method appends hit information to the corresponding module\textquotesingle{}s {\ttfamily \mbox{\hyperlink{struct_hit_stats}{Hit\+Stats}}} structure in the manager. If the specified module number is not yet in the manager, a new {\ttfamily \mbox{\hyperlink{struct_hit_stats}{Hit\+Stats}}} structure is created for it.
+
+
+\begin{DoxyParams}{Parameters}
+{\em global\+Time} & Time of detection. \\
+\hline
+{\em local\+Time} & Photon flight time. \\
+\hline
+{\em track\+Length} & Length of the photon\textquotesingle{}s path before hitting. \\
+\hline
+{\em energy} & Energy of the detected photon. \\
+\hline
+{\em PMTHit\+Number} & ID of the PMT that detected the photon. \\
+\hline
+{\em momentum\+Direction} & Momentum direction of the photon at the time of detection. \\
+\hline
+{\em global\+Pos} & Global position of the detected photon. \\
+\hline
+{\em local\+Pos} & Local position of the detected photon within the PMT. \\
+\hline
+{\em distance} & Distance between generation and detection of photon. \\
+\hline
+{\em response} & PMT\textquotesingle{}s response to the detected photon, encapsulated as a {\ttfamily PMTPulse}. \\
+\hline
+{\em module\+Number} & ID of the module in which the photon was detected.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+This method should be called every time a photon is detected in a PMT. 
+\end{DoxyNote}
 \mbox{\Hypertarget{class_o_m_sim_hit_manager_acb822b38b0e2cc2c699148eed2bb281f}\label{class_o_m_sim_hit_manager_acb822b38b0e2cc2c699148eed2bb281f}} 
 \index{OMSimHitManager@{OMSimHitManager}!calculateMultiplicity@{calculateMultiplicity}}
 \index{calculateMultiplicity@{calculateMultiplicity}!OMSimHitManager@{OMSimHitManager}}
@@ -86,26 +121,37 @@ A vector containing the counts of hits for each PMT.
 \doxysubsubsection{\texorpdfstring{countHits()}{countHits()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
 {\footnotesize\ttfamily std\+::vector$<$ double $>$ OMSim\+Hit\+Manager\+::count\+Hits (\begin{DoxyParamCaption}\item[{int}]{module\+Number = {\ttfamily 0} }\end{DoxyParamCaption})}
 
+
+\begin{DoxyParams}{Parameters}
+{\em module\+Index} & Index of the module for which to count hits. Default is 0. \\
+\hline
+\end{DoxyParams}
 \begin{DoxyReturn}{Returns}
-A vector containing the counts of hits for each PMT. 
+A vector containing the hit count for each PMT in the specified module. 
 \end{DoxyReturn}
 \mbox{\Hypertarget{class_o_m_sim_hit_manager_a50074acb44cd2a8bacffe00599add044}\label{class_o_m_sim_hit_manager_a50074acb44cd2a8bacffe00599add044}} 
 \index{OMSimHitManager@{OMSimHitManager}!getHitsOfModule@{getHitsOfModule}}
 \index{getHitsOfModule@{getHitsOfModule}!OMSimHitManager@{OMSimHitManager}}
 \doxysubsubsection{\texorpdfstring{getHitsOfModule()}{getHitsOfModule()}}
-{\footnotesize\ttfamily \mbox{\hyperlink{struct_hit_stats}{Hit\+Stats}} OMSim\+Hit\+Manager\+::get\+Hits\+Of\+Module (\begin{DoxyParamCaption}\item[{int}]{module\+Index = {\ttfamily 0} }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_hit_stats}{Hit\+Stats}} OMSim\+Hit\+Manager\+::get\+Hits\+Of\+Module (\begin{DoxyParamCaption}\item[{int}]{p\+Module\+Index = {\ttfamily 0} }\end{DoxyParamCaption})}
 
 
 \begin{DoxyParams}{Parameters}
-{\em module\+Index} & Module index for which we are getting the information (default 0) \\
+{\em module\+Index} & Index of the module for which to retrieve hit statistics. Default is 0. \\
 \hline
 \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A \mbox{\hyperlink{struct_hit_stats}{Hit\+Stats}} structure containing hit information for the specified module. 
+\end{DoxyReturn}
 \mbox{\Hypertarget{class_o_m_sim_hit_manager_a50c9ec0b924aa860533de79aa6fd3a47}\label{class_o_m_sim_hit_manager_a50c9ec0b924aa860533de79aa6fd3a47}} 
 \index{OMSimHitManager@{OMSimHitManager}!getInstance@{getInstance}}
 \index{getInstance@{getInstance}!OMSimHitManager@{OMSimHitManager}}
 \doxysubsubsection{\texorpdfstring{getInstance()}{getInstance()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
 {\footnotesize\ttfamily static \mbox{\hyperlink{class_o_m_sim_hit_manager}{OMSim\+Hit\+Manager}}\& OMSim\+Hit\+Manager\+::get\+Instance (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
 
+\begin{DoxyReturn}{Returns}
+A reference to the singleton instance. 
+\end{DoxyReturn}
 \mbox{\Hypertarget{class_o_m_sim_hit_manager_a50c9ec0b924aa860533de79aa6fd3a47}\label{class_o_m_sim_hit_manager_a50c9ec0b924aa860533de79aa6fd3a47}} 
 \index{OMSimHitManager@{OMSimHitManager}!getInstance@{getInstance}}
 \index{getInstance@{getInstance}!OMSimHitManager@{OMSimHitManager}}
@@ -124,12 +170,19 @@ Empties the \mbox{\hyperlink{struct_hit_stats}{Hit\+Stats}} struct. \mbox{\Hyper
 \doxysubsubsection{\texorpdfstring{reset()}{reset()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
 {\footnotesize\ttfamily void OMSim\+Hit\+Manager\+::reset (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
-\mbox{\Hypertarget{class_o_m_sim_hit_manager_a56f146720ea46769606167d35a6e59f4}\label{class_o_m_sim_hit_manager_a56f146720ea46769606167d35a6e59f4}} 
+\mbox{\Hypertarget{class_o_m_sim_hit_manager_aeabbd61eeb69b719cbb2adc85e6e0d6b}\label{class_o_m_sim_hit_manager_aeabbd61eeb69b719cbb2adc85e6e0d6b}} 
 \index{OMSimHitManager@{OMSimHitManager}!setNumberOfPMTs@{setNumberOfPMTs}}
 \index{setNumberOfPMTs@{setNumberOfPMTs}!OMSimHitManager@{OMSimHitManager}}
 \doxysubsubsection{\texorpdfstring{setNumberOfPMTs()}{setNumberOfPMTs()}}
-{\footnotesize\ttfamily void OMSim\+Hit\+Manager\+::set\+Number\+Of\+PMTs (\begin{DoxyParamCaption}\item[{int}]{p\+Number\+Of\+PMTs }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void OMSim\+Hit\+Manager\+::set\+Number\+Of\+PMTs (\begin{DoxyParamCaption}\item[{int}]{p\+Number\+Of\+PMTs,  }\item[{int}]{p\+Module\+Index = {\ttfamily 0} }\end{DoxyParamCaption})}
 
+
+\begin{DoxyParams}{Parameters}
+{\em p\+Number\+Of\+PMTs} & Nr of PMTs in OM \\
+\hline
+{\em p\+Module\+Index} & Module index for which we are getting the information (default 0) \\
+\hline
+\end{DoxyParams}
 \mbox{\Hypertarget{class_o_m_sim_hit_manager_a936ba58ff6fe0162d6686b01536f7f60}\label{class_o_m_sim_hit_manager_a936ba58ff6fe0162d6686b01536f7f60}} 
 \index{OMSimHitManager@{OMSimHitManager}!writeDecayData@{writeDecayData}}
 \index{writeDecayData@{writeDecayData}!OMSimHitManager@{OMSimHitManager}}

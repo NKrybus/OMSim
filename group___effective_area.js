@@ -36,7 +36,7 @@ var group___effective_area =
       [ "getInstance", "class_o_m_sim_hit_manager.html#a50c9ec0b924aa860533de79aa6fd3a47", null ],
       [ "reset", "class_o_m_sim_hit_manager.html#a00bb034e7751905f8a8229de3f8a39b1", null ],
       [ "reset", "class_o_m_sim_hit_manager.html#a00bb034e7751905f8a8229de3f8a39b1", null ],
-      [ "setNumberOfPMTs", "class_o_m_sim_hit_manager.html#a56f146720ea46769606167d35a6e59f4", null ],
+      [ "setNumberOfPMTs", "class_o_m_sim_hit_manager.html#aeabbd61eeb69b719cbb2adc85e6e0d6b", null ],
       [ "writeDecayData", "class_o_m_sim_hit_manager.html#a936ba58ff6fe0162d6686b01536f7f60", null ],
       [ "writeHeader", "class_o_m_sim_hit_manager.html#a1fffeb3d5a2fdd50e4b4dab28d71c150", null ],
       [ "writeMultiplicity", "class_o_m_sim_hit_manager.html#a7ad8b002e3c7ae16f0f0ce976a4da269", null ],
