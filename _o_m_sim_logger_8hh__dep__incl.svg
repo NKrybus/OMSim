@@ -51,7 +51,7 @@
 <!-- Node21 -->
 <g id="node21" class="node">
 <title>Node21</title>
-<g id="a_node21"><a xlink:href="abc_detector_component_8cc.html" target="_top" xlink:title="Contains the implementation of the abcDetectorComponent class.">
+<g id="a_node21"><a xlink:href="abc_detector_component_8cc.html" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="black" points="950.5,-168.5 950.5,-187.5 1096.5,-187.5 1096.5,-168.5 950.5,-168.5"/>
 <text text-anchor="middle" x="1023.5" y="-175.5" font-family="Helvetica,sans-Serif" font-size="10.00">abcDetectorComponent.cc</text>
 </a>
@@ -66,7 +66,7 @@
 <!-- Node22 -->
 <g id="node22" class="node">
 <title>Node22</title>
-<g id="a_node22"><a xlink:href="_o_m_sim_data_file_types_8cc.html" target="_top" xlink:title="Collection of classes and methods to handle material creation from user data in json files.">
+<g id="a_node22"><a xlink:href="_o_m_sim_data_file_types_8cc.html" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="black" points="1114.5,-168.5 1114.5,-187.5 1248.5,-187.5 1248.5,-168.5 1114.5,-168.5"/>
 <text text-anchor="middle" x="1181.5" y="-175.5" font-family="Helvetica,sans-Serif" font-size="10.00">OMSimDataFileTypes.cc</text>
 </a>
@@ -81,7 +81,7 @@
 <!-- Node23 -->
 <g id="node23" class="node">
 <title>Node23</title>
-<g id="a_node23"><a xlink:href="_o_m_sim_p_m_t_response_8cc.html" target="_top" xlink:title="PMT response simulator.">
+<g id="a_node23"><a xlink:href="_o_m_sim_p_m_t_response_8cc.html" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="black" points="1266.5,-168.5 1266.5,-187.5 1400.5,-187.5 1400.5,-168.5 1266.5,-168.5"/>
 <text text-anchor="middle" x="1333.5" y="-175.5" font-family="Helvetica,sans-Serif" font-size="10.00">OMSimPMTResponse.cc</text>
 </a>
@@ -186,7 +186,7 @@
 <!-- Node12 -->
 <g id="node12" class="node">
 <title>Node12</title>
-<g id="a_node12"><a xlink:href="_o_m_sim_input_data_8cc.html" target="_top" xlink:title="Input data from external files are read and saved to memory.">
+<g id="a_node12"><a xlink:href="_o_m_sim_input_data_8cc.html" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="black" points="566,-112.5 566,-131.5 679,-131.5 679,-112.5 566,-112.5"/>
 <text text-anchor="middle" x="622.5" y="-119.5" font-family="Helvetica,sans-Serif" font-size="10.00">OMSimInputData.cc</text>
 </a>
@@ -201,7 +201,7 @@
 <!-- Node13 -->
 <g id="node13" class="node">
 <title>Node13</title>
-<g id="a_node13"><a xlink:href="_o_m_sim_p_m_t_construction_8cc.html" target="_top" xlink:title="Construction of the PMTs.">
+<g id="a_node13"><a xlink:href="_o_m_sim_p_m_t_construction_8cc.html" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="black" points="697,-112.5 697,-131.5 844,-131.5 844,-112.5 697,-112.5"/>
 <text text-anchor="middle" x="770.5" y="-119.5" font-family="Helvetica,sans-Serif" font-size="10.00">OMSimPMTConstruction.cc</text>
 </a>

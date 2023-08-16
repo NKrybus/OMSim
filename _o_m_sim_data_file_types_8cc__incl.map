@@ -1,7 +1,7 @@
 <map id="OMSimDataFileTypes.cc" name="OMSimDataFileTypes.cc">
-<area shape="rect" id="node1" title="Collection of classes and methods to handle material creation from user data in json files." alt="" coords="605,5,783,32"/>
-<area shape="rect" id="node2" href="$_o_m_sim_data_file_types_8hh.html" title=" " alt="" coords="331,80,511,107"/>
-<area shape="rect" id="node7" href="$_o_m_sim_input_data_8hh.html" title=" " alt="" coords="535,80,688,107"/>
+<area shape="rect" id="node1" title=" " alt="" coords="605,5,783,32"/>
+<area shape="rect" id="node2" href="$_o_m_sim_data_file_types_8hh.html" title="Collection of classes and methods to handle material creation from user data in json files." alt="" coords="331,80,511,107"/>
+<area shape="rect" id="node7" href="$_o_m_sim_input_data_8hh.html" title="Input data from external files are read and saved to memory." alt="" coords="535,80,688,107"/>
 <area shape="rect" id="node8" href="$_o_m_sim_logger_8hh.html" title=" " alt="" coords="712,80,844,107"/>
 <area shape="rect" id="node11" title=" " alt="" coords="869,80,943,107"/>
 <area shape="rect" id="node3" title=" " alt="" coords="5,162,148,189"/>

@@ -36,7 +36,7 @@
 <!-- Node29 -->
 <g id="node29" class="node">
 <title>Node29</title>
-<g id="a_node29"><a xlink:href="_o_m_sim_angular_scan_8hh.html" target="_top" xlink:title=" ">
+<g id="a_node29"><a xlink:href="_o_m_sim_angular_scan_8hh.html" target="_top" xlink:title="Defines the AngularScan class for configuring and running GPS beam with angular scans.">
 <polygon fill="white" stroke="black" points="1838,-224.5 1838,-243.5 1966,-243.5 1966,-224.5 1838,-224.5"/>
 <text text-anchor="middle" x="1902" y="-231.5" font-family="Helvetica,sans-Serif" font-size="10.00">OMSimAngularScan.hh</text>
 </a>
@@ -477,7 +477,7 @@
 <!-- Node32 -->
 <g id="node32" class="node">
 <title>Node32</title>
-<g id="a_node32"><a xlink:href="_o_m_sim_p_m_t_response_8hh.html" target="_top" xlink:title=" ">
+<g id="a_node32"><a xlink:href="_o_m_sim_p_m_t_response_8hh.html" target="_top" xlink:title="PMT response simulator.">
 <polygon fill="white" stroke="black" points="2170.5,-112.5 2170.5,-131.5 2305.5,-131.5 2305.5,-112.5 2170.5,-112.5"/>
 <text text-anchor="middle" x="2238" y="-119.5" font-family="Helvetica,sans-Serif" font-size="10.00">OMSimPMTResponse.hh</text>
 </a>
@@ -492,7 +492,7 @@
 <!-- Node37 -->
 <g id="node37" class="node">
 <title>Node37</title>
-<g id="a_node37"><a xlink:href="_o_m_sim_hit_manager_8hh.html" target="_top" xlink:title=" ">
+<g id="a_node37"><a xlink:href="_o_m_sim_hit_manager_8hh.html" target="_top" xlink:title="Defines structures and classes related to optical module photon hit management.">
 <polygon fill="white" stroke="black" points="2082.5,-168.5 2082.5,-187.5 2205.5,-187.5 2205.5,-168.5 2082.5,-168.5"/>
 <text text-anchor="middle" x="2144" y="-175.5" font-family="Helvetica,sans-Serif" font-size="10.00">OMSimHitManager.hh</text>
 </a>

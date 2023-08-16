@@ -228,7 +228,7 @@ Static Public Member Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">G4int&#160;</td>
-          <td class="paramname"><em>moduleNumber</em> = <code>0</code>&#160;</td>
+          <td class="paramname"><em>moduleIndex</em> = <code>0</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -250,11 +250,10 @@ Static Public Member Functions</h2></td></tr>
     <tr><td class="paramname">localPos</td><td>Local position of the detected photon within the PMT. </td></tr>
     <tr><td class="paramname">distance</td><td>Distance between generation and detection of photon. </td></tr>
     <tr><td class="paramname">response</td><td>PMT's response to the detected photon, encapsulated as a <code>PMTPulse</code>. </td></tr>
-    <tr><td class="paramname">moduleNumber</td><td>ID of the module in which the photon was detected.</td></tr>
+    <tr><td class="paramname">moduleNumber</td><td>ID of the module in which the photon was detected. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section note"><dt>Note</dt><dd>This method should be called every time a photon is detected in a PMT. </dd></dl>
 
 </div>
 </div>
@@ -310,7 +309,7 @@ Static Public Member Functions</h2></td></tr>
           <td class="memname">std::vector&lt; double &gt; OMSimHitManager::countHits </td>
           <td>(</td>
           <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>moduleNumber</em> = <code>0</code></td><td>)</td>
+          <td class="paramname"><em>moduleIndex</em> = <code>0</code></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -335,7 +334,7 @@ Static Public Member Functions</h2></td></tr>
           <td class="memname"><a class="el" href="struct_hit_stats.html">HitStats</a> OMSimHitManager::getHitsOfModule </td>
           <td>(</td>
           <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>pModuleIndex</em> = <code>0</code></td><td>)</td>
+          <td class="paramname"><em>moduleIndex</em> = <code>0</code></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -409,7 +408,7 @@ Static Public Member Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>pModuleIndex</em> = <code>0</code>&#160;</td>
+          <td class="paramname"><em>moduleIndex</em> = <code>0</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -462,7 +461,7 @@ Static Public Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="class_o_m_sim_hit_manager.html">OMSimHitManager</a></li>
-    <li class="footer">Generated on Wed Aug 16 2023 16:48:14 for OMSim by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Wed Aug 16 2023 17:37:42 for OMSim by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

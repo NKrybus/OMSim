@@ -1,11 +1,11 @@
 <map id="abcDetectorComponent.hh" name="abcDetectorComponent.hh">
-<area shape="rect" id="node1" title=" " alt="" coords="517,5,713,32"/>
-<area shape="rect" id="node2" href="$_o_m_sim_input_data_8hh.html" title=" " alt="" coords="199,80,352,107"/>
-<area shape="rect" id="node6" title=" " alt="" coords="376,80,519,107"/>
-<area shape="rect" id="node7" title=" " alt="" coords="543,80,687,107"/>
-<area shape="rect" id="node8" title=" " alt="" coords="712,80,879,107"/>
-<area shape="rect" id="node9" title=" " alt="" coords="903,80,1050,107"/>
-<area shape="rect" id="node3" title=" " alt="" coords="5,155,156,196"/>
-<area shape="rect" id="node4" title=" " alt="" coords="180,162,371,189"/>
-<area shape="rect" id="node5" title=" " alt="" coords="395,162,553,189"/>
+<area shape="rect" id="node1" title="Provides helper base class abcDetectorComponent for constructing and managing detector components in ..." alt="" coords="541,5,737,32"/>
+<area shape="rect" id="node2" href="$_o_m_sim_input_data_8hh.html" title="Input data from external files are read and saved to memory." alt="" coords="223,80,376,107"/>
+<area shape="rect" id="node6" title=" " alt="" coords="400,80,543,107"/>
+<area shape="rect" id="node7" title=" " alt="" coords="567,80,711,107"/>
+<area shape="rect" id="node8" title=" " alt="" coords="736,80,903,107"/>
+<area shape="rect" id="node9" title=" " alt="" coords="927,80,1074,107"/>
+<area shape="rect" id="node3" title=" " alt="" coords="5,162,196,189"/>
+<area shape="rect" id="node4" title=" " alt="" coords="220,162,379,189"/>
+<area shape="rect" id="node5" title=" " alt="" coords="403,155,553,196"/>
 </map>

@@ -37,7 +37,7 @@ static \mbox{\hyperlink{class_o_m_sim_hit_manager}{OMSim\+Hit\+Manager}} \& \mbo
 \index{OMSimHitManager@{OMSimHitManager}!appendHitInfo@{appendHitInfo}}
 \index{appendHitInfo@{appendHitInfo}!OMSimHitManager@{OMSimHitManager}}
 \doxysubsubsection{\texorpdfstring{appendHitInfo()}{appendHitInfo()}}
-{\footnotesize\ttfamily void OMSim\+Hit\+Manager\+::append\+Hit\+Info (\begin{DoxyParamCaption}\item[{G4double}]{global\+Time,  }\item[{G4double}]{local\+Time,  }\item[{G4double}]{track\+Length,  }\item[{G4double}]{energy,  }\item[{G4int}]{PMTHit\+Number,  }\item[{G4\+Three\+Vector}]{momentum\+Direction,  }\item[{G4\+Three\+Vector}]{global\+Pos,  }\item[{G4\+Three\+Vector}]{local\+Pos,  }\item[{G4double}]{distance,  }\item[{\mbox{\hyperlink{struct_o_m_sim_p_m_t_response_1_1_p_m_t_pulse}{OMSim\+PMTResponse\+::\+PMTPulse}}}]{response,  }\item[{G4int}]{module\+Number = {\ttfamily 0} }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void OMSim\+Hit\+Manager\+::append\+Hit\+Info (\begin{DoxyParamCaption}\item[{G4double}]{global\+Time,  }\item[{G4double}]{local\+Time,  }\item[{G4double}]{track\+Length,  }\item[{G4double}]{energy,  }\item[{G4int}]{PMTHit\+Number,  }\item[{G4\+Three\+Vector}]{momentum\+Direction,  }\item[{G4\+Three\+Vector}]{global\+Pos,  }\item[{G4\+Three\+Vector}]{local\+Pos,  }\item[{G4double}]{distance,  }\item[{\mbox{\hyperlink{struct_o_m_sim_p_m_t_response_1_1_p_m_t_pulse}{OMSim\+PMTResponse\+::\+PMTPulse}}}]{response,  }\item[{G4int}]{module\+Index = {\ttfamily 0} }\end{DoxyParamCaption})}
 
 This method appends hit information to the corresponding module\textquotesingle{}s {\ttfamily \mbox{\hyperlink{struct_hit_stats}{Hit\+Stats}}} structure in the manager. If the specified module number is not yet in the manager, a new {\ttfamily \mbox{\hyperlink{struct_hit_stats}{Hit\+Stats}}} structure is created for it.
 
@@ -63,12 +63,9 @@ This method appends hit information to the corresponding module\textquotesingle{
 \hline
 {\em response} & PMT\textquotesingle{}s response to the detected photon, encapsulated as a {\ttfamily PMTPulse}. \\
 \hline
-{\em module\+Number} & ID of the module in which the photon was detected.\\
+{\em module\+Number} & ID of the module in which the photon was detected. \\
 \hline
 \end{DoxyParams}
-\begin{DoxyNote}{Note}
-This method should be called every time a photon is detected in a PMT. 
-\end{DoxyNote}
 \mbox{\Hypertarget{class_o_m_sim_hit_manager_ae6b66371cdfbd30ba932e30fd769cbc4}\label{class_o_m_sim_hit_manager_ae6b66371cdfbd30ba932e30fd769cbc4}} 
 \index{OMSimHitManager@{OMSimHitManager}!calculateMultiplicity@{calculateMultiplicity}}
 \index{calculateMultiplicity@{calculateMultiplicity}!OMSimHitManager@{OMSimHitManager}}
@@ -98,7 +95,7 @@ A vector containing the multiplicity data.
 \index{OMSimHitManager@{OMSimHitManager}!countHits@{countHits}}
 \index{countHits@{countHits}!OMSimHitManager@{OMSimHitManager}}
 \doxysubsubsection{\texorpdfstring{countHits()}{countHits()}}
-{\footnotesize\ttfamily std\+::vector$<$ double $>$ OMSim\+Hit\+Manager\+::count\+Hits (\begin{DoxyParamCaption}\item[{int}]{module\+Number = {\ttfamily 0} }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily std\+::vector$<$ double $>$ OMSim\+Hit\+Manager\+::count\+Hits (\begin{DoxyParamCaption}\item[{int}]{module\+Index = {\ttfamily 0} }\end{DoxyParamCaption})}
 
 
 \begin{DoxyParams}{Parameters}
@@ -112,7 +109,7 @@ A vector containing the hit count for each PMT in the specified module.
 \index{OMSimHitManager@{OMSimHitManager}!getHitsOfModule@{getHitsOfModule}}
 \index{getHitsOfModule@{getHitsOfModule}!OMSimHitManager@{OMSimHitManager}}
 \doxysubsubsection{\texorpdfstring{getHitsOfModule()}{getHitsOfModule()}}
-{\footnotesize\ttfamily \mbox{\hyperlink{struct_hit_stats}{Hit\+Stats}} OMSim\+Hit\+Manager\+::get\+Hits\+Of\+Module (\begin{DoxyParamCaption}\item[{int}]{p\+Module\+Index = {\ttfamily 0} }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_hit_stats}{Hit\+Stats}} OMSim\+Hit\+Manager\+::get\+Hits\+Of\+Module (\begin{DoxyParamCaption}\item[{int}]{module\+Index = {\ttfamily 0} }\end{DoxyParamCaption})}
 
 
 \begin{DoxyParams}{Parameters}
@@ -141,7 +138,7 @@ A reference to the singleton instance.
 \index{OMSimHitManager@{OMSimHitManager}!setNumberOfPMTs@{setNumberOfPMTs}}
 \index{setNumberOfPMTs@{setNumberOfPMTs}!OMSimHitManager@{OMSimHitManager}}
 \doxysubsubsection{\texorpdfstring{setNumberOfPMTs()}{setNumberOfPMTs()}}
-{\footnotesize\ttfamily void OMSim\+Hit\+Manager\+::set\+Number\+Of\+PMTs (\begin{DoxyParamCaption}\item[{int}]{p\+Number\+Of\+PMTs,  }\item[{int}]{p\+Module\+Index = {\ttfamily 0} }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void OMSim\+Hit\+Manager\+::set\+Number\+Of\+PMTs (\begin{DoxyParamCaption}\item[{int}]{p\+Number\+Of\+PMTs,  }\item[{int}]{module\+Index = {\ttfamily 0} }\end{DoxyParamCaption})}
 
 
 \begin{DoxyParams}{Parameters}

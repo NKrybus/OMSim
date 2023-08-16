@@ -12,7 +12,7 @@
 <!-- Node1 -->
 <g id="node1" class="node">
 <title>Node1</title>
-<g id="a_node1"><a xlink:title="Collection of classes and methods to handle material creation from user data in json files.">
+<g id="a_node1"><a xlink:title=" ">
 <polygon fill="#bfbfbf" stroke="black" points="449.5,-123.5 449.5,-142.5 583.5,-142.5 583.5,-123.5 449.5,-123.5"/>
 <text text-anchor="middle" x="516.5" y="-130.5" font-family="Helvetica,sans-Serif" font-size="10.00">OMSimDataFileTypes.cc</text>
 </a>
@@ -21,7 +21,7 @@
 <!-- Node2 -->
 <g id="node2" class="node">
 <title>Node2</title>
-<g id="a_node2"><a xlink:href="_o_m_sim_data_file_types_8hh.html" target="_top" xlink:title=" ">
+<g id="a_node2"><a xlink:href="_o_m_sim_data_file_types_8hh.html" target="_top" xlink:title="Collection of classes and methods to handle material creation from user data in json files.">
 <polygon fill="white" stroke="black" points="244,-67.5 244,-86.5 379,-86.5 379,-67.5 244,-67.5"/>
 <text text-anchor="middle" x="311.5" y="-74.5" font-family="Helvetica,sans-Serif" font-size="10.00">OMSimDataFileTypes.hh</text>
 </a>
@@ -36,7 +36,7 @@
 <!-- Node7 -->
 <g id="node7" class="node">
 <title>Node7</title>
-<g id="a_node7"><a xlink:href="_o_m_sim_input_data_8hh.html" target="_top" xlink:title=" ">
+<g id="a_node7"><a xlink:href="_o_m_sim_input_data_8hh.html" target="_top" xlink:title="Input data from external files are read and saved to memory.">
 <polygon fill="white" stroke="black" points="397,-67.5 397,-86.5 512,-86.5 512,-67.5 397,-67.5"/>
 <text text-anchor="middle" x="454.5" y="-74.5" font-family="Helvetica,sans-Serif" font-size="10.00">OMSimInputData.hh</text>
 </a>
@@ -140,19 +140,19 @@
 <polygon fill="midnightblue" stroke="midnightblue" points="431.65,-37.16 439.91,-30.52 429.31,-30.56 431.65,-37.16"/>
 </g>
 <!-- Node7&#45;&gt;Node4 -->
-<g id="edge8" class="edge">
+<g id="edge7" class="edge">
 <title>Node7&#45;&gt;Node4</title>
 <path fill="none" stroke="midnightblue" d="M417.53,-67.48C371.65,-56.89 293.35,-38.84 243.32,-27.3"/>
 <polygon fill="midnightblue" stroke="midnightblue" points="243.93,-23.85 233.4,-25.01 242.35,-30.67 243.93,-23.85"/>
 </g>
 <!-- Node7&#45;&gt;Node5 -->
-<g id="edge9" class="edge">
+<g id="edge8" class="edge">
 <title>Node7&#45;&gt;Node5</title>
 <path fill="none" stroke="midnightblue" d="M438.88,-67.48C420.91,-57.67 391.18,-41.43 370.09,-29.92"/>
 <polygon fill="midnightblue" stroke="midnightblue" points="371.54,-26.73 361.09,-25.01 368.19,-32.87 371.54,-26.73"/>
 </g>
 <!-- Node7&#45;&gt;Node6 -->
-<g id="edge7" class="edge">
+<g id="edge9" class="edge">
 <title>Node7&#45;&gt;Node6</title>
 <path fill="none" stroke="midnightblue" d="M458.08,-67.48C461.12,-60.25 465.62,-49.53 469.72,-39.78"/>
 <polygon fill="midnightblue" stroke="midnightblue" points="472.96,-41.1 473.61,-30.52 466.51,-38.39 472.96,-41.1"/>

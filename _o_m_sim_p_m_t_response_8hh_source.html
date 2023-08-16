@@ -117,83 +117,82 @@ $(document).ready(function(){initNavTree('_o_m_sim_p_m_t_response_8hh_source.htm
 <div class="title">OMSimPMTResponse.hh</div>  </div>
 </div><!--header-->
 <div class="contents">
-<a href="_o_m_sim_p_m_t_response_8hh.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef OMSimPMTResponse_h</span></div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define OMSimPMTResponse_h 1</span></div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;G4SystemOfUnits.hh&gt;</span></div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;G4Types.hh&gt;</span></div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;map&gt;</span></div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;TGraph.h&gt;</span></div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &lt;TH2D.h&gt;</span></div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160; </div>
-<div class="line"><a name="l00010"></a><span class="lineno"><a class="line" href="class_o_m_sim_p_m_t_response.html">   10</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_o_m_sim_p_m_t_response.html">OMSimPMTResponse</a></div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;{</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keyword">public</span>:</div>
+<a href="_o_m_sim_p_m_t_response_8hh.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#ifndef OMSimPMTResponse_h</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#define OMSimPMTResponse_h 1</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &lt;G4SystemOfUnits.hh&gt;</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &lt;G4Types.hh&gt;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &lt;map&gt;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &lt;TGraph.h&gt;</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &lt;TH2D.h&gt;</span></div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160; </div>
-<div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="class_o_m_sim_p_m_t_response.html#a6dd27707e5154fc35e238ead2dd726a0">   14</a></span>&#160;    <span class="keyword">static</span> <a class="code" href="class_o_m_sim_p_m_t_response.html">OMSimPMTResponse</a>&amp; <a class="code" href="class_o_m_sim_p_m_t_response.html#a6dd27707e5154fc35e238ead2dd726a0">getInstance</a>() { <span class="comment">// Meyers singleton</span></div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;        <span class="keyword">static</span> <a class="code" href="class_o_m_sim_p_m_t_response.html">OMSimPMTResponse</a> instance;</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;        <span class="keywordflow">return</span> instance;</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    }</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160; </div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
-<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="struct_o_m_sim_p_m_t_response_1_1_p_m_t_pulse.html">   20</a></span>&#160;    <span class="keyword">struct </span><a class="code" href="struct_o_m_sim_p_m_t_response_1_1_p_m_t_pulse.html">PMTPulse</a>{</div>
-<div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="struct_o_m_sim_p_m_t_response_1_1_p_m_t_pulse.html#a36649e95b6f7a081fbd15e799ea12584">   21</a></span>&#160;    G4double <a class="code" href="struct_o_m_sim_p_m_t_response_1_1_p_m_t_pulse.html#a36649e95b6f7a081fbd15e799ea12584">PE</a>;</div>
-<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="struct_o_m_sim_p_m_t_response_1_1_p_m_t_pulse.html#a8bfd7ea33e3080b0cfa7c730e5dc27bc">   22</a></span>&#160;    G4double <a class="code" href="struct_o_m_sim_p_m_t_response_1_1_p_m_t_pulse.html#a8bfd7ea33e3080b0cfa7c730e5dc27bc">TransitTime</a>;</div>
-<div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="struct_o_m_sim_p_m_t_response_1_1_p_m_t_pulse.html#acfb81ada2d6f386558e7c478b43dec52">   23</a></span>&#160;    G4double <a class="code" href="struct_o_m_sim_p_m_t_response_1_1_p_m_t_pulse.html#acfb81ada2d6f386558e7c478b43dec52">DetectionProbability</a>;</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;  };</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <a class="code" href="struct_o_m_sim_p_m_t_response_1_1_p_m_t_pulse.html">PMTPulse</a> <a class="code" href="class_o_m_sim_p_m_t_response.html#a55aabd8f8fd9be58eca3ba0753974d08">processPhotocathodeHit</a>(G4double pX, G4double pY, G4double pWavelength);</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    std::vector&lt;G4double&gt; mScannedWavelengths{460*nm, 480*nm, 500*nm, 520*nm, 540*nm, 560*nm,  580*nm, 600*nm, 620*nm, 640*nm};</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="keywordtype">double</span> mX;</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="keywordtype">double</span> mY;</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    G4double mWavelength;</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    TGraph* mRelativeDetectionEfficiencyInterp;</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    std::map&lt;G4double, TH2D*&gt; mGainG2Dmap;</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    std::map&lt;G4double, TH2D*&gt; mGainResolutionG2Dmap;</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    std::map&lt;G4double, TH2D*&gt; mTransitTimeG2Dmap;</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    std::map&lt;G4double, TH2D*&gt; mTransitTimeSpreadG2Dmap;</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    TH2D* createHistogramFromData(<span class="keyword">const</span> std::string&amp; pFilePath, <span class="keyword">const</span> <span class="keywordtype">char</span>* pTH2DName);</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    G4double getCharge(G4double pWavelengthKey);</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    G4double getCharge(G4double pWavelengthKey1, G4double pWavelengthKey2);</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    G4double getTransitTime(G4double pWavelengthKey);</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    G4double getTransitTime(G4double pWavelengthKey1, G4double pWavelengthKey2);</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    PMTPulse getPulseFromInterpolation(G4double pWavelengthKey1, G4double pWavelengthKey2);</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    PMTPulse getPulseFromKey(G4double pWavelengthKey);</div>
+<div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="class_o_m_sim_p_m_t_response.html">   14</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_o_m_sim_p_m_t_response.html">OMSimPMTResponse</a></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;{</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="class_o_m_sim_p_m_t_response.html#a6dd27707e5154fc35e238ead2dd726a0">   17</a></span>&#160;    <span class="keyword">static</span> <a class="code" href="class_o_m_sim_p_m_t_response.html">OMSimPMTResponse</a> &amp;<a class="code" href="class_o_m_sim_p_m_t_response.html#a6dd27707e5154fc35e238ead2dd726a0">getInstance</a>()</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    { <span class="comment">// Meyers singleton</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;        <span class="keyword">static</span> <a class="code" href="class_o_m_sim_p_m_t_response.html">OMSimPMTResponse</a> instance;</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;        <span class="keywordflow">return</span> instance;</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    }</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
+<div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="struct_o_m_sim_p_m_t_response_1_1_p_m_t_pulse.html">   23</a></span>&#160;    <span class="keyword">struct </span><a class="code" href="struct_o_m_sim_p_m_t_response_1_1_p_m_t_pulse.html">PMTPulse</a></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    {</div>
+<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="struct_o_m_sim_p_m_t_response_1_1_p_m_t_pulse.html#a36649e95b6f7a081fbd15e799ea12584">   25</a></span>&#160;        G4double <a class="code" href="struct_o_m_sim_p_m_t_response_1_1_p_m_t_pulse.html#a36649e95b6f7a081fbd15e799ea12584">PE</a>;</div>
+<div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="struct_o_m_sim_p_m_t_response_1_1_p_m_t_pulse.html#a8bfd7ea33e3080b0cfa7c730e5dc27bc">   26</a></span>&#160;        G4double <a class="code" href="struct_o_m_sim_p_m_t_response_1_1_p_m_t_pulse.html#a8bfd7ea33e3080b0cfa7c730e5dc27bc">TransitTime</a>;</div>
+<div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="struct_o_m_sim_p_m_t_response_1_1_p_m_t_pulse.html#acfb81ada2d6f386558e7c478b43dec52">   27</a></span>&#160;        G4double <a class="code" href="struct_o_m_sim_p_m_t_response_1_1_p_m_t_pulse.html#acfb81ada2d6f386558e7c478b43dec52">DetectionProbability</a>;</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    };</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <a class="code" href="struct_o_m_sim_p_m_t_response_1_1_p_m_t_pulse.html">PMTPulse</a> <a class="code" href="class_o_m_sim_p_m_t_response.html#a55aabd8f8fd9be58eca3ba0753974d08">processPhotocathodeHit</a>(G4double pX, G4double pY, G4double pWavelength);</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    std::vector&lt;G4double&gt; mScannedWavelengths{460 * nm, 480 * nm, 500 * nm, 520 * nm, 540 * nm, 560 * nm, 580 * nm, 600 * nm, 620 * nm, 640 * nm};</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="keywordtype">double</span> mX;</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="keywordtype">double</span> mY;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    G4double mWavelength;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    TGraph *mRelativeDetectionEfficiencyInterp;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    std::map&lt;G4double, TH2D *&gt; mGainG2Dmap;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    std::map&lt;G4double, TH2D *&gt; mGainResolutionG2Dmap;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    std::map&lt;G4double, TH2D *&gt; mTransitTimeG2Dmap;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    std::map&lt;G4double, TH2D *&gt; mTransitTimeSpreadG2Dmap;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    TH2D *createHistogramFromData(<span class="keyword">const</span> std::string &amp;pFilePath, <span class="keyword">const</span> <span class="keywordtype">char</span> *pTH2DName);</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    G4double wavelengthInterpolatedValue(std::map&lt;G4double, TH2D*&gt; pMap, G4double pWavelengthKey1, G4double pWavelengthKey2);</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <a class="code" href="class_o_m_sim_p_m_t_response.html">OMSimPMTResponse</a>();</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    ~<a class="code" href="class_o_m_sim_p_m_t_response.html">OMSimPMTResponse</a>() = <span class="keywordflow">default</span>;</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <a class="code" href="class_o_m_sim_p_m_t_response.html">OMSimPMTResponse</a>(<span class="keyword">const</span> <a class="code" href="class_o_m_sim_p_m_t_response.html">OMSimPMTResponse</a>&amp;) = <span class="keyword">delete</span>;</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <a class="code" href="class_o_m_sim_p_m_t_response.html">OMSimPMTResponse</a>&amp; operator=(<span class="keyword">const</span> <a class="code" href="class_o_m_sim_p_m_t_response.html">OMSimPMTResponse</a>&amp;) = <span class="keyword">delete</span>;</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160; </div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;};</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    G4double getCharge(G4double pWavelengthKey);</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    G4double getCharge(G4double pWavelengthKey1, G4double pWavelengthKey2);</div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160; </div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="comment">//</span></div>
-<div class="ttc" id="aclass_o_m_sim_p_m_t_response_html"><div class="ttname"><a href="class_o_m_sim_p_m_t_response.html">OMSimPMTResponse</a></div><div class="ttdef"><b>Definition:</b> OMSimPMTResponse.hh:11</div></div>
-<div class="ttc" id="aclass_o_m_sim_p_m_t_response_html_a55aabd8f8fd9be58eca3ba0753974d08"><div class="ttname"><a href="class_o_m_sim_p_m_t_response.html#a55aabd8f8fd9be58eca3ba0753974d08">OMSimPMTResponse::processPhotocathodeHit</a></div><div class="ttdeci">PMTPulse processPhotocathodeHit(G4double pX, G4double pY, G4double pWavelength)</div><div class="ttdef"><b>Definition:</b> OMSimPMTResponse.cc:182</div></div>
-<div class="ttc" id="aclass_o_m_sim_p_m_t_response_html_a6dd27707e5154fc35e238ead2dd726a0"><div class="ttname"><a href="class_o_m_sim_p_m_t_response.html#a6dd27707e5154fc35e238ead2dd726a0">OMSimPMTResponse::getInstance</a></div><div class="ttdeci">static OMSimPMTResponse &amp; getInstance()</div><div class="ttdef"><b>Definition:</b> OMSimPMTResponse.hh:14</div></div>
-<div class="ttc" id="astruct_o_m_sim_p_m_t_response_1_1_p_m_t_pulse_html"><div class="ttname"><a href="struct_o_m_sim_p_m_t_response_1_1_p_m_t_pulse.html">OMSimPMTResponse::PMTPulse</a></div><div class="ttdef"><b>Definition:</b> OMSimPMTResponse.hh:20</div></div>
-<div class="ttc" id="astruct_o_m_sim_p_m_t_response_1_1_p_m_t_pulse_html_a36649e95b6f7a081fbd15e799ea12584"><div class="ttname"><a href="struct_o_m_sim_p_m_t_response_1_1_p_m_t_pulse.html#a36649e95b6f7a081fbd15e799ea12584">OMSimPMTResponse::PMTPulse::PE</a></div><div class="ttdeci">G4double PE</div><div class="ttdef"><b>Definition:</b> OMSimPMTResponse.hh:21</div></div>
-<div class="ttc" id="astruct_o_m_sim_p_m_t_response_1_1_p_m_t_pulse_html_a8bfd7ea33e3080b0cfa7c730e5dc27bc"><div class="ttname"><a href="struct_o_m_sim_p_m_t_response_1_1_p_m_t_pulse.html#a8bfd7ea33e3080b0cfa7c730e5dc27bc">OMSimPMTResponse::PMTPulse::TransitTime</a></div><div class="ttdeci">G4double TransitTime</div><div class="ttdef"><b>Definition:</b> OMSimPMTResponse.hh:22</div></div>
-<div class="ttc" id="astruct_o_m_sim_p_m_t_response_1_1_p_m_t_pulse_html_acfb81ada2d6f386558e7c478b43dec52"><div class="ttname"><a href="struct_o_m_sim_p_m_t_response_1_1_p_m_t_pulse.html#acfb81ada2d6f386558e7c478b43dec52">OMSimPMTResponse::PMTPulse::DetectionProbability</a></div><div class="ttdeci">G4double DetectionProbability</div><div class="ttdef"><b>Definition:</b> OMSimPMTResponse.hh:23</div></div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    G4double getTransitTime(G4double pWavelengthKey);</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    G4double getTransitTime(G4double pWavelengthKey1, G4double pWavelengthKey2);</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160; </div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    PMTPulse getPulseFromInterpolation(G4double pWavelengthKey1, G4double pWavelengthKey2);</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160; </div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    PMTPulse getPulseFromKey(G4double pWavelengthKey);</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160; </div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    G4double wavelengthInterpolatedValue(std::map&lt;G4double, TH2D *&gt; pMap, G4double pWavelengthKey1, G4double pWavelengthKey2);</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160; </div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    <a class="code" href="class_o_m_sim_p_m_t_response.html">OMSimPMTResponse</a>();</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    ~<a class="code" href="class_o_m_sim_p_m_t_response.html">OMSimPMTResponse</a>() = <span class="keywordflow">default</span>;</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    <a class="code" href="class_o_m_sim_p_m_t_response.html">OMSimPMTResponse</a>(<span class="keyword">const</span> <a class="code" href="class_o_m_sim_p_m_t_response.html">OMSimPMTResponse</a> &amp;) = <span class="keyword">delete</span>;</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    <a class="code" href="class_o_m_sim_p_m_t_response.html">OMSimPMTResponse</a> &amp;operator=(<span class="keyword">const</span> <a class="code" href="class_o_m_sim_p_m_t_response.html">OMSimPMTResponse</a> &amp;) = <span class="keyword">delete</span>;</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;};</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160; </div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;<span class="comment">//</span></div>
+<div class="ttc" id="aclass_o_m_sim_p_m_t_response_html"><div class="ttname"><a href="class_o_m_sim_p_m_t_response.html">OMSimPMTResponse</a></div><div class="ttdef"><b>Definition:</b> OMSimPMTResponse.hh:15</div></div>
+<div class="ttc" id="aclass_o_m_sim_p_m_t_response_html_a55aabd8f8fd9be58eca3ba0753974d08"><div class="ttname"><a href="class_o_m_sim_p_m_t_response.html#a55aabd8f8fd9be58eca3ba0753974d08">OMSimPMTResponse::processPhotocathodeHit</a></div><div class="ttdeci">PMTPulse processPhotocathodeHit(G4double pX, G4double pY, G4double pWavelength)</div><div class="ttdef"><b>Definition:</b> OMSimPMTResponse.cc:149</div></div>
+<div class="ttc" id="aclass_o_m_sim_p_m_t_response_html_a6dd27707e5154fc35e238ead2dd726a0"><div class="ttname"><a href="class_o_m_sim_p_m_t_response.html#a6dd27707e5154fc35e238ead2dd726a0">OMSimPMTResponse::getInstance</a></div><div class="ttdeci">static OMSimPMTResponse &amp; getInstance()</div><div class="ttdef"><b>Definition:</b> OMSimPMTResponse.hh:17</div></div>
+<div class="ttc" id="astruct_o_m_sim_p_m_t_response_1_1_p_m_t_pulse_html"><div class="ttname"><a href="struct_o_m_sim_p_m_t_response_1_1_p_m_t_pulse.html">OMSimPMTResponse::PMTPulse</a></div><div class="ttdef"><b>Definition:</b> OMSimPMTResponse.hh:24</div></div>
+<div class="ttc" id="astruct_o_m_sim_p_m_t_response_1_1_p_m_t_pulse_html_a36649e95b6f7a081fbd15e799ea12584"><div class="ttname"><a href="struct_o_m_sim_p_m_t_response_1_1_p_m_t_pulse.html#a36649e95b6f7a081fbd15e799ea12584">OMSimPMTResponse::PMTPulse::PE</a></div><div class="ttdeci">G4double PE</div><div class="ttdef"><b>Definition:</b> OMSimPMTResponse.hh:25</div></div>
+<div class="ttc" id="astruct_o_m_sim_p_m_t_response_1_1_p_m_t_pulse_html_a8bfd7ea33e3080b0cfa7c730e5dc27bc"><div class="ttname"><a href="struct_o_m_sim_p_m_t_response_1_1_p_m_t_pulse.html#a8bfd7ea33e3080b0cfa7c730e5dc27bc">OMSimPMTResponse::PMTPulse::TransitTime</a></div><div class="ttdeci">G4double TransitTime</div><div class="ttdef"><b>Definition:</b> OMSimPMTResponse.hh:26</div></div>
+<div class="ttc" id="astruct_o_m_sim_p_m_t_response_1_1_p_m_t_pulse_html_acfb81ada2d6f386558e7c478b43dec52"><div class="ttname"><a href="struct_o_m_sim_p_m_t_response_1_1_p_m_t_pulse.html#acfb81ada2d6f386558e7c478b43dec52">OMSimPMTResponse::PMTPulse::DetectionProbability</a></div><div class="ttdeci">G4double DetectionProbability</div><div class="ttdef"><b>Definition:</b> OMSimPMTResponse.hh:27</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_bdd9a5d540de89e9fe90efdfc6973a4f.html">common</a></li><li class="navelem"><a class="el" href="dir_864f292c5cbb4a74180810cb2e80dd5b.html">framework</a></li><li class="navelem"><a class="el" href="dir_1bc21981797ed08ef994409d474646cd.html">include</a></li><li class="navelem"><a class="el" href="_o_m_sim_p_m_t_response_8hh.html">OMSimPMTResponse.hh</a></li>
-    <li class="footer">Generated on Wed Aug 16 2023 16:48:14 for OMSim by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Wed Aug 16 2023 17:37:42 for OMSim by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

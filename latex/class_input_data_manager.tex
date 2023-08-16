@@ -57,7 +57,7 @@ std\+::map$<$ G4\+String, G4\+Optical\+Surface $\ast$ $>$ \mbox{\hyperlink{class
 \index{InputDataManager@{InputDataManager}!getMaterial@{getMaterial}}
 \index{getMaterial@{getMaterial}!InputDataManager@{InputDataManager}}
 \doxysubsubsection{\texorpdfstring{getMaterial()}{getMaterial()}}
-{\footnotesize\ttfamily G4\+Material $\ast$ Input\+Data\+Manager\+::get\+Material (\begin{DoxyParamCaption}\item[{G4\+String}]{p\+Name }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily G4\+Material $\ast$ Input\+Data\+Manager\+::get\+Material (\begin{DoxyParamCaption}\item[{G4\+String}]{name }\end{DoxyParamCaption})}
 
 Get a G4\+Material. In order to get custom built materials, method \mbox{\hyperlink{class_input_data_manager_a7376d0446251d09973d90fb370a9373d}{search\+Folders()}} should have already been called. Standard materials from Geant4 are also transfered directly (if found through Find\+Or\+Build\+Material()). Materials defined by arguments of the main should start with \char`\"{}arg\char`\"{} and then we get the material name from the arrays depending on the global integers (g\+Gel, g\+Glass, g\+Environment..) . 
 \begin{DoxyParams}{Parameters}
@@ -112,9 +112,6 @@ A 2D vector of doubles. The outer vector groups all columns (or rows if \textquo
 \doxysubsubsection{\texorpdfstring{searchFolders()}{searchFolders()}}
 {\footnotesize\ttfamily void Input\+Data\+Manager\+::search\+Folders (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
-Calls scann\+Data\+Directory in the defined folders. \begin{DoxySeeAlso}{See also}
-scann\+Data\+Directory 
-\end{DoxySeeAlso}
 
 
 \doxysubsection{Member Data Documentation}

@@ -1,5 +1,5 @@
 <map id="OMSimDataFileTypes.hh" name="OMSimDataFileTypes.hh">
-<area shape="rect" id="node1" title=" " alt="" coords="276,5,456,32"/>
+<area shape="rect" id="node1" title="Collection of classes and methods to handle material creation from user data in json files." alt="" coords="276,5,456,32"/>
 <area shape="rect" id="node2" title=" " alt="" coords="5,87,148,114"/>
 <area shape="rect" id="node3" title=" " alt="" coords="172,87,363,114"/>
 <area shape="rect" id="node4" title=" " alt="" coords="387,87,545,114"/>

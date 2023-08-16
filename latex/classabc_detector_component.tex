@@ -28,12 +28,7 @@ Collaboration diagram for abc\+Detector\+Component\+:
 
 
 \doxysubsection{Detailed Description}
-This class serves as a base class for constructing and manipulating detector components in \mbox{\hyperlink{class_o_m_sim}{OMSim}}. It provides a set of helper functions for creating and arranging components within a detector, as well as methods for altering the geometry, such as subtracting one component from another. The class maintains an internal list of components, allowing for operations to be performed on all components simultaneously. The {\ttfamily place\+It} methods allow for the placement of components within a specified logical volume, either via individual positioning and rotation parameters, or via a Geant4 transformation. Furthermore, components from one {\ttfamily \mbox{\hyperlink{classabc_detector_component}{abc\+Detector\+Component}}} instance can be integrated into another, with user-\/specified position, rotation, and name extension. This makes it possible to build complex geometrical structures in a modular fashion in cases where a single mother volume cannot be used.
-
-\begin{DoxyAuthor}{Author}
-Martin Unland 
-\end{DoxyAuthor}
-\doxysubsection*{Classes}
+This class serves as a base class for constructing and manipulating detector components in \mbox{\hyperlink{class_o_m_sim}{OMSim}}. It provides a set of helper functions for creating and arranging components within a detector, as well as methods for altering the geometry, such as subtracting one component from another. The class maintains an internal list of components, allowing for operations to be performed on all components simultaneously. The {\ttfamily place\+It} methods allow for the placement of components within a specified logical volume, either via individual positioning and rotation parameters, or via a Geant4 transformation. Furthermore, components from one {\ttfamily \mbox{\hyperlink{classabc_detector_component}{abc\+Detector\+Component}}} instance can be integrated into another, with user-\/specified position, rotation, and name extension. This makes it possible to build complex geometrical structures in a modular fashion in cases where a single mother volume cannot be used. \doxysubsection*{Classes}
 \begin{DoxyCompactItemize}
 \item 
 struct \mbox{\hyperlink{structabc_detector_component_1_1_component}{Component}}
@@ -134,8 +129,6 @@ const G4\+Vis\+Attributes $\ast$ \mbox{\hyperlink{classabc_detector_component_ac
 \index{appendComponent@{appendComponent}!abcDetectorComponent@{abcDetectorComponent}}
 \doxysubsubsection{\texorpdfstring{appendComponent()}{appendComponent()}}
 {\footnotesize\ttfamily void abc\+Detector\+Component\+::append\+Component (\begin{DoxyParamCaption}\item[{G4\+VSolid $\ast$}]{p\+Solid,  }\item[{G4\+Logical\+Volume $\ast$}]{p\+Logical,  }\item[{G4\+Three\+Vector}]{p\+Vector,  }\item[{G4\+Rotation\+Matrix}]{p\+Rotation,  }\item[{G4\+String}]{p\+Name }\end{DoxyParamCaption})}
-
-Methods in \mbox{\hyperlink{abc_detector_component_8cc}{abc\+Detector\+Component.\+cc}}
 
 This function is used to add a new component to the \textquotesingle{}Components\textquotesingle{} vector. Each component contains the solid volume, logical volume, position, rotation, and a unique name. It checks first if a component with the same name already exists. If it does, a warning message is generated and the name of the new component is appended with a unique suffix to avoid conflicts. The new component is then added to the \textquotesingle{}Components\textquotesingle{} vector.
 

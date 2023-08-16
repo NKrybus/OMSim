@@ -36,7 +36,7 @@
 <!-- Node4 -->
 <g id="node4" class="node">
 <title>Node4</title>
-<g id="a_node4"><a xlink:href="_o_m_sim_hit_manager_8hh.html" target="_top" xlink:title=" ">
+<g id="a_node4"><a xlink:href="_o_m_sim_hit_manager_8hh.html" target="_top" xlink:title="Defines structures and classes related to optical module photon hit management.">
 <polygon fill="white" stroke="black" points="254,-112.5 254,-131.5 377,-131.5 377,-112.5 254,-112.5"/>
 <text text-anchor="middle" x="315.5" y="-119.5" font-family="Helvetica,sans-Serif" font-size="10.00">OMSimHitManager.hh</text>
 </a>
@@ -81,7 +81,7 @@
 <!-- Node5 -->
 <g id="node5" class="node">
 <title>Node5</title>
-<g id="a_node5"><a xlink:href="_o_m_sim_p_m_t_response_8hh.html" target="_top" xlink:title=" ">
+<g id="a_node5"><a xlink:href="_o_m_sim_p_m_t_response_8hh.html" target="_top" xlink:title="PMT response simulator.">
 <polygon fill="white" stroke="black" points="180,-56.5 180,-75.5 315,-75.5 315,-56.5 180,-56.5"/>
 <text text-anchor="middle" x="247.5" y="-63.5" font-family="Helvetica,sans-Serif" font-size="10.00">OMSimPMTResponse.hh</text>
 </a>

@@ -12,9 +12,9 @@
 <!-- Node1 -->
 <g id="node1" class="node">
 <title>Node1</title>
-<g id="a_node1"><a xlink:title=" ">
-<polygon fill="#bfbfbf" stroke="black" points="145,-67.5 145,-86.5 260,-86.5 260,-67.5 145,-67.5"/>
-<text text-anchor="middle" x="202.5" y="-74.5" font-family="Helvetica,sans-Serif" font-size="10.00">OMSimInputData.hh</text>
+<g id="a_node1"><a xlink:title="Input data from external files are read and saved to memory.">
+<polygon fill="#bfbfbf" stroke="black" points="163,-67.5 163,-86.5 278,-86.5 278,-67.5 163,-67.5"/>
+<text text-anchor="middle" x="220.5" y="-74.5" font-family="Helvetica,sans-Serif" font-size="10.00">OMSimInputData.hh</text>
 </a>
 </g>
 </g>
@@ -22,47 +22,47 @@
 <g id="node2" class="node">
 <title>Node2</title>
 <g id="a_node2"><a xlink:title=" ">
-<polygon fill="white" stroke="#bfbfbf" points="0,-0.5 0,-30.5 113,-30.5 113,-0.5 0,-0.5"/>
-<text text-anchor="start" x="8" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">boost/property_tree</text>
-<text text-anchor="middle" x="56.5" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">/json_parser.hpp</text>
+<polygon fill="white" stroke="#bfbfbf" points="0,-6 0,-25 143,-25 143,-6 0,-6"/>
+<text text-anchor="middle" x="71.5" y="-13" font-family="Helvetica,sans-Serif" font-size="10.00">G4OpBoundaryProcess.hh</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node2 -->
 <g id="edge1" class="edge">
 <title>Node1&#45;&gt;Node2</title>
-<path fill="none" stroke="midnightblue" d="M181.58,-67.48C160.51,-58.89 127.37,-45.38 100.49,-34.43"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="101.49,-31.06 90.91,-30.52 98.85,-37.54 101.49,-31.06"/>
+<path fill="none" stroke="midnightblue" d="M199.15,-67.48C173.81,-57.36 131.36,-40.4 102.43,-28.85"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="103.39,-25.47 92.81,-25.01 100.8,-31.97 103.39,-25.47"/>
 </g>
 <!-- Node3 -->
 <g id="node3" class="node">
 <title>Node3</title>
 <g id="a_node3"><a xlink:title=" ">
-<polygon fill="white" stroke="#bfbfbf" points="131,-6 131,-25 274,-25 274,-6 131,-6"/>
-<text text-anchor="middle" x="202.5" y="-13" font-family="Helvetica,sans-Serif" font-size="10.00">G4OpBoundaryProcess.hh</text>
+<polygon fill="white" stroke="#bfbfbf" points="161,-6 161,-25 280,-25 280,-6 161,-6"/>
+<text text-anchor="middle" x="220.5" y="-13" font-family="Helvetica,sans-Serif" font-size="10.00">G4SystemOfUnits.hh</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node3 -->
 <g id="edge2" class="edge">
 <title>Node1&#45;&gt;Node3</title>
-<path fill="none" stroke="midnightblue" d="M202.5,-67.48C202.5,-59.08 202.5,-45.98 202.5,-35.16"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="206,-35.01 202.5,-25.01 199,-35.01 206,-35.01"/>
+<path fill="none" stroke="midnightblue" d="M220.5,-67.48C220.5,-59.08 220.5,-45.98 220.5,-35.16"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="224,-35.01 220.5,-25.01 217,-35.01 224,-35.01"/>
 </g>
 <!-- Node4 -->
 <g id="node4" class="node">
 <title>Node4</title>
 <g id="a_node4"><a xlink:title=" ">
-<polygon fill="white" stroke="#bfbfbf" points="292,-6 292,-25 411,-25 411,-6 292,-6"/>
-<text text-anchor="middle" x="351.5" y="-13" font-family="Helvetica,sans-Serif" font-size="10.00">G4SystemOfUnits.hh</text>
+<polygon fill="white" stroke="#bfbfbf" points="298,-0.5 298,-30.5 411,-30.5 411,-0.5 298,-0.5"/>
+<text text-anchor="start" x="306" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">boost/property_tree</text>
+<text text-anchor="middle" x="354.5" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">/json_parser.hpp</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node4 -->
 <g id="edge3" class="edge">
 <title>Node1&#45;&gt;Node4</title>
-<path fill="none" stroke="midnightblue" d="M223.85,-67.48C249.19,-57.36 291.64,-40.4 320.57,-28.85"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="322.2,-31.97 330.19,-25.01 319.61,-25.47 322.2,-31.97"/>
+<path fill="none" stroke="midnightblue" d="M239.7,-67.48C258.87,-58.96 288.92,-45.62 313.47,-34.72"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="315.2,-37.78 322.92,-30.52 312.36,-31.38 315.2,-37.78"/>
 </g>
 </g>
 </svg>

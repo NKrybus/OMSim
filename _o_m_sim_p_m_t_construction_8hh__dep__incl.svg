@@ -12,7 +12,7 @@
 <!-- Node1 -->
 <g id="node1" class="node">
 <title>Node1</title>
-<g id="a_node1"><a xlink:title=" ">
+<g id="a_node1"><a xlink:title="Construction of the PMTs.">
 <polygon fill="#bfbfbf" stroke="black" points="378.5,-168.5 378.5,-187.5 527.5,-187.5 527.5,-168.5 378.5,-168.5"/>
 <text text-anchor="middle" x="453" y="-175.5" font-family="Helvetica,sans-Serif" font-size="10.00">OMSimPMTConstruction.hh</text>
 </a>
@@ -21,7 +21,7 @@
 <!-- Node2 -->
 <g id="node2" class="node">
 <title>Node2</title>
-<g id="a_node2"><a xlink:href="abc_detector_component_8cc.html" target="_top" xlink:title="Contains the implementation of the abcDetectorComponent class.">
+<g id="a_node2"><a xlink:href="abc_detector_component_8cc.html" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="black" points="56,-112.5 56,-131.5 202,-131.5 202,-112.5 56,-112.5"/>
 <text text-anchor="middle" x="129" y="-119.5" font-family="Helvetica,sans-Serif" font-size="10.00">abcDetectorComponent.cc</text>
 </a>
@@ -36,7 +36,7 @@
 <!-- Node3 -->
 <g id="node3" class="node">
 <title>Node3</title>
-<g id="a_node3"><a xlink:href="_o_m_sim_p_m_t_construction_8cc.html" target="_top" xlink:title="Construction of the PMTs.">
+<g id="a_node3"><a xlink:href="_o_m_sim_p_m_t_construction_8cc.html" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="black" points="220.5,-112.5 220.5,-131.5 367.5,-131.5 367.5,-112.5 220.5,-112.5"/>
 <text text-anchor="middle" x="294" y="-119.5" font-family="Helvetica,sans-Serif" font-size="10.00">OMSimPMTConstruction.cc</text>
 </a>

@@ -1,5 +1,10 @@
 \hypertarget{_o_m_sim_data_file_types_8hh}{}\doxysection{OMSim\+Data\+File\+Types.\+hh File Reference}
 \label{_o_m_sim_data_file_types_8hh}\index{OMSimDataFileTypes.hh@{OMSimDataFileTypes.hh}}
+
+
+Collection of classes and methods to handle material creation from user data in json files.  
+
+
 Include dependency graph for OMSim\+Data\+File\+Types.\+hh\+:
 \nopagebreak
 \begin{figure}[H]
@@ -16,7 +21,21 @@ This graph shows which files directly or indirectly include this file\+:
 \includegraphics[width=346pt]{_o_m_sim_data_file_types_8hh__dep__incl}
 \end{center}
 \end{figure}
-\doxysubsection*{Classes}
+
+
+\doxysubsection{Detailed Description}
+This file includes the class definitions for the abstract base classes (\mbox{\hyperlink{classabc_data_file}{abc\+Data\+File}} and \mbox{\hyperlink{classabc_material_data}{abc\+Material\+Data}}) and derived classes related to material properties. The derived classes and functions are designed to handle different categories of materials and reflective surfaces with varying optical properties.
+
+Derived Classes\+:
+\begin{DoxyItemize}
+\item \mbox{\hyperlink{class_refraction_and_absorption}{Refraction\+And\+Absorption}}\+: Handles materials with refraction index and absorption length defined.
+\item \mbox{\hyperlink{class_refraction_only}{Refraction\+Only}}\+: Handles materials with only refraction index defined.
+\item \mbox{\hyperlink{class_no_optics}{No\+Optics}}\+: Handles materials without optical properties.
+\item \mbox{\hyperlink{class_ice_cube_ice}{Ice\+Cube\+Ice}}\+: Handles creation and property extraction of Ice\+Cube\textquotesingle{}s ice.
+\item \mbox{\hyperlink{class_reflective_surface}{Reflective\+Surface}}\+: Defines a new reflective surface.
+\end{DoxyItemize}
+
+Each class has an {\ttfamily extract\+Information()} method that is responsible for creating the material or surface and extracting the necessary optical properties. \doxysubsection*{Classes}
 \begin{DoxyCompactItemize}
 \item 
 class \mbox{\hyperlink{classabc_data_file}{abc\+Data\+File}}

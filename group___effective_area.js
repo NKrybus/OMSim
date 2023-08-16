@@ -1,5 +1,6 @@
 var group___effective_area =
 [
+    [ "OMSimAngularScan.hh", "_o_m_sim_angular_scan_8hh.html", null ],
     [ "OMSim_effective_area.cc", "_o_m_sim__effective__area_8cc.html", null ],
     [ "OMSim_effective_area.cc", "_o_m_sim__effective__area_8cc.html", null ],
     [ "AngularScan", "class_angular_scan.html", [

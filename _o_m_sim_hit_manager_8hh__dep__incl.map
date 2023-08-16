@@ -1,5 +1,5 @@
 <map id="OMSimHitManager.hh" name="OMSimHitManager.hh">
-<area shape="rect" id="node1" title=" " alt="" coords="590,5,754,32"/>
+<area shape="rect" id="node1" title="Defines structures and classes related to optical module photon hit management." alt="" coords="590,5,754,32"/>
 <area shape="rect" id="node2" href="$_o_m_sim_hit_manager_8cc.html" title=" " alt="" coords="5,80,168,107"/>
 <area shape="rect" id="node3" href="$_o_m_sim_tracking_action_8cc.html" title=" " alt="" coords="193,80,375,107"/>
 <area shape="rect" id="node4" href="$_o_m_sim_effective_area_analyisis_8hh.html" title=" " alt="" coords="400,80,635,107"/>

@@ -21,7 +21,7 @@
 <!-- Node2 -->
 <g id="node2" class="node">
 <title>Node2</title>
-<g id="a_node2"><a xlink:href="_o_m_sim_angular_scan_8hh.html" target="_top" xlink:title=" ">
+<g id="a_node2"><a xlink:href="_o_m_sim_angular_scan_8hh.html" target="_top" xlink:title="Defines the AngularScan class for configuring and running GPS beam with angular scans.">
 <polygon fill="white" stroke="black" points="0,-168.5 0,-187.5 128,-187.5 128,-168.5 0,-168.5"/>
 <text text-anchor="middle" x="64" y="-175.5" font-family="Helvetica,sans-Serif" font-size="10.00">OMSimAngularScan.hh</text>
 </a>

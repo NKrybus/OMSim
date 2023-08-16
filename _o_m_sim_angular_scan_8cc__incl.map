@@ -1,6 +1,6 @@
 <map id="OMSimAngularScan.cc" name="OMSimAngularScan.cc">
 <area shape="rect" id="node1" title=" " alt="" coords="197,5,365,32"/>
-<area shape="rect" id="node2" href="$_o_m_sim_angular_scan_8hh.html" title=" " alt="" coords="5,80,176,107"/>
+<area shape="rect" id="node2" href="$_o_m_sim_angular_scan_8hh.html" title="Defines the AngularScan class for configuring and running GPS beam with angular scans." alt="" coords="5,80,176,107"/>
 <area shape="rect" id="node4" href="$_o_m_sim_u_iinterface_8hh.html" title="The OMSimUIinterface class provides a singleton interface to Geant4&#39;s UI manager." alt="" coords="201,80,362,107"/>
 <area shape="rect" id="node13" title=" " alt="" coords="386,80,545,107"/>
 <area shape="rect" id="node3" title=" " alt="" coords="46,155,135,181"/>

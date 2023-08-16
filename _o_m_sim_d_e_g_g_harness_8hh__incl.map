@@ -1,12 +1,12 @@
 <map id="OMSimDEGGHarness.hh" name="OMSimDEGGHarness.hh">
-<area shape="rect" id="node1" title=" " alt="" coords="525,5,705,32"/>
-<area shape="rect" id="node2" href="$abc_detector_component_8hh.html" title=" " alt="" coords="517,80,713,107"/>
-<area shape="rect" id="node3" href="$_o_m_sim_input_data_8hh.html" title=" " alt="" coords="199,155,352,181"/>
-<area shape="rect" id="node7" title=" " alt="" coords="376,155,519,181"/>
-<area shape="rect" id="node8" title=" " alt="" coords="543,155,687,181"/>
-<area shape="rect" id="node9" title=" " alt="" coords="712,155,879,181"/>
-<area shape="rect" id="node10" title=" " alt="" coords="903,155,1050,181"/>
-<area shape="rect" id="node4" title=" " alt="" coords="5,229,156,271"/>
-<area shape="rect" id="node5" title=" " alt="" coords="180,237,371,263"/>
-<area shape="rect" id="node6" title=" " alt="" coords="395,237,553,263"/>
+<area shape="rect" id="node1" title=" " alt="" coords="549,5,729,32"/>
+<area shape="rect" id="node2" href="$abc_detector_component_8hh.html" title="Provides helper base class abcDetectorComponent for constructing and managing detector components in ..." alt="" coords="541,80,737,107"/>
+<area shape="rect" id="node3" href="$_o_m_sim_input_data_8hh.html" title="Input data from external files are read and saved to memory." alt="" coords="223,155,376,181"/>
+<area shape="rect" id="node7" title=" " alt="" coords="400,155,543,181"/>
+<area shape="rect" id="node8" title=" " alt="" coords="567,155,711,181"/>
+<area shape="rect" id="node9" title=" " alt="" coords="736,155,903,181"/>
+<area shape="rect" id="node10" title=" " alt="" coords="927,155,1074,181"/>
+<area shape="rect" id="node4" title=" " alt="" coords="5,237,196,263"/>
+<area shape="rect" id="node5" title=" " alt="" coords="220,237,379,263"/>
+<area shape="rect" id="node6" title=" " alt="" coords="403,229,553,271"/>
 </map>

@@ -1,9 +1,9 @@
 <map id="OMSimEffectiveAreaAnalyisis.cc" name="OMSimEffectiveAreaAnalyisis.cc">
 <area shape="rect" id="node1" title=" " alt="" coords="459,5,692,32"/>
 <area shape="rect" id="node2" href="$_o_m_sim_effective_area_analyisis_8hh.html" title=" " alt="" coords="458,80,693,107"/>
-<area shape="rect" id="node9" href="$_o_m_sim_hit_manager_8hh.html" title=" " alt="" coords="373,155,537,181"/>
+<area shape="rect" id="node9" href="$_o_m_sim_hit_manager_8hh.html" title="Defines structures and classes related to optical module photon hit management." alt="" coords="373,155,537,181"/>
 <area shape="rect" id="node12" href="$_o_m_sim_command_args_table_8hh.html" title="Definition of the OMSimCommandArgsTable singleton class, which controls user args." alt="" coords="717,80,935,107"/>
-<area shape="rect" id="node3" href="$_o_m_sim_p_m_t_response_8hh.html" title=" " alt="" coords="245,229,425,256"/>
+<area shape="rect" id="node3" href="$_o_m_sim_p_m_t_response_8hh.html" title="PMT response simulator." alt="" coords="245,229,425,256"/>
 <area shape="rect" id="node10" title=" " alt="" coords="449,229,587,256"/>
 <area shape="rect" id="node11" title=" " alt="" coords="611,229,684,256"/>
 <area shape="rect" id="node4" title=" " alt="" coords="5,304,164,331"/>
