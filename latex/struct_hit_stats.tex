@@ -12,27 +12,27 @@ This structure holds a set of vectors that keep track of the various parameters 
 \begin{DoxyCompactItemize}
 \item 
 std\+::vector$<$ G4long $>$ \mbox{\hyperlink{struct_hit_stats_a083785d39bbb36d3b96c013d72871bfb}{event\+\_\+id}}
-\item 
+\begin{DoxyCompactList}\small\item\em ID of the event. \end{DoxyCompactList}\item 
 std\+::vector$<$ G4double $>$ \mbox{\hyperlink{struct_hit_stats_aa98810da31bcafce33d1150f9040b179}{hit\+\_\+time}}
-\item 
+\begin{DoxyCompactList}\small\item\em Time of detection. \end{DoxyCompactList}\item 
 std\+::vector$<$ G4double $>$ \mbox{\hyperlink{struct_hit_stats_aed7c609a2bba96df75f0e202d609b283}{photon\+\_\+flight\+\_\+time}}
-\item 
+\begin{DoxyCompactList}\small\item\em Photon flight time. \end{DoxyCompactList}\item 
 std\+::vector$<$ G4double $>$ \mbox{\hyperlink{struct_hit_stats_a3cc8289263dedf3bee11a8bf3d6055b4}{photon\+\_\+track\+\_\+length}}
-\item 
+\begin{DoxyCompactList}\small\item\em Length of the photon\textquotesingle{}s path before hitting. \end{DoxyCompactList}\item 
 std\+::vector$<$ G4double $>$ \mbox{\hyperlink{struct_hit_stats_a43c2be1edf587134e143b989ed027a45}{photon\+\_\+energy}}
-\item 
+\begin{DoxyCompactList}\small\item\em Energy of the detected photon. \end{DoxyCompactList}\item 
 std\+::vector$<$ G4int $>$ \mbox{\hyperlink{struct_hit_stats_a82366d3fe8420fc7ce3d8a235c28823a}{PMT\+\_\+hit}}
-\item 
+\begin{DoxyCompactList}\small\item\em ID of the PMT that detected the photon. \end{DoxyCompactList}\item 
 std\+::vector$<$ G4\+Three\+Vector $>$ \mbox{\hyperlink{struct_hit_stats_aad96ef4ac7b91e41f8e51ed9436c10d3}{photon\+\_\+direction}}
-\item 
+\begin{DoxyCompactList}\small\item\em Momentum direction of the photon at the time of detection. \end{DoxyCompactList}\item 
 std\+::vector$<$ G4\+Three\+Vector $>$ \mbox{\hyperlink{struct_hit_stats_a83f200ce2f28b1ccba57172a5be54c19}{photon\+\_\+local\+\_\+position}}
-\item 
+\begin{DoxyCompactList}\small\item\em Local position of the detected photon within the PMT. \end{DoxyCompactList}\item 
 std\+::vector$<$ G4\+Three\+Vector $>$ \mbox{\hyperlink{struct_hit_stats_a1655bb023dccf89fc34621487f845626}{photon\+\_\+global\+\_\+position}}
-\item 
+\begin{DoxyCompactList}\small\item\em Global position of the detected photon. \end{DoxyCompactList}\item 
 std\+::vector$<$ G4double $>$ \mbox{\hyperlink{struct_hit_stats_a239bb18751a36e1056f408438bef3626}{event\+\_\+distance}}
-\item 
+\begin{DoxyCompactList}\small\item\em Distance between generation and detection of photon. \end{DoxyCompactList}\item 
 std\+::vector$<$ \mbox{\hyperlink{struct_o_m_sim_p_m_t_response_1_1_p_m_t_pulse}{OMSim\+PMTResponse\+::\+PMTPulse}} $>$ \mbox{\hyperlink{struct_hit_stats_a59e4bb359b5434d19aafdb3d963f08b2}{PMT\+\_\+response}}
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em PMT\textquotesingle{}s response to the detected photon, encapsulated as a {\ttfamily PMTPulse}. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{Member Data Documentation}
