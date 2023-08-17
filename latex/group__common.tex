@@ -2,33 +2,44 @@
 \label{group__common}\index{OMSim framework and geometry@{OMSim framework and geometry}}
 
 
-These files define the geometry and materials that are common for all studies.  
+These files define the geometry and materials common to all studies.  
 
 
 
 
 \doxysubsection{Detailed Description}
 \hypertarget{group__common_framework}{}\doxysubsubsection{OMSim framework}\label{group__common_framework}
-\hypertarget{group__common_data}{}\doxyparagraph{Materials and user data}\label{group__common_data}
-The user defined material data are saved in json files in /common/data to reduce file lengths (original detector construction had over 4k lines mostly due to the material properties!). These properties are loaded by \mbox{\hyperlink{class_input_data_manager}{Input\+Data\+Manager}} (\mbox{\hyperlink{_o_m_sim_input_data_8hh}{OMSim\+Input\+Data.\+hh}}) into the Geant4 framework and you can retrieve them with \mbox{\hyperlink{class_input_data_manager_a05b5637e4b31dbaaede67d40a139528e}{Input\+Data\+Manager\+::get\+Material}} and \mbox{\hyperlink{class_input_data_manager_ae6ae987535a442a42ad47d53394ade56}{Input\+Data\+Manager\+::get\+Optical\+Surface}}. As different materials have different type of properties, the data is loaded in different ways. The different types of materials are defined in \mbox{\hyperlink{_o_m_sim_data_file_types_8hh}{OMSim\+Data\+File\+Types.\+hh}}. Furthermore, geometry data is also saved in json files for the PMTs which are parsed directly into a \char`\"{}tree\char`\"{}, which is basically a dictionary with the keys and values in the json file. This is because the different PMTs are constructed in a very similar fashion and it does not make sense to define one class per PMT type, as is done with the optical modules.
+\hypertarget{group__common_data}{}\doxyparagraph{Materials and User Data}\label{group__common_data}
+User-\/defined material data are stored in JSON files under /common/data to minimize file length (the original detector construction had over 4,000 lines, mainly due to material properties!). The \mbox{\hyperlink{class_input_data_manager}{Input\+Data\+Manager}} (\mbox{\hyperlink{_o_m_sim_input_data_8hh}{OMSim\+Input\+Data.\+hh}}) loads these properties into the Geant4 framework. They can be retrieved using the \mbox{\hyperlink{class_input_data_manager_a05b5637e4b31dbaaede67d40a139528e}{Input\+Data\+Manager\+::get\+Material}} and \mbox{\hyperlink{class_input_data_manager_ae6ae987535a442a42ad47d53394ade56}{Input\+Data\+Manager\+::get\+Optical\+Surface}} methods. Since different materials have various properties, the data is loaded in multiple ways. These different material types are defined in \mbox{\hyperlink{_o_m_sim_data_file_types_8hh}{OMSim\+Data\+File\+Types.\+hh}}. Additionally, geometry data for the PMTs are also stored in JSON files. These are parsed directly into a \char`\"{}tree\char`\"{} (essentially a dictionary containing the JSON file\textquotesingle{}s keys and values). This method was adopted because various PMTs are constructed similarly, eliminating the need to define a unique class for each PMT type, as is done for the optical modules.
 
-If you have data that you want to load, you could define a new type in OMSim\+Data\+File\+Types or load it into a tree as earlier, but for simple stuff you can just use \mbox{\hyperlink{class_input_data_manager_a3a233522b61c65875ebb7b274ff31507}{Input\+Data\+Manager\+::loadtxt}} which is a static method and works similar to the numpy.\+loadtxt of python. Example\+: 
+If you wish to load additional data, you can either define a new type in OMSim\+Data\+File\+Types or load it into a tree as previously mentioned. For simpler tasks, use the static method \mbox{\hyperlink{class_input_data_manager_a3a233522b61c65875ebb7b274ff31507}{Input\+Data\+Manager\+::loadtxt}}, which operates similarly to Python\textquotesingle{}s numpy.\+loadtxt. For example\+: 
 \begin{DoxyCode}{0}
 \DoxyCodeLine{std::vector<G4PV2DDataVector> data = \mbox{\hyperlink{class_input_data_manager_a3a233522b61c65875ebb7b274ff31507}{InputDataManager::loadtxt}}(\textcolor{stringliteral}{"{}path/file\_name.txt"{}});}
 \DoxyCodeLine{std::vector<G4double> first\_column = data.at(0);}
 \DoxyCodeLine{std::vector<G4double> second\_column = data.at(1);}
-\DoxyCodeLine{(...)}
+\DoxyCodeLine{\textcolor{comment}{// ...}}
 
 \end{DoxyCode}
 \hypertarget{group__common_geometry}{}\doxyparagraph{Geometry}\label{group__common_geometry}
-Each optical module and harness is defined in its own class located in folder /common/optical\+\_\+modules/. These inherite from the virtual base class \mbox{\hyperlink{class_optical_module}{Optical\+Module}}, which ensures that we have to define a function for retrieving the weight of the pressure vessel (needed in radioactive decays studies) and also the number of PMTs inside the module. The \mbox{\hyperlink{class_optical_module}{Optical\+Module}} interface inherits from \mbox{\hyperlink{classabc_detector_component}{abc\+Detector\+Component}} which is a general helper class that makes life easier while constructing stuff. Most geometries in \mbox{\hyperlink{class_o_m_sim}{OMSim}} inherit from this class, as can be observed in the following dependence diagram\+:  $<$iframe scrolling=\char`\"{}no\char`\"{} frameborder=\char`\"{}0\char`\"{}           src=\char`\"{}classabc\+\_\+detector\+\_\+component\+\_\+\+\_\+inherit\+\_\+\+\_\+graph.\+svg\char`\"{}           width=\char`\"{}747\char`\"{} height=\char`\"{}187\char`\"{}$>$ 
+Each optical module and harness is defined in its respective class, located in the /common/optical\+\_\+modules/ folder. These inherit from the virtual base class \mbox{\hyperlink{class_optical_module}{Optical\+Module}}. This inheritance ensures the definition of functions to retrieve the pressure vessel\textquotesingle{}s weight (necessary for radioactive decay studies) and the count of PMTs inside the module. The \mbox{\hyperlink{class_optical_module}{Optical\+Module}} interface inherits from \mbox{\hyperlink{classabc_detector_component}{abc\+Detector\+Component}}, a general helper class simplifying construction. Most \mbox{\hyperlink{class_o_m_sim}{OMSim}} geometries inherit from this class, as illustrated in the dependency diagram below\+:  The \mbox{\hyperlink{class_o_m_sim_p_m_t_construction}{OMSim\+PMTConstruction}} in /common/framework constructs PMTs. There are two PMT construction types. The first is simple, with a solid photocathode where all entering photons are recorded. The second type simulates the photocathode as a thin layer, also representing the internal components. For more information, refer to Chapter 9 of \href{https://zenodo.org/record/8121321}{\texttt{ Martin Unland\textquotesingle{}s thesis}}. Each PMT model\textquotesingle{}s construction is quite similar. However, the frontal window shape varies among models, leading to diverse combinations of ellipsoids and spheres.
 
-{\bfseries{This browser is not able to show SVG\+: try Firefox, Chrome, Safari, or Opera instead.}}
+   ~\newline
+ Figure 1\+: {\itshape Cross section of simple \mbox{\hyperlink{classm_d_o_m}{m\+DOM}} PMT model. Image from \href{https://zenodo.org/record/8121321}{\texttt{ M. Unland\textquotesingle{}s thesis}}.}  
 
- $<$/iframe$>$ 
+   ~\newline
+ Figure 1\+: {\itshape Side view of complex \mbox{\hyperlink{classm_d_o_m}{m\+DOM}} PMT model. Image from \href{https://zenodo.org/record/8121321}{\texttt{ M. Unland\textquotesingle{}s thesis}}.}  
 
-  ~\newline
- {\itshape Figure\+: A brief description of the image}  \doxysubsection*{Files}
+In the complex PMT model the photocathode has an absorption length that matches the measured quantum efficiency of the \mbox{\hyperlink{classm_d_o_m}{m\+DOM}} PMTs. For the other PMT models this matching has to be still be performed.
+
+   ~\newline
+ Figure 3\+: {\itshape QE of simulation with the absorption length currently used compared to measurements. Image from \href{https://zenodo.org/record/8121321}{\texttt{ M. Unland\textquotesingle{}s thesis}}.}  \hypertarget{group__common_response}{}\doxyparagraph{PMT response}\label{group__common_response}
+\begin{DoxyWarning}{Warning}
+Detailed PMT response currently only for \mbox{\hyperlink{classm_d_o_m}{m\+DOM}} PMT
+\end{DoxyWarning}
+The class OMSIm\+PMTResponse provides a realistic PMT response (charge and transit time) using the measured scans from \href{https://zenodo.org/record/8121321}{\texttt{ M. Unland\textquotesingle{}s thesis}}. To turn on this feature, the bool-\/switch command line argument \char`\"{}pmt\+\_\+response\char`\"{} has to be given. For more information see Section 9.\+3.\+4 of the thesis.
+
+   ~\newline
+ Figure 4\+: {\itshape PMT response compared to measurement for different light sources. Image from \href{https://zenodo.org/record/8121321}{\texttt{ M. Unland\textquotesingle{}s thesis}}.}   \doxysubsection*{Files}
 \begin{DoxyCompactItemize}
 \item 
 file \mbox{\hyperlink{abc_detector_component_8hh}{abc\+Detector\+Component.\+hh}}
