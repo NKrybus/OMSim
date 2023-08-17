@@ -143,14 +143,14 @@ Geometry</h3>
  </div>
   The <a class="el" href="class_o_m_sim_p_m_t_construction.html">OMSimPMTConstruction</a> in /common/framework constructs PMTs. There are two PMT construction types. The first is simple, with a solid photocathode where all entering photons are recorded. The second type simulates the photocathode as a thin layer, also representing the internal components. For more information, refer to Chapter 9 of <a href="https://zenodo.org/record/8121321">Martin Unland's thesis</a>. Each PMT model's construction is quite similar. However, the frontal window shape varies among models, leading to diverse combinations of ellipsoids and spheres.</p>
 <div style="width: 100%; text-align: center;"> <img src="simulation_vs_sketch_old.png" alt="" width="350" height="400" class="inline"/> <div style="width: 80%; margin: auto;"> <br  />
- Figure 1: <em>Cross section of simple <a class="el" href="classm_d_o_m.html">mDOM</a> PMT model. Image from <a href="https://zenodo.org/record/8121321">M. Unland's thesis</a>.</em> </div> </div><div style="width: 100%; text-align: center;"> <img src="simulation_vs_sketch_old.png" alt="" width="500" height="410" class="inline"/> <div style="width: 80%; margin: auto;"> <br  />
+ Figure 1: <em>Cross section of simple <a class="el" href="classm_d_o_m.html">mDOM</a> PMT model. Image from <a href="https://zenodo.org/record/8121321">M. Unland's thesis</a>.</em> </div> </div><div style="width: 100%; text-align: center;"> <img src="simulation_dynodes_screenshot.png" alt="" width="500" height="410" class="inline"/> <div style="width: 80%; margin: auto;"> <br  />
  Figure 1: <em>Side view of complex <a class="el" href="classm_d_o_m.html">mDOM</a> PMT model. Image from <a href="https://zenodo.org/record/8121321">M. Unland's thesis</a>.</em> </div> </div><p>In the complex PMT model the photocathode has an absorption length that matches the measured quantum efficiency of the <a class="el" href="classm_d_o_m.html">mDOM</a> PMTs. For the other PMT models this matching has to be still be performed.</p>
-<div style="width: 100%; text-align: center;"> <img src="PW_beam_geant4_TT.png" alt="" width="500" height="410" class="inline"/> <div style="width: 80%; margin: auto;"> <br  />
+<div style="width: 100%; text-align: center;"> <img src="QE_meas_VS_simulation.png" alt="" width="350" height="450" class="inline"/> <div style="width: 80%; margin: auto;"> <br  />
  Figure 3: <em>QE of simulation with the absorption length currently used compared to measurements. Image from <a href="https://zenodo.org/record/8121321">M. Unland's thesis</a>.</em> </div> </div><h3><a class="anchor" id="response"></a>
 PMT response</h3>
 <dl class="section warning"><dt>Warning</dt><dd>Detailed PMT response currently only for <a class="el" href="classm_d_o_m.html">mDOM</a> PMT</dd></dl>
 <p>The class OMSImPMTResponse provides a realistic PMT response (charge and transit time) using the measured scans from <a href="https://zenodo.org/record/8121321">M. Unland's thesis</a>. To turn on this feature, the bool-switch command line argument "pmt_response" has to be given. For more information see Section 9.3.4 of the thesis.</p>
-<div style="width: 100%; text-align: center;"> <img src="PW_beam_geant4_TT.png" alt="" width="500" height="410" class="inline"/> <div style="width: 80%; margin: auto;"> <br  />
+<div style="width: 100%; text-align: center;"> <img src="PW_beam_geant4_TT.png" alt="" width="320" height="550" class="inline"/> <div style="width: 80%; margin: auto;"> <br  />
  Figure 4: <em>PMT response compared to measurement for different light sources. Image from <a href="https://zenodo.org/record/8121321">M. Unland's thesis</a>.</em> </div> </div> <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="files"></a>
 Files</h2></td></tr>
@@ -259,7 +259,7 @@ Classes</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Thu Aug 17 2023 13:48:42 for OMSim by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Thu Aug 17 2023 13:53:06 for OMSim by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>
