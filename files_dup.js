@@ -78,8 +78,7 @@ var files_dup =
     ] ],
     [ "OMSimMDOMFlasher.cc", "_o_m_sim_m_d_o_m_flasher_8cc.html", null ],
     [ "OMSimMDOMFlasher.hh", "_o_m_sim_m_d_o_m_flasher_8hh.html", [
-      [ "GlobalPosition", "struct_global_position.html", "struct_global_position" ],
-      [ "mDOMFlasher", "classm_d_o_m_flasher.html", "classm_d_o_m_flasher" ]
+      [ "GlobalPosition", "struct_global_position.html", "struct_global_position" ]
     ] ],
     [ "OMSimMDOMHarness.cc", "_o_m_sim_m_d_o_m_harness_8cc.html", null ],
     [ "OMSimMDOMHarness.hh", "_o_m_sim_m_d_o_m_harness_8hh.html", [

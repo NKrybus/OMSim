@@ -29,10 +29,12 @@ Collaboration diagram for Optical\+Module\+:
 \begin{DoxyCompactItemize}
 \item 
 virtual double \mbox{\hyperlink{class_optical_module_ab559dfa88537ceba930183a4c0eafbfd}{get\+Pressure\+Vessel\+Weight}} ()=0
-\begin{DoxyCompactList}\small\item\em Returns weight of pressure vessel in kg. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Virtual method to get the weight of the pressure vessel. \end{DoxyCompactList}\item 
 virtual int \mbox{\hyperlink{class_optical_module_a851f73098f123c00dbe5a783e2b650ff}{get\+Number\+Of\+PMTs}} ()=0
-\item 
+\begin{DoxyCompactList}\small\item\em Virtual method to get the number of PMTs in the optical module. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{class_o_m_sim_p_m_t_construction}{OMSim\+PMTConstruction}} $\ast$ \mbox{\hyperlink{class_optical_module_a4bbc93f99a32d030fc2b3b8d4e247777}{get\+PMTmanager}} ()
+\item 
+virtual \mbox{\hyperlink{class_optical_module_ae286c985f3b523aa96e39eaae47421a7}{$\sim$\+Optical\+Module}} ()
 \end{DoxyCompactItemize}
 \doxysubsection*{Protected Attributes}
 \begin{DoxyCompactItemize}
@@ -42,6 +44,15 @@ virtual int \mbox{\hyperlink{class_optical_module_a851f73098f123c00dbe5a783e2b65
 \doxysubsection*{Additional Inherited Members}
 
 
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_optical_module_ae286c985f3b523aa96e39eaae47421a7}\label{class_optical_module_ae286c985f3b523aa96e39eaae47421a7}} 
+\index{OpticalModule@{OpticalModule}!````~OpticalModule@{$\sim$OpticalModule}}
+\index{````~OpticalModule@{$\sim$OpticalModule}!OpticalModule@{OpticalModule}}
+\doxysubsubsection{\texorpdfstring{$\sim$OpticalModule()}{~OpticalModule()}}
+{\footnotesize\ttfamily virtual Optical\+Module\+::$\sim$\+Optical\+Module (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
 \doxysubsection{Member Function Documentation}
 \mbox{\Hypertarget{class_optical_module_a851f73098f123c00dbe5a783e2b650ff}\label{class_optical_module_a851f73098f123c00dbe5a783e2b650ff}} 
 \index{OpticalModule@{OpticalModule}!getNumberOfPMTs@{getNumberOfPMTs}}
@@ -49,6 +60,9 @@ virtual int \mbox{\hyperlink{class_optical_module_a851f73098f123c00dbe5a783e2b65
 \doxysubsubsection{\texorpdfstring{getNumberOfPMTs()}{getNumberOfPMTs()}}
 {\footnotesize\ttfamily virtual int Optical\+Module\+::get\+Number\+Of\+PMTs (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
 
+This method should be overridden in derived classes to provide the number of PMTs in the specific optical module. \begin{DoxyReturn}{Returns}
+Number of PMTs in the optical module. 
+\end{DoxyReturn}
 
 
 Implemented in \mbox{\hyperlink{classp_d_o_m_a1e2c5cf50a25e2b234d9326f4fbbee9d}{p\+DOM}}, \mbox{\hyperlink{classm_d_o_m_ad7e07f1380a50158f7cede9aa84721be}{m\+DOM}}, \mbox{\hyperlink{class_l_o_m18_ac61b9f417138d26d168abbf48f0c0379}{LOM18}}, \mbox{\hyperlink{class_l_o_m16_ab6c3906a5b9bb9f05ff72d7d089cf967}{LOM16}}, and \mbox{\hyperlink{class_d_e_g_g_a322fe20cae9cfce1b05817c0ac3f1393}{DEGG}}.
@@ -65,6 +79,9 @@ Implemented in \mbox{\hyperlink{classp_d_o_m_a1e2c5cf50a25e2b234d9326f4fbbee9d}{
 \doxysubsubsection{\texorpdfstring{getPressureVesselWeight()}{getPressureVesselWeight()}}
 {\footnotesize\ttfamily virtual double Optical\+Module\+::get\+Pressure\+Vessel\+Weight (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
 
+This method should be overridden in derived classes to provide the weight of the pressure vessel for the specific optical module. \begin{DoxyReturn}{Returns}
+Weight of the pressure vessel in kilograms. 
+\end{DoxyReturn}
 
 
 Implemented in \mbox{\hyperlink{classp_d_o_m_aff18b63813f3940d3cc8c0c49a3595d5}{p\+DOM}}, \mbox{\hyperlink{classm_d_o_m_a1fd32bb6eeff5f49f9ebbd09825b2e91}{m\+DOM}}, \mbox{\hyperlink{class_l_o_m18_a6e42615d2a84e6b94ec28a32ede7ec25}{LOM18}}, \mbox{\hyperlink{class_l_o_m16_aa91c920187061c71df5560864845c8a8}{LOM16}}, and \mbox{\hyperlink{class_d_e_g_g_affbc4905f52992f3d1f206f26466c076}{DEGG}}.

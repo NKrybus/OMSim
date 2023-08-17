@@ -15,7 +15,7 @@ These files define the geometry and materials that are common for all studies.
 file \mbox{\hyperlink{abc_detector_component_8hh}{abc\+Detector\+Component.\+hh}}
 \begin{DoxyCompactList}\small\item\em Provides helper base class \mbox{\hyperlink{classabc_detector_component}{abc\+Detector\+Component}} for constructing and managing detector components in \mbox{\hyperlink{class_o_m_sim}{OMSim}}. \end{DoxyCompactList}\item 
 file \mbox{\hyperlink{_o_m_sim_8hh}{OMSim.\+hh}}
-\begin{DoxyCompactList}\small\item\em Main simulation class for the Optical Module (OM) simulation. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Main simulation class for the Optical Module (OM) simulation. This file defines the \mbox{\hyperlink{class_o_m_sim}{OMSim}} class, which controls the entire simulation process in all studies and includes the general program options. \end{DoxyCompactList}\item 
 file \mbox{\hyperlink{_o_m_sim_command_args_table_8hh}{OMSim\+Command\+Args\+Table.\+hh}}
 \begin{DoxyCompactList}\small\item\em Definition of the \mbox{\hyperlink{class_o_m_sim_command_args_table}{OMSim\+Command\+Args\+Table}} singleton class, which controls user args. \end{DoxyCompactList}\item 
 file \mbox{\hyperlink{_o_m_sim_data_file_types_8hh}{OMSim\+Data\+File\+Types.\+hh}}
@@ -24,15 +24,23 @@ file \mbox{\hyperlink{_o_m_sim_hit_manager_8hh}{OMSim\+Hit\+Manager.\+hh}}
 \begin{DoxyCompactList}\small\item\em Defines structures and classes related to optical module photon hit management. \end{DoxyCompactList}\item 
 file \mbox{\hyperlink{_o_m_sim_u_iinterface_8hh}{OMSim\+UIinterface.\+hh}}
 \begin{DoxyCompactList}\small\item\em The \mbox{\hyperlink{class_o_m_sim_u_iinterface}{OMSim\+UIinterface}} class provides a singleton interface to Geant4\textquotesingle{}s UI manager. \end{DoxyCompactList}\item 
-file \mbox{\hyperlink{_o_m_sim_d_e_g_g_8cc}{OMSim\+DEGG.\+cc}}
+file \mbox{\hyperlink{_o_m_sim_8cc}{OMSim.\+cc}}
+\begin{DoxyCompactList}\small\item\em Implementation of the \mbox{\hyperlink{class_o_m_sim}{OMSim}} class. \end{DoxyCompactList}\item 
+file \mbox{\hyperlink{_o_m_sim_d_e_g_g_8hh}{OMSim\+DEGG.\+hh}}
 \begin{DoxyCompactList}\small\item\em Construction of the \mbox{\hyperlink{class_d_e_g_g}{DEGG}} class. \end{DoxyCompactList}\item 
-file \mbox{\hyperlink{_o_m_sim_l_o_m16_8cc}{OMSim\+LOM16.\+cc}}
+file \mbox{\hyperlink{_o_m_sim_d_e_g_g_harness_8hh}{OMSim\+DEGGHarness.\+hh}}
+\begin{DoxyCompactList}\small\item\em Construction of the \mbox{\hyperlink{class_d_e_g_g}{DEGG}} harness. \end{DoxyCompactList}\item 
+file \mbox{\hyperlink{_o_m_sim_l_o_m16_8hh}{OMSim\+LOM16.\+hh}}
 \begin{DoxyCompactList}\small\item\em Construction of \mbox{\hyperlink{class_l_o_m16}{LOM16}}. \end{DoxyCompactList}\item 
-file \mbox{\hyperlink{_o_m_sim_l_o_m18_8cc}{OMSim\+LOM18.\+cc}}
+file \mbox{\hyperlink{_o_m_sim_l_o_m18_8hh}{OMSim\+LOM18.\+hh}}
 \begin{DoxyCompactList}\small\item\em Construction of \mbox{\hyperlink{class_l_o_m18}{LOM18}}. \end{DoxyCompactList}\item 
-file \mbox{\hyperlink{_o_m_sim_m_d_o_m_8cc}{OMSim\+MDOM.\+cc}}
+file \mbox{\hyperlink{_o_m_sim_m_d_o_m_8hh}{OMSim\+MDOM.\+hh}}
 \begin{DoxyCompactList}\small\item\em Construction of \mbox{\hyperlink{classm_d_o_m}{m\+DOM}}. \end{DoxyCompactList}\item 
-file \mbox{\hyperlink{_o_m_sim_p_d_o_m_8cc}{OMSim\+PDOM.\+cc}}
+file \mbox{\hyperlink{_o_m_sim_m_d_o_m_flasher_8hh}{OMSim\+MDOMFlasher.\+hh}}
+\begin{DoxyCompactList}\small\item\em Defines the \mbox{\hyperlink{classm_d_o_m_flasher}{m\+DOMFlasher}} class for simulating the 10 flashers in an \mbox{\hyperlink{classm_d_o_m}{m\+DOM}} optical module. \end{DoxyCompactList}\item 
+file \mbox{\hyperlink{_o_m_sim_m_d_o_m_harness_8hh}{OMSim\+MDOMHarness.\+hh}}
+\begin{DoxyCompactList}\small\item\em Construction of \mbox{\hyperlink{classm_d_o_m}{m\+DOM}} harness. \end{DoxyCompactList}\item 
+file \mbox{\hyperlink{_o_m_sim_p_d_o_m_8hh}{OMSim\+PDOM.\+hh}}
 \begin{DoxyCompactList}\small\item\em Implementation of the p\+DOM/\+Gen1 DOM class. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Classes}
 \begin{DoxyCompactItemize}
@@ -65,6 +73,8 @@ class \mbox{\hyperlink{class_o_m_sim_u_iinterface}{OMSim\+UIinterface}}
 \begin{DoxyCompactList}\small\item\em Singleton interface to Geant4\textquotesingle{}s UI manager. \end{DoxyCompactList}\item 
 class \mbox{\hyperlink{class_d_e_g_g}{DEGG}}
 \begin{DoxyCompactList}\small\item\em Construction of the \mbox{\hyperlink{class_d_e_g_g}{DEGG}} detector geometry. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classm_d_o_m_flasher}{m\+DOMFlasher}}
+\begin{DoxyCompactList}\small\item\em The \mbox{\hyperlink{classm_d_o_m_flasher}{m\+DOMFlasher}} class represents the 10 flashers in an \mbox{\hyperlink{classm_d_o_m}{m\+DOM}} optical module. \end{DoxyCompactList}\item 
 class \mbox{\hyperlink{class_optical_module}{Optical\+Module}}
 \begin{DoxyCompactList}\small\item\em Base class for OMs works as interface. \end{DoxyCompactList}\item 
 class \mbox{\hyperlink{classp_d_o_m}{p\+DOM}}

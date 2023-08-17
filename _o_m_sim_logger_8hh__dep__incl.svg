@@ -36,7 +36,7 @@
 <!-- Node14 -->
 <g id="node14" class="node">
 <title>Node14</title>
-<g id="a_node14"><a xlink:href="_o_m_sim_m_d_o_m_8cc.html" target="_top" xlink:title="Construction of mDOM.">
+<g id="a_node14"><a xlink:href="_o_m_sim_m_d_o_m_8cc.html" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="black" points="169.5,-112.5 169.5,-131.5 267.5,-131.5 267.5,-112.5 169.5,-112.5"/>
 <text text-anchor="middle" x="218.5" y="-119.5" font-family="Helvetica,sans-Serif" font-size="10.00">OMSimMDOM.cc</text>
 </a>
@@ -96,7 +96,7 @@
 <!-- Node24 -->
 <g id="node24" class="node">
 <title>Node24</title>
-<g id="a_node24"><a xlink:href="_o_m_sim_d_e_g_g_8cc.html" target="_top" xlink:title="Construction of the DEGG class.">
+<g id="a_node24"><a xlink:href="_o_m_sim_d_e_g_g_8cc.html" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="black" points="1418.5,-168.5 1418.5,-187.5 1512.5,-187.5 1512.5,-168.5 1418.5,-168.5"/>
 <text text-anchor="middle" x="1465.5" y="-175.5" font-family="Helvetica,sans-Serif" font-size="10.00">OMSimDEGG.cc</text>
 </a>
@@ -111,7 +111,7 @@
 <!-- Node25 -->
 <g id="node25" class="node">
 <title>Node25</title>
-<g id="a_node25"><a xlink:href="_o_m_sim_l_o_m16_8cc.html" target="_top" xlink:title="Construction of LOM16.">
+<g id="a_node25"><a xlink:href="_o_m_sim_l_o_m16_8cc.html" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="black" points="1531,-168.5 1531,-187.5 1630,-187.5 1630,-168.5 1531,-168.5"/>
 <text text-anchor="middle" x="1580.5" y="-175.5" font-family="Helvetica,sans-Serif" font-size="10.00">OMSimLOM16.cc</text>
 </a>
@@ -126,7 +126,7 @@
 <!-- Node26 -->
 <g id="node26" class="node">
 <title>Node26</title>
-<g id="a_node26"><a xlink:href="_o_m_sim_l_o_m18_8cc.html" target="_top" xlink:title="Construction of LOM18.">
+<g id="a_node26"><a xlink:href="_o_m_sim_l_o_m18_8cc.html" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="black" points="1648,-168.5 1648,-187.5 1747,-187.5 1747,-168.5 1648,-168.5"/>
 <text text-anchor="middle" x="1697.5" y="-175.5" font-family="Helvetica,sans-Serif" font-size="10.00">OMSimLOM18.cc</text>
 </a>
@@ -141,7 +141,7 @@
 <!-- Node27 -->
 <g id="node27" class="node">
 <title>Node27</title>
-<g id="a_node27"><a xlink:href="_o_m_sim_p_d_o_m_8cc.html" target="_top" xlink:title="Implementation of the pDOM/Gen1 DOM class.">
+<g id="a_node27"><a xlink:href="_o_m_sim_p_d_o_m_8cc.html" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="black" points="1765,-168.5 1765,-187.5 1860,-187.5 1860,-168.5 1765,-168.5"/>
 <text text-anchor="middle" x="1812.5" y="-175.5" font-family="Helvetica,sans-Serif" font-size="10.00">OMSimPDOM.cc</text>
 </a>
@@ -222,7 +222,7 @@
 <!-- Node15 -->
 <g id="node15" class="node">
 <title>Node15</title>
-<g id="a_node15"><a xlink:href="_o_m_sim_m_d_o_m_harness_8cc.html" target="_top" xlink:title="Construction of mDOM harness.">
+<g id="a_node15"><a xlink:href="_o_m_sim_m_d_o_m_harness_8cc.html" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="black" points="862.5,-112.5 862.5,-131.5 1000.5,-131.5 1000.5,-112.5 862.5,-112.5"/>
 <text text-anchor="middle" x="931.5" y="-119.5" font-family="Helvetica,sans-Serif" font-size="10.00">OMSimMDOMHarness.cc</text>
 </a>
@@ -312,7 +312,7 @@
 <!-- Node4 -->
 <g id="node4" class="node">
 <title>Node4</title>
-<g id="a_node4"><a xlink:href="_o_m_sim_8hh.html" target="_top" xlink:title="Main simulation class for the Optical Module (OM) simulation.">
+<g id="a_node4"><a xlink:href="_o_m_sim_8hh.html" target="_top" xlink:title="Main simulation class for the Optical Module (OM) simulation. This file defines the OMSim class,...">
 <polygon fill="white" stroke="black" points="120,-56.5 120,-75.5 187,-75.5 187,-56.5 120,-56.5"/>
 <text text-anchor="middle" x="153.5" y="-63.5" font-family="Helvetica,sans-Serif" font-size="10.00">OMSim.hh</text>
 </a>
@@ -372,7 +372,7 @@
 <!-- Node5 -->
 <g id="node5" class="node">
 <title>Node5</title>
-<g id="a_node5"><a xlink:href="_o_m_sim_8cc.html" target="_top" xlink:title=" ">
+<g id="a_node5"><a xlink:href="_o_m_sim_8cc.html" target="_top" xlink:title="Implementation of the OMSim class.">
 <polygon fill="white" stroke="black" points="0,-0.5 0,-19.5 65,-19.5 65,-0.5 0,-0.5"/>
 <text text-anchor="middle" x="32.5" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">OMSim.cc</text>
 </a>

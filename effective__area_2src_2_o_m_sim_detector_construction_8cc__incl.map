@@ -1,10 +1,10 @@
 <map id="OMSimDetectorConstruction.cc" name="OMSimDetectorConstruction.cc">
 <area shape="rect" id="node1" title=" " alt="" coords="519,5,745,32"/>
 <area shape="rect" id="node2" title=" " alt="" coords="5,80,232,107"/>
-<area shape="rect" id="node3" href="$_o_m_sim_p_d_o_m_8hh.html" title=" " alt="" coords="415,80,545,107"/>
-<area shape="rect" id="node17" href="$_o_m_sim_l_o_m16_8hh.html" title=" " alt="" coords="257,80,391,107"/>
-<area shape="rect" id="node18" href="$_o_m_sim_l_o_m18_8hh.html" title=" " alt="" coords="719,80,854,107"/>
-<area shape="rect" id="node21" href="$_o_m_sim_d_e_g_g_8hh.html" title=" " alt="" coords="569,80,695,107"/>
+<area shape="rect" id="node3" href="$_o_m_sim_p_d_o_m_8hh.html" title="Implementation of the pDOM/Gen1 DOM class." alt="" coords="415,80,545,107"/>
+<area shape="rect" id="node17" href="$_o_m_sim_l_o_m16_8hh.html" title="Construction of LOM16." alt="" coords="257,80,391,107"/>
+<area shape="rect" id="node18" href="$_o_m_sim_l_o_m18_8hh.html" title="Construction of LOM18." alt="" coords="719,80,854,107"/>
+<area shape="rect" id="node21" href="$_o_m_sim_d_e_g_g_8hh.html" title="Construction of the DEGG class." alt="" coords="569,80,695,107"/>
 <area shape="rect" id="node22" href="$_o_m_sim_command_args_table_8hh.html" title="Definition of the OMSimCommandArgsTable singleton class, which controls user args." alt="" coords="1432,80,1651,107"/>
 <area shape="rect" id="node29" href="$_o_m_sim_hit_manager_8hh.html" title="Defines structures and classes related to optical module photon hit management." alt="" coords="1131,80,1295,107"/>
 <area shape="rect" id="node4" href="$_o_m_sim_p_m_t_construction_8hh.html" title="Construction of the PMTs." alt="" coords="522,229,721,256"/>

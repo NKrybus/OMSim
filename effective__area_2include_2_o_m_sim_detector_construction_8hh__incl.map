@@ -1,9 +1,9 @@
 <map id="OMSimDetectorConstruction.hh" name="OMSimDetectorConstruction.hh">
 <area shape="rect" id="node1" title=" " alt="" coords="603,5,830,32"/>
-<area shape="rect" id="node2" href="$_o_m_sim_m_d_o_m_8hh.html" title=" " alt="" coords="518,80,651,107"/>
+<area shape="rect" id="node2" href="$_o_m_sim_m_d_o_m_8hh.html" title="Construction of mDOM." alt="" coords="518,80,651,107"/>
 <area shape="rect" id="node18" title=" " alt="" coords="675,80,758,107"/>
 <area shape="rect" id="node19" title=" " alt="" coords="782,80,1019,107"/>
-<area shape="rect" id="node3" href="$_o_m_sim_m_d_o_m_flasher_8hh.html" title=" " alt="" coords="361,229,541,256"/>
+<area shape="rect" id="node3" href="$_o_m_sim_m_d_o_m_flasher_8hh.html" title="Defines the mDOMFlasher class for simulating the 10 flashers in an mDOM optical module." alt="" coords="361,229,541,256"/>
 <area shape="rect" id="node15" href="$_o_m_sim_p_m_t_construction_8hh.html" title="Construction of the PMTs." alt="" coords="616,229,815,256"/>
 <area shape="rect" id="node17" href="$_o_m_sim_optical_module_8hh.html" title=" " alt="" coords="493,155,676,181"/>
 <area shape="rect" id="node4" href="$abc_detector_component_8hh.html" title="Provides helper base class abcDetectorComponent for constructing and managing detector components in ..." alt="" coords="541,304,737,331"/>

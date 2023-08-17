@@ -12,7 +12,7 @@
 <!-- Node1 -->
 <g id="node1" class="node">
 <title>Node1</title>
-<g id="a_node1"><a xlink:title="Construction of LOM18.">
+<g id="a_node1"><a xlink:title=" ">
 <polygon fill="#bfbfbf" stroke="black" points="2204,-347.5 2204,-366.5 2303,-366.5 2303,-347.5 2204,-347.5"/>
 <text text-anchor="middle" x="2253.5" y="-354.5" font-family="Helvetica,sans-Serif" font-size="10.00">OMSimLOM18.cc</text>
 </a>
@@ -21,7 +21,7 @@
 <!-- Node2 -->
 <g id="node2" class="node">
 <title>Node2</title>
-<g id="a_node2"><a xlink:href="_o_m_sim_l_o_m18_8hh.html" target="_top" xlink:title=" ">
+<g id="a_node2"><a xlink:href="_o_m_sim_l_o_m18_8hh.html" target="_top" xlink:title="Construction of LOM18.">
 <polygon fill="white" stroke="black" points="629,-291.5 629,-310.5 730,-310.5 730,-291.5 629,-291.5"/>
 <text text-anchor="middle" x="679.5" y="-298.5" font-family="Helvetica,sans-Serif" font-size="10.00">OMSimLOM18.hh</text>
 </a>

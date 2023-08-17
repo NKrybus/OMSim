@@ -12,7 +12,7 @@
 <!-- Node1 -->
 <g id="node1" class="node">
 <title>Node1</title>
-<g id="a_node1"><a xlink:title="Construction of the DEGG class.">
+<g id="a_node1"><a xlink:title=" ">
 <polygon fill="#bfbfbf" stroke="black" points="2102.5,-347.5 2102.5,-366.5 2196.5,-366.5 2196.5,-347.5 2102.5,-347.5"/>
 <text text-anchor="middle" x="2149.5" y="-354.5" font-family="Helvetica,sans-Serif" font-size="10.00">OMSimDEGG.cc</text>
 </a>
@@ -21,7 +21,7 @@
 <!-- Node2 -->
 <g id="node2" class="node">
 <title>Node2</title>
-<g id="a_node2"><a xlink:href="_o_m_sim_d_e_g_g_8hh.html" target="_top" xlink:title=" ">
+<g id="a_node2"><a xlink:href="_o_m_sim_d_e_g_g_8hh.html" target="_top" xlink:title="Construction of the DEGG class.">
 <polygon fill="white" stroke="black" points="559,-291.5 559,-310.5 654,-310.5 654,-291.5 559,-291.5"/>
 <text text-anchor="middle" x="606.5" y="-298.5" font-family="Helvetica,sans-Serif" font-size="10.00">OMSimDEGG.hh</text>
 </a>

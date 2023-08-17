@@ -118,33 +118,43 @@ $(document).ready(function(){initNavTree('_o_m_sim_optical_module_8hh_source.htm
 </div><!--header-->
 <div class="contents">
 <a href="_o_m_sim_optical_module_8hh.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#ifndef OpticalModule_h</span></div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#define OpticalModule_h 1</span></div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="abc_detector_component_8hh.html">abcDetectorComponent.hh</a>&quot;</span></div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_o_m_sim_p_m_t_construction_8hh.html">OMSimPMTConstruction.hh</a>&quot;</span></div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160; </div>
-<div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="class_optical_module.html">   12</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_optical_module.html">OpticalModule</a>: <span class="keyword">public</span> <a class="code" href="classabc_detector_component.html">abcDetectorComponent</a></div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;{</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="class_optical_module.html#ab559dfa88537ceba930183a4c0eafbfd">   18</a></span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">double</span> <a class="code" href="class_optical_module.html#ab559dfa88537ceba930183a4c0eafbfd">getPressureVesselWeight</a>() = 0;</div>
-<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="class_optical_module.html#a851f73098f123c00dbe5a783e2b650ff">   19</a></span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">int</span> <a class="code" href="class_optical_module.html#a851f73098f123c00dbe5a783e2b650ff">getNumberOfPMTs</a>() = 0;</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
-<div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="class_optical_module.html#a4bbc93f99a32d030fc2b3b8d4e247777">   21</a></span>&#160;        <a class="code" href="class_o_m_sim_p_m_t_construction.html">OMSimPMTConstruction</a>* <a class="code" href="class_optical_module.html#a4bbc93f99a32d030fc2b3b8d4e247777">getPMTmanager</a>() {<span class="keywordflow">return</span> <a class="code" href="class_optical_module.html#a90bdd6e11b76eb6e1c620bcdc3863e3b">mPMTManager</a>;};</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;        </div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="class_optical_module.html#a90bdd6e11b76eb6e1c620bcdc3863e3b">   24</a></span>&#160;        <a class="code" href="class_o_m_sim_p_m_t_construction.html">OMSimPMTConstruction</a> *<a class="code" href="class_optical_module.html#a90bdd6e11b76eb6e1c620bcdc3863e3b">mPMTManager</a>;</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;};</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#ifndef OpticalModule_h</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#define OpticalModule_h 1</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="abc_detector_component_8hh.html">abcDetectorComponent.hh</a>&quot;</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_o_m_sim_p_m_t_construction_8hh.html">OMSimPMTConstruction.hh</a>&quot;</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; </div>
+<div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="class_optical_module.html">   21</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_optical_module.html">OpticalModule</a> : <span class="keyword">public</span> <a class="code" href="classabc_detector_component.html">abcDetectorComponent</a></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;{</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="class_optical_module.html#ab559dfa88537ceba930183a4c0eafbfd">   30</a></span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">double</span> <a class="code" href="class_optical_module.html#ab559dfa88537ceba930183a4c0eafbfd">getPressureVesselWeight</a>() = 0;</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
+<div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="class_optical_module.html#a851f73098f123c00dbe5a783e2b650ff">   38</a></span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">int</span> <a class="code" href="class_optical_module.html#a851f73098f123c00dbe5a783e2b650ff">getNumberOfPMTs</a>() = 0;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
+<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="class_optical_module.html#a4bbc93f99a32d030fc2b3b8d4e247777">   40</a></span>&#160;    <a class="code" href="class_o_m_sim_p_m_t_construction.html">OMSimPMTConstruction</a> *<a class="code" href="class_optical_module.html#a4bbc93f99a32d030fc2b3b8d4e247777">getPMTmanager</a>() { <span class="keywordflow">return</span> <a class="code" href="class_optical_module.html#a90bdd6e11b76eb6e1c620bcdc3863e3b">mPMTManager</a>; };</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
+<div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="class_optical_module.html#ae286c985f3b523aa96e39eaae47421a7">   42</a></span>&#160;    <span class="keyword">virtual</span> <a class="code" href="class_optical_module.html#ae286c985f3b523aa96e39eaae47421a7">~OpticalModule</a>()</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    {</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="class_optical_module.html#a90bdd6e11b76eb6e1c620bcdc3863e3b">mPMTManager</a> != <span class="keyword">nullptr</span>)</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        {</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;            <span class="keyword">delete</span> <a class="code" href="class_optical_module.html#a90bdd6e11b76eb6e1c620bcdc3863e3b">mPMTManager</a>;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;            <a class="code" href="class_optical_module.html#a90bdd6e11b76eb6e1c620bcdc3863e3b">mPMTManager</a> = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        }</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    }</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00052"></a><span class="lineno"><a class="line" href="class_optical_module.html#a90bdd6e11b76eb6e1c620bcdc3863e3b">   52</a></span>&#160;    <a class="code" href="class_o_m_sim_p_m_t_construction.html">OMSimPMTConstruction</a> *<a class="code" href="class_optical_module.html#a90bdd6e11b76eb6e1c620bcdc3863e3b">mPMTManager</a>;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;};</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="ttc" id="a_o_m_sim_p_m_t_construction_8hh_html"><div class="ttname"><a href="_o_m_sim_p_m_t_construction_8hh.html">OMSimPMTConstruction.hh</a></div><div class="ttdoc">Construction of the PMTs.</div></div>
 <div class="ttc" id="aabc_detector_component_8hh_html"><div class="ttname"><a href="abc_detector_component_8hh.html">abcDetectorComponent.hh</a></div><div class="ttdoc">Provides helper base class abcDetectorComponent for constructing and managing detector components in ...</div></div>
 <div class="ttc" id="aclass_o_m_sim_p_m_t_construction_html"><div class="ttname"><a href="class_o_m_sim_p_m_t_construction.html">OMSimPMTConstruction</a></div><div class="ttdef"><b>Definition:</b> OMSimPMTConstruction.hh:15</div></div>
-<div class="ttc" id="aclass_optical_module_html"><div class="ttname"><a href="class_optical_module.html">OpticalModule</a></div><div class="ttdoc">Base class for OMs works as interface.</div><div class="ttdef"><b>Definition:</b> OMSimOpticalModule.hh:13</div></div>
-<div class="ttc" id="aclass_optical_module_html_a4bbc93f99a32d030fc2b3b8d4e247777"><div class="ttname"><a href="class_optical_module.html#a4bbc93f99a32d030fc2b3b8d4e247777">OpticalModule::getPMTmanager</a></div><div class="ttdeci">OMSimPMTConstruction * getPMTmanager()</div><div class="ttdef"><b>Definition:</b> OMSimOpticalModule.hh:21</div></div>
-<div class="ttc" id="aclass_optical_module_html_a851f73098f123c00dbe5a783e2b650ff"><div class="ttname"><a href="class_optical_module.html#a851f73098f123c00dbe5a783e2b650ff">OpticalModule::getNumberOfPMTs</a></div><div class="ttdeci">virtual int getNumberOfPMTs()=0</div></div>
-<div class="ttc" id="aclass_optical_module_html_a90bdd6e11b76eb6e1c620bcdc3863e3b"><div class="ttname"><a href="class_optical_module.html#a90bdd6e11b76eb6e1c620bcdc3863e3b">OpticalModule::mPMTManager</a></div><div class="ttdeci">OMSimPMTConstruction * mPMTManager</div><div class="ttdef"><b>Definition:</b> OMSimOpticalModule.hh:21</div></div>
-<div class="ttc" id="aclass_optical_module_html_ab559dfa88537ceba930183a4c0eafbfd"><div class="ttname"><a href="class_optical_module.html#ab559dfa88537ceba930183a4c0eafbfd">OpticalModule::getPressureVesselWeight</a></div><div class="ttdeci">virtual double getPressureVesselWeight()=0</div><div class="ttdoc">Returns weight of pressure vessel in kg.</div></div>
+<div class="ttc" id="aclass_optical_module_html"><div class="ttname"><a href="class_optical_module.html">OpticalModule</a></div><div class="ttdoc">Base class for OMs works as interface.</div><div class="ttdef"><b>Definition:</b> OMSimOpticalModule.hh:22</div></div>
+<div class="ttc" id="aclass_optical_module_html_a4bbc93f99a32d030fc2b3b8d4e247777"><div class="ttname"><a href="class_optical_module.html#a4bbc93f99a32d030fc2b3b8d4e247777">OpticalModule::getPMTmanager</a></div><div class="ttdeci">OMSimPMTConstruction * getPMTmanager()</div><div class="ttdef"><b>Definition:</b> OMSimOpticalModule.hh:40</div></div>
+<div class="ttc" id="aclass_optical_module_html_a851f73098f123c00dbe5a783e2b650ff"><div class="ttname"><a href="class_optical_module.html#a851f73098f123c00dbe5a783e2b650ff">OpticalModule::getNumberOfPMTs</a></div><div class="ttdeci">virtual int getNumberOfPMTs()=0</div><div class="ttdoc">Virtual method to get the number of PMTs in the optical module.</div></div>
+<div class="ttc" id="aclass_optical_module_html_a90bdd6e11b76eb6e1c620bcdc3863e3b"><div class="ttname"><a href="class_optical_module.html#a90bdd6e11b76eb6e1c620bcdc3863e3b">OpticalModule::mPMTManager</a></div><div class="ttdeci">OMSimPMTConstruction * mPMTManager</div><div class="ttdef"><b>Definition:</b> OMSimOpticalModule.hh:52</div></div>
+<div class="ttc" id="aclass_optical_module_html_ab559dfa88537ceba930183a4c0eafbfd"><div class="ttname"><a href="class_optical_module.html#ab559dfa88537ceba930183a4c0eafbfd">OpticalModule::getPressureVesselWeight</a></div><div class="ttdeci">virtual double getPressureVesselWeight()=0</div><div class="ttdoc">Virtual method to get the weight of the pressure vessel.</div></div>
+<div class="ttc" id="aclass_optical_module_html_ae286c985f3b523aa96e39eaae47421a7"><div class="ttname"><a href="class_optical_module.html#ae286c985f3b523aa96e39eaae47421a7">OpticalModule::~OpticalModule</a></div><div class="ttdeci">virtual ~OpticalModule()</div><div class="ttdef"><b>Definition:</b> OMSimOpticalModule.hh:42</div></div>
 <div class="ttc" id="aclassabc_detector_component_html"><div class="ttname"><a href="classabc_detector_component.html">abcDetectorComponent</a></div><div class="ttdoc">Abstract base class used for constructing detector components.</div><div class="ttdef"><b>Definition:</b> abcDetectorComponent.hh:27</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
@@ -152,7 +162,7 @@ $(document).ready(function(){initNavTree('_o_m_sim_optical_module_8hh_source.htm
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_bdd9a5d540de89e9fe90efdfc6973a4f.html">common</a></li><li class="navelem"><a class="el" href="dir_cb570a242dbc0052c0f504f8f76c32b4.html">optical_modules</a></li><li class="navelem"><a class="el" href="dir_8b9196544f899077021e98e42ad8aa98.html">include</a></li><li class="navelem"><a class="el" href="_o_m_sim_optical_module_8hh.html">OMSimOpticalModule.hh</a></li>
-    <li class="footer">Generated on Wed Aug 16 2023 17:53:39 for OMSim by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Thu Aug 17 2023 12:27:26 for OMSim by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

@@ -1,6 +1,6 @@
 <map id="OMSim_radioactive_decays.cc" name="OMSim_radioactive_decays.cc">
 <area shape="rect" id="node1" title=" " alt="" coords="636,5,856,32"/>
-<area shape="rect" id="node2" href="$_o_m_sim_8hh.html" title="Main simulation class for the Optical Module (OM) simulation." alt="" coords="2317,80,2407,107"/>
+<area shape="rect" id="node2" href="$_o_m_sim_8hh.html" title="Main simulation class for the Optical Module (OM) simulation. This file defines the OMSim class,..." alt="" coords="2317,80,2407,107"/>
 <area shape="rect" id="node29" href="$_o_m_sim_decays_g_p_s_8hh.html" title=" " alt="" coords="362,80,525,107"/>
 <area shape="rect" id="node44" href="$_o_m_sim_hit_manager_8hh.html" title="Defines structures and classes related to optical module photon hit management." alt="" coords="765,80,929,107"/>
 <area shape="rect" id="node50" href="$_o_m_sim_decays_analysis_8hh.html" title=" " alt="" coords="549,80,741,107"/>

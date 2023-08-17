@@ -142,13 +142,16 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ab837d810e22d601fc1a298ba0dfddd48"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_l_o_m16.html#ab837d810e22d601fc1a298ba0dfddd48">construction</a> ()</td></tr>
 <tr class="separator:ab837d810e22d601fc1a298ba0dfddd48"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa91c920187061c71df5560864845c8a8"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_l_o_m16.html#aa91c920187061c71df5560864845c8a8">getPressureVesselWeight</a> ()</td></tr>
-<tr class="memdesc:aa91c920187061c71df5560864845c8a8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns weight of pressure vessel in kg.  <a href="class_l_o_m16.html#aa91c920187061c71df5560864845c8a8">More...</a><br /></td></tr>
+<tr class="memdesc:aa91c920187061c71df5560864845c8a8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Virtual method to get the weight of the pressure vessel.  <a href="class_l_o_m16.html#aa91c920187061c71df5560864845c8a8">More...</a><br /></td></tr>
 <tr class="separator:aa91c920187061c71df5560864845c8a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab6c3906a5b9bb9f05ff72d7d089cf967"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_l_o_m16.html#ab6c3906a5b9bb9f05ff72d7d089cf967">getNumberOfPMTs</a> ()</td></tr>
+<tr class="memdesc:ab6c3906a5b9bb9f05ff72d7d089cf967"><td class="mdescLeft">&#160;</td><td class="mdescRight">Virtual method to get the number of PMTs in the optical module.  <a href="class_l_o_m16.html#ab6c3906a5b9bb9f05ff72d7d089cf967">More...</a><br /></td></tr>
 <tr class="separator:ab6c3906a5b9bb9f05ff72d7d089cf967"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class_optical_module"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_optical_module')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_optical_module.html">OpticalModule</a></td></tr>
 <tr class="memitem:a4bbc93f99a32d030fc2b3b8d4e247777 inherit pub_methods_class_optical_module"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_o_m_sim_p_m_t_construction.html">OMSimPMTConstruction</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_optical_module.html#a4bbc93f99a32d030fc2b3b8d4e247777">getPMTmanager</a> ()</td></tr>
 <tr class="separator:a4bbc93f99a32d030fc2b3b8d4e247777 inherit pub_methods_class_optical_module"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae286c985f3b523aa96e39eaae47421a7 inherit pub_methods_class_optical_module"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_optical_module.html#ae286c985f3b523aa96e39eaae47421a7">~OpticalModule</a> ()</td></tr>
+<tr class="separator:ae286c985f3b523aa96e39eaae47421a7 inherit pub_methods_class_optical_module"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classabc_detector_component"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classabc_detector_component')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classabc_detector_component.html">abcDetectorComponent</a></td></tr>
 <tr class="memitem:a49a4c0e7138f1c0ed90736f80dc41377 inherit pub_methods_classabc_detector_component"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classabc_detector_component.html#a49a4c0e7138f1c0ed90736f80dc41377">abcDetectorComponent</a> ()</td></tr>
 <tr class="separator:a49a4c0e7138f1c0ed90736f80dc41377 inherit pub_methods_classabc_detector_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -280,6 +283,14 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000004">Todo:</a></b></dt><dd><ul>
+<li>18/07/22 Solve collisions of CAD with PMTs<ul>
+<li>Clean up magic number variables and comment their meaning</li>
+<li>Write documentation and parse current comments into Doxygen style </li>
+</ul>
+</li>
+</ul>
+</dd></dl>
 
 </div>
 </div>
@@ -333,6 +344,7 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>This method should be overridden in derived classes to provide the number of PMTs in the specific optical module. </p><dl class="section return"><dt>Returns</dt><dd>Number of PMTs in the optical module. </dd></dl>
 
 <p>Implements <a class="el" href="class_optical_module.html#a851f73098f123c00dbe5a783e2b650ff">OpticalModule</a>.</p>
 
@@ -360,6 +372,7 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>This method should be overridden in derived classes to provide the weight of the pressure vessel for the specific optical module. </p><dl class="section return"><dt>Returns</dt><dd>Weight of the pressure vessel in kilograms. </dd></dl>
 
 <p>Implements <a class="el" href="class_optical_module.html#ab559dfa88537ceba930183a4c0eafbfd">OpticalModule</a>.</p>
 
@@ -375,7 +388,7 @@ Additional Inherited Members</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="class_l_o_m16.html">LOM16</a></li>
-    <li class="footer">Generated on Wed Aug 16 2023 17:53:39 for OMSim by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Thu Aug 17 2023 12:27:27 for OMSim by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

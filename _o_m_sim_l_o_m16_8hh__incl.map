@@ -1,5 +1,5 @@
 <map id="OMSimLOM16.hh" name="OMSimLOM16.hh">
-<area shape="rect" id="node1" title=" " alt="" coords="681,5,816,32"/>
+<area shape="rect" id="node1" title="Construction of LOM16." alt="" coords="681,5,816,32"/>
 <area shape="rect" id="node2" href="$_o_m_sim_p_m_t_construction_8hh.html" title="Construction of the PMTs." alt="" coords="715,155,913,181"/>
 <area shape="rect" id="node14" href="$_o_m_sim_optical_module_8hh.html" title=" " alt="" coords="593,80,776,107"/>
 <area shape="rect" id="node3" href="$abc_detector_component_8hh.html" title="Provides helper base class abcDetectorComponent for constructing and managing detector components in ..." alt="" coords="541,229,737,256"/>

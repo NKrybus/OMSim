@@ -21,7 +21,7 @@
 <!-- Node2 -->
 <g id="node2" class="node">
 <title>Node2</title>
-<g id="a_node2"><a xlink:href="_o_m_sim_m_d_o_m_8hh.html" target="_top" xlink:title=" ">
+<g id="a_node2"><a xlink:href="_o_m_sim_m_d_o_m_8hh.html" target="_top" xlink:title="Construction of mDOM.">
 <polygon fill="white" stroke="black" points="407.5,-291.5 407.5,-310.5 507.5,-310.5 507.5,-291.5 407.5,-291.5"/>
 <text text-anchor="middle" x="457.5" y="-298.5" font-family="Helvetica,sans-Serif" font-size="10.00">OMSimMDOM.hh</text>
 </a>
@@ -81,7 +81,7 @@
 <!-- Node3 -->
 <g id="node3" class="node">
 <title>Node3</title>
-<g id="a_node3"><a xlink:href="_o_m_sim_m_d_o_m_flasher_8hh.html" target="_top" xlink:title=" ">
+<g id="a_node3"><a xlink:href="_o_m_sim_m_d_o_m_flasher_8hh.html" target="_top" xlink:title="Defines the mDOMFlasher class for simulating the 10 flashers in an mDOM optical module.">
 <polygon fill="white" stroke="black" points="267,-179.5 267,-198.5 402,-198.5 402,-179.5 267,-179.5"/>
 <text text-anchor="middle" x="334.5" y="-186.5" font-family="Helvetica,sans-Serif" font-size="10.00">OMSimMDOMFlasher.hh</text>
 </a>

@@ -12,7 +12,7 @@
 <!-- Node1 -->
 <g id="node1" class="node">
 <title>Node1</title>
-<g id="a_node1"><a xlink:title="Construction of mDOM.">
+<g id="a_node1"><a xlink:title=" ">
 <polygon fill="#bfbfbf" stroke="black" points="793.5,-347.5 793.5,-366.5 891.5,-366.5 891.5,-347.5 793.5,-347.5"/>
 <text text-anchor="middle" x="842.5" y="-354.5" font-family="Helvetica,sans-Serif" font-size="10.00">OMSimMDOM.cc</text>
 </a>
@@ -21,7 +21,7 @@
 <!-- Node2 -->
 <g id="node2" class="node">
 <title>Node2</title>
-<g id="a_node2"><a xlink:href="_o_m_sim_m_d_o_m_8hh.html" target="_top" xlink:title=" ">
+<g id="a_node2"><a xlink:href="_o_m_sim_m_d_o_m_8hh.html" target="_top" xlink:title="Construction of mDOM.">
 <polygon fill="white" stroke="black" points="235.5,-291.5 235.5,-310.5 335.5,-310.5 335.5,-291.5 235.5,-291.5"/>
 <text text-anchor="middle" x="285.5" y="-298.5" font-family="Helvetica,sans-Serif" font-size="10.00">OMSimMDOM.hh</text>
 </a>
@@ -36,7 +36,7 @@
 <!-- Node18 -->
 <g id="node18" class="node">
 <title>Node18</title>
-<g id="a_node18"><a xlink:href="_o_m_sim_m_d_o_m_harness_8hh.html" target="_top" xlink:title=" ">
+<g id="a_node18"><a xlink:href="_o_m_sim_m_d_o_m_harness_8hh.html" target="_top" xlink:title="Construction of mDOM harness.">
 <polygon fill="white" stroke="black" points="546.5,-291.5 546.5,-310.5 686.5,-310.5 686.5,-291.5 546.5,-291.5"/>
 <text text-anchor="middle" x="616.5" y="-298.5" font-family="Helvetica,sans-Serif" font-size="10.00">OMSimMDOMHarness.hh</text>
 </a>
@@ -126,7 +126,7 @@
 <!-- Node3 -->
 <g id="node3" class="node">
 <title>Node3</title>
-<g id="a_node3"><a xlink:href="_o_m_sim_m_d_o_m_flasher_8hh.html" target="_top" xlink:title=" ">
+<g id="a_node3"><a xlink:href="_o_m_sim_m_d_o_m_flasher_8hh.html" target="_top" xlink:title="Defines the mDOMFlasher class for simulating the 10 flashers in an mDOM optical module.">
 <polygon fill="white" stroke="black" points="291,-179.5 291,-198.5 426,-198.5 426,-179.5 291,-179.5"/>
 <text text-anchor="middle" x="358.5" y="-186.5" font-family="Helvetica,sans-Serif" font-size="10.00">OMSimMDOMFlasher.hh</text>
 </a>

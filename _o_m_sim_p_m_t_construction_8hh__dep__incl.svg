@@ -51,7 +51,7 @@
 <!-- Node4 -->
 <g id="node4" class="node">
 <title>Node4</title>
-<g id="a_node4"><a xlink:href="_o_m_sim_d_e_g_g_8hh.html" target="_top" xlink:title=" ">
+<g id="a_node4"><a xlink:href="_o_m_sim_d_e_g_g_8hh.html" target="_top" xlink:title="Construction of the DEGG class.">
 <polygon fill="white" stroke="black" points="266.5,-56.5 266.5,-75.5 361.5,-75.5 361.5,-56.5 266.5,-56.5"/>
 <text text-anchor="middle" x="314" y="-63.5" font-family="Helvetica,sans-Serif" font-size="10.00">OMSimDEGG.hh</text>
 </a>
@@ -66,7 +66,7 @@
 <!-- Node8 -->
 <g id="node8" class="node">
 <title>Node8</title>
-<g id="a_node8"><a xlink:href="_o_m_sim_l_o_m16_8hh.html" target="_top" xlink:title=" ">
+<g id="a_node8"><a xlink:href="_o_m_sim_l_o_m16_8hh.html" target="_top" xlink:title="Construction of LOM16.">
 <polygon fill="white" stroke="black" points="379.5,-56.5 379.5,-75.5 480.5,-75.5 480.5,-56.5 379.5,-56.5"/>
 <text text-anchor="middle" x="430" y="-63.5" font-family="Helvetica,sans-Serif" font-size="10.00">OMSimLOM16.hh</text>
 </a>
@@ -81,7 +81,7 @@
 <!-- Node10 -->
 <g id="node10" class="node">
 <title>Node10</title>
-<g id="a_node10"><a xlink:href="_o_m_sim_l_o_m18_8hh.html" target="_top" xlink:title=" ">
+<g id="a_node10"><a xlink:href="_o_m_sim_l_o_m18_8hh.html" target="_top" xlink:title="Construction of LOM18.">
 <polygon fill="white" stroke="black" points="498.5,-56.5 498.5,-75.5 599.5,-75.5 599.5,-56.5 498.5,-56.5"/>
 <text text-anchor="middle" x="549" y="-63.5" font-family="Helvetica,sans-Serif" font-size="10.00">OMSimLOM18.hh</text>
 </a>
@@ -96,7 +96,7 @@
 <!-- Node12 -->
 <g id="node12" class="node">
 <title>Node12</title>
-<g id="a_node12"><a xlink:href="_o_m_sim_m_d_o_m_8hh.html" target="_top" xlink:title=" ">
+<g id="a_node12"><a xlink:href="_o_m_sim_m_d_o_m_8hh.html" target="_top" xlink:title="Construction of mDOM.">
 <polygon fill="white" stroke="black" points="1343,-56.5 1343,-75.5 1443,-75.5 1443,-56.5 1343,-56.5"/>
 <text text-anchor="middle" x="1393" y="-63.5" font-family="Helvetica,sans-Serif" font-size="10.00">OMSimMDOM.hh</text>
 </a>
@@ -126,7 +126,7 @@
 <!-- Node19 -->
 <g id="node19" class="node">
 <title>Node19</title>
-<g id="a_node19"><a xlink:href="_o_m_sim_p_d_o_m_8hh.html" target="_top" xlink:title=" ">
+<g id="a_node19"><a xlink:href="_o_m_sim_p_d_o_m_8hh.html" target="_top" xlink:title="Implementation of the pDOM/Gen1 DOM class.">
 <polygon fill="white" stroke="black" points="617.5,-56.5 617.5,-75.5 714.5,-75.5 714.5,-56.5 617.5,-56.5"/>
 <text text-anchor="middle" x="666" y="-63.5" font-family="Helvetica,sans-Serif" font-size="10.00">OMSimPDOM.hh</text>
 </a>
@@ -141,7 +141,7 @@
 <!-- Node5 -->
 <g id="node5" class="node">
 <title>Node5</title>
-<g id="a_node5"><a xlink:href="_o_m_sim_d_e_g_g_8cc.html" target="_top" xlink:title="Construction of the DEGG class.">
+<g id="a_node5"><a xlink:href="_o_m_sim_d_e_g_g_8cc.html" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="black" points="0,-0.5 0,-19.5 94,-19.5 94,-0.5 0,-0.5"/>
 <text text-anchor="middle" x="47" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">OMSimDEGG.cc</text>
 </a>
@@ -198,7 +198,7 @@
 <!-- Node9 -->
 <g id="node9" class="node">
 <title>Node9</title>
-<g id="a_node9"><a xlink:href="_o_m_sim_l_o_m16_8cc.html" target="_top" xlink:title="Construction of LOM16.">
+<g id="a_node9"><a xlink:href="_o_m_sim_l_o_m16_8cc.html" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="black" points="112.5,-0.5 112.5,-19.5 211.5,-19.5 211.5,-0.5 112.5,-0.5"/>
 <text text-anchor="middle" x="162" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">OMSimLOM16.cc</text>
 </a>
@@ -225,7 +225,7 @@
 <!-- Node11 -->
 <g id="node11" class="node">
 <title>Node11</title>
-<g id="a_node11"><a xlink:href="_o_m_sim_l_o_m18_8cc.html" target="_top" xlink:title="Construction of LOM18.">
+<g id="a_node11"><a xlink:href="_o_m_sim_l_o_m18_8cc.html" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="black" points="603.5,-0.5 603.5,-19.5 702.5,-19.5 702.5,-0.5 603.5,-0.5"/>
 <text text-anchor="middle" x="653" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">OMSimLOM18.cc</text>
 </a>
@@ -240,7 +240,7 @@
 <!-- Node13 -->
 <g id="node13" class="node">
 <title>Node13</title>
-<g id="a_node13"><a xlink:href="_o_m_sim_m_d_o_m_8cc.html" target="_top" xlink:title="Construction of mDOM.">
+<g id="a_node13"><a xlink:href="_o_m_sim_m_d_o_m_8cc.html" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="black" points="1344,-0.5 1344,-19.5 1442,-19.5 1442,-0.5 1344,-0.5"/>
 <text text-anchor="middle" x="1393" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">OMSimMDOM.cc</text>
 </a>
@@ -270,7 +270,7 @@
 <!-- Node15 -->
 <g id="node15" class="node">
 <title>Node15</title>
-<g id="a_node15"><a xlink:href="_o_m_sim_m_d_o_m_harness_8cc.html" target="_top" xlink:title="Construction of mDOM harness.">
+<g id="a_node15"><a xlink:href="_o_m_sim_m_d_o_m_harness_8cc.html" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="black" points="1612,-0.5 1612,-19.5 1750,-19.5 1750,-0.5 1612,-0.5"/>
 <text text-anchor="middle" x="1681" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">OMSimMDOMHarness.cc</text>
 </a>
@@ -372,7 +372,7 @@
 <!-- Node20 -->
 <g id="node20" class="node">
 <title>Node20</title>
-<g id="a_node20"><a xlink:href="_o_m_sim_p_d_o_m_8cc.html" target="_top" xlink:title="Implementation of the pDOM/Gen1 DOM class.">
+<g id="a_node20"><a xlink:href="_o_m_sim_p_d_o_m_8cc.html" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="black" points="720.5,-0.5 720.5,-19.5 815.5,-19.5 815.5,-0.5 720.5,-0.5"/>
 <text text-anchor="middle" x="768" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">OMSimPDOM.cc</text>
 </a>

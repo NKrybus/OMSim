@@ -8,11 +8,15 @@ var group__common =
     [ "OMSimDataFileTypes.hh", "_o_m_sim_data_file_types_8hh.html", null ],
     [ "OMSimHitManager.hh", "_o_m_sim_hit_manager_8hh.html", null ],
     [ "OMSimUIinterface.hh", "_o_m_sim_u_iinterface_8hh.html", null ],
-    [ "OMSimDEGG.cc", "_o_m_sim_d_e_g_g_8cc.html", null ],
-    [ "OMSimLOM16.cc", "_o_m_sim_l_o_m16_8cc.html", null ],
-    [ "OMSimLOM18.cc", "_o_m_sim_l_o_m18_8cc.html", null ],
-    [ "OMSimMDOM.cc", "_o_m_sim_m_d_o_m_8cc.html", null ],
-    [ "OMSimPDOM.cc", "_o_m_sim_p_d_o_m_8cc.html", null ],
+    [ "OMSim.cc", "_o_m_sim_8cc.html", null ],
+    [ "OMSimDEGG.hh", "_o_m_sim_d_e_g_g_8hh.html", null ],
+    [ "OMSimDEGGHarness.hh", "_o_m_sim_d_e_g_g_harness_8hh.html", null ],
+    [ "OMSimLOM16.hh", "_o_m_sim_l_o_m16_8hh.html", null ],
+    [ "OMSimLOM18.hh", "_o_m_sim_l_o_m18_8hh.html", null ],
+    [ "OMSimMDOM.hh", "_o_m_sim_m_d_o_m_8hh.html", null ],
+    [ "OMSimMDOMFlasher.hh", "_o_m_sim_m_d_o_m_flasher_8hh.html", null ],
+    [ "OMSimMDOMHarness.hh", "_o_m_sim_m_d_o_m_harness_8hh.html", null ],
+    [ "OMSimPDOM.hh", "_o_m_sim_p_d_o_m_8hh.html", null ],
     [ "abcDetectorComponent", "classabc_detector_component.html", [
       [ "Component", "structabc_detector_component_1_1_component.html", [
         [ "Name", "structabc_detector_component_1_1_component.html#a4dcf93b5baee28f73c52313138580b5e", null ],
@@ -156,7 +160,15 @@ var group__common =
       [ "getNumberOfPMTs", "class_d_e_g_g.html#a322fe20cae9cfce1b05817c0ac3f1393", null ],
       [ "getPressureVesselWeight", "class_d_e_g_g.html#affbc4905f52992f3d1f206f26466c076", null ]
     ] ],
+    [ "mDOMFlasher", "classm_d_o_m_flasher.html", [
+      [ "mDOMFlasher", "classm_d_o_m_flasher.html#af57c5f01f7137b62d33154d20ca1348f", null ],
+      [ "construction", "classm_d_o_m_flasher.html#aac8c466bbcc6d952ad82fbd29daa675f", null ],
+      [ "getSolids", "classm_d_o_m_flasher.html#ac779772218d50699e05de2e1fa785180", null ],
+      [ "runBeamOnFlasher", "classm_d_o_m_flasher.html#a268494f8d27175e1ae391789e1d66faf", null ],
+      [ "setNavigator", "classm_d_o_m_flasher.html#ae656273965d98ea994392fbec081c214", null ]
+    ] ],
     [ "OpticalModule", "class_optical_module.html", [
+      [ "~OpticalModule", "class_optical_module.html#ae286c985f3b523aa96e39eaae47421a7", null ],
       [ "getNumberOfPMTs", "class_optical_module.html#a851f73098f123c00dbe5a783e2b650ff", null ],
       [ "getPMTmanager", "class_optical_module.html#a4bbc93f99a32d030fc2b3b8d4e247777", null ],
       [ "getPressureVesselWeight", "class_optical_module.html#ab559dfa88537ceba930183a4c0eafbfd", null ],

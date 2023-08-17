@@ -19,6 +19,7 @@ var searchData=
   ['_7eomsimrunaction_575',['~OMSimRunAction',['../class_o_m_sim_run_action.html#aef8f7b1786567e557557aef9ffd113a3',1,'OMSimRunAction::~OMSimRunAction()'],['../class_o_m_sim_run_action.html#aef8f7b1786567e557557aef9ffd113a3',1,'OMSimRunAction::~OMSimRunAction()']]],
   ['_7eomsimsteppingaction_576',['~OMSimSteppingAction',['../class_o_m_sim_stepping_action.html#a6e42d5ce9f983bd718383689982930a1',1,'OMSimSteppingAction::~OMSimSteppingAction()'],['../class_o_m_sim_stepping_action.html#a6e42d5ce9f983bd718383689982930a1',1,'OMSimSteppingAction::~OMSimSteppingAction()']]],
   ['_7eomsimtrackingaction_577',['~OMSimTrackingAction',['../class_o_m_sim_tracking_action.html#ac07ef7ccd00ee45656a1ed22d5619d03',1,'OMSimTrackingAction']]],
-  ['_7epdom_578',['~pDOM',['../classp_d_o_m.html#aff85691171a4d8a8a1ad30ba1721b8c1',1,'pDOM']]],
-  ['_7ereader_579',['~Reader',['../class_c_a_d_mesh_1_1_file_1_1_reader.html#ad7779f697ba8c38cf7039c6c633328a6',1,'CADMesh::File::Reader']]]
+  ['_7eopticalmodule_578',['~OpticalModule',['../class_optical_module.html#ae286c985f3b523aa96e39eaae47421a7',1,'OpticalModule']]],
+  ['_7epdom_579',['~pDOM',['../classp_d_o_m.html#aff85691171a4d8a8a1ad30ba1721b8c1',1,'pDOM']]],
+  ['_7ereader_580',['~Reader',['../class_c_a_d_mesh_1_1_file_1_1_reader.html#ad7779f697ba8c38cf7039c6c633328a6',1,'CADMesh::File::Reader']]]
 ];

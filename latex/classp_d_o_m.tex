@@ -29,15 +29,15 @@ Collaboration diagram for p\+DOM\+:
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\hyperlink{classp_d_o_m_a8702e858160254f80acfbf15b38053c3}{p\+DOM}} (\mbox{\hyperlink{class_input_data_manager}{Input\+Data\+Manager}} $\ast$p\+Data, G4bool p\+Place\+Harness=true)
-\begin{DoxyCompactList}\small\item\em Constructor for \mbox{\hyperlink{classp_d_o_m}{p\+DOM}} class. \end{DoxyCompactList}\item 
+\item 
 \mbox{\hyperlink{classp_d_o_m_aff85691171a4d8a8a1ad30ba1721b8c1}{$\sim$p\+DOM}} ()
 \item 
 void \mbox{\hyperlink{classp_d_o_m_a6fc9511f8287a69ef498167162a92ec4}{construction}} ()
-\begin{DoxyCompactList}\small\item\em Construction of the \mbox{\hyperlink{classp_d_o_m}{p\+DOM}}. \end{DoxyCompactList}\item 
+\item 
 double \mbox{\hyperlink{classp_d_o_m_aff18b63813f3940d3cc8c0c49a3595d5}{get\+Pressure\+Vessel\+Weight}} ()
-\begin{DoxyCompactList}\small\item\em Returns weight of pressure vessel in kg. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Virtual method to get the weight of the pressure vessel. \end{DoxyCompactList}\item 
 int \mbox{\hyperlink{classp_d_o_m_a1e2c5cf50a25e2b234d9326f4fbbee9d}{get\+Number\+Of\+PMTs}} ()
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Virtual method to get the number of PMTs in the optical module. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Public Attributes}
 \begin{DoxyCompactItemize}
 \item 
@@ -53,18 +53,11 @@ G4bool \mbox{\hyperlink{classp_d_o_m_ac2957c4f838bb9cc9ced72e424691df5}{m\+Place
 \doxysubsubsection{\texorpdfstring{pDOM()}{pDOM()}}
 {\footnotesize\ttfamily p\+DOM\+::p\+DOM (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_input_data_manager}{Input\+Data\+Manager}} $\ast$}]{p\+Data,  }\item[{G4bool}]{p\+Place\+Harness = {\ttfamily true} }\end{DoxyParamCaption})}
 
-
-\begin{DoxyParams}{Parameters}
-{\em p\+Data} & \mbox{\hyperlink{class_input_data_manager}{Input\+Data\+Manager}} pointer for accessing the input data. \\
-\hline
-{\em p\+Place\+Harness} & If true, places the harness during construction. \\
-\hline
-\end{DoxyParams}
 \mbox{\Hypertarget{classp_d_o_m_aff85691171a4d8a8a1ad30ba1721b8c1}\label{classp_d_o_m_aff85691171a4d8a8a1ad30ba1721b8c1}} 
 \index{pDOM@{pDOM}!````~pDOM@{$\sim$pDOM}}
 \index{````~pDOM@{$\sim$pDOM}!pDOM@{pDOM}}
 \doxysubsubsection{\texorpdfstring{$\sim$pDOM()}{~pDOM()}}
-{\footnotesize\ttfamily p\+DOM\+::$\sim$p\+DOM (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily p\+DOM\+::$\sim$p\+DOM (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
 
 
@@ -85,6 +78,9 @@ Implements \mbox{\hyperlink{classabc_detector_component_a8e7f01c218d5f093e80e46b
 \doxysubsubsection{\texorpdfstring{getNumberOfPMTs()}{getNumberOfPMTs()}}
 {\footnotesize\ttfamily int p\+DOM\+::get\+Number\+Of\+PMTs (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
 
+This method should be overridden in derived classes to provide the number of PMTs in the specific optical module. \begin{DoxyReturn}{Returns}
+Number of PMTs in the optical module. 
+\end{DoxyReturn}
 
 
 Implements \mbox{\hyperlink{class_optical_module_a851f73098f123c00dbe5a783e2b650ff}{Optical\+Module}}.
@@ -95,6 +91,9 @@ Implements \mbox{\hyperlink{class_optical_module_a851f73098f123c00dbe5a783e2b650
 \doxysubsubsection{\texorpdfstring{getPressureVesselWeight()}{getPressureVesselWeight()}}
 {\footnotesize\ttfamily double p\+DOM\+::get\+Pressure\+Vessel\+Weight (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
 
+This method should be overridden in derived classes to provide the weight of the pressure vessel for the specific optical module. \begin{DoxyReturn}{Returns}
+Weight of the pressure vessel in kilograms. 
+\end{DoxyReturn}
 
 
 Implements \mbox{\hyperlink{class_optical_module_ab559dfa88537ceba930183a4c0eafbfd}{Optical\+Module}}.

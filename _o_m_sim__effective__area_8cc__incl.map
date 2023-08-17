@@ -1,6 +1,6 @@
 <map id="OMSim_effective_area.cc" name="OMSim_effective_area.cc">
 <area shape="rect" id="node1" title="Main for the calculation of effective areas." alt="" coords="2448,5,2635,32"/>
-<area shape="rect" id="node2" href="$_o_m_sim_8hh.html" title="Main simulation class for the Optical Module (OM) simulation." alt="" coords="1455,80,1545,107"/>
+<area shape="rect" id="node2" href="$_o_m_sim_8hh.html" title="Main simulation class for the Optical Module (OM) simulation. This file defines the OMSim class,..." alt="" coords="1455,80,1545,107"/>
 <area shape="rect" id="node29" href="$_o_m_sim_angular_scan_8hh.html" title="Defines the AngularScan class for configuring and running GPS beam with angular scans." alt="" coords="2456,80,2627,107"/>
 <area shape="rect" id="node31" href="$_o_m_sim_effective_area_analyisis_8hh.html" title=" " alt="" coords="2651,80,2885,107"/>
 <area shape="rect" id="node3" title=" " alt="" coords="229,155,456,181"/>

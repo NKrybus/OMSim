@@ -21,7 +21,7 @@
 <!-- Node2 -->
 <g id="node2" class="node">
 <title>Node2</title>
-<g id="a_node2"><a xlink:href="_o_m_sim_d_e_g_g_harness_8hh.html" target="_top" xlink:title=" ">
+<g id="a_node2"><a xlink:href="_o_m_sim_d_e_g_g_harness_8hh.html" target="_top" xlink:title="Construction of the DEGG harness.">
 <polygon fill="white" stroke="black" points="810,-179.5 810,-198.5 945,-198.5 945,-179.5 810,-179.5"/>
 <text text-anchor="middle" x="877.5" y="-186.5" font-family="Helvetica,sans-Serif" font-size="10.00">OMSimDEGGHarness.hh</text>
 </a>

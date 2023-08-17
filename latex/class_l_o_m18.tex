@@ -30,9 +30,9 @@ Collaboration diagram for LOM18\+:
 void \mbox{\hyperlink{class_l_o_m18_a0744107f29517a84a06b2544e81b00e0}{construction}} ()
 \item 
 double \mbox{\hyperlink{class_l_o_m18_a6e42615d2a84e6b94ec28a32ede7ec25}{get\+Pressure\+Vessel\+Weight}} ()
-\begin{DoxyCompactList}\small\item\em Returns weight of pressure vessel in kg. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Virtual method to get the weight of the pressure vessel. \end{DoxyCompactList}\item 
 int \mbox{\hyperlink{class_l_o_m18_ac61b9f417138d26d168abbf48f0c0379}{get\+Number\+Of\+PMTs}} ()
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Virtual method to get the number of PMTs in the optical module. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Public Attributes}
 \begin{DoxyCompactItemize}
 \item 
@@ -75,6 +75,9 @@ Implements \mbox{\hyperlink{classabc_detector_component_a8e7f01c218d5f093e80e46b
 \doxysubsubsection{\texorpdfstring{getNumberOfPMTs()}{getNumberOfPMTs()}}
 {\footnotesize\ttfamily int LOM18\+::get\+Number\+Of\+PMTs (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
 
+This method should be overridden in derived classes to provide the number of PMTs in the specific optical module. \begin{DoxyReturn}{Returns}
+Number of PMTs in the optical module. 
+\end{DoxyReturn}
 
 
 Implements \mbox{\hyperlink{class_optical_module_a851f73098f123c00dbe5a783e2b650ff}{Optical\+Module}}.
@@ -85,6 +88,9 @@ Implements \mbox{\hyperlink{class_optical_module_a851f73098f123c00dbe5a783e2b650
 \doxysubsubsection{\texorpdfstring{getPressureVesselWeight()}{getPressureVesselWeight()}}
 {\footnotesize\ttfamily double LOM18\+::get\+Pressure\+Vessel\+Weight (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
 
+This method should be overridden in derived classes to provide the weight of the pressure vessel for the specific optical module. \begin{DoxyReturn}{Returns}
+Weight of the pressure vessel in kilograms. 
+\end{DoxyReturn}
 
 
 Implements \mbox{\hyperlink{class_optical_module_ab559dfa88537ceba930183a4c0eafbfd}{Optical\+Module}}.

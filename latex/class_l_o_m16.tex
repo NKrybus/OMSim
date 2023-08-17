@@ -30,9 +30,9 @@ Collaboration diagram for LOM16\+:
 void \mbox{\hyperlink{class_l_o_m16_ab837d810e22d601fc1a298ba0dfddd48}{construction}} ()
 \item 
 double \mbox{\hyperlink{class_l_o_m16_aa91c920187061c71df5560864845c8a8}{get\+Pressure\+Vessel\+Weight}} ()
-\begin{DoxyCompactList}\small\item\em Returns weight of pressure vessel in kg. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Virtual method to get the weight of the pressure vessel. \end{DoxyCompactList}\item 
 int \mbox{\hyperlink{class_l_o_m16_ab6c3906a5b9bb9f05ff72d7d089cf967}{get\+Number\+Of\+PMTs}} ()
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Virtual method to get the number of PMTs in the optical module. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Additional Inherited Members}
 
 
@@ -49,6 +49,15 @@ int \mbox{\hyperlink{class_l_o_m16_ab6c3906a5b9bb9f05ff72d7d089cf967}{get\+Numbe
 \doxysubsubsection{\texorpdfstring{$\sim$LOM16()}{~LOM16()}}
 {\footnotesize\ttfamily LOM16\+::$\sim$\+LOM16 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
+\begin{DoxyRefDesc}{Todo}
+\item[\mbox{\hyperlink{todo__todo000004}{Todo}}]
+\begin{DoxyItemize}
+\item 18/07/22 Solve collisions of CAD with PMTs
+\begin{DoxyItemize}
+\item Clean up magic number variables and comment their meaning
+\item Write documentation and parse current comments into Doxygen style 
+\end{DoxyItemize}
+\end{DoxyItemize}\end{DoxyRefDesc}
 
 
 \doxysubsection{Member Function Documentation}
@@ -68,6 +77,9 @@ Implements \mbox{\hyperlink{classabc_detector_component_a8e7f01c218d5f093e80e46b
 \doxysubsubsection{\texorpdfstring{getNumberOfPMTs()}{getNumberOfPMTs()}}
 {\footnotesize\ttfamily int LOM16\+::get\+Number\+Of\+PMTs (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
 
+This method should be overridden in derived classes to provide the number of PMTs in the specific optical module. \begin{DoxyReturn}{Returns}
+Number of PMTs in the optical module. 
+\end{DoxyReturn}
 
 
 Implements \mbox{\hyperlink{class_optical_module_a851f73098f123c00dbe5a783e2b650ff}{Optical\+Module}}.
@@ -78,6 +90,9 @@ Implements \mbox{\hyperlink{class_optical_module_a851f73098f123c00dbe5a783e2b650
 \doxysubsubsection{\texorpdfstring{getPressureVesselWeight()}{getPressureVesselWeight()}}
 {\footnotesize\ttfamily double LOM16\+::get\+Pressure\+Vessel\+Weight (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
 
+This method should be overridden in derived classes to provide the weight of the pressure vessel for the specific optical module. \begin{DoxyReturn}{Returns}
+Weight of the pressure vessel in kilograms. 
+\end{DoxyReturn}
 
 
 Implements \mbox{\hyperlink{class_optical_module_ab559dfa88537ceba930183a4c0eafbfd}{Optical\+Module}}.
