@@ -36,7 +36,7 @@ In the complex PMT model the photocathode has an absorption length that matches 
 \begin{DoxyWarning}{Warning}
 Detailed PMT response currently only for \mbox{\hyperlink{classm_d_o_m}{m\+DOM}} PMT
 \end{DoxyWarning}
-The class OMSIm\+PMTResponse provides a realistic PMT response (charge and transit time) using the measured scans from \href{https://zenodo.org/record/8121321}{\texttt{ M. Unland\textquotesingle{}s thesis}}. To turn on this feature, the bool-\/switch command line argument \char`\"{}pmt\+\_\+response\char`\"{} has to be given. For more information see Section 9.\+3.\+4 of the thesis.
+The class \mbox{\hyperlink{class_o_m_sim_p_m_t_response}{OMSim\+PMTResponse}} provides a realistic PMT response (charge and transit time) using the measured scans from \href{https://zenodo.org/record/8121321}{\texttt{ M. Unland\textquotesingle{}s thesis}}. To turn on this feature, the bool-\/switch command line argument \char`\"{}pmt\+\_\+response\char`\"{} has to be given. For more information see Section 9.\+3.\+4 of the thesis.
 
    ~\newline
  Figure 4\+: {\itshape PMT response compared to measurement for different light sources. Image from \href{https://zenodo.org/record/8121321}{\texttt{ M. Unland\textquotesingle{}s thesis}}.}   \doxysubsection*{Files}
@@ -52,6 +52,8 @@ file \mbox{\hyperlink{_o_m_sim_data_file_types_8hh}{OMSim\+Data\+File\+Types.\+h
 \begin{DoxyCompactList}\small\item\em Collection of classes and methods to handle material creation from user data in json files. \end{DoxyCompactList}\item 
 file \mbox{\hyperlink{_o_m_sim_hit_manager_8hh}{OMSim\+Hit\+Manager.\+hh}}
 \begin{DoxyCompactList}\small\item\em Defines structures and classes related to optical module photon hit management. \end{DoxyCompactList}\item 
+file \mbox{\hyperlink{_o_m_sim_p_m_t_response_8hh}{OMSim\+PMTResponse.\+hh}}
+\begin{DoxyCompactList}\small\item\em PMT response simulator. \end{DoxyCompactList}\item 
 file \mbox{\hyperlink{_o_m_sim_u_iinterface_8hh}{OMSim\+UIinterface.\+hh}}
 \begin{DoxyCompactList}\small\item\em The \mbox{\hyperlink{class_o_m_sim_u_iinterface}{OMSim\+UIinterface}} class provides a singleton interface to Geant4\textquotesingle{}s UI manager. \end{DoxyCompactList}\item 
 file \mbox{\hyperlink{_o_m_sim_8cc}{OMSim.\+cc}}

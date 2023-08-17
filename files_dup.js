@@ -125,5 +125,6 @@ var files_dup =
       [ "OMSimTrackingAction", "class_o_m_sim_tracking_action.html", "class_o_m_sim_tracking_action" ]
     ] ],
     [ "OMSimUIinterface.hh", "_o_m_sim_u_iinterface_8hh.html", null ],
-    [ "radioactive.h", "radioactive_8h.html", null ]
+    [ "radioactive.h", "radioactive_8h.html", null ],
+    [ "SN.h", "_s_n_8h.html", null ]
 ];
