@@ -44,7 +44,7 @@ var NAVTREE =
       [ "Class Members", "functions.html", [
         [ "All", "functions.html", "functions_dup" ],
         [ "Functions", "functions_func.html", "functions_func" ],
-        [ "Variables", "functions_vars.html", null ],
+        [ "Variables", "functions_vars.html", "functions_vars" ],
         [ "Typedefs", "functions_type.html", null ]
       ] ]
     ] ]
@@ -54,9 +54,11 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "_c_a_d_mesh_8hh.html",
-"class_c_a_d_mesh_1_1_c_a_d_mesh_template.html#aa211ec1f65959c93a33bc394093044fd",
-"class_o_m_sim_detector_construction.html#a9e16ad5da3921b502473b303609caad0",
-"classm_d_o_m.html#ae28cf6f87440b664735f77854076219a"
+"class_c_a_d_mesh_1_1_c_a_d_mesh_template.html#a7a34db19fc6bee43f7cb931706300220",
+"class_g4_radioactive_decay.html#acc82499e6f2713a39451c04b19d45322",
+"class_o_m_sim_g4_scintillation.html#a5d4f7a535fb8c2559115075111842794",
+"classabc_detector_component.html#a7a68cb95fa0c6b6bcd97f5640b0500b4",
+"struct_c_a_d_mesh_1_1_file_1_1_____final_state.html#a003c6bd5e490a5f759a54c98d4ffef08"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

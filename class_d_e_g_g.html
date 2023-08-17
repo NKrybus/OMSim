@@ -115,6 +115,8 @@ $(document).ready(function(){initNavTree('class_d_e_g_g.html',''); initResizable
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="class_d_e_g_g-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">DEGG Class Reference<div class="ingroups"><a class="el" href="group__common.html">Common stuff</a></div></div>  </div>
@@ -132,7 +134,7 @@ Inheritance diagram for DEGG:</div>
 <div class="dynheader">
 Collaboration diagram for DEGG:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_d_e_g_g__coll__graph.svg" width="299" height="444"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_d_e_g_g__coll__graph.svg" width="320" height="534"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -191,6 +193,26 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a53c7979298ef9eda66b44f0a3c4f2e6b inherit pub_methods_classabc_detector_component"><td class="memItemLeft" align="right" valign="top">G4SubtractionSolid *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classabc_detector_component.html#a53c7979298ef9eda66b44f0a3c4f2e6b">substractToVolume</a> (G4VSolid *pInputVolume, G4Transform3D pTrans, G4String pNewVolumeName)</td></tr>
 <tr class="memdesc:a53c7979298ef9eda66b44f0a3c4f2e6b inherit pub_methods_classabc_detector_component"><td class="mdescLeft">&#160;</td><td class="mdescRight">Subtracts components from a given solid volume.  <a href="classabc_detector_component.html#a53c7979298ef9eda66b44f0a3c4f2e6b">More...</a><br /></td></tr>
 <tr class="separator:a53c7979298ef9eda66b44f0a3c4f2e6b inherit pub_methods_classabc_detector_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:a98d1b6beb474e30f11f1668c15f26954"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_d_e_g_g.html#a98d1b6beb474e30f11f1668c15f26954">appendPMTs</a> ()</td></tr>
+<tr class="memdesc:a98d1b6beb474e30f11f1668c15f26954"><td class="mdescLeft">&#160;</td><td class="mdescRight">Append the PMTs in the <a class="el" href="class_d_e_g_g.html" title="Construction of the DEGG detector geometry.">DEGG</a> components vector.  <a href="class_d_e_g_g.html#a98d1b6beb474e30f11f1668c15f26954">More...</a><br /></td></tr>
+<tr class="separator:a98d1b6beb474e30f11f1668c15f26954"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab670e114ce175ce302631a49d8518236"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_d_e_g_g.html#ab670e114ce175ce302631a49d8518236">appendInternalComponentsFromCAD</a> ()</td></tr>
+<tr class="memdesc:ab670e114ce175ce302631a49d8518236"><td class="mdescLeft">&#160;</td><td class="mdescRight">Appends internal components loaded from CAD files to the <a class="el" href="class_d_e_g_g.html" title="Construction of the DEGG detector geometry.">DEGG</a> components vector.  <a href="class_d_e_g_g.html#ab670e114ce175ce302631a49d8518236">More...</a><br /></td></tr>
+<tr class="separator:ab670e114ce175ce302631a49d8518236"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adfe23f1994f5a35d19bcebdf1163eb5f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_d_e_g_g.html#adfe23f1994f5a35d19bcebdf1163eb5f">appendPressureVesselFromCAD</a> ()</td></tr>
+<tr class="memdesc:adfe23f1994f5a35d19bcebdf1163eb5f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Appends the pressure vessel from a CAD file to the <a class="el" href="class_d_e_g_g.html" title="Construction of the DEGG detector geometry.">DEGG</a> geometry.  <a href="class_d_e_g_g.html#adfe23f1994f5a35d19bcebdf1163eb5f">More...</a><br /></td></tr>
+<tr class="separator:adfe23f1994f5a35d19bcebdf1163eb5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7cb478ce4431037cd195380c77916a5a"><td class="memItemLeft" align="right" valign="top">G4VSolid *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_d_e_g_g.html#a7cb478ce4431037cd195380c77916a5a">createEggSolid</a> (G4int pSegments_1, G4double pSphereRmax, G4double pSpheredTheta, G4double pSphereTransformZ, G4double pTorus1R, G4double pCenterOfTorus1R, G4int pSegments_2, G4double pTorus2R, G4double pCenterOfTorus2R, G4double pCenterOfTorus2_z, G4double pTorus2_Zmin, G4double pTorus2_Zmax, G4double pTorus2_Z0, G4double pTorus1TransformZ)</td></tr>
+<tr class="memdesc:a7cb478ce4431037cd195380c77916a5a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates the solid shape for the <a class="el" href="class_d_e_g_g.html" title="Construction of the DEGG detector geometry.">DEGG</a> pressure vessel.  <a href="class_d_e_g_g.html#a7cb478ce4431037cd195380c77916a5a">More...</a><br /></td></tr>
+<tr class="separator:a7cb478ce4431037cd195380c77916a5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a1a210a334a32f74c9ce28ff11fc05fb4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_d_egg_harness.html">DEggHarness</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_d_e_g_g.html#a1a210a334a32f74c9ce28ff11fc05fb4">mHarness</a></td></tr>
+<tr class="separator:a1a210a334a32f74c9ce28ff11fc05fb4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
@@ -308,6 +330,81 @@ Additional Inherited Members</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="ab670e114ce175ce302631a49d8518236"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab670e114ce175ce302631a49d8518236">&#9670;&nbsp;</a></span>appendInternalComponentsFromCAD()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DEGG::appendInternalComponentsFromCAD </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a98d1b6beb474e30f11f1668c15f26954"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a98d1b6beb474e30f11f1668c15f26954">&#9670;&nbsp;</a></span>appendPMTs()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DEGG::appendPMTs </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="adfe23f1994f5a35d19bcebdf1163eb5f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adfe23f1994f5a35d19bcebdf1163eb5f">&#9670;&nbsp;</a></span>appendPressureVesselFromCAD()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DEGG::appendPressureVesselFromCAD </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="ac36a2968b6da47bd35dc1f4d14e93904"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ac36a2968b6da47bd35dc1f4d14e93904">&#9670;&nbsp;</a></span>construction()</h2>
 
@@ -332,6 +429,134 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Implements <a class="el" href="classabc_detector_component.html#a8e7f01c218d5f093e80e46b33a0672bf">abcDetectorComponent</a>.</p>
+
+</div>
+</div>
+<a id="a7cb478ce4431037cd195380c77916a5a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7cb478ce4431037cd195380c77916a5a">&#9670;&nbsp;</a></span>createEggSolid()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">G4VSolid * DEGG::createEggSolid </td>
+          <td>(</td>
+          <td class="paramtype">G4int&#160;</td>
+          <td class="paramname"><em>pSegments_1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">G4double&#160;</td>
+          <td class="paramname"><em>pSphereRmax</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">G4double&#160;</td>
+          <td class="paramname"><em>pSpheredTheta</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">G4double&#160;</td>
+          <td class="paramname"><em>pSphereTransformZ</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">G4double&#160;</td>
+          <td class="paramname"><em>pTorus1R</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">G4double&#160;</td>
+          <td class="paramname"><em>pCenterOfTorus1R</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">G4int&#160;</td>
+          <td class="paramname"><em>pSegments_2</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">G4double&#160;</td>
+          <td class="paramname"><em>pTorus2R</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">G4double&#160;</td>
+          <td class="paramname"><em>pCenterOfTorus2R</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">G4double&#160;</td>
+          <td class="paramname"><em>pCenterOfTorus2_z</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">G4double&#160;</td>
+          <td class="paramname"><em>pTorus2_Zmin</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">G4double&#160;</td>
+          <td class="paramname"><em>pTorus2_Zmax</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">G4double&#160;</td>
+          <td class="paramname"><em>pTorus2_Z0</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">G4double&#160;</td>
+          <td class="paramname"><em>pTorus1TransformZ</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pSegments_1</td><td>Number of segments for the G4Sphere representing the outer glass. </td></tr>
+    <tr><td class="paramname">pSphereRmax</td><td>Outer radius of the G4Sphere representing the outer glass. </td></tr>
+    <tr><td class="paramname">pSpheredTheta</td><td>Delta theta angle of the G4Sphere segment. </td></tr>
+    <tr><td class="paramname">pSphereTransformZ</td><td>Shift of the G4Sphere in the z-direction. </td></tr>
+    <tr><td class="paramname">pTorus1R</td><td>Radius of the small spindle torus sphere. </td></tr>
+    <tr><td class="paramname">pCenterOfTorus1R</td><td>Distance from the center of torus 1 to the z-axis. </td></tr>
+    <tr><td class="paramname">pSegments_2</td><td>Number of segments for the large spindle torus sphere. </td></tr>
+    <tr><td class="paramname">pTorus2R</td><td>Radius of the large spindle torus sphere. </td></tr>
+    <tr><td class="paramname">pCenterOfTorus2R</td><td>Distance from the center of torus 2 to the z-axis (signed). </td></tr>
+    <tr><td class="paramname">pCenterOfTorus2_z</td><td>Distance from the center of torus 2 to the z-axis (signed). </td></tr>
+    <tr><td class="paramname">pTorus2_Zmin</td><td>Minimum z shift from z=0 in the positive z direction. </td></tr>
+    <tr><td class="paramname">pTorus2_Zmax</td><td>Maximum z shift from z=0 in the positive z direction. </td></tr>
+    <tr><td class="paramname">pTorus2_Z0</td><td>G4double. </td></tr>
+    <tr><td class="paramname">pTorus1TransformZ</td><td>G4double. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The outer or inner shape of the glass vessel as a G4VSolid. </dd></dl>
 
 </div>
 </div>
@@ -391,6 +616,29 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="a1a210a334a32f74c9ce28ff11fc05fb4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1a210a334a32f74c9ce28ff11fc05fb4">&#9670;&nbsp;</a></span>mHarness</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_d_egg_harness.html">DEggHarness</a>* DEGG::mHarness</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li><a class="el" href="_o_m_sim_d_e_g_g_8hh_source.html">OMSimDEGG.hh</a></li>
 <li><a class="el" href="_o_m_sim_d_e_g_g_8cc.html">OMSimDEGG.cc</a></li>
@@ -401,7 +649,7 @@ Additional Inherited Members</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="class_d_e_g_g.html">DEGG</a></li>
-    <li class="footer">Generated on Thu Aug 17 2023 12:27:27 for OMSim by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Thu Aug 17 2023 12:32:31 for OMSim by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

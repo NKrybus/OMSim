@@ -11,10 +11,17 @@ var searchData=
   ['angularscan_9',['AngularScan',['../class_angular_scan.html',1,'AngularScan'],['../class_angular_scan.html#af7d054657e56a97db60274f30ff737e6',1,'AngularScan::AngularScan()']]],
   ['appendandreturntree_10',['appendAndReturnTree',['../class_parameter_table.html#a131ddfbbf38d27b59f454a4ec96b2b9e',1,'ParameterTable']]],
   ['appendcomponent_11',['appendComponent',['../classabc_detector_component.html#a467235840a313b6481569ae9ea9d2673',1,'abcDetectorComponent']]],
-  ['appendhitinfo_12',['appendHitInfo',['../class_o_m_sim_hit_manager.html#a004f73261c6ef3e30ff27b0e13da0a1b',1,'OMSimHitManager']]],
-  ['applycommand_13',['applyCommand',['../class_o_m_sim_u_iinterface.html#ab38089a4fb48f97b36b2f1278cfd76d3',1,'OMSimUIinterface']]],
-  ['applypermutation_14',['applyPermutation',['../_o_m_sim_hit_manager_8cc.html#ad237ff3b723de76457ed8ea2b0b89fed',1,'OMSimHitManager.cc']]],
-  ['assembly_5f_15',['assembly_',['../class_c_a_d_mesh_1_1_c_a_d_mesh_template.html#aebb5f2c52db6b5b9f8739d165c64792b',1,'CADMesh::CADMeshTemplate']]],
-  ['atendofline_16',['AtEndOfLine',['../_c_a_d_mesh_8hh.html#a95d14906166c75f8ce8f0d9b03100faa',1,'CADMesh.hh']]],
-  ['atrestdoit_17',['AtRestDoIt',['../class_o_m_sim_g4_scintillation.html#a1ab6f916bd26e5443d0f56238bc2df0e',1,'OMSimG4Scintillation::AtRestDoIt(const G4Track &amp;aTrack, const G4Step &amp;aStep) override'],['../class_o_m_sim_g4_scintillation.html#a067b14fb92df905cb6cc0ec14b1d22fb',1,'OMSimG4Scintillation::AtRestDoIt(const G4Track &amp;aTrack, const G4Step &amp;aStep) override']]]
+  ['appendequatorband_12',['appendEquatorBand',['../class_l_o_m18.html#a9b4e4a3c6f9a41931bc299a4fb53d730',1,'LOM18::appendEquatorBand()'],['../class_l_o_m16.html#a95892bef682cd9694232bf0ef1faae6c',1,'LOM16::appendEquatorBand()']]],
+  ['appendhitinfo_13',['appendHitInfo',['../class_o_m_sim_hit_manager.html#a004f73261c6ef3e30ff27b0e13da0a1b',1,'OMSimHitManager']]],
+  ['appendinternalcomponentsfromcad_14',['appendInternalComponentsFromCAD',['../class_d_e_g_g.html#ab670e114ce175ce302631a49d8518236',1,'DEGG']]],
+  ['appendpmts_15',['appendPMTs',['../class_d_e_g_g.html#a98d1b6beb474e30f11f1668c15f26954',1,'DEGG']]],
+  ['appendpressurevesselfromcad_16',['appendPressureVesselFromCAD',['../class_d_e_g_g.html#adfe23f1994f5a35d19bcebdf1163eb5f',1,'DEGG']]],
+  ['appendtostream_17',['appendToStream',['../class_o_m_sim_u_iinterface.html#a43fc02eb1f517d6c98fc5b90131114b8',1,'OMSimUIinterface::appendToStream(std::stringstream &amp;stream)'],['../class_o_m_sim_u_iinterface.html#a9735bddc1bb08cc2dd54eed77b4f2d47',1,'OMSimUIinterface::appendToStream(std::stringstream &amp;stream, const T &amp;val)'],['../class_o_m_sim_u_iinterface.html#a75fb02ab6ed635a0c48b453e29844b15',1,'OMSimUIinterface::appendToStream(std::stringstream &amp;stream, const T &amp;val, const Args &amp;...args)']]],
+  ['applyarm_18',['applyARM',['../class_g4_radioactive_decay.html#aed109fef1bc4bec284610743f40bb589',1,'G4RadioactiveDecay']]],
+  ['applycommand_19',['applyCommand',['../class_o_m_sim_u_iinterface.html#ab38089a4fb48f97b36b2f1278cfd76d3',1,'OMSimUIinterface']]],
+  ['applypermutation_20',['applyPermutation',['../_o_m_sim_hit_manager_8cc.html#ad237ff3b723de76457ed8ea2b0b89fed',1,'OMSimHitManager.cc']]],
+  ['assembly_5f_21',['assembly_',['../class_c_a_d_mesh_1_1_c_a_d_mesh_template.html#aebb5f2c52db6b5b9f8739d165c64792b',1,'CADMesh::CADMeshTemplate']]],
+  ['atendofline_22',['AtEndOfLine',['../_c_a_d_mesh_8hh.html#a95d14906166c75f8ce8f0d9b03100faa',1,'CADMesh.hh']]],
+  ['atrestdoit_23',['AtRestDoIt',['../class_o_m_sim_g4_scintillation.html#a1ab6f916bd26e5443d0f56238bc2df0e',1,'OMSimG4Scintillation::AtRestDoIt()'],['../class_g4_radioactive_decay.html#a0fb4257aca98bf87d751a0021dcf4639',1,'G4RadioactiveDecay::AtRestDoIt()'],['../class_o_m_sim_g4_scintillation.html#a067b14fb92df905cb6cc0ec14b1d22fb',1,'OMSimG4Scintillation::AtRestDoIt()']]],
+  ['atrestgetphysicalinteractionlength_24',['AtRestGetPhysicalInteractionLength',['../class_g4_radioactive_decay.html#af23392c70746be540ba3b666cdac1114',1,'G4RadioactiveDecay']]]
 ];

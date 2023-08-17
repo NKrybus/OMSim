@@ -41,6 +41,42 @@ void \mbox{\hyperlink{classm_d_o_m_flasher_a268494f8d27175e1ae391789e1d66faf}{ru
 \begin{DoxyCompactList}\small\item\em run/beam\+On the specified flasher. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classm_d_o_m_flasher_ae656273965d98ea994392fbec081c214}{set\+Navigator}} (G4\+Navigator $\ast$p\+Navigator)
 \begin{DoxyCompactList}\small\item\em This is needed to access to the flasher position and rotation. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classm_d_o_m_flasher_aabf2d4ba14e3d072472ec7c46201362b}{make\+Solids}} ()
+\item 
+void \mbox{\hyperlink{classm_d_o_m_flasher_a1a6e011d8de8d5201d9ed320e8775aae}{make\+Logical\+Volumes}} ()
+\item 
+void \mbox{\hyperlink{classm_d_o_m_flasher_a4c7d36af1760026c53a9164bf02dc057}{read\+Flasher\+Profile}} ()
+\begin{DoxyCompactList}\small\item\em Loads profile of \mbox{\hyperlink{classm_d_o_m}{m\+DOM}} flasher measured in the lab. See Section 7.\+3 of C. Lozanos PhD Thesis\+: \href{https://doi.org/10.5281/zenodo.8107177}{\texttt{ https\+://doi.\+org/10.\+5281/zenodo.\+8107177}} or Anna-\/\+Sophia\textquotesingle{}s Bachelor thesis (german) \href{https://www.uni-muenster.de/imperia/md/content/physik_kp/agkappes/abschlussarbeiten/bachelorarbeiten/ba_tenbruck.pdf}{\texttt{ https\+://www.\+uni-\/muenster.\+de/imperia/md/content/physik\+\_\+kp/agkappes/abschlussarbeiten/bachelorarbeiten/ba\+\_\+tenbruck.\+pdf}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_global_position}{Global\+Position}} \mbox{\hyperlink{classm_d_o_m_flasher_aa74e2bfee6f21cb652e7dd9929e8e688}{get\+Flasher\+Position\+Info}} (\mbox{\hyperlink{classm_d_o_m}{m\+DOM}} $\ast$p\+MDOMInstance, G4int p\+Module\+Index, G4int p\+LEDIndex)
+\begin{DoxyCompactList}\small\item\em Retrieves the global position and orientation of a specific flasher in an \mbox{\hyperlink{classm_d_o_m}{m\+DOM}} module. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classm_d_o_m_flasher_a364e96471e231b5b7838cc8df92529fc}{configure\+GPS}} (\mbox{\hyperlink{struct_global_position}{Global\+Position}} flasher\+Info)
+\begin{DoxyCompactList}\small\item\em Configures the GPS for the flasher simulation. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+G4\+Union\+Solid $\ast$ \mbox{\hyperlink{classm_d_o_m_flasher_a79f91c6637b17ffdf867e05c0f79d46c}{m\+LEDSolid}}
+\item 
+G4\+Union\+Solid $\ast$ \mbox{\hyperlink{classm_d_o_m_flasher_a2ca002c507e40a6110b215cad5616217}{m\+Flasher\+Hole\+Solid}}
+\item 
+G4\+Tubs $\ast$ \mbox{\hyperlink{classm_d_o_m_flasher_a02da4d7a31b2df29b495a75cf57b8eb0}{m\+Glass\+Window\+Solid}}
+\item 
+G4\+Logical\+Volume $\ast$ \mbox{\hyperlink{classm_d_o_m_flasher_a6f304b70a2f95adca637c7921281f6ae}{m\+Flasher\+Hole\+Logical}}
+\item 
+G4\+Logical\+Volume $\ast$ \mbox{\hyperlink{classm_d_o_m_flasher_aec3f52b425378adcebbd1bf8dc5a389b}{m\+Glass\+Window\+Logical}}
+\item 
+G4\+Logical\+Volume $\ast$ \mbox{\hyperlink{classm_d_o_m_flasher_ab97e2fb06ead3a1d52d558f78f5a2757}{m\+LEDLogical}}
+\item 
+G4bool \mbox{\hyperlink{classm_d_o_m_flasher_a12f381573b29dc6ebd3533db8c373475}{m\+Flasher\+Profile\+Available}} = false
+\item 
+std\+::vector$<$ double $>$ \mbox{\hyperlink{classm_d_o_m_flasher_a09ec0228902e4b9350736da03f8fae10}{m\+ProfileX}}
+\item 
+std\+::vector$<$ double $>$ \mbox{\hyperlink{classm_d_o_m_flasher_a46a5e36504e75195e7035a231d150cd9}{m\+ProfileY}}
+\item 
+G4\+Navigator $\ast$ \mbox{\hyperlink{classm_d_o_m_flasher_a944e368c68324a22a583f432fd607d82}{m\+Navigator}}
+\end{DoxyCompactItemize}
 \doxysubsection*{Additional Inherited Members}
 
 
@@ -54,6 +90,17 @@ void \mbox{\hyperlink{classm_d_o_m_flasher_ae656273965d98ea994392fbec081c214}{se
 
 
 \doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classm_d_o_m_flasher_a364e96471e231b5b7838cc8df92529fc}\label{classm_d_o_m_flasher_a364e96471e231b5b7838cc8df92529fc}} 
+\index{mDOMFlasher@{mDOMFlasher}!configureGPS@{configureGPS}}
+\index{configureGPS@{configureGPS}!mDOMFlasher@{mDOMFlasher}}
+\doxysubsubsection{\texorpdfstring{configureGPS()}{configureGPS()}}
+{\footnotesize\ttfamily void m\+DOMFlasher\+::configure\+GPS (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_global_position}{Global\+Position}}}]{flasher\+Info }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em flasher\+Info} & The position and orientation information of the flasher. \\
+\hline
+\end{DoxyParams}
 \mbox{\Hypertarget{classm_d_o_m_flasher_aac8c466bbcc6d952ad82fbd29daa675f}\label{classm_d_o_m_flasher_aac8c466bbcc6d952ad82fbd29daa675f}} 
 \index{mDOMFlasher@{mDOMFlasher}!construction@{construction}}
 \index{construction@{construction}!mDOMFlasher@{mDOMFlasher}}
@@ -64,11 +111,47 @@ void \mbox{\hyperlink{classm_d_o_m_flasher_ae656273965d98ea994392fbec081c214}{se
 
 Implements \mbox{\hyperlink{classabc_detector_component_a8e7f01c218d5f093e80e46b33a0672bf}{abc\+Detector\+Component}}.
 
+\mbox{\Hypertarget{classm_d_o_m_flasher_aa74e2bfee6f21cb652e7dd9929e8e688}\label{classm_d_o_m_flasher_aa74e2bfee6f21cb652e7dd9929e8e688}} 
+\index{mDOMFlasher@{mDOMFlasher}!getFlasherPositionInfo@{getFlasherPositionInfo}}
+\index{getFlasherPositionInfo@{getFlasherPositionInfo}!mDOMFlasher@{mDOMFlasher}}
+\doxysubsubsection{\texorpdfstring{getFlasherPositionInfo()}{getFlasherPositionInfo()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_global_position}{Global\+Position}} m\+DOMFlasher\+::get\+Flasher\+Position\+Info (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classm_d_o_m}{m\+DOM}} $\ast$}]{p\+MDOMInstance,  }\item[{G4int}]{p\+Module\+Index,  }\item[{G4int}]{p\+LEDIndex }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+MDOMInstance} & Reference to the \mbox{\hyperlink{classm_d_o_m}{m\+DOM}} instance, which contains the placement details of the module. \\
+\hline
+{\em p\+Module\+Index} & Index of the module. \\
+\hline
+{\em p\+LEDIndex} & Index of the flasher within the module. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The global position and orientation of the flasher, represented by a \mbox{\hyperlink{struct_global_position}{Global\+Position}} struct. 
+\end{DoxyReturn}
 \mbox{\Hypertarget{classm_d_o_m_flasher_ac779772218d50699e05de2e1fa785180}\label{classm_d_o_m_flasher_ac779772218d50699e05de2e1fa785180}} 
 \index{mDOMFlasher@{mDOMFlasher}!getSolids@{getSolids}}
 \index{getSolids@{getSolids}!mDOMFlasher@{mDOMFlasher}}
 \doxysubsubsection{\texorpdfstring{getSolids()}{getSolids()}}
 {\footnotesize\ttfamily std\+::tuple$<$ G4\+Union\+Solid $\ast$, G4\+Union\+Solid $\ast$, G4\+Tubs $\ast$ $>$ m\+DOMFlasher\+::get\+Solids (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classm_d_o_m_flasher_a1a6e011d8de8d5201d9ed320e8775aae}\label{classm_d_o_m_flasher_a1a6e011d8de8d5201d9ed320e8775aae}} 
+\index{mDOMFlasher@{mDOMFlasher}!makeLogicalVolumes@{makeLogicalVolumes}}
+\index{makeLogicalVolumes@{makeLogicalVolumes}!mDOMFlasher@{mDOMFlasher}}
+\doxysubsubsection{\texorpdfstring{makeLogicalVolumes()}{makeLogicalVolumes()}}
+{\footnotesize\ttfamily void m\+DOMFlasher\+::make\+Logical\+Volumes (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classm_d_o_m_flasher_aabf2d4ba14e3d072472ec7c46201362b}\label{classm_d_o_m_flasher_aabf2d4ba14e3d072472ec7c46201362b}} 
+\index{mDOMFlasher@{mDOMFlasher}!makeSolids@{makeSolids}}
+\index{makeSolids@{makeSolids}!mDOMFlasher@{mDOMFlasher}}
+\doxysubsubsection{\texorpdfstring{makeSolids()}{makeSolids()}}
+{\footnotesize\ttfamily void m\+DOMFlasher\+::make\+Solids (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classm_d_o_m_flasher_a4c7d36af1760026c53a9164bf02dc057}\label{classm_d_o_m_flasher_a4c7d36af1760026c53a9164bf02dc057}} 
+\index{mDOMFlasher@{mDOMFlasher}!readFlasherProfile@{readFlasherProfile}}
+\index{readFlasherProfile@{readFlasherProfile}!mDOMFlasher@{mDOMFlasher}}
+\doxysubsubsection{\texorpdfstring{readFlasherProfile()}{readFlasherProfile()}}
+{\footnotesize\ttfamily void m\+DOMFlasher\+::read\+Flasher\+Profile (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
 
 \mbox{\Hypertarget{classm_d_o_m_flasher_a268494f8d27175e1ae391789e1d66faf}\label{classm_d_o_m_flasher_a268494f8d27175e1ae391789e1d66faf}} 
 \index{mDOMFlasher@{mDOMFlasher}!runBeamOnFlasher@{runBeamOnFlasher}}
@@ -90,6 +173,69 @@ This method triggers the flasher at the given index in the specified module.
 \index{setNavigator@{setNavigator}!mDOMFlasher@{mDOMFlasher}}
 \doxysubsubsection{\texorpdfstring{setNavigator()}{setNavigator()}}
 {\footnotesize\ttfamily void m\+DOMFlasher\+::set\+Navigator (\begin{DoxyParamCaption}\item[{G4\+Navigator $\ast$}]{p\+Navigator }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classm_d_o_m_flasher_a6f304b70a2f95adca637c7921281f6ae}\label{classm_d_o_m_flasher_a6f304b70a2f95adca637c7921281f6ae}} 
+\index{mDOMFlasher@{mDOMFlasher}!mFlasherHoleLogical@{mFlasherHoleLogical}}
+\index{mFlasherHoleLogical@{mFlasherHoleLogical}!mDOMFlasher@{mDOMFlasher}}
+\doxysubsubsection{\texorpdfstring{mFlasherHoleLogical}{mFlasherHoleLogical}}
+{\footnotesize\ttfamily G4\+Logical\+Volume$\ast$ m\+DOMFlasher\+::m\+Flasher\+Hole\+Logical\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classm_d_o_m_flasher_a2ca002c507e40a6110b215cad5616217}\label{classm_d_o_m_flasher_a2ca002c507e40a6110b215cad5616217}} 
+\index{mDOMFlasher@{mDOMFlasher}!mFlasherHoleSolid@{mFlasherHoleSolid}}
+\index{mFlasherHoleSolid@{mFlasherHoleSolid}!mDOMFlasher@{mDOMFlasher}}
+\doxysubsubsection{\texorpdfstring{mFlasherHoleSolid}{mFlasherHoleSolid}}
+{\footnotesize\ttfamily G4\+Union\+Solid$\ast$ m\+DOMFlasher\+::m\+Flasher\+Hole\+Solid\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classm_d_o_m_flasher_a12f381573b29dc6ebd3533db8c373475}\label{classm_d_o_m_flasher_a12f381573b29dc6ebd3533db8c373475}} 
+\index{mDOMFlasher@{mDOMFlasher}!mFlasherProfileAvailable@{mFlasherProfileAvailable}}
+\index{mFlasherProfileAvailable@{mFlasherProfileAvailable}!mDOMFlasher@{mDOMFlasher}}
+\doxysubsubsection{\texorpdfstring{mFlasherProfileAvailable}{mFlasherProfileAvailable}}
+{\footnotesize\ttfamily G4bool m\+DOMFlasher\+::m\+Flasher\+Profile\+Available = false\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classm_d_o_m_flasher_aec3f52b425378adcebbd1bf8dc5a389b}\label{classm_d_o_m_flasher_aec3f52b425378adcebbd1bf8dc5a389b}} 
+\index{mDOMFlasher@{mDOMFlasher}!mGlassWindowLogical@{mGlassWindowLogical}}
+\index{mGlassWindowLogical@{mGlassWindowLogical}!mDOMFlasher@{mDOMFlasher}}
+\doxysubsubsection{\texorpdfstring{mGlassWindowLogical}{mGlassWindowLogical}}
+{\footnotesize\ttfamily G4\+Logical\+Volume$\ast$ m\+DOMFlasher\+::m\+Glass\+Window\+Logical\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classm_d_o_m_flasher_a02da4d7a31b2df29b495a75cf57b8eb0}\label{classm_d_o_m_flasher_a02da4d7a31b2df29b495a75cf57b8eb0}} 
+\index{mDOMFlasher@{mDOMFlasher}!mGlassWindowSolid@{mGlassWindowSolid}}
+\index{mGlassWindowSolid@{mGlassWindowSolid}!mDOMFlasher@{mDOMFlasher}}
+\doxysubsubsection{\texorpdfstring{mGlassWindowSolid}{mGlassWindowSolid}}
+{\footnotesize\ttfamily G4\+Tubs$\ast$ m\+DOMFlasher\+::m\+Glass\+Window\+Solid\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classm_d_o_m_flasher_ab97e2fb06ead3a1d52d558f78f5a2757}\label{classm_d_o_m_flasher_ab97e2fb06ead3a1d52d558f78f5a2757}} 
+\index{mDOMFlasher@{mDOMFlasher}!mLEDLogical@{mLEDLogical}}
+\index{mLEDLogical@{mLEDLogical}!mDOMFlasher@{mDOMFlasher}}
+\doxysubsubsection{\texorpdfstring{mLEDLogical}{mLEDLogical}}
+{\footnotesize\ttfamily G4\+Logical\+Volume$\ast$ m\+DOMFlasher\+::m\+LEDLogical\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classm_d_o_m_flasher_a79f91c6637b17ffdf867e05c0f79d46c}\label{classm_d_o_m_flasher_a79f91c6637b17ffdf867e05c0f79d46c}} 
+\index{mDOMFlasher@{mDOMFlasher}!mLEDSolid@{mLEDSolid}}
+\index{mLEDSolid@{mLEDSolid}!mDOMFlasher@{mDOMFlasher}}
+\doxysubsubsection{\texorpdfstring{mLEDSolid}{mLEDSolid}}
+{\footnotesize\ttfamily G4\+Union\+Solid$\ast$ m\+DOMFlasher\+::m\+LEDSolid\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classm_d_o_m_flasher_a944e368c68324a22a583f432fd607d82}\label{classm_d_o_m_flasher_a944e368c68324a22a583f432fd607d82}} 
+\index{mDOMFlasher@{mDOMFlasher}!mNavigator@{mNavigator}}
+\index{mNavigator@{mNavigator}!mDOMFlasher@{mDOMFlasher}}
+\doxysubsubsection{\texorpdfstring{mNavigator}{mNavigator}}
+{\footnotesize\ttfamily G4\+Navigator$\ast$ m\+DOMFlasher\+::m\+Navigator\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classm_d_o_m_flasher_a09ec0228902e4b9350736da03f8fae10}\label{classm_d_o_m_flasher_a09ec0228902e4b9350736da03f8fae10}} 
+\index{mDOMFlasher@{mDOMFlasher}!mProfileX@{mProfileX}}
+\index{mProfileX@{mProfileX}!mDOMFlasher@{mDOMFlasher}}
+\doxysubsubsection{\texorpdfstring{mProfileX}{mProfileX}}
+{\footnotesize\ttfamily std\+::vector$<$double$>$ m\+DOMFlasher\+::m\+ProfileX\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classm_d_o_m_flasher_a46a5e36504e75195e7035a231d150cd9}\label{classm_d_o_m_flasher_a46a5e36504e75195e7035a231d150cd9}} 
+\index{mDOMFlasher@{mDOMFlasher}!mProfileY@{mProfileY}}
+\index{mProfileY@{mProfileY}!mDOMFlasher@{mDOMFlasher}}
+\doxysubsubsection{\texorpdfstring{mProfileY}{mProfileY}}
+{\footnotesize\ttfamily std\+::vector$<$double$>$ m\+DOMFlasher\+::m\+ProfileY\hspace{0.3cm}{\ttfamily [private]}}
 
 
 

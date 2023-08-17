@@ -5,12 +5,44 @@
 A class for simulating isotope decays inside the pressure vessel and PMT glass.  
 
 
+
+
+Collaboration diagram for Isotope\+Decays\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=308pt]{class_isotope_decays__coll__graph}
+\end{center}
+\end{figure}
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\hyperlink{class_isotope_decays_a73a736b434677c48db553c691407210f}{Isotope\+Decays}} (G4double p\+Production\+Radius)
 \item 
 \mbox{\hyperlink{class_isotope_decays_a2c725f29ba7fbed8106022a3eb355a8e}{$\sim$\+Isotope\+Decays}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_isotope_decays_ac66380997ebbf87d2a4430be28c48642}{general\+GPS}} ()
+\begin{DoxyCompactList}\small\item\em Configures common GPS commands for the radioactive decays. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_isotope_decays_a0700be393576351bd63e4991f09a1f3e}{pressure\+Vessel\+Isotope\+GPS}} (G4\+String p\+Isotope)
+\begin{DoxyCompactList}\small\item\em Configures GPS for the production and decay of an isotope within the pressure vessel of an OM. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_isotope_decays_a84413bb43de1e2e22fe81e8883170512}{PMTisotope\+GPS}} (G4\+String p\+Isotope, G4int p\+PMTNr)
+\begin{DoxyCompactList}\small\item\em Configures GPS for isotope decays in PMT glass of an specific PMT. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_isotope_decays_af5e0b53f22072e3563bd36b0075cbdce}{simulate\+Decays\+In\+Time\+Window}} ()
+\item 
+std\+::map$<$ G4\+String, G4int $>$ \mbox{\hyperlink{class_isotope_decays_a83b37c7574ecd99faa8d5ffb09add113}{calculate\+Number\+Of\+Decays}} (G4\+Material\+Properties\+Table $\ast$p\+MPT, G4double p\+Time\+Window, G4double p\+Mass)
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::map$<$ G4\+String, G4\+String $>$ \mbox{\hyperlink{class_isotope_decays_a60f8eca9a5950c197463b8c54ae4ad91}{m\+Isotope\+Commands}}
+\item 
+\mbox{\hyperlink{class_optical_module}{Optical\+Module}} $\ast$ \mbox{\hyperlink{class_isotope_decays_a365ed822e8b8b563226636a7f7930819}{m\+OM}}
+\item 
+G4double \mbox{\hyperlink{class_isotope_decays_acd6830b0720976474f7be3c65d764090}{m\+Production\+Radius}}
 \end{DoxyCompactItemize}
 
 
@@ -26,6 +58,86 @@ A class for simulating isotope decays inside the pressure vessel and PMT glass.
 \index{````~IsotopeDecays@{$\sim$IsotopeDecays}!IsotopeDecays@{IsotopeDecays}}
 \doxysubsubsection{\texorpdfstring{$\sim$IsotopeDecays()}{~IsotopeDecays()}}
 {\footnotesize\ttfamily Isotope\+Decays\+::$\sim$\+Isotope\+Decays (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_isotope_decays_a83b37c7574ecd99faa8d5ffb09add113}\label{class_isotope_decays_a83b37c7574ecd99faa8d5ffb09add113}} 
+\index{IsotopeDecays@{IsotopeDecays}!calculateNumberOfDecays@{calculateNumberOfDecays}}
+\index{calculateNumberOfDecays@{calculateNumberOfDecays}!IsotopeDecays@{IsotopeDecays}}
+\doxysubsubsection{\texorpdfstring{calculateNumberOfDecays()}{calculateNumberOfDecays()}}
+{\footnotesize\ttfamily std\+::map$<$ G4\+String, G4int $>$ Isotope\+Decays\+::calculate\+Number\+Of\+Decays (\begin{DoxyParamCaption}\item[{G4\+Material\+Properties\+Table $\ast$}]{p\+MPT,  }\item[{G4double}]{p\+Time\+Window,  }\item[{G4double}]{p\+Mass }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_isotope_decays_ac66380997ebbf87d2a4430be28c48642}\label{class_isotope_decays_ac66380997ebbf87d2a4430be28c48642}} 
+\index{IsotopeDecays@{IsotopeDecays}!generalGPS@{generalGPS}}
+\index{generalGPS@{generalGPS}!IsotopeDecays@{IsotopeDecays}}
+\doxysubsubsection{\texorpdfstring{generalGPS()}{generalGPS()}}
+{\footnotesize\ttfamily void Isotope\+Decays\+::general\+GPS (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_isotope_decays_a84413bb43de1e2e22fe81e8883170512}\label{class_isotope_decays_a84413bb43de1e2e22fe81e8883170512}} 
+\index{IsotopeDecays@{IsotopeDecays}!PMTisotopeGPS@{PMTisotopeGPS}}
+\index{PMTisotopeGPS@{PMTisotopeGPS}!IsotopeDecays@{IsotopeDecays}}
+\doxysubsubsection{\texorpdfstring{PMTisotopeGPS()}{PMTisotopeGPS()}}
+{\footnotesize\ttfamily void Isotope\+Decays\+::\+PMTisotope\+GPS (\begin{DoxyParamCaption}\item[{G4\+String}]{Isotope,  }\item[{G4int}]{PMTNr }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+If the daughter of the configured isotope is unstable, it will also decay in the same position as its mother
+
+
+\begin{DoxyParams}{Parameters}
+{\em Isotope} & The isotope which is going to be produced. \\
+\hline
+{\em PMTNr} & Number of PMT where the decays are simulated \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_isotope_decays_a0700be393576351bd63e4991f09a1f3e}\label{class_isotope_decays_a0700be393576351bd63e4991f09a1f3e}} 
+\index{IsotopeDecays@{IsotopeDecays}!pressureVesselIsotopeGPS@{pressureVesselIsotopeGPS}}
+\index{pressureVesselIsotopeGPS@{pressureVesselIsotopeGPS}!IsotopeDecays@{IsotopeDecays}}
+\doxysubsubsection{\texorpdfstring{pressureVesselIsotopeGPS()}{pressureVesselIsotopeGPS()}}
+{\footnotesize\ttfamily void Isotope\+Decays\+::pressure\+Vessel\+Isotope\+GPS (\begin{DoxyParamCaption}\item[{G4\+String}]{Isotope }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+If the daughter of the configured isotope is unstable, it will also decay in the same position as its mother
+
+
+\begin{DoxyParams}{Parameters}
+{\em Isotope} & The isotope which is going to be produced. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_isotope_decays_af5e0b53f22072e3563bd36b0075cbdce}\label{class_isotope_decays_af5e0b53f22072e3563bd36b0075cbdce}} 
+\index{IsotopeDecays@{IsotopeDecays}!simulateDecaysInTimeWindow@{simulateDecaysInTimeWindow}}
+\index{simulateDecaysInTimeWindow@{simulateDecaysInTimeWindow}!IsotopeDecays@{IsotopeDecays}}
+\doxysubsubsection{\texorpdfstring{simulateDecaysInTimeWindow()}{simulateDecaysInTimeWindow()}}
+{\footnotesize\ttfamily void Isotope\+Decays\+::simulate\+Decays\+In\+Time\+Window (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_isotope_decays_a60f8eca9a5950c197463b8c54ae4ad91}\label{class_isotope_decays_a60f8eca9a5950c197463b8c54ae4ad91}} 
+\index{IsotopeDecays@{IsotopeDecays}!mIsotopeCommands@{mIsotopeCommands}}
+\index{mIsotopeCommands@{mIsotopeCommands}!IsotopeDecays@{IsotopeDecays}}
+\doxysubsubsection{\texorpdfstring{mIsotopeCommands}{mIsotopeCommands}}
+{\footnotesize\ttfamily std\+::map$<$G4\+String, G4\+String$>$ Isotope\+Decays\+::m\+Isotope\+Commands\hspace{0.3cm}{\ttfamily [private]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \{}
+\DoxyCodeLine{      \{\textcolor{stringliteral}{"{}U238"{}}, \textcolor{stringliteral}{"{}/gps/ion 92 238 0"{}}\},}
+\DoxyCodeLine{      \{\textcolor{stringliteral}{"{}U235"{}}, \textcolor{stringliteral}{"{}/gps/ion 92 235 0"{}}\},}
+\DoxyCodeLine{      \{\textcolor{stringliteral}{"{}Th232"{}}, \textcolor{stringliteral}{"{}/gps/ion 90 232 0"{}}\},}
+\DoxyCodeLine{      \{\textcolor{stringliteral}{"{}K40"{}}, \textcolor{stringliteral}{"{}/gps/ion 19 40 0"{}}\}}
+\DoxyCodeLine{  \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_isotope_decays_a365ed822e8b8b563226636a7f7930819}\label{class_isotope_decays_a365ed822e8b8b563226636a7f7930819}} 
+\index{IsotopeDecays@{IsotopeDecays}!mOM@{mOM}}
+\index{mOM@{mOM}!IsotopeDecays@{IsotopeDecays}}
+\doxysubsubsection{\texorpdfstring{mOM}{mOM}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_optical_module}{Optical\+Module}}$\ast$ Isotope\+Decays\+::m\+OM\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_isotope_decays_acd6830b0720976474f7be3c65d764090}\label{class_isotope_decays_acd6830b0720976474f7be3c65d764090}} 
+\index{IsotopeDecays@{IsotopeDecays}!mProductionRadius@{mProductionRadius}}
+\index{mProductionRadius@{mProductionRadius}!IsotopeDecays@{IsotopeDecays}}
+\doxysubsubsection{\texorpdfstring{mProductionRadius}{mProductionRadius}}
+{\footnotesize\ttfamily G4double Isotope\+Decays\+::m\+Production\+Radius\hspace{0.3cm}{\ttfamily [private]}}
 
 
 

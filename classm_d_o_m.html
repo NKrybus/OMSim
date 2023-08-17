@@ -116,6 +116,8 @@ $(document).ready(function(){initNavTree('classm_d_o_m.html',''); initResizable(
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="classm_d_o_m-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">mDOM Class Reference</div>  </div>
@@ -130,7 +132,7 @@ Inheritance diagram for mDOM:</div>
 <div class="dynheader">
 Collaboration diagram for mDOM:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classm_d_o_m__coll__graph.svg" width="299" height="444"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classm_d_o_m__coll__graph.svg" width="398" height="546"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
@@ -206,7 +208,7 @@ Public Attributes</h2></td></tr>
 <tr class="separator:a0a150a538f8bbaa720cc3876fcc74c54"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a84365c931fe3226e18f78638b10b637d"><td class="memItemLeft" align="right" valign="top">const G4double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classm_d_o_m.html#a84365c931fe3226e18f78638b10b637d">mCylHigh</a> = 27.5*mm</td></tr>
 <tr class="separator:a84365c931fe3226e18f78638b10b637d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aedf09daf267a3c3b2dd9602c05f07636"><td class="memItemLeft" align="right" valign="top">const G4double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classm_d_o_m.html#aedf09daf267a3c3b2dd9602c05f07636">mGlassInRad</a> = <a class="el" href="classm_d_o_m.html#a0a150a538f8bbaa720cc3876fcc74c54">mGlassOutRad</a> - mGlassThick</td></tr>
+<tr class="memitem:aedf09daf267a3c3b2dd9602c05f07636"><td class="memItemLeft" align="right" valign="top">const G4double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classm_d_o_m.html#aedf09daf267a3c3b2dd9602c05f07636">mGlassInRad</a> = <a class="el" href="classm_d_o_m.html#a0a150a538f8bbaa720cc3876fcc74c54">mGlassOutRad</a> - <a class="el" href="classm_d_o_m.html#a08b12af4d0dbd5f1872fc6157a859f7f">mGlassThick</a></td></tr>
 <tr class="separator:aedf09daf267a3c3b2dd9602c05f07636"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_attribs_classabc_detector_component"><td colspan="2" onclick="javascript:toggleInherit('pub_attribs_classabc_detector_component')"><img src="closed.png" alt="-"/>&#160;Public Attributes inherited from <a class="el" href="classabc_detector_component.html">abcDetectorComponent</a></td></tr>
 <tr class="memitem:af50c1e99e08ed19b5c9dcf5c7af3074f inherit pub_attribs_classabc_detector_component"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_input_data_manager.html">InputDataManager</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classabc_detector_component.html#af50c1e99e08ed19b5c9dcf5c7af3074f">mData</a></td></tr>
@@ -223,6 +225,82 @@ Public Attributes</h2></td></tr>
 <tr class="separator:aa830916e7f5f8ae31eb31e3c37c9841e inherit pub_attribs_classabc_detector_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a87f97f72739f905f6c9d23a75849d15f inherit pub_attribs_classabc_detector_component"><td class="memItemLeft" align="right" valign="top">std::map&lt; G4String, G4PVPlacement * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classabc_detector_component.html#a87f97f72739f905f6c9d23a75849d15f">mLastPhysicals</a></td></tr>
 <tr class="separator:a87f97f72739f905f6c9d23a75849d15f inherit pub_attribs_classabc_detector_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:a3b2aaa5321719dfb3b800a3c1f8b9f25"><td class="memItemLeft" align="right" valign="top">G4SubtractionSolid *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classm_d_o_m.html#a3b2aaa5321719dfb3b800a3c1f8b9f25">equatorialReflector</a> (G4VSolid *pSupportStructure, G4Cons *pReflCone, G4double pAngle, G4String pSuffix)</td></tr>
+<tr class="separator:a3b2aaa5321719dfb3b800a3c1f8b9f25"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa787ab8bfad6c8d820050a7d8c1f9bf5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classm_d_o_m.html#aa787ab8bfad6c8d820050a7d8c1f9bf5">setPMTPositions</a> ()</td></tr>
+<tr class="separator:aa787ab8bfad6c8d820050a7d8c1f9bf5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a95cb59294f27f0e119d27d4b7e4f2cfe"><td class="memItemLeft" align="right" valign="top">G4UnionSolid *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classm_d_o_m.html#a95cb59294f27f0e119d27d4b7e4f2cfe">pressureVessel</a> (const G4double pOutRad, G4String pSuffix)</td></tr>
+<tr class="separator:a95cb59294f27f0e119d27d4b7e4f2cfe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3d936da0f23132258600d0825d3998f5"><td class="memItemLeft" align="right" valign="top">G4SubtractionSolid *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classm_d_o_m.html#a3d936da0f23132258600d0825d3998f5">substractHarnessPlug</a> (G4VSolid *pSolid)</td></tr>
+<tr class="separator:a3d936da0f23132258600d0825d3998f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1f14d2c150c096e608d244a125c5b33e"><td class="memItemLeft" align="right" valign="top">std::tuple&lt; G4SubtractionSolid *, G4UnionSolid * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classm_d_o_m.html#a1f14d2c150c096e608d244a125c5b33e">supportStructure</a> ()</td></tr>
+<tr class="separator:a1f14d2c150c096e608d244a125c5b33e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7096fa5b925a0be159c56f415daf8f89"><td class="memItemLeft" align="right" valign="top">G4SubtractionSolid *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classm_d_o_m.html#a7096fa5b925a0be159c56f415daf8f89">substractFlashers</a> (G4VSolid *lSupStructureSolid)</td></tr>
+<tr class="separator:a7096fa5b925a0be159c56f415daf8f89"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae1946d5874274ca30123bbbcd7af1411"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classm_d_o_m.html#ae1946d5874274ca30123bbbcd7af1411">setLEDPositions</a> ()</td></tr>
+<tr class="separator:ae1946d5874274ca30123bbbcd7af1411"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a16328146960e2feccdae1ef07d6a815b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classm_d_o_m_flasher.html">mDOMFlasher</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classm_d_o_m.html#a16328146960e2feccdae1ef07d6a815b">mFlashers</a></td></tr>
+<tr class="separator:a16328146960e2feccdae1ef07d6a815b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a61d4eb42abbc6512691d7e466f039b25"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classm_d_o_m_harness.html">mDOMHarness</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classm_d_o_m.html#a61d4eb42abbc6512691d7e466f039b25">mHarness</a></td></tr>
+<tr class="separator:a61d4eb42abbc6512691d7e466f039b25"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3fa16751e8d16fd4c567b4e2e01b4299"><td class="memItemLeft" align="right" valign="top">G4bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classm_d_o_m.html#a3fa16751e8d16fd4c567b4e2e01b4299">mPlaceHarness</a> = true</td></tr>
+<tr class="separator:a3fa16751e8d16fd4c567b4e2e01b4299"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a67d1aa872ca146a8d5b276e5824c3d56"><td class="memItemLeft" align="right" valign="top">G4bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classm_d_o_m.html#a67d1aa872ca146a8d5b276e5824c3d56">mHarnessUnion</a> = true</td></tr>
+<tr class="separator:a67d1aa872ca146a8d5b276e5824c3d56"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3cfad9f46b12f1c3bcdd55704fe106cb"><td class="memItemLeft" align="right" valign="top">std::vector&lt; G4ThreeVector &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classm_d_o_m.html#a3cfad9f46b12f1c3bcdd55704fe106cb">mPMTPositions</a></td></tr>
+<tr class="separator:a3cfad9f46b12f1c3bcdd55704fe106cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4a88b05f5e72dcaed20578e14c7fc602"><td class="memItemLeft" align="right" valign="top">std::vector&lt; G4RotationMatrix &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classm_d_o_m.html#a4a88b05f5e72dcaed20578e14c7fc602">mPMTRotations</a></td></tr>
+<tr class="separator:a4a88b05f5e72dcaed20578e14c7fc602"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af9c4392faf4cad05bcd94be4f8049aa1"><td class="memItemLeft" align="right" valign="top">std::vector&lt; G4RotationMatrix &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classm_d_o_m.html#af9c4392faf4cad05bcd94be4f8049aa1">mPMTRotPhi</a></td></tr>
+<tr class="separator:af9c4392faf4cad05bcd94be4f8049aa1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a389836b7c99d6a7e7445b986c588f113"><td class="memItemLeft" align="right" valign="top">std::vector&lt; G4ThreeVector &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classm_d_o_m.html#a389836b7c99d6a7e7445b986c588f113">mReflectorPositions</a></td></tr>
+<tr class="separator:a389836b7c99d6a7e7445b986c588f113"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aada079255c04717226e78ddc040c21bb"><td class="memItemLeft" align="right" valign="top">G4double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classm_d_o_m.html#aada079255c04717226e78ddc040c21bb">mPMToffset</a></td></tr>
+<tr class="separator:aada079255c04717226e78ddc040c21bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a23191a5e912d1fdd142c8a33b4dbb0c8"><td class="memItemLeft" align="right" valign="top">G4double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classm_d_o_m.html#a23191a5e912d1fdd142c8a33b4dbb0c8">mRefConeIdealInRad</a></td></tr>
+<tr class="separator:a23191a5e912d1fdd142c8a33b4dbb0c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a08b12af4d0dbd5f1872fc6157a859f7f"><td class="memItemLeft" align="right" valign="top">const G4double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classm_d_o_m.html#a08b12af4d0dbd5f1872fc6157a859f7f">mGlassThick</a> = 13.5*mm</td></tr>
+<tr class="separator:a08b12af4d0dbd5f1872fc6157a859f7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abdad58a2d3b927d0d05c04cc0d23095a"><td class="memItemLeft" align="right" valign="top">const G4double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classm_d_o_m.html#abdad58a2d3b927d0d05c04cc0d23095a">mGelThicknessFrontPMT</a> = 3.6*mm</td></tr>
+<tr class="separator:abdad58a2d3b927d0d05c04cc0d23095a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4f1a6e0c401ef0b464f74a226ebc48e2"><td class="memItemLeft" align="right" valign="top">const G4double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classm_d_o_m.html#a4f1a6e0c401ef0b464f74a226ebc48e2">mGelThickness</a> = 4.5*mm</td></tr>
+<tr class="separator:a4f1a6e0c401ef0b464f74a226ebc48e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2054cea24a6f7bd00d684bd60e375a57"><td class="memItemLeft" align="right" valign="top">const G4double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classm_d_o_m.html#a2054cea24a6f7bd00d684bd60e375a57">mEqPMTrOffset</a> = 2.6*mm</td></tr>
+<tr class="separator:a2054cea24a6f7bd00d684bd60e375a57"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0c1757c5fbd9f90d0b4a4468eb70ce42"><td class="memItemLeft" align="right" valign="top">const G4double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classm_d_o_m.html#a0c1757c5fbd9f90d0b4a4468eb70ce42">mEqPMTzOffset</a> = 10.0*mm</td></tr>
+<tr class="separator:a0c1757c5fbd9f90d0b4a4468eb70ce42"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a87182287102be81c43a516e8d7d5a25c"><td class="memItemLeft" align="right" valign="top">const G4double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classm_d_o_m.html#a87182287102be81c43a516e8d7d5a25c">mRefConeHalfZ</a> = 15*mm</td></tr>
+<tr class="separator:a87182287102be81c43a516e8d7d5a25c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad4698d5b6cc2b233a4501a9ec1b34ff6"><td class="memItemLeft" align="right" valign="top">const G4double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classm_d_o_m.html#ad4698d5b6cc2b233a4501a9ec1b34ff6">mRefConeSheetThickness</a> = 0.5*mm</td></tr>
+<tr class="separator:ad4698d5b6cc2b233a4501a9ec1b34ff6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a663f0885611e2697d7571465999568ec"><td class="memItemLeft" align="right" valign="top">const G4double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classm_d_o_m.html#a663f0885611e2697d7571465999568ec">mRefConeToHolder</a> = 1.55*mm</td></tr>
+<tr class="separator:a663f0885611e2697d7571465999568ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a31abbeec998978802e32bd4f542c3485"><td class="memItemLeft" align="right" valign="top">const G4double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classm_d_o_m.html#a31abbeec998978802e32bd4f542c3485">mThetaPolar</a> = 33.0*deg</td></tr>
+<tr class="separator:a31abbeec998978802e32bd4f542c3485"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2b0d0e612536d2e72c11c85cef1f6f2b"><td class="memItemLeft" align="right" valign="top">const G4double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classm_d_o_m.html#a2b0d0e612536d2e72c11c85cef1f6f2b">mThetaEquatorial</a> = 72.0*deg</td></tr>
+<tr class="separator:a2b0d0e612536d2e72c11c85cef1f6f2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3e8e95e43ee32d0db400be6495f45681"><td class="memItemLeft" align="right" valign="top">const G4int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classm_d_o_m.html#a3e8e95e43ee32d0db400be6495f45681">mNrPolarPMTs</a> = 4</td></tr>
+<tr class="separator:a3e8e95e43ee32d0db400be6495f45681"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae57fd1dd20ce6878a4903a2837e4d27f"><td class="memItemLeft" align="right" valign="top">const G4int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classm_d_o_m.html#ae57fd1dd20ce6878a4903a2837e4d27f">mNrEqPMTs</a> = 8</td></tr>
+<tr class="separator:ae57fd1dd20ce6878a4903a2837e4d27f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9a9ed5076d3b0d679b1dd26e2fb2e292"><td class="memItemLeft" align="right" valign="top">const G4int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classm_d_o_m.html#a9a9ed5076d3b0d679b1dd26e2fb2e292">mRefConeAngle</a> = 51</td></tr>
+<tr class="separator:a9a9ed5076d3b0d679b1dd26e2fb2e292"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a151e155b3a557263ae2b7d73739dc358"><td class="memItemLeft" align="right" valign="top">const G4double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classm_d_o_m.html#a151e155b3a557263ae2b7d73739dc358">mPolEqPMTPhiPhase</a> = 0*deg</td></tr>
+<tr class="separator:a151e155b3a557263ae2b7d73739dc358"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a31d5588f276092ffcb9284f843b3bbb6"><td class="memItemLeft" align="right" valign="top">const G4int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classm_d_o_m.html#a31d5588f276092ffcb9284f843b3bbb6">mTotalNrPMTs</a> = (<a class="el" href="classm_d_o_m.html#a3e8e95e43ee32d0db400be6495f45681">mNrPolarPMTs</a> + <a class="el" href="classm_d_o_m.html#ae57fd1dd20ce6878a4903a2837e4d27f">mNrEqPMTs</a>) * 2</td></tr>
+<tr class="separator:a31d5588f276092ffcb9284f843b3bbb6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aed70354ddf6bfe7859c848e17d380dda"><td class="memItemLeft" align="right" valign="top">const G4double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classm_d_o_m.html#aed70354ddf6bfe7859c848e17d380dda">mSupStructureRad</a> = <a class="el" href="classm_d_o_m.html#a0a150a538f8bbaa720cc3876fcc74c54">mGlassOutRad</a> - <a class="el" href="classm_d_o_m.html#a08b12af4d0dbd5f1872fc6157a859f7f">mGlassThick</a> - <a class="el" href="classm_d_o_m.html#a4f1a6e0c401ef0b464f74a226ebc48e2">mGelThickness</a></td></tr>
+<tr class="separator:aed70354ddf6bfe7859c848e17d380dda"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a87d21466836665446bafbb2aefc28a5e"><td class="memItemLeft" align="right" valign="top">const G4double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classm_d_o_m.html#a87d21466836665446bafbb2aefc28a5e">mThetaEqLED</a> = 61 * deg</td></tr>
+<tr class="separator:a87d21466836665446bafbb2aefc28a5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a98dbce10427bd4cabd671b2626307a1b"><td class="memItemLeft" align="right" valign="top">const G4double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classm_d_o_m.html#a98dbce10427bd4cabd671b2626307a1b">mThetaPolLED</a> = 8.2 * deg</td></tr>
+<tr class="separator:a98dbce10427bd4cabd671b2626307a1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
@@ -341,6 +419,54 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
+<a id="a3b2aaa5321719dfb3b800a3c1f8b9f25"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3b2aaa5321719dfb3b800a3c1f8b9f25">&#9670;&nbsp;</a></span>equatorialReflector()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">G4SubtractionSolid * mDOM::equatorialReflector </td>
+          <td>(</td>
+          <td class="paramtype">G4VSolid *&#160;</td>
+          <td class="paramname"><em>pSupportStructure</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">G4Cons *&#160;</td>
+          <td class="paramname"><em>pReflCone</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">G4double&#160;</td>
+          <td class="paramname"><em>pAngle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">G4String&#160;</td>
+          <td class="paramname"><em>pSuffix</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="ad7e07f1380a50158f7cede9aa84721be"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ad7e07f1380a50158f7cede9aa84721be">&#9670;&nbsp;</a></span>getNumberOfPMTs()</h2>
 
@@ -397,6 +523,42 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
+<a id="a95cb59294f27f0e119d27d4b7e4f2cfe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a95cb59294f27f0e119d27d4b7e4f2cfe">&#9670;&nbsp;</a></span>pressureVessel()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">G4UnionSolid * mDOM::pressureVessel </td>
+          <td>(</td>
+          <td class="paramtype">const G4double&#160;</td>
+          <td class="paramname"><em>pOutRad</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">G4String&#160;</td>
+          <td class="paramname"><em>pSuffix</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="adf748d77a8bae2516db1ba79b805841b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#adf748d77a8bae2516db1ba79b805841b">&#9670;&nbsp;</a></span>runBeamOnFlasher()</h2>
 
@@ -440,6 +602,31 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
+<a id="ae1946d5874274ca30123bbbcd7af1411"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae1946d5874274ca30123bbbcd7af1411">&#9670;&nbsp;</a></span>setLEDPositions()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void mDOM::setLEDPositions </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a48e3f7091cebec1b23d96c33580ec3e5"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a48e3f7091cebec1b23d96c33580ec3e5">&#9670;&nbsp;</a></span>setNavigator()</h2>
 
@@ -460,6 +647,108 @@ Additional Inherited Members</h2></td></tr>
   </td>
   <td class="mlabels-right">
 <span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa787ab8bfad6c8d820050a7d8c1f9bf5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa787ab8bfad6c8d820050a7d8c1f9bf5">&#9670;&nbsp;</a></span>setPMTPositions()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void mDOM::setPMTPositions </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7096fa5b925a0be159c56f415daf8f89"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7096fa5b925a0be159c56f415daf8f89">&#9670;&nbsp;</a></span>substractFlashers()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">G4SubtractionSolid * mDOM::substractFlashers </td>
+          <td>(</td>
+          <td class="paramtype">G4VSolid *&#160;</td>
+          <td class="paramname"><em>lSupStructureSolid</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3d936da0f23132258600d0825d3998f5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3d936da0f23132258600d0825d3998f5">&#9670;&nbsp;</a></span>substractHarnessPlug()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">G4SubtractionSolid * mDOM::substractHarnessPlug </td>
+          <td>(</td>
+          <td class="paramtype">G4VSolid *&#160;</td>
+          <td class="paramname"><em>pSolid</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1f14d2c150c096e608d244a125c5b33e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1f14d2c150c096e608d244a125c5b33e">&#9670;&nbsp;</a></span>supportStructure()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::tuple&lt; G4SubtractionSolid *, G4UnionSolid * &gt; mDOM::supportStructure </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -495,6 +784,116 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
+<a id="a2054cea24a6f7bd00d684bd60e375a57"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2054cea24a6f7bd00d684bd60e375a57">&#9670;&nbsp;</a></span>mEqPMTrOffset</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const G4double mDOM::mEqPMTrOffset = 2.6*mm</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0c1757c5fbd9f90d0b4a4468eb70ce42"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0c1757c5fbd9f90d0b4a4468eb70ce42">&#9670;&nbsp;</a></span>mEqPMTzOffset</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const G4double mDOM::mEqPMTzOffset = 10.0*mm</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a16328146960e2feccdae1ef07d6a815b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a16328146960e2feccdae1ef07d6a815b">&#9670;&nbsp;</a></span>mFlashers</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classm_d_o_m_flasher.html">mDOMFlasher</a>* mDOM::mFlashers</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4f1a6e0c401ef0b464f74a226ebc48e2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4f1a6e0c401ef0b464f74a226ebc48e2">&#9670;&nbsp;</a></span>mGelThickness</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const G4double mDOM::mGelThickness = 4.5*mm</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="abdad58a2d3b927d0d05c04cc0d23095a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abdad58a2d3b927d0d05c04cc0d23095a">&#9670;&nbsp;</a></span>mGelThicknessFrontPMT</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const G4double mDOM::mGelThicknessFrontPMT = 3.6*mm</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="aedf09daf267a3c3b2dd9602c05f07636"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aedf09daf267a3c3b2dd9602c05f07636">&#9670;&nbsp;</a></span>mGlassInRad</h2>
 
@@ -502,7 +901,7 @@ Additional Inherited Members</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">const G4double mDOM::mGlassInRad = <a class="el" href="classm_d_o_m.html#a0a150a538f8bbaa720cc3876fcc74c54">mGlassOutRad</a> - mGlassThick</td>
+          <td class="memname">const G4double mDOM::mGlassInRad = <a class="el" href="classm_d_o_m.html#a0a150a538f8bbaa720cc3876fcc74c54">mGlassOutRad</a> - <a class="el" href="classm_d_o_m.html#a08b12af4d0dbd5f1872fc6157a859f7f">mGlassThick</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -519,6 +918,72 @@ Additional Inherited Members</h2></td></tr>
           <td class="memname">const G4double mDOM::mGlassOutRad = 176.5*mm</td>
         </tr>
       </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a08b12af4d0dbd5f1872fc6157a859f7f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a08b12af4d0dbd5f1872fc6157a859f7f">&#9670;&nbsp;</a></span>mGlassThick</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const G4double mDOM::mGlassThick = 13.5*mm</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a61d4eb42abbc6512691d7e466f039b25"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a61d4eb42abbc6512691d7e466f039b25">&#9670;&nbsp;</a></span>mHarness</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classm_d_o_m_harness.html">mDOMHarness</a>* mDOM::mHarness</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a67d1aa872ca146a8d5b276e5824c3d56"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a67d1aa872ca146a8d5b276e5824c3d56">&#9670;&nbsp;</a></span>mHarnessUnion</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">G4bool mDOM::mHarnessUnion = true</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 </div>
@@ -551,6 +1016,50 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
+<a id="ae57fd1dd20ce6878a4903a2837e4d27f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae57fd1dd20ce6878a4903a2837e4d27f">&#9670;&nbsp;</a></span>mNrEqPMTs</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const G4int mDOM::mNrEqPMTs = 8</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3e8e95e43ee32d0db400be6495f45681"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3e8e95e43ee32d0db400be6495f45681">&#9670;&nbsp;</a></span>mNrPolarPMTs</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const G4int mDOM::mNrPolarPMTs = 4</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a106b05be669675201404fb8954642048"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a106b05be669675201404fb8954642048">&#9670;&nbsp;</a></span>mNrTotalLED</h2>
 
@@ -565,6 +1074,402 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
+<a id="a3fa16751e8d16fd4c567b4e2e01b4299"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3fa16751e8d16fd4c567b4e2e01b4299">&#9670;&nbsp;</a></span>mPlaceHarness</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">G4bool mDOM::mPlaceHarness = true</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aada079255c04717226e78ddc040c21bb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aada079255c04717226e78ddc040c21bb">&#9670;&nbsp;</a></span>mPMToffset</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">G4double mDOM::mPMToffset</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3cfad9f46b12f1c3bcdd55704fe106cb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3cfad9f46b12f1c3bcdd55704fe106cb">&#9670;&nbsp;</a></span>mPMTPositions</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;G4ThreeVector&gt; mDOM::mPMTPositions</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4a88b05f5e72dcaed20578e14c7fc602"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4a88b05f5e72dcaed20578e14c7fc602">&#9670;&nbsp;</a></span>mPMTRotations</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;G4RotationMatrix&gt; mDOM::mPMTRotations</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af9c4392faf4cad05bcd94be4f8049aa1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af9c4392faf4cad05bcd94be4f8049aa1">&#9670;&nbsp;</a></span>mPMTRotPhi</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;G4RotationMatrix&gt; mDOM::mPMTRotPhi</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a151e155b3a557263ae2b7d73739dc358"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a151e155b3a557263ae2b7d73739dc358">&#9670;&nbsp;</a></span>mPolEqPMTPhiPhase</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const G4double mDOM::mPolEqPMTPhiPhase = 0*deg</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9a9ed5076d3b0d679b1dd26e2fb2e292"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9a9ed5076d3b0d679b1dd26e2fb2e292">&#9670;&nbsp;</a></span>mRefConeAngle</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const G4int mDOM::mRefConeAngle = 51</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a87182287102be81c43a516e8d7d5a25c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a87182287102be81c43a516e8d7d5a25c">&#9670;&nbsp;</a></span>mRefConeHalfZ</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const G4double mDOM::mRefConeHalfZ = 15*mm</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a23191a5e912d1fdd142c8a33b4dbb0c8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a23191a5e912d1fdd142c8a33b4dbb0c8">&#9670;&nbsp;</a></span>mRefConeIdealInRad</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">G4double mDOM::mRefConeIdealInRad</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad4698d5b6cc2b233a4501a9ec1b34ff6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad4698d5b6cc2b233a4501a9ec1b34ff6">&#9670;&nbsp;</a></span>mRefConeSheetThickness</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const G4double mDOM::mRefConeSheetThickness = 0.5*mm</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a663f0885611e2697d7571465999568ec"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a663f0885611e2697d7571465999568ec">&#9670;&nbsp;</a></span>mRefConeToHolder</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const G4double mDOM::mRefConeToHolder = 1.55*mm</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a389836b7c99d6a7e7445b986c588f113"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a389836b7c99d6a7e7445b986c588f113">&#9670;&nbsp;</a></span>mReflectorPositions</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;G4ThreeVector&gt; mDOM::mReflectorPositions</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aed70354ddf6bfe7859c848e17d380dda"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aed70354ddf6bfe7859c848e17d380dda">&#9670;&nbsp;</a></span>mSupStructureRad</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const G4double mDOM::mSupStructureRad = <a class="el" href="classm_d_o_m.html#a0a150a538f8bbaa720cc3876fcc74c54">mGlassOutRad</a> - <a class="el" href="classm_d_o_m.html#a08b12af4d0dbd5f1872fc6157a859f7f">mGlassThick</a> - <a class="el" href="classm_d_o_m.html#a4f1a6e0c401ef0b464f74a226ebc48e2">mGelThickness</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a87d21466836665446bafbb2aefc28a5e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a87d21466836665446bafbb2aefc28a5e">&#9670;&nbsp;</a></span>mThetaEqLED</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const G4double mDOM::mThetaEqLED = 61 * deg</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a2b0d0e612536d2e72c11c85cef1f6f2b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2b0d0e612536d2e72c11c85cef1f6f2b">&#9670;&nbsp;</a></span>mThetaEquatorial</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const G4double mDOM::mThetaEquatorial = 72.0*deg</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a31abbeec998978802e32bd4f542c3485"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a31abbeec998978802e32bd4f542c3485">&#9670;&nbsp;</a></span>mThetaPolar</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const G4double mDOM::mThetaPolar = 33.0*deg</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a98dbce10427bd4cabd671b2626307a1b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a98dbce10427bd4cabd671b2626307a1b">&#9670;&nbsp;</a></span>mThetaPolLED</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const G4double mDOM::mThetaPolLED = 8.2 * deg</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a31d5588f276092ffcb9284f843b3bbb6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a31d5588f276092ffcb9284f843b3bbb6">&#9670;&nbsp;</a></span>mTotalNrPMTs</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const G4int mDOM::mTotalNrPMTs = (<a class="el" href="classm_d_o_m.html#a3e8e95e43ee32d0db400be6495f45681">mNrPolarPMTs</a> + <a class="el" href="classm_d_o_m.html#ae57fd1dd20ce6878a4903a2837e4d27f">mNrEqPMTs</a>) * 2</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li><a class="el" href="_o_m_sim_m_d_o_m_8hh_source.html">OMSimMDOM.hh</a></li>
 <li><a class="el" href="_o_m_sim_m_d_o_m_8cc.html">OMSimMDOM.cc</a></li>
@@ -575,7 +1480,7 @@ Additional Inherited Members</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="classm_d_o_m.html">mDOM</a></li>
-    <li class="footer">Generated on Thu Aug 17 2023 12:27:27 for OMSim by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Thu Aug 17 2023 12:32:31 for OMSim by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

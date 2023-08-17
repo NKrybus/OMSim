@@ -115,6 +115,8 @@ $(document).ready(function(){initNavTree('class_o_m_sim_p_m_t_construction.html'
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="class_o_m_sim_p_m_t_construction-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">OMSimPMTConstruction Class Reference</div>  </div>
@@ -129,7 +131,7 @@ Inheritance diagram for OMSimPMTConstruction:</div>
 <div class="dynheader">
 Collaboration diagram for OMSimPMTConstruction:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_o_m_sim_p_m_t_construction__coll__graph.svg" width="190" height="279"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_o_m_sim_p_m_t_construction__coll__graph.svg" width="334" height="279"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
@@ -191,6 +193,76 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a53c7979298ef9eda66b44f0a3c4f2e6b inherit pub_methods_classabc_detector_component"><td class="memItemLeft" align="right" valign="top">G4SubtractionSolid *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classabc_detector_component.html#a53c7979298ef9eda66b44f0a3c4f2e6b">substractToVolume</a> (G4VSolid *pInputVolume, G4Transform3D pTrans, G4String pNewVolumeName)</td></tr>
 <tr class="memdesc:a53c7979298ef9eda66b44f0a3c4f2e6b inherit pub_methods_classabc_detector_component"><td class="mdescLeft">&#160;</td><td class="mdescRight">Subtracts components from a given solid volume.  <a href="classabc_detector_component.html#a53c7979298ef9eda66b44f0a3c4f2e6b">More...</a><br /></td></tr>
 <tr class="separator:a53c7979298ef9eda66b44f0a3c4f2e6b inherit pub_methods_classabc_detector_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:a136c7f4862d780eb2a874428715bfcb8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_m_sim_p_m_t_construction.html#a136c7f4862d780eb2a874428715bfcb8">constructHAcoating</a> ()</td></tr>
+<tr class="separator:a136c7f4862d780eb2a874428715bfcb8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a759f6d30a70f3a9f34997e5dc9d38680"><td class="memItemLeft" align="right" valign="top">std::tuple&lt; G4VSolid *, G4VSolid * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_m_sim_p_m_t_construction.html#a759f6d30a70f3a9f34997e5dc9d38680">getBulbSolid</a> (G4String pSide)</td></tr>
+<tr class="separator:a759f6d30a70f3a9f34997e5dc9d38680"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3faaf0d512f9a3fe15c6f33efe6d062c"><td class="memItemLeft" align="right" valign="top">std::tuple&lt; G4VSolid *, G4VSolid * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_m_sim_p_m_t_construction.html#a3faaf0d512f9a3fe15c6f33efe6d062c">simpleBulbConstruction</a> (G4String pSide)</td></tr>
+<tr class="separator:a3faaf0d512f9a3fe15c6f33efe6d062c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6b84182c7a5b45461160c954e9a384f0"><td class="memItemLeft" align="right" valign="top">std::tuple&lt; G4VSolid *, G4VSolid * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_m_sim_p_m_t_construction.html#a6b84182c7a5b45461160c954e9a384f0">fullBulbConstruction</a> (G4String pSide)</td></tr>
+<tr class="separator:a6b84182c7a5b45461160c954e9a384f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6724e1b0920884b77cd6401da6588ca9"><td class="memItemLeft" align="right" valign="top">G4UnionSolid *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_m_sim_p_m_t_construction.html#a6724e1b0920884b77cd6401da6588ca9">sphereEllipsePhotocathode</a> ()</td></tr>
+<tr class="separator:a6724e1b0920884b77cd6401da6588ca9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7ae6ccb05534002df9e519c5b5cfef14"><td class="memItemLeft" align="right" valign="top">G4UnionSolid *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_m_sim_p_m_t_construction.html#a7ae6ccb05534002df9e519c5b5cfef14">sphereDoubleEllipsePhotocathode</a> (G4String pSide)</td></tr>
+<tr class="separator:a7ae6ccb05534002df9e519c5b5cfef14"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae3063f4ced2750fc98e74a2daf3bfc2b"><td class="memItemLeft" align="right" valign="top">G4UnionSolid *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_m_sim_p_m_t_construction.html#ae3063f4ced2750fc98e74a2daf3bfc2b">doubleEllipsePhotocathode</a> (G4String pSide)</td></tr>
+<tr class="separator:ae3063f4ced2750fc98e74a2daf3bfc2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a05b6a96a4339d555cfb6c727a23d999d"><td class="memItemLeft" align="right" valign="top">G4UnionSolid *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_m_sim_p_m_t_construction.html#a05b6a96a4339d555cfb6c727a23d999d">ellipsePhotocathode</a> ()</td></tr>
+<tr class="separator:a05b6a96a4339d555cfb6c727a23d999d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa850b229e2e9ab26afbe4e2e0d21683d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_m_sim_p_m_t_construction.html#aa850b229e2e9ab26afbe4e2e0d21683d">checkPhotocathodeThickness</a> ()</td></tr>
+<tr class="separator:aa850b229e2e9ab26afbe4e2e0d21683d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a07f99802d73ddd8d9a9f838725cc0354"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_m_sim_p_m_t_construction.html#a07f99802d73ddd8d9a9f838725cc0354">constructCathodeBackshield</a> (G4LogicalVolume *pPMTIinner)</td></tr>
+<tr class="separator:a07f99802d73ddd8d9a9f838725cc0354"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a961bf82e229e26d5ae6ae835e58acf24"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_m_sim_p_m_t_construction.html#a961bf82e229e26d5ae6ae835e58acf24">constructCADdynodeSystem</a> (G4LogicalVolume *pMother)</td></tr>
+<tr class="separator:a961bf82e229e26d5ae6ae835e58acf24"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0e08b1af0e16f19f16569af2a7cfa8fc"><td class="memItemLeft" align="right" valign="top">G4SubtractionSolid *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_m_sim_p_m_t_construction.html#a0e08b1af0e16f19f16569af2a7cfa8fc">constructPhotocathodeLayer</a> ()</td></tr>
+<tr class="separator:a0e08b1af0e16f19f16569af2a7cfa8fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac869819aa23b922e7cff347cd082b5f4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_m_sim_p_m_t_construction.html#ac869819aa23b922e7cff347cd082b5f4">readGlobalParameters</a> (G4String pSide)</td></tr>
+<tr class="separator:ac869819aa23b922e7cff347cd082b5f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1a07b518f5591dd80dafb9154cdd3a5d"><td class="memItemLeft" align="right" valign="top">G4VSolid *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_m_sim_p_m_t_construction.html#a1a07b518f5591dd80dafb9154cdd3a5d">frontalBulbConstruction</a> (G4String pSide)</td></tr>
+<tr class="separator:a1a07b518f5591dd80dafb9154cdd3a5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a352a0447cb3025f24340fa5cecb0b0c4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_input_data_manager.html">InputDataManager</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_m_sim_p_m_t_construction.html#a352a0447cb3025f24340fa5cecb0b0c4">mData</a></td></tr>
+<tr class="separator:a352a0447cb3025f24340fa5cecb0b0c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a495272aadd5226ffcaf2584827c686af"><td class="memItemLeft" align="right" valign="top">G4String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_m_sim_p_m_t_construction.html#a495272aadd5226ffcaf2584827c686af">mSelectedPMT</a></td></tr>
+<tr class="separator:a495272aadd5226ffcaf2584827c686af"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6b9aad40552f479df2d6a8bc0179fd76"><td class="memItemLeft" align="right" valign="top">G4bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_m_sim_p_m_t_construction.html#a6b9aad40552f479df2d6a8bc0179fd76">mDynodeSystem</a> = false</td></tr>
+<tr class="separator:a6b9aad40552f479df2d6a8bc0179fd76"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aacc6fad7cb84f5e3558d77220fd7ffc1"><td class="memItemLeft" align="right" valign="top">G4bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_m_sim_p_m_t_construction.html#aacc6fad7cb84f5e3558d77220fd7ffc1">mInternalReflections</a> = false</td></tr>
+<tr class="separator:aacc6fad7cb84f5e3558d77220fd7ffc1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a624aff368c4b01c8c4185808b896584c"><td class="memItemLeft" align="right" valign="top">G4bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_m_sim_p_m_t_construction.html#a624aff368c4b01c8c4185808b896584c">mHACoatingBool</a> = false</td></tr>
+<tr class="separator:a624aff368c4b01c8c4185808b896584c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a74f1218bdab815e7d608696ca7f3dab0"><td class="memItemLeft" align="right" valign="top">G4bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_m_sim_p_m_t_construction.html#a74f1218bdab815e7d608696ca7f3dab0">mConstructionFinished</a> = false</td></tr>
+<tr class="separator:a74f1218bdab815e7d608696ca7f3dab0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6d889058c3109fed43de98cd2556ed05"><td class="memItemLeft" align="right" valign="top">G4bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_m_sim_p_m_t_construction.html#a6d889058c3109fed43de98cd2556ed05">mSimpleBulb</a> = false</td></tr>
+<tr class="separator:a6d889058c3109fed43de98cd2556ed05"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abb776a1362b0d7eeba3027a9cf5650f8"><td class="memItemLeft" align="right" valign="top">G4double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_m_sim_p_m_t_construction.html#abb776a1362b0d7eeba3027a9cf5650f8">mMissingTubeLength</a></td></tr>
+<tr class="separator:abb776a1362b0d7eeba3027a9cf5650f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1ea9af390bcef6414db1ab17df684feb"><td class="memItemLeft" align="right" valign="top">G4PVPlacement *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_m_sim_p_m_t_construction.html#a1ea9af390bcef6414db1ab17df684feb">mVacuumBackPhysical</a></td></tr>
+<tr class="separator:a1ea9af390bcef6414db1ab17df684feb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a954bc0a8936589dcd842089408d4f0a1"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_m_sim_p_m_t_construction.html#a954bc0a8936589dcd842089408d4f0a1">mCheckOverlaps</a> = true</td></tr>
+<tr class="separator:a954bc0a8936589dcd842089408d4f0a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1b6532117aa4234d9081024d1ba7d85a"><td class="memItemLeft" align="right" valign="top">G4double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_m_sim_p_m_t_construction.html#a1b6532117aa4234d9081024d1ba7d85a">mTotalLenght</a></td></tr>
+<tr class="separator:a1b6532117aa4234d9081024d1ba7d85a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8027fe5070e25f7a8cb414d653da0d00"><td class="memItemLeft" align="right" valign="top">G4double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_m_sim_p_m_t_construction.html#a8027fe5070e25f7a8cb414d653da0d00">mTubeWidth</a></td></tr>
+<tr class="separator:a8027fe5070e25f7a8cb414d653da0d00"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab5642c24fbf6f05d163a1ceecda4ac61"><td class="memItemLeft" align="right" valign="top">G4double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_m_sim_p_m_t_construction.html#ab5642c24fbf6f05d163a1ceecda4ac61">mOutRad</a></td></tr>
+<tr class="separator:ab5642c24fbf6f05d163a1ceecda4ac61"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6b62f7345d468f6926f5e46ebc2f68af"><td class="memItemLeft" align="right" valign="top">G4double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_m_sim_p_m_t_construction.html#a6b62f7345d468f6926f5e46ebc2f68af">mEllipseXYaxis</a></td></tr>
+<tr class="separator:a6b62f7345d468f6926f5e46ebc2f68af"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5da57550a373b2b30cf435df494e3ee7"><td class="memItemLeft" align="right" valign="top">G4double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_m_sim_p_m_t_construction.html#a5da57550a373b2b30cf435df494e3ee7">mEllipseZaxis</a></td></tr>
+<tr class="separator:a5da57550a373b2b30cf435df494e3ee7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a33c6ba521a4da0128f9b96146717ccd3"><td class="memItemLeft" align="right" valign="top">G4double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_m_sim_p_m_t_construction.html#a33c6ba521a4da0128f9b96146717ccd3">mSphereEllipseTransition_r</a></td></tr>
+<tr class="separator:a33c6ba521a4da0128f9b96146717ccd3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a036a77af4330044e09eb21bca2c6ba30"><td class="memItemLeft" align="right" valign="top">G4double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_m_sim_p_m_t_construction.html#a036a77af4330044e09eb21bca2c6ba30">mSpherePos_y</a></td></tr>
+<tr class="separator:a036a77af4330044e09eb21bca2c6ba30"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1b423922ceb61e5a5042d14f24f098c9"><td class="memItemLeft" align="right" valign="top">G4double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_m_sim_p_m_t_construction.html#a1b423922ceb61e5a5042d14f24f098c9">mEllipsePos_y</a></td></tr>
+<tr class="separator:a1b423922ceb61e5a5042d14f24f098c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
@@ -263,6 +335,115 @@ Additional Inherited Members</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="aa850b229e2e9ab26afbe4e2e0d21683d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa850b229e2e9ab26afbe4e2e0d21683d">&#9670;&nbsp;</a></span>checkPhotocathodeThickness()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void OMSimPMTConstruction::checkPhotocathodeThickness </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a961bf82e229e26d5ae6ae835e58acf24"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a961bf82e229e26d5ae6ae835e58acf24">&#9670;&nbsp;</a></span>constructCADdynodeSystem()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void OMSimPMTConstruction::constructCADdynodeSystem </td>
+          <td>(</td>
+          <td class="paramtype">G4LogicalVolume *&#160;</td>
+          <td class="paramname"><em>pMother</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Construction &amp; placement of the dynode system entrance for internal reflections. Currently only geometry for Hamamatsu R15458. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pMother</td><td>LogicalVolume of the mother, where the dynode system entrance is placed (vacuum volume) </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a07f99802d73ddd8d9a9f838725cc0354"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a07f99802d73ddd8d9a9f838725cc0354">&#9670;&nbsp;</a></span>constructCathodeBackshield()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void OMSimPMTConstruction::constructCathodeBackshield </td>
+          <td>(</td>
+          <td class="paramtype">G4LogicalVolume *&#160;</td>
+          <td class="paramname"><em>pPMTIinner</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Creates and positions a thin disk behind the photocathode volume in order to shield photons coming from behind the PMT. Only used when internal reflections are turned off. </p>
+
+</div>
+</div>
+<a id="a136c7f4862d780eb2a874428715bfcb8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a136c7f4862d780eb2a874428715bfcb8">&#9670;&nbsp;</a></span>constructHAcoating()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void OMSimPMTConstruction::constructHAcoating </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a5ab3a93d9e44fb38004cfd9d30c6d6aa"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a5ab3a93d9e44fb38004cfd9d30c6d6aa">&#9670;&nbsp;</a></span>construction()</h2>
 
@@ -287,6 +468,166 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Implements <a class="el" href="classabc_detector_component.html#a8e7f01c218d5f093e80e46b33a0672bf">abcDetectorComponent</a>.</p>
+
+</div>
+</div>
+<a id="a0e08b1af0e16f19f16569af2a7cfa8fc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0e08b1af0e16f19f16569af2a7cfa8fc">&#9670;&nbsp;</a></span>constructPhotocathodeLayer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">G4SubtractionSolid * OMSimPMTConstruction::constructPhotocathodeLayer </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Construction of the photocathode layer. </p><dl class="section return"><dt>Returns</dt><dd>G4SubtractionSolid </dd></dl>
+
+</div>
+</div>
+<a id="ae3063f4ced2750fc98e74a2daf3bfc2b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae3063f4ced2750fc98e74a2daf3bfc2b">&#9670;&nbsp;</a></span>doubleEllipsePhotocathode()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">G4UnionSolid * OMSimPMTConstruction::doubleEllipsePhotocathode </td>
+          <td>(</td>
+          <td class="paramtype">G4String&#160;</td>
+          <td class="paramname"><em>pSide</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Construction of the frontal part of the PMT following the fits of the technical drawings. PMTs constructed with doubleEllipsePhotocathode were fitted with two ellipses. </p><dl class="section return"><dt>Returns</dt><dd>G4UnionSolid lBulbSolid the frontal solid of the PMT </dd></dl>
+
+</div>
+</div>
+<a id="a05b6a96a4339d555cfb6c727a23d999d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a05b6a96a4339d555cfb6c727a23d999d">&#9670;&nbsp;</a></span>ellipsePhotocathode()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">G4UnionSolid * OMSimPMTConstruction::ellipsePhotocathode </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1a07b518f5591dd80dafb9154cdd3a5d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1a07b518f5591dd80dafb9154cdd3a5d">&#9670;&nbsp;</a></span>frontalBulbConstruction()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">G4VSolid * OMSimPMTConstruction::frontalBulbConstruction </td>
+          <td>(</td>
+          <td class="paramtype">G4String&#160;</td>
+          <td class="paramname"><em>pSide</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6b84182c7a5b45461160c954e9a384f0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6b84182c7a5b45461160c954e9a384f0">&#9670;&nbsp;</a></span>fullBulbConstruction()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::tuple&lt; G4VSolid *, G4VSolid * &gt; OMSimPMTConstruction::fullBulbConstruction </td>
+          <td>(</td>
+          <td class="paramtype">G4String&#160;</td>
+          <td class="paramname"><em>pSide</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Construction of the basic shape of the PMT for a full paramterised PMT. This is needed if internal reflections are simulated. </p><dl class="section return"><dt>Returns</dt><dd>tuple of G4UnionSolid (the outer shape) and G4SubtractionSolid (the photocathode volume part) </dd></dl>
+
+</div>
+</div>
+<a id="a759f6d30a70f3a9f34997e5dc9d38680"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a759f6d30a70f3a9f34997e5dc9d38680">&#9670;&nbsp;</a></span>getBulbSolid()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::tuple&lt; G4VSolid *, G4VSolid * &gt; OMSimPMTConstruction::getBulbSolid </td>
+          <td>(</td>
+          <td class="paramtype">G4String&#160;</td>
+          <td class="paramname"><em>pSide</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>The basic shape of the PMT is constructed twice, once for the external solid and once for the internal. A subtraction of these two shapes would yield the glass envelope of the PMT. The function calls either simpleBulbConstruction or fullBulbConstruction, depending on the data provided and simulation type. In case only the frontal curvate of the photocathode has to be well constructed, it calls simpleBulbConstruction. fullBulbConstruction constructs the neck of the PMT precisely, but it needs to have the fit data of the PMT type and is only needed if internal reflections are simulated. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="class_o_m_sim_p_m_t_construction.html#a3faaf0d512f9a3fe15c6f33efe6d062c">simpleBulbConstruction</a> </dd>
+<dd>
+<a class="el" href="class_o_m_sim_p_m_t_construction.html#a6b84182c7a5b45461160c954e9a384f0">fullBulbConstruction</a> </dd></dl>
 
 </div>
 </div>
@@ -486,6 +827,33 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
+<a id="ac869819aa23b922e7cff347cd082b5f4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac869819aa23b922e7cff347cd082b5f4">&#9670;&nbsp;</a></span>readGlobalParameters()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void OMSimPMTConstruction::readGlobalParameters </td>
+          <td>(</td>
+          <td class="paramtype">G4String&#160;</td>
+          <td class="paramname"><em>pSide</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Reads the parameter table and assigns the value and dimension of member variables. </p>
+
+</div>
+</div>
 <a id="a1a8373e9ae3095062edb477245133a9e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a1a8373e9ae3095062edb477245133a9e">&#9670;&nbsp;</a></span>selectPMT()</h2>
 
@@ -510,6 +878,483 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
+<a id="a3faaf0d512f9a3fe15c6f33efe6d062c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3faaf0d512f9a3fe15c6f33efe6d062c">&#9670;&nbsp;</a></span>simpleBulbConstruction()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::tuple&lt; G4VSolid *, G4VSolid * &gt; OMSimPMTConstruction::simpleBulbConstruction </td>
+          <td>(</td>
+          <td class="paramtype">G4String&#160;</td>
+          <td class="paramname"><em>pSide</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Construction of the basic shape of the PMT. </p><dl class="section return"><dt>Returns</dt><dd>tuple of G4UnionSolid (the outer shape) and G4SubtractionSolid (the photocathode volume part) </dd></dl>
+
+</div>
+</div>
+<a id="a7ae6ccb05534002df9e519c5b5cfef14"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7ae6ccb05534002df9e519c5b5cfef14">&#9670;&nbsp;</a></span>sphereDoubleEllipsePhotocathode()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">G4UnionSolid * OMSimPMTConstruction::sphereDoubleEllipsePhotocathode </td>
+          <td>(</td>
+          <td class="paramtype">G4String&#160;</td>
+          <td class="paramname"><em>pSide</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Construction of the frontal part of the PMT following the fits of the technical drawings. PMTs constructed with sphereDoubleEllipsePhotocathode were fitted with a sphere and two ellipses. </p><dl class="section return"><dt>Returns</dt><dd>G4UnionSolid lBulbSolid the frontal solid of the PMT </dd></dl>
+
+</div>
+</div>
+<a id="a6724e1b0920884b77cd6401da6588ca9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6724e1b0920884b77cd6401da6588ca9">&#9670;&nbsp;</a></span>sphereEllipsePhotocathode()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">G4UnionSolid * OMSimPMTConstruction::sphereEllipsePhotocathode </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Construction of the frontal part of the PMT following the fits of the technical drawings. PMTs constructed with sphereEllipsePhotocathode were fitted with a sphere and an ellipse. </p><dl class="section return"><dt>Returns</dt><dd>G4UnionSolid lBulbSolid the frontal solid of the PMT </dd></dl>
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="a954bc0a8936589dcd842089408d4f0a1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a954bc0a8936589dcd842089408d4f0a1">&#9670;&nbsp;</a></span>mCheckOverlaps</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool OMSimPMTConstruction::mCheckOverlaps = true</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a74f1218bdab815e7d608696ca7f3dab0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a74f1218bdab815e7d608696ca7f3dab0">&#9670;&nbsp;</a></span>mConstructionFinished</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">G4bool OMSimPMTConstruction::mConstructionFinished = false</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a352a0447cb3025f24340fa5cecb0b0c4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a352a0447cb3025f24340fa5cecb0b0c4">&#9670;&nbsp;</a></span>mData</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_input_data_manager.html">InputDataManager</a>* OMSimPMTConstruction::mData</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6b9aad40552f479df2d6a8bc0179fd76"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6b9aad40552f479df2d6a8bc0179fd76">&#9670;&nbsp;</a></span>mDynodeSystem</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">G4bool OMSimPMTConstruction::mDynodeSystem = false</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1b423922ceb61e5a5042d14f24f098c9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1b423922ceb61e5a5042d14f24f098c9">&#9670;&nbsp;</a></span>mEllipsePos_y</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">G4double OMSimPMTConstruction::mEllipsePos_y</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6b62f7345d468f6926f5e46ebc2f68af"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6b62f7345d468f6926f5e46ebc2f68af">&#9670;&nbsp;</a></span>mEllipseXYaxis</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">G4double OMSimPMTConstruction::mEllipseXYaxis</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5da57550a373b2b30cf435df494e3ee7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5da57550a373b2b30cf435df494e3ee7">&#9670;&nbsp;</a></span>mEllipseZaxis</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">G4double OMSimPMTConstruction::mEllipseZaxis</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a624aff368c4b01c8c4185808b896584c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a624aff368c4b01c8c4185808b896584c">&#9670;&nbsp;</a></span>mHACoatingBool</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">G4bool OMSimPMTConstruction::mHACoatingBool = false</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aacc6fad7cb84f5e3558d77220fd7ffc1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aacc6fad7cb84f5e3558d77220fd7ffc1">&#9670;&nbsp;</a></span>mInternalReflections</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">G4bool OMSimPMTConstruction::mInternalReflections = false</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="abb776a1362b0d7eeba3027a9cf5650f8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abb776a1362b0d7eeba3027a9cf5650f8">&#9670;&nbsp;</a></span>mMissingTubeLength</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">G4double OMSimPMTConstruction::mMissingTubeLength</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab5642c24fbf6f05d163a1ceecda4ac61"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab5642c24fbf6f05d163a1ceecda4ac61">&#9670;&nbsp;</a></span>mOutRad</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">G4double OMSimPMTConstruction::mOutRad</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a495272aadd5226ffcaf2584827c686af"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a495272aadd5226ffcaf2584827c686af">&#9670;&nbsp;</a></span>mSelectedPMT</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">G4String OMSimPMTConstruction::mSelectedPMT</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6d889058c3109fed43de98cd2556ed05"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6d889058c3109fed43de98cd2556ed05">&#9670;&nbsp;</a></span>mSimpleBulb</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">G4bool OMSimPMTConstruction::mSimpleBulb = false</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a33c6ba521a4da0128f9b96146717ccd3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a33c6ba521a4da0128f9b96146717ccd3">&#9670;&nbsp;</a></span>mSphereEllipseTransition_r</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">G4double OMSimPMTConstruction::mSphereEllipseTransition_r</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a036a77af4330044e09eb21bca2c6ba30"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a036a77af4330044e09eb21bca2c6ba30">&#9670;&nbsp;</a></span>mSpherePos_y</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">G4double OMSimPMTConstruction::mSpherePos_y</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1b6532117aa4234d9081024d1ba7d85a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1b6532117aa4234d9081024d1ba7d85a">&#9670;&nbsp;</a></span>mTotalLenght</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">G4double OMSimPMTConstruction::mTotalLenght</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8027fe5070e25f7a8cb414d653da0d00"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8027fe5070e25f7a8cb414d653da0d00">&#9670;&nbsp;</a></span>mTubeWidth</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">G4double OMSimPMTConstruction::mTubeWidth</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1ea9af390bcef6414db1ab17df684feb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1ea9af390bcef6414db1ab17df684feb">&#9670;&nbsp;</a></span>mVacuumBackPhysical</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">G4PVPlacement* OMSimPMTConstruction::mVacuumBackPhysical</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li><a class="el" href="_o_m_sim_p_m_t_construction_8hh_source.html">OMSimPMTConstruction.hh</a></li>
 <li><a class="el" href="_o_m_sim_p_m_t_construction_8cc.html">OMSimPMTConstruction.cc</a></li>
@@ -520,7 +1365,7 @@ Additional Inherited Members</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="class_o_m_sim_p_m_t_construction.html">OMSimPMTConstruction</a></li>
-    <li class="footer">Generated on Thu Aug 17 2023 12:27:27 for OMSim by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Thu Aug 17 2023 12:32:31 for OMSim by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

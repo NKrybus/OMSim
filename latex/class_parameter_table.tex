@@ -29,6 +29,11 @@ pt\+::ptree \mbox{\hyperlink{class_parameter_table_a042ee0eca2c9daa755d7a472608e
 \item 
 {\footnotesize template$<$typename T $>$ }\\void \mbox{\hyperlink{class_parameter_table_a9862489604c6a5b4683709dc6bdc5799}{parse\+Key\+Content\+To\+Vector}} (std\+::vector$<$ T $>$ \&p\+Vector, std\+::basic\+\_\+string$<$ char $>$ p\+Map\+Key, std\+::basic\+\_\+string$<$ char $>$ p\+Key, G4double p\+Scaling, bool p\+Inverse)
 \end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::map$<$ G4\+String, boost\+::property\+\_\+tree\+::ptree $>$ \mbox{\hyperlink{class_parameter_table_a749bc840cf2aea18fb5b63da8b68c23c}{m\+Table}}
+\end{DoxyCompactItemize}
 
 
 \doxysubsection{Constructor \& Destructor Documentation}
@@ -110,6 +115,15 @@ void Parameter\+Table\+::parse\+Key\+Content\+To\+Vector (\begin{DoxyParamCaptio
 \doxysubsubsection{\texorpdfstring{parseKeyContentToVector()}{parseKeyContentToVector()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
 {\footnotesize\ttfamily template$<$typename T $>$ \\
 void Parameter\+Table\+::parse\+Key\+Content\+To\+Vector (\begin{DoxyParamCaption}\item[{std\+::vector$<$ T $>$ \&}]{p\+Vector,  }\item[{std\+::basic\+\_\+string$<$ char $>$}]{p\+Map\+Key,  }\item[{std\+::basic\+\_\+string$<$ char $>$}]{p\+Key,  }\item[{G4double}]{p\+Scaling,  }\item[{bool}]{p\+Inverse }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_parameter_table_a749bc840cf2aea18fb5b63da8b68c23c}\label{class_parameter_table_a749bc840cf2aea18fb5b63da8b68c23c}} 
+\index{ParameterTable@{ParameterTable}!mTable@{mTable}}
+\index{mTable@{mTable}!ParameterTable@{ParameterTable}}
+\doxysubsubsection{\texorpdfstring{mTable}{mTable}}
+{\footnotesize\ttfamily std\+::map$<$G4\+String, boost\+::property\+\_\+tree\+::ptree$>$ Parameter\+Table\+::m\+Table\hspace{0.3cm}{\ttfamily [private]}}
 
 
 

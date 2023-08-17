@@ -1,0 +1,7 @@
+<map id="OMSim" name="OMSim">
+<area shape="rect" id="node1" title="Controls the main simulation process." alt="" coords="79,260,149,287"/>
+<area shape="rect" id="node2" href="$class_o_m_sim_detector_construction.html" title="Class for detector construction in the effective area simulation." alt="" coords="11,171,217,197"/>
+<area shape="rect" id="node3" title=" " alt="" coords="5,81,223,108"/>
+<area shape="rect" id="node4" href="$class_input_data_manager.html" title=" " alt="" coords="247,81,389,108"/>
+<area shape="rect" id="node5" href="$class_parameter_table.html" title=" " alt="" coords="257,5,379,32"/>
+</map>

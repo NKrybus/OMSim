@@ -115,6 +115,8 @@ $(document).ready(function(){initNavTree('classm_d_o_m_flasher.html',''); initRe
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="classm_d_o_m_flasher-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">mDOMFlasher Class Reference<div class="ingroups"><a class="el" href="group__common.html">Common stuff</a></div></div>  </div>
@@ -185,6 +187,45 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a53c7979298ef9eda66b44f0a3c4f2e6b inherit pub_methods_classabc_detector_component"><td class="memItemLeft" align="right" valign="top">G4SubtractionSolid *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classabc_detector_component.html#a53c7979298ef9eda66b44f0a3c4f2e6b">substractToVolume</a> (G4VSolid *pInputVolume, G4Transform3D pTrans, G4String pNewVolumeName)</td></tr>
 <tr class="memdesc:a53c7979298ef9eda66b44f0a3c4f2e6b inherit pub_methods_classabc_detector_component"><td class="mdescLeft">&#160;</td><td class="mdescRight">Subtracts components from a given solid volume.  <a href="classabc_detector_component.html#a53c7979298ef9eda66b44f0a3c4f2e6b">More...</a><br /></td></tr>
 <tr class="separator:a53c7979298ef9eda66b44f0a3c4f2e6b inherit pub_methods_classabc_detector_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:aabf2d4ba14e3d072472ec7c46201362b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classm_d_o_m_flasher.html#aabf2d4ba14e3d072472ec7c46201362b">makeSolids</a> ()</td></tr>
+<tr class="separator:aabf2d4ba14e3d072472ec7c46201362b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1a6e011d8de8d5201d9ed320e8775aae"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classm_d_o_m_flasher.html#a1a6e011d8de8d5201d9ed320e8775aae">makeLogicalVolumes</a> ()</td></tr>
+<tr class="separator:a1a6e011d8de8d5201d9ed320e8775aae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4c7d36af1760026c53a9164bf02dc057"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classm_d_o_m_flasher.html#a4c7d36af1760026c53a9164bf02dc057">readFlasherProfile</a> ()</td></tr>
+<tr class="memdesc:a4c7d36af1760026c53a9164bf02dc057"><td class="mdescLeft">&#160;</td><td class="mdescRight">Loads profile of <a class="el" href="classm_d_o_m.html">mDOM</a> flasher measured in the lab. See Section 7.3 of C. Lozanos PhD Thesis: <a href="https://doi.org/10.5281/zenodo.8107177">https://doi.org/10.5281/zenodo.8107177</a> or Anna-Sophia's Bachelor thesis (german) <a href="https://www.uni-muenster.de/imperia/md/content/physik_kp/agkappes/abschlussarbeiten/bachelorarbeiten/ba_tenbruck.pdf">https://www.uni-muenster.de/imperia/md/content/physik_kp/agkappes/abschlussarbeiten/bachelorarbeiten/ba_tenbruck.pdf</a>.  <a href="classm_d_o_m_flasher.html#a4c7d36af1760026c53a9164bf02dc057">More...</a><br /></td></tr>
+<tr class="separator:a4c7d36af1760026c53a9164bf02dc057"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa74e2bfee6f21cb652e7dd9929e8e688"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_global_position.html">GlobalPosition</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classm_d_o_m_flasher.html#aa74e2bfee6f21cb652e7dd9929e8e688">getFlasherPositionInfo</a> (<a class="el" href="classm_d_o_m.html">mDOM</a> *pMDOMInstance, G4int pModuleIndex, G4int pLEDIndex)</td></tr>
+<tr class="memdesc:aa74e2bfee6f21cb652e7dd9929e8e688"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves the global position and orientation of a specific flasher in an <a class="el" href="classm_d_o_m.html">mDOM</a> module.  <a href="classm_d_o_m_flasher.html#aa74e2bfee6f21cb652e7dd9929e8e688">More...</a><br /></td></tr>
+<tr class="separator:aa74e2bfee6f21cb652e7dd9929e8e688"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a364e96471e231b5b7838cc8df92529fc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classm_d_o_m_flasher.html#a364e96471e231b5b7838cc8df92529fc">configureGPS</a> (<a class="el" href="struct_global_position.html">GlobalPosition</a> flasherInfo)</td></tr>
+<tr class="memdesc:a364e96471e231b5b7838cc8df92529fc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configures the GPS for the flasher simulation.  <a href="classm_d_o_m_flasher.html#a364e96471e231b5b7838cc8df92529fc">More...</a><br /></td></tr>
+<tr class="separator:a364e96471e231b5b7838cc8df92529fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a79f91c6637b17ffdf867e05c0f79d46c"><td class="memItemLeft" align="right" valign="top">G4UnionSolid *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classm_d_o_m_flasher.html#a79f91c6637b17ffdf867e05c0f79d46c">mLEDSolid</a></td></tr>
+<tr class="separator:a79f91c6637b17ffdf867e05c0f79d46c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2ca002c507e40a6110b215cad5616217"><td class="memItemLeft" align="right" valign="top">G4UnionSolid *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classm_d_o_m_flasher.html#a2ca002c507e40a6110b215cad5616217">mFlasherHoleSolid</a></td></tr>
+<tr class="separator:a2ca002c507e40a6110b215cad5616217"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a02da4d7a31b2df29b495a75cf57b8eb0"><td class="memItemLeft" align="right" valign="top">G4Tubs *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classm_d_o_m_flasher.html#a02da4d7a31b2df29b495a75cf57b8eb0">mGlassWindowSolid</a></td></tr>
+<tr class="separator:a02da4d7a31b2df29b495a75cf57b8eb0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6f304b70a2f95adca637c7921281f6ae"><td class="memItemLeft" align="right" valign="top">G4LogicalVolume *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classm_d_o_m_flasher.html#a6f304b70a2f95adca637c7921281f6ae">mFlasherHoleLogical</a></td></tr>
+<tr class="separator:a6f304b70a2f95adca637c7921281f6ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aec3f52b425378adcebbd1bf8dc5a389b"><td class="memItemLeft" align="right" valign="top">G4LogicalVolume *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classm_d_o_m_flasher.html#aec3f52b425378adcebbd1bf8dc5a389b">mGlassWindowLogical</a></td></tr>
+<tr class="separator:aec3f52b425378adcebbd1bf8dc5a389b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab97e2fb06ead3a1d52d558f78f5a2757"><td class="memItemLeft" align="right" valign="top">G4LogicalVolume *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classm_d_o_m_flasher.html#ab97e2fb06ead3a1d52d558f78f5a2757">mLEDLogical</a></td></tr>
+<tr class="separator:ab97e2fb06ead3a1d52d558f78f5a2757"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a12f381573b29dc6ebd3533db8c373475"><td class="memItemLeft" align="right" valign="top">G4bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classm_d_o_m_flasher.html#a12f381573b29dc6ebd3533db8c373475">mFlasherProfileAvailable</a> = false</td></tr>
+<tr class="separator:a12f381573b29dc6ebd3533db8c373475"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a09ec0228902e4b9350736da03f8fae10"><td class="memItemLeft" align="right" valign="top">std::vector&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classm_d_o_m_flasher.html#a09ec0228902e4b9350736da03f8fae10">mProfileX</a></td></tr>
+<tr class="separator:a09ec0228902e4b9350736da03f8fae10"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a46a5e36504e75195e7035a231d150cd9"><td class="memItemLeft" align="right" valign="top">std::vector&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classm_d_o_m_flasher.html#a46a5e36504e75195e7035a231d150cd9">mProfileY</a></td></tr>
+<tr class="separator:a46a5e36504e75195e7035a231d150cd9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a944e368c68324a22a583f432fd607d82"><td class="memItemLeft" align="right" valign="top">G4Navigator *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classm_d_o_m_flasher.html#a944e368c68324a22a583f432fd607d82">mNavigator</a></td></tr>
+<tr class="separator:a944e368c68324a22a583f432fd607d82"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
@@ -257,6 +298,38 @@ Additional Inherited Members</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="a364e96471e231b5b7838cc8df92529fc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a364e96471e231b5b7838cc8df92529fc">&#9670;&nbsp;</a></span>configureGPS()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void mDOMFlasher::configureGPS </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_global_position.html">GlobalPosition</a>&#160;</td>
+          <td class="paramname"><em>flasherInfo</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">flasherInfo</td><td>The position and orientation information of the flasher. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="aac8c466bbcc6d952ad82fbd29daa675f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aac8c466bbcc6d952ad82fbd29daa675f">&#9670;&nbsp;</a></span>construction()</h2>
 
@@ -284,6 +357,57 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
+<a id="aa74e2bfee6f21cb652e7dd9929e8e688"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa74e2bfee6f21cb652e7dd9929e8e688">&#9670;&nbsp;</a></span>getFlasherPositionInfo()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_global_position.html">GlobalPosition</a> mDOMFlasher::getFlasherPositionInfo </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classm_d_o_m.html">mDOM</a> *&#160;</td>
+          <td class="paramname"><em>pMDOMInstance</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">G4int&#160;</td>
+          <td class="paramname"><em>pModuleIndex</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">G4int&#160;</td>
+          <td class="paramname"><em>pLEDIndex</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pMDOMInstance</td><td>Reference to the <a class="el" href="classm_d_o_m.html">mDOM</a> instance, which contains the placement details of the module. </td></tr>
+    <tr><td class="paramname">pModuleIndex</td><td>Index of the module. </td></tr>
+    <tr><td class="paramname">pLEDIndex</td><td>Index of the flasher within the module. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The global position and orientation of the flasher, represented by a <a class="el" href="struct_global_position.html" title="Holds the global position and orientation of a flasher.">GlobalPosition</a> struct. </dd></dl>
+
+</div>
+</div>
 <a id="ac779772218d50699e05de2e1fa785180"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ac779772218d50699e05de2e1fa785180">&#9670;&nbsp;</a></span>getSolids()</h2>
 
@@ -297,6 +421,81 @@ Additional Inherited Members</h2></td></tr>
           <td></td>
         </tr>
       </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1a6e011d8de8d5201d9ed320e8775aae"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1a6e011d8de8d5201d9ed320e8775aae">&#9670;&nbsp;</a></span>makeLogicalVolumes()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void mDOMFlasher::makeLogicalVolumes </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aabf2d4ba14e3d072472ec7c46201362b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aabf2d4ba14e3d072472ec7c46201362b">&#9670;&nbsp;</a></span>makeSolids()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void mDOMFlasher::makeSolids </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4c7d36af1760026c53a9164bf02dc057"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4c7d36af1760026c53a9164bf02dc057">&#9670;&nbsp;</a></span>readFlasherProfile()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void mDOMFlasher::readFlasherProfile </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 </div>
@@ -369,6 +568,227 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="a6f304b70a2f95adca637c7921281f6ae"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6f304b70a2f95adca637c7921281f6ae">&#9670;&nbsp;</a></span>mFlasherHoleLogical</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">G4LogicalVolume* mDOMFlasher::mFlasherHoleLogical</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a2ca002c507e40a6110b215cad5616217"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2ca002c507e40a6110b215cad5616217">&#9670;&nbsp;</a></span>mFlasherHoleSolid</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">G4UnionSolid* mDOMFlasher::mFlasherHoleSolid</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a12f381573b29dc6ebd3533db8c373475"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a12f381573b29dc6ebd3533db8c373475">&#9670;&nbsp;</a></span>mFlasherProfileAvailable</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">G4bool mDOMFlasher::mFlasherProfileAvailable = false</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aec3f52b425378adcebbd1bf8dc5a389b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aec3f52b425378adcebbd1bf8dc5a389b">&#9670;&nbsp;</a></span>mGlassWindowLogical</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">G4LogicalVolume* mDOMFlasher::mGlassWindowLogical</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a02da4d7a31b2df29b495a75cf57b8eb0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a02da4d7a31b2df29b495a75cf57b8eb0">&#9670;&nbsp;</a></span>mGlassWindowSolid</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">G4Tubs* mDOMFlasher::mGlassWindowSolid</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab97e2fb06ead3a1d52d558f78f5a2757"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab97e2fb06ead3a1d52d558f78f5a2757">&#9670;&nbsp;</a></span>mLEDLogical</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">G4LogicalVolume* mDOMFlasher::mLEDLogical</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a79f91c6637b17ffdf867e05c0f79d46c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a79f91c6637b17ffdf867e05c0f79d46c">&#9670;&nbsp;</a></span>mLEDSolid</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">G4UnionSolid* mDOMFlasher::mLEDSolid</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a944e368c68324a22a583f432fd607d82"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a944e368c68324a22a583f432fd607d82">&#9670;&nbsp;</a></span>mNavigator</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">G4Navigator* mDOMFlasher::mNavigator</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a09ec0228902e4b9350736da03f8fae10"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a09ec0228902e4b9350736da03f8fae10">&#9670;&nbsp;</a></span>mProfileX</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;double&gt; mDOMFlasher::mProfileX</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a46a5e36504e75195e7035a231d150cd9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a46a5e36504e75195e7035a231d150cd9">&#9670;&nbsp;</a></span>mProfileY</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;double&gt; mDOMFlasher::mProfileY</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li><a class="el" href="_o_m_sim_m_d_o_m_flasher_8hh_source.html">OMSimMDOMFlasher.hh</a></li>
 <li><a class="el" href="_o_m_sim_m_d_o_m_flasher_8cc.html">OMSimMDOMFlasher.cc</a></li>
@@ -379,7 +799,7 @@ Additional Inherited Members</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="classm_d_o_m_flasher.html">mDOMFlasher</a></li>
-    <li class="footer">Generated on Thu Aug 17 2023 12:27:27 for OMSim by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Thu Aug 17 2023 12:32:31 for OMSim by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

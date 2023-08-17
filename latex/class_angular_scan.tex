@@ -19,6 +19,26 @@ void \mbox{\hyperlink{class_angular_scan_a0603ef7f2b297de98ad466145ff122e4}{conf
 \begin{DoxyCompactList}\small\item\em Configure the GPS settings, such as the particle properties, beam position and direction. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_angular_scan_a465f642ebbe30fc94f9ed8ec6e554ef4}{run\+Single\+Angular\+Scan}} (G4double p\+Phi, G4double p\+Theta)
 \begin{DoxyCompactList}\small\item\em Run a single angular scan with the specified angles. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_angular_scan_a40b9d1151eeae2f86694554867883be8}{configure\+Pos\+Coordinates}} ()
+\begin{DoxyCompactList}\small\item\em Configures the position coordinates of the beam based on the polar and azimuthal angles. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_angular_scan_a9c3d30d0e4f7dfb200ae7dd5fca68c4f}{configure\+Ang\+Coordinates}} ()
+\begin{DoxyCompactList}\small\item\em Configures the angular coordinates of the beam based on the polar and azimuthal angles. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+G4double \mbox{\hyperlink{class_angular_scan_ad2f9c752116c94abd1406536048eebbd}{m\+Beam\+Radius}}
+\item 
+G4double \mbox{\hyperlink{class_angular_scan_a47b54254367c907ce232e4595fb6a260}{m\+Beam\+Distance}}
+\item 
+G4double \mbox{\hyperlink{class_angular_scan_abeae73a1f4a2473af636291c458d272f}{m\+Wavelength}}
+\item 
+G4double \mbox{\hyperlink{class_angular_scan_a2f0af1e0e1e50be36a520236cdcb9f33}{m\+Theta}}
+\item 
+G4double \mbox{\hyperlink{class_angular_scan_a46382d1226ef1f4a4851128fcff0fda2}{m\+Phi}}
+\end{DoxyCompactItemize}
 
 
 \doxysubsection{Constructor \& Destructor Documentation}
@@ -46,6 +66,18 @@ void \mbox{\hyperlink{class_angular_scan_a465f642ebbe30fc94f9ed8ec6e554ef4}{run\
 
 
 \doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_angular_scan_a9c3d30d0e4f7dfb200ae7dd5fca68c4f}\label{class_angular_scan_a9c3d30d0e4f7dfb200ae7dd5fca68c4f}} 
+\index{AngularScan@{AngularScan}!configureAngCoordinates@{configureAngCoordinates}}
+\index{configureAngCoordinates@{configureAngCoordinates}!AngularScan@{AngularScan}}
+\doxysubsubsection{\texorpdfstring{configureAngCoordinates()}{configureAngCoordinates()}}
+{\footnotesize\ttfamily void Angular\+Scan\+::configure\+Ang\+Coordinates (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_angular_scan_a40b9d1151eeae2f86694554867883be8}\label{class_angular_scan_a40b9d1151eeae2f86694554867883be8}} 
+\index{AngularScan@{AngularScan}!configurePosCoordinates@{configurePosCoordinates}}
+\index{configurePosCoordinates@{configurePosCoordinates}!AngularScan@{AngularScan}}
+\doxysubsubsection{\texorpdfstring{configurePosCoordinates()}{configurePosCoordinates()}}
+{\footnotesize\ttfamily void Angular\+Scan\+::configure\+Pos\+Coordinates (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
 \mbox{\Hypertarget{class_angular_scan_a0603ef7f2b297de98ad466145ff122e4}\label{class_angular_scan_a0603ef7f2b297de98ad466145ff122e4}} 
 \index{AngularScan@{AngularScan}!configureScan@{configureScan}}
 \index{configureScan@{configureScan}!AngularScan@{AngularScan}}
@@ -65,6 +97,39 @@ void \mbox{\hyperlink{class_angular_scan_a465f642ebbe30fc94f9ed8ec6e554ef4}{run\
 {\em p\+Theta} & The polar angle in degrees. \\
 \hline
 \end{DoxyParams}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_angular_scan_a47b54254367c907ce232e4595fb6a260}\label{class_angular_scan_a47b54254367c907ce232e4595fb6a260}} 
+\index{AngularScan@{AngularScan}!mBeamDistance@{mBeamDistance}}
+\index{mBeamDistance@{mBeamDistance}!AngularScan@{AngularScan}}
+\doxysubsubsection{\texorpdfstring{mBeamDistance}{mBeamDistance}}
+{\footnotesize\ttfamily G4double Angular\+Scan\+::m\+Beam\+Distance\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_angular_scan_ad2f9c752116c94abd1406536048eebbd}\label{class_angular_scan_ad2f9c752116c94abd1406536048eebbd}} 
+\index{AngularScan@{AngularScan}!mBeamRadius@{mBeamRadius}}
+\index{mBeamRadius@{mBeamRadius}!AngularScan@{AngularScan}}
+\doxysubsubsection{\texorpdfstring{mBeamRadius}{mBeamRadius}}
+{\footnotesize\ttfamily G4double Angular\+Scan\+::m\+Beam\+Radius\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_angular_scan_a46382d1226ef1f4a4851128fcff0fda2}\label{class_angular_scan_a46382d1226ef1f4a4851128fcff0fda2}} 
+\index{AngularScan@{AngularScan}!mPhi@{mPhi}}
+\index{mPhi@{mPhi}!AngularScan@{AngularScan}}
+\doxysubsubsection{\texorpdfstring{mPhi}{mPhi}}
+{\footnotesize\ttfamily G4double Angular\+Scan\+::m\+Phi\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_angular_scan_a2f0af1e0e1e50be36a520236cdcb9f33}\label{class_angular_scan_a2f0af1e0e1e50be36a520236cdcb9f33}} 
+\index{AngularScan@{AngularScan}!mTheta@{mTheta}}
+\index{mTheta@{mTheta}!AngularScan@{AngularScan}}
+\doxysubsubsection{\texorpdfstring{mTheta}{mTheta}}
+{\footnotesize\ttfamily G4double Angular\+Scan\+::m\+Theta\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_angular_scan_abeae73a1f4a2473af636291c458d272f}\label{class_angular_scan_abeae73a1f4a2473af636291c458d272f}} 
+\index{AngularScan@{AngularScan}!mWavelength@{mWavelength}}
+\index{mWavelength@{mWavelength}!AngularScan@{AngularScan}}
+\doxysubsubsection{\texorpdfstring{mWavelength}{mWavelength}}
+{\footnotesize\ttfamily G4double Angular\+Scan\+::m\+Wavelength\hspace{0.3cm}{\ttfamily [private]}}
+
 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}

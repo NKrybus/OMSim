@@ -11,5 +11,7 @@ var class_c_a_d_mesh_1_1_file_1_1_reader =
     [ "GetName", "class_c_a_d_mesh_1_1_file_1_1_reader.html#a96c806187aff79a4a24fa1c64fcef4da", null ],
     [ "GetNumberOfMeshes", "class_c_a_d_mesh_1_1_file_1_1_reader.html#ae4b77ee72c8e298aa2ca129d7a3266e0", null ],
     [ "Read", "class_c_a_d_mesh_1_1_file_1_1_reader.html#abf265fbc9d0e4ec2bebfce8bc835b74c", null ],
-    [ "SetMeshes", "class_c_a_d_mesh_1_1_file_1_1_reader.html#ae80a5e692f18b66fc78b8d42c5e186a2", null ]
+    [ "SetMeshes", "class_c_a_d_mesh_1_1_file_1_1_reader.html#ae80a5e692f18b66fc78b8d42c5e186a2", null ],
+    [ "meshes_", "class_c_a_d_mesh_1_1_file_1_1_reader.html#a62d7c0c8aba3a08c320043295239efff", null ],
+    [ "name_", "class_c_a_d_mesh_1_1_file_1_1_reader.html#ae5a221ca098557bc49946e4c52a5adb4", null ]
 ];

@@ -11,5 +11,6 @@ var class_c_a_d_mesh_1_1_file_1_1_o_b_j_reader =
     [ "ParseFacet", "class_c_a_d_mesh_1_1_file_1_1_o_b_j_reader.html#af724b456aed24e62d7d2f16c271eaa77", null ],
     [ "ParseMesh", "class_c_a_d_mesh_1_1_file_1_1_o_b_j_reader.html#a5ba41fe0489c9c6cc040d1641b3bf479", null ],
     [ "ParseVertex", "class_c_a_d_mesh_1_1_file_1_1_o_b_j_reader.html#a4b25fa7241a18aa3e51b20b54a7bc3ba", null ],
-    [ "Read", "class_c_a_d_mesh_1_1_file_1_1_o_b_j_reader.html#a1a79c905172419920261d5e3814b1654", null ]
+    [ "Read", "class_c_a_d_mesh_1_1_file_1_1_o_b_j_reader.html#a1a79c905172419920261d5e3814b1654", null ],
+    [ "vertices_", "class_c_a_d_mesh_1_1_file_1_1_o_b_j_reader.html#a16bdd99754cfd2a1ff8428d80eed1907", null ]
 ];

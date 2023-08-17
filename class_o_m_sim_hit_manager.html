@@ -116,6 +116,8 @@ $(document).ready(function(){initNavTree('class_o_m_sim_hit_manager.html',''); i
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="class_o_m_sim_hit_manager-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">OMSimHitManager Class Reference<div class="ingroups"><a class="el" href="group__common.html">Common stuff</a></div></div>  </div>
@@ -156,7 +158,102 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a50c9ec0b924aa860533de79aa6fd3a47"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_o_m_sim_hit_manager.html">OMSimHitManager</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_m_sim_hit_manager.html#a50c9ec0b924aa860533de79aa6fd3a47">getInstance</a> ()</td></tr>
 <tr class="memdesc:a50c9ec0b924aa860533de79aa6fd3a47"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the singleton instance of the <a class="el" href="class_o_m_sim_hit_manager.html" title="Manages detected photon information.">OMSimHitManager</a>.  <a href="class_o_m_sim_hit_manager.html#a50c9ec0b924aa860533de79aa6fd3a47">More...</a><br /></td></tr>
 <tr class="separator:a50c9ec0b924aa860533de79aa6fd3a47"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:a7590a8dd5b3b9df30c7ca92bdecf7277"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_m_sim_hit_manager.html#a7590a8dd5b3b9df30c7ca92bdecf7277">OMSimHitManager</a> ()=default</td></tr>
+<tr class="separator:a7590a8dd5b3b9df30c7ca92bdecf7277"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab65c1cbe54f5bdd1261635428dc3f9cf"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_m_sim_hit_manager.html#ab65c1cbe54f5bdd1261635428dc3f9cf">~OMSimHitManager</a> ()=default</td></tr>
+<tr class="separator:ab65c1cbe54f5bdd1261635428dc3f9cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a588ee2ee380c68a3a4904e2bab762268"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_m_sim_hit_manager.html#a588ee2ee380c68a3a4904e2bab762268">OMSimHitManager</a> (const <a class="el" href="class_o_m_sim_hit_manager.html">OMSimHitManager</a> &amp;)=delete</td></tr>
+<tr class="separator:a588ee2ee380c68a3a4904e2bab762268"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6baf2795e91dc2ff99c3eda3e5143bc3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_o_m_sim_hit_manager.html">OMSimHitManager</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_m_sim_hit_manager.html#a6baf2795e91dc2ff99c3eda3e5143bc3">operator=</a> (const <a class="el" href="class_o_m_sim_hit_manager.html">OMSimHitManager</a> &amp;)=delete</td></tr>
+<tr class="separator:a6baf2795e91dc2ff99c3eda3e5143bc3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a68b3614293ca71096ff48c4fc5943de2"><td class="memItemLeft" align="right" valign="top">std::map&lt; G4int, G4int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_m_sim_hit_manager.html#a68b3614293ca71096ff48c4fc5943de2">mNumPMTs</a></td></tr>
+<tr class="separator:a68b3614293ca71096ff48c4fc5943de2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5b5170bb63b04190829aeb79183a5d3f"><td class="memItemLeft" align="right" valign="top">std::map&lt; G4int, <a class="el" href="struct_hit_stats.html">HitStats</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_m_sim_hit_manager.html#a5b5170bb63b04190829aeb79183a5d3f">mModuleHits</a></td></tr>
+<tr class="separator:a5b5170bb63b04190829aeb79183a5d3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a7590a8dd5b3b9df30c7ca92bdecf7277"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7590a8dd5b3b9df30c7ca92bdecf7277">&#9670;&nbsp;</a></span>OMSimHitManager() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">OMSimHitManager::OMSimHitManager </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">default</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab65c1cbe54f5bdd1261635428dc3f9cf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab65c1cbe54f5bdd1261635428dc3f9cf">&#9670;&nbsp;</a></span>~OMSimHitManager()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">OMSimHitManager::~OMSimHitManager </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">default</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a588ee2ee380c68a3a4904e2bab762268"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a588ee2ee380c68a3a4904e2bab762268">&#9670;&nbsp;</a></span>OMSimHitManager() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">OMSimHitManager::OMSimHitManager </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_o_m_sim_hit_manager.html">OMSimHitManager</a> &amp;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">delete</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <h2 class="groupheader">Member Function Documentation</h2>
 <a id="a004f73261c6ef3e30ff27b0e13da0a1b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a004f73261c6ef3e30ff27b0e13da0a1b">&#9670;&nbsp;</a></span>appendHitInfo()</h2>
@@ -375,6 +472,32 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a6baf2795e91dc2ff99c3eda3e5143bc3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6baf2795e91dc2ff99c3eda3e5143bc3">&#9670;&nbsp;</a></span>operator=()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_o_m_sim_hit_manager.html">OMSimHitManager</a>&amp; OMSimHitManager::operator= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_o_m_sim_hit_manager.html">OMSimHitManager</a> &amp;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">delete</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a00bb034e7751905f8a8229de3f8a39b1"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a00bb034e7751905f8a8229de3f8a39b1">&#9670;&nbsp;</a></span>reset()</h2>
 
@@ -451,6 +574,51 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="a5b5170bb63b04190829aeb79183a5d3f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5b5170bb63b04190829aeb79183a5d3f">&#9670;&nbsp;</a></span>mModuleHits</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::map&lt;G4int, <a class="el" href="struct_hit_stats.html">HitStats</a>&gt; OMSimHitManager::mModuleHits</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a68b3614293ca71096ff48c4fc5943de2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a68b3614293ca71096ff48c4fc5943de2">&#9670;&nbsp;</a></span>mNumPMTs</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::map&lt;G4int, G4int&gt; OMSimHitManager::mNumPMTs</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li><a class="el" href="_o_m_sim_hit_manager_8hh_source.html">OMSimHitManager.hh</a></li>
 <li><a class="el" href="_o_m_sim_hit_manager_8cc.html">OMSimHitManager.cc</a></li>
@@ -461,7 +629,7 @@ Static Public Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="class_o_m_sim_hit_manager.html">OMSimHitManager</a></li>
-    <li class="footer">Generated on Thu Aug 17 2023 12:27:27 for OMSim by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Thu Aug 17 2023 12:32:31 for OMSim by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

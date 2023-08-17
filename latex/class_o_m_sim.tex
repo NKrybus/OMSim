@@ -7,6 +7,16 @@ Controls the main simulation process.
 
 
 
+Collaboration diagram for OMSim\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_o_m_sim__coll__graph}
+\end{center}
+\end{figure}
+
+
 \doxysubsection{Detailed Description}
 The \mbox{\hyperlink{class_o_m_sim}{OMSim}} class is the top-\/level controller for the simulation. It sets up and manages the individual components of the Geant4 simulation, such as the run manager, the visualization manager, and the navigator. It also enables user interaction with the simulation through a command line interface and visualisation tools. This class is used in the main function of all studies as provides the basic flow of control of any Geant4 simulation. \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
@@ -25,6 +35,33 @@ void \mbox{\hyperlink{class_o_m_sim_a42d86958aba31a17fb0c8a39fbc9c9b5}{start\+Vi
 \begin{DoxyCompactItemize}
 \item 
 po\+::options\+\_\+description \mbox{\hyperlink{class_o_m_sim_a8eb0d1638af500069fc4e6a2f998b356}{m\+General\+Args}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+G4\+Run\+Manager $\ast$ \mbox{\hyperlink{class_o_m_sim_a63d81cbf53a7eb4d42f5c69397eb14eb}{m\+Run\+Manager}}
+\item 
+G4\+Vis\+Executive $\ast$ \mbox{\hyperlink{class_o_m_sim_a8bded781b54a28ea07c04923eb98b23e}{m\+Vis\+Manager}}
+\item 
+G4\+Navigator $\ast$ \mbox{\hyperlink{class_o_m_sim_aae423f68ad8ea948dc4a2bcc6ed8c6bf}{m\+Navigator}}
+\item 
+\mbox{\hyperlink{class_o_m_sim_detector_construction}{OMSim\+Detector\+Construction}} $\ast$ \mbox{\hyperlink{class_o_m_sim_a4f3301dff52231e9b45291cfbb66b637}{m\+Detector}} = nullptr
+\item 
+G4\+VUser\+Physics\+List $\ast$ \mbox{\hyperlink{class_o_m_sim_a73b7ac711ab9d9c1bc4ad38d6c985b94}{m\+Physics}} = nullptr
+\item 
+G4\+VUser\+Primary\+Generator\+Action $\ast$ \mbox{\hyperlink{class_o_m_sim_a0920dcd6fa769919824d4c9c1ea97fed}{m\+Gen\+Action}} = nullptr
+\item 
+G4\+User\+Run\+Action $\ast$ \mbox{\hyperlink{class_o_m_sim_af2fd0b66e65e7fb851583881ba52d1c0}{m\+Run\+Action}} = nullptr
+\item 
+G4\+User\+Event\+Action $\ast$ \mbox{\hyperlink{class_o_m_sim_ab5b7adf0ed2750115e09d70772d220ae}{m\+Event\+Action}} = nullptr
+\item 
+G4\+User\+Tracking\+Action $\ast$ \mbox{\hyperlink{class_o_m_sim_af873226fae0ebc465ab6716c9e2d9cb9}{m\+Tracking}} = nullptr
+\item 
+G4\+User\+Stepping\+Action $\ast$ \mbox{\hyperlink{class_o_m_sim_a610d64ca0157bc3795cf83a1a09a6d0c}{m\+Stepping}} = nullptr
+\item 
+G4\+Touchable\+History $\ast$ \mbox{\hyperlink{class_o_m_sim_a04ad05f6b01a547002f3c36fe116c35f}{m\+History}} = nullptr
+\item 
+G4double \mbox{\hyperlink{class_o_m_sim_afdddb6d2392b131b35aae4f20a551a7c}{m\+Starting\+Time}}
 \end{DoxyCompactItemize}
 
 
@@ -72,11 +109,83 @@ This function sets up the necessary Geant4 components. \mbox{\Hypertarget{class_
 
 
 \doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_o_m_sim_a4f3301dff52231e9b45291cfbb66b637}\label{class_o_m_sim_a4f3301dff52231e9b45291cfbb66b637}} 
+\index{OMSim@{OMSim}!mDetector@{mDetector}}
+\index{mDetector@{mDetector}!OMSim@{OMSim}}
+\doxysubsubsection{\texorpdfstring{mDetector}{mDetector}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_o_m_sim_detector_construction}{OMSim\+Detector\+Construction}}$\ast$ OMSim\+::m\+Detector = nullptr\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_o_m_sim_ab5b7adf0ed2750115e09d70772d220ae}\label{class_o_m_sim_ab5b7adf0ed2750115e09d70772d220ae}} 
+\index{OMSim@{OMSim}!mEventAction@{mEventAction}}
+\index{mEventAction@{mEventAction}!OMSim@{OMSim}}
+\doxysubsubsection{\texorpdfstring{mEventAction}{mEventAction}}
+{\footnotesize\ttfamily G4\+User\+Event\+Action$\ast$ OMSim\+::m\+Event\+Action = nullptr\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_o_m_sim_a0920dcd6fa769919824d4c9c1ea97fed}\label{class_o_m_sim_a0920dcd6fa769919824d4c9c1ea97fed}} 
+\index{OMSim@{OMSim}!mGenAction@{mGenAction}}
+\index{mGenAction@{mGenAction}!OMSim@{OMSim}}
+\doxysubsubsection{\texorpdfstring{mGenAction}{mGenAction}}
+{\footnotesize\ttfamily G4\+VUser\+Primary\+Generator\+Action$\ast$ OMSim\+::m\+Gen\+Action = nullptr\hspace{0.3cm}{\ttfamily [private]}}
+
 \mbox{\Hypertarget{class_o_m_sim_a8eb0d1638af500069fc4e6a2f998b356}\label{class_o_m_sim_a8eb0d1638af500069fc4e6a2f998b356}} 
 \index{OMSim@{OMSim}!mGeneralArgs@{mGeneralArgs}}
 \index{mGeneralArgs@{mGeneralArgs}!OMSim@{OMSim}}
 \doxysubsubsection{\texorpdfstring{mGeneralArgs}{mGeneralArgs}}
 {\footnotesize\ttfamily po\+::options\+\_\+description OMSim\+::m\+General\+Args}
+
+\mbox{\Hypertarget{class_o_m_sim_a04ad05f6b01a547002f3c36fe116c35f}\label{class_o_m_sim_a04ad05f6b01a547002f3c36fe116c35f}} 
+\index{OMSim@{OMSim}!mHistory@{mHistory}}
+\index{mHistory@{mHistory}!OMSim@{OMSim}}
+\doxysubsubsection{\texorpdfstring{mHistory}{mHistory}}
+{\footnotesize\ttfamily G4\+Touchable\+History$\ast$ OMSim\+::m\+History = nullptr\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_o_m_sim_aae423f68ad8ea948dc4a2bcc6ed8c6bf}\label{class_o_m_sim_aae423f68ad8ea948dc4a2bcc6ed8c6bf}} 
+\index{OMSim@{OMSim}!mNavigator@{mNavigator}}
+\index{mNavigator@{mNavigator}!OMSim@{OMSim}}
+\doxysubsubsection{\texorpdfstring{mNavigator}{mNavigator}}
+{\footnotesize\ttfamily G4\+Navigator$\ast$ OMSim\+::m\+Navigator\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_o_m_sim_a73b7ac711ab9d9c1bc4ad38d6c985b94}\label{class_o_m_sim_a73b7ac711ab9d9c1bc4ad38d6c985b94}} 
+\index{OMSim@{OMSim}!mPhysics@{mPhysics}}
+\index{mPhysics@{mPhysics}!OMSim@{OMSim}}
+\doxysubsubsection{\texorpdfstring{mPhysics}{mPhysics}}
+{\footnotesize\ttfamily G4\+VUser\+Physics\+List$\ast$ OMSim\+::m\+Physics = nullptr\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_o_m_sim_af2fd0b66e65e7fb851583881ba52d1c0}\label{class_o_m_sim_af2fd0b66e65e7fb851583881ba52d1c0}} 
+\index{OMSim@{OMSim}!mRunAction@{mRunAction}}
+\index{mRunAction@{mRunAction}!OMSim@{OMSim}}
+\doxysubsubsection{\texorpdfstring{mRunAction}{mRunAction}}
+{\footnotesize\ttfamily G4\+User\+Run\+Action$\ast$ OMSim\+::m\+Run\+Action = nullptr\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_o_m_sim_a63d81cbf53a7eb4d42f5c69397eb14eb}\label{class_o_m_sim_a63d81cbf53a7eb4d42f5c69397eb14eb}} 
+\index{OMSim@{OMSim}!mRunManager@{mRunManager}}
+\index{mRunManager@{mRunManager}!OMSim@{OMSim}}
+\doxysubsubsection{\texorpdfstring{mRunManager}{mRunManager}}
+{\footnotesize\ttfamily G4\+Run\+Manager$\ast$ OMSim\+::m\+Run\+Manager\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_o_m_sim_afdddb6d2392b131b35aae4f20a551a7c}\label{class_o_m_sim_afdddb6d2392b131b35aae4f20a551a7c}} 
+\index{OMSim@{OMSim}!mStartingTime@{mStartingTime}}
+\index{mStartingTime@{mStartingTime}!OMSim@{OMSim}}
+\doxysubsubsection{\texorpdfstring{mStartingTime}{mStartingTime}}
+{\footnotesize\ttfamily G4double OMSim\+::m\+Starting\+Time\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_o_m_sim_a610d64ca0157bc3795cf83a1a09a6d0c}\label{class_o_m_sim_a610d64ca0157bc3795cf83a1a09a6d0c}} 
+\index{OMSim@{OMSim}!mStepping@{mStepping}}
+\index{mStepping@{mStepping}!OMSim@{OMSim}}
+\doxysubsubsection{\texorpdfstring{mStepping}{mStepping}}
+{\footnotesize\ttfamily G4\+User\+Stepping\+Action$\ast$ OMSim\+::m\+Stepping = nullptr\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_o_m_sim_af873226fae0ebc465ab6716c9e2d9cb9}\label{class_o_m_sim_af873226fae0ebc465ab6716c9e2d9cb9}} 
+\index{OMSim@{OMSim}!mTracking@{mTracking}}
+\index{mTracking@{mTracking}!OMSim@{OMSim}}
+\doxysubsubsection{\texorpdfstring{mTracking}{mTracking}}
+{\footnotesize\ttfamily G4\+User\+Tracking\+Action$\ast$ OMSim\+::m\+Tracking = nullptr\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_o_m_sim_a8bded781b54a28ea07c04923eb98b23e}\label{class_o_m_sim_a8bded781b54a28ea07c04923eb98b23e}} 
+\index{OMSim@{OMSim}!mVisManager@{mVisManager}}
+\index{mVisManager@{mVisManager}!OMSim@{OMSim}}
+\doxysubsubsection{\texorpdfstring{mVisManager}{mVisManager}}
+{\footnotesize\ttfamily G4\+Vis\+Executive$\ast$ OMSim\+::m\+Vis\+Manager\hspace{0.3cm}{\ttfamily [private]}}
 
 
 

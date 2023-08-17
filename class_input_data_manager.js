@@ -4,6 +4,9 @@ var class_input_data_manager =
     [ "getMaterial", "class_input_data_manager.html#a05b5637e4b31dbaaede67d40a139528e", null ],
     [ "getOpticalSurface", "class_input_data_manager.html#ae6ae987535a442a42ad47d53394ade56", null ],
     [ "loadtxt", "class_input_data_manager.html#a3a233522b61c65875ebb7b274ff31507", null ],
+    [ "processFile", "class_input_data_manager.html#aaa51bcbd29214afb735bb7657bee05de", null ],
+    [ "scannDataDirectory", "class_input_data_manager.html#ac65312ce694a331615ba2d16bdddc78e", null ],
     [ "searchFolders", "class_input_data_manager.html#a7376d0446251d09973d90fb370a9373d", null ],
+    [ "mDataDirectory", "class_input_data_manager.html#ae31826093d7c8092d0251ca296e6065e", null ],
     [ "mOpticalSurfaceMap", "class_input_data_manager.html#a48e36f6062300c12d0787b1005c0d7ec", null ]
 ];

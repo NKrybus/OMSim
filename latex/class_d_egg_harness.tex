@@ -17,7 +17,7 @@ Collaboration diagram for DEgg\+Harness\+:
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=212pt]{class_d_egg_harness__coll__graph}
+\includegraphics[width=350pt]{class_d_egg_harness__coll__graph}
 \end{center}
 \end{figure}
 \doxysubsection*{Public Member Functions}
@@ -32,6 +32,40 @@ void \mbox{\hyperlink{class_d_egg_harness_ac0985f2ad731e93da36117cd2368fa7e}{con
 \item 
 G4\+String \mbox{\hyperlink{class_d_egg_harness_a1cf1bec736a37fc69d23891ec16d61eb}{m\+Data\+Key}} = \char`\"{}om\+\_\+\+DEGG\+\_\+\+Harness\char`\"{}
 \end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_d_egg_harness_a918a1cdf90db1baabd9ce5bdc0e83a19}{place\+CADHarness}} ()
+\item 
+void \mbox{\hyperlink{class_d_egg_harness_afa139bcf866bd9c5fabc42d3d431af16}{place\+CADPenetrator}} ()
+\item 
+void \mbox{\hyperlink{class_d_egg_harness_a1d3368dc24c2d519005455b8f005c513}{main\+Data\+Cable}} ()
+\item 
+G4\+VSolid $\ast$ \mbox{\hyperlink{class_d_egg_harness_aa3eb83756ab591cba4478dbcb23550fc}{build\+Harness\+Solid}} (G4double rmin, G4double rmax, G4double sphi, G4double dphi, G4double stheta, G4double dtheta)
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_d_e_g_g}{DEGG}} $\ast$ \mbox{\hyperlink{class_d_egg_harness_ad333af59c4fdc85979f3e6d3def16a34}{m\+OM}}
+\item 
+const G4double \mbox{\hyperlink{class_d_egg_harness_ac58521c32fb88070a406e5cb09721e04}{m\+Rmin}} = 150.\+0 $\ast$ mm
+\item 
+const G4double \mbox{\hyperlink{class_d_egg_harness_aa6aa42981b4d03e51ff5bb18dc9a46cc}{m\+Rmax}} = 155.\+0 $\ast$ mm
+\item 
+const G4double \mbox{\hyperlink{class_d_egg_harness_ab8e50f804509833f0cb59c4b86de74bb}{m\+Sphi}} = 0.\+0 $\ast$ deg
+\item 
+const G4double \mbox{\hyperlink{class_d_egg_harness_a1258a20167e6abcfe2b09e3b7940467c}{m\+Dphi}} = 6.\+283185307
+\item 
+const G4double \mbox{\hyperlink{class_d_egg_harness_a22312260a66056e4cbbf73e019b4cdab}{m\+Stheta}} = 1.\+383031327
+\item 
+const G4double \mbox{\hyperlink{class_d_egg_harness_a0df45965c2a420e2fc0c74e52a0c0ae3}{m\+Dtheta}} = 0.\+37553
+\item 
+const G4double \mbox{\hyperlink{class_d_egg_harness_a87c0ca79ceb8daec185c31106f28de11}{m\+Rope\+Rotation\+AngleX}} = 11.\+245557 $\ast$ deg
+\item 
+const G4double \mbox{\hyperlink{class_d_egg_harness_af7958ee15bf185a40a7d1e0cf1c6c550}{m\+Harness\+Rot\+Angle}} = 30 $\ast$ deg
+\item 
+const G4double \mbox{\hyperlink{class_d_egg_harness_a5200e9c95ce8b9fb1bdb9be1700619fe}{m\+Total\+Width}} = 170 $\ast$ mm
+\end{DoxyCompactItemize}
 \doxysubsection*{Additional Inherited Members}
 
 
@@ -45,6 +79,12 @@ G4\+String \mbox{\hyperlink{class_d_egg_harness_a1cf1bec736a37fc69d23891ec16d61e
 
 
 \doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_d_egg_harness_aa3eb83756ab591cba4478dbcb23550fc}\label{class_d_egg_harness_aa3eb83756ab591cba4478dbcb23550fc}} 
+\index{DEggHarness@{DEggHarness}!buildHarnessSolid@{buildHarnessSolid}}
+\index{buildHarnessSolid@{buildHarnessSolid}!DEggHarness@{DEggHarness}}
+\doxysubsubsection{\texorpdfstring{buildHarnessSolid()}{buildHarnessSolid()}}
+{\footnotesize\ttfamily G4\+VSolid $\ast$ DEgg\+Harness\+::build\+Harness\+Solid (\begin{DoxyParamCaption}\item[{G4double}]{rmin,  }\item[{G4double}]{rmax,  }\item[{G4double}]{sphi,  }\item[{G4double}]{dphi,  }\item[{G4double}]{stheta,  }\item[{G4double}]{dtheta }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
 \mbox{\Hypertarget{class_d_egg_harness_ac0985f2ad731e93da36117cd2368fa7e}\label{class_d_egg_harness_ac0985f2ad731e93da36117cd2368fa7e}} 
 \index{DEggHarness@{DEggHarness}!construction@{construction}}
 \index{construction@{construction}!DEggHarness@{DEggHarness}}
@@ -55,6 +95,24 @@ G4\+String \mbox{\hyperlink{class_d_egg_harness_a1cf1bec736a37fc69d23891ec16d61e
 
 Implements \mbox{\hyperlink{classabc_detector_component_a8e7f01c218d5f093e80e46b33a0672bf}{abc\+Detector\+Component}}.
 
+\mbox{\Hypertarget{class_d_egg_harness_a1d3368dc24c2d519005455b8f005c513}\label{class_d_egg_harness_a1d3368dc24c2d519005455b8f005c513}} 
+\index{DEggHarness@{DEggHarness}!mainDataCable@{mainDataCable}}
+\index{mainDataCable@{mainDataCable}!DEggHarness@{DEggHarness}}
+\doxysubsubsection{\texorpdfstring{mainDataCable()}{mainDataCable()}}
+{\footnotesize\ttfamily void DEgg\+Harness\+::main\+Data\+Cable (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_d_egg_harness_a918a1cdf90db1baabd9ce5bdc0e83a19}\label{class_d_egg_harness_a918a1cdf90db1baabd9ce5bdc0e83a19}} 
+\index{DEggHarness@{DEggHarness}!placeCADHarness@{placeCADHarness}}
+\index{placeCADHarness@{placeCADHarness}!DEggHarness@{DEggHarness}}
+\doxysubsubsection{\texorpdfstring{placeCADHarness()}{placeCADHarness()}}
+{\footnotesize\ttfamily void DEgg\+Harness\+::place\+CADHarness (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_d_egg_harness_afa139bcf866bd9c5fabc42d3d431af16}\label{class_d_egg_harness_afa139bcf866bd9c5fabc42d3d431af16}} 
+\index{DEggHarness@{DEggHarness}!placeCADPenetrator@{placeCADPenetrator}}
+\index{placeCADPenetrator@{placeCADPenetrator}!DEggHarness@{DEggHarness}}
+\doxysubsubsection{\texorpdfstring{placeCADPenetrator()}{placeCADPenetrator()}}
+{\footnotesize\ttfamily void DEgg\+Harness\+::place\+CADPenetrator (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
 
 
 \doxysubsection{Member Data Documentation}
@@ -63,6 +121,66 @@ Implements \mbox{\hyperlink{classabc_detector_component_a8e7f01c218d5f093e80e46b
 \index{mDataKey@{mDataKey}!DEggHarness@{DEggHarness}}
 \doxysubsubsection{\texorpdfstring{mDataKey}{mDataKey}}
 {\footnotesize\ttfamily G4\+String DEgg\+Harness\+::m\+Data\+Key = \char`\"{}om\+\_\+\+DEGG\+\_\+\+Harness\char`\"{}}
+
+\mbox{\Hypertarget{class_d_egg_harness_a1258a20167e6abcfe2b09e3b7940467c}\label{class_d_egg_harness_a1258a20167e6abcfe2b09e3b7940467c}} 
+\index{DEggHarness@{DEggHarness}!mDphi@{mDphi}}
+\index{mDphi@{mDphi}!DEggHarness@{DEggHarness}}
+\doxysubsubsection{\texorpdfstring{mDphi}{mDphi}}
+{\footnotesize\ttfamily const G4double DEgg\+Harness\+::m\+Dphi = 6.\+283185307\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_d_egg_harness_a0df45965c2a420e2fc0c74e52a0c0ae3}\label{class_d_egg_harness_a0df45965c2a420e2fc0c74e52a0c0ae3}} 
+\index{DEggHarness@{DEggHarness}!mDtheta@{mDtheta}}
+\index{mDtheta@{mDtheta}!DEggHarness@{DEggHarness}}
+\doxysubsubsection{\texorpdfstring{mDtheta}{mDtheta}}
+{\footnotesize\ttfamily const G4double DEgg\+Harness\+::m\+Dtheta = 0.\+37553\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_d_egg_harness_af7958ee15bf185a40a7d1e0cf1c6c550}\label{class_d_egg_harness_af7958ee15bf185a40a7d1e0cf1c6c550}} 
+\index{DEggHarness@{DEggHarness}!mHarnessRotAngle@{mHarnessRotAngle}}
+\index{mHarnessRotAngle@{mHarnessRotAngle}!DEggHarness@{DEggHarness}}
+\doxysubsubsection{\texorpdfstring{mHarnessRotAngle}{mHarnessRotAngle}}
+{\footnotesize\ttfamily const G4double DEgg\+Harness\+::m\+Harness\+Rot\+Angle = 30 $\ast$ deg\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_d_egg_harness_ad333af59c4fdc85979f3e6d3def16a34}\label{class_d_egg_harness_ad333af59c4fdc85979f3e6d3def16a34}} 
+\index{DEggHarness@{DEggHarness}!mOM@{mOM}}
+\index{mOM@{mOM}!DEggHarness@{DEggHarness}}
+\doxysubsubsection{\texorpdfstring{mOM}{mOM}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_d_e_g_g}{DEGG}}$\ast$ DEgg\+Harness\+::m\+OM\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_d_egg_harness_aa6aa42981b4d03e51ff5bb18dc9a46cc}\label{class_d_egg_harness_aa6aa42981b4d03e51ff5bb18dc9a46cc}} 
+\index{DEggHarness@{DEggHarness}!mRmax@{mRmax}}
+\index{mRmax@{mRmax}!DEggHarness@{DEggHarness}}
+\doxysubsubsection{\texorpdfstring{mRmax}{mRmax}}
+{\footnotesize\ttfamily const G4double DEgg\+Harness\+::m\+Rmax = 155.\+0 $\ast$ mm\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_d_egg_harness_ac58521c32fb88070a406e5cb09721e04}\label{class_d_egg_harness_ac58521c32fb88070a406e5cb09721e04}} 
+\index{DEggHarness@{DEggHarness}!mRmin@{mRmin}}
+\index{mRmin@{mRmin}!DEggHarness@{DEggHarness}}
+\doxysubsubsection{\texorpdfstring{mRmin}{mRmin}}
+{\footnotesize\ttfamily const G4double DEgg\+Harness\+::m\+Rmin = 150.\+0 $\ast$ mm\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_d_egg_harness_a87c0ca79ceb8daec185c31106f28de11}\label{class_d_egg_harness_a87c0ca79ceb8daec185c31106f28de11}} 
+\index{DEggHarness@{DEggHarness}!mRopeRotationAngleX@{mRopeRotationAngleX}}
+\index{mRopeRotationAngleX@{mRopeRotationAngleX}!DEggHarness@{DEggHarness}}
+\doxysubsubsection{\texorpdfstring{mRopeRotationAngleX}{mRopeRotationAngleX}}
+{\footnotesize\ttfamily const G4double DEgg\+Harness\+::m\+Rope\+Rotation\+AngleX = 11.\+245557 $\ast$ deg\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_d_egg_harness_ab8e50f804509833f0cb59c4b86de74bb}\label{class_d_egg_harness_ab8e50f804509833f0cb59c4b86de74bb}} 
+\index{DEggHarness@{DEggHarness}!mSphi@{mSphi}}
+\index{mSphi@{mSphi}!DEggHarness@{DEggHarness}}
+\doxysubsubsection{\texorpdfstring{mSphi}{mSphi}}
+{\footnotesize\ttfamily const G4double DEgg\+Harness\+::m\+Sphi = 0.\+0 $\ast$ deg\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_d_egg_harness_a22312260a66056e4cbbf73e019b4cdab}\label{class_d_egg_harness_a22312260a66056e4cbbf73e019b4cdab}} 
+\index{DEggHarness@{DEggHarness}!mStheta@{mStheta}}
+\index{mStheta@{mStheta}!DEggHarness@{DEggHarness}}
+\doxysubsubsection{\texorpdfstring{mStheta}{mStheta}}
+{\footnotesize\ttfamily const G4double DEgg\+Harness\+::m\+Stheta = 1.\+383031327\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_d_egg_harness_a5200e9c95ce8b9fb1bdb9be1700619fe}\label{class_d_egg_harness_a5200e9c95ce8b9fb1bdb9be1700619fe}} 
+\index{DEggHarness@{DEggHarness}!mTotalWidth@{mTotalWidth}}
+\index{mTotalWidth@{mTotalWidth}!DEggHarness@{DEggHarness}}
+\doxysubsubsection{\texorpdfstring{mTotalWidth}{mTotalWidth}}
+{\footnotesize\ttfamily const G4double DEgg\+Harness\+::m\+Total\+Width = 170 $\ast$ mm\hspace{0.3cm}{\ttfamily [private]}}
 
 
 

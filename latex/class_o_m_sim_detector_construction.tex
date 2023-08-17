@@ -22,7 +22,7 @@ Collaboration diagram for OMSim\+Detector\+Construction\+:
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=243pt]{class_o_m_sim_detector_construction__coll__graph}
+\includegraphics[width=350pt]{class_o_m_sim_detector_construction__coll__graph}
 \end{center}
 \end{figure}
 \doxysubsection*{Public Member Functions}
@@ -44,6 +44,22 @@ G4\+VPhysical\+Volume $\ast$ \mbox{\hyperlink{class_o_m_sim_detector_constructio
 \begin{DoxyCompactItemize}
 \item 
 G4\+VPhysical\+Volume $\ast$ \mbox{\hyperlink{class_o_m_sim_detector_construction_a699963cdf8af1e2f82a61227b9f08c20}{m\+World\+Physical}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_o_m_sim_detector_construction_a53a692e5caa084d308b181c6cd90e485}{construct\+World}} ()
+\begin{DoxyCompactList}\small\item\em Constructs the world volume (sphere). \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_o_m_sim_detector_construction_a53a692e5caa084d308b181c6cd90e485}{construct\+World}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+G4\+Orb $\ast$ \mbox{\hyperlink{class_o_m_sim_detector_construction_a13797b1657281b0907d005921ca5e10c}{m\+World\+Solid}}
+\item 
+G4\+Logical\+Volume $\ast$ \mbox{\hyperlink{class_o_m_sim_detector_construction_a7e7ef263bcf8e4d4efb22af8ed2ef808}{m\+World\+Logical}}
+\item 
+\mbox{\hyperlink{class_input_data_manager}{Input\+Data\+Manager}} $\ast$ \mbox{\hyperlink{class_o_m_sim_detector_construction_a1d09add5e6b9a1d25821ccd128d926fe}{m\+Data}}
 \end{DoxyCompactItemize}
 
 
@@ -90,14 +106,44 @@ Pointer to the physical world volume
 \doxysubsubsection{\texorpdfstring{Construct()}{Construct()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
 {\footnotesize\ttfamily G4\+VPhysical\+Volume$\ast$ OMSim\+Detector\+Construction\+::\+Construct (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
+\mbox{\Hypertarget{class_o_m_sim_detector_construction_a53a692e5caa084d308b181c6cd90e485}\label{class_o_m_sim_detector_construction_a53a692e5caa084d308b181c6cd90e485}} 
+\index{OMSimDetectorConstruction@{OMSimDetectorConstruction}!constructWorld@{constructWorld}}
+\index{constructWorld@{constructWorld}!OMSimDetectorConstruction@{OMSimDetectorConstruction}}
+\doxysubsubsection{\texorpdfstring{constructWorld()}{constructWorld()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void OMSim\+Detector\+Construction\+::construct\+World (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_o_m_sim_detector_construction_a53a692e5caa084d308b181c6cd90e485}\label{class_o_m_sim_detector_construction_a53a692e5caa084d308b181c6cd90e485}} 
+\index{OMSimDetectorConstruction@{OMSimDetectorConstruction}!constructWorld@{constructWorld}}
+\index{constructWorld@{constructWorld}!OMSimDetectorConstruction@{OMSimDetectorConstruction}}
+\doxysubsubsection{\texorpdfstring{constructWorld()}{constructWorld()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void OMSim\+Detector\+Construction\+::construct\+World (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
 
 
 \doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_o_m_sim_detector_construction_a1d09add5e6b9a1d25821ccd128d926fe}\label{class_o_m_sim_detector_construction_a1d09add5e6b9a1d25821ccd128d926fe}} 
+\index{OMSimDetectorConstruction@{OMSimDetectorConstruction}!mData@{mData}}
+\index{mData@{mData}!OMSimDetectorConstruction@{OMSimDetectorConstruction}}
+\doxysubsubsection{\texorpdfstring{mData}{mData}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_input_data_manager}{Input\+Data\+Manager}} $\ast$ OMSim\+Detector\+Construction\+::m\+Data\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_o_m_sim_detector_construction_a7e7ef263bcf8e4d4efb22af8ed2ef808}\label{class_o_m_sim_detector_construction_a7e7ef263bcf8e4d4efb22af8ed2ef808}} 
+\index{OMSimDetectorConstruction@{OMSimDetectorConstruction}!mWorldLogical@{mWorldLogical}}
+\index{mWorldLogical@{mWorldLogical}!OMSimDetectorConstruction@{OMSimDetectorConstruction}}
+\doxysubsubsection{\texorpdfstring{mWorldLogical}{mWorldLogical}}
+{\footnotesize\ttfamily G4\+Logical\+Volume $\ast$ OMSim\+Detector\+Construction\+::m\+World\+Logical\hspace{0.3cm}{\ttfamily [private]}}
+
 \mbox{\Hypertarget{class_o_m_sim_detector_construction_a699963cdf8af1e2f82a61227b9f08c20}\label{class_o_m_sim_detector_construction_a699963cdf8af1e2f82a61227b9f08c20}} 
 \index{OMSimDetectorConstruction@{OMSimDetectorConstruction}!mWorldPhysical@{mWorldPhysical}}
 \index{mWorldPhysical@{mWorldPhysical}!OMSimDetectorConstruction@{OMSimDetectorConstruction}}
 \doxysubsubsection{\texorpdfstring{mWorldPhysical}{mWorldPhysical}}
 {\footnotesize\ttfamily G4\+VPhysical\+Volume $\ast$ OMSim\+Detector\+Construction\+::m\+World\+Physical}
+
+\mbox{\Hypertarget{class_o_m_sim_detector_construction_a13797b1657281b0907d005921ca5e10c}\label{class_o_m_sim_detector_construction_a13797b1657281b0907d005921ca5e10c}} 
+\index{OMSimDetectorConstruction@{OMSimDetectorConstruction}!mWorldSolid@{mWorldSolid}}
+\index{mWorldSolid@{mWorldSolid}!OMSimDetectorConstruction@{OMSimDetectorConstruction}}
+\doxysubsubsection{\texorpdfstring{mWorldSolid}{mWorldSolid}}
+{\footnotesize\ttfamily G4\+Orb $\ast$ OMSim\+Detector\+Construction\+::m\+World\+Solid\hspace{0.3cm}{\ttfamily [private]}}
 
 
 

@@ -1,5 +1,15 @@
 \hypertarget{class_c_a_d_mesh_1_1_file_1_1_lexer}{}\doxysection{CADMesh\+::File\+::Lexer Class Reference}
 \label{class_c_a_d_mesh_1_1_file_1_1_lexer}\index{CADMesh::File::Lexer@{CADMesh::File::Lexer}}
+
+
+Collaboration diagram for CADMesh\+::File\+::Lexer\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_a_d_mesh_1_1_file_1_1_lexer__coll__graph}
+\end{center}
+\end{figure}
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
@@ -74,6 +84,33 @@ void \mbox{\hyperlink{class_c_a_d_mesh_1_1_file_1_1_lexer_acccd5da907568df017efc
 void \mbox{\hyperlink{class_c_a_d_mesh_1_1_file_1_1_lexer_a964d95879c34ed8649bcbd5ca63e0e0e}{Print\+Item}} (\mbox{\hyperlink{struct_c_a_d_mesh_1_1_file_1_1_item}{Item}} item)
 \item 
 size\+\_\+t \mbox{\hyperlink{class_c_a_d_mesh_1_1_file_1_1_lexer_afb96a4feb49dce2fb080ef32478de375}{Line\+Number}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{struct_c_a_d_mesh_1_1_file_1_1_state}{State}} $\ast$ \mbox{\hyperlink{class_c_a_d_mesh_1_1_file_1_1_lexer_ad4926342e2a249a7c539d3db559f72bc}{state\+\_\+}}
+\item 
+\mbox{\hyperlink{struct_c_a_d_mesh_1_1_file_1_1_item}{Item}} $\ast$ \mbox{\hyperlink{class_c_a_d_mesh_1_1_file_1_1_lexer_aad41ad4a9b01bd004d0e5276dd0e54f9}{parent\+\_\+item\+\_\+}} = nullptr
+\item 
+\mbox{\hyperlink{namespace_c_a_d_mesh_1_1_file_a935eb0895b6399a13457a3c6831cf2ac}{Items}} \mbox{\hyperlink{class_c_a_d_mesh_1_1_file_1_1_lexer_af268adb8e1de6cc2f915d383f5c84d38}{items\+\_\+}}
+\item 
+std\+::string \mbox{\hyperlink{class_c_a_d_mesh_1_1_file_1_1_lexer_a527696fc4cde4b6948dcfc27f16f72c9}{input\+\_\+}}
+\item 
+size\+\_\+t \mbox{\hyperlink{class_c_a_d_mesh_1_1_file_1_1_lexer_a530e1c749caf590b05ede56f42c6c964}{position\+\_\+}} = 0
+\item 
+size\+\_\+t \mbox{\hyperlink{class_c_a_d_mesh_1_1_file_1_1_lexer_ad37669514d188f511c011065ac21a985}{start\+\_\+}} = 0
+\item 
+size\+\_\+t \mbox{\hyperlink{class_c_a_d_mesh_1_1_file_1_1_lexer_a373c4ea03241d264bf09efea323c4f41}{width\+\_\+}} = 1
+\item 
+size\+\_\+t \mbox{\hyperlink{class_c_a_d_mesh_1_1_file_1_1_lexer_a197e038a8ee4029d4d09b9bbce1069c7}{line\+\_\+}} = 1
+\item 
+size\+\_\+t \mbox{\hyperlink{class_c_a_d_mesh_1_1_file_1_1_lexer_a60b99f7ece45c4a41b197b7535402b49}{end\+\_\+line\+\_\+}} = 0
+\item 
+bool \mbox{\hyperlink{class_c_a_d_mesh_1_1_file_1_1_lexer_aefb7987121e7bbb6f497f2e224fffdb8}{dry\+\_\+run\+\_\+}} = false
+\item 
+int \mbox{\hyperlink{class_c_a_d_mesh_1_1_file_1_1_lexer_adfbb0d0ea037b45418fd5aeffbb45ac2}{depth\+\_\+}} = 0
+\item 
+std\+::string \mbox{\hyperlink{class_c_a_d_mesh_1_1_file_1_1_lexer_a8319bedd4ec4649d9a614cb52e3a158c}{last\+\_\+error\+\_\+}} = \char`\"{}\char`\"{}
 \end{DoxyCompactItemize}
 
 
@@ -296,6 +333,81 @@ size\+\_\+t \mbox{\hyperlink{class_c_a_d_mesh_1_1_file_1_1_lexer_afb96a4feb49dce
 \index{Until@{Until}!CADMesh::File::Lexer@{CADMesh::File::Lexer}}
 \doxysubsubsection{\texorpdfstring{Until()}{Until()}}
 {\footnotesize\ttfamily bool CADMesh\+::\+File\+::\+Lexer\+::\+Until (\begin{DoxyParamCaption}\item[{std\+::string}]{match }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_c_a_d_mesh_1_1_file_1_1_lexer_adfbb0d0ea037b45418fd5aeffbb45ac2}\label{class_c_a_d_mesh_1_1_file_1_1_lexer_adfbb0d0ea037b45418fd5aeffbb45ac2}} 
+\index{CADMesh::File::Lexer@{CADMesh::File::Lexer}!depth\_@{depth\_}}
+\index{depth\_@{depth\_}!CADMesh::File::Lexer@{CADMesh::File::Lexer}}
+\doxysubsubsection{\texorpdfstring{depth\_}{depth\_}}
+{\footnotesize\ttfamily int CADMesh\+::\+File\+::\+Lexer\+::depth\+\_\+ = 0\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_c_a_d_mesh_1_1_file_1_1_lexer_aefb7987121e7bbb6f497f2e224fffdb8}\label{class_c_a_d_mesh_1_1_file_1_1_lexer_aefb7987121e7bbb6f497f2e224fffdb8}} 
+\index{CADMesh::File::Lexer@{CADMesh::File::Lexer}!dry\_run\_@{dry\_run\_}}
+\index{dry\_run\_@{dry\_run\_}!CADMesh::File::Lexer@{CADMesh::File::Lexer}}
+\doxysubsubsection{\texorpdfstring{dry\_run\_}{dry\_run\_}}
+{\footnotesize\ttfamily bool CADMesh\+::\+File\+::\+Lexer\+::dry\+\_\+run\+\_\+ = false\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_c_a_d_mesh_1_1_file_1_1_lexer_a60b99f7ece45c4a41b197b7535402b49}\label{class_c_a_d_mesh_1_1_file_1_1_lexer_a60b99f7ece45c4a41b197b7535402b49}} 
+\index{CADMesh::File::Lexer@{CADMesh::File::Lexer}!end\_line\_@{end\_line\_}}
+\index{end\_line\_@{end\_line\_}!CADMesh::File::Lexer@{CADMesh::File::Lexer}}
+\doxysubsubsection{\texorpdfstring{end\_line\_}{end\_line\_}}
+{\footnotesize\ttfamily size\+\_\+t CADMesh\+::\+File\+::\+Lexer\+::end\+\_\+line\+\_\+ = 0\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_c_a_d_mesh_1_1_file_1_1_lexer_a527696fc4cde4b6948dcfc27f16f72c9}\label{class_c_a_d_mesh_1_1_file_1_1_lexer_a527696fc4cde4b6948dcfc27f16f72c9}} 
+\index{CADMesh::File::Lexer@{CADMesh::File::Lexer}!input\_@{input\_}}
+\index{input\_@{input\_}!CADMesh::File::Lexer@{CADMesh::File::Lexer}}
+\doxysubsubsection{\texorpdfstring{input\_}{input\_}}
+{\footnotesize\ttfamily std\+::string CADMesh\+::\+File\+::\+Lexer\+::input\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_c_a_d_mesh_1_1_file_1_1_lexer_af268adb8e1de6cc2f915d383f5c84d38}\label{class_c_a_d_mesh_1_1_file_1_1_lexer_af268adb8e1de6cc2f915d383f5c84d38}} 
+\index{CADMesh::File::Lexer@{CADMesh::File::Lexer}!items\_@{items\_}}
+\index{items\_@{items\_}!CADMesh::File::Lexer@{CADMesh::File::Lexer}}
+\doxysubsubsection{\texorpdfstring{items\_}{items\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespace_c_a_d_mesh_1_1_file_a935eb0895b6399a13457a3c6831cf2ac}{Items}} CADMesh\+::\+File\+::\+Lexer\+::items\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_c_a_d_mesh_1_1_file_1_1_lexer_a8319bedd4ec4649d9a614cb52e3a158c}\label{class_c_a_d_mesh_1_1_file_1_1_lexer_a8319bedd4ec4649d9a614cb52e3a158c}} 
+\index{CADMesh::File::Lexer@{CADMesh::File::Lexer}!last\_error\_@{last\_error\_}}
+\index{last\_error\_@{last\_error\_}!CADMesh::File::Lexer@{CADMesh::File::Lexer}}
+\doxysubsubsection{\texorpdfstring{last\_error\_}{last\_error\_}}
+{\footnotesize\ttfamily std\+::string CADMesh\+::\+File\+::\+Lexer\+::last\+\_\+error\+\_\+ = \char`\"{}\char`\"{}\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_c_a_d_mesh_1_1_file_1_1_lexer_a197e038a8ee4029d4d09b9bbce1069c7}\label{class_c_a_d_mesh_1_1_file_1_1_lexer_a197e038a8ee4029d4d09b9bbce1069c7}} 
+\index{CADMesh::File::Lexer@{CADMesh::File::Lexer}!line\_@{line\_}}
+\index{line\_@{line\_}!CADMesh::File::Lexer@{CADMesh::File::Lexer}}
+\doxysubsubsection{\texorpdfstring{line\_}{line\_}}
+{\footnotesize\ttfamily size\+\_\+t CADMesh\+::\+File\+::\+Lexer\+::line\+\_\+ = 1\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_c_a_d_mesh_1_1_file_1_1_lexer_aad41ad4a9b01bd004d0e5276dd0e54f9}\label{class_c_a_d_mesh_1_1_file_1_1_lexer_aad41ad4a9b01bd004d0e5276dd0e54f9}} 
+\index{CADMesh::File::Lexer@{CADMesh::File::Lexer}!parent\_item\_@{parent\_item\_}}
+\index{parent\_item\_@{parent\_item\_}!CADMesh::File::Lexer@{CADMesh::File::Lexer}}
+\doxysubsubsection{\texorpdfstring{parent\_item\_}{parent\_item\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_c_a_d_mesh_1_1_file_1_1_item}{Item}}$\ast$ CADMesh\+::\+File\+::\+Lexer\+::parent\+\_\+item\+\_\+ = nullptr\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_c_a_d_mesh_1_1_file_1_1_lexer_a530e1c749caf590b05ede56f42c6c964}\label{class_c_a_d_mesh_1_1_file_1_1_lexer_a530e1c749caf590b05ede56f42c6c964}} 
+\index{CADMesh::File::Lexer@{CADMesh::File::Lexer}!position\_@{position\_}}
+\index{position\_@{position\_}!CADMesh::File::Lexer@{CADMesh::File::Lexer}}
+\doxysubsubsection{\texorpdfstring{position\_}{position\_}}
+{\footnotesize\ttfamily size\+\_\+t CADMesh\+::\+File\+::\+Lexer\+::position\+\_\+ = 0\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_c_a_d_mesh_1_1_file_1_1_lexer_ad37669514d188f511c011065ac21a985}\label{class_c_a_d_mesh_1_1_file_1_1_lexer_ad37669514d188f511c011065ac21a985}} 
+\index{CADMesh::File::Lexer@{CADMesh::File::Lexer}!start\_@{start\_}}
+\index{start\_@{start\_}!CADMesh::File::Lexer@{CADMesh::File::Lexer}}
+\doxysubsubsection{\texorpdfstring{start\_}{start\_}}
+{\footnotesize\ttfamily size\+\_\+t CADMesh\+::\+File\+::\+Lexer\+::start\+\_\+ = 0\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_c_a_d_mesh_1_1_file_1_1_lexer_ad4926342e2a249a7c539d3db559f72bc}\label{class_c_a_d_mesh_1_1_file_1_1_lexer_ad4926342e2a249a7c539d3db559f72bc}} 
+\index{CADMesh::File::Lexer@{CADMesh::File::Lexer}!state\_@{state\_}}
+\index{state\_@{state\_}!CADMesh::File::Lexer@{CADMesh::File::Lexer}}
+\doxysubsubsection{\texorpdfstring{state\_}{state\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_c_a_d_mesh_1_1_file_1_1_state}{State}}$\ast$ CADMesh\+::\+File\+::\+Lexer\+::state\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_c_a_d_mesh_1_1_file_1_1_lexer_a373c4ea03241d264bf09efea323c4f41}\label{class_c_a_d_mesh_1_1_file_1_1_lexer_a373c4ea03241d264bf09efea323c4f41}} 
+\index{CADMesh::File::Lexer@{CADMesh::File::Lexer}!width\_@{width\_}}
+\index{width\_@{width\_}!CADMesh::File::Lexer@{CADMesh::File::Lexer}}
+\doxysubsubsection{\texorpdfstring{width\_}{width\_}}
+{\footnotesize\ttfamily size\+\_\+t CADMesh\+::\+File\+::\+Lexer\+::width\+\_\+ = 1\hspace{0.3cm}{\ttfamily [private]}}
 
 
 
