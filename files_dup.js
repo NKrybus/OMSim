@@ -24,9 +24,7 @@ var files_dup =
       [ "OMSimDecaysAnalysis", "class_o_m_sim_decays_analysis.html", "class_o_m_sim_decays_analysis" ]
     ] ],
     [ "OMSimDecaysGPS.cc", "_o_m_sim_decays_g_p_s_8cc.html", null ],
-    [ "OMSimDecaysGPS.hh", "_o_m_sim_decays_g_p_s_8hh.html", [
-      [ "IsotopeDecays", "class_isotope_decays.html", "class_isotope_decays" ]
-    ] ],
+    [ "OMSimDecaysGPS.hh", "_o_m_sim_decays_g_p_s_8hh.html", null ],
     [ "OMSimDEGG.cc", "_o_m_sim_d_e_g_g_8cc.html", null ],
     [ "OMSimDEGG.hh", "_o_m_sim_d_e_g_g_8hh.html", null ],
     [ "OMSimDEGGHarness.cc", "_o_m_sim_d_e_g_g_harness_8cc.html", null ],
@@ -126,5 +124,6 @@ var files_dup =
     [ "OMSimTrackingAction.hh", "_o_m_sim_tracking_action_8hh.html", [
       [ "OMSimTrackingAction", "class_o_m_sim_tracking_action.html", "class_o_m_sim_tracking_action" ]
     ] ],
-    [ "OMSimUIinterface.hh", "_o_m_sim_u_iinterface_8hh.html", null ]
+    [ "OMSimUIinterface.hh", "_o_m_sim_u_iinterface_8hh.html", null ],
+    [ "radioactive.h", "radioactive_8h.html", null ]
 ];

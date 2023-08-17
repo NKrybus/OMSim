@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['common_20stuff_1770',['Common stuff',['../group__common.html',1,'']]]
+  ['effective_20area_1773',['Effective area',['../group___effective_area.html',1,'']]]
 ];

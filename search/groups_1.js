@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['effective_20area_1771',['Effective area',['../group___effective_area.html',1,'']]]
+  ['omsim_20framework_20and_20geometry_1774',['OMSim framework and geometry',['../group__common.html',1,'']]]
 ];

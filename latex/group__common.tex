@@ -1,5 +1,5 @@
-\hypertarget{group__common}{}\doxysection{Common stuff}
-\label{group__common}\index{Common stuff@{Common stuff}}
+\hypertarget{group__common}{}\doxysection{OMSim framework and geometry}
+\label{group__common}\index{OMSim framework and geometry@{OMSim framework and geometry}}
 
 
 These files define the geometry and materials that are common for all studies.  
@@ -8,6 +8,19 @@ These files define the geometry and materials that are common for all studies.
 
 
 \doxysubsection{Detailed Description}
+\hypertarget{group__common_framework}{}\doxysubsubsection{OMSim framework}\label{group__common_framework}
+\hypertarget{group__common_data}{}\doxyparagraph{Materials and user data}\label{group__common_data}
+The user defined material data are saved in json files in /common/data to reduce file lengths (original detector construction had over 4k lines mostly due to the material properties!). These properties are loaded by \mbox{\hyperlink{class_input_data_manager}{Input\+Data\+Manager}} (\mbox{\hyperlink{_o_m_sim_input_data_8hh}{OMSim\+Input\+Data.\+hh}}) into the Geant4 framework and you can retrieve them with \mbox{\hyperlink{class_input_data_manager_a05b5637e4b31dbaaede67d40a139528e}{Input\+Data\+Manager\+::get\+Material}} and \mbox{\hyperlink{class_input_data_manager_ae6ae987535a442a42ad47d53394ade56}{Input\+Data\+Manager\+::get\+Optical\+Surface}}. As different materials have different type of properties, the data is loaded in different ways. The different types of materials are defined in \mbox{\hyperlink{_o_m_sim_data_file_types_8hh}{OMSim\+Data\+File\+Types.\+hh}}. Furthermore, geometry data is also saved in json files for the PMTs which are parsed directly into a \char`\"{}tree\char`\"{}, which is basically a dictionary with the keys and values in the json file. This is because the different PMTs are constructed in a very similar fashion and it does not make sense to define one class per PMT type, as is done with the optical modules.
+
+If you have data that you want to load, you could define a new type in OMSim\+Data\+File\+Types or load it into a tree as earlier, but for simple stuff you can just use \mbox{\hyperlink{class_input_data_manager_a3a233522b61c65875ebb7b274ff31507}{Input\+Data\+Manager\+::loadtxt}} which is a static method and works similar to the numpy.\+loadtxt of python. Example\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{    std::vector<G4PV2DDataVector> data = \mbox{\hyperlink{class_input_data_manager_a3a233522b61c65875ebb7b274ff31507}{InputDataManager::loadtxt}}(\textcolor{stringliteral}{"{}path/file\_name.txt"{}});}
+\DoxyCodeLine{std::vector<G4double> first\_column = data.at(0);}
+\DoxyCodeLine{std::vector<G4double> second\_column = data.at(1);}
+\DoxyCodeLine{ (...)}
+
+\end{DoxyCode}
+\hypertarget{group__common_geometry}{}\doxyparagraph{Geometry}\label{group__common_geometry}
   ~\newline
  {\itshape Figure\+: A brief description of the image}  \doxysubsection*{Files}
 \begin{DoxyCompactItemize}

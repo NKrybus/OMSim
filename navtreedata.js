@@ -58,7 +58,7 @@ var NAVTREEINDEX =
 "class_g4_radioactive_decay.html#acc82499e6f2713a39451c04b19d45322",
 "class_o_m_sim_g4_scintillation.html#a5d4f7a535fb8c2559115075111842794",
 "classabc_detector_component.html#a7a68cb95fa0c6b6bcd97f5640b0500b4",
-"struct_c_a_d_mesh_1_1_file_1_1_____final_state.html#a003c6bd5e490a5f759a54c98d4ffef08"
+"radioactive__decays_2src_2_o_m_sim_physics_list_8cc.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
