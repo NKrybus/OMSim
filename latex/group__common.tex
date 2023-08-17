@@ -14,13 +14,19 @@ The user defined material data are saved in json files in /common/data to reduce
 
 If you have data that you want to load, you could define a new type in OMSim\+Data\+File\+Types or load it into a tree as earlier, but for simple stuff you can just use \mbox{\hyperlink{class_input_data_manager_a3a233522b61c65875ebb7b274ff31507}{Input\+Data\+Manager\+::loadtxt}} which is a static method and works similar to the numpy.\+loadtxt of python. Example\+: 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{    std::vector<G4PV2DDataVector> data = \mbox{\hyperlink{class_input_data_manager_a3a233522b61c65875ebb7b274ff31507}{InputDataManager::loadtxt}}(\textcolor{stringliteral}{"{}path/file\_name.txt"{}});}
+\DoxyCodeLine{std::vector<G4PV2DDataVector> data = \mbox{\hyperlink{class_input_data_manager_a3a233522b61c65875ebb7b274ff31507}{InputDataManager::loadtxt}}(\textcolor{stringliteral}{"{}path/file\_name.txt"{}});}
 \DoxyCodeLine{std::vector<G4double> first\_column = data.at(0);}
 \DoxyCodeLine{std::vector<G4double> second\_column = data.at(1);}
-\DoxyCodeLine{ (...)}
+\DoxyCodeLine{(...)}
 
 \end{DoxyCode}
 \hypertarget{group__common_geometry}{}\doxyparagraph{Geometry}\label{group__common_geometry}
+Each optical module and harness is defined in its own class located in folder /common/optical\+\_\+modules/. These inherite from the virtual base class \mbox{\hyperlink{class_optical_module}{Optical\+Module}}, which ensures that we have to define a function for retrieving the weight of the pressure vessel (needed in radioactive decays studies) and also the number of PMTs inside the module. The \mbox{\hyperlink{class_optical_module}{Optical\+Module}} interface inherits from \mbox{\hyperlink{classabc_detector_component}{abc\+Detector\+Component}} which is a general helper class that makes life easier while constructing stuff. Most geometries in \mbox{\hyperlink{class_o_m_sim}{OMSim}} inherit from this class, as can be observed in the following dependence diagram\+:  $<$iframe scrolling=\char`\"{}no\char`\"{} frameborder=\char`\"{}0\char`\"{}           src=\char`\"{}classabc\+\_\+detector\+\_\+component\+\_\+\+\_\+inherit\+\_\+\+\_\+graph.\+svg\char`\"{}           width=\char`\"{}747\char`\"{} height=\char`\"{}187\char`\"{}$>$ 
+
+{\bfseries{This browser is not able to show SVG\+: try Firefox, Chrome, Safari, or Opera instead.}}
+
+ $<$/iframe$>$ 
+
   ~\newline
  {\itshape Figure\+: A brief description of the image}  \doxysubsection*{Files}
 \begin{DoxyCompactItemize}
