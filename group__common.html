@@ -149,7 +149,7 @@ Geometry</h3>
  Figure 3: <em>QE of simulation with the absorption length currently used compared to measurements. Image from <a href="https://zenodo.org/record/8121321">M. Unland's thesis</a>.</em> </div> </div><h3><a class="anchor" id="response"></a>
 PMT response</h3>
 <dl class="section warning"><dt>Warning</dt><dd>Detailed PMT response currently only for <a class="el" href="classm_d_o_m.html">mDOM</a> PMT</dd></dl>
-<p>The class <a class="el" href="class_o_m_sim_p_m_t_response.html">OMSimPMTResponse</a> provides a realistic PMT response (charge and transit time) using the measured scans from <a href="https://zenodo.org/record/8121321">M. Unland's thesis</a>. To turn on this feature, the bool-switch command line argument "pmt_response" has to be given. For more information see Section 9.3.4 of the thesis.</p>
+<p>The class <a class="el" href="class_o_m_sim_p_m_t_response.html" title="Singleton class to simulate PMT response.">OMSimPMTResponse</a> provides a realistic PMT response (charge and transit time) using the measured scans from <a href="https://zenodo.org/record/8121321">M. Unland's thesis</a>. To turn on this feature, the bool-switch command line argument "pmt_response" has to be given. For more information see Section 9.3.4 of the thesis.</p>
 <div style="width: 100%; text-align: center;"> <img src="PW_beam_geant4_TT.png" alt="" width="320" height="550" class="inline"/> <div style="width: 80%; margin: auto;"> <br  />
  Figure 4: <em>PMT response compared to measurement for different light sources. Image from <a href="https://zenodo.org/record/8121321">M. Unland's thesis</a>.</em> </div> </div> <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="files"></a>
@@ -170,7 +170,7 @@ Files</h2></td></tr>
 <tr class="memdesc:_o_m_sim_hit_manager_8hh"><td class="mdescLeft">&#160;</td><td class="mdescRight">Defines structures and classes related to optical module photon hit management. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:_o_m_sim_p_m_t_response_8hh"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_o_m_sim_p_m_t_response_8hh.html">OMSimPMTResponse.hh</a></td></tr>
-<tr class="memdesc:_o_m_sim_p_m_t_response_8hh"><td class="mdescLeft">&#160;</td><td class="mdescRight">PMT response simulator. <br /></td></tr>
+<tr class="memdesc:_o_m_sim_p_m_t_response_8hh"><td class="mdescLeft">&#160;</td><td class="mdescRight">Provides simulation for PMT response. This class is responsible for transforming hits on photocathode into pulses, with transit time, charge, and detection probability. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:_o_m_sim_u_iinterface_8hh"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_o_m_sim_u_iinterface_8hh.html">OMSimUIinterface.hh</a></td></tr>
 <tr class="memdesc:_o_m_sim_u_iinterface_8hh"><td class="mdescLeft">&#160;</td><td class="mdescRight">The <a class="el" href="class_o_m_sim_u_iinterface.html" title="Singleton interface to Geant4&#39;s UI manager.">OMSimUIinterface</a> class provides a singleton interface to Geant4's UI manager. <br /></td></tr>
@@ -262,7 +262,7 @@ Classes</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Thu Aug 17 2023 13:58:53 for OMSim by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Fri Aug 18 2023 09:49:37 for OMSim by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

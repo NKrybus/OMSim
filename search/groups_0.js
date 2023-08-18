@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['effective_20area_1776',['Effective area',['../group___effective_area.html',1,'']]]
+  ['bubble_20column_1779',['Bubble column',['../group__bubble.html',1,'']]]
 ];

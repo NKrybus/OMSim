@@ -694,7 +694,7 @@
 <!-- Node45 -->
 <g id="node45" class="node">
 <title>Node45</title>
-<g id="a_node45"><a xlink:href="_o_m_sim_p_m_t_response_8hh.html" target="_top" xlink:title="PMT response simulator.">
+<g id="a_node45"><a xlink:href="_o_m_sim_p_m_t_response_8hh.html" target="_top" xlink:title="Provides simulation for PMT response. This class is responsible for transforming hits on photocathode...">
 <polygon fill="white" stroke="black" points="649,-235.5 649,-254.5 784,-254.5 784,-235.5 649,-235.5"/>
 <text text-anchor="middle" x="716.5" y="-242.5" font-family="Helvetica,sans-Serif" font-size="10.00">OMSimPMTResponse.hh</text>
 </a>

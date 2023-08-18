@@ -26,6 +26,7 @@ var NAVTREE =
 [
   [ "OMSim", "index.html", [
     [ "Installation", "index.html#autotoc_md1", null ],
+    [ "Available studies", "index.html#autotoc_md4", null ],
     [ "Todo List", "todo.html", null ],
     [ "Modules", "modules.html", "modules" ],
     [ "Files", "files.html", [
@@ -54,11 +55,11 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "_c_a_d_mesh_8hh.html",
-"class_c_a_d_mesh_1_1_c_a_d_mesh_template.html#a6d6bae2d86a5b9098ea53284db236155",
-"class_g4_radioactive_decay.html#ac8966941e99b455c87356c9c80e611d6",
-"class_o_m_sim_g4_scintillation.html#a5bdd943e152a9eefe153c077957af9f3",
-"classabc_detector_component.html#a6a1743aa6036e78109afba814f657536",
-"radioactive__decays_2include_2_o_m_sim_stepping_action_8hh_source.html"
+"class_c_a_d_mesh_1_1_c_a_d_mesh_template.html#a667e373e0ad0876f5e823e093ec487e3",
+"class_g4_radioactive_decay.html#ac628f95a5eea7a8c446b5a69e336514f",
+"class_o_m_sim_g4_scintillation.html#a4a234c7a020c0768ecf3dac793f09b30",
+"classabc_detector_component.html#a53c7979298ef9eda66b44f0a3c4f2e6b",
+"radioactive__decays_2include_2_o_m_sim_physics_list_8hh_source.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

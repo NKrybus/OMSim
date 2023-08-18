@@ -120,11 +120,18 @@ $(document).ready(function(){initNavTree('group__radioactive.html',''); initResi
 </div><!--header-->
 <div class="contents">
 
-<p>All specific to the background studies of the optical modules produced by radioactive decays in borosilicate glass.  
+<p>Simulations for understanding the background produced by radioactive decays in borosilicate glass of optical modules &amp; PMTs.  
 <a href="#details">More...</a></p>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div style="width: 100%; text-align: center;"> <img src="image.png" alt="" width="200" height="200" class="inline"/> <br  />
- <em>Figure: A brief description of the image</em> </div> <table class="memberdecls">
+<dl class="section warning"><dt>Warning</dt><dd>This study has been tested only for Vitrovex glass (mDOM/LOM16) and the 80mm <a class="el" href="classm_d_o_m.html">mDOM</a> PMTs. Okamoto glass (D-Egg/LOM18) is currently under investigation.</dd></dl>
+<p>The simulation considers the measured scintillation parameters and the specific activity of the isotopes to provide insights into the behavior of OMs in both air and ice environments over a time window $t_{w}$. The primary output is a timestamped list of detected photons, which can be utilized to compute parameters such as the module's expected dark rate. The simulation steps can be summarized as:</p><ul>
+<li>Determining the number of decays within \(t_{w}\) based on measured data.</li>
+<li>Initiating decay chains for each event by positioning an isotope randomly in the pressure vessel.</li>
+<li>Assigning decay times from a uniform distribution within [0, \(t_{w}\)], in case the time difference between mother-daughter decay times surpasses \(t_{w}\).</li>
+<li>Capturing photons detected by the PMTs for downstream analysis.</li>
+</ul>
+<p>Important customizations in the simulation involve the extension of Geant4's original scintillation class, facilitating the simulation of more complex decay processes (8 lifetimes), and the modification the <a class="el" href="class_g4_radioactive_decay.html">G4RadioactiveDecay</a> class which amends default decay time of isotopes. The scintillation properties of the <a class="el" href="classm_d_o_m.html">mDOM</a> glass were measured in the scope of several theses. For a summary check section 11.2 of <a href="https://zenodo.org/record/8121321">this thesis</a>. </p>
+<table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_isotope_decays.html">IsotopeDecays</a></td></tr>
@@ -136,7 +143,7 @@ Classes</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Thu Aug 17 2023 13:58:53 for OMSim by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Fri Aug 18 2023 09:49:37 for OMSim by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

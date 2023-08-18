@@ -1,15 +1,23 @@
 \hypertarget{class_o_m_sim_p_m_t_response}{}\doxysection{OMSim\+PMTResponse Class Reference}
 \label{class_o_m_sim_p_m_t_response}\index{OMSimPMTResponse@{OMSimPMTResponse}}
-\doxysubsection*{Classes}
+
+
+Singleton class to simulate PMT response.  
+
+
+
+
+\doxysubsection{Detailed Description}
+Provides methods to process hits on a photocathode and get resulting pulses based on various measurements and scans. \doxysubsection*{Classes}
 \begin{DoxyCompactItemize}
 \item 
 struct \mbox{\hyperlink{struct_o_m_sim_p_m_t_response_1_1_p_m_t_pulse}{PMTPulse}}
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Represents the output pulse for a detected photon. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\hyperlink{struct_o_m_sim_p_m_t_response_1_1_p_m_t_pulse}{PMTPulse}} \mbox{\hyperlink{class_o_m_sim_p_m_t_response_a55aabd8f8fd9be58eca3ba0753974d08}{process\+Photocathode\+Hit}} (G4double pX, G4double pY, G4double p\+Wavelength)
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Process a hit on the photocathode into a PMT pulse. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Static Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
@@ -19,15 +27,15 @@ static \mbox{\hyperlink{class_o_m_sim_p_m_t_response}{OMSim\+PMTResponse}} \& \m
 \begin{DoxyCompactItemize}
 \item 
 TH2D $\ast$ \mbox{\hyperlink{class_o_m_sim_p_m_t_response_a0dd544847ff216a24aa8c528e76c9aed}{create\+Histogram\+From\+Data}} (const std\+::string \&p\+File\+Path, const char $\ast$p\+TH2\+DName)
-\item 
+\begin{DoxyCompactList}\small\item\em Create a histogram from provided data. \end{DoxyCompactList}\item 
 G4double \mbox{\hyperlink{class_o_m_sim_p_m_t_response_a5dd826e00f45b0d3842e75a62b6a07f3}{get\+Charge}} (G4double p\+Wavelength\+Key)
-\item 
+\begin{DoxyCompactList}\small\item\em Retrieve the charge in PE from measurements for a given wavelength. \end{DoxyCompactList}\item 
 G4double \mbox{\hyperlink{class_o_m_sim_p_m_t_response_a325c803af5fac436f794e6033faf16af}{get\+Charge}} (G4double p\+Wavelength\+Key1, G4double p\+Wavelength\+Key2)
-\item 
+\begin{DoxyCompactList}\small\item\em Retrieve the interpolated charge between two given wavelengths. \end{DoxyCompactList}\item 
 G4double \mbox{\hyperlink{class_o_m_sim_p_m_t_response_a7851c7a21806760d269dca32166e8741}{get\+Transit\+Time}} (G4double p\+Wavelength\+Key)
-\item 
+\begin{DoxyCompactList}\small\item\em Retrieve the transit time from measurements for a given wavelength. \end{DoxyCompactList}\item 
 G4double \mbox{\hyperlink{class_o_m_sim_p_m_t_response_ab468af69c57589f123efc7fb1df99810}{get\+Transit\+Time}} (G4double p\+Wavelength\+Key1, G4double p\+Wavelength\+Key2)
-\item 
+\begin{DoxyCompactList}\small\item\em Retrieve the interpolated transit time between two given wavelengths. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{struct_o_m_sim_p_m_t_response_1_1_p_m_t_pulse}{PMTPulse}} \mbox{\hyperlink{class_o_m_sim_p_m_t_response_a5caca255c3562545a16de341005926cd}{get\+Pulse\+From\+Interpolation}} (G4double p\+Wavelength\+Key1, G4double p\+Wavelength\+Key2)
 \item 
 \mbox{\hyperlink{struct_o_m_sim_p_m_t_response_1_1_p_m_t_pulse}{PMTPulse}} \mbox{\hyperlink{class_o_m_sim_p_m_t_response_ae479429319a502e3b100682326e0d0e6}{get\+Pulse\+From\+Key}} (G4double p\+Wavelength\+Key)
@@ -93,19 +101,35 @@ std\+::map$<$ G4double, TH2D $\ast$ $>$ \mbox{\hyperlink{class_o_m_sim_p_m_t_res
 \doxysubsubsection{\texorpdfstring{createHistogramFromData()}{createHistogramFromData()}}
 {\footnotesize\ttfamily TH2D $\ast$ OMSim\+PMTResponse\+::create\+Histogram\+From\+Data (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{p\+File\+Path,  }\item[{const char $\ast$}]{p\+TH2\+DName }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
 
+Loads the data from a given path and constructs a histogram based on the data.
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+File\+Path} & Path to the data file. \\
+\hline
+{\em p\+TH2\+DName} & Name of the histogram. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Pointer to the created histogram.
+\end{DoxyReturn}
+\begin{DoxyRefDesc}{Todo}
+\item[\mbox{\hyperlink{todo__todo000002}{Todo}}]Add PMT data of all PMT types \end{DoxyRefDesc}
 \mbox{\Hypertarget{class_o_m_sim_p_m_t_response_a5dd826e00f45b0d3842e75a62b6a07f3}\label{class_o_m_sim_p_m_t_response_a5dd826e00f45b0d3842e75a62b6a07f3}} 
 \index{OMSimPMTResponse@{OMSimPMTResponse}!getCharge@{getCharge}}
 \index{getCharge@{getCharge}!OMSimPMTResponse@{OMSimPMTResponse}}
 \doxysubsubsection{\texorpdfstring{getCharge()}{getCharge()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
 {\footnotesize\ttfamily G4double OMSim\+PMTResponse\+::get\+Charge (\begin{DoxyParamCaption}\item[{G4double}]{p\+Wavelength\+Key }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
 
-Get mean charge and SPE resolution from measurements for a given wavelength and sample from gaussian with mean PE and std SPE\+\_\+res. There are only a limited number of scans, which one can select from the scan map. We use TGraph2D from ROOT to interpolate selected scan. 
+This method returns the charge sampled from a Gaussian distribution with the mean and standard deviation of the single photon electron (SPE) resolution for the provided wavelength key.
+
+
 \begin{DoxyParams}{Parameters}
-{\em p\+Wavelength\+Key} & key for selecting a scan \\
+{\em p\+Wavelength\+Key} & The key for selecting a scan from the available measurements. \\
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
-G4double charge in PE 
+G4double The charge in PE. 
 \end{DoxyReturn}
 \mbox{\Hypertarget{class_o_m_sim_p_m_t_response_a325c803af5fac436f794e6033faf16af}\label{class_o_m_sim_p_m_t_response_a325c803af5fac436f794e6033faf16af}} 
 \index{OMSimPMTResponse@{OMSimPMTResponse}!getCharge@{getCharge}}
@@ -113,6 +137,18 @@ G4double charge in PE
 \doxysubsubsection{\texorpdfstring{getCharge()}{getCharge()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
 {\footnotesize\ttfamily G4double OMSim\+PMTResponse\+::get\+Charge (\begin{DoxyParamCaption}\item[{G4double}]{p\+Wavelength\+Key1,  }\item[{G4double}]{p\+Wavelength\+Key2 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
 
+This method interpolates the charge between the two provided wavelengths and then returns the charge sampled from a Gaussian distribution with the mean interpolated charge and interpolated single photon electron (SPE) resolution.
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+Wavelength1} & The first wavelength key for interpolation. \\
+\hline
+{\em p\+Wavelength2} & The second wavelength key for interpolation. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+G4double The interpolated charge in PE. 
+\end{DoxyReturn}
 \mbox{\Hypertarget{class_o_m_sim_p_m_t_response_a6dd27707e5154fc35e238ead2dd726a0}\label{class_o_m_sim_p_m_t_response_a6dd27707e5154fc35e238ead2dd726a0}} 
 \index{OMSimPMTResponse@{OMSimPMTResponse}!getInstance@{getInstance}}
 \index{getInstance@{getInstance}!OMSimPMTResponse@{OMSimPMTResponse}}
@@ -155,13 +191,15 @@ Get a finished Pulse using a key for the maps directly
 \doxysubsubsection{\texorpdfstring{getTransitTime()}{getTransitTime()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
 {\footnotesize\ttfamily G4double OMSim\+PMTResponse\+::get\+Transit\+Time (\begin{DoxyParamCaption}\item[{G4double}]{p\+Wavelength\+Key }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
 
-Get transit time and transit time spread from measurements for a given wavelength and sample from gaussian with mean TT and std TTS. There are only a limited number of scans, which one can select from the scan map. We use TGraph2D from ROOT to interpolate selected scan. 
+This method returns the transit time sampled from a Gaussian distribution with the mean transit time and transit time spread for the provided wavelength key.
+
+
 \begin{DoxyParams}{Parameters}
-{\em p\+Wavelength\+Key} & key for selecting a scan \\
+{\em p\+Wavelength\+Key} & The key for selecting a scan from the available measurements. \\
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
-G4double transit time 
+G4double The transit time in ns. 
 \end{DoxyReturn}
 \mbox{\Hypertarget{class_o_m_sim_p_m_t_response_ab468af69c57589f123efc7fb1df99810}\label{class_o_m_sim_p_m_t_response_ab468af69c57589f123efc7fb1df99810}} 
 \index{OMSimPMTResponse@{OMSimPMTResponse}!getTransitTime@{getTransitTime}}
@@ -169,6 +207,18 @@ G4double transit time
 \doxysubsubsection{\texorpdfstring{getTransitTime()}{getTransitTime()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
 {\footnotesize\ttfamily G4double OMSim\+PMTResponse\+::get\+Transit\+Time (\begin{DoxyParamCaption}\item[{G4double}]{p\+Wavelength\+Key1,  }\item[{G4double}]{p\+Wavelength\+Key2 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
 
+This method interpolates the transit time between the two provided wavelengths and then returns the time sampled from a Gaussian distribution with the mean interpolated transit time and interpolated transit time spread.
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+Wavelength1} & The first wavelength key for interpolation. \\
+\hline
+{\em p\+Wavelength2} & The second wavelength key for interpolation. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+G4double The interpolated transit time in ns. 
+\end{DoxyReturn}
 \mbox{\Hypertarget{class_o_m_sim_p_m_t_response_a5bfb5cb02d12f7d8a17e389707d4a8a1}\label{class_o_m_sim_p_m_t_response_a5bfb5cb02d12f7d8a17e389707d4a8a1}} 
 \index{OMSimPMTResponse@{OMSimPMTResponse}!operator=@{operator=}}
 \index{operator=@{operator=}!OMSimPMTResponse@{OMSimPMTResponse}}
@@ -181,17 +231,19 @@ G4double transit time
 \doxysubsubsection{\texorpdfstring{processPhotocathodeHit()}{processPhotocathodeHit()}}
 {\footnotesize\ttfamily \mbox{\hyperlink{struct_o_m_sim_p_m_t_response_1_1_p_m_t_pulse}{OMSim\+PMTResponse\+::\+PMTPulse}} OMSim\+PMTResponse\+::process\+Photocathode\+Hit (\begin{DoxyParamCaption}\item[{G4double}]{pX,  }\item[{G4double}]{pY,  }\item[{G4double}]{p\+Wavelength }\end{DoxyParamCaption})}
 
-Transform a hit on the photocathode to a Pulse, with the transit time, charge and detection probability. 
+Transform a hit based on its location and photon wavelength to a PMT pulse, considering the transit time, charge, and detection probability.
+
+
 \begin{DoxyParams}{Parameters}
 {\em pX} & x position on photocathode \\
 \hline
-{\em pY} & x position on photocathode \\
+{\em pY} & y position on photocathode \\
 \hline
-{\em p\+Wavelength} & Wavelength of photon \\
+{\em p\+Wavelength} & Wavelength of the hitting photon \\
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
-\mbox{\hyperlink{struct_o_m_sim_p_m_t_response_1_1_p_m_t_pulse}{PMTPulse}} Struct with transit time, charge and detection probability 
+\mbox{\hyperlink{struct_o_m_sim_p_m_t_response_1_1_p_m_t_pulse}{PMTPulse}} representing the processed hit. 
 \end{DoxyReturn}
 \mbox{\Hypertarget{class_o_m_sim_p_m_t_response_a39d958aa616a6bdd0c8a73211d834503}\label{class_o_m_sim_p_m_t_response_a39d958aa616a6bdd0c8a73211d834503}} 
 \index{OMSimPMTResponse@{OMSimPMTResponse}!wavelengthInterpolatedValue@{wavelengthInterpolatedValue}}

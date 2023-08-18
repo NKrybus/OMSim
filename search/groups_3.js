@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['supernova_20studies_1779',['Supernova studies',['../group__sngroup.html',1,'']]]
+  ['radioactive_20decays_1782',['Radioactive decays',['../group__radioactive.html',1,'']]]
 ];

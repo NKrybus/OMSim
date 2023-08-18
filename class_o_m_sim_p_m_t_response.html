@@ -124,15 +124,22 @@ $(document).ready(function(){initNavTree('class_o_m_sim_p_m_t_response.html','')
 <div class="title">OMSimPMTResponse Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<table class="memberdecls">
+
+<p>Singleton class to simulate PMT response.  
+ <a href="class_o_m_sim_p_m_t_response.html#details">More...</a></p>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Provides methods to process hits on a photocathode and get resulting pulses based on various measurements and scans. </p>
+</div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_o_m_sim_p_m_t_response_1_1_p_m_t_pulse.html">PMTPulse</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Represents the output pulse for a detected photon.  <a href="struct_o_m_sim_p_m_t_response_1_1_p_m_t_pulse.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a55aabd8f8fd9be58eca3ba0753974d08"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_o_m_sim_p_m_t_response_1_1_p_m_t_pulse.html">PMTPulse</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_m_sim_p_m_t_response.html#a55aabd8f8fd9be58eca3ba0753974d08">processPhotocathodeHit</a> (G4double pX, G4double pY, G4double pWavelength)</td></tr>
+<tr class="memdesc:a55aabd8f8fd9be58eca3ba0753974d08"><td class="mdescLeft">&#160;</td><td class="mdescRight">Process a hit on the photocathode into a PMT pulse.  <a href="class_o_m_sim_p_m_t_response.html#a55aabd8f8fd9be58eca3ba0753974d08">More...</a><br /></td></tr>
 <tr class="separator:a55aabd8f8fd9be58eca3ba0753974d08"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
@@ -143,14 +150,19 @@ Static Public Member Functions</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
 <tr class="memitem:a0dd544847ff216a24aa8c528e76c9aed"><td class="memItemLeft" align="right" valign="top">TH2D *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_m_sim_p_m_t_response.html#a0dd544847ff216a24aa8c528e76c9aed">createHistogramFromData</a> (const std::string &amp;pFilePath, const char *pTH2DName)</td></tr>
+<tr class="memdesc:a0dd544847ff216a24aa8c528e76c9aed"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a histogram from provided data.  <a href="class_o_m_sim_p_m_t_response.html#a0dd544847ff216a24aa8c528e76c9aed">More...</a><br /></td></tr>
 <tr class="separator:a0dd544847ff216a24aa8c528e76c9aed"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5dd826e00f45b0d3842e75a62b6a07f3"><td class="memItemLeft" align="right" valign="top">G4double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_m_sim_p_m_t_response.html#a5dd826e00f45b0d3842e75a62b6a07f3">getCharge</a> (G4double pWavelengthKey)</td></tr>
+<tr class="memdesc:a5dd826e00f45b0d3842e75a62b6a07f3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieve the charge in PE from measurements for a given wavelength.  <a href="class_o_m_sim_p_m_t_response.html#a5dd826e00f45b0d3842e75a62b6a07f3">More...</a><br /></td></tr>
 <tr class="separator:a5dd826e00f45b0d3842e75a62b6a07f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a325c803af5fac436f794e6033faf16af"><td class="memItemLeft" align="right" valign="top">G4double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_m_sim_p_m_t_response.html#a325c803af5fac436f794e6033faf16af">getCharge</a> (G4double pWavelengthKey1, G4double pWavelengthKey2)</td></tr>
+<tr class="memdesc:a325c803af5fac436f794e6033faf16af"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieve the interpolated charge between two given wavelengths.  <a href="class_o_m_sim_p_m_t_response.html#a325c803af5fac436f794e6033faf16af">More...</a><br /></td></tr>
 <tr class="separator:a325c803af5fac436f794e6033faf16af"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7851c7a21806760d269dca32166e8741"><td class="memItemLeft" align="right" valign="top">G4double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_m_sim_p_m_t_response.html#a7851c7a21806760d269dca32166e8741">getTransitTime</a> (G4double pWavelengthKey)</td></tr>
+<tr class="memdesc:a7851c7a21806760d269dca32166e8741"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieve the transit time from measurements for a given wavelength.  <a href="class_o_m_sim_p_m_t_response.html#a7851c7a21806760d269dca32166e8741">More...</a><br /></td></tr>
 <tr class="separator:a7851c7a21806760d269dca32166e8741"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab468af69c57589f123efc7fb1df99810"><td class="memItemLeft" align="right" valign="top">G4double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_m_sim_p_m_t_response.html#ab468af69c57589f123efc7fb1df99810">getTransitTime</a> (G4double pWavelengthKey1, G4double pWavelengthKey2)</td></tr>
+<tr class="memdesc:ab468af69c57589f123efc7fb1df99810"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieve the interpolated transit time between two given wavelengths.  <a href="class_o_m_sim_p_m_t_response.html#ab468af69c57589f123efc7fb1df99810">More...</a><br /></td></tr>
 <tr class="separator:ab468af69c57589f123efc7fb1df99810"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5caca255c3562545a16de341005926cd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_o_m_sim_p_m_t_response_1_1_p_m_t_pulse.html">PMTPulse</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_m_sim_p_m_t_response.html#a5caca255c3562545a16de341005926cd">getPulseFromInterpolation</a> (G4double pWavelengthKey1, G4double pWavelengthKey2)</td></tr>
 <tr class="separator:a5caca255c3562545a16de341005926cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -299,6 +311,16 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>Loads the data from a given path and constructs a histogram based on the data.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pFilePath</td><td>Path to the data file. </td></tr>
+    <tr><td class="paramname">pTH2DName</td><td>Name of the histogram. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Pointer to the created histogram.</dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000002">Todo:</a></b></dt><dd>Add PMT data of all PMT types </dd></dl>
 
 </div>
 </div>
@@ -325,13 +347,14 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Get mean charge and SPE resolution from measurements for a given wavelength and sample from gaussian with mean PE and std SPE_res. There are only a limited number of scans, which one can select from the scan map. We use TGraph2D from ROOT to interpolate selected scan. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>This method returns the charge sampled from a Gaussian distribution with the mean and standard deviation of the single photon electron (SPE) resolution for the provided wavelength key.</p>
+<dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">pWavelengthKey</td><td>key for selecting a scan </td></tr>
+    <tr><td class="paramname">pWavelengthKey</td><td>The key for selecting a scan from the available measurements. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>G4double charge in PE </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>G4double The charge in PE. </dd></dl>
 
 </div>
 </div>
@@ -368,6 +391,15 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>This method interpolates the charge between the two provided wavelengths and then returns the charge sampled from a Gaussian distribution with the mean interpolated charge and interpolated single photon electron (SPE) resolution.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pWavelength1</td><td>The first wavelength key for interpolation. </td></tr>
+    <tr><td class="paramname">pWavelength2</td><td>The second wavelength key for interpolation. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>G4double The interpolated charge in PE. </dd></dl>
 
 </div>
 </div>
@@ -436,7 +468,7 @@ Private Attributes</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="struct_o_m_sim_p_m_t_response_1_1_p_m_t_pulse.html">PMTPulse</a> Struct with transit time, charge and detection probability </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="struct_o_m_sim_p_m_t_response_1_1_p_m_t_pulse.html" title="Represents the output pulse for a detected photon.">PMTPulse</a> Struct with transit time, charge and detection probability </dd></dl>
 
 </div>
 </div>
@@ -469,7 +501,7 @@ Private Attributes</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="struct_o_m_sim_p_m_t_response_1_1_p_m_t_pulse.html">PMTPulse</a> Struct with transit time, charge and detection probability </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="struct_o_m_sim_p_m_t_response_1_1_p_m_t_pulse.html" title="Represents the output pulse for a detected photon.">PMTPulse</a> Struct with transit time, charge and detection probability </dd></dl>
 
 </div>
 </div>
@@ -496,13 +528,14 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Get transit time and transit time spread from measurements for a given wavelength and sample from gaussian with mean TT and std TTS. There are only a limited number of scans, which one can select from the scan map. We use TGraph2D from ROOT to interpolate selected scan. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>This method returns the transit time sampled from a Gaussian distribution with the mean transit time and transit time spread for the provided wavelength key.</p>
+<dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">pWavelengthKey</td><td>key for selecting a scan </td></tr>
+    <tr><td class="paramname">pWavelengthKey</td><td>The key for selecting a scan from the available measurements. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>G4double transit time </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>G4double The transit time in ns. </dd></dl>
 
 </div>
 </div>
@@ -539,6 +572,15 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>This method interpolates the transit time between the two provided wavelengths and then returns the time sampled from a Gaussian distribution with the mean interpolated transit time and interpolated transit time spread.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pWavelength1</td><td>The first wavelength key for interpolation. </td></tr>
+    <tr><td class="paramname">pWavelength2</td><td>The second wavelength key for interpolation. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>G4double The interpolated transit time in ns. </dd></dl>
 
 </div>
 </div>
@@ -599,15 +641,16 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Transform a hit on the photocathode to a Pulse, with the transit time, charge and detection probability. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Transform a hit based on its location and photon wavelength to a PMT pulse, considering the transit time, charge, and detection probability.</p>
+<dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">pX</td><td>x position on photocathode </td></tr>
-    <tr><td class="paramname">pY</td><td>x position on photocathode </td></tr>
-    <tr><td class="paramname">pWavelength</td><td>Wavelength of photon </td></tr>
+    <tr><td class="paramname">pY</td><td>y position on photocathode </td></tr>
+    <tr><td class="paramname">pWavelength</td><td>Wavelength of the hitting photon </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="struct_o_m_sim_p_m_t_response_1_1_p_m_t_pulse.html">PMTPulse</a> Struct with transit time, charge and detection probability </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="struct_o_m_sim_p_m_t_response_1_1_p_m_t_pulse.html" title="Represents the output pulse for a detected photon.">PMTPulse</a> representing the processed hit. </dd></dl>
 
 </div>
 </div>
@@ -871,7 +914,7 @@ Private Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="class_o_m_sim_p_m_t_response.html">OMSimPMTResponse</a></li>
-    <li class="footer">Generated on Thu Aug 17 2023 13:58:54 for OMSim by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Fri Aug 18 2023 09:49:37 for OMSim by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>
