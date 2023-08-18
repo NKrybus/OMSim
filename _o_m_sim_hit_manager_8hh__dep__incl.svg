@@ -67,59 +67,59 @@
 <g id="node7" class="node">
 <title>Node7</title>
 <g id="a_node7"><a xlink:href="_o_m_sim_effective_area_analyisis_8cc.html" target="_top" xlink:title=" ">
-<polygon fill="white" stroke="black" points="442.5,-0.5 442.5,-19.5 617.5,-19.5 617.5,-0.5 442.5,-0.5"/>
-<text text-anchor="middle" x="530" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">OMSimEffectiveAreaAnalyisis.cc</text>
+<polygon fill="white" stroke="black" points="463.5,-0.5 463.5,-19.5 638.5,-19.5 638.5,-0.5 463.5,-0.5"/>
+<text text-anchor="middle" x="551" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">OMSimEffectiveAreaAnalyisis.cc</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node7 -->
-<g id="edge8" class="edge">
+<g id="edge9" class="edge">
 <title>Node1&#45;&gt;Node7</title>
-<path fill="none" stroke="midnightblue" d="M505,-102.67C511.56,-78.62 522.8,-37.39 527.66,-19.59"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="501.61,-101.8 502.35,-112.37 508.36,-103.64 501.61,-101.8"/>
+<path fill="none" stroke="midnightblue" d="M503.71,-102.36C506.77,-89.02 511.79,-70.88 519,-56 525.61,-42.37 536.25,-28.42 543.43,-19.74"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="500.26,-101.74 501.59,-112.25 507.1,-103.2 500.26,-101.74"/>
 </g>
-<!-- Node8 -->
-<g id="node8" class="node">
-<title>Node8</title>
-<g id="a_node8"><a xlink:href="effective__area_2src_2_o_m_sim_detector_construction_8cc.html" target="_top" xlink:title=" ">
+<!-- Node9 -->
+<g id="node9" class="node">
+<title>Node9</title>
+<g id="a_node9"><a xlink:href="effective__area_2src_2_o_m_sim_detector_construction_8cc.html" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="black" points="527.5,-56.5 527.5,-75.5 696.5,-75.5 696.5,-56.5 527.5,-56.5"/>
 <text text-anchor="middle" x="612" y="-63.5" font-family="Helvetica,sans-Serif" font-size="10.00">OMSimDetectorConstruction.cc</text>
 </a>
 </g>
 </g>
-<!-- Node1&#45;&gt;Node8 -->
-<g id="edge7" class="edge">
-<title>Node1&#45;&gt;Node8</title>
+<!-- Node1&#45;&gt;Node9 -->
+<g id="edge8" class="edge">
+<title>Node1&#45;&gt;Node9</title>
 <path fill="none" stroke="midnightblue" d="M527.25,-107.86C548.02,-97.85 576.02,-84.35 594.05,-75.65"/>
 <polygon fill="midnightblue" stroke="midnightblue" points="525.48,-104.83 517.99,-112.32 528.52,-111.13 525.48,-104.83"/>
-</g>
-<!-- Node9 -->
-<g id="node9" class="node">
-<title>Node9</title>
-<g id="a_node9"><a xlink:href="_o_m_sim__radioactive__decays_8cc.html" target="_top" xlink:title=" ">
-<polygon fill="white" stroke="black" points="714.5,-56.5 714.5,-75.5 879.5,-75.5 879.5,-56.5 714.5,-56.5"/>
-<text text-anchor="middle" x="797" y="-63.5" font-family="Helvetica,sans-Serif" font-size="10.00">OMSim_radioactive_decays.cc</text>
-</a>
-</g>
-</g>
-<!-- Node1&#45;&gt;Node9 -->
-<g id="edge9" class="edge">
-<title>Node1&#45;&gt;Node9</title>
-<path fill="none" stroke="midnightblue" d="M557.2,-110.6C613.33,-100.4 697.9,-85.02 750.16,-75.52"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="556.27,-107.21 547.06,-112.44 557.53,-114.1 556.27,-107.21"/>
 </g>
 <!-- Node10 -->
 <g id="node10" class="node">
 <title>Node10</title>
-<g id="a_node10"><a xlink:href="radioactive__decays_2src_2_o_m_sim_detector_construction_8cc.html" target="_top" xlink:title=" ">
-<polygon fill="white" stroke="black" points="897.5,-56.5 897.5,-75.5 1066.5,-75.5 1066.5,-56.5 897.5,-56.5"/>
-<text text-anchor="middle" x="982" y="-63.5" font-family="Helvetica,sans-Serif" font-size="10.00">OMSimDetectorConstruction.cc</text>
+<g id="a_node10"><a xlink:href="_o_m_sim__radioactive__decays_8cc.html" target="_top" xlink:title=" ">
+<polygon fill="white" stroke="black" points="714.5,-56.5 714.5,-75.5 879.5,-75.5 879.5,-56.5 714.5,-56.5"/>
+<text text-anchor="middle" x="797" y="-63.5" font-family="Helvetica,sans-Serif" font-size="10.00">OMSim_radioactive_decays.cc</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node10 -->
 <g id="edge10" class="edge">
 <title>Node1&#45;&gt;Node10</title>
+<path fill="none" stroke="midnightblue" d="M557.2,-110.6C613.33,-100.4 697.9,-85.02 750.16,-75.52"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="556.27,-107.21 547.06,-112.44 557.53,-114.1 556.27,-107.21"/>
+</g>
+<!-- Node11 -->
+<g id="node11" class="node">
+<title>Node11</title>
+<g id="a_node11"><a xlink:href="radioactive__decays_2src_2_o_m_sim_detector_construction_8cc.html" target="_top" xlink:title=" ">
+<polygon fill="white" stroke="black" points="897.5,-56.5 897.5,-75.5 1066.5,-75.5 1066.5,-56.5 897.5,-56.5"/>
+<text text-anchor="middle" x="982" y="-63.5" font-family="Helvetica,sans-Serif" font-size="10.00">OMSimDetectorConstruction.cc</text>
+</a>
+</g>
+</g>
+<!-- Node1&#45;&gt;Node11 -->
+<g id="edge11" class="edge">
+<title>Node1&#45;&gt;Node11</title>
 <path fill="none" stroke="midnightblue" d="M571.61,-112.98C661.22,-102.94 814.03,-85.82 905.76,-75.54"/>
 <polygon fill="midnightblue" stroke="midnightblue" points="571.08,-109.51 561.54,-114.11 571.86,-116.47 571.08,-109.51"/>
 </g>
@@ -127,37 +127,52 @@
 <g id="node5" class="node">
 <title>Node5</title>
 <g id="a_node5"><a xlink:href="common_2framework_2src_2_o_m_sim_event_action_8cc.html" target="_top" xlink:title=" ">
-<polygon fill="white" stroke="black" points="142,-0.5 142,-19.5 266,-19.5 266,-0.5 142,-0.5"/>
-<text text-anchor="middle" x="204" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">OMSimEventAction.cc</text>
+<polygon fill="white" stroke="black" points="23,-0.5 23,-19.5 147,-19.5 147,-0.5 23,-0.5"/>
+<text text-anchor="middle" x="85" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">OMSimEventAction.cc</text>
 </a>
 </g>
 </g>
 <!-- Node4&#45;&gt;Node5 -->
 <g id="edge4" class="edge">
 <title>Node4&#45;&gt;Node5</title>
-<path fill="none" stroke="midnightblue" d="M345.89,-53.57C311.94,-43.38 263.01,-28.7 232.39,-19.52"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="344.89,-56.92 355.48,-56.44 346.91,-50.22 344.89,-56.92"/>
+<path fill="none" stroke="midnightblue" d="M326.77,-54.66C270.26,-44.46 184.88,-29.04 132.16,-19.52"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="326.16,-58.11 336.62,-56.44 327.4,-51.22 326.16,-58.11"/>
 </g>
 <!-- Node6 -->
 <g id="node6" class="node">
 <title>Node6</title>
 <g id="a_node6"><a xlink:href="_o_m_sim__effective__area_8cc.html" target="_top" xlink:title="Main for the calculation of effective areas.">
-<polygon fill="white" stroke="black" points="284,-0.5 284,-19.5 424,-19.5 424,-0.5 284,-0.5"/>
-<text text-anchor="middle" x="354" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">OMSim_effective_area.cc</text>
+<polygon fill="white" stroke="black" points="165,-0.5 165,-19.5 305,-19.5 305,-0.5 165,-0.5"/>
+<text text-anchor="middle" x="235" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">OMSim_effective_area.cc</text>
 </a>
 </g>
 </g>
 <!-- Node4&#45;&gt;Node6 -->
 <g id="edge5" class="edge">
 <title>Node4&#45;&gt;Node6</title>
-<path fill="none" stroke="midnightblue" d="M374.15,-47.27C369.03,-38.05 362.98,-27.17 358.86,-19.75"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="371.13,-49.04 379.05,-56.08 377.25,-45.64 371.13,-49.04"/>
+<path fill="none" stroke="midnightblue" d="M350.63,-52.91C322.62,-42.75 283.3,-28.51 258.5,-19.52"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="349.8,-56.33 360.39,-56.44 352.18,-49.75 349.8,-56.33"/>
 </g>
 <!-- Node4&#45;&gt;Node7 -->
 <g id="edge6" class="edge">
 <title>Node4&#45;&gt;Node7</title>
-<path fill="none" stroke="midnightblue" d="M416.7,-52.91C444.15,-42.75 482.67,-28.51 506.97,-19.52"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="415.3,-49.69 407.13,-56.44 417.73,-56.26 415.3,-49.69"/>
+<path fill="none" stroke="midnightblue" d="M420.17,-53.3C451.64,-43.13 496.49,-28.62 524.66,-19.52"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="418.9,-50.04 410.46,-56.44 421.05,-56.7 418.9,-50.04"/>
+</g>
+<!-- Node8 -->
+<g id="node8" class="node">
+<title>Node8</title>
+<g id="a_node8"><a xlink:href="_o_m_sim__supernova_8cc.html" target="_top" xlink:title=" ">
+<polygon fill="white" stroke="black" points="323,-0.5 323,-19.5 445,-19.5 445,-0.5 323,-0.5"/>
+<text text-anchor="middle" x="384" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">OMSim_supernova.cc</text>
+</a>
+</g>
+</g>
+<!-- Node4&#45;&gt;Node8 -->
+<g id="edge7" class="edge">
+<title>Node4&#45;&gt;Node8</title>
+<path fill="none" stroke="midnightblue" d="M384,-45.8C384,-36.91 384,-26.78 384,-19.75"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="380.5,-46.08 384,-56.08 387.5,-46.08 380.5,-46.08"/>
 </g>
 </g>
 </svg>

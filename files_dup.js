@@ -15,6 +15,7 @@ var files_dup =
     [ "OMSim.hh", "_o_m_sim_8hh.html", null ],
     [ "OMSim_effective_area.cc", "_o_m_sim__effective__area_8cc.html", "_o_m_sim__effective__area_8cc" ],
     [ "OMSim_radioactive_decays.cc", "_o_m_sim__radioactive__decays_8cc.html", "_o_m_sim__radioactive__decays_8cc" ],
+    [ "OMSim_supernova.cc", "_o_m_sim__supernova_8cc.html", "_o_m_sim__supernova_8cc" ],
     [ "OMSimAngularScan.cc", "_o_m_sim_angular_scan_8cc.html", null ],
     [ "OMSimAngularScan.hh", "_o_m_sim_angular_scan_8hh.html", null ],
     [ "OMSimCommandArgsTable.hh", "_o_m_sim_command_args_table_8hh.html", "_o_m_sim_command_args_table_8hh" ],
