@@ -34,6 +34,7 @@ var NAVTREE =
       [ "File Members", "globals.html", [
         [ "All", "globals.html", null ],
         [ "Functions", "globals_func.html", null ],
+        [ "Variables", "globals_vars.html", null ],
         [ "Typedefs", "globals_type.html", null ],
         [ "Macros", "globals_defs.html", null ]
       ] ]
@@ -59,7 +60,7 @@ var NAVTREEINDEX =
 "class_g4_radioactive_decay.html#ab450aa133b96ead6300d65f39564d090",
 "class_o_m_sim_g4_scintillation.html#a3bc8d26ab87c8afb2bac4f00453a4000",
 "classabc_detector_component.html#a3d796bd0c3a6e22e8bbd11765b98d2e8",
-"radioactive__decays_2include_2_o_m_sim_event_action_8hh.html"
+"functions_vars_u.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

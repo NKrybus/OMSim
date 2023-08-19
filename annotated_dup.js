@@ -36,6 +36,8 @@ var annotated_dup =
     [ "mDOM", "classm_d_o_m.html", "classm_d_o_m" ],
     [ "mDOMFlasher", "classm_d_o_m_flasher.html", "classm_d_o_m_flasher" ],
     [ "mDOMHarness", "classm_d_o_m_harness.html", "classm_d_o_m_harness" ],
+    [ "mdomPrimaryGeneratorAction", "classmdom_primary_generator_action.html", "classmdom_primary_generator_action" ],
+    [ "mdomSNTools", "classmdom_s_n_tools.html", "classmdom_s_n_tools" ],
     [ "NoOptics", "class_no_optics.html", "class_no_optics" ],
     [ "OMSim", "class_o_m_sim.html", "class_o_m_sim" ],
     [ "OMSimCommandArgsTable", "class_o_m_sim_command_args_table.html", "class_o_m_sim_command_args_table" ],

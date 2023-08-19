@@ -36,6 +36,7 @@ var menudata={children:[
 {text:"d",url:"globals.html#index_d"},
 {text:"e",url:"globals.html#index_e"},
 {text:"f",url:"globals.html#index_f"},
+{text:"g",url:"globals.html#index_g"},
 {text:"i",url:"globals.html#index_i"},
 {text:"l",url:"globals.html#index_l"},
 {text:"m",url:"globals.html#index_m"},
@@ -48,6 +49,7 @@ var menudata={children:[
 {text:"u",url:"globals.html#index_u"},
 {text:"w",url:"globals.html#index_w"}]},
 {text:"Functions",url:"globals_func.html"},
+{text:"Variables",url:"globals_vars.html"},
 {text:"Typedefs",url:"globals_type.html"},
 {text:"Macros",url:"globals_defs.html",children:[
 {text:"a",url:"globals_defs.html#index_a"},

@@ -12,6 +12,9 @@ Check \mbox{\hyperlink{class_reflective_surface_a5dff8f89e20cf4e629024fe3a1b1d78
 \item Subtract CAD penetrator from the vessel.
 \item Investigate why the gel does not reach the photocathode edge. (Should the photocathode edge end earlier? Gel, Vessel, and PMT shape are correct.)  
 \end{DoxyItemize}
+\item[Member \mbox{\hyperlink{mdom_s_n_tools_8hh_a201de1f13cd772baa18a6e5aa6b43e39}{Get\+Slopes}} (std\+::vector$<$ G4double $>$ xvals, std\+::vector$<$ G4double $>$ yvals, G4int n\+Points, std\+::vector$<$ G4double $>$ \&x, std\+::vector$<$ G4double $>$ \&f, std\+::vector$<$ G4double $>$ \&a, std\+::vector$<$ G4double $>$ \&Fc)]\label{todo__todo000009}%
+\Hypertarget{todo__todo000009}%
+check whether the copy can just be eliminated  
 \item[Member \mbox{\hyperlink{class_l_o_m16_a93c141790620554394cdf9864096d011}{LOM16\+::$\sim$\+LOM16}} ()]\label{todo__todo000005}%
 \Hypertarget{todo__todo000005}%
 -\/ 18/07/22 Solve collisions of CAD with PMTs
@@ -25,6 +28,15 @@ Check \mbox{\hyperlink{class_reflective_surface_a5dff8f89e20cf4e629024fe3a1b1d78
 \item[Member \mbox{\hyperlink{classm_d_o_m_harness_aa192aa85786a58ad121567fbb7a78f06}{m\+DOMHarness\+::m\+DOMHarness}} (\mbox{\hyperlink{classm_d_o_m}{m\+DOM}} $\ast$p\+MDOM, \mbox{\hyperlink{class_input_data_manager}{Input\+Data\+Manager}} $\ast$p\+Data)]\label{todo__todo000008}%
 \Hypertarget{todo__todo000008}%
 -\/ Write documentation and parse current comments into Doxygen style  
+\item[Member \mbox{\hyperlink{classmdom_s_n_tools_a97cdf95c246c690dd1592801cf9058b5}{mdom\+SNTools\+::findtime}} (G4double time, std\+::vector$<$ G4double $>$ timearray)]\label{todo__todo000012}%
+\Hypertarget{todo__todo000012}%
+Consider renaming \textquotesingle{}time\textquotesingle{} to a more generic term.  
+\item[Member \mbox{\hyperlink{classmdom_s_n_tools_a88281615aad901f478eb4c9ddc03cb82}{mdom\+SNTools\+::Inverse\+Cumul}} (std\+::vector$<$ G4double $>$ xvals, std\+::vector$<$ G4double $>$ yvals, G4int n\+Points)]\label{todo__todo000010}%
+\Hypertarget{todo__todo000010}%
+Reconsider the requirement for the \textquotesingle{}n\+Points\textquotesingle{} parameter.  
+\item[Member \mbox{\hyperlink{classmdom_s_n_tools_aa243dffac2c1455088546a19218819d8}{mdom\+SNTools\+::Inverse\+Cumul\+Algorithm}} (std\+::vector$<$ G4double $>$ x, std\+::vector$<$ G4double $>$ f, std\+::vector$<$ G4double $>$ a, std\+::vector$<$ G4double $>$ Fc, G4int n\+Points)]\label{todo__todo000011}%
+\Hypertarget{todo__todo000011}%
+Re-\/evaluate the necessity of the \textquotesingle{}n\+Points\textquotesingle{} parameter.  
 \item[File \mbox{\hyperlink{_o_m_sim_d_e_g_g_harness_8hh}{OMSim\+DEGGHarness.hh}} ]\label{todo__todo000003}%
 \Hypertarget{todo__todo000003}%
 Write documentation

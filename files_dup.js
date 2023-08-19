@@ -11,6 +11,12 @@ var files_dup =
     [ "G4Scintillation.hh", "_g4_scintillation_8hh.html", [
       [ "OMSimG4Scintillation", "class_o_m_sim_g4_scintillation.html", "class_o_m_sim_g4_scintillation" ]
     ] ],
+    [ "mdomPrimaryGeneratorAction.cc", "mdom_primary_generator_action_8cc.html", null ],
+    [ "mdomPrimaryGeneratorAction.hh", "mdom_primary_generator_action_8hh.html", [
+      [ "mdomPrimaryGeneratorAction", "classmdom_primary_generator_action.html", "classmdom_primary_generator_action" ]
+    ] ],
+    [ "mdomSNTools.cc", "mdom_s_n_tools_8cc.html", "mdom_s_n_tools_8cc" ],
+    [ "mdomSNTools.hh", "mdom_s_n_tools_8hh.html", "mdom_s_n_tools_8hh" ],
     [ "OMSim.cc", "_o_m_sim_8cc.html", null ],
     [ "OMSim.hh", "_o_m_sim_8hh.html", null ],
     [ "OMSim_effective_area.cc", "_o_m_sim__effective__area_8cc.html", "_o_m_sim__effective__area_8cc" ],
