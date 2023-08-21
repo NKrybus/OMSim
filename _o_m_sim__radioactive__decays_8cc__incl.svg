@@ -141,7 +141,7 @@
 <!-- Node8 -->
 <g id="node8" class="node">
 <title>Node8</title>
-<g id="a_node8"><a xlink:href="common_2framework_2include_2_o_m_sim_event_action_8hh.html" target="_top" xlink:title=" ">
+<g id="a_node8"><a xlink:href="_o_m_sim_event_action_8hh.html" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="black" points="1635,-235.5 1635,-254.5 1760,-254.5 1760,-235.5 1635,-235.5"/>
 <text text-anchor="middle" x="1697.5" y="-242.5" font-family="Helvetica,sans-Serif" font-size="10.00">OMSimEventAction.hh</text>
 </a>

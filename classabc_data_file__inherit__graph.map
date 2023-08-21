@@ -1,9 +1,10 @@
 <map id="abcDataFile" name="abcDataFile">
-<area shape="rect" id="node1" title="This is an abstract base class that provides an interface for handling data files in the simulation." alt="" coords="36,5,135,32"/>
-<area shape="rect" id="node2" href="$class_reflective_surface.html" title="This class is responsible for defining new reflective surfaces using data parsed from a JSON file." alt="" coords="17,80,153,107"/>
-<area shape="rect" id="node3" href="$classabc_material_data.html" title="Abstract base class for material data extraction from a json file." alt="" coords="177,80,308,107"/>
-<area shape="rect" id="node4" href="$class_ice_cube_ice.html" title="This class is responsible for the creation and property extraction of IceCube&#39;s ice." alt="" coords="5,155,99,181"/>
-<area shape="rect" id="node5" href="$class_no_optics.html" title="This class is responsible for handling materials without defined optical properties." alt="" coords="123,155,205,181"/>
-<area shape="rect" id="node6" href="$class_refraction_and_absorption.html" title="This class is responsible for handling materials with both a defined refractive index and absorption ..." alt="" coords="229,155,413,181"/>
-<area shape="rect" id="node7" href="$class_refraction_only.html" title="This class is responsible for handling materials with only defined refractive index." alt="" coords="438,155,557,181"/>
+<area shape="rect" id="node1" title="This is an abstract base class that provides an interface for handling data files in the simulation." alt="" coords="111,5,209,32"/>
+<area shape="rect" id="node2" href="$class_reflective_surface.html" title="This class is responsible for defining new reflective surfaces using data parsed from a JSON file." alt="" coords="5,80,141,107"/>
+<area shape="rect" id="node3" href="$class_scintillation_properties.html" title="This class is responsible for parsing scintillation properties to already defined materials." alt="" coords="165,80,331,107"/>
+<area shape="rect" id="node4" href="$classabc_material_data.html" title="Abstract base class for material data extraction from a json file." alt="" coords="355,80,485,107"/>
+<area shape="rect" id="node5" href="$class_ice_cube_ice.html" title="This class is responsible for the creation and property extraction of IceCube&#39;s ice." alt="" coords="183,155,276,181"/>
+<area shape="rect" id="node6" href="$class_no_optics.html" title="This class is responsible for handling materials without defined optical properties." alt="" coords="301,155,382,181"/>
+<area shape="rect" id="node7" href="$class_refraction_and_absorption.html" title="This class is responsible for handling materials with both a defined refractive index and absorption ..." alt="" coords="407,155,591,181"/>
+<area shape="rect" id="node8" href="$class_refraction_only.html" title="This class is responsible for handling materials with only defined refractive index." alt="" coords="615,155,734,181"/>
 </map>

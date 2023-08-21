@@ -1,0 +1,133 @@
+\hypertarget{class_scintillation_properties}{}\doxysection{Scintillation\+Properties Class Reference}
+\label{class_scintillation_properties}\index{ScintillationProperties@{ScintillationProperties}}
+
+
+This class is responsible for parsing scintillation properties to already defined materials.  
+
+
+
+
+Inheritance diagram for Scintillation\+Properties\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=204pt]{class_scintillation_properties__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Scintillation\+Properties\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=204pt]{class_scintillation_properties__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_scintillation_properties_a03dca72bd4861b8500283dc15c0864e0}{Scintillation\+Properties}} (G4\+String p\+Filename)
+\item 
+void \mbox{\hyperlink{class_scintillation_properties_a6c16439c71032b0df72dfff7aa776e69}{extract\+Information}} ()
+\item 
+void \mbox{\hyperlink{class_scintillation_properties_a2f5e62b56857772f598738907d3ed210}{extract\+Spectrum}} ()
+\item 
+void \mbox{\hyperlink{class_scintillation_properties_a3c9fea78ae17e8a52784e4a5fbd09342}{extract\+Life\+Times}} (G4\+String p\+Temperature)
+\item 
+double \mbox{\hyperlink{class_scintillation_properties_aea085bb70df07316232155e4dd617e60}{get\+Life\+Time\+Temperature\+Range}} (double \&p\+Min\+Temp, double \&p\+Max\+Temp)
+\item 
+std\+::pair$<$ std\+::vector$<$ G4double $>$, std\+::vector$<$ G4double $>$ $>$ \mbox{\hyperlink{class_scintillation_properties_afd7145815d2baf2008a755c487d0a613}{extract\+Life\+Times\+For\+Temperature}} (G4\+String p\+Temperature)
+\item 
+void \mbox{\hyperlink{class_scintillation_properties_a5e7da3437242c6c025edff017adf2c1b}{weight\+Life\+Times\+Amplitudes}} (std\+::vector$<$ G4double $>$ \&p\+Amplitudes, double p\+T1, double p\+T2)
+\item 
+void \mbox{\hyperlink{class_scintillation_properties_a077745b265c40f5636e18f50105a7133}{extract\+Yield}} (G4\+String p\+Temperature)
+\item 
+void \mbox{\hyperlink{class_scintillation_properties_af525e651ef632ab272850c743ea9c76f}{find\+MPT}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+G4\+Material\+Properties\+Table $\ast$ \mbox{\hyperlink{class_scintillation_properties_a63544a170f82e5862fd96180f49551f1}{m\+MPT}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_scintillation_properties_a03dca72bd4861b8500283dc15c0864e0}\label{class_scintillation_properties_a03dca72bd4861b8500283dc15c0864e0}} 
+\index{ScintillationProperties@{ScintillationProperties}!ScintillationProperties@{ScintillationProperties}}
+\index{ScintillationProperties@{ScintillationProperties}!ScintillationProperties@{ScintillationProperties}}
+\doxysubsubsection{\texorpdfstring{ScintillationProperties()}{ScintillationProperties()}}
+{\footnotesize\ttfamily Scintillation\+Properties\+::\+Scintillation\+Properties (\begin{DoxyParamCaption}\item[{G4\+String}]{p\+Filename }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_scintillation_properties_a6c16439c71032b0df72dfff7aa776e69}\label{class_scintillation_properties_a6c16439c71032b0df72dfff7aa776e69}} 
+\index{ScintillationProperties@{ScintillationProperties}!extractInformation@{extractInformation}}
+\index{extractInformation@{extractInformation}!ScintillationProperties@{ScintillationProperties}}
+\doxysubsubsection{\texorpdfstring{extractInformation()}{extractInformation()}}
+{\footnotesize\ttfamily void Scintillation\+Properties\+::extract\+Information (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classabc_data_file_afc01d4904129c5b170f0299f96ec7f8a}{abc\+Data\+File}}.
+
+\mbox{\Hypertarget{class_scintillation_properties_a3c9fea78ae17e8a52784e4a5fbd09342}\label{class_scintillation_properties_a3c9fea78ae17e8a52784e4a5fbd09342}} 
+\index{ScintillationProperties@{ScintillationProperties}!extractLifeTimes@{extractLifeTimes}}
+\index{extractLifeTimes@{extractLifeTimes}!ScintillationProperties@{ScintillationProperties}}
+\doxysubsubsection{\texorpdfstring{extractLifeTimes()}{extractLifeTimes()}}
+{\footnotesize\ttfamily void Scintillation\+Properties\+::extract\+Life\+Times (\begin{DoxyParamCaption}\item[{G4\+String}]{p\+Temperature }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_scintillation_properties_afd7145815d2baf2008a755c487d0a613}\label{class_scintillation_properties_afd7145815d2baf2008a755c487d0a613}} 
+\index{ScintillationProperties@{ScintillationProperties}!extractLifeTimesForTemperature@{extractLifeTimesForTemperature}}
+\index{extractLifeTimesForTemperature@{extractLifeTimesForTemperature}!ScintillationProperties@{ScintillationProperties}}
+\doxysubsubsection{\texorpdfstring{extractLifeTimesForTemperature()}{extractLifeTimesForTemperature()}}
+{\footnotesize\ttfamily std\+::pair$<$ std\+::vector$<$ G4double $>$, std\+::vector$<$ G4double $>$ $>$ Scintillation\+Properties\+::extract\+Life\+Times\+For\+Temperature (\begin{DoxyParamCaption}\item[{G4\+String}]{p\+Temperature }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_scintillation_properties_a2f5e62b56857772f598738907d3ed210}\label{class_scintillation_properties_a2f5e62b56857772f598738907d3ed210}} 
+\index{ScintillationProperties@{ScintillationProperties}!extractSpectrum@{extractSpectrum}}
+\index{extractSpectrum@{extractSpectrum}!ScintillationProperties@{ScintillationProperties}}
+\doxysubsubsection{\texorpdfstring{extractSpectrum()}{extractSpectrum()}}
+{\footnotesize\ttfamily void Scintillation\+Properties\+::extract\+Spectrum (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_scintillation_properties_a077745b265c40f5636e18f50105a7133}\label{class_scintillation_properties_a077745b265c40f5636e18f50105a7133}} 
+\index{ScintillationProperties@{ScintillationProperties}!extractYield@{extractYield}}
+\index{extractYield@{extractYield}!ScintillationProperties@{ScintillationProperties}}
+\doxysubsubsection{\texorpdfstring{extractYield()}{extractYield()}}
+{\footnotesize\ttfamily void Scintillation\+Properties\+::extract\+Yield (\begin{DoxyParamCaption}\item[{G4\+String}]{p\+Temperature }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_scintillation_properties_af525e651ef632ab272850c743ea9c76f}\label{class_scintillation_properties_af525e651ef632ab272850c743ea9c76f}} 
+\index{ScintillationProperties@{ScintillationProperties}!findMPT@{findMPT}}
+\index{findMPT@{findMPT}!ScintillationProperties@{ScintillationProperties}}
+\doxysubsubsection{\texorpdfstring{findMPT()}{findMPT()}}
+{\footnotesize\ttfamily void Scintillation\+Properties\+::find\+MPT (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_scintillation_properties_aea085bb70df07316232155e4dd617e60}\label{class_scintillation_properties_aea085bb70df07316232155e4dd617e60}} 
+\index{ScintillationProperties@{ScintillationProperties}!getLifeTimeTemperatureRange@{getLifeTimeTemperatureRange}}
+\index{getLifeTimeTemperatureRange@{getLifeTimeTemperatureRange}!ScintillationProperties@{ScintillationProperties}}
+\doxysubsubsection{\texorpdfstring{getLifeTimeTemperatureRange()}{getLifeTimeTemperatureRange()}}
+{\footnotesize\ttfamily double Scintillation\+Properties\+::get\+Life\+Time\+Temperature\+Range (\begin{DoxyParamCaption}\item[{double \&}]{p\+Min\+Temp,  }\item[{double \&}]{p\+Max\+Temp }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_scintillation_properties_a5e7da3437242c6c025edff017adf2c1b}\label{class_scintillation_properties_a5e7da3437242c6c025edff017adf2c1b}} 
+\index{ScintillationProperties@{ScintillationProperties}!weightLifeTimesAmplitudes@{weightLifeTimesAmplitudes}}
+\index{weightLifeTimesAmplitudes@{weightLifeTimesAmplitudes}!ScintillationProperties@{ScintillationProperties}}
+\doxysubsubsection{\texorpdfstring{weightLifeTimesAmplitudes()}{weightLifeTimesAmplitudes()}}
+{\footnotesize\ttfamily void Scintillation\+Properties\+::weight\+Life\+Times\+Amplitudes (\begin{DoxyParamCaption}\item[{std\+::vector$<$ G4double $>$ \&}]{p\+Amplitudes,  }\item[{double}]{p\+T1,  }\item[{double}]{p\+T2 }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_scintillation_properties_a63544a170f82e5862fd96180f49551f1}\label{class_scintillation_properties_a63544a170f82e5862fd96180f49551f1}} 
+\index{ScintillationProperties@{ScintillationProperties}!mMPT@{mMPT}}
+\index{mMPT@{mMPT}!ScintillationProperties@{ScintillationProperties}}
+\doxysubsubsection{\texorpdfstring{mMPT}{mMPT}}
+{\footnotesize\ttfamily G4\+Material\+Properties\+Table$\ast$ Scintillation\+Properties\+::m\+MPT\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_o_m_sim_data_file_types_8hh}{OMSim\+Data\+File\+Types.\+hh}}\item 
+\mbox{\hyperlink{_o_m_sim_data_file_types_8cc}{OMSim\+Data\+File\+Types.\+cc}}\end{DoxyCompactItemize}

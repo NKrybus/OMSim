@@ -3,6 +3,7 @@ var hierarchy =
     [ "abcDataFile", "classabc_data_file.html", [
       [ "ReflectiveSurface", "class_reflective_surface.html", null ],
       [ "ReflectiveSurface", "class_reflective_surface.html", null ],
+      [ "ScintillationProperties", "class_scintillation_properties.html", null ],
       [ "abcMaterialData", "classabc_material_data.html", [
         [ "IceCubeIce", "class_ice_cube_ice.html", null ],
         [ "IceCubeIce", "class_ice_cube_ice.html", null ],
@@ -36,7 +37,6 @@ var hierarchy =
     [ "effectiveAreaResult", "structeffective_area_result.html", null ],
     [ "EventInfoManager", "class_event_info_manager.html", null ],
     [ "G4UserEventAction", null, [
-      [ "OMSimEventAction", "class_o_m_sim_event_action.html", null ],
       [ "OMSimEventAction", "class_o_m_sim_event_action.html", null ]
     ] ],
     [ "G4UserRunAction", null, [

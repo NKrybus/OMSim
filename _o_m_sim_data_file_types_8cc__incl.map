@@ -1,9 +1,10 @@
 <map id="OMSimDataFileTypes.cc" name="OMSimDataFileTypes.cc">
-<area shape="rect" id="node1" title=" " alt="" coords="839,5,1018,32"/>
-<area shape="rect" id="node2" href="$_o_m_sim_data_file_types_8hh.html" title="Collection of classes and methods to handle material creation from user data in json files." alt="" coords="499,80,679,107"/>
+<area shape="rect" id="node1" title=" " alt="" coords="913,5,1091,32"/>
+<area shape="rect" id="node2" href="$_o_m_sim_data_file_types_8hh.html" title="Collection of classes and methods to handle material creation from user data in json files." alt="" coords="468,80,648,107"/>
 <area shape="rect" id="node8" href="$_o_m_sim_logger_8hh.html" title=" " alt="" coords="708,244,840,271"/>
-<area shape="rect" id="node14" href="$_o_m_sim_input_data_8hh.html" title="Input data from external files are read and saved to memory." alt="" coords="707,80,860,107"/>
-<area shape="rect" id="node15" title=" " alt="" coords="1039,80,1114,107"/>
+<area shape="rect" id="node14" href="$_o_m_sim_input_data_8hh.html" title="Input data from external files are read and saved to memory." alt="" coords="764,80,917,107"/>
+<area shape="rect" id="node15" title=" " alt="" coords="1040,80,1121,107"/>
+<area shape="rect" id="node16" title=" " alt="" coords="1146,80,1221,107"/>
 <area shape="rect" id="node3" title=" " alt="" coords="5,162,148,189"/>
 <area shape="rect" id="node4" title=" " alt="" coords="416,162,607,189"/>
 <area shape="rect" id="node5" title=" " alt="" coords="631,162,789,189"/>

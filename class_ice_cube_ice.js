@@ -11,5 +11,5 @@ var class_ice_cube_ice =
     [ "mSpice_a400inv", "class_ice_cube_ice.html#a1d7f8974a17a9f604c56bd535cad96f9", null ],
     [ "mSpice_be400inv", "class_ice_cube_ice.html#ac100e7b3a092ade6255ac3ff156efebe", null ],
     [ "mSpiceDepth", "class_ice_cube_ice.html#ab4bb3c52de20e3e2703fc9886338f620", null ],
-    [ "mSpiceDepth_pos", "class_ice_cube_ice.html#aadb45ff725aece8d0c5380c0c391da7b", null ]
+    [ "mSpiceDepth_pos", "class_ice_cube_ice.html#a2931d719308ecb6d6bc34733ac6e0f8e", null ]
 ];

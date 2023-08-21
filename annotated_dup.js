@@ -60,5 +60,6 @@ var annotated_dup =
     [ "pDOM", "classp_d_o_m.html", "classp_d_o_m" ],
     [ "ReflectiveSurface", "class_reflective_surface.html", "class_reflective_surface" ],
     [ "RefractionAndAbsorption", "class_refraction_and_absorption.html", "class_refraction_and_absorption" ],
-    [ "RefractionOnly", "class_refraction_only.html", "class_refraction_only" ]
+    [ "RefractionOnly", "class_refraction_only.html", "class_refraction_only" ],
+    [ "ScintillationProperties", "class_scintillation_properties.html", "class_scintillation_properties" ]
 ];

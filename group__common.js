@@ -144,7 +144,7 @@ var group__common =
       [ "mSpice_a400inv", "class_ice_cube_ice.html#a1d7f8974a17a9f604c56bd535cad96f9", null ],
       [ "mSpice_be400inv", "class_ice_cube_ice.html#ac100e7b3a092ade6255ac3ff156efebe", null ],
       [ "mSpiceDepth", "class_ice_cube_ice.html#ab4bb3c52de20e3e2703fc9886338f620", null ],
-      [ "mSpiceDepth_pos", "class_ice_cube_ice.html#aadb45ff725aece8d0c5380c0c391da7b", null ]
+      [ "mSpiceDepth_pos", "class_ice_cube_ice.html#a2931d719308ecb6d6bc34733ac6e0f8e", null ]
     ] ],
     [ "ReflectiveSurface", "class_reflective_surface.html", [
       [ "ReflectiveSurface", "class_reflective_surface.html#a7cddce7d1786a5039a117b01a8a3511f", null ],
@@ -153,6 +153,18 @@ var group__common =
       [ "getOpticalSurfaceModel", "class_reflective_surface.html#a50cd398b79ecdeb97d03dcb614c016c8", null ],
       [ "getSurfaceType", "class_reflective_surface.html#ae3e32d0fa4d3fba60478f4aaa3d537c5", null ],
       [ "mOpticalSurface", "class_reflective_surface.html#a366da1b1126e219615c342b9bc9a4e16", null ]
+    ] ],
+    [ "ScintillationProperties", "class_scintillation_properties.html", [
+      [ "ScintillationProperties", "class_scintillation_properties.html#a03dca72bd4861b8500283dc15c0864e0", null ],
+      [ "extractInformation", "class_scintillation_properties.html#a6c16439c71032b0df72dfff7aa776e69", null ],
+      [ "extractLifeTimes", "class_scintillation_properties.html#a3c9fea78ae17e8a52784e4a5fbd09342", null ],
+      [ "extractLifeTimesForTemperature", "class_scintillation_properties.html#afd7145815d2baf2008a755c487d0a613", null ],
+      [ "extractSpectrum", "class_scintillation_properties.html#a2f5e62b56857772f598738907d3ed210", null ],
+      [ "extractYield", "class_scintillation_properties.html#a077745b265c40f5636e18f50105a7133", null ],
+      [ "findMPT", "class_scintillation_properties.html#af525e651ef632ab272850c743ea9c76f", null ],
+      [ "getLifeTimeTemperatureRange", "class_scintillation_properties.html#aea085bb70df07316232155e4dd617e60", null ],
+      [ "weightLifeTimesAmplitudes", "class_scintillation_properties.html#a5e7da3437242c6c025edff017adf2c1b", null ],
+      [ "mMPT", "class_scintillation_properties.html#a63544a170f82e5862fd96180f49551f1", null ]
     ] ],
     [ "HitStats", "struct_hit_stats.html", [
       [ "event_distance", "struct_hit_stats.html#a239bb18751a36e1056f408438bef3626", null ],

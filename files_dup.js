@@ -49,14 +49,10 @@ var files_dup =
     [ "OMSimEffectiveAreaAnalyisis.hh", "_o_m_sim_effective_area_analyisis_8hh.html", [
       [ "effectiveAreaResult", "structeffective_area_result.html", "structeffective_area_result" ]
     ] ],
-    [ "common/framework/src/OMSimEventAction.cc", "common_2framework_2src_2_o_m_sim_event_action_8cc.html", null ],
-    [ "radioactive_decays/src/OMSimEventAction.cc", "radioactive__decays_2src_2_o_m_sim_event_action_8cc.html", null ],
-    [ "common/framework/include/OMSimEventAction.hh", "common_2framework_2include_2_o_m_sim_event_action_8hh.html", [
+    [ "OMSimEventAction.cc", "_o_m_sim_event_action_8cc.html", null ],
+    [ "OMSimEventAction.hh", "_o_m_sim_event_action_8hh.html", [
       [ "OMSimEventAction", "class_o_m_sim_event_action.html", "class_o_m_sim_event_action" ],
       [ "EventInfoManager", "class_event_info_manager.html", "class_event_info_manager" ]
-    ] ],
-    [ "radioactive_decays/include/OMSimEventAction.hh", "radioactive__decays_2include_2_o_m_sim_event_action_8hh.html", [
-      [ "OMSimEventAction", "class_o_m_sim_event_action.html", "class_o_m_sim_event_action" ]
     ] ],
     [ "OMSimG4RadioactiveDecay.cc", "_o_m_sim_g4_radioactive_decay_8cc.html", null ],
     [ "OMSimG4RadioactiveDecay.hh", "_o_m_sim_g4_radioactive_decay_8hh.html", "_o_m_sim_g4_radioactive_decay_8hh" ],
