@@ -1,13 +1,15 @@
 var files_dup =
 [
+    [ "0common.h", "0common_8h.html", null ],
+    [ "1effectiveArea.h", "1effective_area_8h.html", null ],
+    [ "2radioactive.h", "2radioactive_8h.html", null ],
+    [ "3SN.h", "3_s_n_8h.html", null ],
+    [ "4bubble.h", "4bubble_8h.html", null ],
     [ "abcDetectorComponent.cc", "abc_detector_component_8cc.html", null ],
     [ "abcDetectorComponent.hh", "abc_detector_component_8hh.html", [
       [ "Component", "structabc_detector_component_1_1_component.html", "structabc_detector_component_1_1_component" ]
     ] ],
-    [ "bubble.h", "bubble_8h.html", null ],
     [ "CADMesh.hh", "_c_a_d_mesh_8hh.html", "_c_a_d_mesh_8hh" ],
-    [ "common.h", "common_8h.html", null ],
-    [ "effectiveArea.h", "effective_area_8h.html", null ],
     [ "G4Scintillation.hh", "_g4_scintillation_8hh.html", [
       [ "OMSimG4Scintillation", "class_o_m_sim_g4_scintillation.html", "class_o_m_sim_g4_scintillation" ]
     ] ],
@@ -132,7 +134,5 @@ var files_dup =
     [ "OMSimTrackingAction.hh", "_o_m_sim_tracking_action_8hh.html", [
       [ "OMSimTrackingAction", "class_o_m_sim_tracking_action.html", "class_o_m_sim_tracking_action" ]
     ] ],
-    [ "OMSimUIinterface.hh", "_o_m_sim_u_iinterface_8hh.html", null ],
-    [ "radioactive.h", "radioactive_8h.html", null ],
-    [ "SN.h", "_s_n_8h.html", null ]
+    [ "OMSimUIinterface.hh", "_o_m_sim_u_iinterface_8hh.html", null ]
 ];

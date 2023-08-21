@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['abcdetectorcomponent_2ecc_965',['abcDetectorComponent.cc',['../abc_detector_component_8cc.html',1,'']]],
-  ['abcdetectorcomponent_2ehh_966',['abcDetectorComponent.hh',['../abc_detector_component_8hh.html',1,'']]]
+  ['0common_2eh_965',['0common.h',['../0common_8h.html',1,'']]]
 ];
