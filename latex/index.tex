@@ -13,8 +13,7 @@ First you should install Geant4 following \href{https://geant4-userdoc.web.cern.
 \DoxyCodeLine{-\/DGEANT4\_INSTALL\_DATA=ON -\/DGEANT4\_USE\_GDML=ON -\/DGEANT4\_USE\_OPENGL\_X11=ON -\/DGEANT4\_USE\_QT=ON -\/DGEANT4\_USE\_RAYTRACER\_X11=ON -\/DGEANT4\_USE\_XM=ON}
 
 \end{DoxyCode}
-
-
+ \hypertarget{index_autotoc_md3}{}\doxysubsubsection{Requirements}\label{index_autotoc_md3}
 There are a few dependencies. You can install them using the following command\+:
 
 
@@ -22,7 +21,15 @@ There are a few dependencies. You can install them using the following command\+
 \DoxyCodeLine{apt-\/get -\/y install libxerces-\/c-\/dev libxmu-\/dev libxpm-\/dev libglu1-\/mesa-\/dev qtbase5-\/dev libmotif-\/dev libargtable2-\/0 libboost-\/all-\/dev libqt53dextras5}
 
 \end{DoxyCode}
- If you needed to install more, add a comment it in the Git project, so we can complete the above command 😊\hypertarget{index_autotoc_md3}{}\doxysubsubsection{Compiling OMSim}\label{index_autotoc_md3}
+ If you needed to install more, add a comment it in the Git project, so we can complete the above command 😊
+
+Also you will need ROOT. Download the last binary (e.\+g. at time of writing latest version is 6.\+28/04 \href{https://root.cern/releases/release-62804/}{\texttt{ https\+://root.\+cern/releases/release-\/62804/}}), or compile the source distribution. For simplicity add the source in your .bashrc (or you will have to source it yourself manually every time you run or compile \mbox{\hyperlink{class_o_m_sim}{OMSim}}). 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{export ROOTSYS= YOUR\_ROOT\_PATH}
+\DoxyCodeLine{source \$ROOTSYS/bin/thisroot.sh}
+
+\end{DoxyCode}
+\hypertarget{index_autotoc_md4}{}\doxysubsubsection{Compiling OMSim}\label{index_autotoc_md4}
 
 \begin{DoxyItemize}
 \item Clone this branch.
@@ -52,7 +59,7 @@ If you have to compile the project several times you should add an alias in your
 
 \begin{DoxyItemize}
 \item Finally, just run {\ttfamily make} or {\ttfamily make -\/j N} where N is number of cores you want to use for the compilation.
-\end{DoxyItemize}\hypertarget{index_autotoc_md4}{}\doxysection{Available studies}\label{index_autotoc_md4}
+\end{DoxyItemize}\hypertarget{index_autotoc_md5}{}\doxysection{Available studies}\label{index_autotoc_md5}
 \mbox{\hyperlink{class_o_m_sim}{OMSim}} has been utilized in a range of studies, each simulating unique physics, thereby necessitating distinct Physicslist/analysis setups. In this repository, we have compiled a selection of these studies, each contained within its own folder and accompanied by its own main file. Currently available\+:
 
 
