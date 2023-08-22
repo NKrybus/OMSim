@@ -56,11 +56,11 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "0common_8h.html",
-"class_c_a_d_mesh_1_1_c_a_d_mesh_template.html",
-"class_g4_radioactive_decay.html#a8471ae9c3bb38cd8aa3188c42483a153",
-"class_o_m_sim_g4_scintillation.html#a136cdd00f76f00faa5b53ac495437ceb",
-"class_scintillation_properties.html#a6c16439c71032b0df72dfff7aa776e69",
-"functions_vars_d.html"
+"_o_m_sim_s_n_tools_8hh.html#a81c5d05a6eeda1b946ebde8d7128f66b",
+"class_g4_radioactive_decay.html#a0a86baa780675d3ac586db4e7a3288e8",
+"class_o_m_sim_detector_construction.html#a53a692e5caa084d308b181c6cd90e485",
+"class_o_m_sim_primary_generator_action.html#af46a133334c7b9424c5d682ce1e04116",
+"classmdom_primary_generator_action.html#acaece8cb85a18b0d54ee7abc0a01e76b"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
