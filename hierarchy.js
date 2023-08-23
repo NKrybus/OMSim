@@ -1,6 +1,7 @@
 var hierarchy =
 [
     [ "abcDataFile", "classabc_data_file.html", [
+      [ "CustomProperties", "class_custom_properties.html", null ],
       [ "ReflectiveSurface", "class_reflective_surface.html", null ],
       [ "ReflectiveSurface", "class_reflective_surface.html", null ],
       [ "ScintillationProperties", "class_scintillation_properties.html", null ],

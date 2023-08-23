@@ -21,6 +21,7 @@ var annotated_dup =
     [ "abcDetectorComponent", "classabc_detector_component.html", "classabc_detector_component" ],
     [ "abcMaterialData", "classabc_material_data.html", "classabc_material_data" ],
     [ "AngularScan", "class_angular_scan.html", "class_angular_scan" ],
+    [ "CustomProperties", "class_custom_properties.html", "class_custom_properties" ],
     [ "DEGG", "class_d_e_g_g.html", "class_d_e_g_g" ],
     [ "DEggHarness", "class_d_egg_harness.html", "class_d_egg_harness" ],
     [ "effectiveAreaResult", "structeffective_area_result.html", "structeffective_area_result" ],
