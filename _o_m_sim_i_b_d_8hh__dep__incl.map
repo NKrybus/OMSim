@@ -1,4 +1,5 @@
 <map id="OMSimIBD.hh" name="OMSimIBD.hh">
-<area shape="rect" id="node1" title="This file contains the class in charge of generating positrons from IBD of supernova antineutrino int..." alt="" coords="5,5,117,32"/>
-<area shape="rect" id="node2" href="$_o_m_sim_i_b_d_8cc.html" title=" " alt="" coords="6,80,117,107"/>
+<area shape="rect" id="node1" title="This file contains the class in charge of generating positrons from IBD of supernova antineutrino int..." alt="" coords="167,5,279,32"/>
+<area shape="rect" id="node2" href="$mdom_primary_generator_action_8cc.html" title="Main primary generator. Chooses between generators 0 (gps), 1 (SN enes), 2 (SN ibd),..." alt="" coords="5,80,244,107"/>
+<area shape="rect" id="node3" href="$_o_m_sim_i_b_d_8cc.html" title=" " alt="" coords="268,80,379,107"/>
 </map>

@@ -1,0 +1,150 @@
+\hypertarget{mdom_analysis_manager_8cc}{}\doxysection{mdom\+Analysis\+Manager.\+cc File Reference}
+\label{mdom_analysis_manager_8cc}\index{mdomAnalysisManager.cc@{mdomAnalysisManager.cc}}
+
+
+Analyze data and write output files.  
+
+
+Include dependency graph for mdom\+Analysis\+Manager.\+cc\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{mdom_analysis_manager_8cc__incl}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyAuthor}{Author}
+Lew Classen (\href{mailto:lclassen@wwu.de}{\texttt{ lclassen@wwu.\+de}}), Cristian Jesus Lozano Mariscal (\href{mailto:c.lozano@wwu.de}{\texttt{ c.\+lozano@wwu.\+de}})
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+Geant4 10.\+7 
+\end{DoxyVersion}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+G4double \mbox{\hyperlink{mdom_analysis_manager_8cc_ad8bd85aec7d665516e836493473c8b80}{gposX}}
+\item 
+G4double \mbox{\hyperlink{mdom_analysis_manager_8cc_a7797568f42df304159ee5b6b3a673c53}{gposY}}
+\item 
+G4double \mbox{\hyperlink{mdom_analysis_manager_8cc_a2569eada1e86234a4f01752f973192f6}{gposZ}}
+\item 
+G4double \mbox{\hyperlink{mdom_analysis_manager_8cc_a1973b274f4ff413537f29a31399c5643}{gtheta}}
+\item 
+G4double \mbox{\hyperlink{mdom_analysis_manager_8cc_a23e9eb3b2233ae15aa727362e2d5475c}{gphi}}
+\item 
+G4double \mbox{\hyperlink{mdom_analysis_manager_8cc_a31cae6514fa22fc5717a8759266bb70c}{gt\+Min}}
+\item 
+G4double \mbox{\hyperlink{mdom_analysis_manager_8cc_a03187e15819d1e49aecb523930a452f2}{gf\+Min}}
+\item 
+G4double \mbox{\hyperlink{mdom_analysis_manager_8cc_a5c53575b103e80147f0e15e7a0f9db52}{g\+Radius}}
+\item 
+G4double \mbox{\hyperlink{mdom_analysis_manager_8cc_a32866e871e72092e4709bc7106f65598}{g\+Height}}
+\item 
+G4bool \mbox{\hyperlink{mdom_analysis_manager_8cc_a8dd90d6ddc3f48ffb280f9f8918645c4}{g\+QE}}
+\item 
+G4bool \mbox{\hyperlink{mdom_analysis_manager_8cc_a25d801b773a616972572505fff11187d}{g\+QEweigh}}
+\item 
+G4int \mbox{\hyperlink{mdom_analysis_manager_8cc_ae555f7b8fca950bc4ac7d5a35db6dc80}{g\+SNGun}}
+\item 
+G4double \mbox{\hyperlink{mdom_analysis_manager_8cc_a1569eacc2b4cb3b099b03505a3592f28}{g\+Distance}}
+\item 
+G4int \mbox{\hyperlink{mdom_analysis_manager_8cc_ae6e2b04ca4298c31360df26d51d790c3}{gn\+\_\+m\+DOMs}}
+\item 
+G4bool \mbox{\hyperlink{mdom_analysis_manager_8cc_ab20052af4123721d0997f996fbbcfe75}{gfixmeanenergy}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{mdom_analysis_manager_8cc_a1569eacc2b4cb3b099b03505a3592f28}\label{mdom_analysis_manager_8cc_a1569eacc2b4cb3b099b03505a3592f28}} 
+\index{mdomAnalysisManager.cc@{mdomAnalysisManager.cc}!gDistance@{gDistance}}
+\index{gDistance@{gDistance}!mdomAnalysisManager.cc@{mdomAnalysisManager.cc}}
+\doxysubsubsection{\texorpdfstring{gDistance}{gDistance}}
+{\footnotesize\ttfamily G4double g\+Distance\hspace{0.3cm}{\ttfamily [extern]}}
+
+\mbox{\Hypertarget{mdom_analysis_manager_8cc_ab20052af4123721d0997f996fbbcfe75}\label{mdom_analysis_manager_8cc_ab20052af4123721d0997f996fbbcfe75}} 
+\index{mdomAnalysisManager.cc@{mdomAnalysisManager.cc}!gfixmeanenergy@{gfixmeanenergy}}
+\index{gfixmeanenergy@{gfixmeanenergy}!mdomAnalysisManager.cc@{mdomAnalysisManager.cc}}
+\doxysubsubsection{\texorpdfstring{gfixmeanenergy}{gfixmeanenergy}}
+{\footnotesize\ttfamily G4bool gfixmeanenergy\hspace{0.3cm}{\ttfamily [extern]}}
+
+\mbox{\Hypertarget{mdom_analysis_manager_8cc_a03187e15819d1e49aecb523930a452f2}\label{mdom_analysis_manager_8cc_a03187e15819d1e49aecb523930a452f2}} 
+\index{mdomAnalysisManager.cc@{mdomAnalysisManager.cc}!gfMin@{gfMin}}
+\index{gfMin@{gfMin}!mdomAnalysisManager.cc@{mdomAnalysisManager.cc}}
+\doxysubsubsection{\texorpdfstring{gfMin}{gfMin}}
+{\footnotesize\ttfamily G4double gf\+Min}
+
+\mbox{\Hypertarget{mdom_analysis_manager_8cc_a32866e871e72092e4709bc7106f65598}\label{mdom_analysis_manager_8cc_a32866e871e72092e4709bc7106f65598}} 
+\index{mdomAnalysisManager.cc@{mdomAnalysisManager.cc}!gHeight@{gHeight}}
+\index{gHeight@{gHeight}!mdomAnalysisManager.cc@{mdomAnalysisManager.cc}}
+\doxysubsubsection{\texorpdfstring{gHeight}{gHeight}}
+{\footnotesize\ttfamily G4double g\+Height\hspace{0.3cm}{\ttfamily [extern]}}
+
+\mbox{\Hypertarget{mdom_analysis_manager_8cc_ae6e2b04ca4298c31360df26d51d790c3}\label{mdom_analysis_manager_8cc_ae6e2b04ca4298c31360df26d51d790c3}} 
+\index{mdomAnalysisManager.cc@{mdomAnalysisManager.cc}!gn\_mDOMs@{gn\_mDOMs}}
+\index{gn\_mDOMs@{gn\_mDOMs}!mdomAnalysisManager.cc@{mdomAnalysisManager.cc}}
+\doxysubsubsection{\texorpdfstring{gn\_mDOMs}{gn\_mDOMs}}
+{\footnotesize\ttfamily G4int gn\+\_\+m\+DOMs\hspace{0.3cm}{\ttfamily [extern]}}
+
+\mbox{\Hypertarget{mdom_analysis_manager_8cc_a23e9eb3b2233ae15aa727362e2d5475c}\label{mdom_analysis_manager_8cc_a23e9eb3b2233ae15aa727362e2d5475c}} 
+\index{mdomAnalysisManager.cc@{mdomAnalysisManager.cc}!gphi@{gphi}}
+\index{gphi@{gphi}!mdomAnalysisManager.cc@{mdomAnalysisManager.cc}}
+\doxysubsubsection{\texorpdfstring{gphi}{gphi}}
+{\footnotesize\ttfamily G4double gphi\hspace{0.3cm}{\ttfamily [extern]}}
+
+\mbox{\Hypertarget{mdom_analysis_manager_8cc_ad8bd85aec7d665516e836493473c8b80}\label{mdom_analysis_manager_8cc_ad8bd85aec7d665516e836493473c8b80}} 
+\index{mdomAnalysisManager.cc@{mdomAnalysisManager.cc}!gposX@{gposX}}
+\index{gposX@{gposX}!mdomAnalysisManager.cc@{mdomAnalysisManager.cc}}
+\doxysubsubsection{\texorpdfstring{gposX}{gposX}}
+{\footnotesize\ttfamily G4double gposX\hspace{0.3cm}{\ttfamily [extern]}}
+
+\mbox{\Hypertarget{mdom_analysis_manager_8cc_a7797568f42df304159ee5b6b3a673c53}\label{mdom_analysis_manager_8cc_a7797568f42df304159ee5b6b3a673c53}} 
+\index{mdomAnalysisManager.cc@{mdomAnalysisManager.cc}!gposY@{gposY}}
+\index{gposY@{gposY}!mdomAnalysisManager.cc@{mdomAnalysisManager.cc}}
+\doxysubsubsection{\texorpdfstring{gposY}{gposY}}
+{\footnotesize\ttfamily G4double gposY\hspace{0.3cm}{\ttfamily [extern]}}
+
+\mbox{\Hypertarget{mdom_analysis_manager_8cc_a2569eada1e86234a4f01752f973192f6}\label{mdom_analysis_manager_8cc_a2569eada1e86234a4f01752f973192f6}} 
+\index{mdomAnalysisManager.cc@{mdomAnalysisManager.cc}!gposZ@{gposZ}}
+\index{gposZ@{gposZ}!mdomAnalysisManager.cc@{mdomAnalysisManager.cc}}
+\doxysubsubsection{\texorpdfstring{gposZ}{gposZ}}
+{\footnotesize\ttfamily G4double gposZ\hspace{0.3cm}{\ttfamily [extern]}}
+
+\mbox{\Hypertarget{mdom_analysis_manager_8cc_a8dd90d6ddc3f48ffb280f9f8918645c4}\label{mdom_analysis_manager_8cc_a8dd90d6ddc3f48ffb280f9f8918645c4}} 
+\index{mdomAnalysisManager.cc@{mdomAnalysisManager.cc}!gQE@{gQE}}
+\index{gQE@{gQE}!mdomAnalysisManager.cc@{mdomAnalysisManager.cc}}
+\doxysubsubsection{\texorpdfstring{gQE}{gQE}}
+{\footnotesize\ttfamily G4bool g\+QE\hspace{0.3cm}{\ttfamily [extern]}}
+
+\mbox{\Hypertarget{mdom_analysis_manager_8cc_a25d801b773a616972572505fff11187d}\label{mdom_analysis_manager_8cc_a25d801b773a616972572505fff11187d}} 
+\index{mdomAnalysisManager.cc@{mdomAnalysisManager.cc}!gQEweigh@{gQEweigh}}
+\index{gQEweigh@{gQEweigh}!mdomAnalysisManager.cc@{mdomAnalysisManager.cc}}
+\doxysubsubsection{\texorpdfstring{gQEweigh}{gQEweigh}}
+{\footnotesize\ttfamily G4bool g\+QEweigh\hspace{0.3cm}{\ttfamily [extern]}}
+
+\mbox{\Hypertarget{mdom_analysis_manager_8cc_a5c53575b103e80147f0e15e7a0f9db52}\label{mdom_analysis_manager_8cc_a5c53575b103e80147f0e15e7a0f9db52}} 
+\index{mdomAnalysisManager.cc@{mdomAnalysisManager.cc}!gRadius@{gRadius}}
+\index{gRadius@{gRadius}!mdomAnalysisManager.cc@{mdomAnalysisManager.cc}}
+\doxysubsubsection{\texorpdfstring{gRadius}{gRadius}}
+{\footnotesize\ttfamily G4double g\+Radius\hspace{0.3cm}{\ttfamily [extern]}}
+
+\mbox{\Hypertarget{mdom_analysis_manager_8cc_ae555f7b8fca950bc4ac7d5a35db6dc80}\label{mdom_analysis_manager_8cc_ae555f7b8fca950bc4ac7d5a35db6dc80}} 
+\index{mdomAnalysisManager.cc@{mdomAnalysisManager.cc}!gSNGun@{gSNGun}}
+\index{gSNGun@{gSNGun}!mdomAnalysisManager.cc@{mdomAnalysisManager.cc}}
+\doxysubsubsection{\texorpdfstring{gSNGun}{gSNGun}}
+{\footnotesize\ttfamily G4int g\+SNGun\hspace{0.3cm}{\ttfamily [extern]}}
+
+\mbox{\Hypertarget{mdom_analysis_manager_8cc_a1973b274f4ff413537f29a31399c5643}\label{mdom_analysis_manager_8cc_a1973b274f4ff413537f29a31399c5643}} 
+\index{mdomAnalysisManager.cc@{mdomAnalysisManager.cc}!gtheta@{gtheta}}
+\index{gtheta@{gtheta}!mdomAnalysisManager.cc@{mdomAnalysisManager.cc}}
+\doxysubsubsection{\texorpdfstring{gtheta}{gtheta}}
+{\footnotesize\ttfamily G4double gtheta\hspace{0.3cm}{\ttfamily [extern]}}
+
+\mbox{\Hypertarget{mdom_analysis_manager_8cc_a31cae6514fa22fc5717a8759266bb70c}\label{mdom_analysis_manager_8cc_a31cae6514fa22fc5717a8759266bb70c}} 
+\index{mdomAnalysisManager.cc@{mdomAnalysisManager.cc}!gtMin@{gtMin}}
+\index{gtMin@{gtMin}!mdomAnalysisManager.cc@{mdomAnalysisManager.cc}}
+\doxysubsubsection{\texorpdfstring{gtMin}{gtMin}}
+{\footnotesize\ttfamily G4double gt\+Min\hspace{0.3cm}{\ttfamily [extern]}}
+

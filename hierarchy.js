@@ -37,6 +37,10 @@ var hierarchy =
     [ "abcDetectorComponent::Component", "structabc_detector_component_1_1_component.html", null ],
     [ "effectiveAreaResult", "structeffective_area_result.html", null ],
     [ "EventInfoManager", "class_event_info_manager.html", null ],
+    [ "EvtStat", "struct_evt_stat.html", null ],
+    [ "G4UImessenger", null, [
+      [ "mdomPrimaryGeneratorMessenger", "classmdom_primary_generator_messenger.html", null ]
+    ] ],
     [ "G4UserEventAction", null, [
       [ "OMSimEventAction", "class_o_m_sim_event_action.html", null ]
     ] ],
@@ -45,6 +49,7 @@ var hierarchy =
       [ "OMSimRunAction", "class_o_m_sim_run_action.html", null ]
     ] ],
     [ "G4UserSteppingAction", null, [
+      [ "OMSimSteppingAction", "class_o_m_sim_stepping_action.html", null ],
       [ "OMSimSteppingAction", "class_o_m_sim_stepping_action.html", null ],
       [ "OMSimSteppingAction", "class_o_m_sim_stepping_action.html", null ]
     ] ],
@@ -63,6 +68,7 @@ var hierarchy =
     ] ],
     [ "G4VUserPhysicsList", null, [
       [ "OMSimPhysicsList", "class_o_m_sim_physics_list.html", null ],
+      [ "OMSimPhysicsList", "class_o_m_sim_physics_list.html", null ],
       [ "OMSimPhysicsList", "class_o_m_sim_physics_list.html", null ]
     ] ],
     [ "G4VUserPrimaryGeneratorAction", null, [
@@ -71,10 +77,12 @@ var hierarchy =
       [ "mdomPrimaryGeneratorAction", "classmdom_primary_generator_action.html", null ]
     ] ],
     [ "GlobalPosition", "struct_global_position.html", null ],
+    [ "HitStat", "struct_hit_stat.html", null ],
     [ "HitStats", "struct_hit_stats.html", null ],
     [ "IsotopeDecays", "class_isotope_decays.html", null ],
     [ "CADMesh::File::Item", "struct_c_a_d_mesh_1_1_file_1_1_item.html", null ],
     [ "CADMesh::File::Lexer", "class_c_a_d_mesh_1_1_file_1_1_lexer.html", null ],
+    [ "MdomAnalysisManager", "class_mdom_analysis_manager.html", null ],
     [ "CADMesh::Mesh", "class_c_a_d_mesh_1_1_mesh.html", null ],
     [ "OMSim", "class_o_m_sim.html", null ],
     [ "OMSimCommandArgsTable", "class_o_m_sim_command_args_table.html", null ],
