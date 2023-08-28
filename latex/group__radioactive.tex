@@ -22,5 +22,7 @@ The simulation considers the measured scintillation parameters and the specific 
 Important customizations in the simulation involve the extension of Geant4\textquotesingle{}s original scintillation class, facilitating the simulation of more complex decay processes (8 lifetimes), and the modification the \mbox{\hyperlink{class_g4_radioactive_decay}{G4\+Radioactive\+Decay}} class which amends default decay time of isotopes. The scintillation properties of the \mbox{\hyperlink{classm_d_o_m}{m\+DOM}} glass were measured in the scope of several theses. For a summary check section 11.\+2 of \href{https://zenodo.org/record/8121321}{\texttt{ this thesis}}. \doxysubsection*{Classes}
 \begin{DoxyCompactItemize}
 \item 
+struct \mbox{\hyperlink{struct_decay_stats}{Decay\+Stats}}
+\begin{DoxyCompactList}\small\item\em A structure to store information about decays. \end{DoxyCompactList}\item 
 class \mbox{\hyperlink{class_isotope_decays}{Isotope\+Decays}}
 \begin{DoxyCompactList}\small\item\em A class for simulating isotope decays inside the pressure vessel and PMT glass. \end{DoxyCompactList}\end{DoxyCompactItemize}

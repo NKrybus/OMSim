@@ -35,6 +35,7 @@ var hierarchy =
       [ "CADMesh::TessellatedMesh", "class_c_a_d_mesh_1_1_tessellated_mesh.html", null ]
     ] ],
     [ "abcDetectorComponent::Component", "structabc_detector_component_1_1_component.html", null ],
+    [ "DecayStats", "struct_decay_stats.html", null ],
     [ "effectiveAreaResult", "structeffective_area_result.html", null ],
     [ "EventInfoManager", "class_event_info_manager.html", null ],
     [ "EvtStat", "struct_evt_stat.html", null ],

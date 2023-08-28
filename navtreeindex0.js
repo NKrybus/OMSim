@@ -116,7 +116,7 @@ var NAVTREEINDEX0 =
 "_o_m_sim__effective__area_8cc.html#a239de85d44d0a9929b6dfec86f1926f1":[4,0,17,0],
 "_o_m_sim__radioactive__decays_8cc.html":[4,0,18],
 "_o_m_sim__radioactive__decays_8cc.html#a0ddf1224851353fc92bfbff6f499fa97":[4,0,18,1],
-"_o_m_sim__radioactive__decays_8cc.html#a239de85d44d0a9929b6dfec86f1926f1":[4,0,18,0],
+"_o_m_sim__radioactive__decays_8cc.html#a16277de59cf29e154e86d3af5f367b40":[4,0,18,0],
 "_o_m_sim__supernova_8cc.html":[4,0,19],
 "_o_m_sim__supernova_8cc.html#a0ddf1224851353fc92bfbff6f499fa97":[4,0,19,0],
 "_o_m_sim__supernova_8cc.html#a2ed660d3245a0d96041b77dfc92ba000":[4,0,19,1],

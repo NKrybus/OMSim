@@ -21,18 +21,18 @@ Collaboration diagram for Isotope\+Decays\+:
 \mbox{\hyperlink{class_isotope_decays_a73a736b434677c48db553c691407210f}{Isotope\+Decays}} (G4double p\+Production\+Radius)
 \item 
 \mbox{\hyperlink{class_isotope_decays_a2c725f29ba7fbed8106022a3eb355a8e}{$\sim$\+Isotope\+Decays}} ()
+\item 
+void \mbox{\hyperlink{class_isotope_decays_a24e0cf04f0185935ab7035e89190405e}{simulate\+Decays\+In\+Optical\+Module}} (G4double p\+Time\+Window)
+\item 
+void \mbox{\hyperlink{class_isotope_decays_a864ca83f9126152936b99ef0e15a10a1}{set\+Optical\+Module}} (\mbox{\hyperlink{class_optical_module}{Optical\+Module}} $\ast$p\+Optical\+Module)
 \end{DoxyCompactItemize}
 \doxysubsection*{Private Member Functions}
 \begin{DoxyCompactItemize}
 \item 
 void \mbox{\hyperlink{class_isotope_decays_ac66380997ebbf87d2a4430be28c48642}{general\+GPS}} ()
 \begin{DoxyCompactList}\small\item\em Configures common GPS commands for the radioactive decays. \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{class_isotope_decays_a0700be393576351bd63e4991f09a1f3e}{pressure\+Vessel\+Isotope\+GPS}} (G4\+String p\+Isotope)
-\begin{DoxyCompactList}\small\item\em Configures GPS for the production and decay of an isotope within the pressure vessel of an OM. \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{class_isotope_decays_a84413bb43de1e2e22fe81e8883170512}{PMTisotope\+GPS}} (G4\+String p\+Isotope, G4int p\+PMTNr)
-\begin{DoxyCompactList}\small\item\em Configures GPS for isotope decays in PMT glass of an specific PMT. \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{class_isotope_decays_af5e0b53f22072e3563bd36b0075cbdce}{simulate\+Decays\+In\+Time\+Window}} ()
-\item 
+void \mbox{\hyperlink{class_isotope_decays_a301e3bc7d977dfc78fd16fc7334a53d2}{configure\+Isotope\+GPS}} (G4\+String Isotope, G4\+String location, G4int opt\+Param=-\/999)
+\begin{DoxyCompactList}\small\item\em Configures GPS for the production and decay of an isotope within a specified location. \end{DoxyCompactList}\item 
 std\+::map$<$ G4\+String, G4int $>$ \mbox{\hyperlink{class_isotope_decays_a83b37c7574ecd99faa8d5ffb09add113}{calculate\+Number\+Of\+Decays}} (G4\+Material\+Properties\+Table $\ast$p\+MPT, G4double p\+Time\+Window, G4double p\+Mass)
 \end{DoxyCompactItemize}
 \doxysubsection*{Private Attributes}
@@ -68,45 +68,40 @@ G4double \mbox{\hyperlink{class_isotope_decays_acd6830b0720976474f7be3c65d764090
 \doxysubsubsection{\texorpdfstring{calculateNumberOfDecays()}{calculateNumberOfDecays()}}
 {\footnotesize\ttfamily std\+::map$<$ G4\+String, G4int $>$ Isotope\+Decays\+::calculate\+Number\+Of\+Decays (\begin{DoxyParamCaption}\item[{G4\+Material\+Properties\+Table $\ast$}]{p\+MPT,  }\item[{G4double}]{p\+Time\+Window,  }\item[{G4double}]{p\+Mass }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
 
+\mbox{\Hypertarget{class_isotope_decays_a301e3bc7d977dfc78fd16fc7334a53d2}\label{class_isotope_decays_a301e3bc7d977dfc78fd16fc7334a53d2}} 
+\index{IsotopeDecays@{IsotopeDecays}!configureIsotopeGPS@{configureIsotopeGPS}}
+\index{configureIsotopeGPS@{configureIsotopeGPS}!IsotopeDecays@{IsotopeDecays}}
+\doxysubsubsection{\texorpdfstring{configureIsotopeGPS()}{configureIsotopeGPS()}}
+{\footnotesize\ttfamily void Isotope\+Decays\+::configure\+Isotope\+GPS (\begin{DoxyParamCaption}\item[{G4\+String}]{Isotope,  }\item[{G4\+String}]{p\+Volume\+Name,  }\item[{G4int}]{opt\+Param = {\ttfamily -\/999} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+If the daughter of the configured isotope is unstable, it will also decay in the same position as its mother
+
+
+\begin{DoxyParams}{Parameters}
+{\em Isotope} & The isotope which is going to be produced. \\
+\hline
+{\em p\+Volume\+Name} & The volume name where the isotope decays. \\
+\hline
+{\em opt\+Param} & An optional parameter related to the location. For \char`\"{}\+PMT\char`\"{}, it could be the PMT number. \\
+\hline
+\end{DoxyParams}
 \mbox{\Hypertarget{class_isotope_decays_ac66380997ebbf87d2a4430be28c48642}\label{class_isotope_decays_ac66380997ebbf87d2a4430be28c48642}} 
 \index{IsotopeDecays@{IsotopeDecays}!generalGPS@{generalGPS}}
 \index{generalGPS@{generalGPS}!IsotopeDecays@{IsotopeDecays}}
 \doxysubsubsection{\texorpdfstring{generalGPS()}{generalGPS()}}
 {\footnotesize\ttfamily void Isotope\+Decays\+::general\+GPS (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
 
-\mbox{\Hypertarget{class_isotope_decays_a84413bb43de1e2e22fe81e8883170512}\label{class_isotope_decays_a84413bb43de1e2e22fe81e8883170512}} 
-\index{IsotopeDecays@{IsotopeDecays}!PMTisotopeGPS@{PMTisotopeGPS}}
-\index{PMTisotopeGPS@{PMTisotopeGPS}!IsotopeDecays@{IsotopeDecays}}
-\doxysubsubsection{\texorpdfstring{PMTisotopeGPS()}{PMTisotopeGPS()}}
-{\footnotesize\ttfamily void Isotope\+Decays\+::\+PMTisotope\+GPS (\begin{DoxyParamCaption}\item[{G4\+String}]{Isotope,  }\item[{G4int}]{PMTNr }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+\mbox{\Hypertarget{class_isotope_decays_a864ca83f9126152936b99ef0e15a10a1}\label{class_isotope_decays_a864ca83f9126152936b99ef0e15a10a1}} 
+\index{IsotopeDecays@{IsotopeDecays}!setOpticalModule@{setOpticalModule}}
+\index{setOpticalModule@{setOpticalModule}!IsotopeDecays@{IsotopeDecays}}
+\doxysubsubsection{\texorpdfstring{setOpticalModule()}{setOpticalModule()}}
+{\footnotesize\ttfamily void Isotope\+Decays\+::set\+Optical\+Module (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_optical_module}{Optical\+Module}} $\ast$}]{p\+Optical\+Module }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
-If the daughter of the configured isotope is unstable, it will also decay in the same position as its mother
-
-
-\begin{DoxyParams}{Parameters}
-{\em Isotope} & The isotope which is going to be produced. \\
-\hline
-{\em PMTNr} & Number of PMT where the decays are simulated \\
-\hline
-\end{DoxyParams}
-\mbox{\Hypertarget{class_isotope_decays_a0700be393576351bd63e4991f09a1f3e}\label{class_isotope_decays_a0700be393576351bd63e4991f09a1f3e}} 
-\index{IsotopeDecays@{IsotopeDecays}!pressureVesselIsotopeGPS@{pressureVesselIsotopeGPS}}
-\index{pressureVesselIsotopeGPS@{pressureVesselIsotopeGPS}!IsotopeDecays@{IsotopeDecays}}
-\doxysubsubsection{\texorpdfstring{pressureVesselIsotopeGPS()}{pressureVesselIsotopeGPS()}}
-{\footnotesize\ttfamily void Isotope\+Decays\+::pressure\+Vessel\+Isotope\+GPS (\begin{DoxyParamCaption}\item[{G4\+String}]{Isotope }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
-
-If the daughter of the configured isotope is unstable, it will also decay in the same position as its mother
-
-
-\begin{DoxyParams}{Parameters}
-{\em Isotope} & The isotope which is going to be produced. \\
-\hline
-\end{DoxyParams}
-\mbox{\Hypertarget{class_isotope_decays_af5e0b53f22072e3563bd36b0075cbdce}\label{class_isotope_decays_af5e0b53f22072e3563bd36b0075cbdce}} 
-\index{IsotopeDecays@{IsotopeDecays}!simulateDecaysInTimeWindow@{simulateDecaysInTimeWindow}}
-\index{simulateDecaysInTimeWindow@{simulateDecaysInTimeWindow}!IsotopeDecays@{IsotopeDecays}}
-\doxysubsubsection{\texorpdfstring{simulateDecaysInTimeWindow()}{simulateDecaysInTimeWindow()}}
-{\footnotesize\ttfamily void Isotope\+Decays\+::simulate\+Decays\+In\+Time\+Window (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+\mbox{\Hypertarget{class_isotope_decays_a24e0cf04f0185935ab7035e89190405e}\label{class_isotope_decays_a24e0cf04f0185935ab7035e89190405e}} 
+\index{IsotopeDecays@{IsotopeDecays}!simulateDecaysInOpticalModule@{simulateDecaysInOpticalModule}}
+\index{simulateDecaysInOpticalModule@{simulateDecaysInOpticalModule}!IsotopeDecays@{IsotopeDecays}}
+\doxysubsubsection{\texorpdfstring{simulateDecaysInOpticalModule()}{simulateDecaysInOpticalModule()}}
+{\footnotesize\ttfamily void Isotope\+Decays\+::simulate\+Decays\+In\+Optical\+Module (\begin{DoxyParamCaption}\item[{G4double}]{p\+Time\+Window }\end{DoxyParamCaption})}
 
 
 

@@ -31,6 +31,7 @@ var group___effective_area =
       [ "constructWorld", "class_o_m_sim_detector_construction.html#a53a692e5caa084d308b181c6cd90e485", null ],
       [ "constructWorld", "class_o_m_sim_detector_construction.html#a53a692e5caa084d308b181c6cd90e485", null ],
       [ "mData", "class_o_m_sim_detector_construction.html#a1d09add5e6b9a1d25821ccd128d926fe", null ],
+      [ "mOpticalModule", "class_o_m_sim_detector_construction.html#a5afb06a52559f0e0f2fe06820ae9e04e", null ],
       [ "mWorldLogical", "class_o_m_sim_detector_construction.html#a7e7ef263bcf8e4d4efb22af8ed2ef808", null ],
       [ "mWorldPhysical", "class_o_m_sim_detector_construction.html#a699963cdf8af1e2f82a61227b9f08c20", null ],
       [ "mWorldSolid", "class_o_m_sim_detector_construction.html#a13797b1657281b0907d005921ca5e10c", null ],

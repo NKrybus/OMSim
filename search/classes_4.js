@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['degg_1039',['DEGG',['../class_d_e_g_g.html',1,'']]],
-  ['deggharness_1040',['DEggHarness',['../class_d_egg_harness.html',1,'']]]
+  ['decaystats_1052',['DecayStats',['../struct_decay_stats.html',1,'']]],
+  ['degg_1053',['DEGG',['../class_d_e_g_g.html',1,'']]],
+  ['deggharness_1054',['DEggHarness',['../class_d_egg_harness.html',1,'']]]
 ];
