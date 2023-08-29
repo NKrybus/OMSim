@@ -1,10 +1,11 @@
 var NAVTREEINDEX2 =
 {
-"class_event_info_manager.html#a3f20e93e5648ed8361ac6919e261b2ca":[5,0,10,2],
-"class_event_info_manager.html#a6196a992f70988bea9efb7c1e77eb358":[5,0,10,3],
-"class_event_info_manager.html#aa12794088e655821d47bedbacd179296":[5,0,10,4],
+"class_event_info_manager.html#a6196a992f70988bea9efb7c1e77eb358":[5,0,10,7],
+"class_event_info_manager.html#aa12794088e655821d47bedbacd179296":[5,0,10,8],
 "class_event_info_manager.html#aaae2a42eb414ea5fbde3deff5cffc0b2":[5,0,10,0],
-"class_event_info_manager.html#ab55b547cd98a9ae44b909dd4e03f0d0d":[5,0,10,1],
+"class_event_info_manager.html#aaae2a42eb414ea5fbde3deff5cffc0b2":[5,0,10,1],
+"class_event_info_manager.html#ab55b547cd98a9ae44b909dd4e03f0d0d":[5,0,10,3],
+"class_event_info_manager.html#ab55b547cd98a9ae44b909dd4e03f0d0d":[5,0,10,2],
 "class_g4_radioactive_decay.html":[5,0,12],
 "class_g4_radioactive_decay.html#a0206ac122b2b996b9e996670f2dc24d2":[5,0,12,49],
 "class_g4_radioactive_decay.html#a0a86baa780675d3ac586db4e7a3288e8":[5,0,12,54],
@@ -248,6 +249,5 @@ var NAVTREEINDEX2 =
 "class_o_m_sim.html#a04ad05f6b01a547002f3c36fe116c35f":[3,0,20,10],
 "class_o_m_sim.html#a0920dcd6fa769919824d4c9c1ea97fed":[3,0,20,8],
 "class_o_m_sim.html#a215ae29aab195daa3ef15868e70ab2c1":[3,0,20,4],
-"class_o_m_sim.html#a42d86958aba31a17fb0c8a39fbc9c9b5":[3,0,20,5],
-"class_o_m_sim.html#a4f3301dff52231e9b45291cfbb66b637":[3,0,20,6]
+"class_o_m_sim.html#a42d86958aba31a17fb0c8a39fbc9c9b5":[3,0,20,5]
 };

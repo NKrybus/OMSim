@@ -43,6 +43,7 @@ var hierarchy =
       [ "mdomPrimaryGeneratorMessenger", "classmdom_primary_generator_messenger.html", null ]
     ] ],
     [ "G4UserEventAction", null, [
+      [ "OMSimEventAction", "class_o_m_sim_event_action.html", null ],
       [ "OMSimEventAction", "class_o_m_sim_event_action.html", null ]
     ] ],
     [ "G4UserRunAction", null, [

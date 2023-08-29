@@ -59,8 +59,13 @@ var files_dup =
     [ "OMSimEffectiveAreaAnalyisis.hh", "_o_m_sim_effective_area_analyisis_8hh.html", [
       [ "effectiveAreaResult", "structeffective_area_result.html", "structeffective_area_result" ]
     ] ],
-    [ "OMSimEventAction.cc", "_o_m_sim_event_action_8cc.html", null ],
-    [ "OMSimEventAction.hh", "_o_m_sim_event_action_8hh.html", [
+    [ "effective_area/src/OMSimEventAction.cc", "effective__area_2src_2_o_m_sim_event_action_8cc.html", null ],
+    [ "radioactive_decays/src/OMSimEventAction.cc", "radioactive__decays_2src_2_o_m_sim_event_action_8cc.html", null ],
+    [ "effective_area/include/OMSimEventAction.hh", "effective__area_2include_2_o_m_sim_event_action_8hh.html", [
+      [ "OMSimEventAction", "class_o_m_sim_event_action.html", "class_o_m_sim_event_action" ],
+      [ "EventInfoManager", "class_event_info_manager.html", "class_event_info_manager" ]
+    ] ],
+    [ "radioactive_decays/include/OMSimEventAction.hh", "radioactive__decays_2include_2_o_m_sim_event_action_8hh.html", [
       [ "OMSimEventAction", "class_o_m_sim_event_action.html", "class_o_m_sim_event_action" ],
       [ "EventInfoManager", "class_event_info_manager.html", "class_event_info_manager" ]
     ] ],
