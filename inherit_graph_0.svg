@@ -51,7 +51,7 @@
 <!-- Node3 -->
 <g id="node4" class="node">
 <title>Node3</title>
-<g id="a_node4"><a xlink:href="class_scintillation_properties.html" target="_top" xlink:title="This class is responsible for parsing scintillation properties to already defined materials.">
+<g id="a_node4"><a xlink:href="class_scintillation_properties.html" target="_top" xlink:title="Class to extract and apply scintillation properties to existing materials.">
 <polygon fill="white" stroke="black" points="110,-95.5 110,-114.5 234,-114.5 234,-95.5 110,-95.5"/>
 <text text-anchor="middle" x="172" y="-102.5" font-family="Helvetica,sans-Serif" font-size="10.00">ScintillationProperties</text>
 </a>

@@ -123,8 +123,8 @@ $(document).ready(function(){initNavTree('class_scintillation_properties.html','
 </div><!--header-->
 <div class="contents">
 
-<p>This class is responsible for parsing scintillation properties to already defined materials.  
-</p>
+<p>Class to extract and apply scintillation properties to existing materials.  
+ <a href="class_scintillation_properties.html#details">More...</a></p>
 <div class="dynheader">
 Inheritance diagram for ScintillationProperties:</div>
 <div class="dyncontent">
@@ -137,7 +137,9 @@ Collaboration diagram for ScintillationProperties:</div>
 <div class="center"><iframe scrolling="no" frameborder="0" src="class_scintillation_properties__coll__graph.svg" width="176" height="203"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
-<table class="memberdecls">
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>This class is responsible for extracting scintillation properties from a data file and applying them to a Geant4 material's properties table. </p>
+</div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a03dca72bd4861b8500283dc15c0864e0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_scintillation_properties.html#a03dca72bd4861b8500283dc15c0864e0">ScintillationProperties</a> (G4String pFilename)</td></tr>
@@ -151,18 +153,31 @@ Public Member Functions</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
 <tr class="memitem:a2f5e62b56857772f598738907d3ed210"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_scintillation_properties.html#a2f5e62b56857772f598738907d3ed210">extractSpectrum</a> ()</td></tr>
+<tr class="memdesc:a2f5e62b56857772f598738907d3ed210"><td class="mdescLeft">&#160;</td><td class="mdescRight">Extracts the scintillation spectrum from the data file and adds it to the material properties table.  <a href="class_scintillation_properties.html#a2f5e62b56857772f598738907d3ed210">More...</a><br /></td></tr>
 <tr class="separator:a2f5e62b56857772f598738907d3ed210"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3c9fea78ae17e8a52784e4a5fbd09342"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_scintillation_properties.html#a3c9fea78ae17e8a52784e4a5fbd09342">extractLifeTimes</a> (G4String pTemperature)</td></tr>
+<tr class="memdesc:a3c9fea78ae17e8a52784e4a5fbd09342"><td class="mdescLeft">&#160;</td><td class="mdescRight">Extracts the scintillation lifetimes from the file and weights them for a specific temperature.  <a href="class_scintillation_properties.html#a3c9fea78ae17e8a52784e4a5fbd09342">More...</a><br /></td></tr>
 <tr class="separator:a3c9fea78ae17e8a52784e4a5fbd09342"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aea085bb70df07316232155e4dd617e60"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_scintillation_properties.html#aea085bb70df07316232155e4dd617e60">getLifeTimeTemperatureRange</a> (double &amp;pMinTemp, double &amp;pMaxTemp)</td></tr>
-<tr class="separator:aea085bb70df07316232155e4dd617e60"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8b08735d53c1990715c1dc4e84c47c34"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_scintillation_properties.html#a8b08735d53c1990715c1dc4e84c47c34">getLifeTimeTemperatureRange</a> (double &amp;pMinTemp, double &amp;pMaxTemp)</td></tr>
+<tr class="memdesc:a8b08735d53c1990715c1dc4e84c47c34"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves the range of temperatures available for scintillation lifetimes.  <a href="class_scintillation_properties.html#a8b08735d53c1990715c1dc4e84c47c34">More...</a><br /></td></tr>
+<tr class="separator:a8b08735d53c1990715c1dc4e84c47c34"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afd7145815d2baf2008a755c487d0a613"><td class="memItemLeft" align="right" valign="top">std::pair&lt; std::vector&lt; G4double &gt;, std::vector&lt; G4double &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_scintillation_properties.html#afd7145815d2baf2008a755c487d0a613">extractLifeTimesForTemperature</a> (G4String pTemperature)</td></tr>
+<tr class="memdesc:afd7145815d2baf2008a755c487d0a613"><td class="mdescLeft">&#160;</td><td class="mdescRight">Extracts lifetimes and amplitudes for a given temperature from the data.  <a href="class_scintillation_properties.html#afd7145815d2baf2008a755c487d0a613">More...</a><br /></td></tr>
 <tr class="separator:afd7145815d2baf2008a755c487d0a613"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5e7da3437242c6c025edff017adf2c1b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_scintillation_properties.html#a5e7da3437242c6c025edff017adf2c1b">weightLifeTimesAmplitudes</a> (std::vector&lt; G4double &gt; &amp;pAmplitudes, double pT1, double pT2)</td></tr>
+<tr class="memdesc:a5e7da3437242c6c025edff017adf2c1b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adjusts amplitudes of lifetimes based on distance to investigated temperature.  <a href="class_scintillation_properties.html#a5e7da3437242c6c025edff017adf2c1b">More...</a><br /></td></tr>
 <tr class="separator:a5e7da3437242c6c025edff017adf2c1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a077745b265c40f5636e18f50105a7133"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_scintillation_properties.html#a077745b265c40f5636e18f50105a7133">extractYield</a> (G4String pTemperature)</td></tr>
-<tr class="separator:a077745b265c40f5636e18f50105a7133"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a37ebebbb7e81f92499faf54aabd89c6c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_scintillation_properties.html#a37ebebbb7e81f92499faf54aabd89c6c">extractYieldAlpha</a> (G4String pTemperature)</td></tr>
+<tr class="memdesc:a37ebebbb7e81f92499faf54aabd89c6c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Extracts and interpolates the alpha particle scintillation yield for a given temperature.  <a href="class_scintillation_properties.html#a37ebebbb7e81f92499faf54aabd89c6c">More...</a><br /></td></tr>
+<tr class="separator:a37ebebbb7e81f92499faf54aabd89c6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afd81afebbf2a8addf8f2f4c775dc255e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_scintillation_properties.html#afd81afebbf2a8addf8f2f4c775dc255e">extractYieldElectron</a> (G4String pTemperature)</td></tr>
+<tr class="memdesc:afd81afebbf2a8addf8f2f4c775dc255e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Extracts and interpolates the electron scintillation yield for a given temperature. Uses the alpha yield as fallback if electron yield is not given.  <a href="class_scintillation_properties.html#afd81afebbf2a8addf8f2f4c775dc255e">More...</a><br /></td></tr>
+<tr class="separator:afd81afebbf2a8addf8f2f4c775dc255e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac8ab70819d1cdb35cc6ce2155f990379"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_scintillation_properties.html#ac8ab70819d1cdb35cc6ce2155f990379">extractYield</a> (G4String pTemperature, G4String pYieldPropertyName, G4String pArgKey, G4String pTreeKeyTemperature, G4String pTreeKeyYield)</td></tr>
+<tr class="memdesc:ac8ab70819d1cdb35cc6ce2155f990379"><td class="mdescLeft">&#160;</td><td class="mdescRight">Extract the yield from json tree.  <a href="class_scintillation_properties.html#ac8ab70819d1cdb35cc6ce2155f990379">More...</a><br /></td></tr>
+<tr class="separator:ac8ab70819d1cdb35cc6ce2155f990379"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af525e651ef632ab272850c743ea9c76f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_scintillation_properties.html#af525e651ef632ab272850c743ea9c76f">findMPT</a> ()</td></tr>
+<tr class="memdesc:af525e651ef632ab272850c743ea9c76f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Finds and stores the Geant4 Material Properties Table for the material with name given by the key jMaterialName. If material does not exist it will crash!  <a href="class_scintillation_properties.html#af525e651ef632ab272850c743ea9c76f">More...</a><br /></td></tr>
 <tr class="separator:af525e651ef632ab272850c743ea9c76f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
@@ -267,6 +282,12 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pTemperature</td><td>Temperature for which lifetimes are to be weighted. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -293,6 +314,7 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd>Pair of vectors containing lifetimes and their corresponding amplitudes. </dd></dl>
 
 </div>
 </div>
@@ -318,11 +340,12 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>Currently no measurements of the temperature dependence of the scintillation spectrum were done. Spectrum data always at room temperature. </p>
 
 </div>
 </div>
-<a id="a077745b265c40f5636e18f50105a7133"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a077745b265c40f5636e18f50105a7133">&#9670;&nbsp;</a></span>extractYield()</h2>
+<a id="ac8ab70819d1cdb35cc6ce2155f990379"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac8ab70819d1cdb35cc6ce2155f990379">&#9670;&nbsp;</a></span>extractYield()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -332,6 +355,97 @@ Additional Inherited Members</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">void ScintillationProperties::extractYield </td>
+          <td>(</td>
+          <td class="paramtype">G4String&#160;</td>
+          <td class="paramname"><em>pTemperature</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">G4String&#160;</td>
+          <td class="paramname"><em>pYieldPropertyName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">G4String&#160;</td>
+          <td class="paramname"><em>pArgKey</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">G4String&#160;</td>
+          <td class="paramname"><em>pTreeKeyTemperature</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">G4String&#160;</td>
+          <td class="paramname"><em>pTreeKeyYield</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>The data is the yield at different temperatures and is interpolated with a TGraph to the investigated temperature. If a user argument with a yield, it will overwrite the extracted data.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pTemperature</td><td>Temperature for which the yield is interpolated. </td></tr>
+    <tr><td class="paramname">pYieldPropertyName</td><td>Name of the yield property (Geant4 internal). </td></tr>
+    <tr><td class="paramname">pArgKey</td><td>Command arguments key. </td></tr>
+    <tr><td class="paramname">pTreeKeyTemperature</td><td>Key to access temperature array in the tree. </td></tr>
+    <tr><td class="paramname">pTreeKeyYield</td><td>Key to access yield array in the tree. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a37ebebbb7e81f92499faf54aabd89c6c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a37ebebbb7e81f92499faf54aabd89c6c">&#9670;&nbsp;</a></span>extractYieldAlpha()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ScintillationProperties::extractYieldAlpha </td>
+          <td>(</td>
+          <td class="paramtype">G4String&#160;</td>
+          <td class="paramname"><em>pTemperature</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="afd81afebbf2a8addf8f2f4c775dc255e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afd81afebbf2a8addf8f2f4c775dc255e">&#9670;&nbsp;</a></span>extractYieldElectron()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ScintillationProperties::extractYieldElectron </td>
           <td>(</td>
           <td class="paramtype">G4String&#160;</td>
           <td class="paramname"><em>pTemperature</em></td><td>)</td>
@@ -372,8 +486,8 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a id="aea085bb70df07316232155e4dd617e60"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aea085bb70df07316232155e4dd617e60">&#9670;&nbsp;</a></span>getLifeTimeTemperatureRange()</h2>
+<a id="a8b08735d53c1990715c1dc4e84c47c34"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8b08735d53c1990715c1dc4e84c47c34">&#9670;&nbsp;</a></span>getLifeTimeTemperatureRange()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -382,16 +496,16 @@ Additional Inherited Members</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">double ScintillationProperties::getLifeTimeTemperatureRange </td>
+          <td class="memname">void ScintillationProperties::getLifeTimeTemperatureRange </td>
           <td>(</td>
           <td class="paramtype">double &amp;&#160;</td>
-          <td class="paramname"><em>pMinTemp</em>, </td>
+          <td class="paramname"><em>minTemp</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">double &amp;&#160;</td>
-          <td class="paramname"><em>pMaxTemp</em>&#160;</td>
+          <td class="paramname"><em>maxTemp</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -405,6 +519,13 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pMinTemp</td><td>Reference variable to receive the minimum temperature value. </td></tr>
+    <tr><td class="paramname">pMaxTemp</td><td>Reference variable to receive the maximum temperature value. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -421,19 +542,19 @@ Additional Inherited Members</h2></td></tr>
           <td class="memname">void ScintillationProperties::weightLifeTimesAmplitudes </td>
           <td>(</td>
           <td class="paramtype">std::vector&lt; G4double &gt; &amp;&#160;</td>
-          <td class="paramname"><em>pAmplitudes</em>, </td>
+          <td class="paramname"><em>pAmp</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>pT1</em>, </td>
+          <td class="paramname"><em>T1</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>pT2</em>&#160;</td>
+          <td class="paramname"><em>T2</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -447,6 +568,14 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pAmplitudes</td><td>Reference to the vector of amplitudes to be adjusted. </td></tr>
+    <tr><td class="paramname">pT1</td><td>Investigated temperature. </td></tr>
+    <tr><td class="paramname">pT2</td><td>Actual temperature from the data. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -483,7 +612,7 @@ Additional Inherited Members</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="class_scintillation_properties.html">ScintillationProperties</a></li>
-    <li class="footer">Generated on Tue Aug 29 2023 14:27:09 for OMSim by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Wed Aug 30 2023 15:31:29 for OMSim by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>
