@@ -18,7 +18,7 @@ var searchData=
   ['token_960',['Token',['../struct_c_a_d_mesh_1_1_file_1_1_token.html',1,'CADMesh::File']]],
   ['token_961',['token',['../struct_c_a_d_mesh_1_1_file_1_1_item.html#a9e5e080c9f4c9fcbb2158507b5be2705',1,'CADMesh::File::Item']]],
   ['totalcrosssection_962',['TotalCrossSection',['../class_o_m_sim_i_b_d.html#a8e96874ed7339fb1861d1d69ce4b865e',1,'OMSimIBD']]],
-  ['tothits_963',['TotHits',['../class_mdom_analysis_manager.html#aaa3c3a0bf1162bba44ee9ec82696968f',1,'MdomAnalysisManager']]],
+  ['tothits_963',['TotHits',['../class_o_m_sim_s_n_analysis.html#aa68d0e90eb58b85e1d75ae8cf56dbb5e',1,'OMSimSNAnalysis']]],
   ['transittime_964',['TransitTime',['../struct_o_m_sim_p_m_t_response_1_1_p_m_t_pulse.html#a8bfd7ea33e3080b0cfa7c730e5dc27bc',1,'OMSimPMTResponse::PMTPulse']]],
   ['triangles_965',['Triangles',['../namespace_c_a_d_mesh.html#abc2a065365670b632368c1ab6fd050de',1,'CADMesh']]],
   ['triangles_5f_966',['triangles_',['../class_c_a_d_mesh_1_1_mesh.html#a607e51629294c019707e235ba989a534',1,'CADMesh::Mesh']]],

@@ -1,4 +1,7 @@
 <map id="OMSimPrimaryGeneratorAction" name="OMSimPrimaryGeneratorAction">
-<area shape="rect" id="node1" title=" " alt="" coords="10,80,237,107"/>
-<area shape="rect" id="node2" title=" " alt="" coords="5,5,241,32"/>
+<area shape="rect" id="node1" title=" " alt="" coords="157,171,383,197"/>
+<area shape="rect" id="node4" href="$classmdom_primary_generator_messenger.html" title=" " alt="" coords="69,260,319,287"/>
+<area shape="rect" id="node2" title=" " alt="" coords="152,5,388,32"/>
+<area shape="rect" id="node3" href="$class_o_m_sim_i_b_d.html" title="Class in charge of generating positrons from IBD of supernova antineutrino interactions." alt="" coords="320,81,412,108"/>
+<area shape="rect" id="node5" title=" " alt="" coords="5,171,132,197"/>
 </map>

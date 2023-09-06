@@ -1,7 +1,7 @@
 var searchData=
 [
-  ['helper_5fanalyzeevent_1403',['Helper_AnalyzeEvent',['../class_mdom_analysis_manager.html#a058adc9e4032f8246eb6bbb0e87b023a',1,'MdomAnalysisManager']]],
-  ['helper_5fresetevent_1404',['Helper_ResetEvent',['../class_mdom_analysis_manager.html#a98fff94ff54bf2fbc55c6b558b80e297',1,'MdomAnalysisManager']]],
-  ['helptheheader_1405',['HelpTheHeader',['../class_mdom_analysis_manager.html#ad849c86d78a95f18e2f40e00e4969b51',1,'MdomAnalysisManager']]],
-  ['hitstat_1406',['HitStat',['../struct_hit_stat.html#a6e4539198e0a229cab62e6e9179fa292',1,'HitStat']]]
+  ['helper_5fanalyzeevent_1401',['Helper_AnalyzeEvent',['../class_o_m_sim_s_n_analysis.html#a20a10b17b586043b7baaa3c3cc6837ba',1,'OMSimSNAnalysis']]],
+  ['helper_5fresetevent_1402',['Helper_ResetEvent',['../class_o_m_sim_s_n_analysis.html#a88d07c584b066264402eb68249c73660',1,'OMSimSNAnalysis']]],
+  ['helptheheader_1403',['HelpTheHeader',['../class_o_m_sim_s_n_analysis.html#a9b81e397ae0d54cee7ec4b6eb7cfb7e9',1,'OMSimSNAnalysis']]],
+  ['hitstat_1404',['HitStat',['../struct_hit_stat.html#a6e4539198e0a229cab62e6e9179fa292',1,'HitStat']]]
 ];

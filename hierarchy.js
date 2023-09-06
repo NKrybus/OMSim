@@ -76,7 +76,7 @@ var hierarchy =
     [ "G4VUserPrimaryGeneratorAction", null, [
       [ "OMSimIBD", "class_o_m_sim_i_b_d.html", null ],
       [ "OMSimPrimaryGeneratorAction", "class_o_m_sim_primary_generator_action.html", null ],
-      [ "mdomPrimaryGeneratorAction", "classmdom_primary_generator_action.html", null ]
+      [ "OMSimPrimaryGeneratorAction", "class_o_m_sim_primary_generator_action.html", null ]
     ] ],
     [ "GlobalPosition", "struct_global_position.html", null ],
     [ "HitStat", "struct_hit_stat.html", null ],
@@ -84,7 +84,6 @@ var hierarchy =
     [ "IsotopeDecays", "class_isotope_decays.html", null ],
     [ "CADMesh::File::Item", "struct_c_a_d_mesh_1_1_file_1_1_item.html", null ],
     [ "CADMesh::File::Lexer", "class_c_a_d_mesh_1_1_file_1_1_lexer.html", null ],
-    [ "MdomAnalysisManager", "class_mdom_analysis_manager.html", null ],
     [ "CADMesh::Mesh", "class_c_a_d_mesh_1_1_mesh.html", null ],
     [ "OMSim", "class_o_m_sim.html", null ],
     [ "OMSimCommandArgsTable", "class_o_m_sim_command_args_table.html", null ],
@@ -92,6 +91,7 @@ var hierarchy =
     [ "OMSimEffectiveAreaAnalyisis", "class_o_m_sim_effective_area_analyisis.html", null ],
     [ "OMSimHitManager", "class_o_m_sim_hit_manager.html", null ],
     [ "OMSimPMTResponse", "class_o_m_sim_p_m_t_response.html", null ],
+    [ "OMSimSNAnalysis", "class_o_m_sim_s_n_analysis.html", null ],
     [ "OMSimSNTools", "class_o_m_sim_s_n_tools.html", null ],
     [ "OMSimUIinterface", "class_o_m_sim_u_iinterface.html", null ],
     [ "ParameterTable", "class_parameter_table.html", [

@@ -51,8 +51,8 @@
 <!-- Node4 -->
 <g id="node4" class="node">
 <title>Node4</title>
-<g id="a_node4"><a xlink:href="_o_m_sim_primary_generator_action_8hh.html" target="_top" xlink:title=" ">
-<polygon fill="white" stroke="black" points="327.5,-168.5 327.5,-187.5 512.5,-187.5 512.5,-168.5 327.5,-168.5"/>
+<g id="a_node4"><a xlink:title=" ">
+<polygon fill="white" stroke="#bfbfbf" points="327.5,-168.5 327.5,-187.5 512.5,-187.5 512.5,-168.5 327.5,-168.5"/>
 <text text-anchor="middle" x="420" y="-175.5" font-family="Helvetica,sans-Serif" font-size="10.00">OMSimPrimaryGeneratorAction.hh</text>
 </a>
 </g>
@@ -63,18 +63,18 @@
 <path fill="none" stroke="midnightblue" d="M1000.39,-230.07C919.87,-223.04 709.36,-204.65 522.73,-188.15"/>
 <polygon fill="midnightblue" stroke="midnightblue" points="523.01,-184.66 512.74,-187.27 522.39,-191.64 523.01,-184.66"/>
 </g>
-<!-- Node6 -->
-<g id="node6" class="node">
-<title>Node6</title>
-<g id="a_node6"><a xlink:title=" ">
-<polygon fill="white" stroke="#bfbfbf" points="530,-168.5 530,-187.5 646,-187.5 646,-168.5 530,-168.5"/>
+<!-- Node5 -->
+<g id="node5" class="node">
+<title>Node5</title>
+<g id="a_node5"><a xlink:href="common_2framework_2include_2_o_m_sim_run_action_8hh.html" target="_top" xlink:title=" ">
+<polygon fill="white" stroke="black" points="530,-168.5 530,-187.5 646,-187.5 646,-168.5 530,-168.5"/>
 <text text-anchor="middle" x="588" y="-175.5" font-family="Helvetica,sans-Serif" font-size="10.00">OMSimRunAction.hh</text>
 </a>
 </g>
 </g>
-<!-- Node1&#45;&gt;Node6 -->
-<g id="edge5" class="edge">
-<title>Node1&#45;&gt;Node6</title>
+<!-- Node1&#45;&gt;Node5 -->
+<g id="edge4" class="edge">
+<title>Node1&#45;&gt;Node5</title>
 <path fill="none" stroke="midnightblue" d="M1000.26,-229.17C935.65,-221.8 789.72,-204.96 656.1,-188.12"/>
 <polygon fill="midnightblue" stroke="midnightblue" points="656.46,-184.64 646.1,-186.86 655.58,-191.59 656.46,-184.64"/>
 </g>
@@ -213,20 +213,20 @@
 <path fill="none" stroke="midnightblue" d="M1067.8,-231.23C1165.37,-226.03 1456.12,-209.8 1708.8,-188.07"/>
 <polygon fill="midnightblue" stroke="midnightblue" points="1709.25,-191.55 1718.91,-187.2 1708.64,-184.57 1709.25,-191.55"/>
 </g>
-<!-- Node5 -->
-<g id="node5" class="node">
-<title>Node5</title>
-<g id="a_node5"><a xlink:title=" ">
-<polygon fill="white" stroke="#bfbfbf" points="324,-112.5 324,-131.5 516,-131.5 516,-112.5 324,-112.5"/>
-<text text-anchor="middle" x="420" y="-119.5" font-family="Helvetica,sans-Serif" font-size="10.00">G4VUserPrimaryGeneratorAction.hh</text>
+<!-- Node6 -->
+<g id="node6" class="node">
+<title>Node6</title>
+<g id="a_node6"><a xlink:title=" ">
+<polygon fill="white" stroke="#bfbfbf" points="529.5,-112.5 529.5,-131.5 646.5,-131.5 646.5,-112.5 529.5,-112.5"/>
+<text text-anchor="middle" x="588" y="-119.5" font-family="Helvetica,sans-Serif" font-size="10.00">G4UserRunAction.hh</text>
 </a>
 </g>
 </g>
-<!-- Node4&#45;&gt;Node5 -->
-<g id="edge4" class="edge">
-<title>Node4&#45;&gt;Node5</title>
-<path fill="none" stroke="midnightblue" d="M420,-168.08C420,-161.01 420,-150.86 420,-141.99"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="423.5,-141.75 420,-131.75 416.5,-141.75 423.5,-141.75"/>
+<!-- Node5&#45;&gt;Node6 -->
+<g id="edge5" class="edge">
+<title>Node5&#45;&gt;Node6</title>
+<path fill="none" stroke="midnightblue" d="M588,-168.08C588,-161.01 588,-150.86 588,-141.99"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="591.5,-141.75 588,-131.75 584.5,-141.75 591.5,-141.75"/>
 </g>
 <!-- Node9 -->
 <g id="node9" class="node">

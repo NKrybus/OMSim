@@ -13,16 +13,6 @@ var files_dup =
     [ "G4Scintillation.hh", "_g4_scintillation_8hh.html", [
       [ "OMSimG4Scintillation", "class_o_m_sim_g4_scintillation.html", "class_o_m_sim_g4_scintillation" ]
     ] ],
-    [ "mdomAnalysisManager.cc", "mdom_analysis_manager_8cc.html", "mdom_analysis_manager_8cc" ],
-    [ "mdomAnalysisManager.hh", "mdom_analysis_manager_8hh.html", [
-      [ "HitStat", "struct_hit_stat.html", "struct_hit_stat" ],
-      [ "EvtStat", "struct_evt_stat.html", "struct_evt_stat" ],
-      [ "MdomAnalysisManager", "class_mdom_analysis_manager.html", "class_mdom_analysis_manager" ]
-    ] ],
-    [ "mdomPrimaryGeneratorAction.cc", "mdom_primary_generator_action_8cc.html", null ],
-    [ "mdomPrimaryGeneratorAction.hh", "mdom_primary_generator_action_8hh.html", [
-      [ "mdomPrimaryGeneratorAction", "classmdom_primary_generator_action.html", "classmdom_primary_generator_action" ]
-    ] ],
     [ "mdomPrimaryGeneratorMessenger.cc", "mdom_primary_generator_messenger_8cc.html", null ],
     [ "mdomPrimaryGeneratorMessenger.hh", "mdom_primary_generator_messenger_8hh.html", [
       [ "mdomPrimaryGeneratorMessenger", "classmdom_primary_generator_messenger.html", "classmdom_primary_generator_messenger" ]
@@ -78,9 +68,7 @@ var files_dup =
     [ "OMSimHitManager.cc", "_o_m_sim_hit_manager_8cc.html", "_o_m_sim_hit_manager_8cc" ],
     [ "OMSimHitManager.hh", "_o_m_sim_hit_manager_8hh.html", null ],
     [ "OMSimIBD.cc", "_o_m_sim_i_b_d_8cc.html", "_o_m_sim_i_b_d_8cc" ],
-    [ "OMSimIBD.hh", "_o_m_sim_i_b_d_8hh.html", [
-      [ "OMSimIBD", "class_o_m_sim_i_b_d.html", "class_o_m_sim_i_b_d" ]
-    ] ],
+    [ "OMSimIBD.hh", "_o_m_sim_i_b_d_8hh.html", "_o_m_sim_i_b_d_8hh" ],
     [ "OMSimInputData.cc", "_o_m_sim_input_data_8cc.html", null ],
     [ "OMSimInputData.hh", "_o_m_sim_input_data_8hh.html", [
       [ "ParameterTable", "class_parameter_table.html", "class_parameter_table" ],
@@ -131,15 +119,25 @@ var files_dup =
       [ "OMSimPMTResponse", "class_o_m_sim_p_m_t_response.html", "class_o_m_sim_p_m_t_response" ],
       [ "PMTPulse", "struct_o_m_sim_p_m_t_response_1_1_p_m_t_pulse.html", "struct_o_m_sim_p_m_t_response_1_1_p_m_t_pulse" ]
     ] ],
-    [ "OMSimPrimaryGeneratorAction.cc", "_o_m_sim_primary_generator_action_8cc.html", null ],
-    [ "OMSimPrimaryGeneratorAction.hh", "_o_m_sim_primary_generator_action_8hh.html", [
+    [ "effective_area/src/OMSimPrimaryGeneratorAction.cc", "effective__area_2src_2_o_m_sim_primary_generator_action_8cc.html", null ],
+    [ "supernova/src/OMSimPrimaryGeneratorAction.cc", "supernova_2src_2_o_m_sim_primary_generator_action_8cc.html", null ],
+    [ "effective_area/include/OMSimPrimaryGeneratorAction.hh", "effective__area_2include_2_o_m_sim_primary_generator_action_8hh.html", [
       [ "OMSimPrimaryGeneratorAction", "class_o_m_sim_primary_generator_action.html", "class_o_m_sim_primary_generator_action" ]
     ] ],
-    [ "effective_area/include/OMSimRunAction.hh", "effective__area_2include_2_o_m_sim_run_action_8hh.html", [
+    [ "supernova/include/OMSimPrimaryGeneratorAction.hh", "supernova_2include_2_o_m_sim_primary_generator_action_8hh.html", [
+      [ "OMSimPrimaryGeneratorAction", "class_o_m_sim_primary_generator_action.html", "class_o_m_sim_primary_generator_action" ]
+    ] ],
+    [ "common/framework/include/OMSimRunAction.hh", "common_2framework_2include_2_o_m_sim_run_action_8hh.html", [
       [ "OMSimRunAction", "class_o_m_sim_run_action.html", "class_o_m_sim_run_action" ]
     ] ],
     [ "radioactive_decays/include/OMSimRunAction.hh", "radioactive__decays_2include_2_o_m_sim_run_action_8hh.html", [
       [ "OMSimRunAction", "class_o_m_sim_run_action.html", "class_o_m_sim_run_action" ]
+    ] ],
+    [ "OMSimSNAnalysis.cc", "_o_m_sim_s_n_analysis_8cc.html", "_o_m_sim_s_n_analysis_8cc" ],
+    [ "OMSimSNAnalysis.hh", "_o_m_sim_s_n_analysis_8hh.html", [
+      [ "HitStat", "struct_hit_stat.html", "struct_hit_stat" ],
+      [ "EvtStat", "struct_evt_stat.html", "struct_evt_stat" ],
+      [ "OMSimSNAnalysis", "class_o_m_sim_s_n_analysis.html", "class_o_m_sim_s_n_analysis" ]
     ] ],
     [ "OMSimSNTools.cc", "_o_m_sim_s_n_tools_8cc.html", "_o_m_sim_s_n_tools_8cc" ],
     [ "OMSimSNTools.hh", "_o_m_sim_s_n_tools_8hh.html", "_o_m_sim_s_n_tools_8hh" ],

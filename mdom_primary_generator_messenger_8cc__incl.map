@@ -1,10 +1,9 @@
 <map id="mdomPrimaryGeneratorMessenger.cc" name="mdomPrimaryGeneratorMessenger.cc">
-<area shape="rect" id="node1" title="Primary generator messenger to choose the corresponding primary generator." alt="" coords="392,5,660,32"/>
-<area shape="rect" id="node2" href="$mdom_primary_generator_messenger_8hh.html" title=" " alt="" coords="5,80,276,107"/>
-<area shape="rect" id="node5" href="$mdom_primary_generator_action_8hh.html" title=" " alt="" coords="300,80,541,107"/>
-<area shape="rect" id="node7" title=" " alt="" coords="566,80,697,107"/>
-<area shape="rect" id="node8" title=" " alt="" coords="721,80,915,107"/>
-<area shape="rect" id="node3" title=" " alt="" coords="39,155,184,181"/>
-<area shape="rect" id="node4" title=" " alt="" coords="208,155,297,181"/>
-<area shape="rect" id="node6" title=" " alt="" coords="322,155,578,181"/>
+<area shape="rect" id="node1" title="Primary generator messenger to choose the corresponding primary generator." alt="" coords="403,5,671,32"/>
+<area shape="rect" id="node2" href="$mdom_primary_generator_messenger_8hh.html" title=" " alt="" coords="13,80,284,107"/>
+<area shape="rect" id="node5" title=" " alt="" coords="308,80,555,107"/>
+<area shape="rect" id="node6" title=" " alt="" coords="578,80,709,107"/>
+<area shape="rect" id="node7" title=" " alt="" coords="733,80,927,107"/>
+<area shape="rect" id="node3" title=" " alt="" coords="5,155,151,181"/>
+<area shape="rect" id="node4" title=" " alt="" coords="175,155,264,181"/>
 </map>
