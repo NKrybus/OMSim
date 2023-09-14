@@ -17,6 +17,8 @@ This class serves as a repository for common functionalities associated with the
 \begin{DoxyCompactList}\small\item\em Default destructor. \end{DoxyCompactList}\item 
 G4\+Three\+Vector \mbox{\hyperlink{class_o_m_sim_s_n_tools_a8255809ee573ea08fa892441b32e48b8}{Random\+Position}} ()
 \begin{DoxyCompactList}\small\item\em Randomly determines a vertex position within the generation volume. \end{DoxyCompactList}\item 
+std\+::pair$<$ std\+::string, std\+::string $>$ \mbox{\hyperlink{class_o_m_sim_s_n_tools_a89a22f20d0aff91704cf6cab1b48d266}{get\+File\+Names}} (int value)
+\begin{DoxyCompactList}\small\item\em Retrieves file names for neutrino and antineutrino fluxes based on a specified supernova model. \end{DoxyCompactList}\item 
 G4double \mbox{\hyperlink{class_o_m_sim_s_n_tools_acd2197f87f712d54eff8e93b233e8478}{Inverse\+Cumul}} (std\+::vector$<$ G4double $>$ xvals, std\+::vector$<$ G4double $>$ yvals, G4int n\+Points)
 \begin{DoxyCompactList}\small\item\em Samples a value from a given distribution using the Inverse CDF method. \end{DoxyCompactList}\item 
 G4double \mbox{\hyperlink{class_o_m_sim_s_n_tools_a296fba8cceca9892ab52ac9e18064b01}{Inverse\+Cumul\+Algorithm}} (std\+::vector$<$ G4double $>$ x, std\+::vector$<$ G4double $>$ f, std\+::vector$<$ G4double $>$ a, std\+::vector$<$ G4double $>$ Fc, G4int n\+Points)
@@ -116,7 +118,7 @@ This method is utilized to identify neutrino parameters corresponding to a rando
 \hline
 \end{DoxyParams}
 \begin{DoxyRefDesc}{Todo}
-\item[\mbox{\hyperlink{todo__todo000013}{Todo}}]Consider renaming \textquotesingle{}time\textquotesingle{} to a more generic term. \end{DoxyRefDesc}
+\item[\mbox{\hyperlink{todo__todo000014}{Todo}}]Consider renaming \textquotesingle{}time\textquotesingle{} to a more generic term. \end{DoxyRefDesc}
 \begin{DoxyReturn}{Returns}
 The index in the array that holds the value closest (or next largest) to the specified input. 
 \end{DoxyReturn}
@@ -138,6 +140,24 @@ Given the mean energy and squared mean energy of the neutrino event, calculates 
 \begin{DoxyReturn}{Returns}
 alpha Pinching parameter of the energy spectrum. 
 \end{DoxyReturn}
+\mbox{\Hypertarget{class_o_m_sim_s_n_tools_a89a22f20d0aff91704cf6cab1b48d266}\label{class_o_m_sim_s_n_tools_a89a22f20d0aff91704cf6cab1b48d266}} 
+\index{OMSimSNTools@{OMSimSNTools}!getFileNames@{getFileNames}}
+\index{getFileNames@{getFileNames}!OMSimSNTools@{OMSimSNTools}}
+\doxysubsubsection{\texorpdfstring{getFileNames()}{getFileNames()}}
+{\footnotesize\ttfamily std\+::pair$<$ std\+::string, std\+::string $>$ OMSim\+SNTools\+::get\+File\+Names (\begin{DoxyParamCaption}\item[{int}]{value }\end{DoxyParamCaption})}
+
+This function provides the corresponding file names for neutrino and antineutrino fluxes depending on the supernova model identified by the input value. Files are located in \char`\"{}supernova/models\char`\"{}
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & The integer identifier representing a specific supernova model. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyRefDesc}{Todo}
+\item[\mbox{\hyperlink{todo__todo000011}{Todo}}]Handle error cases more robustly than just console output. \end{DoxyRefDesc}
+\begin{DoxyReturn}{Returns}
+A pair containing the neutrino and antineutrino flux file names. 
+\end{DoxyReturn}
 \mbox{\Hypertarget{class_o_m_sim_s_n_tools_acd2197f87f712d54eff8e93b233e8478}\label{class_o_m_sim_s_n_tools_acd2197f87f712d54eff8e93b233e8478}} 
 \index{OMSimSNTools@{OMSimSNTools}!InverseCumul@{InverseCumul}}
 \index{InverseCumul@{InverseCumul}!OMSimSNTools@{OMSimSNTools}}
@@ -156,7 +176,7 @@ This method preprocesses the provided data and leverages the inverse cumulative 
 \hline
 \end{DoxyParams}
 \begin{DoxyRefDesc}{Todo}
-\item[\mbox{\hyperlink{todo__todo000011}{Todo}}]Reconsider the requirement for the \textquotesingle{}n\+Points\textquotesingle{} parameter. \end{DoxyRefDesc}
+\item[\mbox{\hyperlink{todo__todo000012}{Todo}}]Reconsider the requirement for the \textquotesingle{}n\+Points\textquotesingle{} parameter. \end{DoxyRefDesc}
 \begin{DoxyWarning}{Warning}
 Assumes that the generation volume is a cylinder! 
 \end{DoxyWarning}
@@ -185,7 +205,7 @@ This method employs the inverse cumulative distribution function (Inverse CDF) t
 \hline
 \end{DoxyParams}
 \begin{DoxyRefDesc}{Todo}
-\item[\mbox{\hyperlink{todo__todo000012}{Todo}}]Re-\/evaluate the necessity of the \textquotesingle{}n\+Points\textquotesingle{} parameter. \end{DoxyRefDesc}
+\item[\mbox{\hyperlink{todo__todo000013}{Todo}}]Re-\/evaluate the necessity of the \textquotesingle{}n\+Points\textquotesingle{} parameter. \end{DoxyRefDesc}
 \begin{DoxyReturn}{Returns}
 A randomly selected x-\/value sampled in line with the provided distribution. 
 \end{DoxyReturn}

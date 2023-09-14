@@ -44,6 +44,7 @@ var hierarchy =
     ] ],
     [ "G4UserEventAction", null, [
       [ "OMSimEventAction", "class_o_m_sim_event_action.html", null ],
+      [ "OMSimEventAction", "class_o_m_sim_event_action.html", null ],
       [ "OMSimEventAction", "class_o_m_sim_event_action.html", null ]
     ] ],
     [ "G4UserRunAction", null, [

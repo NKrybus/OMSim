@@ -11,7 +11,7 @@ var searchData=
   ['addsaturation_14',['AddSaturation',['../class_o_m_sim_g4_scintillation.html#a82af8cb0c28c55e8f2913aee8b5aa47f',1,'OMSimG4Scintillation::AddSaturation(G4EmSaturation *sat)'],['../class_o_m_sim_g4_scintillation.html#a82af8cb0c28c55e8f2913aee8b5aa47f',1,'OMSimG4Scintillation::AddSaturation(G4EmSaturation *sat)']]],
   ['adduserdecaydatafile_15',['AddUserDecayDataFile',['../class_g4_radioactive_decay.html#ae61ed159f10454ea8eb4cfd109f47b93',1,'G4RadioactiveDecay']]],
   ['analyzeevent_16',['AnalyzeEvent',['../class_o_m_sim_s_n_analysis.html#ae6a94c32476b2b313505dbfbaca05809',1,'OMSimSNAnalysis']]],
-  ['anavigator_17',['aNavigator',['../_o_m_sim_s_n_tools_8cc.html#ad63db5c25cc238ef5ccd9e8f866656ac',1,'aNavigator():&#160;OMSimSNTools.cc'],['../supernova_2src_2_o_m_sim_detector_construction_8cc.html#ad63db5c25cc238ef5ccd9e8f866656ac',1,'aNavigator():&#160;OMSimDetectorConstruction.cc']]],
+  ['anavigator_17',['aNavigator',['../_o_m_sim_s_n_tools_8cc.html#ad63db5c25cc238ef5ccd9e8f866656ac',1,'aNavigator():&#160;OMSim_supernova.cc'],['../supernova_2src_2_o_m_sim_detector_construction_8cc.html#ad63db5c25cc238ef5ccd9e8f866656ac',1,'aNavigator():&#160;OMSim_supernova.cc'],['../_o_m_sim__supernova_8cc.html#ad63db5c25cc238ef5ccd9e8f866656ac',1,'aNavigator():&#160;OMSim_supernova.cc']]],
   ['angdist_5fnpoints_18',['angdist_nPoints',['../class_o_m_sim_i_b_d.html#a8cb6825e82018086a676571f3d288571',1,'OMSimIBD']]],
   ['angdist_5fx_19',['angdist_x',['../class_o_m_sim_i_b_d.html#abd165364bc7694a694630e995969588c',1,'OMSimIBD']]],
   ['angdist_5fy_20',['angdist_y',['../class_o_m_sim_i_b_d.html#abc24d4bc8fb5253b24566017d77e1c04',1,'OMSimIBD']]],
@@ -19,7 +19,7 @@ var searchData=
   ['appendandreturntree_22',['appendAndReturnTree',['../class_parameter_table.html#a131ddfbbf38d27b59f454a4ec96b2b9e',1,'ParameterTable']]],
   ['appendcomponent_23',['appendComponent',['../classabc_detector_component.html#a467235840a313b6481569ae9ea9d2673',1,'abcDetectorComponent']]],
   ['appenddecay_24',['appendDecay',['../class_o_m_sim_decays_analysis.html#a35aa71b0f55694ab682eb12e33e773d3',1,'OMSimDecaysAnalysis']]],
-  ['appendequatorband_25',['appendEquatorBand',['../class_l_o_m18.html#a9b4e4a3c6f9a41931bc299a4fb53d730',1,'LOM18::appendEquatorBand()'],['../class_l_o_m16.html#a95892bef682cd9694232bf0ef1faae6c',1,'LOM16::appendEquatorBand()']]],
+  ['appendequatorband_25',['appendEquatorBand',['../class_l_o_m16.html#a95892bef682cd9694232bf0ef1faae6c',1,'LOM16::appendEquatorBand()'],['../class_l_o_m18.html#a9b4e4a3c6f9a41931bc299a4fb53d730',1,'LOM18::appendEquatorBand()']]],
   ['appendhitinfo_26',['appendHitInfo',['../class_o_m_sim_hit_manager.html#a004f73261c6ef3e30ff27b0e13da0a1b',1,'OMSimHitManager']]],
   ['appendinternalcomponentsfromcad_27',['appendInternalComponentsFromCAD',['../class_d_e_g_g.html#ab670e114ce175ce302631a49d8518236',1,'DEGG']]],
   ['appendpmts_28',['appendPMTs',['../class_d_e_g_g.html#a98d1b6beb474e30f11f1668c15f26954',1,'DEGG']]],
@@ -30,6 +30,6 @@ var searchData=
   ['applypermutation_33',['applyPermutation',['../_o_m_sim_hit_manager_8cc.html#ad237ff3b723de76457ed8ea2b0b89fed',1,'OMSimHitManager.cc']]],
   ['assembly_5f_34',['assembly_',['../class_c_a_d_mesh_1_1_c_a_d_mesh_template.html#aebb5f2c52db6b5b9f8739d165c64792b',1,'CADMesh::CADMeshTemplate']]],
   ['atendofline_35',['AtEndOfLine',['../_c_a_d_mesh_8hh.html#a95d14906166c75f8ce8f0d9b03100faa',1,'CADMesh.hh']]],
-  ['atrestdoit_36',['AtRestDoIt',['../class_g4_radioactive_decay.html#a0fb4257aca98bf87d751a0021dcf4639',1,'G4RadioactiveDecay::AtRestDoIt()'],['../class_o_m_sim_g4_scintillation.html#a067b14fb92df905cb6cc0ec14b1d22fb',1,'OMSimG4Scintillation::AtRestDoIt(const G4Track &amp;aTrack, const G4Step &amp;aStep) override'],['../class_o_m_sim_g4_scintillation.html#a1ab6f916bd26e5443d0f56238bc2df0e',1,'OMSimG4Scintillation::AtRestDoIt(const G4Track &amp;aTrack, const G4Step &amp;aStep) override']]],
+  ['atrestdoit_36',['AtRestDoIt',['../class_o_m_sim_g4_scintillation.html#a067b14fb92df905cb6cc0ec14b1d22fb',1,'OMSimG4Scintillation::AtRestDoIt()'],['../class_g4_radioactive_decay.html#a0fb4257aca98bf87d751a0021dcf4639',1,'G4RadioactiveDecay::AtRestDoIt()'],['../class_o_m_sim_g4_scintillation.html#a1ab6f916bd26e5443d0f56238bc2df0e',1,'OMSimG4Scintillation::AtRestDoIt()']]],
   ['atrestgetphysicalinteractionlength_37',['AtRestGetPhysicalInteractionLength',['../class_g4_radioactive_decay.html#af23392c70746be540ba3b666cdac1114',1,'G4RadioactiveDecay']]]
 ];

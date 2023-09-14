@@ -17,6 +17,7 @@ var class_o_m_sim_s_n_analysis =
     [ "datafile_gammas8MeV", "class_o_m_sim_s_n_analysis.html#a9f83ec16dc2b6c1ebd02ad7752dd2b6f", null ],
     [ "evtStat0", "class_o_m_sim_s_n_analysis.html#a718992b9cfa5ba0dbc92edf2e7f457fe", null ],
     [ "foundPhoton", "class_o_m_sim_s_n_analysis.html#aeb23ad0ec73c5450f824f2295c4db4b9", null ],
+    [ "gQEweigh", "class_o_m_sim_s_n_analysis.html#a7df627ffe5cfdbaeb0bb8e7ff8e26dd0", null ],
     [ "hitStats", "class_o_m_sim_s_n_analysis.html#a867995b1f1cae9cc7ad1fc69a2fa275a", null ],
     [ "maininfofile", "class_o_m_sim_s_n_analysis.html#a890c9a482ba7a9b3620c1cd7d05c27bb", null ],
     [ "nuEnergy", "class_o_m_sim_s_n_analysis.html#a9f79dab2dbb2f3c04a51b3cd86359f82", null ],

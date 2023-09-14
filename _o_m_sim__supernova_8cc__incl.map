@@ -1,9 +1,10 @@
 <map id="OMSim_supernova.cc" name="OMSim_supernova.cc">
-<area shape="rect" id="node1" title=" " alt="" coords="1922,5,2085,32"/>
-<area shape="rect" id="node2" href="$_o_m_sim_8hh.html" title="Main simulation class for the Optical Module (OM) simulation. This file defines the OMSim class,..." alt="" coords="1347,80,1436,107"/>
+<area shape="rect" id="node1" title=" " alt="" coords="2582,5,2745,32"/>
+<area shape="rect" id="node2" href="$_o_m_sim_8hh.html" title="Main simulation class for the Optical Module (OM) simulation. This file defines the OMSim class,..." alt="" coords="1348,80,1437,107"/>
 <area shape="rect" id="node5" title=" " alt="" coords="5,155,252,181"/>
-<area shape="rect" id="node26" href="$_o_m_sim_s_n_analysis_8hh.html" title=" " alt="" coords="3013,80,3175,107"/>
-<area shape="rect" id="node32" href="$_o_m_sim_hit_manager_8hh.html" title="Defines structures and classes related to optical module photon hit management." alt="" coords="2517,80,2681,107"/>
+<area shape="rect" id="node26" href="$_o_m_sim_s_n_analysis_8hh.html" title=" " alt="" coords="2959,80,3122,107"/>
+<area shape="rect" id="node32" href="$_o_m_sim_hit_manager_8hh.html" title="Defines structures and classes related to optical module photon hit management." alt="" coords="2581,80,2745,107"/>
+<area shape="rect" id="node38" title=" " alt="" coords="3146,80,3269,107"/>
 <area shape="rect" id="node3" title=" " alt="" coords="1906,155,2133,181"/>
 <area shape="rect" id="node4" title=" " alt="" coords="2157,155,2319,181"/>
 <area shape="rect" id="node6" href="$common_2framework_2include_2_o_m_sim_run_action_8hh.html" title=" " alt="" coords="2343,155,2498,181"/>

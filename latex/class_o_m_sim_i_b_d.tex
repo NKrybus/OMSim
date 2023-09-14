@@ -22,7 +22,7 @@ Collaboration diagram for OMSim\+IBD\+:
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=257pt]{class_o_m_sim_i_b_d__coll__graph}
+\includegraphics[width=350pt]{class_o_m_sim_i_b_d__coll__graph}
 \end{center}
 \end{figure}
 
@@ -90,13 +90,13 @@ G4double \mbox{\hyperlink{class_o_m_sim_i_b_d_a1fdf4cc1ca457cf18e6cb83a8bffdec1}
 \item 
 G4double \mbox{\hyperlink{class_o_m_sim_i_b_d_a6bf28e93a6ca93657500be6fa4d12abd}{consg}}
 \item 
-std\+::vector$<$ double $>$ \mbox{\hyperlink{class_o_m_sim_i_b_d_a56a8147d9cd303055e18d38efb466441}{nubar\+\_\+time}}
+std\+::vector$<$ G4double $>$ \mbox{\hyperlink{class_o_m_sim_i_b_d_a7a956529cdc8061782764210304b9429}{m\+Nu\+Bar\+\_\+time}}
 \item 
-std\+::vector$<$ double $>$ \mbox{\hyperlink{class_o_m_sim_i_b_d_ac21e1b1305e4edf9e2918e71292fe94f}{nubar\+\_\+luminosity}}
+std\+::vector$<$ G4double $>$ \mbox{\hyperlink{class_o_m_sim_i_b_d_addfd36928896dcf29d3f9f7c8f9705a2}{m\+Nu\+Bar\+\_\+luminosity}}
 \item 
-std\+::vector$<$ double $>$ \mbox{\hyperlink{class_o_m_sim_i_b_d_ad64f91fae551d801a21daaa46b199767}{nubar\+\_\+meanenergy}}
+std\+::vector$<$ G4double $>$ \mbox{\hyperlink{class_o_m_sim_i_b_d_aa318de693a550be673c44648b4b3312a}{m\+Nu\+Bar\+\_\+meanenergy}}
 \item 
-std\+::vector$<$ double $>$ \mbox{\hyperlink{class_o_m_sim_i_b_d_a97dcd024f2326f0f6d14d98368396248}{nubar\+\_\+meanenergysquare}}
+std\+::vector$<$ G4double $>$ \mbox{\hyperlink{class_o_m_sim_i_b_d_a0358f22a95fb5f6dbc663cf534c51f18}{m\+Nu\+Bar\+\_\+meanenergysquare}}
 \end{DoxyCompactItemize}
 \doxysubsection*{Private Member Functions}
 \begin{DoxyCompactItemize}
@@ -111,6 +111,8 @@ G4double \mbox{\hyperlink{class_o_m_sim_i_b_d_a8e96874ed7339fb1861d1d69ce4b865e}
 \begin{DoxyCompactItemize}
 \item 
 G4\+Particle\+Gun $\ast$ \mbox{\hyperlink{class_o_m_sim_i_b_d_a63d164a7cc33f6e08973595a2955c4c0}{Particle\+Gun}}
+\item 
+\mbox{\hyperlink{class_o_m_sim_s_n_tools}{OMSim\+SNTools}} \mbox{\hyperlink{class_o_m_sim_i_b_d_a7a189cc2845d4f99ec208b798700f70d}{m\+SNTool\+Box}}
 \item 
 G4double \mbox{\hyperlink{class_o_m_sim_i_b_d_a1a894cbd8f35db6b81c5a9cd59475e55}{m\+Fixedenergy}}
 \item 
@@ -333,11 +335,41 @@ Total cross-\/section for the given energy. @reference T. Totani, K. Sato, H. E.
 \doxysubsubsection{\texorpdfstring{mn}{mn}}
 {\footnotesize\ttfamily G4double OMSim\+IBD\+::mn}
 
+\mbox{\Hypertarget{class_o_m_sim_i_b_d_addfd36928896dcf29d3f9f7c8f9705a2}\label{class_o_m_sim_i_b_d_addfd36928896dcf29d3f9f7c8f9705a2}} 
+\index{OMSimIBD@{OMSimIBD}!mNuBar\_luminosity@{mNuBar\_luminosity}}
+\index{mNuBar\_luminosity@{mNuBar\_luminosity}!OMSimIBD@{OMSimIBD}}
+\doxysubsubsection{\texorpdfstring{mNuBar\_luminosity}{mNuBar\_luminosity}}
+{\footnotesize\ttfamily std\+::vector$<$G4double$>$ OMSim\+IBD\+::m\+Nu\+Bar\+\_\+luminosity}
+
+\mbox{\Hypertarget{class_o_m_sim_i_b_d_aa318de693a550be673c44648b4b3312a}\label{class_o_m_sim_i_b_d_aa318de693a550be673c44648b4b3312a}} 
+\index{OMSimIBD@{OMSimIBD}!mNuBar\_meanenergy@{mNuBar\_meanenergy}}
+\index{mNuBar\_meanenergy@{mNuBar\_meanenergy}!OMSimIBD@{OMSimIBD}}
+\doxysubsubsection{\texorpdfstring{mNuBar\_meanenergy}{mNuBar\_meanenergy}}
+{\footnotesize\ttfamily std\+::vector$<$G4double$>$ OMSim\+IBD\+::m\+Nu\+Bar\+\_\+meanenergy}
+
+\mbox{\Hypertarget{class_o_m_sim_i_b_d_a0358f22a95fb5f6dbc663cf534c51f18}\label{class_o_m_sim_i_b_d_a0358f22a95fb5f6dbc663cf534c51f18}} 
+\index{OMSimIBD@{OMSimIBD}!mNuBar\_meanenergysquare@{mNuBar\_meanenergysquare}}
+\index{mNuBar\_meanenergysquare@{mNuBar\_meanenergysquare}!OMSimIBD@{OMSimIBD}}
+\doxysubsubsection{\texorpdfstring{mNuBar\_meanenergysquare}{mNuBar\_meanenergysquare}}
+{\footnotesize\ttfamily std\+::vector$<$G4double$>$ OMSim\+IBD\+::m\+Nu\+Bar\+\_\+meanenergysquare}
+
+\mbox{\Hypertarget{class_o_m_sim_i_b_d_a7a956529cdc8061782764210304b9429}\label{class_o_m_sim_i_b_d_a7a956529cdc8061782764210304b9429}} 
+\index{OMSimIBD@{OMSimIBD}!mNuBar\_time@{mNuBar\_time}}
+\index{mNuBar\_time@{mNuBar\_time}!OMSimIBD@{OMSimIBD}}
+\doxysubsubsection{\texorpdfstring{mNuBar\_time}{mNuBar\_time}}
+{\footnotesize\ttfamily std\+::vector$<$G4double$>$ OMSim\+IBD\+::m\+Nu\+Bar\+\_\+time}
+
 \mbox{\Hypertarget{class_o_m_sim_i_b_d_a6a74fdb85572692acf12d1e23700b154}\label{class_o_m_sim_i_b_d_a6a74fdb85572692acf12d1e23700b154}} 
 \index{OMSimIBD@{OMSimIBD}!mp@{mp}}
 \index{mp@{mp}!OMSimIBD@{OMSimIBD}}
 \doxysubsubsection{\texorpdfstring{mp}{mp}}
 {\footnotesize\ttfamily G4double OMSim\+IBD\+::mp}
+
+\mbox{\Hypertarget{class_o_m_sim_i_b_d_a7a189cc2845d4f99ec208b798700f70d}\label{class_o_m_sim_i_b_d_a7a189cc2845d4f99ec208b798700f70d}} 
+\index{OMSimIBD@{OMSimIBD}!mSNToolBox@{mSNToolBox}}
+\index{mSNToolBox@{mSNToolBox}!OMSimIBD@{OMSimIBD}}
+\doxysubsubsection{\texorpdfstring{mSNToolBox}{mSNToolBox}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_o_m_sim_s_n_tools}{OMSim\+SNTools}} OMSim\+IBD\+::m\+SNTool\+Box\hspace{0.3cm}{\ttfamily [private]}}
 
 \mbox{\Hypertarget{class_o_m_sim_i_b_d_ac869b122275b7b90ef013eb573065ec3}\label{class_o_m_sim_i_b_d_ac869b122275b7b90ef013eb573065ec3}} 
 \index{OMSimIBD@{OMSimIBD}!nPoints0@{nPoints0}}
@@ -362,30 +394,6 @@ Total cross-\/section for the given energy. @reference T. Totani, K. Sato, H. E.
 \index{NTargets@{NTargets}!OMSimIBD@{OMSimIBD}}
 \doxysubsubsection{\texorpdfstring{NTargets}{NTargets}}
 {\footnotesize\ttfamily G4double OMSim\+IBD\+::\+NTargets}
-
-\mbox{\Hypertarget{class_o_m_sim_i_b_d_ac21e1b1305e4edf9e2918e71292fe94f}\label{class_o_m_sim_i_b_d_ac21e1b1305e4edf9e2918e71292fe94f}} 
-\index{OMSimIBD@{OMSimIBD}!nubar\_luminosity@{nubar\_luminosity}}
-\index{nubar\_luminosity@{nubar\_luminosity}!OMSimIBD@{OMSimIBD}}
-\doxysubsubsection{\texorpdfstring{nubar\_luminosity}{nubar\_luminosity}}
-{\footnotesize\ttfamily std\+::vector$<$double$>$ OMSim\+IBD\+::nubar\+\_\+luminosity}
-
-\mbox{\Hypertarget{class_o_m_sim_i_b_d_ad64f91fae551d801a21daaa46b199767}\label{class_o_m_sim_i_b_d_ad64f91fae551d801a21daaa46b199767}} 
-\index{OMSimIBD@{OMSimIBD}!nubar\_meanenergy@{nubar\_meanenergy}}
-\index{nubar\_meanenergy@{nubar\_meanenergy}!OMSimIBD@{OMSimIBD}}
-\doxysubsubsection{\texorpdfstring{nubar\_meanenergy}{nubar\_meanenergy}}
-{\footnotesize\ttfamily std\+::vector$<$double$>$ OMSim\+IBD\+::nubar\+\_\+meanenergy}
-
-\mbox{\Hypertarget{class_o_m_sim_i_b_d_a97dcd024f2326f0f6d14d98368396248}\label{class_o_m_sim_i_b_d_a97dcd024f2326f0f6d14d98368396248}} 
-\index{OMSimIBD@{OMSimIBD}!nubar\_meanenergysquare@{nubar\_meanenergysquare}}
-\index{nubar\_meanenergysquare@{nubar\_meanenergysquare}!OMSimIBD@{OMSimIBD}}
-\doxysubsubsection{\texorpdfstring{nubar\_meanenergysquare}{nubar\_meanenergysquare}}
-{\footnotesize\ttfamily std\+::vector$<$double$>$ OMSim\+IBD\+::nubar\+\_\+meanenergysquare}
-
-\mbox{\Hypertarget{class_o_m_sim_i_b_d_a56a8147d9cd303055e18d38efb466441}\label{class_o_m_sim_i_b_d_a56a8147d9cd303055e18d38efb466441}} 
-\index{OMSimIBD@{OMSimIBD}!nubar\_time@{nubar\_time}}
-\index{nubar\_time@{nubar\_time}!OMSimIBD@{OMSimIBD}}
-\doxysubsubsection{\texorpdfstring{nubar\_time}{nubar\_time}}
-{\footnotesize\ttfamily std\+::vector$<$double$>$ OMSim\+IBD\+::nubar\+\_\+time}
 
 \mbox{\Hypertarget{class_o_m_sim_i_b_d_a63d164a7cc33f6e08973595a2955c4c0}\label{class_o_m_sim_i_b_d_a63d164a7cc33f6e08973595a2955c4c0}} 
 \index{OMSimIBD@{OMSimIBD}!ParticleGun@{ParticleGun}}

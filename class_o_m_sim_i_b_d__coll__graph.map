@@ -1,4 +1,5 @@
 <map id="OMSimIBD" name="OMSimIBD">
-<area shape="rect" id="node1" title="Class in charge of generating positrons from IBD of supernova antineutrino interactions." alt="" coords="77,80,169,107"/>
+<area shape="rect" id="node1" title="Class in charge of generating positrons from IBD of supernova antineutrino interactions." alt="" coords="179,95,271,121"/>
 <area shape="rect" id="node2" title=" " alt="" coords="5,5,241,32"/>
+<area shape="rect" id="node3" href="$class_o_m_sim_s_n_tools.html" title="Provides utility methods for generating ENES and IBD interactions." alt="" coords="266,5,386,32"/>
 </map>

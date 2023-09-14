@@ -139,6 +139,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a8255809ee573ea08fa892441b32e48b8"><td class="memItemLeft" align="right" valign="top">G4ThreeVector&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_m_sim_s_n_tools.html#a8255809ee573ea08fa892441b32e48b8">RandomPosition</a> ()</td></tr>
 <tr class="memdesc:a8255809ee573ea08fa892441b32e48b8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Randomly determines a vertex position within the generation volume.  <a href="class_o_m_sim_s_n_tools.html#a8255809ee573ea08fa892441b32e48b8">More...</a><br /></td></tr>
 <tr class="separator:a8255809ee573ea08fa892441b32e48b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a89a22f20d0aff91704cf6cab1b48d266"><td class="memItemLeft" align="right" valign="top">std::pair&lt; std::string, std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_m_sim_s_n_tools.html#a89a22f20d0aff91704cf6cab1b48d266">getFileNames</a> (int value)</td></tr>
+<tr class="memdesc:a89a22f20d0aff91704cf6cab1b48d266"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves file names for neutrino and antineutrino fluxes based on a specified supernova model.  <a href="class_o_m_sim_s_n_tools.html#a89a22f20d0aff91704cf6cab1b48d266">More...</a><br /></td></tr>
+<tr class="separator:a89a22f20d0aff91704cf6cab1b48d266"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acd2197f87f712d54eff8e93b233e8478"><td class="memItemLeft" align="right" valign="top">G4double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_m_sim_s_n_tools.html#acd2197f87f712d54eff8e93b233e8478">InverseCumul</a> (std::vector&lt; G4double &gt; xvals, std::vector&lt; G4double &gt; yvals, G4int nPoints)</td></tr>
 <tr class="memdesc:acd2197f87f712d54eff8e93b233e8478"><td class="mdescLeft">&#160;</td><td class="mdescRight">Samples a value from a given distribution using the Inverse CDF method.  <a href="class_o_m_sim_s_n_tools.html#acd2197f87f712d54eff8e93b233e8478">More...</a><br /></td></tr>
 <tr class="separator:acd2197f87f712d54eff8e93b233e8478"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -322,7 +325,7 @@ Private Attributes</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000013">Todo:</a></b></dt><dd>Consider renaming 'time' to a more generic term. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000014">Todo:</a></b></dt><dd>Consider renaming 'time' to a more generic term. </dd></dl>
 <dl class="section return"><dt>Returns</dt><dd>The index in the array that holds the value closest (or next largest) to the specified input. </dd></dl>
 
 </div>
@@ -361,6 +364,33 @@ Private Attributes</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>alpha Pinching parameter of the energy spectrum. </dd></dl>
+
+</div>
+</div>
+<a id="a89a22f20d0aff91704cf6cab1b48d266"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a89a22f20d0aff91704cf6cab1b48d266">&#9670;&nbsp;</a></span>getFileNames()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::pair&lt; std::string, std::string &gt; OMSimSNTools::getFileNames </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>value</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>This function provides the corresponding file names for neutrino and antineutrino fluxes depending on the supernova model identified by the input value. Files are located in "supernova/models"</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">value</td><td>The integer identifier representing a specific supernova model. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000011">Todo:</a></b></dt><dd>Handle error cases more robustly than just console output. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>A pair containing the neutrino and antineutrino flux file names. </dd></dl>
 
 </div>
 </div>
@@ -404,7 +434,7 @@ Private Attributes</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000011">Todo:</a></b></dt><dd>Reconsider the requirement for the 'nPoints' parameter. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000012">Todo:</a></b></dt><dd>Reconsider the requirement for the 'nPoints' parameter. </dd></dl>
 <dl class="section warning"><dt>Warning</dt><dd>Assumes that the generation volume is a cylinder! </dd></dl>
 <dl class="section return"><dt>Returns</dt><dd>A randomly chosen x-value that's sampled based on the distribution's profile. </dd></dl>
 
@@ -464,7 +494,7 @@ Private Attributes</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000012">Todo:</a></b></dt><dd>Re-evaluate the necessity of the 'nPoints' parameter. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000013">Todo:</a></b></dt><dd>Re-evaluate the necessity of the 'nPoints' parameter. </dd></dl>
 <dl class="section return"><dt>Returns</dt><dd>A randomly selected x-value sampled in line with the provided distribution. </dd></dl>
 
 </div>
@@ -643,7 +673,7 @@ Private Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="class_o_m_sim_s_n_tools.html">OMSimSNTools</a></li>
-    <li class="footer">Generated on Wed Sep 6 2023 16:37:02 for OMSim by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Thu Sep 14 2023 16:46:24 for OMSim by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

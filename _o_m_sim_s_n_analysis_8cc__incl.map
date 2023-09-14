@@ -1,12 +1,18 @@
 <map id="OMSimSNAnalysis.cc" name="OMSimSNAnalysis.cc">
-<area shape="rect" id="node1" title="Analyze data and write output files." alt="" coords="486,5,646,32"/>
-<area shape="rect" id="node2" href="$_o_m_sim_s_n_analysis_8hh.html" title=" " alt="" coords="299,80,462,107"/>
-<area shape="rect" id="node9" title=" " alt="" coords="487,80,645,107"/>
-<area shape="rect" id="node10" title=" " alt="" coords="669,80,748,107"/>
+<area shape="rect" id="node1" title="Analyze data and write output files." alt="" coords="529,5,689,32"/>
+<area shape="rect" id="node2" href="$_o_m_sim_s_n_analysis_8hh.html" title=" " alt="" coords="271,80,434,107"/>
+<area shape="rect" id="node9" title=" " alt="" coords="459,80,617,107"/>
+<area shape="rect" id="node10" title=" " alt="" coords="641,80,720,107"/>
+<area shape="rect" id="node11" href="$_o_m_sim_command_args_table_8hh.html" title="Definition of the OMSimCommandArgsTable singleton class, which controls user args." alt="" coords="745,80,963,107"/>
 <area shape="rect" id="node3" title=" " alt="" coords="5,155,103,181"/>
 <area shape="rect" id="node4" title=" " alt="" coords="127,155,226,181"/>
 <area shape="rect" id="node5" title=" " alt="" coords="251,155,388,181"/>
 <area shape="rect" id="node6" title=" " alt="" coords="412,155,475,181"/>
-<area shape="rect" id="node7" title=" " alt="" coords="499,155,572,181"/>
-<area shape="rect" id="node8" title=" " alt="" coords="596,155,651,181"/>
+<area shape="rect" id="node7" title=" " alt="" coords="577,155,651,181"/>
+<area shape="rect" id="node8" title=" " alt="" coords="499,155,553,181"/>
+<area shape="rect" id="node12" href="$_o_m_sim_logger_8hh.html" title=" " alt="" coords="675,155,807,181"/>
+<area shape="rect" id="node15" title=" " alt="" coords="831,155,943,181"/>
+<area shape="rect" id="node16" title=" " alt="" coords="967,155,1058,181"/>
+<area shape="rect" id="node13" title=" " alt="" coords="662,229,729,256"/>
+<area shape="rect" id="node14" title=" " alt="" coords="753,229,817,256"/>
 </map>

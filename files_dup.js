@@ -51,11 +51,16 @@ var files_dup =
     ] ],
     [ "effective_area/src/OMSimEventAction.cc", "effective__area_2src_2_o_m_sim_event_action_8cc.html", null ],
     [ "radioactive_decays/src/OMSimEventAction.cc", "radioactive__decays_2src_2_o_m_sim_event_action_8cc.html", null ],
+    [ "supernova/src/OMSimEventAction.cc", "supernova_2src_2_o_m_sim_event_action_8cc.html", null ],
     [ "effective_area/include/OMSimEventAction.hh", "effective__area_2include_2_o_m_sim_event_action_8hh.html", [
       [ "OMSimEventAction", "class_o_m_sim_event_action.html", "class_o_m_sim_event_action" ],
       [ "EventInfoManager", "class_event_info_manager.html", "class_event_info_manager" ]
     ] ],
     [ "radioactive_decays/include/OMSimEventAction.hh", "radioactive__decays_2include_2_o_m_sim_event_action_8hh.html", [
+      [ "OMSimEventAction", "class_o_m_sim_event_action.html", "class_o_m_sim_event_action" ],
+      [ "EventInfoManager", "class_event_info_manager.html", "class_event_info_manager" ]
+    ] ],
+    [ "supernova/include/OMSimEventAction.hh", "supernova_2include_2_o_m_sim_event_action_8hh.html", [
       [ "OMSimEventAction", "class_o_m_sim_event_action.html", "class_o_m_sim_event_action" ],
       [ "EventInfoManager", "class_event_info_manager.html", "class_event_info_manager" ]
     ] ],
@@ -67,7 +72,7 @@ var files_dup =
     ] ],
     [ "OMSimHitManager.cc", "_o_m_sim_hit_manager_8cc.html", "_o_m_sim_hit_manager_8cc" ],
     [ "OMSimHitManager.hh", "_o_m_sim_hit_manager_8hh.html", null ],
-    [ "OMSimIBD.cc", "_o_m_sim_i_b_d_8cc.html", "_o_m_sim_i_b_d_8cc" ],
+    [ "OMSimIBD.cc", "_o_m_sim_i_b_d_8cc.html", null ],
     [ "OMSimIBD.hh", "_o_m_sim_i_b_d_8hh.html", "_o_m_sim_i_b_d_8hh" ],
     [ "OMSimInputData.cc", "_o_m_sim_input_data_8cc.html", null ],
     [ "OMSimInputData.hh", "_o_m_sim_input_data_8hh.html", [
@@ -133,7 +138,7 @@ var files_dup =
     [ "radioactive_decays/include/OMSimRunAction.hh", "radioactive__decays_2include_2_o_m_sim_run_action_8hh.html", [
       [ "OMSimRunAction", "class_o_m_sim_run_action.html", "class_o_m_sim_run_action" ]
     ] ],
-    [ "OMSimSNAnalysis.cc", "_o_m_sim_s_n_analysis_8cc.html", "_o_m_sim_s_n_analysis_8cc" ],
+    [ "OMSimSNAnalysis.cc", "_o_m_sim_s_n_analysis_8cc.html", null ],
     [ "OMSimSNAnalysis.hh", "_o_m_sim_s_n_analysis_8hh.html", [
       [ "HitStat", "struct_hit_stat.html", "struct_hit_stat" ],
       [ "EvtStat", "struct_evt_stat.html", "struct_evt_stat" ],

@@ -6,6 +6,7 @@ var class_o_m_sim_s_n_tools =
     [ "EnergyDistribution", "class_o_m_sim_s_n_tools.html#a19ca341f8db1a172ec0630b9facb23de", null ],
     [ "findtime", "class_o_m_sim_s_n_tools.html#aa760cb3204e636696ce5be962409694e", null ],
     [ "GetAlpha", "class_o_m_sim_s_n_tools.html#a0d6baa149b4760c70e508b802e140fd9", null ],
+    [ "getFileNames", "class_o_m_sim_s_n_tools.html#a89a22f20d0aff91704cf6cab1b48d266", null ],
     [ "InverseCumul", "class_o_m_sim_s_n_tools.html#acd2197f87f712d54eff8e93b233e8478", null ],
     [ "InverseCumulAlgorithm", "class_o_m_sim_s_n_tools.html#a296fba8cceca9892ab52ac9e18064b01", null ],
     [ "linealinterpolation", "class_o_m_sim_s_n_tools.html#aa18c66c8764e66d08cc238979e062be3", null ],
