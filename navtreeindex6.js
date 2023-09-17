@@ -1,5 +1,6 @@
 var NAVTREEINDEX6 =
 {
+"struct_hit_stat.html#a66a724b7ef8ddfc0c47d182de5b2a56f":[5,0,14,9],
 "struct_hit_stat.html#a6e4539198e0a229cab62e6e9179fa292":[5,0,14,0],
 "struct_hit_stat.html#a8a02c22cdda4456b37e3331c92422b2f":[5,0,14,6],
 "struct_hit_stat.html#a90ee5627998c403afe203b5678e8cf03":[5,0,14,4],

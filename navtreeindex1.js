@@ -1,5 +1,6 @@
 var NAVTREEINDEX1 =
 {
+"annotated.html":[5,0],
 "class_angular_scan.html":[3,1,4],
 "class_angular_scan.html#a050c9c2066f662a1d7868b4dac0e5795":[3,1,4,1],
 "class_angular_scan.html#a0603ef7f2b297de98ad466145ff122e4":[3,1,4,4],
@@ -248,6 +249,5 @@ var NAVTREEINDEX1 =
 "class_event_info_manager.html#aaae2a42eb414ea5fbde3deff5cffc0b2":[5,0,10,1],
 "class_event_info_manager.html#aaae2a42eb414ea5fbde3deff5cffc0b2":[5,0,10,2],
 "class_event_info_manager.html#ab55b547cd98a9ae44b909dd4e03f0d0d":[5,0,10,3],
-"class_event_info_manager.html#ab55b547cd98a9ae44b909dd4e03f0d0d":[5,0,10,4],
-"class_event_info_manager.html#ab55b547cd98a9ae44b909dd4e03f0d0d":[5,0,10,5]
+"class_event_info_manager.html#ab55b547cd98a9ae44b909dd4e03f0d0d":[5,0,10,4]
 };
