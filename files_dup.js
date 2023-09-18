@@ -125,8 +125,12 @@ var files_dup =
       [ "PMTPulse", "struct_o_m_sim_p_m_t_response_1_1_p_m_t_pulse.html", "struct_o_m_sim_p_m_t_response_1_1_p_m_t_pulse" ]
     ] ],
     [ "effective_area/src/OMSimPrimaryGeneratorAction.cc", "effective__area_2src_2_o_m_sim_primary_generator_action_8cc.html", null ],
+    [ "radioactive_decays/src/OMSimPrimaryGeneratorAction.cc", "radioactive__decays_2src_2_o_m_sim_primary_generator_action_8cc.html", null ],
     [ "supernova/src/OMSimPrimaryGeneratorAction.cc", "supernova_2src_2_o_m_sim_primary_generator_action_8cc.html", null ],
     [ "effective_area/include/OMSimPrimaryGeneratorAction.hh", "effective__area_2include_2_o_m_sim_primary_generator_action_8hh.html", [
+      [ "OMSimPrimaryGeneratorAction", "class_o_m_sim_primary_generator_action.html", "class_o_m_sim_primary_generator_action" ]
+    ] ],
+    [ "radioactive_decays/include/OMSimPrimaryGeneratorAction.hh", "radioactive__decays_2include_2_o_m_sim_primary_generator_action_8hh.html", [
       [ "OMSimPrimaryGeneratorAction", "class_o_m_sim_primary_generator_action.html", "class_o_m_sim_primary_generator_action" ]
     ] ],
     [ "supernova/include/OMSimPrimaryGeneratorAction.hh", "supernova_2include_2_o_m_sim_primary_generator_action_8hh.html", [

@@ -77,6 +77,7 @@ var hierarchy =
     [ "G4VUserPrimaryGeneratorAction", null, [
       [ "OMSimIBD", "class_o_m_sim_i_b_d.html", null ],
       [ "OMSimPrimaryGeneratorAction", "class_o_m_sim_primary_generator_action.html", null ],
+      [ "OMSimPrimaryGeneratorAction", "class_o_m_sim_primary_generator_action.html", null ],
       [ "OMSimPrimaryGeneratorAction", "class_o_m_sim_primary_generator_action.html", null ]
     ] ],
     [ "GlobalPosition", "struct_global_position.html", null ],

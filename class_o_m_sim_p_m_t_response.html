@@ -141,6 +141,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a55aabd8f8fd9be58eca3ba0753974d08"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_o_m_sim_p_m_t_response_1_1_p_m_t_pulse.html">PMTPulse</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_m_sim_p_m_t_response.html#a55aabd8f8fd9be58eca3ba0753974d08">processPhotocathodeHit</a> (G4double pX, G4double pY, G4double pWavelength)</td></tr>
 <tr class="memdesc:a55aabd8f8fd9be58eca3ba0753974d08"><td class="mdescLeft">&#160;</td><td class="mdescRight">Process a hit on the photocathode into a PMT pulse.  <a href="class_o_m_sim_p_m_t_response.html#a55aabd8f8fd9be58eca3ba0753974d08">More...</a><br /></td></tr>
 <tr class="separator:a55aabd8f8fd9be58eca3ba0753974d08"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2447b2f9eb62a1e99f410bfeda917d5c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_m_sim_p_m_t_response.html#a2447b2f9eb62a1e99f410bfeda917d5c">passQE</a> (G4double pWavelength)</td></tr>
+<tr class="memdesc:a2447b2f9eb62a1e99f410bfeda917d5c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if photon with given wavelength passes QE check.  <a href="class_o_m_sim_p_m_t_response.html#a2447b2f9eb62a1e99f410bfeda917d5c">More...</a><br /></td></tr>
+<tr class="separator:a2447b2f9eb62a1e99f410bfeda917d5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
@@ -149,6 +152,9 @@ Static Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
+<tr class="memitem:a947d422c7f7a006f714773df900bd722"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_m_sim_p_m_t_response.html#a947d422c7f7a006f714773df900bd722">configureQEinterpolator</a> ()</td></tr>
+<tr class="memdesc:a947d422c7f7a006f714773df900bd722"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes the QE interpolator from a data file.  <a href="class_o_m_sim_p_m_t_response.html#a947d422c7f7a006f714773df900bd722">More...</a><br /></td></tr>
+<tr class="separator:a947d422c7f7a006f714773df900bd722"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0dd544847ff216a24aa8c528e76c9aed"><td class="memItemLeft" align="right" valign="top">TH2D *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_m_sim_p_m_t_response.html#a0dd544847ff216a24aa8c528e76c9aed">createHistogramFromData</a> (const std::string &amp;pFilePath, const char *pTH2DName)</td></tr>
 <tr class="memdesc:a0dd544847ff216a24aa8c528e76c9aed"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a histogram from provided data.  <a href="class_o_m_sim_p_m_t_response.html#a0dd544847ff216a24aa8c528e76c9aed">More...</a><br /></td></tr>
 <tr class="separator:a0dd544847ff216a24aa8c528e76c9aed"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -191,6 +197,8 @@ Private Attributes</h2></td></tr>
 <tr class="separator:a8e0c8cc231f7c07c4f17132f645bfd91"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a58cc7b865fa91c7c2bd1e57dbb4251e8"><td class="memItemLeft" align="right" valign="top">TGraph *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_m_sim_p_m_t_response.html#a58cc7b865fa91c7c2bd1e57dbb4251e8">mRelativeDetectionEfficiencyInterp</a></td></tr>
 <tr class="separator:a58cc7b865fa91c7c2bd1e57dbb4251e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a062558aeb49f7e6f0767fdf9434ad4a5"><td class="memItemLeft" align="right" valign="top">TGraph *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_m_sim_p_m_t_response.html#a062558aeb49f7e6f0767fdf9434ad4a5">mQEInterp</a></td></tr>
+<tr class="separator:a062558aeb49f7e6f0767fdf9434ad4a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8c48e24017383d85047737e167686d9e"><td class="memItemLeft" align="right" valign="top">std::map&lt; G4double, TH2D * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_m_sim_p_m_t_response.html#a8c48e24017383d85047737e167686d9e">mGainG2Dmap</a></td></tr>
 <tr class="separator:a8c48e24017383d85047737e167686d9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6103659c1dbb9db7dea07e672f6aedb0"><td class="memItemLeft" align="right" valign="top">std::map&lt; G4double, TH2D * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_m_sim_p_m_t_response.html#a6103659c1dbb9db7dea07e672f6aedb0">mGainResolutionG2Dmap</a></td></tr>
@@ -278,6 +286,34 @@ Private Attributes</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="a947d422c7f7a006f714773df900bd722"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a947d422c7f7a006f714773df900bd722">&#9670;&nbsp;</a></span>configureQEinterpolator()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void OMSimPMTResponse::configureQEinterpolator </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Sets up the quantum efficiency (QE) interpolator using data from a predefined path.</p>
+<dl class="section warning"><dt>Warning</dt><dd>Ensure the data file is present at the specified path.</dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="class_o_m_sim_p_m_t_response.html#a2447b2f9eb62a1e99f410bfeda917d5c" title="Checks if photon with given wavelength passes QE check.">passQE</a> </dd></dl>
+
+</div>
+</div>
 <a id="a0dd544847ff216a24aa8c528e76c9aed"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a0dd544847ff216a24aa8c528e76c9aed">&#9670;&nbsp;</a></span>createHistogramFromData()</h2>
 
@@ -610,6 +646,32 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="a2447b2f9eb62a1e99f410bfeda917d5c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2447b2f9eb62a1e99f410bfeda917d5c">&#9670;&nbsp;</a></span>passQE()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool OMSimPMTResponse::passQE </td>
+          <td>(</td>
+          <td class="paramtype">G4double&#160;</td>
+          <td class="paramname"><em>pWavelength</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pWavelength</td><td>Photon wavelength to be checked in nm. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True if the photon passes the QE check, false otherwise.</dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="class_o_m_sim_p_m_t_response.html#a947d422c7f7a006f714773df900bd722" title="Initializes the QE interpolator from a data file.">configureQEinterpolator</a> </dd></dl>
+
+</div>
+</div>
 <a id="a55aabd8f8fd9be58eca3ba0753974d08"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a55aabd8f8fd9be58eca3ba0753974d08">&#9670;&nbsp;</a></span>processPhotocathodeHit()</h2>
 
@@ -739,6 +801,28 @@ Private Attributes</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">std::map&lt;G4double, TH2D *&gt; OMSimPMTResponse::mGainResolutionG2Dmap</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a062558aeb49f7e6f0767fdf9434ad4a5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a062558aeb49f7e6f0767fdf9434ad4a5">&#9670;&nbsp;</a></span>mQEInterp</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">TGraph* OMSimPMTResponse::mQEInterp</td>
         </tr>
       </table>
   </td>
@@ -914,7 +998,7 @@ Private Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="class_o_m_sim_p_m_t_response.html">OMSimPMTResponse</a></li>
-    <li class="footer">Generated on Sun Sep 17 2023 16:53:57 for OMSim by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Mon Sep 18 2023 12:44:14 for OMSim by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

@@ -17,7 +17,9 @@ struct \mbox{\hyperlink{struct_o_m_sim_p_m_t_response_1_1_p_m_t_pulse}{PMTPulse}
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\hyperlink{struct_o_m_sim_p_m_t_response_1_1_p_m_t_pulse}{PMTPulse}} \mbox{\hyperlink{class_o_m_sim_p_m_t_response_a55aabd8f8fd9be58eca3ba0753974d08}{process\+Photocathode\+Hit}} (G4double pX, G4double pY, G4double p\+Wavelength)
-\begin{DoxyCompactList}\small\item\em Process a hit on the photocathode into a PMT pulse. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Process a hit on the photocathode into a PMT pulse. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_o_m_sim_p_m_t_response_a2447b2f9eb62a1e99f410bfeda917d5c}{pass\+QE}} (G4double p\+Wavelength)
+\begin{DoxyCompactList}\small\item\em Checks if photon with given wavelength passes QE check. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Static Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
@@ -26,6 +28,8 @@ static \mbox{\hyperlink{class_o_m_sim_p_m_t_response}{OMSim\+PMTResponse}} \& \m
 \doxysubsection*{Private Member Functions}
 \begin{DoxyCompactItemize}
 \item 
+void \mbox{\hyperlink{class_o_m_sim_p_m_t_response_a947d422c7f7a006f714773df900bd722}{configure\+QEinterpolator}} ()
+\begin{DoxyCompactList}\small\item\em Initializes the QE interpolator from a data file. \end{DoxyCompactList}\item 
 TH2D $\ast$ \mbox{\hyperlink{class_o_m_sim_p_m_t_response_a0dd544847ff216a24aa8c528e76c9aed}{create\+Histogram\+From\+Data}} (const std\+::string \&p\+File\+Path, const char $\ast$p\+TH2\+DName)
 \begin{DoxyCompactList}\small\item\em Create a histogram from provided data. \end{DoxyCompactList}\item 
 G4double \mbox{\hyperlink{class_o_m_sim_p_m_t_response_a5dd826e00f45b0d3842e75a62b6a07f3}{get\+Charge}} (G4double p\+Wavelength\+Key)
@@ -63,6 +67,8 @@ G4double \mbox{\hyperlink{class_o_m_sim_p_m_t_response_a8e0c8cc231f7c07c4f17132f
 \item 
 TGraph $\ast$ \mbox{\hyperlink{class_o_m_sim_p_m_t_response_a58cc7b865fa91c7c2bd1e57dbb4251e8}{m\+Relative\+Detection\+Efficiency\+Interp}}
 \item 
+TGraph $\ast$ \mbox{\hyperlink{class_o_m_sim_p_m_t_response_a062558aeb49f7e6f0767fdf9434ad4a5}{m\+QEInterp}}
+\item 
 std\+::map$<$ G4double, TH2D $\ast$ $>$ \mbox{\hyperlink{class_o_m_sim_p_m_t_response_a8c48e24017383d85047737e167686d9e}{m\+Gain\+G2\+Dmap}}
 \item 
 std\+::map$<$ G4double, TH2D $\ast$ $>$ \mbox{\hyperlink{class_o_m_sim_p_m_t_response_a6103659c1dbb9db7dea07e672f6aedb0}{m\+Gain\+Resolution\+G2\+Dmap}}
@@ -95,6 +101,20 @@ std\+::map$<$ G4double, TH2D $\ast$ $>$ \mbox{\hyperlink{class_o_m_sim_p_m_t_res
 
 
 \doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_o_m_sim_p_m_t_response_a947d422c7f7a006f714773df900bd722}\label{class_o_m_sim_p_m_t_response_a947d422c7f7a006f714773df900bd722}} 
+\index{OMSimPMTResponse@{OMSimPMTResponse}!configureQEinterpolator@{configureQEinterpolator}}
+\index{configureQEinterpolator@{configureQEinterpolator}!OMSimPMTResponse@{OMSimPMTResponse}}
+\doxysubsubsection{\texorpdfstring{configureQEinterpolator()}{configureQEinterpolator()}}
+{\footnotesize\ttfamily void OMSim\+PMTResponse\+::configure\+QEinterpolator (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+Sets up the quantum efficiency (QE) interpolator using data from a predefined path.
+
+\begin{DoxyWarning}{Warning}
+Ensure the data file is present at the specified path.
+\end{DoxyWarning}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_o_m_sim_p_m_t_response_a2447b2f9eb62a1e99f410bfeda917d5c}{pass\+QE}} 
+\end{DoxySeeAlso}
 \mbox{\Hypertarget{class_o_m_sim_p_m_t_response_a0dd544847ff216a24aa8c528e76c9aed}\label{class_o_m_sim_p_m_t_response_a0dd544847ff216a24aa8c528e76c9aed}} 
 \index{OMSimPMTResponse@{OMSimPMTResponse}!createHistogramFromData@{createHistogramFromData}}
 \index{createHistogramFromData@{createHistogramFromData}!OMSimPMTResponse@{OMSimPMTResponse}}
@@ -225,6 +245,23 @@ G4double The interpolated transit time in ns.
 \doxysubsubsection{\texorpdfstring{operator=()}{operator=()}}
 {\footnotesize\ttfamily \mbox{\hyperlink{class_o_m_sim_p_m_t_response}{OMSim\+PMTResponse}}\& OMSim\+PMTResponse\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_o_m_sim_p_m_t_response}{OMSim\+PMTResponse}} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [delete]}}
 
+\mbox{\Hypertarget{class_o_m_sim_p_m_t_response_a2447b2f9eb62a1e99f410bfeda917d5c}\label{class_o_m_sim_p_m_t_response_a2447b2f9eb62a1e99f410bfeda917d5c}} 
+\index{OMSimPMTResponse@{OMSimPMTResponse}!passQE@{passQE}}
+\index{passQE@{passQE}!OMSimPMTResponse@{OMSimPMTResponse}}
+\doxysubsubsection{\texorpdfstring{passQE()}{passQE()}}
+{\footnotesize\ttfamily bool OMSim\+PMTResponse\+::pass\+QE (\begin{DoxyParamCaption}\item[{G4double}]{p\+Wavelength }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+Wavelength} & Photon wavelength to be checked in nm. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the photon passes the QE check, false otherwise.
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_o_m_sim_p_m_t_response_a947d422c7f7a006f714773df900bd722}{configure\+QEinterpolator}} 
+\end{DoxySeeAlso}
 \mbox{\Hypertarget{class_o_m_sim_p_m_t_response_a55aabd8f8fd9be58eca3ba0753974d08}\label{class_o_m_sim_p_m_t_response_a55aabd8f8fd9be58eca3ba0753974d08}} 
 \index{OMSimPMTResponse@{OMSimPMTResponse}!processPhotocathodeHit@{processPhotocathodeHit}}
 \index{processPhotocathodeHit@{processPhotocathodeHit}!OMSimPMTResponse@{OMSimPMTResponse}}
@@ -277,6 +314,12 @@ G4double interpolated value
 \index{mGainResolutionG2Dmap@{mGainResolutionG2Dmap}!OMSimPMTResponse@{OMSimPMTResponse}}
 \doxysubsubsection{\texorpdfstring{mGainResolutionG2Dmap}{mGainResolutionG2Dmap}}
 {\footnotesize\ttfamily std\+::map$<$G4double, TH2D $\ast$$>$ OMSim\+PMTResponse\+::m\+Gain\+Resolution\+G2\+Dmap\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_o_m_sim_p_m_t_response_a062558aeb49f7e6f0767fdf9434ad4a5}\label{class_o_m_sim_p_m_t_response_a062558aeb49f7e6f0767fdf9434ad4a5}} 
+\index{OMSimPMTResponse@{OMSimPMTResponse}!mQEInterp@{mQEInterp}}
+\index{mQEInterp@{mQEInterp}!OMSimPMTResponse@{OMSimPMTResponse}}
+\doxysubsubsection{\texorpdfstring{mQEInterp}{mQEInterp}}
+{\footnotesize\ttfamily TGraph$\ast$ OMSim\+PMTResponse\+::m\+QEInterp\hspace{0.3cm}{\ttfamily [private]}}
 
 \mbox{\Hypertarget{class_o_m_sim_p_m_t_response_a58cc7b865fa91c7c2bd1e57dbb4251e8}\label{class_o_m_sim_p_m_t_response_a58cc7b865fa91c7c2bd1e57dbb4251e8}} 
 \index{OMSimPMTResponse@{OMSimPMTResponse}!mRelativeDetectionEfficiencyInterp@{mRelativeDetectionEfficiencyInterp}}
