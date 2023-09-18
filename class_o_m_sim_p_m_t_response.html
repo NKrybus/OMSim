@@ -178,8 +178,8 @@ Private Member Functions</h2></td></tr>
 <tr class="separator:a39d958aa616a6bdd0c8a73211d834503"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a80b379bc78ca06d23011703aae3341d7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_m_sim_p_m_t_response.html#a80b379bc78ca06d23011703aae3341d7">OMSimPMTResponse</a> ()</td></tr>
 <tr class="separator:a80b379bc78ca06d23011703aae3341d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a85a7f22b8809dbc317672cf5c49949c9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_m_sim_p_m_t_response.html#a85a7f22b8809dbc317672cf5c49949c9">~OMSimPMTResponse</a> ()=default</td></tr>
-<tr class="separator:a85a7f22b8809dbc317672cf5c49949c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aca0bba84fbd6a5c121467e44b1b758f9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_m_sim_p_m_t_response.html#aca0bba84fbd6a5c121467e44b1b758f9">~OMSimPMTResponse</a> ()</td></tr>
+<tr class="separator:aca0bba84fbd6a5c121467e44b1b758f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a204531485b4a631d1a60b53057658ca8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_m_sim_p_m_t_response.html#a204531485b4a631d1a60b53057658ca8">OMSimPMTResponse</a> (const <a class="el" href="class_o_m_sim_p_m_t_response.html">OMSimPMTResponse</a> &amp;)=delete</td></tr>
 <tr class="separator:a204531485b4a631d1a60b53057658ca8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5bfb5cb02d12f7d8a17e389707d4a8a1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_o_m_sim_p_m_t_response.html">OMSimPMTResponse</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_m_sim_p_m_t_response.html#a5bfb5cb02d12f7d8a17e389707d4a8a1">operator=</a> (const <a class="el" href="class_o_m_sim_p_m_t_response.html">OMSimPMTResponse</a> &amp;)=delete</td></tr>
@@ -234,8 +234,8 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a85a7f22b8809dbc317672cf5c49949c9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a85a7f22b8809dbc317672cf5c49949c9">&#9670;&nbsp;</a></span>~OMSimPMTResponse()</h2>
+<a id="aca0bba84fbd6a5c121467e44b1b758f9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aca0bba84fbd6a5c121467e44b1b758f9">&#9670;&nbsp;</a></span>~OMSimPMTResponse()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -252,7 +252,7 @@ Private Attributes</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">default</span></span>  </td>
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -347,6 +347,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000002">Todo:</a></b></dt><dd>Add PMT data of all PMT types </dd></dl>
 <p>Loads the data from a given path and constructs a histogram based on the data.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -355,8 +356,7 @@ Private Attributes</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>Pointer to the created histogram.</dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000002">Todo:</a></b></dt><dd>Add PMT data of all PMT types </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>Pointer to the created histogram. </dd></dl>
 
 </div>
 </div>
@@ -407,13 +407,13 @@ Private Attributes</h2></td></tr>
           <td class="memname">G4double OMSimPMTResponse::getCharge </td>
           <td>(</td>
           <td class="paramtype">G4double&#160;</td>
-          <td class="paramname"><em>pWavelengthKey1</em>, </td>
+          <td class="paramname"><em>pWavelength1</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">G4double&#160;</td>
-          <td class="paramname"><em>pWavelengthKey2</em>&#160;</td>
+          <td class="paramname"><em>pWavelength2</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -588,13 +588,13 @@ Private Attributes</h2></td></tr>
           <td class="memname">G4double OMSimPMTResponse::getTransitTime </td>
           <td>(</td>
           <td class="paramtype">G4double&#160;</td>
-          <td class="paramname"><em>pWavelengthKey1</em>, </td>
+          <td class="paramname"><em>pWavelength1</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">G4double&#160;</td>
-          <td class="paramname"><em>pWavelengthKey2</em>&#160;</td>
+          <td class="paramname"><em>pWavelength2</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -735,13 +735,13 @@ Private Attributes</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">G4double&#160;</td>
-          <td class="paramname"><em>pWavelengthKey1</em>, </td>
+          <td class="paramname"><em>pWavelength1</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">G4double&#160;</td>
-          <td class="paramname"><em>pWavelengthKey2</em>&#160;</td>
+          <td class="paramname"><em>pWavelength2</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -998,7 +998,7 @@ Private Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="class_o_m_sim_p_m_t_response.html">OMSimPMTResponse</a></li>
-    <li class="footer">Generated on Mon Sep 18 2023 12:44:14 for OMSim by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Mon Sep 18 2023 13:05:21 for OMSim by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

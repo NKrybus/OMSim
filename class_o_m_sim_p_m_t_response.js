@@ -2,7 +2,7 @@ var class_o_m_sim_p_m_t_response =
 [
     [ "PMTPulse", "struct_o_m_sim_p_m_t_response_1_1_p_m_t_pulse.html", "struct_o_m_sim_p_m_t_response_1_1_p_m_t_pulse" ],
     [ "OMSimPMTResponse", "class_o_m_sim_p_m_t_response.html#a80b379bc78ca06d23011703aae3341d7", null ],
-    [ "~OMSimPMTResponse", "class_o_m_sim_p_m_t_response.html#a85a7f22b8809dbc317672cf5c49949c9", null ],
+    [ "~OMSimPMTResponse", "class_o_m_sim_p_m_t_response.html#aca0bba84fbd6a5c121467e44b1b758f9", null ],
     [ "OMSimPMTResponse", "class_o_m_sim_p_m_t_response.html#a204531485b4a631d1a60b53057658ca8", null ],
     [ "configureQEinterpolator", "class_o_m_sim_p_m_t_response.html#a947d422c7f7a006f714773df900bd722", null ],
     [ "createHistogramFromData", "class_o_m_sim_p_m_t_response.html#a0dd544847ff216a24aa8c528e76c9aed", null ],
