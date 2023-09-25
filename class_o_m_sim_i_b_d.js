@@ -4,7 +4,6 @@ var class_o_m_sim_i_b_d =
     [ "~OMSimIBD", "class_o_m_sim_i_b_d.html#a876dcf3f85bd6b17b37ab2b81f08153e", null ],
     [ "DistFunction", "class_o_m_sim_i_b_d.html#abeedcff1e45bb0e9fc98ea2e8b9ddea9", null ],
     [ "GeneratePrimaries", "class_o_m_sim_i_b_d.html#a50ac39b481be2a879c73f94e201ef6da", null ],
-    [ "InverseCumul", "class_o_m_sim_i_b_d.html#a68b2a137616f64bef14944b3392b39e8", null ],
     [ "PositronEnergy", "class_o_m_sim_i_b_d.html#ab6f7d3cfb6864c2c501e13744cab85fc", null ],
     [ "TotalCrossSection", "class_o_m_sim_i_b_d.html#a8e96874ed7339fb1861d1d69ce4b865e", null ],
     [ "a_lum", "class_o_m_sim_i_b_d.html#a65ce1990498f337ccb4be6cbe4058b5a", null ],

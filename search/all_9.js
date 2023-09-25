@@ -36,7 +36,7 @@ var searchData=
   ['display_5fmessage_139',['DISPLAY_MESSAGE',['../_o_m_sim_logger_8hh.html#af6812b33eabd16ea4051bf309dea3bd1',1,'OMSimLogger.hh']]],
   ['display_5freset_140',['DISPLAY_RESET',['../_o_m_sim_logger_8hh.html#af05d11ed910232f71b9c3c05ffd98618',1,'OMSimLogger.hh']]],
   ['display_5ftime_141',['DISPLAY_TIME',['../_o_m_sim_logger_8hh.html#aede0ca492b0728b0fc9b1c7903280e78',1,'OMSimLogger.hh']]],
-  ['distfunction_142',['DistFunction',['../class_o_m_sim_i_b_d.html#abeedcff1e45bb0e9fc98ea2e8b9ddea9',1,'OMSimIBD']]],
+  ['distfunction_142',['DistFunction',['../class_o_m_sim_i_b_d.html#abeedcff1e45bb0e9fc98ea2e8b9ddea9',1,'OMSimIBD::DistFunction()'],['../class_o_m_sim_e_n_e_s.html#a94cf5484a5378961768c3e046204c22a',1,'OMSimENES::DistFunction()']]],
   ['dkmap_143',['dkmap',['../class_g4_radioactive_decay.html#a97a581522bde92d2d2edd037ff3d9261',1,'G4RadioactiveDecay']]],
   ['dodecay_144',['DoDecay',['../class_g4_radioactive_decay.html#a5fa13b19b1e94ee51007efc1b02d8dfe',1,'G4RadioactiveDecay']]],
   ['doesnotmatchexactly_145',['DoesNotMatchExactly',['../_c_a_d_mesh_8hh.html#a37992436136e5076aa825d22091289cb',1,'CADMesh.hh']]],

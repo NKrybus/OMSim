@@ -1,5 +1,8 @@
 var NAVTREEINDEX1 =
 {
+"abc_detector_component_8cc.html":[4,0,5],
+"abc_detector_component_8hh.html":[4,0,6],
+"abc_detector_component_8hh_source.html":[4,0,6],
 "annotated.html":[5,0],
 "class_angular_scan.html":[3,1,4],
 "class_angular_scan.html#a050c9c2066f662a1d7868b4dac0e5795":[3,1,4,1],
@@ -246,8 +249,5 @@ var NAVTREEINDEX1 =
 "class_event_info_manager.html#a6196a992f70988bea9efb7c1e77eb358":[5,0,10,11],
 "class_event_info_manager.html#aa12794088e655821d47bedbacd179296":[5,0,10,12],
 "class_event_info_manager.html#aaae2a42eb414ea5fbde3deff5cffc0b2":[5,0,10,0],
-"class_event_info_manager.html#aaae2a42eb414ea5fbde3deff5cffc0b2":[5,0,10,1],
-"class_event_info_manager.html#aaae2a42eb414ea5fbde3deff5cffc0b2":[5,0,10,2],
-"class_event_info_manager.html#ab55b547cd98a9ae44b909dd4e03f0d0d":[5,0,10,3],
-"class_event_info_manager.html#ab55b547cd98a9ae44b909dd4e03f0d0d":[5,0,10,4]
+"class_event_info_manager.html#aaae2a42eb414ea5fbde3deff5cffc0b2":[5,0,10,1]
 };

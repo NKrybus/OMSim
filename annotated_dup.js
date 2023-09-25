@@ -47,6 +47,7 @@ var annotated_dup =
     [ "OMSimDecaysAnalysis", "class_o_m_sim_decays_analysis.html", "class_o_m_sim_decays_analysis" ],
     [ "OMSimDetectorConstruction", "class_o_m_sim_detector_construction.html", "class_o_m_sim_detector_construction" ],
     [ "OMSimEffectiveAreaAnalyisis", "class_o_m_sim_effective_area_analyisis.html", "class_o_m_sim_effective_area_analyisis" ],
+    [ "OMSimENES", "class_o_m_sim_e_n_e_s.html", "class_o_m_sim_e_n_e_s" ],
     [ "OMSimEventAction", "class_o_m_sim_event_action.html", "class_o_m_sim_event_action" ],
     [ "OMSimG4Scintillation", "class_o_m_sim_g4_scintillation.html", "class_o_m_sim_g4_scintillation" ],
     [ "OMSimHitManager", "class_o_m_sim_hit_manager.html", "class_o_m_sim_hit_manager" ],

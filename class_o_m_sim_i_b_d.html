@@ -152,8 +152,6 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a50ac39b481be2a879c73f94e201ef6da"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_m_sim_i_b_d.html#a50ac39b481be2a879c73f94e201ef6da">GeneratePrimaries</a> (G4Event *anEvent)</td></tr>
 <tr class="memdesc:a50ac39b481be2a879c73f94e201ef6da"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generates primary events for the simulation.  <a href="class_o_m_sim_i_b_d.html#a50ac39b481be2a879c73f94e201ef6da">More...</a><br /></td></tr>
 <tr class="separator:a50ac39b481be2a879c73f94e201ef6da"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a68b2a137616f64bef14944b3392b39e8"><td class="memItemLeft" align="right" valign="top">G4double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_m_sim_i_b_d.html#a68b2a137616f64bef14944b3392b39e8">InverseCumul</a> (int ControlParameter)</td></tr>
-<tr class="separator:a68b2a137616f64bef14944b3392b39e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -332,34 +330,17 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>This function sets the initial properties of the electronic antineutrinos such as particle type, position, and energy for the primary event based on given input parameters or data files. The energy is determined from a tabulated distribution or from a fixed mean energy, and the antineutrino's incoming direction is assumed to be (0,0,-1). The function also computes the angle distribution and the positron's energy derived from the antineutrino energy and its angle. Finally, the function computes the total cross-section and sets weights accordingly, passing the information to the analysis manager.</p>
+<p>This function sets the initial properties of the electronic antineutrinos such as position, and energy for the primary event based on given input parameters or data files. The energy is determined from a tabulated distribution or from a fixed mean energy, and the antineutrino's incoming direction is assumed to be (0,0,-1). The function also computes the angle distribution and the positron's energy derived from the antineutrino energy and its direction. Finally, the function computes the total cross-section and sets weights accordingly, passing the information to the analysis manager.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">anEvent</td><td>Pointer to the G4Event object where primaries will be generated. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000009">Todo:</a></b></dt><dd><p class="startdd">Consider breaking down this function into smaller, more specialized sub-functions for clarity and modularity. </p>
-<p class="enddd">Ensure that any new parameters or member variables used are appropriately documented. </p>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000010">Todo:</a></b></dt><dd><p class="startdd">Consider breaking down this function into smaller, more specialized sub-functions for clarity and modularity. </p>
+<p class="interdd">Ensure that any new parameters or member variables used are appropriately documented. </p>
+<p class="enddd">merge IBD and ENES into sharing a base class, to avoid repeating code </p>
 </dd></dl>
-
-</div>
-</div>
-<a id="a68b2a137616f64bef14944b3392b39e8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a68b2a137616f64bef14944b3392b39e8">&#9670;&nbsp;</a></span>InverseCumul()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">G4double OMSimIBD::InverseCumul </td>
-          <td>(</td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>ControlParameter</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
 
 </div>
 </div>
@@ -957,7 +938,7 @@ and explosion mechanism", Astrophys. J. 496, 1998, 216–225, Preprint astro-ph/
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="class_o_m_sim_i_b_d.html">OMSimIBD</a></li>
-    <li class="footer">Generated on Mon Sep 18 2023 13:05:21 for OMSim by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Mon Sep 25 2023 18:07:06 for OMSim by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

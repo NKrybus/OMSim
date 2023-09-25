@@ -36,7 +36,7 @@
 <!-- Node3 -->
 <g id="node3" class="node">
 <title>Node3</title>
-<g id="a_node3"><a xlink:href="supernova_2src_2_o_m_sim_primary_generator_action_8cc.html" target="_top" xlink:title="Main primary generator. Chooses between generators 0 (gps), 1 (SN enes), 2 (SN ibd),...">
+<g id="a_node3"><a xlink:href="supernova_2src_2_o_m_sim_primary_generator_action_8cc.html" target="_top" xlink:title="Main primary generator. Chooses between generators 0 (IBD), 1 (ENES), 2 (SN ibd)">
 <polygon fill="white" stroke="black" points="219,-0.5 219,-19.5 402,-19.5 402,-0.5 219,-0.5"/>
 <text text-anchor="middle" x="310.5" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">OMSimPrimaryGeneratorAction.cc</text>
 </a>

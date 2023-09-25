@@ -1,5 +1,5 @@
 <map id="mdomPrimaryGeneratorMessenger.hh" name="mdomPrimaryGeneratorMessenger.hh">
 <area shape="rect" id="node1" title=" " alt="" coords="144,5,415,32"/>
 <area shape="rect" id="node2" href="$mdom_primary_generator_messenger_8cc.html" title="Primary generator messenger to choose the corresponding primary generator." alt="" coords="5,80,273,107"/>
-<area shape="rect" id="node3" href="$supernova_2src_2_o_m_sim_primary_generator_action_8cc.html" title="Main primary generator. Chooses between generators 0 (gps), 1 (SN enes), 2 (SN ibd),..." alt="" coords="297,80,541,107"/>
+<area shape="rect" id="node3" href="$supernova_2src_2_o_m_sim_primary_generator_action_8cc.html" title="Main primary generator. Chooses between generators 0 (IBD), 1 (ENES), 2 (SN ibd)" alt="" coords="297,80,541,107"/>
 </map>

@@ -12,8 +12,8 @@ Check \mbox{\hyperlink{class_reflective_surface_a5dff8f89e20cf4e629024fe3a1b1d78
 \item Subtract CAD penetrator from the vessel.
 \item Investigate why the gel does not reach the photocathode edge. (Should the photocathode edge end earlier? Gel, Vessel, and PMT shape are correct.)  
 \end{DoxyItemize}
-\item[Member \mbox{\hyperlink{_o_m_sim_s_n_tools_8hh_a201de1f13cd772baa18a6e5aa6b43e39}{Get\+Slopes}} (std\+::vector$<$ G4double $>$ xvals, std\+::vector$<$ G4double $>$ yvals, G4int n\+Points, std\+::vector$<$ G4double $>$ \&x, std\+::vector$<$ G4double $>$ \&f, std\+::vector$<$ G4double $>$ \&a, std\+::vector$<$ G4double $>$ \&Fc)]\label{todo__todo000010}%
-\Hypertarget{todo__todo000010}%
+\item[Member \mbox{\hyperlink{_o_m_sim_s_n_tools_8hh_a201de1f13cd772baa18a6e5aa6b43e39}{Get\+Slopes}} (std\+::vector$<$ G4double $>$ xvals, std\+::vector$<$ G4double $>$ yvals, G4int n\+Points, std\+::vector$<$ G4double $>$ \&x, std\+::vector$<$ G4double $>$ \&f, std\+::vector$<$ G4double $>$ \&a, std\+::vector$<$ G4double $>$ \&Fc)]\label{todo__todo000011}%
+\Hypertarget{todo__todo000011}%
 check whether the copy can just be eliminated  
 \item[Member \mbox{\hyperlink{class_l_o_m16_a93c141790620554394cdf9864096d011}{LOM16\+::$\sim$\+LOM16}} ()]\label{todo__todo000005}%
 \Hypertarget{todo__todo000005}%
@@ -33,11 +33,18 @@ check whether the copy can just be eliminated
 Write documentation
 
 
-\item[Member \mbox{\hyperlink{class_o_m_sim_i_b_d_a50ac39b481be2a879c73f94e201ef6da}{OMSim\+IBD\+::Generate\+Primaries}} (G4\+Event $\ast$an\+Event)]\label{todo__todo000009}%
+\item[Member \mbox{\hyperlink{class_o_m_sim_e_n_e_s_a96fd869fd3ad49f3fa502708d44d414c}{OMSim\+ENES\+::Generate\+Primaries}} (G4\+Event $\ast$an\+Event)]\label{todo__todo000009}%
 \Hypertarget{todo__todo000009}%
 Consider breaking down this function into smaller, more specialized sub-\/functions for clarity and modularity. 
 
 Ensure that any new parameters or member variables used are appropriately documented.  
+\item[Member \mbox{\hyperlink{class_o_m_sim_i_b_d_a50ac39b481be2a879c73f94e201ef6da}{OMSim\+IBD\+::Generate\+Primaries}} (G4\+Event $\ast$an\+Event)]\label{todo__todo000010}%
+\Hypertarget{todo__todo000010}%
+Consider breaking down this function into smaller, more specialized sub-\/functions for clarity and modularity. 
+
+Ensure that any new parameters or member variables used are appropriately documented. 
+
+merge IBD and ENES into sharing a base class, to avoid repeating code  
 \item[File \mbox{\hyperlink{_o_m_sim_l_o_m18_8cc}{OMSim\+LOM18.cc}} ]\label{todo__todo000006}%
 \Hypertarget{todo__todo000006}%
 -\/ 18/07/22 Solve collisions of CAD with PMTs
@@ -52,16 +59,16 @@ Ensure that any new parameters or member variables used are appropriately docume
 \item[Member \mbox{\hyperlink{class_o_m_sim_p_m_t_response_a0dd544847ff216a24aa8c528e76c9aed}{OMSim\+PMTResponse\+::create\+Histogram\+From\+Data}} (const std\+::string \&p\+File\+Path, const char $\ast$p\+TH2\+DName)]\label{todo__todo000002}%
 \Hypertarget{todo__todo000002}%
 Add PMT data of all PMT types  
-\item[Member \mbox{\hyperlink{class_o_m_sim_s_n_tools_aa760cb3204e636696ce5be962409694e}{OMSim\+SNTools\+::findtime}} (G4double time, std\+::vector$<$ G4double $>$ timearray)]\label{todo__todo000014}%
-\Hypertarget{todo__todo000014}%
+\item[Member \mbox{\hyperlink{class_o_m_sim_s_n_tools_aa760cb3204e636696ce5be962409694e}{OMSim\+SNTools\+::findtime}} (G4double time, std\+::vector$<$ G4double $>$ timearray)]\label{todo__todo000015}%
+\Hypertarget{todo__todo000015}%
 Consider renaming \textquotesingle{}time\textquotesingle{} to a more generic term.  
-\item[Member \mbox{\hyperlink{class_o_m_sim_s_n_tools_a89a22f20d0aff91704cf6cab1b48d266}{OMSim\+SNTools\+::get\+File\+Names}} (int value)]\label{todo__todo000011}%
-\Hypertarget{todo__todo000011}%
-Handle error cases more robustly than just console output.  
-\item[Member \mbox{\hyperlink{class_o_m_sim_s_n_tools_acd2197f87f712d54eff8e93b233e8478}{OMSim\+SNTools\+::Inverse\+Cumul}} (std\+::vector$<$ G4double $>$ xvals, std\+::vector$<$ G4double $>$ yvals, G4int n\+Points)]\label{todo__todo000012}%
+\item[Member \mbox{\hyperlink{class_o_m_sim_s_n_tools_a89a22f20d0aff91704cf6cab1b48d266}{OMSim\+SNTools\+::get\+File\+Names}} (int value)]\label{todo__todo000012}%
 \Hypertarget{todo__todo000012}%
-Reconsider the requirement for the \textquotesingle{}n\+Points\textquotesingle{} parameter.  
-\item[Member \mbox{\hyperlink{class_o_m_sim_s_n_tools_a296fba8cceca9892ab52ac9e18064b01}{OMSim\+SNTools\+::Inverse\+Cumul\+Algorithm}} (std\+::vector$<$ G4double $>$ x, std\+::vector$<$ G4double $>$ f, std\+::vector$<$ G4double $>$ a, std\+::vector$<$ G4double $>$ Fc, G4int n\+Points)]\label{todo__todo000013}%
+Handle error cases more robustly than just console output.  
+\item[Member \mbox{\hyperlink{class_o_m_sim_s_n_tools_acd2197f87f712d54eff8e93b233e8478}{OMSim\+SNTools\+::Inverse\+Cumul}} (std\+::vector$<$ G4double $>$ xvals, std\+::vector$<$ G4double $>$ yvals, G4int n\+Points)]\label{todo__todo000013}%
 \Hypertarget{todo__todo000013}%
+Reconsider the requirement for the \textquotesingle{}n\+Points\textquotesingle{} parameter.  
+\item[Member \mbox{\hyperlink{class_o_m_sim_s_n_tools_a296fba8cceca9892ab52ac9e18064b01}{OMSim\+SNTools\+::Inverse\+Cumul\+Algorithm}} (std\+::vector$<$ G4double $>$ x, std\+::vector$<$ G4double $>$ f, std\+::vector$<$ G4double $>$ a, std\+::vector$<$ G4double $>$ Fc, G4int n\+Points)]\label{todo__todo000014}%
+\Hypertarget{todo__todo000014}%
 Re-\/evaluate the necessity of the \textquotesingle{}n\+Points\textquotesingle{} parameter. 
 \end{DoxyRefList}

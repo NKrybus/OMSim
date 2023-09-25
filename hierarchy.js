@@ -75,6 +75,7 @@ var hierarchy =
       [ "OMSimPhysicsList", "class_o_m_sim_physics_list.html", null ]
     ] ],
     [ "G4VUserPrimaryGeneratorAction", null, [
+      [ "OMSimENES", "class_o_m_sim_e_n_e_s.html", null ],
       [ "OMSimIBD", "class_o_m_sim_i_b_d.html", null ],
       [ "OMSimPrimaryGeneratorAction", "class_o_m_sim_primary_generator_action.html", null ],
       [ "OMSimPrimaryGeneratorAction", "class_o_m_sim_primary_generator_action.html", null ],
