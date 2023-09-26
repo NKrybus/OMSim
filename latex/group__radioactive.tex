@@ -11,7 +11,7 @@ Simulations for understanding the background produced by radioactive decays in b
 \begin{DoxyWarning}{Warning}
 This study has been tested only for Vitrovex glass (m\+DOM/\+LOM16) and the 80mm \mbox{\hyperlink{classm_d_o_m}{m\+DOM}} PMTs. Okamoto glass (D-\/\+Egg/\+LOM18) is currently under investigation.
 \end{DoxyWarning}
-The simulation considers the measured scintillation parameters and the specific activity of the isotopes to provide insights into the behavior of OMs in both air and ice environments over a time window $t_{w}$. The primary output is a timestamped list of detected photons, which can be utilized to compute parameters such as the module\textquotesingle{}s expected dark rate. The simulation steps can be summarized as\+:
+The simulation considers the measured scintillation parameters and the specific activity of the isotopes to provide insights into the behavior of OMs in both air and ice environments over a time window $t_{w}$. The number of time windows simulated is given by the argument --numevents. The primary output is a timestamped list of detected photons, which can be utilized to compute parameters such as the module\textquotesingle{}s expected dark rate. The simulation steps can be summarized as\+:
 \begin{DoxyItemize}
 \item Determining the number of decays within $t_{w}$ based on measured data.
 \item Initiating decay chains for each event by positioning an isotope randomly in the pressure vessel.
@@ -19,7 +19,13 @@ The simulation considers the measured scintillation parameters and the specific 
 \item Capturing photons detected by the PMTs for downstream analysis.
 \end{DoxyItemize}
 
-Important customizations in the simulation involve the extension of Geant4\textquotesingle{}s original scintillation class, facilitating the simulation of more complex decay processes (8 lifetimes), and the modification the \mbox{\hyperlink{class_g4_radioactive_decay}{G4\+Radioactive\+Decay}} class which amends default decay time of isotopes. The scintillation properties of the \mbox{\hyperlink{classm_d_o_m}{m\+DOM}} glass were measured in the scope of several theses. For a summary check section 11.\+2 of \href{https://zenodo.org/record/8121321}{\texttt{ this thesis}}. \doxysubsection*{Classes}
+Important customizations in the simulation involve the extension of Geant4\textquotesingle{}s original scintillation class, facilitating the simulation of more complex decay processes (8 lifetimes), and the modification the \mbox{\hyperlink{class_g4_radioactive_decay}{G4\+Radioactive\+Decay}} class which amends default decay time of isotopes. The scintillation properties of the \mbox{\hyperlink{classm_d_o_m}{m\+DOM}} glass were measured in the scope of several theses. For a summary check section 11.\+2 of \href{https://zenodo.org/record/8121321}{\texttt{ this thesis}}.
+
+At the time there are two analysis modes\+:
+\begin{DoxyItemize}
+\item with --multiplicity\+\_\+study argument\+: after each $t_{w}$ time window the multiplicity is calculated and saved to a file. The raw data is not saved, as multiplicity studies generally involve long simulation times (i.\+e. large number of photons)
+\item without --multiplicity\+\_\+study argument\+: the data of photons and decayed isotopes are saved into files. 
+\end{DoxyItemize}\doxysubsection*{Classes}
 \begin{DoxyCompactItemize}
 \item 
 struct \mbox{\hyperlink{struct_decay_stats}{Decay\+Stats}}
