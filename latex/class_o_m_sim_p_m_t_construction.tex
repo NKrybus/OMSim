@@ -35,7 +35,7 @@ G4\+VSolid $\ast$ \mbox{\hyperlink{class_o_m_sim_p_m_t_construction_a869ff1b5f34
 \item 
 G4\+Logical\+Volume $\ast$ \mbox{\hyperlink{class_o_m_sim_p_m_t_construction_af3b6282d6a0c3caa3f13244cdf2ed65a}{get\+Logical\+Volume}} ()
 \item 
-double \mbox{\hyperlink{class_o_m_sim_p_m_t_construction_a548f6bb3f8f5287d908329948a659c66}{get\+PMTGlass\+Weight}} ()
+double \mbox{\hyperlink{class_o_m_sim_p_m_t_construction_a078d6902dcd7df535b577758898b2cc5}{get\+PMTGlass\+Weight}} ()
 \item 
 void \mbox{\hyperlink{class_o_m_sim_p_m_t_construction_a1f7915c14fc9eee203f861e59f26f333}{place\+It}} (G4\+Three\+Vector p\+Position, G4\+Rotation\+Matrix p\+Rotation, G4\+Logical\+Volume $\ast$\&p\+Mother, G4\+String p\+Name\+Extension=\char`\"{}\char`\"{})
 \item 
@@ -48,14 +48,16 @@ void \mbox{\hyperlink{class_o_m_sim_p_m_t_construction_a42777eb8747cd3eaad5dfe52
 \doxysubsection*{Private Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-void \mbox{\hyperlink{class_o_m_sim_p_m_t_construction_a136c7f4862d780eb2a874428715bfcb8}{construct\+HAcoating}} ()
-\item 
 std\+::tuple$<$ G4\+VSolid $\ast$, G4\+VSolid $\ast$ $>$ \mbox{\hyperlink{class_o_m_sim_p_m_t_construction_a759f6d30a70f3a9f34997e5dc9d38680}{get\+Bulb\+Solid}} (G4\+String p\+Side)
 \item 
 std\+::tuple$<$ G4\+VSolid $\ast$, G4\+VSolid $\ast$ $>$ \mbox{\hyperlink{class_o_m_sim_p_m_t_construction_a3faaf0d512f9a3fe15c6f33efe6d062c}{simple\+Bulb\+Construction}} (G4\+String p\+Side)
 \item 
 std\+::tuple$<$ G4\+VSolid $\ast$, G4\+VSolid $\ast$ $>$ \mbox{\hyperlink{class_o_m_sim_p_m_t_construction_a6b84182c7a5b45461160c954e9a384f0}{full\+Bulb\+Construction}} (G4\+String p\+Side)
 \item 
+G4\+VSolid $\ast$ \mbox{\hyperlink{class_o_m_sim_p_m_t_construction_a1a07b518f5591dd80dafb9154cdd3a5d}{frontal\+Bulb\+Construction}} (G4\+String p\+Side)
+\item 
+void \mbox{\hyperlink{class_o_m_sim_p_m_t_construction_ac869819aa23b922e7cff347cd082b5f4}{read\+Global\+Parameters}} (G4\+String p\+Side)
+\begin{DoxyCompactList}\small\item\em Reads the parameter table and assigns the value and dimension of member variables. \end{DoxyCompactList}\item 
 G4\+Union\+Solid $\ast$ \mbox{\hyperlink{class_o_m_sim_p_m_t_construction_a6724e1b0920884b77cd6401da6588ca9}{sphere\+Ellipse\+Photocathode}} ()
 \item 
 G4\+Union\+Solid $\ast$ \mbox{\hyperlink{class_o_m_sim_p_m_t_construction_a7ae6ccb05534002df9e519c5b5cfef14}{sphere\+Double\+Ellipse\+Photocathode}} (G4\+String p\+Side)
@@ -66,15 +68,13 @@ G4\+Union\+Solid $\ast$ \mbox{\hyperlink{class_o_m_sim_p_m_t_construction_a05b6a
 \item 
 void \mbox{\hyperlink{class_o_m_sim_p_m_t_construction_aa850b229e2e9ab26afbe4e2e0d21683d}{check\+Photocathode\+Thickness}} ()
 \item 
+void \mbox{\hyperlink{class_o_m_sim_p_m_t_construction_a136c7f4862d780eb2a874428715bfcb8}{construct\+HAcoating}} ()
+\item 
 void \mbox{\hyperlink{class_o_m_sim_p_m_t_construction_a07f99802d73ddd8d9a9f838725cc0354}{construct\+Cathode\+Backshield}} (G4\+Logical\+Volume $\ast$p\+PMTIinner)
 \item 
 void \mbox{\hyperlink{class_o_m_sim_p_m_t_construction_a961bf82e229e26d5ae6ae835e58acf24}{construct\+CADdynode\+System}} (G4\+Logical\+Volume $\ast$p\+Mother)
 \item 
 G4\+Subtraction\+Solid $\ast$ \mbox{\hyperlink{class_o_m_sim_p_m_t_construction_a0e08b1af0e16f19f16569af2a7cfa8fc}{construct\+Photocathode\+Layer}} ()
-\item 
-void \mbox{\hyperlink{class_o_m_sim_p_m_t_construction_ac869819aa23b922e7cff347cd082b5f4}{read\+Global\+Parameters}} (G4\+String p\+Side)
-\item 
-G4\+VSolid $\ast$ \mbox{\hyperlink{class_o_m_sim_p_m_t_construction_a1a07b518f5591dd80dafb9154cdd3a5d}{frontal\+Bulb\+Construction}} (G4\+String p\+Side)
 \end{DoxyCompactItemize}
 \doxysubsection*{Private Attributes}
 \begin{DoxyCompactItemize}
@@ -149,7 +149,7 @@ Construction \& placement of the dynode system entrance for internal reflections
 \index{OMSimPMTConstruction@{OMSimPMTConstruction}!constructCathodeBackshield@{constructCathodeBackshield}}
 \index{constructCathodeBackshield@{constructCathodeBackshield}!OMSimPMTConstruction@{OMSimPMTConstruction}}
 \doxysubsubsection{\texorpdfstring{constructCathodeBackshield()}{constructCathodeBackshield()}}
-{\footnotesize\ttfamily void OMSim\+PMTConstruction\+::construct\+Cathode\+Backshield (\begin{DoxyParamCaption}\item[{G4\+Logical\+Volume $\ast$}]{p\+PMTIinner }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+{\footnotesize\ttfamily void OMSim\+PMTConstruction\+::construct\+Cathode\+Backshield (\begin{DoxyParamCaption}\item[{G4\+Logical\+Volume $\ast$}]{p\+PMTinner }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
 
 Creates and positions a thin disk behind the photocathode volume in order to shield photons coming from behind the PMT. Only used when internal reflections are turned off. \mbox{\Hypertarget{class_o_m_sim_p_m_t_construction_a136c7f4862d780eb2a874428715bfcb8}\label{class_o_m_sim_p_m_t_construction_a136c7f4862d780eb2a874428715bfcb8}} 
 \index{OMSimPMTConstruction@{OMSimPMTConstruction}!constructHAcoating@{constructHAcoating}}
@@ -223,8 +223,8 @@ The basic shape of the PMT is constructed twice, once for the external solid and
 \doxysubsubsection{\texorpdfstring{getDistancePMTCenterToTip()}{getDistancePMTCenterToTip()}}
 {\footnotesize\ttfamily G4double OMSim\+PMTConstruction\+::get\+Distance\+PMTCenter\+To\+Tip (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
-Returns the distance between the 0.\+0 position of the PMT solid volume and the plane normal to the PMT frontal tip. \begin{DoxyReturn}{Returns}
-G4double 
+\begin{DoxyReturn}{Returns}
+G4double the distance between the 0.\+0 position of the PMT solid volume and the plane normal to the PMT frontal tip. 
 \end{DoxyReturn}
 \mbox{\Hypertarget{class_o_m_sim_p_m_t_construction_af3b6282d6a0c3caa3f13244cdf2ed65a}\label{class_o_m_sim_p_m_t_construction_af3b6282d6a0c3caa3f13244cdf2ed65a}} 
 \index{OMSimPMTConstruction@{OMSimPMTConstruction}!getLogicalVolume@{getLogicalVolume}}
@@ -232,20 +232,23 @@ G4double
 \doxysubsubsection{\texorpdfstring{getLogicalVolume()}{getLogicalVolume()}}
 {\footnotesize\ttfamily G4\+Logical\+Volume $\ast$ OMSim\+PMTConstruction\+::get\+Logical\+Volume (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
-It returns the bulb glass logical volume (PMT mother). \mbox{\Hypertarget{class_o_m_sim_p_m_t_construction_adcf95adc7d522883934e592e3c551617}\label{class_o_m_sim_p_m_t_construction_adcf95adc7d522883934e592e3c551617}} 
+\begin{DoxyReturn}{Returns}
+the bulb glass logical volume (PMT mother). 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_o_m_sim_p_m_t_construction_adcf95adc7d522883934e592e3c551617}\label{class_o_m_sim_p_m_t_construction_adcf95adc7d522883934e592e3c551617}} 
 \index{OMSimPMTConstruction@{OMSimPMTConstruction}!getMaxPMTRadius@{getMaxPMTRadius}}
 \index{getMaxPMTRadius@{getMaxPMTRadius}!OMSimPMTConstruction@{OMSimPMTConstruction}}
 \doxysubsubsection{\texorpdfstring{getMaxPMTRadius()}{getMaxPMTRadius()}}
 {\footnotesize\ttfamily G4double OMSim\+PMTConstruction\+::get\+Max\+PMTRadius (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
-Returns the maximal radius of the frontal part of the PMT. \begin{DoxyReturn}{Returns}
-G4double 
+\begin{DoxyReturn}{Returns}
+G4double the maximal radius of the frontal part of the PMT. 
 \end{DoxyReturn}
-\mbox{\Hypertarget{class_o_m_sim_p_m_t_construction_a548f6bb3f8f5287d908329948a659c66}\label{class_o_m_sim_p_m_t_construction_a548f6bb3f8f5287d908329948a659c66}} 
+\mbox{\Hypertarget{class_o_m_sim_p_m_t_construction_a078d6902dcd7df535b577758898b2cc5}\label{class_o_m_sim_p_m_t_construction_a078d6902dcd7df535b577758898b2cc5}} 
 \index{OMSimPMTConstruction@{OMSimPMTConstruction}!getPMTGlassWeight@{getPMTGlassWeight}}
 \index{getPMTGlassWeight@{getPMTGlassWeight}!OMSimPMTConstruction@{OMSimPMTConstruction}}
 \doxysubsubsection{\texorpdfstring{getPMTGlassWeight()}{getPMTGlassWeight()}}
-{\footnotesize\ttfamily double OMSim\+PMTConstruction\+::get\+PMTGlass\+Weight (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily G4double OMSim\+PMTConstruction\+::get\+PMTGlass\+Weight (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
 \mbox{\Hypertarget{class_o_m_sim_p_m_t_construction_a869ff1b5f34736e14784d1a3fc4d94a1}\label{class_o_m_sim_p_m_t_construction_a869ff1b5f34736e14784d1a3fc4d94a1}} 
 \index{OMSimPMTConstruction@{OMSimPMTConstruction}!getPMTSolid@{getPMTSolid}}
@@ -253,8 +256,8 @@ G4double
 \doxysubsubsection{\texorpdfstring{getPMTSolid()}{getPMTSolid()}}
 {\footnotesize\ttfamily G4\+VSolid $\ast$ OMSim\+PMTConstruction\+::get\+PMTSolid (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
-Returns the solid of the constructed PMT. \begin{DoxyReturn}{Returns}
-G4\+Union\+Solid of the PMT 
+\begin{DoxyReturn}{Returns}
+the solid of the constructed PMT. 
 \end{DoxyReturn}
 \mbox{\Hypertarget{class_o_m_sim_p_m_t_construction_a42777eb8747cd3eaad5dfe52824313a7}\label{class_o_m_sim_p_m_t_construction_a42777eb8747cd3eaad5dfe52824313a7}} 
 \index{OMSimPMTConstruction@{OMSimPMTConstruction}!includeHAcoating@{includeHAcoating}}
@@ -283,7 +286,7 @@ Placement of the PMT and definition of Logical\+Border\+Surfaces in case interna
 \index{OMSimPMTConstruction@{OMSimPMTConstruction}!placeIt@{placeIt}}
 \index{placeIt@{placeIt}!OMSimPMTConstruction@{OMSimPMTConstruction}}
 \doxysubsubsection{\texorpdfstring{placeIt()}{placeIt()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
-{\footnotesize\ttfamily void OMSim\+PMTConstruction\+::place\+It (\begin{DoxyParamCaption}\item[{G4\+Transform3D}]{p\+Trans,  }\item[{G4\+Logical\+Volume $\ast$\&}]{p\+Mother,  }\item[{G4\+String}]{p\+Name\+Extension = {\ttfamily \char`\"{}\char`\"{}} }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void OMSim\+PMTConstruction\+::place\+It (\begin{DoxyParamCaption}\item[{G4\+Transform3D}]{p\+Transform,  }\item[{G4\+Logical\+Volume $\ast$\&}]{p\+Mother,  }\item[{G4\+String}]{p\+Name\+Extension = {\ttfamily \char`\"{}\char`\"{}} }\end{DoxyParamCaption})}
 
 \begin{DoxySeeAlso}{See also}
 PMT\+::place\+It 
@@ -299,7 +302,7 @@ PMT\+::place\+It
 \doxysubsubsection{\texorpdfstring{readGlobalParameters()}{readGlobalParameters()}}
 {\footnotesize\ttfamily void OMSim\+PMTConstruction\+::read\+Global\+Parameters (\begin{DoxyParamCaption}\item[{G4\+String}]{p\+Side }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
 
-Reads the parameter table and assigns the value and dimension of member variables. \mbox{\Hypertarget{class_o_m_sim_p_m_t_construction_a1a8373e9ae3095062edb477245133a9e}\label{class_o_m_sim_p_m_t_construction_a1a8373e9ae3095062edb477245133a9e}} 
+\mbox{\Hypertarget{class_o_m_sim_p_m_t_construction_a1a8373e9ae3095062edb477245133a9e}\label{class_o_m_sim_p_m_t_construction_a1a8373e9ae3095062edb477245133a9e}} 
 \index{OMSimPMTConstruction@{OMSimPMTConstruction}!selectPMT@{selectPMT}}
 \index{selectPMT@{selectPMT}!OMSimPMTConstruction@{OMSimPMTConstruction}}
 \doxysubsubsection{\texorpdfstring{selectPMT()}{selectPMT()}}

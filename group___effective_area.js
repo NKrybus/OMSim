@@ -45,5 +45,51 @@ var group___effective_area =
       [ "writeScan", "class_o_m_sim_effective_area_analyisis.html#ad9b76bc60e5f3629a9c693c2a30f539d", null ],
       [ "mDatafile", "class_o_m_sim_effective_area_analyisis.html#ac392f952bcc7e92c303e8e371b00c594", null ],
       [ "mOutputFileName", "class_o_m_sim_effective_area_analyisis.html#a93a35ab4f557df790de84ec0ab5e9fab", null ]
+    ] ],
+    [ "OMSimEventAction", "class_o_m_sim_event_action.html", [
+      [ "OMSimEventAction", "class_o_m_sim_event_action.html#ab8aaaeecc185bbaef63665f673356506", null ],
+      [ "~OMSimEventAction", "class_o_m_sim_event_action.html#ae04b5b7339c3a0820eb71278c1eb8a96", null ],
+      [ "OMSimEventAction", "class_o_m_sim_event_action.html#ab8aaaeecc185bbaef63665f673356506", null ],
+      [ "~OMSimEventAction", "class_o_m_sim_event_action.html#ae04b5b7339c3a0820eb71278c1eb8a96", null ],
+      [ "OMSimEventAction", "class_o_m_sim_event_action.html#ab8aaaeecc185bbaef63665f673356506", null ],
+      [ "~OMSimEventAction", "class_o_m_sim_event_action.html#ae04b5b7339c3a0820eb71278c1eb8a96", null ],
+      [ "BeginOfEventAction", "class_o_m_sim_event_action.html#a74d668030a1b6b461c942e87203c90b9", null ],
+      [ "BeginOfEventAction", "class_o_m_sim_event_action.html#a74d668030a1b6b461c942e87203c90b9", null ],
+      [ "BeginOfEventAction", "class_o_m_sim_event_action.html#a74d668030a1b6b461c942e87203c90b9", null ],
+      [ "EndOfEventAction", "class_o_m_sim_event_action.html#a10298c7dff0337cec4ee06a25ca9c116", null ],
+      [ "EndOfEventAction", "class_o_m_sim_event_action.html#a10298c7dff0337cec4ee06a25ca9c116", null ],
+      [ "EndOfEventAction", "class_o_m_sim_event_action.html#a10298c7dff0337cec4ee06a25ca9c116", null ]
+    ] ],
+    [ "EventInfoManager", "class_event_info_manager.html", [
+      [ "EventInfoManager", "class_event_info_manager.html#aaae2a42eb414ea5fbde3deff5cffc0b2", null ],
+      [ "EventInfoManager", "class_event_info_manager.html#aaae2a42eb414ea5fbde3deff5cffc0b2", null ],
+      [ "EventInfoManager", "class_event_info_manager.html#aaae2a42eb414ea5fbde3deff5cffc0b2", null ],
+      [ "getCurrentEventID", "class_event_info_manager.html#ab55b547cd98a9ae44b909dd4e03f0d0d", null ],
+      [ "getCurrentEventID", "class_event_info_manager.html#ab55b547cd98a9ae44b909dd4e03f0d0d", null ],
+      [ "getCurrentEventID", "class_event_info_manager.html#ab55b547cd98a9ae44b909dd4e03f0d0d", null ],
+      [ "getInstance", "class_event_info_manager.html#a3f20e93e5648ed8361ac6919e261b2ca", null ],
+      [ "getInstance", "class_event_info_manager.html#a3f20e93e5648ed8361ac6919e261b2ca", null ],
+      [ "getInstance", "class_event_info_manager.html#a3f20e93e5648ed8361ac6919e261b2ca", null ],
+      [ "setCurrentEventID", "class_event_info_manager.html#a6196a992f70988bea9efb7c1e77eb358", null ],
+      [ "setCurrentEventID", "class_event_info_manager.html#a6196a992f70988bea9efb7c1e77eb358", null ],
+      [ "setCurrentEventID", "class_event_info_manager.html#a6196a992f70988bea9efb7c1e77eb358", null ],
+      [ "currentEventID", "class_event_info_manager.html#aa12794088e655821d47bedbacd179296", null ]
+    ] ],
+    [ "OMSimPhysicsList", "class_o_m_sim_physics_list.html", [
+      [ "OMSimPhysicsList", "class_o_m_sim_physics_list.html#a1e29e39ab1756fafc94970b05e84a467", null ],
+      [ "~OMSimPhysicsList", "class_o_m_sim_physics_list.html#aa81f6d1a13cff14773b5e44e50158eb1", null ],
+      [ "OMSimPhysicsList", "class_o_m_sim_physics_list.html#a1e29e39ab1756fafc94970b05e84a467", null ],
+      [ "~OMSimPhysicsList", "class_o_m_sim_physics_list.html#aa81f6d1a13cff14773b5e44e50158eb1", null ],
+      [ "OMSimPhysicsList", "class_o_m_sim_physics_list.html#a1e29e39ab1756fafc94970b05e84a467", null ],
+      [ "~OMSimPhysicsList", "class_o_m_sim_physics_list.html#aa81f6d1a13cff14773b5e44e50158eb1", null ],
+      [ "ConstructParticle", "class_o_m_sim_physics_list.html#a8bf61a70f663c754304fc56073e3ac95", null ],
+      [ "ConstructParticle", "class_o_m_sim_physics_list.html#a8bf61a70f663c754304fc56073e3ac95", null ],
+      [ "ConstructParticle", "class_o_m_sim_physics_list.html#a8bf61a70f663c754304fc56073e3ac95", null ],
+      [ "ConstructProcess", "class_o_m_sim_physics_list.html#a52292caf7091b6a7666c07f29189a9d1", null ],
+      [ "ConstructProcess", "class_o_m_sim_physics_list.html#a52292caf7091b6a7666c07f29189a9d1", null ],
+      [ "ConstructProcess", "class_o_m_sim_physics_list.html#a52292caf7091b6a7666c07f29189a9d1", null ],
+      [ "SetCuts", "class_o_m_sim_physics_list.html#a21a650f31fd33e281cdb144f755875e4", null ],
+      [ "SetCuts", "class_o_m_sim_physics_list.html#a21a650f31fd33e281cdb144f755875e4", null ],
+      [ "SetCuts", "class_o_m_sim_physics_list.html#a21a650f31fd33e281cdb144f755875e4", null ]
     ] ]
 ];

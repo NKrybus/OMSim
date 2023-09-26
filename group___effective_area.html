@@ -123,6 +123,12 @@ $(document).ready(function(){initNavTree('group___effective_area.html',''); init
 
 <p>All specific to the effective area studies of the optical modules.  
 <a href="#details">More...</a></p>
+<div class="dynheader">
+Collaboration diagram for Effective area:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="group___effective_area.svg" width="446" height="54"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <dl class="section note"><dt>Note</dt><dd>In the following a short introduction of an effective area study is made with the <a class="el" href="classm_d_o_m.html">mDOM</a> as an example. For further details see Chapter 10 of <a href="https://www.uni-muenster.de/imperia/md/content/physik_kp/agkappes/abschlussarbeiten/doktorarbeiten/1702-phd_lclassen.pdf">Lew Classen's thesis</a> or Section 9.3.5 of <a href="https://zenodo.org/record/8121321">Martin Unland's thesis</a>.</dd></dl>
 <p>During the design of a module its sensitivity is optimised by considering the optical properties of various materials and altering the geometry and positioning of the mechanical components in the Geant4 simulation. The metric to optimise the module's sensitivity is the effective area \(A_{\mathrm{eff}}(\theta, \phi)\). This represents the area that is detected from a plane wave of incidence angle of \(\theta\) (zenith) and \(\phi\) (azimuth) with respect to the module. This parameter is calculated with <a class="el" href="class_o_m_sim.html" title="Controls the main simulation process.">OMSim</a> by simulating a disk emitting mono-energetic photons perpendicular to its surface with a uniform density profile. The photon generation is made with the module <a class="el" href="class_angular_scan.html">AngularScan</a>, running the method <a class="el" href="class_angular_scan.html#a465f642ebbe30fc94f9ed8ec6e554ef4">AngularScan::runSingleAngularScan</a> once for each direction to be investigated </p><div style="width: 100%; text-align: center;"> <img src="mDOM_scan.png" alt="" width="400" height="400" class="inline"/> <div style="width: 80%; margin: auto;"> <br  />
@@ -186,6 +192,16 @@ Classes</h2></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Class for detector construction in the effective area simulation.  <a href="class_o_m_sim_detector_construction.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_m_sim_effective_area_analyisis.html">OMSimEffectiveAreaAnalyisis</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Responsible for calculating the effective area of optical hits and saving the results.  <a href="class_o_m_sim_effective_area_analyisis.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_m_sim_event_action.html">OMSimEventAction</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handles custom actions at the beginning and end of each event.  <a href="class_o_m_sim_event_action.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_event_info_manager.html">EventInfoManager</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Singleton class for managing event-specific information.  <a href="class_event_info_manager.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_m_sim_physics_list.html">OMSimPhysicsList</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Custom physics list for optical photon processes.  <a href="class_o_m_sim_physics_list.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
@@ -193,7 +209,7 @@ Classes</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Tue Sep 26 2023 10:51:06 for OMSim by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Tue Sep 26 2023 14:12:19 for OMSim by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

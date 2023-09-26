@@ -139,8 +139,10 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a2c725f29ba7fbed8106022a3eb355a8e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_isotope_decays.html#a2c725f29ba7fbed8106022a3eb355a8e">~IsotopeDecays</a> ()</td></tr>
 <tr class="separator:a2c725f29ba7fbed8106022a3eb355a8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a24e0cf04f0185935ab7035e89190405e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_isotope_decays.html#a24e0cf04f0185935ab7035e89190405e">simulateDecaysInOpticalModule</a> (G4double pTimeWindow)</td></tr>
+<tr class="memdesc:a24e0cf04f0185935ab7035e89190405e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Simulates the decays in the optical module.  <a href="class_isotope_decays.html#a24e0cf04f0185935ab7035e89190405e">More...</a><br /></td></tr>
 <tr class="separator:a24e0cf04f0185935ab7035e89190405e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a864ca83f9126152936b99ef0e15a10a1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_isotope_decays.html#a864ca83f9126152936b99ef0e15a10a1">setOpticalModule</a> (<a class="el" href="class_optical_module.html">OpticalModule</a> *pOpticalModule)</td></tr>
+<tr class="memdesc:a864ca83f9126152936b99ef0e15a10a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the optical module to be used.  <a href="class_isotope_decays.html#a864ca83f9126152936b99ef0e15a10a1">More...</a><br /></td></tr>
 <tr class="separator:a864ca83f9126152936b99ef0e15a10a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
@@ -152,6 +154,7 @@ Private Member Functions</h2></td></tr>
 <tr class="memdesc:a301e3bc7d977dfc78fd16fc7334a53d2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configures GPS for the production and decay of an isotope within a specified location.  <a href="class_isotope_decays.html#a301e3bc7d977dfc78fd16fc7334a53d2">More...</a><br /></td></tr>
 <tr class="separator:a301e3bc7d977dfc78fd16fc7334a53d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a83b37c7574ecd99faa8d5ffb09add113"><td class="memItemLeft" align="right" valign="top">std::map&lt; G4String, G4int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_isotope_decays.html#a83b37c7574ecd99faa8d5ffb09add113">calculateNumberOfDecays</a> (G4MaterialPropertiesTable *pMPT, G4double pTimeWindow, G4double pMass)</td></tr>
+<tr class="memdesc:a83b37c7574ecd99faa8d5ffb09add113"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates the number of decays for isotopes.  <a href="class_isotope_decays.html#a83b37c7574ecd99faa8d5ffb09add113">More...</a><br /></td></tr>
 <tr class="separator:a83b37c7574ecd99faa8d5ffb09add113"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
@@ -239,6 +242,15 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pMPT</td><td>Pointer to the material properties table. </td></tr>
+    <tr><td class="paramname">pTimeWindow</td><td>Time window for decays. </td></tr>
+    <tr><td class="paramname">pMass</td><td>Mass of the volume in which decays occur. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Map of isotopes and their respective number of decays. </dd></dl>
 
 </div>
 </div>
@@ -286,7 +298,7 @@ Private Attributes</h2></td></tr>
   <table class="params">
     <tr><td class="paramname">Isotope</td><td>The isotope which is going to be produced. </td></tr>
     <tr><td class="paramname">pVolumeName</td><td>The volume name where the isotope decays. </td></tr>
-    <tr><td class="paramname">optParam</td><td>An optional parameter related to the location. For "PMT", it could be the PMT number. </td></tr>
+    <tr><td class="paramname">optParam</td><td>An optional parameter related to the location. For "PMT", use e.g. the PMT number. </td></tr>
   </table>
   </dd>
 </dl>
@@ -341,6 +353,12 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pOpticalModule</td><td>Pointer to the optical module. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -359,6 +377,12 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pTimeWindow</td><td>The livetime that should be simulated. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -445,7 +469,7 @@ Private Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="class_isotope_decays.html">IsotopeDecays</a></li>
-    <li class="footer">Generated on Tue Sep 26 2023 10:51:06 for OMSim by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Tue Sep 26 2023 14:12:19 for OMSim by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

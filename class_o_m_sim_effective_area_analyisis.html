@@ -121,6 +121,9 @@ $(document).ready(function(){initNavTree('class_o_m_sim_effective_area_analyisis
 <div class="title">OMSimEffectiveAreaAnalyisis Class Reference<div class="ingroups"><a class="el" href="group___effective_area.html">Effective area</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>Responsible for calculating the effective area of optical hits and saving the results.  
+</p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -132,8 +135,10 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:ad9b76bc60e5f3629a9c693c2a30f539d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Writes a scan result to the output file.  <a href="class_o_m_sim_effective_area_analyisis.html#ad9b76bc60e5f3629a9c693c2a30f539d">More...</a><br /></td></tr>
 <tr class="separator:ad9b76bc60e5f3629a9c693c2a30f539d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8d49aa6cccb6e98ebb9a084284ce47b9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_m_sim_effective_area_analyisis.html#a8d49aa6cccb6e98ebb9a084284ce47b9">writeHeader</a> ()</td></tr>
+<tr class="memdesc:a8d49aa6cccb6e98ebb9a084284ce47b9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Writes the header line to the output file.  <a href="class_o_m_sim_effective_area_analyisis.html#a8d49aa6cccb6e98ebb9a084284ce47b9">More...</a><br /></td></tr>
 <tr class="separator:a8d49aa6cccb6e98ebb9a084284ce47b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa9380b8148a1a0846b2f026d7dfa0046"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structeffective_area_result.html">effectiveAreaResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_m_sim_effective_area_analyisis.html#aa9380b8148a1a0846b2f026d7dfa0046">calculateEffectiveArea</a> (double pHits)</td></tr>
+<tr class="memdesc:aa9380b8148a1a0846b2f026d7dfa0046"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates the effective area based on the number of hits and beam properties.  <a href="class_o_m_sim_effective_area_analyisis.html#aa9380b8148a1a0846b2f026d7dfa0046">More...</a><br /></td></tr>
 <tr class="separator:aa9380b8148a1a0846b2f026d7dfa0046"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
@@ -210,6 +215,13 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pHits</td><td>The number of hits. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Returns a structure with the effective area and its uncertainty. </dd></dl>
 
 </div>
 </div>
@@ -304,7 +316,7 @@ Public Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="class_o_m_sim_effective_area_analyisis.html">OMSimEffectiveAreaAnalyisis</a></li>
-    <li class="footer">Generated on Tue Sep 26 2023 10:51:07 for OMSim by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Tue Sep 26 2023 14:12:19 for OMSim by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

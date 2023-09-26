@@ -28,7 +28,7 @@ Collaboration diagram for OMSim\+Stepping\+Action\+:
 \mbox{\hyperlink{class_o_m_sim_stepping_action_a6e42d5ce9f983bd718383689982930a1}{$\sim$\+OMSim\+Stepping\+Action}} ()
 \item 
 void \mbox{\hyperlink{class_o_m_sim_stepping_action_ade0aef1899f7923ca171b3919ed636d1}{User\+Stepping\+Action}} (const G4\+Step $\ast$)
-\item 
+\begin{DoxyCompactList}\small\item\em Custom actions during a tracking step. This function checks for particles that seem to be stuck (e.\+g., in a loop in the pressure vessel) and kills them if they exceed a specified number of tracking steps. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{class_o_m_sim_stepping_action_af84cee566999b129d9ed204988d3b7e4}{OMSim\+Stepping\+Action}} ()
 \item 
 \mbox{\hyperlink{class_o_m_sim_stepping_action_a6e42d5ce9f983bd718383689982930a1}{$\sim$\+OMSim\+Stepping\+Action}} ()
@@ -89,6 +89,11 @@ void \mbox{\hyperlink{class_o_m_sim_stepping_action_ade0aef1899f7923ca171b3919ed
 \doxysubsubsection{\texorpdfstring{UserSteppingAction()}{UserSteppingAction()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
 {\footnotesize\ttfamily void OMSim\+Stepping\+Action\+::\+User\+Stepping\+Action (\begin{DoxyParamCaption}\item[{const G4\+Step $\ast$}]{a\+Step }\end{DoxyParamCaption})}
 
+
+\begin{DoxyParams}{Parameters}
+{\em a\+Step} & Pointer to the current tracking step. \\
+\hline
+\end{DoxyParams}
 \mbox{\Hypertarget{class_o_m_sim_stepping_action_ade0aef1899f7923ca171b3919ed636d1}\label{class_o_m_sim_stepping_action_ade0aef1899f7923ca171b3919ed636d1}} 
 \index{OMSimSteppingAction@{OMSimSteppingAction}!UserSteppingAction@{UserSteppingAction}}
 \index{UserSteppingAction@{UserSteppingAction}!OMSimSteppingAction@{OMSimSteppingAction}}

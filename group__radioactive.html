@@ -122,6 +122,12 @@ $(document).ready(function(){initNavTree('group__radioactive.html',''); initResi
 
 <p>Simulations for understanding the background produced by radioactive decays in borosilicate glass of optical modules &amp; PMTs.  
 <a href="#details">More...</a></p>
+<div class="dynheader">
+Collaboration diagram for Radioactive decays:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="group__radioactive.svg" width="446" height="54"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <dl class="section warning"><dt>Warning</dt><dd>This study has been tested only for Vitrovex glass (mDOM/LOM16) and the 80mm <a class="el" href="classm_d_o_m.html">mDOM</a> PMTs. Okamoto glass (D-Egg/LOM18) is currently under investigation.</dd></dl>
 <p>The simulation considers the measured scintillation parameters and the specific activity of the isotopes to provide insights into the behavior of OMs in both air and ice environments over a time window \(t_{w}\). The number of time windows simulated is given by the argument &ndash;numevents. The primary output is a timestamped list of detected photons, which can be utilized to compute parameters such as the module's expected dark rate. The simulation steps can be summarized as:</p><ul>
@@ -131,9 +137,9 @@ $(document).ready(function(){initNavTree('group__radioactive.html',''); initResi
 <li>Capturing photons detected by the PMTs for downstream analysis.</li>
 </ul>
 <p>Important customizations in the simulation involve the extension of Geant4's original scintillation class, facilitating the simulation of more complex decay processes (8 lifetimes), and the modification the <a class="el" href="class_g4_radioactive_decay.html">G4RadioactiveDecay</a> class which amends default decay time of isotopes. The scintillation properties of the <a class="el" href="classm_d_o_m.html">mDOM</a> glass were measured in the scope of several theses. For a summary check section 11.2 of <a href="https://zenodo.org/record/8121321">this thesis</a>.</p>
-<p>At the time there are two analysis modes:</p><ul>
-<li>with &ndash;multiplicity_study argument: after each \(t_{w}\) time window the multiplicity is calculated and saved to a file. The raw data is not saved, as multiplicity studies generally involve long simulation times (i.e. large number of photons)</li>
-<li>without &ndash;multiplicity_study argument: the data of photons and decayed isotopes are saved into files. </li>
+<p>Currently, there are two analysis modes:</p><ul>
+<li>With the '&ndash;multiplicity_study' argument: After each \(t_{w}\) time window, the multiplicity is calculated and saved to a file. Raw data isn't stored, as multiplicity studies generally involve extended simulation durations, leading to large volumes of photon data.</li>
+<li>Without the '&ndash;multiplicity_study' argument: Data pertaining to photons and decayed isotopes is saved to files. </li>
 </ul>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
@@ -141,8 +147,17 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_decay_stats.html">DecayStats</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A structure to store information about decays.  <a href="struct_decay_stats.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_m_sim_decays_analysis.html">OMSimDecaysAnalysis</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Singleton class responsible for managing, analysing, and saving decay-related data.  <a href="class_o_m_sim_decays_analysis.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_isotope_decays.html">IsotopeDecays</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A class for simulating isotope decays inside the pressure vessel and PMT glass.  <a href="class_isotope_decays.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_m_sim_event_action.html">OMSimEventAction</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handles custom actions at the beginning and end of each event.  <a href="class_o_m_sim_event_action.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_event_info_manager.html">EventInfoManager</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Singleton class for managing event-specific information.  <a href="class_event_info_manager.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
@@ -150,7 +165,7 @@ Classes</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Tue Sep 26 2023 10:51:06 for OMSim by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Tue Sep 26 2023 14:12:19 for OMSim by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

@@ -2,6 +2,11 @@
 \label{class_o_m_sim_decays_analysis}\index{OMSimDecaysAnalysis@{OMSimDecaysAnalysis}}
 
 
+Singleton class responsible for managing, analysing, and saving decay-\/related data.  
+
+
+
+
 Collaboration diagram for OMSim\+Decays\+Analysis\+:
 \nopagebreak
 \begin{figure}[H]
@@ -14,22 +19,22 @@ Collaboration diagram for OMSim\+Decays\+Analysis\+:
 \begin{DoxyCompactItemize}
 \item 
 void \mbox{\hyperlink{class_o_m_sim_decays_analysis_a35aa71b0f55694ab682eb12e33e773d3}{append\+Decay}} (G4\+String p\+Particle\+Name, G4double p\+Decay\+Time, G4\+Three\+Vector p\+Decay\+Position)
-\item 
+\begin{DoxyCompactList}\small\item\em Append decay information to internal data structures. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_o_m_sim_decays_analysis_accb91a2a739e0a9d3aebd6256ef46de6}{set\+Output\+File\+Name}} (G4\+String p\+Name)
-\item 
+\begin{DoxyCompactList}\small\item\em Set the base filename for output files. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_o_m_sim_decays_analysis_a49fbd38776fcc7d1edf12e786d227ae6}{write\+Multiplicity}} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Calls calculate\+Multiplicity and writes the results to the output file. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_o_m_sim_decays_analysis_a6fa1755be622573173e625460f807201}{write\+Decay\+Information}} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Write isotoped related data to the output file. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_o_m_sim_decays_analysis_ae35ea36c7616b45b3ca49fff54e2862a}{write\+Hit\+Information}} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Write data of the hits to the output file. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_o_m_sim_decays_analysis_aa111935e44e66f005b9b59a3ee5919e0}{reset}} ()
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Resets (deletes) decay and hits data. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Static Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
 static \mbox{\hyperlink{class_o_m_sim_decays_analysis}{OMSim\+Decays\+Analysis}} \& \mbox{\hyperlink{class_o_m_sim_decays_analysis_a61cac28b7c2966247d95b344f78ffa21}{get\+Instance}} ()
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Returns the instance of \mbox{\hyperlink{class_o_m_sim_decays_analysis}{OMSim\+Decays\+Analysis}} (Singleton pattern). \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Private Member Functions}
 \begin{DoxyCompactItemize}
 \item 
@@ -84,6 +89,15 @@ G4\+String \mbox{\hyperlink{class_o_m_sim_decays_analysis_a8fe45181c11565e0fbee8
 \doxysubsubsection{\texorpdfstring{appendDecay()}{appendDecay()}}
 {\footnotesize\ttfamily void OMSim\+Decays\+Analysis\+::append\+Decay (\begin{DoxyParamCaption}\item[{G4\+String}]{p\+Particle\+Name,  }\item[{G4double}]{p\+Decay\+Time,  }\item[{G4\+Three\+Vector}]{p\+Decay\+Position }\end{DoxyParamCaption})}
 
+
+\begin{DoxyParams}{Parameters}
+{\em p\+Particle\+Name} & Name of the particle. \\
+\hline
+{\em p\+Decay\+Time} & Time of the decay. \\
+\hline
+{\em p\+Decay\+Position} & Global position of the decay. \\
+\hline
+\end{DoxyParams}
 \mbox{\Hypertarget{class_o_m_sim_decays_analysis_a61cac28b7c2966247d95b344f78ffa21}\label{class_o_m_sim_decays_analysis_a61cac28b7c2966247d95b344f78ffa21}} 
 \index{OMSimDecaysAnalysis@{OMSimDecaysAnalysis}!getInstance@{getInstance}}
 \index{getInstance@{getInstance}!OMSimDecaysAnalysis@{OMSimDecaysAnalysis}}
@@ -108,6 +122,11 @@ G4\+String \mbox{\hyperlink{class_o_m_sim_decays_analysis_a8fe45181c11565e0fbee8
 \doxysubsubsection{\texorpdfstring{setOutputFileName()}{setOutputFileName()}}
 {\footnotesize\ttfamily void OMSim\+Decays\+Analysis\+::set\+Output\+File\+Name (\begin{DoxyParamCaption}\item[{G4\+String}]{p\+Name }\end{DoxyParamCaption})}
 
+
+\begin{DoxyParams}{Parameters}
+{\em p\+Name} & Base filename. \\
+\hline
+\end{DoxyParams}
 \mbox{\Hypertarget{class_o_m_sim_decays_analysis_a6fa1755be622573173e625460f807201}\label{class_o_m_sim_decays_analysis_a6fa1755be622573173e625460f807201}} 
 \index{OMSimDecaysAnalysis@{OMSimDecaysAnalysis}!writeDecayInformation@{writeDecayInformation}}
 \index{writeDecayInformation@{writeDecayInformation}!OMSimDecaysAnalysis@{OMSimDecaysAnalysis}}

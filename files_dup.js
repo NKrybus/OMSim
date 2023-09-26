@@ -28,9 +28,7 @@ var files_dup =
     [ "OMSimDataFileTypes.cc", "_o_m_sim_data_file_types_8cc.html", null ],
     [ "OMSimDataFileTypes.hh", "_o_m_sim_data_file_types_8hh.html", null ],
     [ "OMSimDecaysAnalysis.cc", "_o_m_sim_decays_analysis_8cc.html", null ],
-    [ "OMSimDecaysAnalysis.hh", "_o_m_sim_decays_analysis_8hh.html", [
-      [ "OMSimDecaysAnalysis", "class_o_m_sim_decays_analysis.html", "class_o_m_sim_decays_analysis" ]
-    ] ],
+    [ "OMSimDecaysAnalysis.hh", "_o_m_sim_decays_analysis_8hh.html", null ],
     [ "OMSimDecaysGPS.cc", "_o_m_sim_decays_g_p_s_8cc.html", null ],
     [ "OMSimDecaysGPS.hh", "_o_m_sim_decays_g_p_s_8hh.html", null ],
     [ "OMSimDEGG.cc", "_o_m_sim_d_e_g_g_8cc.html", null ],
@@ -56,18 +54,9 @@ var files_dup =
     [ "effective_area/src/OMSimEventAction.cc", "effective__area_2src_2_o_m_sim_event_action_8cc.html", null ],
     [ "radioactive_decays/src/OMSimEventAction.cc", "radioactive__decays_2src_2_o_m_sim_event_action_8cc.html", null ],
     [ "supernova/src/OMSimEventAction.cc", "supernova_2src_2_o_m_sim_event_action_8cc.html", null ],
-    [ "effective_area/include/OMSimEventAction.hh", "effective__area_2include_2_o_m_sim_event_action_8hh.html", [
-      [ "OMSimEventAction", "class_o_m_sim_event_action.html", "class_o_m_sim_event_action" ],
-      [ "EventInfoManager", "class_event_info_manager.html", "class_event_info_manager" ]
-    ] ],
-    [ "radioactive_decays/include/OMSimEventAction.hh", "radioactive__decays_2include_2_o_m_sim_event_action_8hh.html", [
-      [ "OMSimEventAction", "class_o_m_sim_event_action.html", "class_o_m_sim_event_action" ],
-      [ "EventInfoManager", "class_event_info_manager.html", "class_event_info_manager" ]
-    ] ],
-    [ "supernova/include/OMSimEventAction.hh", "supernova_2include_2_o_m_sim_event_action_8hh.html", [
-      [ "OMSimEventAction", "class_o_m_sim_event_action.html", "class_o_m_sim_event_action" ],
-      [ "EventInfoManager", "class_event_info_manager.html", "class_event_info_manager" ]
-    ] ],
+    [ "effective_area/include/OMSimEventAction.hh", "effective__area_2include_2_o_m_sim_event_action_8hh.html", null ],
+    [ "radioactive_decays/include/OMSimEventAction.hh", "radioactive__decays_2include_2_o_m_sim_event_action_8hh.html", null ],
+    [ "supernova/include/OMSimEventAction.hh", "supernova_2include_2_o_m_sim_event_action_8hh.html", null ],
     [ "OMSimG4RadioactiveDecay.cc", "_o_m_sim_g4_radioactive_decay_8cc.html", null ],
     [ "OMSimG4RadioactiveDecay.hh", "_o_m_sim_g4_radioactive_decay_8hh.html", "_o_m_sim_g4_radioactive_decay_8hh" ],
     [ "OMSimG4Scintillation.cc", "_o_m_sim_g4_scintillation_8cc.html", null ],
@@ -110,15 +99,9 @@ var files_dup =
     [ "effective_area/src/OMSimPhysicsList.cc", "effective__area_2src_2_o_m_sim_physics_list_8cc.html", null ],
     [ "radioactive_decays/src/OMSimPhysicsList.cc", "radioactive__decays_2src_2_o_m_sim_physics_list_8cc.html", null ],
     [ "supernova/src/OMSimPhysicsList.cc", "supernova_2src_2_o_m_sim_physics_list_8cc.html", null ],
-    [ "effective_area/include/OMSimPhysicsList.hh", "effective__area_2include_2_o_m_sim_physics_list_8hh.html", [
-      [ "OMSimPhysicsList", "class_o_m_sim_physics_list.html", "class_o_m_sim_physics_list" ]
-    ] ],
-    [ "radioactive_decays/include/OMSimPhysicsList.hh", "radioactive__decays_2include_2_o_m_sim_physics_list_8hh.html", [
-      [ "OMSimPhysicsList", "class_o_m_sim_physics_list.html", "class_o_m_sim_physics_list" ]
-    ] ],
-    [ "supernova/include/OMSimPhysicsList.hh", "supernova_2include_2_o_m_sim_physics_list_8hh.html", [
-      [ "OMSimPhysicsList", "class_o_m_sim_physics_list.html", "class_o_m_sim_physics_list" ]
-    ] ],
+    [ "effective_area/include/OMSimPhysicsList.hh", "effective__area_2include_2_o_m_sim_physics_list_8hh.html", null ],
+    [ "radioactive_decays/include/OMSimPhysicsList.hh", "radioactive__decays_2include_2_o_m_sim_physics_list_8hh.html", null ],
+    [ "supernova/include/OMSimPhysicsList.hh", "supernova_2include_2_o_m_sim_physics_list_8hh.html", null ],
     [ "OMSimPMTConstruction.cc", "_o_m_sim_p_m_t_construction_8cc.html", null ],
     [ "OMSimPMTConstruction.hh", "_o_m_sim_p_m_t_construction_8hh.html", [
       [ "OMSimPMTConstruction", "class_o_m_sim_p_m_t_construction.html", "class_o_m_sim_p_m_t_construction" ]

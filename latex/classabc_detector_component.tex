@@ -39,19 +39,19 @@ struct \mbox{\hyperlink{structabc_detector_component_1_1_component}{Component}}
 \mbox{\hyperlink{classabc_detector_component_a49a4c0e7138f1c0ed90736f80dc41377}{abc\+Detector\+Component}} ()
 \item 
 virtual void \mbox{\hyperlink{classabc_detector_component_a8e7f01c218d5f093e80e46b33a0672bf}{construction}} ()=0
-\item 
+\begin{DoxyCompactList}\small\item\em Abstract method you have to define in order to make a derived class from \mbox{\hyperlink{classabc_detector_component}{abc\+Detector\+Component}}. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classabc_detector_component_a467235840a313b6481569ae9ea9d2673}{append\+Component}} (G4\+VSolid $\ast$p\+Solid, G4\+Logical\+Volume $\ast$p\+Logical, G4\+Three\+Vector p\+Vector, G4\+Rotation\+Matrix p\+Rotation, G4\+String p\+Name)
 \begin{DoxyCompactList}\small\item\em Append component to Components vector. \end{DoxyCompactList}\item 
 G4bool \mbox{\hyperlink{classabc_detector_component_a3d796bd0c3a6e22e8bbd11765b98d2e8}{check\+If\+Exists}} (G4\+String p\+Name)
 \begin{DoxyCompactList}\small\item\em Check if a component with a certain name exists in the Components map. \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{classabc_detector_component_aba216e0e619ddc3810ab66700e05a04c}{delete\+Component}} (G4\+String p\+Name)
-\begin{DoxyCompactList}\small\item\em Deletes a specified component from the Components map. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{structabc_detector_component_1_1_component}{Component}} \mbox{\hyperlink{classabc_detector_component_a7a68cb95fa0c6b6bcd97f5640b0500b4}{get\+Component}} (G4\+String p\+Name)
 \begin{DoxyCompactList}\small\item\em Retrieves a specified component from the Components map. \end{DoxyCompactList}\item 
 G4\+Transform3D \mbox{\hyperlink{classabc_detector_component_a2533b996a0f616d13ab44aeb39de1dc8}{get\+New\+Position}} (G4\+Three\+Vector p\+Position, G4\+Rotation\+Matrix p\+Rotation, G4\+Three\+Vector p\+Object\+Position, G4\+Rotation\+Matrix p\+Object\+Rotation)
 \begin{DoxyCompactList}\small\item\em Computes a new position for a sub-\/component, based on a given global position and rotation. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classabc_detector_component_a822f4ef34db80d5bd78d4d2a9e904297}{integrate\+Detector\+Component}} (\mbox{\hyperlink{classabc_detector_component}{abc\+Detector\+Component}} $\ast$p\+To\+Integrate, G4\+Three\+Vector p\+Position, G4\+Rotation\+Matrix p\+Rotation, G4\+String p\+Name\+Extension)
 \begin{DoxyCompactList}\small\item\em Integrates the components of another \mbox{\hyperlink{classabc_detector_component}{abc\+Detector\+Component}} instance. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classabc_detector_component_aba216e0e619ddc3810ab66700e05a04c}{delete\+Component}} (G4\+String p\+Name)
+\begin{DoxyCompactList}\small\item\em Deletes a specified component from the Components map. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classabc_detector_component_a2915a5d0b8278207ff5dd53eac9c4b9a}{place\+It}} (G4\+Three\+Vector p\+Position, G4\+Rotation\+Matrix p\+Rotation, G4\+Logical\+Volume $\ast$\&p\+Mother, G4\+String p\+Name\+Extension=\char`\"{}\char`\"{})
 \begin{DoxyCompactList}\small\item\em Placement of the Detector\+Component. Each \mbox{\hyperlink{structabc_detector_component_1_1_component}{Component}} is placed in the same mother. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classabc_detector_component_a8fb7a3e2c2e647c445447a56ef5955d1}{place\+It}} (G4\+Transform3D p\+Trans, G4\+Logical\+Volume $\ast$\&p\+Mother, G4\+String p\+Name\+Extension=\char`\"{}\char`\"{})
@@ -64,13 +64,13 @@ G4\+Subtraction\+Solid $\ast$ \mbox{\hyperlink{classabc_detector_component_a53c7
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\hyperlink{class_input_data_manager}{Input\+Data\+Manager}} $\ast$ \mbox{\hyperlink{classabc_detector_component_af50c1e99e08ed19b5c9dcf5c7af3074f}{m\+Data}}
-\item 
+\begin{DoxyCompactList}\small\item\em Instance of OMSim\+Inputdata, which should be started only once. \end{DoxyCompactList}\item 
 bool \mbox{\hyperlink{classabc_detector_component_a1c7b2be94d93696561d0302c3edb74ca}{m\+Check\+Overlaps}} = true
 \item 
 std\+::vector$<$ G4\+Three\+Vector $>$ \mbox{\hyperlink{classabc_detector_component_a63d18669991ab4f35e24e7a80144f0a4}{m\+Placed\+Positions}}
-\item 
+\begin{DoxyCompactList}\small\item\em store the positions each time the components are placed \end{DoxyCompactList}\item 
 std\+::vector$<$ G4\+Rotation\+Matrix $>$ \mbox{\hyperlink{classabc_detector_component_a0adfb8cac9a37b214e3da5b31b3d5277}{m\+Placed\+Orientations}}
-\item 
+\begin{DoxyCompactList}\small\item\em store the orientations each time the components are placed \end{DoxyCompactList}\item 
 std\+::vector$<$ G4\+Transform3D $>$ \mbox{\hyperlink{classabc_detector_component_af063f48df26d1189fc6e908555397823}{m\+Placed\+Translations}}
 \item 
 std\+::map$<$ G4\+String, \mbox{\hyperlink{structabc_detector_component_1_1_component}{Component}} $>$ \mbox{\hyperlink{classabc_detector_component_aa830916e7f5f8ae31eb31e3c37c9841e}{m\+Components}}

@@ -117,9 +117,12 @@ $(document).ready(function(){initNavTree('class_o_m_sim_event_action.html',''); 
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="class_o_m_sim_event_action-members.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">OMSimEventAction Class Reference</div>  </div>
+<div class="title">OMSimEventAction Class Reference<div class="ingroups"><a class="el" href="group___effective_area.html">Effective area</a> &#124; <a class="el" href="group__radioactive.html">Radioactive decays</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>Handles custom actions at the beginning and end of each event.  
+ <a href="class_o_m_sim_event_action.html#details">More...</a></p>
 <div class="dynheader">
 Inheritance diagram for OMSimEventAction:</div>
 <div class="dyncontent">
@@ -132,7 +135,9 @@ Collaboration diagram for OMSimEventAction:</div>
 <div class="center"><iframe scrolling="no" frameborder="0" src="class_o_m_sim_event_action__coll__graph.svg" width="159" height="112"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
-<table class="memberdecls">
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>This class defines custom actions that are performed at the start and end of each Geant4 event simulation. It interacts with analysis and hit managers to handle, record, and reset event information. </p>
+</div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:ab8aaaeecc185bbaef63665f673356506"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_m_sim_event_action.html#ab8aaaeecc185bbaef63665f673356506">OMSimEventAction</a> ()</td></tr>
@@ -140,8 +145,10 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ae04b5b7339c3a0820eb71278c1eb8a96"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_m_sim_event_action.html#ae04b5b7339c3a0820eb71278c1eb8a96">~OMSimEventAction</a> ()</td></tr>
 <tr class="separator:ae04b5b7339c3a0820eb71278c1eb8a96"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a74d668030a1b6b461c942e87203c90b9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_m_sim_event_action.html#a74d668030a1b6b461c942e87203c90b9">BeginOfEventAction</a> (const G4Event *)</td></tr>
+<tr class="memdesc:a74d668030a1b6b461c942e87203c90b9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Custom actions at the beginning of the event. This function sets the current event ID in the <a class="el" href="class_event_info_manager.html" title="Singleton class for managing event-specific information.">EventInfoManager</a>.  <a href="class_o_m_sim_event_action.html#a74d668030a1b6b461c942e87203c90b9">More...</a><br /></td></tr>
 <tr class="separator:a74d668030a1b6b461c942e87203c90b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a10298c7dff0337cec4ee06a25ca9c116"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_m_sim_event_action.html#a10298c7dff0337cec4ee06a25ca9c116">EndOfEventAction</a> (const G4Event *)</td></tr>
+<tr class="memdesc:a10298c7dff0337cec4ee06a25ca9c116"><td class="mdescLeft">&#160;</td><td class="mdescRight">Custom actions at the end of the event.  <a href="class_o_m_sim_event_action.html#a10298c7dff0337cec4ee06a25ca9c116">More...</a><br /></td></tr>
 <tr class="separator:a10298c7dff0337cec4ee06a25ca9c116"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab8aaaeecc185bbaef63665f673356506"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_m_sim_event_action.html#ab8aaaeecc185bbaef63665f673356506">OMSimEventAction</a> ()</td></tr>
 <tr class="separator:ab8aaaeecc185bbaef63665f673356506"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -166,6 +173,9 @@ Public Member Functions</h2></td></tr>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">OMSimEventAction::OMSimEventAction </td>
@@ -174,6 +184,11 @@ Public Member Functions</h2></td></tr>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 </div>
@@ -183,6 +198,9 @@ Public Member Functions</h2></td></tr>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">OMSimEventAction::~OMSimEventAction </td>
@@ -191,6 +209,11 @@ Public Member Functions</h2></td></tr>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 </div>
@@ -200,6 +223,9 @@ Public Member Functions</h2></td></tr>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">OMSimEventAction::OMSimEventAction </td>
@@ -208,6 +234,11 @@ Public Member Functions</h2></td></tr>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 </div>
@@ -217,6 +248,9 @@ Public Member Functions</h2></td></tr>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">OMSimEventAction::~OMSimEventAction </td>
@@ -225,6 +259,11 @@ Public Member Functions</h2></td></tr>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 </div>
@@ -279,6 +318,12 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">evt</td><td>Pointer to the current event. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -333,6 +378,18 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">evt</td><td>Pointer to the current event.</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Depending on the arguments set, this function will write hit and decay information with the analysis manager and reset hit and analysis data for the next event. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">evt</td><td>Pointer to the current event. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -382,7 +439,7 @@ Public Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="class_o_m_sim_event_action.html">OMSimEventAction</a></li>
-    <li class="footer">Generated on Tue Sep 26 2023 10:51:07 for OMSim by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Tue Sep 26 2023 14:12:19 for OMSim by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

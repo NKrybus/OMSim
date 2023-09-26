@@ -5,6 +5,14 @@
 Simulations for understanding the background produced by radioactive decays in borosilicate glass of optical modules \& PMTs.  
 
 
+Collaboration diagram for Radioactive decays\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group__radioactive}
+\end{center}
+\end{figure}
 
 
 \doxysubsection{Detailed Description}
@@ -21,14 +29,20 @@ The simulation considers the measured scintillation parameters and the specific 
 
 Important customizations in the simulation involve the extension of Geant4\textquotesingle{}s original scintillation class, facilitating the simulation of more complex decay processes (8 lifetimes), and the modification the \mbox{\hyperlink{class_g4_radioactive_decay}{G4\+Radioactive\+Decay}} class which amends default decay time of isotopes. The scintillation properties of the \mbox{\hyperlink{classm_d_o_m}{m\+DOM}} glass were measured in the scope of several theses. For a summary check section 11.\+2 of \href{https://zenodo.org/record/8121321}{\texttt{ this thesis}}.
 
-At the time there are two analysis modes\+:
+Currently, there are two analysis modes\+:
 \begin{DoxyItemize}
-\item with --multiplicity\+\_\+study argument\+: after each $t_{w}$ time window the multiplicity is calculated and saved to a file. The raw data is not saved, as multiplicity studies generally involve long simulation times (i.\+e. large number of photons)
-\item without --multiplicity\+\_\+study argument\+: the data of photons and decayed isotopes are saved into files. 
+\item With the \textquotesingle{}--multiplicity\+\_\+study\textquotesingle{} argument\+: After each $t_{w}$ time window, the multiplicity is calculated and saved to a file. Raw data isn\textquotesingle{}t stored, as multiplicity studies generally involve extended simulation durations, leading to large volumes of photon data.
+\item Without the \textquotesingle{}--multiplicity\+\_\+study\textquotesingle{} argument\+: Data pertaining to photons and decayed isotopes is saved to files. 
 \end{DoxyItemize}\doxysubsection*{Classes}
 \begin{DoxyCompactItemize}
 \item 
 struct \mbox{\hyperlink{struct_decay_stats}{Decay\+Stats}}
 \begin{DoxyCompactList}\small\item\em A structure to store information about decays. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_o_m_sim_decays_analysis}{OMSim\+Decays\+Analysis}}
+\begin{DoxyCompactList}\small\item\em Singleton class responsible for managing, analysing, and saving decay-\/related data. \end{DoxyCompactList}\item 
 class \mbox{\hyperlink{class_isotope_decays}{Isotope\+Decays}}
-\begin{DoxyCompactList}\small\item\em A class for simulating isotope decays inside the pressure vessel and PMT glass. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em A class for simulating isotope decays inside the pressure vessel and PMT glass. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_o_m_sim_event_action}{OMSim\+Event\+Action}}
+\begin{DoxyCompactList}\small\item\em Handles custom actions at the beginning and end of each event. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_event_info_manager}{Event\+Info\+Manager}}
+\begin{DoxyCompactList}\small\item\em Singleton class for managing event-\/specific information. \end{DoxyCompactList}\end{DoxyCompactItemize}

@@ -15,7 +15,7 @@ var class_o_m_sim_p_m_t_construction =
     [ "getDistancePMTCenterToTip", "class_o_m_sim_p_m_t_construction.html#a9c780686ad7ab5cb712c494b7e1b20a5", null ],
     [ "getLogicalVolume", "class_o_m_sim_p_m_t_construction.html#af3b6282d6a0c3caa3f13244cdf2ed65a", null ],
     [ "getMaxPMTRadius", "class_o_m_sim_p_m_t_construction.html#adcf95adc7d522883934e592e3c551617", null ],
-    [ "getPMTGlassWeight", "class_o_m_sim_p_m_t_construction.html#a548f6bb3f8f5287d908329948a659c66", null ],
+    [ "getPMTGlassWeight", "class_o_m_sim_p_m_t_construction.html#a078d6902dcd7df535b577758898b2cc5", null ],
     [ "getPMTSolid", "class_o_m_sim_p_m_t_construction.html#a869ff1b5f34736e14784d1a3fc4d94a1", null ],
     [ "includeHAcoating", "class_o_m_sim_p_m_t_construction.html#a42777eb8747cd3eaad5dfe52824313a7", null ],
     [ "placeIt", "class_o_m_sim_p_m_t_construction.html#a1f7915c14fc9eee203f861e59f26f333", null ],

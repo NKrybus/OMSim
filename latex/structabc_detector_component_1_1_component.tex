@@ -8,28 +8,19 @@ This struct represents a single detector component within an \mbox{\hyperlink{cl
 
 
 \doxysubsection{Detailed Description}
-A \mbox{\hyperlink{structabc_detector_component_1_1_component}{Component}} is defined by several properties which specify its physical properties and location within the detector. These properties include\+:
-
-
-\begin{DoxyItemize}
-\item {\ttfamily VSolid}\+: A pointer to a Geant4 G4\+VSolid object that represents the physical volume of the component.
-\item {\ttfamily VLogical}\+: A pointer to a Geant4 G4\+Logical\+Volume object that contains the material properties, sensitivity settings and visualization attributes of the component.
-\item {\ttfamily Position}\+: A G4\+Three\+Vector object representing the position of the component with respect to the origin of its containing volume.
-\item {\ttfamily Rotation}\+: A G4\+Rotation\+Matrix object representing the rotation of the component with respect to its initial orientation.
-\item {\ttfamily Name}\+: A G4\+String object representing the unique name of the component. All operations available in \mbox{\hyperlink{classabc_detector_component}{abc\+Detector\+Component}} utilize this struct to perform changes to handle all components. 
-\end{DoxyItemize}\doxysubsection*{Public Attributes}
+A \mbox{\hyperlink{structabc_detector_component_1_1_component}{Component}} is defined by several properties which specify its physical properties and location within the detector. All operations available in \mbox{\hyperlink{classabc_detector_component}{abc\+Detector\+Component}} utilize this struct to perform changes to handle all components. \doxysubsection*{Public Attributes}
 \begin{DoxyCompactItemize}
 \item 
 G4\+VSolid $\ast$ \mbox{\hyperlink{structabc_detector_component_1_1_component_af39293b9b096379b48b083c80b3e2587}{VSolid}}
-\item 
+\begin{DoxyCompactList}\small\item\em A pointer to a Geant4 G4\+VSolid object that represents the physical volume of the component. \end{DoxyCompactList}\item 
 G4\+Logical\+Volume $\ast$ \mbox{\hyperlink{structabc_detector_component_1_1_component_a22a626006281f88b43853c57b104a20f}{VLogical}}
-\item 
+\begin{DoxyCompactList}\small\item\em A pointer to a Geant4 G4\+Logical\+Volume object that contains the material properties, sensitivity settings and visualization attributes of the component. \end{DoxyCompactList}\item 
 G4\+Three\+Vector \mbox{\hyperlink{structabc_detector_component_1_1_component_ae0731322875b6911305cb8971fbd998f}{Position}}
-\item 
+\begin{DoxyCompactList}\small\item\em A G4\+Three\+Vector object representing the position of the component with respect to the origin of its containing volume. \end{DoxyCompactList}\item 
 G4\+Rotation\+Matrix \mbox{\hyperlink{structabc_detector_component_1_1_component_ac8e9b52627b619a0eb2cc3d7b6256156}{Rotation}}
-\item 
+\begin{DoxyCompactList}\small\item\em A G4\+Rotation\+Matrix object representing the rotation of the component with respect to its initial orientation. \end{DoxyCompactList}\item 
 G4\+String \mbox{\hyperlink{structabc_detector_component_1_1_component_a4dcf93b5baee28f73c52313138580b5e}{Name}}
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em A G4\+String object representing the unique name of the component. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{Member Data Documentation}

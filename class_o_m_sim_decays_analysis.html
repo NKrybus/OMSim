@@ -120,9 +120,12 @@ $(document).ready(function(){initNavTree('class_o_m_sim_decays_analysis.html',''
 <a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="class_o_m_sim_decays_analysis-members.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">OMSimDecaysAnalysis Class Reference</div>  </div>
+<div class="title">OMSimDecaysAnalysis Class Reference<div class="ingroups"><a class="el" href="group__radioactive.html">Radioactive decays</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>Singleton class responsible for managing, analysing, and saving decay-related data.  
+</p>
 <div class="dynheader">
 Collaboration diagram for OMSimDecaysAnalysis:</div>
 <div class="dyncontent">
@@ -133,21 +136,28 @@ Collaboration diagram for OMSimDecaysAnalysis:</div>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a35aa71b0f55694ab682eb12e33e773d3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_m_sim_decays_analysis.html#a35aa71b0f55694ab682eb12e33e773d3">appendDecay</a> (G4String pParticleName, G4double pDecayTime, G4ThreeVector pDecayPosition)</td></tr>
+<tr class="memdesc:a35aa71b0f55694ab682eb12e33e773d3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Append decay information to internal data structures.  <a href="class_o_m_sim_decays_analysis.html#a35aa71b0f55694ab682eb12e33e773d3">More...</a><br /></td></tr>
 <tr class="separator:a35aa71b0f55694ab682eb12e33e773d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:accb91a2a739e0a9d3aebd6256ef46de6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_m_sim_decays_analysis.html#accb91a2a739e0a9d3aebd6256ef46de6">setOutputFileName</a> (G4String pName)</td></tr>
+<tr class="memdesc:accb91a2a739e0a9d3aebd6256ef46de6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the base filename for output files.  <a href="class_o_m_sim_decays_analysis.html#accb91a2a739e0a9d3aebd6256ef46de6">More...</a><br /></td></tr>
 <tr class="separator:accb91a2a739e0a9d3aebd6256ef46de6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a49fbd38776fcc7d1edf12e786d227ae6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_m_sim_decays_analysis.html#a49fbd38776fcc7d1edf12e786d227ae6">writeMultiplicity</a> ()</td></tr>
+<tr class="memdesc:a49fbd38776fcc7d1edf12e786d227ae6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calls calculateMultiplicity and writes the results to the output file.  <a href="class_o_m_sim_decays_analysis.html#a49fbd38776fcc7d1edf12e786d227ae6">More...</a><br /></td></tr>
 <tr class="separator:a49fbd38776fcc7d1edf12e786d227ae6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6fa1755be622573173e625460f807201"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_m_sim_decays_analysis.html#a6fa1755be622573173e625460f807201">writeDecayInformation</a> ()</td></tr>
+<tr class="memdesc:a6fa1755be622573173e625460f807201"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write isotoped related data to the output file.  <a href="class_o_m_sim_decays_analysis.html#a6fa1755be622573173e625460f807201">More...</a><br /></td></tr>
 <tr class="separator:a6fa1755be622573173e625460f807201"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae35ea36c7616b45b3ca49fff54e2862a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_m_sim_decays_analysis.html#ae35ea36c7616b45b3ca49fff54e2862a">writeHitInformation</a> ()</td></tr>
+<tr class="memdesc:ae35ea36c7616b45b3ca49fff54e2862a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write data of the hits to the output file.  <a href="class_o_m_sim_decays_analysis.html#ae35ea36c7616b45b3ca49fff54e2862a">More...</a><br /></td></tr>
 <tr class="separator:ae35ea36c7616b45b3ca49fff54e2862a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa111935e44e66f005b9b59a3ee5919e0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_m_sim_decays_analysis.html#aa111935e44e66f005b9b59a3ee5919e0">reset</a> ()</td></tr>
+<tr class="memdesc:aa111935e44e66f005b9b59a3ee5919e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resets (deletes) decay and hits data.  <a href="class_o_m_sim_decays_analysis.html#aa111935e44e66f005b9b59a3ee5919e0">More...</a><br /></td></tr>
 <tr class="separator:aa111935e44e66f005b9b59a3ee5919e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a61cac28b7c2966247d95b344f78ffa21"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_o_m_sim_decays_analysis.html">OMSimDecaysAnalysis</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_m_sim_decays_analysis.html#a61cac28b7c2966247d95b344f78ffa21">getInstance</a> ()</td></tr>
+<tr class="memdesc:a61cac28b7c2966247d95b344f78ffa21"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the instance of <a class="el" href="class_o_m_sim_decays_analysis.html" title="Singleton class responsible for managing, analysing, and saving decay-related data.">OMSimDecaysAnalysis</a> (Singleton pattern).  <a href="class_o_m_sim_decays_analysis.html#a61cac28b7c2966247d95b344f78ffa21">More...</a><br /></td></tr>
 <tr class="separator:a61cac28b7c2966247d95b344f78ffa21"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
@@ -283,6 +293,14 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pParticleName</td><td>Name of the particle. </td></tr>
+    <tr><td class="paramname">pDecayTime</td><td>Time of the decay. </td></tr>
+    <tr><td class="paramname">pDecayPosition</td><td>Global position of the decay. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -369,6 +387,12 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pName</td><td>Base filename. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -544,7 +568,7 @@ Private Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="class_o_m_sim_decays_analysis.html">OMSimDecaysAnalysis</a></li>
-    <li class="footer">Generated on Tue Sep 26 2023 10:51:07 for OMSim by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Tue Sep 26 2023 14:12:19 for OMSim by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

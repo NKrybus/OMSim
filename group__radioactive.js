@@ -6,6 +6,24 @@ var group__radioactive =
       [ "event_id", "struct_decay_stats.html#a918687c9c1cc9f26a91d9c628836517c", null ],
       [ "isotope_name", "struct_decay_stats.html#adba1fdb7b55d8dc823560dca49d30730", null ]
     ] ],
+    [ "OMSimDecaysAnalysis", "class_o_m_sim_decays_analysis.html", [
+      [ "OMSimDecaysAnalysis", "class_o_m_sim_decays_analysis.html#a69166537ec42005ec45a793106810114", null ],
+      [ "~OMSimDecaysAnalysis", "class_o_m_sim_decays_analysis.html#a2b70a07ae097f64f448e191500699673", null ],
+      [ "OMSimDecaysAnalysis", "class_o_m_sim_decays_analysis.html#a5a809421faa0dd4ad201891f58850af5", null ],
+      [ "appendDecay", "class_o_m_sim_decays_analysis.html#a35aa71b0f55694ab682eb12e33e773d3", null ],
+      [ "getInstance", "class_o_m_sim_decays_analysis.html#a61cac28b7c2966247d95b344f78ffa21", null ],
+      [ "operator=", "class_o_m_sim_decays_analysis.html#af4b8d2cd736ede06f4dcf7258fb46090", null ],
+      [ "reset", "class_o_m_sim_decays_analysis.html#aa111935e44e66f005b9b59a3ee5919e0", null ],
+      [ "setOutputFileName", "class_o_m_sim_decays_analysis.html#accb91a2a739e0a9d3aebd6256ef46de6", null ],
+      [ "writeDecayInformation", "class_o_m_sim_decays_analysis.html#a6fa1755be622573173e625460f807201", null ],
+      [ "writeHitInformation", "class_o_m_sim_decays_analysis.html#ae35ea36c7616b45b3ca49fff54e2862a", null ],
+      [ "writeMultiplicity", "class_o_m_sim_decays_analysis.html#a49fbd38776fcc7d1edf12e786d227ae6", null ],
+      [ "mDatafile", "class_o_m_sim_decays_analysis.html#adb7b5987aeeab388a3e9571eff9d9c9a", null ],
+      [ "mDecaysFileName", "class_o_m_sim_decays_analysis.html#a435ef1969df04d0080449e309f577ee9", null ],
+      [ "mDecaysStats", "class_o_m_sim_decays_analysis.html#a4be2795e5c1d4295220eb7f6c31e16cc", null ],
+      [ "mHitsFileName", "class_o_m_sim_decays_analysis.html#ab1bab5a939f8e056ccd156b4b9ffb612", null ],
+      [ "mMultiplicityFileName", "class_o_m_sim_decays_analysis.html#a8fe45181c11565e0fbee8d1ce40b2c02", null ]
+    ] ],
     [ "IsotopeDecays", "class_isotope_decays.html", [
       [ "IsotopeDecays", "class_isotope_decays.html#a73a736b434677c48db553c691407210f", null ],
       [ "~IsotopeDecays", "class_isotope_decays.html#a2c725f29ba7fbed8106022a3eb355a8e", null ],
@@ -17,5 +35,34 @@ var group__radioactive =
       [ "mIsotopeCommands", "class_isotope_decays.html#a60f8eca9a5950c197463b8c54ae4ad91", null ],
       [ "mOM", "class_isotope_decays.html#a365ed822e8b8b563226636a7f7930819", null ],
       [ "mProductionRadius", "class_isotope_decays.html#acd6830b0720976474f7be3c65d764090", null ]
+    ] ],
+    [ "OMSimEventAction", "class_o_m_sim_event_action.html", [
+      [ "OMSimEventAction", "class_o_m_sim_event_action.html#ab8aaaeecc185bbaef63665f673356506", null ],
+      [ "~OMSimEventAction", "class_o_m_sim_event_action.html#ae04b5b7339c3a0820eb71278c1eb8a96", null ],
+      [ "OMSimEventAction", "class_o_m_sim_event_action.html#ab8aaaeecc185bbaef63665f673356506", null ],
+      [ "~OMSimEventAction", "class_o_m_sim_event_action.html#ae04b5b7339c3a0820eb71278c1eb8a96", null ],
+      [ "OMSimEventAction", "class_o_m_sim_event_action.html#ab8aaaeecc185bbaef63665f673356506", null ],
+      [ "~OMSimEventAction", "class_o_m_sim_event_action.html#ae04b5b7339c3a0820eb71278c1eb8a96", null ],
+      [ "BeginOfEventAction", "class_o_m_sim_event_action.html#a74d668030a1b6b461c942e87203c90b9", null ],
+      [ "BeginOfEventAction", "class_o_m_sim_event_action.html#a74d668030a1b6b461c942e87203c90b9", null ],
+      [ "BeginOfEventAction", "class_o_m_sim_event_action.html#a74d668030a1b6b461c942e87203c90b9", null ],
+      [ "EndOfEventAction", "class_o_m_sim_event_action.html#a10298c7dff0337cec4ee06a25ca9c116", null ],
+      [ "EndOfEventAction", "class_o_m_sim_event_action.html#a10298c7dff0337cec4ee06a25ca9c116", null ],
+      [ "EndOfEventAction", "class_o_m_sim_event_action.html#a10298c7dff0337cec4ee06a25ca9c116", null ]
+    ] ],
+    [ "EventInfoManager", "class_event_info_manager.html", [
+      [ "EventInfoManager", "class_event_info_manager.html#aaae2a42eb414ea5fbde3deff5cffc0b2", null ],
+      [ "EventInfoManager", "class_event_info_manager.html#aaae2a42eb414ea5fbde3deff5cffc0b2", null ],
+      [ "EventInfoManager", "class_event_info_manager.html#aaae2a42eb414ea5fbde3deff5cffc0b2", null ],
+      [ "getCurrentEventID", "class_event_info_manager.html#ab55b547cd98a9ae44b909dd4e03f0d0d", null ],
+      [ "getCurrentEventID", "class_event_info_manager.html#ab55b547cd98a9ae44b909dd4e03f0d0d", null ],
+      [ "getCurrentEventID", "class_event_info_manager.html#ab55b547cd98a9ae44b909dd4e03f0d0d", null ],
+      [ "getInstance", "class_event_info_manager.html#a3f20e93e5648ed8361ac6919e261b2ca", null ],
+      [ "getInstance", "class_event_info_manager.html#a3f20e93e5648ed8361ac6919e261b2ca", null ],
+      [ "getInstance", "class_event_info_manager.html#a3f20e93e5648ed8361ac6919e261b2ca", null ],
+      [ "setCurrentEventID", "class_event_info_manager.html#a6196a992f70988bea9efb7c1e77eb358", null ],
+      [ "setCurrentEventID", "class_event_info_manager.html#a6196a992f70988bea9efb7c1e77eb358", null ],
+      [ "setCurrentEventID", "class_event_info_manager.html#a6196a992f70988bea9efb7c1e77eb358", null ],
+      [ "currentEventID", "class_event_info_manager.html#aa12794088e655821d47bedbacd179296", null ]
     ] ]
 ];

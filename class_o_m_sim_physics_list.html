@@ -118,9 +118,12 @@ $(document).ready(function(){initNavTree('class_o_m_sim_physics_list.html',''); 
 <a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="class_o_m_sim_physics_list-members.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">OMSimPhysicsList Class Reference</div>  </div>
+<div class="title">OMSimPhysicsList Class Reference<div class="ingroups"><a class="el" href="group___effective_area.html">Effective area</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>Custom physics list for optical photon processes.  
+ <a href="class_o_m_sim_physics_list.html#details">More...</a></p>
 <div class="dynheader">
 Inheritance diagram for OMSimPhysicsList:</div>
 <div class="dyncontent">
@@ -133,7 +136,9 @@ Collaboration diagram for OMSimPhysicsList:</div>
 <div class="center"><iframe scrolling="no" frameborder="0" src="class_o_m_sim_physics_list__coll__graph.svg" width="162" height="112"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
-<table class="memberdecls">
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>This physics list initializes the optical photon processes including absorption, boundary interactions, Rayleigh scattering, and Mie scattering. </p>
+</div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a1e29e39ab1756fafc94970b05e84a467"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_m_sim_physics_list.html#a1e29e39ab1756fafc94970b05e84a467">OMSimPhysicsList</a> ()</td></tr>
@@ -152,10 +157,13 @@ Public Member Functions</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
 <tr class="memitem:a8bf61a70f663c754304fc56073e3ac95"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_m_sim_physics_list.html#a8bf61a70f663c754304fc56073e3ac95">ConstructParticle</a> ()</td></tr>
+<tr class="memdesc:a8bf61a70f663c754304fc56073e3ac95"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs particles for the physics list.  <a href="class_o_m_sim_physics_list.html#a8bf61a70f663c754304fc56073e3ac95">More...</a><br /></td></tr>
 <tr class="separator:a8bf61a70f663c754304fc56073e3ac95"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a52292caf7091b6a7666c07f29189a9d1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_m_sim_physics_list.html#a52292caf7091b6a7666c07f29189a9d1">ConstructProcess</a> ()</td></tr>
+<tr class="memdesc:a52292caf7091b6a7666c07f29189a9d1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs processes for the physics list.  <a href="class_o_m_sim_physics_list.html#a52292caf7091b6a7666c07f29189a9d1">More...</a><br /></td></tr>
 <tr class="separator:a52292caf7091b6a7666c07f29189a9d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a21a650f31fd33e281cdb144f755875e4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_m_sim_physics_list.html#a21a650f31fd33e281cdb144f755875e4">SetCuts</a> ()</td></tr>
+<tr class="memdesc:a21a650f31fd33e281cdb144f755875e4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set production cuts with default values.  <a href="class_o_m_sim_physics_list.html#a21a650f31fd33e281cdb144f755875e4">More...</a><br /></td></tr>
 <tr class="separator:a21a650f31fd33e281cdb144f755875e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8bf61a70f663c754304fc56073e3ac95"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_m_sim_physics_list.html#a8bf61a70f663c754304fc56073e3ac95">ConstructParticle</a> ()</td></tr>
 <tr class="separator:a8bf61a70f663c754304fc56073e3ac95"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -312,6 +320,7 @@ Protected Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>This method is used to define particles. For EA studies, it initializes only the optical photon. </p>
 
 </div>
 </div>
@@ -387,6 +396,7 @@ Protected Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>This method initializes the optical photon processes which includes absorption, boundary interactions, Rayleigh scattering, and Mie scattering. </p>
 
 </div>
 </div>
@@ -462,6 +472,7 @@ Protected Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>Sets the production cuts with default values. </p>
 
 </div>
 </div>
@@ -525,7 +536,7 @@ Protected Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="class_o_m_sim_physics_list.html">OMSimPhysicsList</a></li>
-    <li class="footer">Generated on Tue Sep 26 2023 10:51:07 for OMSim by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Tue Sep 26 2023 14:12:19 for OMSim by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

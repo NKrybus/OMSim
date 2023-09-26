@@ -124,26 +124,24 @@ $(document).ready(function(){initNavTree('structabc_detector_component_1_1_compo
 <p>This struct represents a single detector component within an <a class="el" href="classabc_detector_component.html" title="Abstract base class used for constructing detector components.">abcDetectorComponent</a> instance.  
  <a href="structabc_detector_component_1_1_component.html#details">More...</a></p>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>A <a class="el" href="structabc_detector_component_1_1_component.html" title="This struct represents a single detector component within an abcDetectorComponent instance.">Component</a> is defined by several properties which specify its physical properties and location within the detector. These properties include:</p>
-<ul>
-<li><code>VSolid</code>: A pointer to a Geant4 G4VSolid object that represents the physical volume of the component.</li>
-<li><code>VLogical</code>: A pointer to a Geant4 G4LogicalVolume object that contains the material properties, sensitivity settings and visualization attributes of the component.</li>
-<li><code>Position</code>: A G4ThreeVector object representing the position of the component with respect to the origin of its containing volume.</li>
-<li><code>Rotation</code>: A G4RotationMatrix object representing the rotation of the component with respect to its initial orientation.</li>
-<li><code>Name</code>: A G4String object representing the unique name of the component. All operations available in <a class="el" href="classabc_detector_component.html" title="Abstract base class used for constructing detector components.">abcDetectorComponent</a> utilize this struct to perform changes to handle all components. </li>
-</ul>
+<div class="textblock"><p>A <a class="el" href="structabc_detector_component_1_1_component.html" title="This struct represents a single detector component within an abcDetectorComponent instance.">Component</a> is defined by several properties which specify its physical properties and location within the detector. All operations available in <a class="el" href="classabc_detector_component.html" title="Abstract base class used for constructing detector components.">abcDetectorComponent</a> utilize this struct to perform changes to handle all components. </p>
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
 <tr class="memitem:af39293b9b096379b48b083c80b3e2587"><td class="memItemLeft" align="right" valign="top">G4VSolid *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structabc_detector_component_1_1_component.html#af39293b9b096379b48b083c80b3e2587">VSolid</a></td></tr>
+<tr class="memdesc:af39293b9b096379b48b083c80b3e2587"><td class="mdescLeft">&#160;</td><td class="mdescRight">A pointer to a Geant4 G4VSolid object that represents the physical volume of the component.  <a href="structabc_detector_component_1_1_component.html#af39293b9b096379b48b083c80b3e2587">More...</a><br /></td></tr>
 <tr class="separator:af39293b9b096379b48b083c80b3e2587"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a22a626006281f88b43853c57b104a20f"><td class="memItemLeft" align="right" valign="top">G4LogicalVolume *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structabc_detector_component_1_1_component.html#a22a626006281f88b43853c57b104a20f">VLogical</a></td></tr>
+<tr class="memdesc:a22a626006281f88b43853c57b104a20f"><td class="mdescLeft">&#160;</td><td class="mdescRight">A pointer to a Geant4 G4LogicalVolume object that contains the material properties, sensitivity settings and visualization attributes of the component.  <a href="structabc_detector_component_1_1_component.html#a22a626006281f88b43853c57b104a20f">More...</a><br /></td></tr>
 <tr class="separator:a22a626006281f88b43853c57b104a20f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae0731322875b6911305cb8971fbd998f"><td class="memItemLeft" align="right" valign="top">G4ThreeVector&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structabc_detector_component_1_1_component.html#ae0731322875b6911305cb8971fbd998f">Position</a></td></tr>
+<tr class="memdesc:ae0731322875b6911305cb8971fbd998f"><td class="mdescLeft">&#160;</td><td class="mdescRight">A G4ThreeVector object representing the position of the component with respect to the origin of its containing volume.  <a href="structabc_detector_component_1_1_component.html#ae0731322875b6911305cb8971fbd998f">More...</a><br /></td></tr>
 <tr class="separator:ae0731322875b6911305cb8971fbd998f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac8e9b52627b619a0eb2cc3d7b6256156"><td class="memItemLeft" align="right" valign="top">G4RotationMatrix&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structabc_detector_component_1_1_component.html#ac8e9b52627b619a0eb2cc3d7b6256156">Rotation</a></td></tr>
+<tr class="memdesc:ac8e9b52627b619a0eb2cc3d7b6256156"><td class="mdescLeft">&#160;</td><td class="mdescRight">A G4RotationMatrix object representing the rotation of the component with respect to its initial orientation.  <a href="structabc_detector_component_1_1_component.html#ac8e9b52627b619a0eb2cc3d7b6256156">More...</a><br /></td></tr>
 <tr class="separator:ac8e9b52627b619a0eb2cc3d7b6256156"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4dcf93b5baee28f73c52313138580b5e"><td class="memItemLeft" align="right" valign="top">G4String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structabc_detector_component_1_1_component.html#a4dcf93b5baee28f73c52313138580b5e">Name</a></td></tr>
+<tr class="memdesc:a4dcf93b5baee28f73c52313138580b5e"><td class="mdescLeft">&#160;</td><td class="mdescRight">A G4String object representing the unique name of the component.  <a href="structabc_detector_component_1_1_component.html#a4dcf93b5baee28f73c52313138580b5e">More...</a><br /></td></tr>
 <tr class="separator:a4dcf93b5baee28f73c52313138580b5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Data Documentation</h2>
@@ -226,7 +224,7 @@ Public Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="classabc_detector_component.html">abcDetectorComponent</a></li><li class="navelem"><a class="el" href="structabc_detector_component_1_1_component.html">Component</a></li>
-    <li class="footer">Generated on Tue Sep 26 2023 10:51:06 for OMSim by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Tue Sep 26 2023 14:12:19 for OMSim by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

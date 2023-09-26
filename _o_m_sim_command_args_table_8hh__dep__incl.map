@@ -1,32 +1,37 @@
 <map id="OMSimCommandArgsTable.hh" name="OMSimCommandArgsTable.hh">
-<area shape="rect" id="node1" title="Definition of the OMSimCommandArgsTable singleton class, which controls user args." alt="" coords="1989,5,2208,32"/>
+<area shape="rect" id="node1" title="Definition of the OMSimCommandArgsTable singleton class, which controls user args." alt="" coords="2228,5,2447,32"/>
 <area shape="rect" id="node2" href="$_o_m_sim_data_file_types_8hh.html" title="Collection of classes and methods to handle material creation from user data in json files." alt="" coords="194,80,374,107"/>
 <area shape="rect" id="node4" href="$_o_m_sim_input_data_8cc.html" title=" " alt="" coords="209,155,359,181"/>
-<area shape="rect" id="node5" href="$_o_m_sim_u_iinterface_8hh.html" title="The OMSimUIinterface class provides a singleton interface to Geant4&#39;s UI manager." alt="" coords="491,80,653,107"/>
-<area shape="rect" id="node14" href="$_o_m_sim_hit_manager_8cc.html" title=" " alt="" coords="677,80,840,107"/>
-<area shape="rect" id="node15" href="$_o_m_sim_p_m_t_construction_8cc.html" title=" " alt="" coords="865,80,1061,107"/>
-<area shape="rect" id="node16" href="$_o_m_sim_p_m_t_response_8cc.html" title=" " alt="" coords="1085,80,1264,107"/>
-<area shape="rect" id="node17" href="$_o_m_sim_tracking_action_8cc.html" title=" " alt="" coords="1289,80,1471,107"/>
-<area shape="rect" id="node18" href="$_o_m_sim_m_d_o_m_8cc.html" title=" " alt="" coords="1496,80,1627,107"/>
-<area shape="rect" id="node19" href="$_o_m_sim_m_d_o_m_harness_8cc.html" title=" " alt="" coords="1651,80,1835,107"/>
-<area shape="rect" id="node20" href="$effective__area_2src_2_o_m_sim_detector_construction_8cc.html" title=" " alt="" coords="1859,80,2085,107"/>
-<area shape="rect" id="node21" href="$_o_m_sim_effective_area_analyisis_8cc.html" title=" " alt="" coords="2109,80,2342,107"/>
-<area shape="rect" id="node22" href="$_o_m_sim_decays_analysis_8cc.html" title=" " alt="" coords="2366,80,2557,107"/>
-<area shape="rect" id="node23" href="$radioactive__decays_2src_2_o_m_sim_detector_construction_8cc.html" title=" " alt="" coords="2581,80,2806,107"/>
-<area shape="rect" id="node24" href="$radioactive__decays_2src_2_o_m_sim_event_action_8cc.html" title=" " alt="" coords="2829,80,2995,107"/>
-<area shape="rect" id="node25" href="$_o_m_sim_g4_radioactive_decay_8cc.html" title=" " alt="" coords="3019,80,3240,107"/>
-<area shape="rect" id="node26" href="$supernova_2src_2_o_m_sim_detector_construction_8cc.html" title=" " alt="" coords="3265,80,3490,107"/>
-<area shape="rect" id="node27" href="$_o_m_sim_e_n_e_s_8cc.html" title=" " alt="" coords="3514,80,3635,107"/>
-<area shape="rect" id="node28" href="$_o_m_sim_i_b_d_8cc.html" title=" " alt="" coords="3659,80,3770,107"/>
-<area shape="rect" id="node29" href="$_o_m_sim_s_n_analysis_8cc.html" title="Analyze data and write output files." alt="" coords="3795,80,3955,107"/>
-<area shape="rect" id="node30" href="$_o_m_sim_s_n_tools_8cc.html" title=" " alt="" coords="3979,80,4117,107"/>
+<area shape="rect" id="node5" href="$_o_m_sim_u_iinterface_8hh.html" title="The OMSimUIinterface class provides a singleton interface to Geant4&#39;s UI manager." alt="" coords="511,80,673,107"/>
+<area shape="rect" id="node11" href="$_o_m_sim_m_d_o_m_flasher_8cc.html" title=" " alt="" coords="384,155,563,181"/>
+<area shape="rect" id="node14" href="$_o_m_sim_hit_manager_8cc.html" title=" " alt="" coords="697,80,860,107"/>
+<area shape="rect" id="node15" href="$_o_m_sim_p_m_t_construction_8cc.html" title=" " alt="" coords="885,80,1081,107"/>
+<area shape="rect" id="node16" href="$_o_m_sim_p_m_t_response_8cc.html" title=" " alt="" coords="1105,80,1284,107"/>
+<area shape="rect" id="node17" href="$_o_m_sim_tracking_action_8cc.html" title=" " alt="" coords="1309,80,1491,107"/>
+<area shape="rect" id="node18" href="$_o_m_sim_d_e_g_g_8cc.html" title=" " alt="" coords="1516,80,1641,107"/>
+<area shape="rect" id="node19" href="$_o_m_sim_d_e_g_g_harness_8cc.html" title=" " alt="" coords="1665,80,1844,107"/>
+<area shape="rect" id="node20" href="$_o_m_sim_l_o_m16_8cc.html" title=" " alt="" coords="1869,80,2001,107"/>
+<area shape="rect" id="node21" href="$_o_m_sim_l_o_m18_8cc.html" title=" " alt="" coords="2025,80,2157,107"/>
+<area shape="rect" id="node22" href="$_o_m_sim_m_d_o_m_8cc.html" title=" " alt="" coords="2181,80,2312,107"/>
+<area shape="rect" id="node23" href="$_o_m_sim_m_d_o_m_harness_8cc.html" title=" " alt="" coords="2336,80,2520,107"/>
+<area shape="rect" id="node24" href="$_o_m_sim_p_d_o_m_8cc.html" title=" " alt="" coords="2545,80,2671,107"/>
+<area shape="rect" id="node25" href="$effective__area_2src_2_o_m_sim_detector_construction_8cc.html" title=" " alt="" coords="2695,80,2921,107"/>
+<area shape="rect" id="node26" href="$_o_m_sim_effective_area_analyisis_8cc.html" title=" " alt="" coords="2945,80,3178,107"/>
+<area shape="rect" id="node27" href="$_o_m_sim_decays_analysis_8cc.html" title=" " alt="" coords="3202,80,3393,107"/>
+<area shape="rect" id="node28" href="$radioactive__decays_2src_2_o_m_sim_detector_construction_8cc.html" title=" " alt="" coords="3417,80,3642,107"/>
+<area shape="rect" id="node29" href="$radioactive__decays_2src_2_o_m_sim_event_action_8cc.html" title=" " alt="" coords="3665,80,3831,107"/>
+<area shape="rect" id="node30" href="$_o_m_sim_g4_radioactive_decay_8cc.html" title=" " alt="" coords="3855,80,4076,107"/>
+<area shape="rect" id="node31" href="$supernova_2src_2_o_m_sim_detector_construction_8cc.html" title=" " alt="" coords="4101,80,4326,107"/>
+<area shape="rect" id="node32" href="$_o_m_sim_e_n_e_s_8cc.html" title=" " alt="" coords="4350,80,4471,107"/>
+<area shape="rect" id="node33" href="$_o_m_sim_i_b_d_8cc.html" title=" " alt="" coords="4495,80,4606,107"/>
+<area shape="rect" id="node34" href="$_o_m_sim_s_n_analysis_8cc.html" title="Analyze data and write output files." alt="" coords="4631,80,4791,107"/>
+<area shape="rect" id="node35" href="$_o_m_sim_s_n_tools_8cc.html" title=" " alt="" coords="4815,80,4953,107"/>
 <area shape="rect" id="node3" href="$_o_m_sim_data_file_types_8cc.html" title=" " alt="" coords="5,155,184,181"/>
-<area shape="rect" id="node6" href="$_o_m_sim_8hh.html" title="Main simulation class for the Optical Module (OM) simulation. This file defines the OMSim class,..." alt="" coords="383,155,473,181"/>
-<area shape="rect" id="node11" href="$_o_m_sim_m_d_o_m_flasher_8cc.html" title=" " alt="" coords="497,155,676,181"/>
-<area shape="rect" id="node12" href="$_o_m_sim_angular_scan_8cc.html" title=" " alt="" coords="700,155,868,181"/>
-<area shape="rect" id="node13" href="$_o_m_sim_decays_g_p_s_8cc.html" title=" " alt="" coords="893,155,1054,181"/>
-<area shape="rect" id="node7" href="$_o_m_sim_8cc.html" title="Implementation of the OMSim class." alt="" coords="110,229,197,256"/>
-<area shape="rect" id="node8" href="$_o_m_sim__effective__area_8cc.html" title="Main for the calculation of effective areas." alt="" coords="221,229,408,256"/>
-<area shape="rect" id="node9" href="$_o_m_sim__radioactive__decays_8cc.html" title=" " alt="" coords="433,229,653,256"/>
-<area shape="rect" id="node10" href="$_o_m_sim__supernova_8cc.html" title=" " alt="" coords="677,229,840,256"/>
+<area shape="rect" id="node6" href="$_o_m_sim_8hh.html" title="Main simulation class for the Optical Module (OM) simulation. This file defines the OMSim class,..." alt="" coords="587,155,677,181"/>
+<area shape="rect" id="node12" href="$_o_m_sim_angular_scan_8cc.html" title=" " alt="" coords="701,155,869,181"/>
+<area shape="rect" id="node13" href="$_o_m_sim_decays_g_p_s_8cc.html" title=" " alt="" coords="894,155,1055,181"/>
+<area shape="rect" id="node7" href="$_o_m_sim_8cc.html" title="Implementation of the OMSim class." alt="" coords="314,229,401,256"/>
+<area shape="rect" id="node8" href="$_o_m_sim__effective__area_8cc.html" title="Main for the calculation of effective areas." alt="" coords="425,229,612,256"/>
+<area shape="rect" id="node9" href="$_o_m_sim__radioactive__decays_8cc.html" title=" " alt="" coords="637,229,857,256"/>
+<area shape="rect" id="node10" href="$_o_m_sim__supernova_8cc.html" title=" " alt="" coords="881,229,1044,256"/>
 </map>

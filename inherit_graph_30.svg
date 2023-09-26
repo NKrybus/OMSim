@@ -21,7 +21,7 @@
 <!-- Node0 -->
 <g id="node2" class="node">
 <title>Node0</title>
-<g id="a_node2"><a xlink:href="class_o_m_sim_physics_list.html" target="_top" xlink:title=" ">
+<g id="a_node2"><a xlink:href="class_o_m_sim_physics_list.html" target="_top" xlink:title="Custom physics list for optical photon processes.">
 <polygon fill="white" stroke="black" points="149,-0.5 149,-19.5 255,-19.5 255,-0.5 149,-0.5"/>
 <text text-anchor="middle" x="202" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">OMSimPhysicsList</text>
 </a>
