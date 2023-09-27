@@ -1,18 +1,23 @@
 <map id="OMSimSNAnalysis.cc" name="OMSimSNAnalysis.cc">
-<area shape="rect" id="node1" title="Analyze data and write output files." alt="" coords="529,5,689,32"/>
-<area shape="rect" id="node2" href="$_o_m_sim_s_n_analysis_8hh.html" title=" " alt="" coords="271,80,434,107"/>
-<area shape="rect" id="node9" title=" " alt="" coords="459,80,617,107"/>
-<area shape="rect" id="node10" title=" " alt="" coords="641,80,720,107"/>
-<area shape="rect" id="node11" href="$_o_m_sim_command_args_table_8hh.html" title="Definition of the OMSimCommandArgsTable singleton class, which controls user args." alt="" coords="745,80,963,107"/>
-<area shape="rect" id="node3" title=" " alt="" coords="5,155,103,181"/>
-<area shape="rect" id="node4" title=" " alt="" coords="127,155,226,181"/>
-<area shape="rect" id="node5" title=" " alt="" coords="251,155,388,181"/>
-<area shape="rect" id="node6" title=" " alt="" coords="412,155,475,181"/>
-<area shape="rect" id="node7" title=" " alt="" coords="577,155,651,181"/>
-<area shape="rect" id="node8" title=" " alt="" coords="499,155,553,181"/>
-<area shape="rect" id="node12" href="$_o_m_sim_logger_8hh.html" title=" " alt="" coords="675,155,807,181"/>
-<area shape="rect" id="node15" title=" " alt="" coords="831,155,943,181"/>
-<area shape="rect" id="node16" title=" " alt="" coords="967,155,1058,181"/>
-<area shape="rect" id="node13" title=" " alt="" coords="662,229,729,256"/>
-<area shape="rect" id="node14" title=" " alt="" coords="753,229,817,256"/>
+<area shape="rect" id="node1" title="Analyze data and write output files." alt="" coords="360,5,520,32"/>
+<area shape="rect" id="node2" href="$_o_m_sim_s_n_analysis_8hh.html" title=" " alt="" coords="160,80,323,107"/>
+<area shape="rect" id="node9" title=" " alt="" coords="411,229,570,256"/>
+<area shape="rect" id="node10" title=" " alt="" coords="401,80,479,107"/>
+<area shape="rect" id="node11" href="$_o_m_sim_command_args_table_8hh.html" title="Definition of the OMSimCommandArgsTable singleton class, which controls user args." alt="" coords="816,80,1035,107"/>
+<area shape="rect" id="node17" href="$_o_m_sim_hit_manager_8hh.html" title="Defines structures and classes related to optical module photon hit management." alt="" coords="506,80,670,107"/>
+<area shape="rect" id="node3" title=" " alt="" coords="270,229,367,256"/>
+<area shape="rect" id="node4" title=" " alt="" coords="5,155,104,181"/>
+<area shape="rect" id="node5" title=" " alt="" coords="397,155,534,181"/>
+<area shape="rect" id="node6" title=" " alt="" coords="129,155,191,181"/>
+<area shape="rect" id="node7" title=" " alt="" coords="558,155,631,181"/>
+<area shape="rect" id="node8" title=" " alt="" coords="215,155,270,181"/>
+<area shape="rect" id="node12" href="$_o_m_sim_logger_8hh.html" title=" " alt="" coords="859,155,991,181"/>
+<area shape="rect" id="node15" title=" " alt="" coords="1016,155,1128,181"/>
+<area shape="rect" id="node16" title=" " alt="" coords="1152,155,1243,181"/>
+<area shape="rect" id="node13" title=" " alt="" coords="975,229,1041,256"/>
+<area shape="rect" id="node14" title=" " alt="" coords="887,229,951,256"/>
+<area shape="rect" id="node18" href="$_o_m_sim_p_m_t_response_8hh.html" title="Provides simulation for PMT response. This class is responsible for transforming hits on photocathode..." alt="" coords="655,155,835,181"/>
+<area shape="rect" id="node19" title=" " alt="" coords="805,229,856,256"/>
+<area shape="rect" id="node20" title=" " alt="" coords="605,229,686,256"/>
+<area shape="rect" id="node21" title=" " alt="" coords="710,229,781,256"/>
 </map>

@@ -21,9 +21,9 @@
 <!-- Node5 -->
 <g id="node5" class="node">
 <title>Node5</title>
-<g id="a_node5"><a xlink:href="classmdom_primary_generator_messenger.html" target="_top" xlink:title=" ">
-<polygon fill="white" stroke="black" points="96.5,-0.5 96.5,-19.5 284.5,-19.5 284.5,-0.5 96.5,-0.5"/>
-<text text-anchor="middle" x="190.5" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">mdomPrimaryGeneratorMessenger</text>
+<g id="a_node5"><a xlink:href="class_o_m_sim_primary_generator_messenger.html" target="_top" xlink:title=" ">
+<polygon fill="white" stroke="black" points="94.5,-0.5 94.5,-19.5 286.5,-19.5 286.5,-0.5 94.5,-0.5"/>
+<text text-anchor="middle" x="190.5" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">OMSimPrimaryGeneratorMessenger</text>
 </a>
 </g>
 </g>

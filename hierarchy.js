@@ -40,7 +40,7 @@ var hierarchy =
     [ "EventInfoManager", "class_event_info_manager.html", null ],
     [ "EvtStat", "struct_evt_stat.html", null ],
     [ "G4UImessenger", null, [
-      [ "mdomPrimaryGeneratorMessenger", "classmdom_primary_generator_messenger.html", null ]
+      [ "OMSimPrimaryGeneratorMessenger", "class_o_m_sim_primary_generator_messenger.html", null ]
     ] ],
     [ "G4UserEventAction", null, [
       [ "OMSimEventAction", "class_o_m_sim_event_action.html", null ],

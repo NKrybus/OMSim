@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['supernova_20studies_2181',['Supernova studies',['../group__sngroup.html',1,'']]]
+  ['supernova_20studies_2183',['Supernova studies',['../group__sngroup.html',1,'']]]
 ];

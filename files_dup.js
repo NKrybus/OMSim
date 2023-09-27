@@ -13,10 +13,6 @@ var files_dup =
     [ "G4Scintillation.hh", "_g4_scintillation_8hh.html", [
       [ "OMSimG4Scintillation", "class_o_m_sim_g4_scintillation.html", "class_o_m_sim_g4_scintillation" ]
     ] ],
-    [ "mdomPrimaryGeneratorMessenger.cc", "mdom_primary_generator_messenger_8cc.html", null ],
-    [ "mdomPrimaryGeneratorMessenger.hh", "mdom_primary_generator_messenger_8hh.html", [
-      [ "mdomPrimaryGeneratorMessenger", "classmdom_primary_generator_messenger.html", "classmdom_primary_generator_messenger" ]
-    ] ],
     [ "OMSim.cc", "_o_m_sim_8cc.html", null ],
     [ "OMSim.hh", "_o_m_sim_8hh.html", null ],
     [ "OMSim_effective_area.cc", "_o_m_sim__effective__area_8cc.html", "_o_m_sim__effective__area_8cc" ],
@@ -122,6 +118,10 @@ var files_dup =
     ] ],
     [ "supernova/include/OMSimPrimaryGeneratorAction.hh", "supernova_2include_2_o_m_sim_primary_generator_action_8hh.html", [
       [ "OMSimPrimaryGeneratorAction", "class_o_m_sim_primary_generator_action.html", "class_o_m_sim_primary_generator_action" ]
+    ] ],
+    [ "OMSimPrimaryGeneratorMessenger.cc", "_o_m_sim_primary_generator_messenger_8cc.html", null ],
+    [ "OMSimPrimaryGeneratorMessenger.hh", "_o_m_sim_primary_generator_messenger_8hh.html", [
+      [ "OMSimPrimaryGeneratorMessenger", "class_o_m_sim_primary_generator_messenger.html", "class_o_m_sim_primary_generator_messenger" ]
     ] ],
     [ "common/framework/include/OMSimRunAction.hh", "common_2framework_2include_2_o_m_sim_run_action_8hh.html", [
       [ "OMSimRunAction", "class_o_m_sim_run_action.html", "class_o_m_sim_run_action" ]
