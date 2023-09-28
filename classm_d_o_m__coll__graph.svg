@@ -103,7 +103,7 @@
 <!-- Node4 -->
 <g id="node4" class="node">
 <title>Node4</title>
-<g id="a_node4"><a xlink:href="class_input_data_manager.html" target="_top" xlink:title=" ">
+<g id="a_node4"><a xlink:href="class_input_data_manager.html" target="_top" xlink:title="Manages the input data, including parsing and storing material properties.">
 <polygon fill="white" stroke="black" points="29.5,-324.5 29.5,-343.5 136.5,-343.5 136.5,-324.5 29.5,-324.5"/>
 <text text-anchor="middle" x="83" y="-331.5" font-family="Helvetica,sans-Serif" font-size="10.00">InputDataManager</text>
 </a>
@@ -126,7 +126,7 @@
 <!-- Node5 -->
 <g id="node5" class="node">
 <title>Node5</title>
-<g id="a_node5"><a xlink:href="class_parameter_table.html" target="_top" xlink:title=" ">
+<g id="a_node5"><a xlink:href="class_parameter_table.html" target="_top" xlink:title="A helper class that provides functionalities for handling JSON&#45;based data tables.">
 <polygon fill="white" stroke="black" points="37,-381.5 37,-400.5 129,-400.5 129,-381.5 37,-381.5"/>
 <text text-anchor="middle" x="83" y="-388.5" font-family="Helvetica,sans-Serif" font-size="10.00">ParameterTable</text>
 </a>

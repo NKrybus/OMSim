@@ -42,7 +42,7 @@
 <!-- Node3 -->
 <g id="node3" class="node">
 <title>Node3</title>
-<g id="a_node3"><a xlink:href="class_parameter_table.html" target="_top" xlink:title=" ">
+<g id="a_node3"><a xlink:href="class_parameter_table.html" target="_top" xlink:title="A helper class that provides functionalities for handling JSON&#45;based data tables.">
 <polygon fill="white" stroke="black" points="5,-124.5 5,-143.5 97,-143.5 97,-124.5 5,-124.5"/>
 <text text-anchor="middle" x="51" y="-131.5" font-family="Helvetica,sans-Serif" font-size="10.00">ParameterTable</text>
 </a>

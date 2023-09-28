@@ -135,7 +135,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a004f73261c6ef3e30ff27b0e13da0a1b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Appends hit information for a detected photon to the corresponding module's hit data.  <a href="class_o_m_sim_hit_manager.html#a004f73261c6ef3e30ff27b0e13da0a1b">More...</a><br /></td></tr>
 <tr class="separator:a004f73261c6ef3e30ff27b0e13da0a1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a00bb034e7751905f8a8229de3f8a39b1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_m_sim_hit_manager.html#a00bb034e7751905f8a8229de3f8a39b1">reset</a> ()</td></tr>
-<tr class="memdesc:a00bb034e7751905f8a8229de3f8a39b1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resets hit information for all modules.  <a href="class_o_m_sim_hit_manager.html#a00bb034e7751905f8a8229de3f8a39b1">More...</a><br /></td></tr>
+<tr class="memdesc:a00bb034e7751905f8a8229de3f8a39b1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deletes hit information in memory for all modules.  <a href="class_o_m_sim_hit_manager.html#a00bb034e7751905f8a8229de3f8a39b1">More...</a><br /></td></tr>
 <tr class="separator:a00bb034e7751905f8a8229de3f8a39b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a94235892734a635dea9147aac72c313e"><td class="memItemLeft" align="right" valign="top">std::vector&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_m_sim_hit_manager.html#a94235892734a635dea9147aac72c313e">countHits</a> (int moduleIndex=0)</td></tr>
 <tr class="memdesc:a94235892734a635dea9147aac72c313e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Counts hits for a specified module.  <a href="class_o_m_sim_hit_manager.html#a94235892734a635dea9147aac72c313e">More...</a><br /></td></tr>
@@ -325,7 +325,7 @@ Private Attributes</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">G4int&#160;</td>
-          <td class="paramname"><em>moduleIndex</em> = <code>0</code>&#160;</td>
+          <td class="paramname"><em>moduleNumber</em> = <code>0</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -406,7 +406,7 @@ Private Attributes</h2></td></tr>
           <td class="memname">std::vector&lt; double &gt; OMSimHitManager::countHits </td>
           <td>(</td>
           <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>moduleIndex</em> = <code>0</code></td><td>)</td>
+          <td class="paramname"><em>moduleNumber</em> = <code>0</code></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -431,7 +431,7 @@ Private Attributes</h2></td></tr>
           <td class="memname"><a class="el" href="struct_hit_stats.html">HitStats</a> OMSimHitManager::getHitsOfModule </td>
           <td>(</td>
           <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>moduleIndex</em> = <code>0</code></td><td>)</td>
+          <td class="paramname"><em>pModuleIndex</em> = <code>0</code></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -531,7 +531,7 @@ Private Attributes</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>moduleIndex</em> = <code>0</code>&#160;</td>
+          <td class="paramname"><em>pModuleIndex</em> = <code>0</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -629,7 +629,7 @@ Private Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="class_o_m_sim_hit_manager.html">OMSimHitManager</a></li>
-    <li class="footer">Generated on Wed Sep 27 2023 18:16:49 for OMSim by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Thu Sep 28 2023 11:59:16 for OMSim by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

@@ -63,11 +63,8 @@ var files_dup =
     [ "OMSimHitManager.hh", "_o_m_sim_hit_manager_8hh.html", null ],
     [ "OMSimIBD.cc", "_o_m_sim_i_b_d_8cc.html", null ],
     [ "OMSimIBD.hh", "_o_m_sim_i_b_d_8hh.html", "_o_m_sim_i_b_d_8hh" ],
-    [ "OMSimInputData.cc", "_o_m_sim_input_data_8cc.html", null ],
-    [ "OMSimInputData.hh", "_o_m_sim_input_data_8hh.html", [
-      [ "ParameterTable", "class_parameter_table.html", "class_parameter_table" ],
-      [ "InputDataManager", "class_input_data_manager.html", "class_input_data_manager" ]
-    ] ],
+    [ "OMSimInputData.cc", "_o_m_sim_input_data_8cc.html", "_o_m_sim_input_data_8cc" ],
+    [ "OMSimInputData.hh", "_o_m_sim_input_data_8hh.html", null ],
     [ "OMSimLogger.hh", "_o_m_sim_logger_8hh.html", "_o_m_sim_logger_8hh" ],
     [ "OMSimLOM16.cc", "_o_m_sim_l_o_m16_8cc.html", null ],
     [ "OMSimLOM16.hh", "_o_m_sim_l_o_m16_8hh.html", [

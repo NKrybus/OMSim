@@ -2,6 +2,11 @@
 \label{class_input_data_manager}\index{InputDataManager@{InputDataManager}}
 
 
+Manages the input data, including parsing and storing material properties.  
+
+
+
+
 Inheritance diagram for Input\+Data\+Manager\+:
 \nopagebreak
 \begin{figure}[H]
@@ -30,7 +35,7 @@ G4\+Material $\ast$ \mbox{\hyperlink{class_input_data_manager_a05b5637e4b31dbaae
 G4\+Optical\+Surface $\ast$ \mbox{\hyperlink{class_input_data_manager_ae6ae987535a442a42ad47d53394ade56}{get\+Optical\+Surface}} (G4\+String p\+Name)
 \item 
 void \mbox{\hyperlink{class_input_data_manager_a7376d0446251d09973d90fb370a9373d}{search\+Folders}} ()
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Searches through predefined folders for input data files. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Static Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
@@ -40,7 +45,7 @@ static std\+::vector$<$ std\+::vector$<$ double $>$ $>$ \mbox{\hyperlink{class_i
 \begin{DoxyCompactItemize}
 \item 
 std\+::map$<$ G4\+String, G4\+Optical\+Surface $\ast$ $>$ \mbox{\hyperlink{class_input_data_manager_a48e36f6062300c12d0787b1005c0d7ec}{m\+Optical\+Surface\+Map}}
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Map that links names with optical surfaces. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Private Member Functions}
 \begin{DoxyCompactItemize}
 \item 
@@ -52,7 +57,7 @@ void \mbox{\hyperlink{class_input_data_manager_aaa51bcbd29214afb735bb7657bee05de
 \begin{DoxyCompactItemize}
 \item 
 G4\+String \mbox{\hyperlink{class_input_data_manager_ae31826093d7c8092d0251ca296e6065e}{m\+Data\+Directory}}
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em The current directory being scanned for data. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{Constructor \& Destructor Documentation}
@@ -69,7 +74,7 @@ G4\+String \mbox{\hyperlink{class_input_data_manager_ae31826093d7c8092d0251ca296
 \index{InputDataManager@{InputDataManager}!getMaterial@{getMaterial}}
 \index{getMaterial@{getMaterial}!InputDataManager@{InputDataManager}}
 \doxysubsubsection{\texorpdfstring{getMaterial()}{getMaterial()}}
-{\footnotesize\ttfamily G4\+Material $\ast$ Input\+Data\+Manager\+::get\+Material (\begin{DoxyParamCaption}\item[{G4\+String}]{name }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily G4\+Material $\ast$ Input\+Data\+Manager\+::get\+Material (\begin{DoxyParamCaption}\item[{G4\+String}]{p\+Name }\end{DoxyParamCaption})}
 
 Get a G4\+Material. In order to get custom built materials, method \mbox{\hyperlink{class_input_data_manager_a7376d0446251d09973d90fb370a9373d}{search\+Folders()}} should have already been called. Standard materials from Geant4 are also transfered directly (if found through Find\+Or\+Build\+Material()). Materials defined by arguments of the main should start with \char`\"{}arg\char`\"{} and then we get the material name from the arrays depending on the global integers (g\+Gel, g\+Glass, g\+Environment..) . 
 \begin{DoxyParams}{Parameters}
@@ -122,7 +127,7 @@ A 2D vector of doubles. The outer vector groups all columns (or rows if \textquo
 \index{InputDataManager@{InputDataManager}!processFile@{processFile}}
 \index{processFile@{processFile}!InputDataManager@{InputDataManager}}
 \doxysubsubsection{\texorpdfstring{processFile()}{processFile()}}
-{\footnotesize\ttfamily void Input\+Data\+Manager\+::process\+File (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{file\+Path,  }\item[{const std\+::string \&}]{file\+Name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+{\footnotesize\ttfamily void Input\+Data\+Manager\+::process\+File (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{p\+File\+Path,  }\item[{const std\+::string \&}]{p\+File\+Name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
 
 The function identifies the type of data file (\mbox{\hyperlink{class_refraction_and_absorption}{Refraction\+And\+Absorption}}, \mbox{\hyperlink{class_refraction_only}{Refraction\+Only}}, \mbox{\hyperlink{class_no_optics}{No\+Optics}}, \mbox{\hyperlink{class_ice_cube_ice}{Ice\+Cube\+Ice}}, \mbox{\hyperlink{class_reflective_surface}{Reflective\+Surface}} or others) based on the prefix of the filename. It then constructs an object of the appropriate class and invokes its information extraction method. For \textquotesingle{}Refl\textquotesingle{} prefixed files, it also updates the m\+Optical\+Surface\+Map. For \textquotesingle{}pmt\+\_\+\textquotesingle{}, \textquotesingle{}om\+\_\+\textquotesingle{}, and \textquotesingle{}usr\+\_\+\textquotesingle{} prefixed files, it invokes directly append\+And\+Return\+Tree without any extra parsing into Geant4 objects.
 
