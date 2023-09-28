@@ -18,9 +18,9 @@ void \mbox{\hyperlink{class_o_m_sim_hit_manager_a00bb034e7751905f8a8229de3f8a39b
 std\+::vector$<$ double $>$ \mbox{\hyperlink{class_o_m_sim_hit_manager_a94235892734a635dea9147aac72c313e}{count\+Hits}} (int module\+Index=0)
 \begin{DoxyCompactList}\small\item\em Counts hits for a specified module. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_o_m_sim_hit_manager_aeabbd61eeb69b719cbb2adc85e6e0d6b}{set\+Number\+Of\+PMTs}} (int p\+Number\+Of\+PMTs, int module\+Index=0)
-\begin{DoxyCompactList}\small\item\em Saves the number of PMTs in a module. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Stores the number of PMTs in a module for correct data handling. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{struct_hit_stats}{Hit\+Stats}} \mbox{\hyperlink{class_o_m_sim_hit_manager_a50074acb44cd2a8bacffe00599add044}{get\+Hits\+Of\+Module}} (int module\+Index=0)
-\begin{DoxyCompactList}\small\item\em Retrieves the hit statistics for a specified module. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Retrieves the \mbox{\hyperlink{struct_hit_stats}{Hit\+Stats}} structure for the specified module. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_o_m_sim_hit_manager_a853b6fb70a189840b7ffa42c74af5b09}{sort\+Hit\+Stats\+By\+Time}} (\mbox{\hyperlink{struct_hit_stats}{Hit\+Stats}} \&l\+Hits)
 \begin{DoxyCompactList}\small\item\em Sorts the hit statistics by the hit time. \end{DoxyCompactList}\item 
 std\+::vector$<$ int $>$ \mbox{\hyperlink{class_o_m_sim_hit_manager_ae6b66371cdfbd30ba932e30fd769cbc4}{calculate\+Multiplicity}} (const G4double p\+Time\+Window, int module\+Number=0)
@@ -45,9 +45,9 @@ static \mbox{\hyperlink{class_o_m_sim_hit_manager}{OMSim\+Hit\+Manager}} \& \mbo
 \begin{DoxyCompactItemize}
 \item 
 std\+::map$<$ G4int, G4int $>$ \mbox{\hyperlink{class_o_m_sim_hit_manager_a68b3614293ca71096ff48c4fc5943de2}{m\+Num\+PMTs}}
-\item 
+\begin{DoxyCompactList}\small\item\em Map of number of PMTs in the used optical modules. \end{DoxyCompactList}\item 
 std\+::map$<$ G4int, \mbox{\hyperlink{struct_hit_stats}{Hit\+Stats}} $>$ \mbox{\hyperlink{class_o_m_sim_hit_manager_a5b5170bb63b04190829aeb79183a5d3f}{m\+Module\+Hits}}
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Map of a \mbox{\hyperlink{struct_hit_stats}{Hit\+Stats}} containing hit information for each simulated optical module. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{Constructor \& Destructor Documentation}
@@ -156,7 +156,7 @@ A vector containing the hit count for each PMT in the specified module.
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
-A \mbox{\hyperlink{struct_hit_stats}{Hit\+Stats}} structure containing hit information for the specified module. 
+A \mbox{\hyperlink{struct_hit_stats}{Hit\+Stats}} structure containing hit information of specified module. 
 \end{DoxyReturn}
 \mbox{\Hypertarget{class_o_m_sim_hit_manager_a50c9ec0b924aa860533de79aa6fd3a47}\label{class_o_m_sim_hit_manager_a50c9ec0b924aa860533de79aa6fd3a47}} 
 \index{OMSimHitManager@{OMSimHitManager}!getInstance@{getInstance}}

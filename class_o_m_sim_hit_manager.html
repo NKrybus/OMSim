@@ -141,10 +141,10 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a94235892734a635dea9147aac72c313e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Counts hits for a specified module.  <a href="class_o_m_sim_hit_manager.html#a94235892734a635dea9147aac72c313e">More...</a><br /></td></tr>
 <tr class="separator:a94235892734a635dea9147aac72c313e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aeabbd61eeb69b719cbb2adc85e6e0d6b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_m_sim_hit_manager.html#aeabbd61eeb69b719cbb2adc85e6e0d6b">setNumberOfPMTs</a> (int pNumberOfPMTs, int moduleIndex=0)</td></tr>
-<tr class="memdesc:aeabbd61eeb69b719cbb2adc85e6e0d6b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Saves the number of PMTs in a module.  <a href="class_o_m_sim_hit_manager.html#aeabbd61eeb69b719cbb2adc85e6e0d6b">More...</a><br /></td></tr>
+<tr class="memdesc:aeabbd61eeb69b719cbb2adc85e6e0d6b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stores the number of PMTs in a module for correct data handling.  <a href="class_o_m_sim_hit_manager.html#aeabbd61eeb69b719cbb2adc85e6e0d6b">More...</a><br /></td></tr>
 <tr class="separator:aeabbd61eeb69b719cbb2adc85e6e0d6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a50074acb44cd2a8bacffe00599add044"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_hit_stats.html">HitStats</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_m_sim_hit_manager.html#a50074acb44cd2a8bacffe00599add044">getHitsOfModule</a> (int moduleIndex=0)</td></tr>
-<tr class="memdesc:a50074acb44cd2a8bacffe00599add044"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves the hit statistics for a specified module.  <a href="class_o_m_sim_hit_manager.html#a50074acb44cd2a8bacffe00599add044">More...</a><br /></td></tr>
+<tr class="memdesc:a50074acb44cd2a8bacffe00599add044"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves the <a class="el" href="struct_hit_stats.html" title="A structure to store information about detected photon hits.">HitStats</a> structure for the specified module.  <a href="class_o_m_sim_hit_manager.html#a50074acb44cd2a8bacffe00599add044">More...</a><br /></td></tr>
 <tr class="separator:a50074acb44cd2a8bacffe00599add044"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a853b6fb70a189840b7ffa42c74af5b09"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_m_sim_hit_manager.html#a853b6fb70a189840b7ffa42c74af5b09">sortHitStatsByTime</a> (<a class="el" href="struct_hit_stats.html">HitStats</a> &amp;lHits)</td></tr>
 <tr class="memdesc:a853b6fb70a189840b7ffa42c74af5b09"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sorts the hit statistics by the hit time.  <a href="class_o_m_sim_hit_manager.html#a853b6fb70a189840b7ffa42c74af5b09">More...</a><br /></td></tr>
@@ -173,8 +173,10 @@ Private Member Functions</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
 <tr class="memitem:a68b3614293ca71096ff48c4fc5943de2"><td class="memItemLeft" align="right" valign="top">std::map&lt; G4int, G4int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_m_sim_hit_manager.html#a68b3614293ca71096ff48c4fc5943de2">mNumPMTs</a></td></tr>
+<tr class="memdesc:a68b3614293ca71096ff48c4fc5943de2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Map of number of PMTs in the used optical modules.  <a href="class_o_m_sim_hit_manager.html#a68b3614293ca71096ff48c4fc5943de2">More...</a><br /></td></tr>
 <tr class="separator:a68b3614293ca71096ff48c4fc5943de2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5b5170bb63b04190829aeb79183a5d3f"><td class="memItemLeft" align="right" valign="top">std::map&lt; G4int, <a class="el" href="struct_hit_stats.html">HitStats</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_m_sim_hit_manager.html#a5b5170bb63b04190829aeb79183a5d3f">mModuleHits</a></td></tr>
+<tr class="memdesc:a5b5170bb63b04190829aeb79183a5d3f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Map of a <a class="el" href="struct_hit_stats.html" title="A structure to store information about detected photon hits.">HitStats</a> containing hit information for each simulated optical module.  <a href="class_o_m_sim_hit_manager.html#a5b5170bb63b04190829aeb79183a5d3f">More...</a><br /></td></tr>
 <tr class="separator:a5b5170bb63b04190829aeb79183a5d3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
@@ -442,7 +444,7 @@ Private Attributes</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>A <a class="el" href="struct_hit_stats.html" title="A structure to store information about detected photon hits.">HitStats</a> structure containing hit information for the specified module. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>A <a class="el" href="struct_hit_stats.html" title="A structure to store information about detected photon hits.">HitStats</a> structure containing hit information of specified module. </dd></dl>
 
 </div>
 </div>
@@ -629,7 +631,7 @@ Private Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="class_o_m_sim_hit_manager.html">OMSimHitManager</a></li>
-    <li class="footer">Generated on Thu Sep 28 2023 11:59:16 for OMSim by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Thu Sep 28 2023 12:09:52 for OMSim by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>
