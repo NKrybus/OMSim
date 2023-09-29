@@ -33,7 +33,18 @@ Currently, there are two analysis modes\+:
 \begin{DoxyItemize}
 \item With the \textquotesingle{}--multiplicity\+\_\+study\textquotesingle{} argument\+: After each $t_{w}$ time window, the multiplicity is calculated and saved to a file. Raw data isn\textquotesingle{}t stored, as multiplicity studies generally involve extended simulation durations, leading to large volumes of photon data.
 \item Without the \textquotesingle{}--multiplicity\+\_\+study\textquotesingle{} argument\+: Data pertaining to photons and decayed isotopes is saved to files. 
-\end{DoxyItemize}\doxysubsection*{Classes}
+\end{DoxyItemize}\doxysubsection*{Files}
+\begin{DoxyCompactItemize}
+\item 
+file \mbox{\hyperlink{radioactive__decays_2include_2_o_m_sim_detector_construction_8hh}{radioactive\+\_\+decays/include/\+OMSim\+Detector\+Construction.\+hh}}
+\begin{DoxyCompactList}\small\item\em Defines the \mbox{\hyperlink{class_o_m_sim_detector_construction}{OMSim\+Detector\+Construction}} class for the radioactive decays simulation. \end{DoxyCompactList}\item 
+file \mbox{\hyperlink{radioactive__decays_2include_2_o_m_sim_event_action_8hh}{radioactive\+\_\+decays/include/\+OMSim\+Event\+Action.\+hh}}
+\begin{DoxyCompactList}\small\item\em Defines the \mbox{\hyperlink{class_o_m_sim_event_action}{OMSim\+Event\+Action}} and \mbox{\hyperlink{class_event_info_manager}{Event\+Info\+Manager}} classes for the radioactive decays simulation. \end{DoxyCompactList}\item 
+file \mbox{\hyperlink{radioactive__decays_2include_2_o_m_sim_physics_list_8hh}{radioactive\+\_\+decays/include/\+OMSim\+Physics\+List.\+hh}}
+\begin{DoxyCompactList}\small\item\em Defines the \mbox{\hyperlink{class_o_m_sim_physics_list}{OMSim\+Physics\+List}} class for the radioactive decays simulation. \end{DoxyCompactList}\item 
+file \mbox{\hyperlink{radioactive__decays_2include_2_o_m_sim_primary_generator_action_8hh}{radioactive\+\_\+decays/include/\+OMSim\+Primary\+Generator\+Action.\+hh}}
+\begin{DoxyCompactList}\small\item\em Defines a simple \mbox{\hyperlink{class_o_m_sim_primary_generator_action}{OMSim\+Primary\+Generator\+Action}} class for the radioactive decays simulation using GPS. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Classes}
 \begin{DoxyCompactItemize}
 \item 
 struct \mbox{\hyperlink{struct_decay_stats}{Decay\+Stats}}
@@ -42,6 +53,8 @@ class \mbox{\hyperlink{class_o_m_sim_decays_analysis}{OMSim\+Decays\+Analysis}}
 \begin{DoxyCompactList}\small\item\em Singleton class responsible for managing, analysing, and saving decay-\/related data. \end{DoxyCompactList}\item 
 class \mbox{\hyperlink{class_isotope_decays}{Isotope\+Decays}}
 \begin{DoxyCompactList}\small\item\em A class for simulating isotope decays inside the pressure vessel and PMT glass. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_o_m_sim_detector_construction}{OMSim\+Detector\+Construction}}
+\begin{DoxyCompactList}\small\item\em Class for detector construction in the effective area simulation. \end{DoxyCompactList}\item 
 class \mbox{\hyperlink{class_o_m_sim_event_action}{OMSim\+Event\+Action}}
 \begin{DoxyCompactList}\small\item\em Handles custom actions at the beginning and end of each event. \end{DoxyCompactList}\item 
 class \mbox{\hyperlink{class_event_info_manager}{Event\+Info\+Manager}}

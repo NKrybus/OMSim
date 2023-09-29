@@ -1,5 +1,9 @@
 var group__radioactive =
 [
+    [ "radioactive_decays/include/OMSimDetectorConstruction.hh", "radioactive__decays_2include_2_o_m_sim_detector_construction_8hh.html", null ],
+    [ "radioactive_decays/include/OMSimEventAction.hh", "radioactive__decays_2include_2_o_m_sim_event_action_8hh.html", null ],
+    [ "radioactive_decays/include/OMSimPhysicsList.hh", "radioactive__decays_2include_2_o_m_sim_physics_list_8hh.html", null ],
+    [ "radioactive_decays/include/OMSimPrimaryGeneratorAction.hh", "radioactive__decays_2include_2_o_m_sim_primary_generator_action_8hh.html", null ],
     [ "DecayStats", "struct_decay_stats.html", [
       [ "decay_position", "struct_decay_stats.html#ac359be5448828a37fed75a9de0537cdd", null ],
       [ "decay_time", "struct_decay_stats.html#a0d8b961cbbf2f5944a703593356736c8", null ],
@@ -35,6 +39,26 @@ var group__radioactive =
       [ "mIsotopeCommands", "class_isotope_decays.html#a60f8eca9a5950c197463b8c54ae4ad91", null ],
       [ "mOM", "class_isotope_decays.html#a365ed822e8b8b563226636a7f7930819", null ],
       [ "mProductionRadius", "class_isotope_decays.html#acd6830b0720976474f7be3c65d764090", null ]
+    ] ],
+    [ "OMSimDetectorConstruction", "class_o_m_sim_detector_construction.html", [
+      [ "OMSimDetectorConstruction", "class_o_m_sim_detector_construction.html#aa74ddd6acfc0db023185dcc92820215f", null ],
+      [ "~OMSimDetectorConstruction", "class_o_m_sim_detector_construction.html#a7068d06e9367d657b52b6a1ddeac621d", null ],
+      [ "OMSimDetectorConstruction", "class_o_m_sim_detector_construction.html#aa74ddd6acfc0db023185dcc92820215f", null ],
+      [ "~OMSimDetectorConstruction", "class_o_m_sim_detector_construction.html#a7068d06e9367d657b52b6a1ddeac621d", null ],
+      [ "OMSimDetectorConstruction", "class_o_m_sim_detector_construction.html#aa74ddd6acfc0db023185dcc92820215f", null ],
+      [ "~OMSimDetectorConstruction", "class_o_m_sim_detector_construction.html#a7068d06e9367d657b52b6a1ddeac621d", null ],
+      [ "Construct", "class_o_m_sim_detector_construction.html#a9e16ad5da3921b502473b303609caad0", null ],
+      [ "Construct", "class_o_m_sim_detector_construction.html#a10c21dfcdf4af75481fea2229287d143", null ],
+      [ "Construct", "class_o_m_sim_detector_construction.html#a10c21dfcdf4af75481fea2229287d143", null ],
+      [ "constructWorld", "class_o_m_sim_detector_construction.html#a53a692e5caa084d308b181c6cd90e485", null ],
+      [ "constructWorld", "class_o_m_sim_detector_construction.html#a53a692e5caa084d308b181c6cd90e485", null ],
+      [ "constructWorld", "class_o_m_sim_detector_construction.html#a53a692e5caa084d308b181c6cd90e485", null ],
+      [ "mData", "class_o_m_sim_detector_construction.html#a1d09add5e6b9a1d25821ccd128d926fe", null ],
+      [ "mOpticalModule", "class_o_m_sim_detector_construction.html#a5afb06a52559f0e0f2fe06820ae9e04e", null ],
+      [ "mWorldLogical", "class_o_m_sim_detector_construction.html#a7e7ef263bcf8e4d4efb22af8ed2ef808", null ],
+      [ "mWorldPhysical", "class_o_m_sim_detector_construction.html#a699963cdf8af1e2f82a61227b9f08c20", null ],
+      [ "mWorldSolid", "class_o_m_sim_detector_construction.html#a13797b1657281b0907d005921ca5e10c", null ],
+      [ "mWorldSolid", "class_o_m_sim_detector_construction.html#afb436e7efa69e67631d6f7d2519c8995", null ]
     ] ],
     [ "OMSimEventAction", "class_o_m_sim_event_action.html", [
       [ "OMSimEventAction", "class_o_m_sim_event_action.html#ab8aaaeecc185bbaef63665f673356506", null ],

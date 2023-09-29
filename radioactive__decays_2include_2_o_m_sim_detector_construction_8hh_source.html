@@ -117,34 +117,35 @@ $(document).ready(function(){initNavTree('radioactive__decays_2include_2_o_m_sim
 <div class="title">radioactive_decays/include/OMSimDetectorConstruction.hh</div>  </div>
 </div><!--header-->
 <div class="contents">
-<a href="radioactive__decays_2include_2_o_m_sim_detector_construction_8hh.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef OMSimDetectorConstruction_h</span></div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define OMSimDetectorConstruction_h 1</span></div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_o_m_sim_m_d_o_m_8hh.html">OMSimMDOM.hh</a>&quot;</span></div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="abc_detector_component_8hh.html">abcDetectorComponent.hh</a>&quot;</span></div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160; </div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;G4Orb.hh&gt;</span></div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &lt;G4VUserDetectorConstruction.hh&gt;</span></div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160; </div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="keyword">class </span><a class="code" href="class_o_m_sim_detector_construction.html">OMSimDetectorConstruction</a> : <span class="keyword">public</span> G4VUserDetectorConstruction</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;{</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="class_o_m_sim_detector_construction.html#aa74ddd6acfc0db023185dcc92820215f">   19</a></span>&#160;    <a class="code" href="class_o_m_sim_detector_construction.html#aa74ddd6acfc0db023185dcc92820215f">OMSimDetectorConstruction</a>();</div>
-<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="class_o_m_sim_detector_construction.html#a7068d06e9367d657b52b6a1ddeac621d">   20</a></span>&#160;    <a class="code" href="class_o_m_sim_detector_construction.html#a7068d06e9367d657b52b6a1ddeac621d">~OMSimDetectorConstruction</a>();</div>
-<div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="class_o_m_sim_detector_construction.html#a10c21dfcdf4af75481fea2229287d143">   21</a></span>&#160;    G4VPhysicalVolume *<a class="code" href="class_o_m_sim_detector_construction.html#a10c21dfcdf4af75481fea2229287d143">Construct</a>();</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    G4VPhysicalVolume *<a class="code" href="class_o_m_sim_detector_construction.html#a699963cdf8af1e2f82a61227b9f08c20">mWorldPhysical</a>;</div>
-<div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="class_o_m_sim_detector_construction.html#a5afb06a52559f0e0f2fe06820ae9e04e">   23</a></span>&#160;    <a class="code" href="class_optical_module.html">OpticalModule</a>* <a class="code" href="class_o_m_sim_detector_construction.html#a5afb06a52559f0e0f2fe06820ae9e04e">mOpticalModule</a>;</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    G4Orb *<a class="code" href="class_o_m_sim_detector_construction.html#a13797b1657281b0907d005921ca5e10c">mWorldSolid</a>;</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    G4LogicalVolume *<a class="code" href="class_o_m_sim_detector_construction.html#a7e7ef263bcf8e4d4efb22af8ed2ef808">mWorldLogical</a>;</div>
-<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="class_o_m_sim_detector_construction.html#a53a692e5caa084d308b181c6cd90e485">   28</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_o_m_sim_detector_construction.html#a53a692e5caa084d308b181c6cd90e485">constructWorld</a>();</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <a class="code" href="class_input_data_manager.html">InputDataManager</a> *<a class="code" href="class_o_m_sim_detector_construction.html#a1d09add5e6b9a1d25821ccd128d926fe">mData</a>;</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;};</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="comment">//</span></div>
+<a href="radioactive__decays_2include_2_o_m_sim_detector_construction_8hh.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#ifndef OMSimDetectorConstruction_h</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#define OMSimDetectorConstruction_h 1</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_o_m_sim_m_d_o_m_8hh.html">OMSimMDOM.hh</a>&quot;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="abc_detector_component_8hh.html">abcDetectorComponent.hh</a>&quot;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &lt;G4Orb.hh&gt;</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &lt;G4VUserDetectorConstruction.hh&gt;</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; </div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="keyword">class </span><a class="code" href="class_o_m_sim_detector_construction.html">OMSimDetectorConstruction</a> : <span class="keyword">public</span> G4VUserDetectorConstruction</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;{</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="class_o_m_sim_detector_construction.html#aa74ddd6acfc0db023185dcc92820215f">   24</a></span>&#160;    <a class="code" href="class_o_m_sim_detector_construction.html#aa74ddd6acfc0db023185dcc92820215f">OMSimDetectorConstruction</a>();</div>
+<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="class_o_m_sim_detector_construction.html#a7068d06e9367d657b52b6a1ddeac621d">   25</a></span>&#160;    <a class="code" href="class_o_m_sim_detector_construction.html#a7068d06e9367d657b52b6a1ddeac621d">~OMSimDetectorConstruction</a>();</div>
+<div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="class_o_m_sim_detector_construction.html#a10c21dfcdf4af75481fea2229287d143">   26</a></span>&#160;    G4VPhysicalVolume *<a class="code" href="class_o_m_sim_detector_construction.html#a10c21dfcdf4af75481fea2229287d143">Construct</a>();</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    G4VPhysicalVolume *<a class="code" href="class_o_m_sim_detector_construction.html#a699963cdf8af1e2f82a61227b9f08c20">mWorldPhysical</a>;</div>
+<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="class_o_m_sim_detector_construction.html#a5afb06a52559f0e0f2fe06820ae9e04e">   28</a></span>&#160;    <a class="code" href="class_optical_module.html">OpticalModule</a>* <a class="code" href="class_o_m_sim_detector_construction.html#a5afb06a52559f0e0f2fe06820ae9e04e">mOpticalModule</a>;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    G4Orb *<a class="code" href="class_o_m_sim_detector_construction.html#a13797b1657281b0907d005921ca5e10c">mWorldSolid</a>;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    G4LogicalVolume *<a class="code" href="class_o_m_sim_detector_construction.html#a7e7ef263bcf8e4d4efb22af8ed2ef808">mWorldLogical</a>;</div>
+<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="class_o_m_sim_detector_construction.html#a53a692e5caa084d308b181c6cd90e485">   33</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_o_m_sim_detector_construction.html#a53a692e5caa084d308b181c6cd90e485">constructWorld</a>();</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <a class="code" href="class_input_data_manager.html">InputDataManager</a> *<a class="code" href="class_o_m_sim_detector_construction.html#a1d09add5e6b9a1d25821ccd128d926fe">mData</a>;</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;};</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="comment">//</span></div>
 <div class="ttc" id="a_o_m_sim_m_d_o_m_8hh_html"><div class="ttname"><a href="_o_m_sim_m_d_o_m_8hh.html">OMSimMDOM.hh</a></div><div class="ttdoc">Construction of mDOM.</div></div>
 <div class="ttc" id="aabc_detector_component_8hh_html"><div class="ttname"><a href="abc_detector_component_8hh.html">abcDetectorComponent.hh</a></div><div class="ttdoc">Provides helper base class abcDetectorComponent for constructing and managing detector components in ...</div></div>
 <div class="ttc" id="aclass_input_data_manager_html"><div class="ttname"><a href="class_input_data_manager.html">InputDataManager</a></div><div class="ttdoc">Manages the input data, including parsing and storing material properties.</div><div class="ttdef"><b>Definition:</b> OMSimInputData.hh:58</div></div>
@@ -153,7 +154,7 @@ $(document).ready(function(){initNavTree('radioactive__decays_2include_2_o_m_sim
 <div class="ttc" id="aclass_o_m_sim_detector_construction_html_a13797b1657281b0907d005921ca5e10c"><div class="ttname"><a href="class_o_m_sim_detector_construction.html#a13797b1657281b0907d005921ca5e10c">OMSimDetectorConstruction::mWorldSolid</a></div><div class="ttdeci">G4Orb * mWorldSolid</div><div class="ttdef"><b>Definition:</b> effective_area/include/OMSimDetectorConstruction.hh:30</div></div>
 <div class="ttc" id="aclass_o_m_sim_detector_construction_html_a1d09add5e6b9a1d25821ccd128d926fe"><div class="ttname"><a href="class_o_m_sim_detector_construction.html#a1d09add5e6b9a1d25821ccd128d926fe">OMSimDetectorConstruction::mData</a></div><div class="ttdeci">InputDataManager * mData</div><div class="ttdef"><b>Definition:</b> effective_area/include/OMSimDetectorConstruction.hh:34</div></div>
 <div class="ttc" id="aclass_o_m_sim_detector_construction_html_a53a692e5caa084d308b181c6cd90e485"><div class="ttname"><a href="class_o_m_sim_detector_construction.html#a53a692e5caa084d308b181c6cd90e485">OMSimDetectorConstruction::constructWorld</a></div><div class="ttdeci">void constructWorld()</div></div>
-<div class="ttc" id="aclass_o_m_sim_detector_construction_html_a5afb06a52559f0e0f2fe06820ae9e04e"><div class="ttname"><a href="class_o_m_sim_detector_construction.html#a5afb06a52559f0e0f2fe06820ae9e04e">OMSimDetectorConstruction::mOpticalModule</a></div><div class="ttdeci">OpticalModule * mOpticalModule</div><div class="ttdef"><b>Definition:</b> radioactive_decays/include/OMSimDetectorConstruction.hh:23</div></div>
+<div class="ttc" id="aclass_o_m_sim_detector_construction_html_a5afb06a52559f0e0f2fe06820ae9e04e"><div class="ttname"><a href="class_o_m_sim_detector_construction.html#a5afb06a52559f0e0f2fe06820ae9e04e">OMSimDetectorConstruction::mOpticalModule</a></div><div class="ttdeci">OpticalModule * mOpticalModule</div><div class="ttdef"><b>Definition:</b> radioactive_decays/include/OMSimDetectorConstruction.hh:28</div></div>
 <div class="ttc" id="aclass_o_m_sim_detector_construction_html_a699963cdf8af1e2f82a61227b9f08c20"><div class="ttname"><a href="class_o_m_sim_detector_construction.html#a699963cdf8af1e2f82a61227b9f08c20">OMSimDetectorConstruction::mWorldPhysical</a></div><div class="ttdeci">G4VPhysicalVolume * mWorldPhysical</div><div class="ttdef"><b>Definition:</b> effective_area/include/OMSimDetectorConstruction.hh:27</div></div>
 <div class="ttc" id="aclass_o_m_sim_detector_construction_html_a7068d06e9367d657b52b6a1ddeac621d"><div class="ttname"><a href="class_o_m_sim_detector_construction.html#a7068d06e9367d657b52b6a1ddeac621d">OMSimDetectorConstruction::~OMSimDetectorConstruction</a></div><div class="ttdeci">~OMSimDetectorConstruction()</div></div>
 <div class="ttc" id="aclass_o_m_sim_detector_construction_html_a7e7ef263bcf8e4d4efb22af8ed2ef808"><div class="ttname"><a href="class_o_m_sim_detector_construction.html#a7e7ef263bcf8e4d4efb22af8ed2ef808">OMSimDetectorConstruction::mWorldLogical</a></div><div class="ttdeci">G4LogicalVolume * mWorldLogical</div><div class="ttdef"><b>Definition:</b> effective_area/include/OMSimDetectorConstruction.hh:31</div></div>
@@ -165,7 +166,7 @@ $(document).ready(function(){initNavTree('radioactive__decays_2include_2_o_m_sim
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_c36bb099819ad84805be167dee96fbce.html">radioactive_decays</a></li><li class="navelem"><a class="el" href="dir_cc4f7c071413eda74783f4f9188a2332.html">include</a></li><li class="navelem"><a class="el" href="radioactive__decays_2include_2_o_m_sim_detector_construction_8hh.html">OMSimDetectorConstruction.hh</a></li>
-    <li class="footer">Generated on Thu Sep 28 2023 12:09:52 for OMSim by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Fri Sep 29 2023 14:04:07 for OMSim by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

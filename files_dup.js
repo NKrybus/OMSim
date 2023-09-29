@@ -120,10 +120,7 @@ var files_dup =
     [ "OMSimPrimaryGeneratorMessenger.hh", "_o_m_sim_primary_generator_messenger_8hh.html", [
       [ "OMSimPrimaryGeneratorMessenger", "class_o_m_sim_primary_generator_messenger.html", "class_o_m_sim_primary_generator_messenger" ]
     ] ],
-    [ "common/framework/include/OMSimRunAction.hh", "common_2framework_2include_2_o_m_sim_run_action_8hh.html", [
-      [ "OMSimRunAction", "class_o_m_sim_run_action.html", "class_o_m_sim_run_action" ]
-    ] ],
-    [ "radioactive_decays/include/OMSimRunAction.hh", "radioactive__decays_2include_2_o_m_sim_run_action_8hh.html", [
+    [ "OMSimRunAction.hh", "_o_m_sim_run_action_8hh.html", [
       [ "OMSimRunAction", "class_o_m_sim_run_action.html", "class_o_m_sim_run_action" ]
     ] ],
     [ "OMSimSNAnalysis.cc", "_o_m_sim_s_n_analysis_8cc.html", null ],
@@ -134,16 +131,8 @@ var files_dup =
     ] ],
     [ "OMSimSNTools.cc", "_o_m_sim_s_n_tools_8cc.html", "_o_m_sim_s_n_tools_8cc" ],
     [ "OMSimSNTools.hh", "_o_m_sim_s_n_tools_8hh.html", "_o_m_sim_s_n_tools_8hh" ],
-    [ "effective_area/src/OMSimSteppingAction.cc", "effective__area_2src_2_o_m_sim_stepping_action_8cc.html", null ],
-    [ "radioactive_decays/src/OMSimSteppingAction.cc", "radioactive__decays_2src_2_o_m_sim_stepping_action_8cc.html", null ],
-    [ "supernova/src/OMSimSteppingAction.cc", "supernova_2src_2_o_m_sim_stepping_action_8cc.html", null ],
-    [ "effective_area/include/OMSimSteppingAction.hh", "effective__area_2include_2_o_m_sim_stepping_action_8hh.html", [
-      [ "OMSimSteppingAction", "class_o_m_sim_stepping_action.html", "class_o_m_sim_stepping_action" ]
-    ] ],
-    [ "radioactive_decays/include/OMSimSteppingAction.hh", "radioactive__decays_2include_2_o_m_sim_stepping_action_8hh.html", [
-      [ "OMSimSteppingAction", "class_o_m_sim_stepping_action.html", "class_o_m_sim_stepping_action" ]
-    ] ],
-    [ "supernova/include/OMSimSteppingAction.hh", "supernova_2include_2_o_m_sim_stepping_action_8hh.html", [
+    [ "OMSimSteppingAction.cc", "_o_m_sim_stepping_action_8cc.html", null ],
+    [ "OMSimSteppingAction.hh", "_o_m_sim_stepping_action_8hh.html", [
       [ "OMSimSteppingAction", "class_o_m_sim_stepping_action.html", "class_o_m_sim_stepping_action" ]
     ] ],
     [ "OMSimTrackingAction.cc", "_o_m_sim_tracking_action_8cc.html", "_o_m_sim_tracking_action_8cc" ],

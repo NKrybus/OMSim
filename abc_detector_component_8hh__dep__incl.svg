@@ -51,7 +51,7 @@
 <!-- Node19 -->
 <g id="node19" class="node">
 <title>Node19</title>
-<g id="a_node19"><a xlink:href="radioactive__decays_2include_2_o_m_sim_detector_construction_8hh.html" target="_top" xlink:title=" ">
+<g id="a_node19"><a xlink:href="radioactive__decays_2include_2_o_m_sim_detector_construction_8hh.html" target="_top" xlink:title="Defines the OMSimDetectorConstruction class for the radioactive decays simulation.">
 <polygon fill="white" stroke="black" points="2143.5,-0.5 2143.5,-19.5 2313.5,-19.5 2313.5,-0.5 2143.5,-0.5"/>
 <text text-anchor="middle" x="2228.5" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">OMSimDetectorConstruction.hh</text>
 </a>
@@ -513,7 +513,7 @@
 <!-- Node25 -->
 <g id="node25" class="node">
 <title>Node25</title>
-<g id="a_node25"><a xlink:href="_o_m_sim__radioactive__decays_8cc.html" target="_top" xlink:title=" ">
+<g id="a_node25"><a xlink:href="_o_m_sim__radioactive__decays_8cc.html" target="_top" xlink:title="Main for the calculation of effective areas.">
 <polygon fill="white" stroke="black" points="1021,-0.5 1021,-19.5 1186,-19.5 1186,-0.5 1021,-0.5"/>
 <text text-anchor="middle" x="1103.5" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">OMSim_radioactive_decays.cc</text>
 </a>

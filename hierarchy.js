@@ -48,12 +48,9 @@ var hierarchy =
       [ "OMSimEventAction", "class_o_m_sim_event_action.html", null ]
     ] ],
     [ "G4UserRunAction", null, [
-      [ "OMSimRunAction", "class_o_m_sim_run_action.html", null ],
       [ "OMSimRunAction", "class_o_m_sim_run_action.html", null ]
     ] ],
     [ "G4UserSteppingAction", null, [
-      [ "OMSimSteppingAction", "class_o_m_sim_stepping_action.html", null ],
-      [ "OMSimSteppingAction", "class_o_m_sim_stepping_action.html", null ],
       [ "OMSimSteppingAction", "class_o_m_sim_stepping_action.html", null ]
     ] ],
     [ "G4UserTrackingAction", null, [

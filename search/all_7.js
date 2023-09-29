@@ -4,7 +4,7 @@ var searchData=
   ['backupto_39',['BackupTo',['../class_c_a_d_mesh_1_1_file_1_1_lexer.html#ac1c7880ccdcca7543e5881f3baf9bbf3',1,'CADMesh::File::Lexer']]],
   ['bandsandclamps_40',['bandsAndClamps',['../classm_d_o_m_harness.html#aff90d7f4ff55b658f9fc21a189ed9105',1,'mDOMHarness']]],
   ['beginofeventaction_41',['BeginOfEventAction',['../class_o_m_sim_event_action.html#a74d668030a1b6b461c942e87203c90b9',1,'OMSimEventAction::BeginOfEventAction(const G4Event *)'],['../class_o_m_sim_event_action.html#a74d668030a1b6b461c942e87203c90b9',1,'OMSimEventAction::BeginOfEventAction(const G4Event *)'],['../class_o_m_sim_event_action.html#a74d668030a1b6b461c942e87203c90b9',1,'OMSimEventAction::BeginOfEventAction(const G4Event *)']]],
-  ['beginofrunaction_42',['BeginOfRunAction',['../class_o_m_sim_run_action.html#ac9c4ebd4441429c469f6e6d0be5ce5df',1,'OMSimRunAction::BeginOfRunAction(const G4Run *)'],['../class_o_m_sim_run_action.html#ac9c4ebd4441429c469f6e6d0be5ce5df',1,'OMSimRunAction::BeginOfRunAction(const G4Run *)']]],
+  ['beginofrunaction_42',['BeginOfRunAction',['../class_o_m_sim_run_action.html#ac9c4ebd4441429c469f6e6d0be5ce5df',1,'OMSimRunAction']]],
   ['bi_5fexp_43',['bi_exp',['../class_o_m_sim_g4_scintillation.html#a12cc08522c70fc137bbd9ac243fd5458',1,'OMSimG4Scintillation::bi_exp(G4double t, G4double tau1, G4double tau2)'],['../class_o_m_sim_g4_scintillation.html#a12cc08522c70fc137bbd9ac243fd5458',1,'OMSimG4Scintillation::bi_exp(G4double t, G4double tau1, G4double tau2)']]],
   ['blanklinetoken_44',['BlankLineToken',['../namespace_c_a_d_mesh_1_1_file.html#a52dbab7b4730ccb08a07f813a7b44a74',1,'CADMesh::File']]],
   ['border_45',['BORDER',['../_o_m_sim_logger_8hh.html#a6d0652ae6ea6a5c4fef68baf139fd085',1,'OMSimLogger.hh']]],

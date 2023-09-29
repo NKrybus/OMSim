@@ -10,6 +10,7 @@ var group__common =
     [ "OMSimHitManager.hh", "_o_m_sim_hit_manager_8hh.html", null ],
     [ "OMSimInputData.hh", "_o_m_sim_input_data_8hh.html", null ],
     [ "OMSimPMTResponse.hh", "_o_m_sim_p_m_t_response_8hh.html", null ],
+    [ "OMSimSteppingAction.hh", "_o_m_sim_stepping_action_8hh.html", null ],
     [ "OMSimUIinterface.hh", "_o_m_sim_u_iinterface_8hh.html", null ],
     [ "OMSim.cc", "_o_m_sim_8cc.html", null ],
     [ "OMSimDEGG.hh", "_o_m_sim_d_e_g_g_8hh.html", null ],
