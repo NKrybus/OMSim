@@ -25,45 +25,67 @@ Although CCSN models incorporate neutrino oscillations, the default simulation d
 \item    ~\newline
  Figure 1\+: {\itshape Diagram of the steps involved to generate the events for the simulation of CCSN neutrinos. The scheme is valid for both IBD and ENES, except for the threshold check. Here, stands for both electron from ENES or positron from IBD, and ν (este simbolo se vera bien?) for both electronic neutrino from ENES or electronic antineutrino from IBD.. Image from \href{https://zenodo.org/record/8107177}{\texttt{ this thesis}}.}  
 
-The detailed procedure for this simulation is comprehensively described in \href{https://zenodo.org/record/8107177}{\texttt{ this thesis}}, specifically in section 6.\+4. Below is a summary extracted from this source, outlining the steps taken to generate the events\+:
+The detailed procedure for this simulation is comprehensively described in \href{https://zenodo.org/record/8107177}{\texttt{ this thesis}}, specifically in section 6.\+4. Below is a summary extracted from this source, outlining the steps taken to generate the events\+: \begin{DoxyVerb}1. Utilizing the models, the expected flux per area is calculated from the luminosity 
+\f$L(t)\f$ and the mean energy \f$\bar{E}(t)\f$ according to
+\begin{equation}
+    \label{eq:fluxes}
+    \Phi (t) = \frac{1}{4\pi d^2} \cdot \frac{L(t)}{\bar{E}(t)}.
+\end{equation}
 
-\textbackslash{}begin\{enumerate\} \textbackslash{}item Utilizing the models, the expected flux per area is calculated from the luminosity (L(t)) and the mean energy (\textbackslash{}bar\{E\}(t)) according to \textbackslash{}begin\{equation\} \textbackslash{}label\{eq\+:fluxes\} \textbackslash{}\+Phi (t) = \textbackslash{}frac\{1\}\{4\textbackslash{}pi d$^\wedge$2\} \textbackslash{}cdot \textbackslash{}frac\{L(t)\}\{\textbackslash{}bar\{E\}(t)\}. \textbackslash{}end\{equation\}
+2. The distribution of \f$\Phi (t)\f$ is used to sample a time \f$t\f$ of the burst via 
+the inverse CDF (Cumulative Distribution Function) method. All other sampling from distributions within this simulation 
+also employs the inverse CDF method.
 
-\textbackslash{}item The distribution of (\textbackslash{}\+Phi (t)) is used to sample a time (t) of the burst via the inverse CDF (Cumulative Distribution Function) method. All other sampling from distributions within this simulation also employs the inverse CDF method.
+3. For the sampled time \f$t\f$, the corresponding mean energy and mean squared energy 
+are extracted from the models. These parameters contribute to the construction of the 
+energy spectrum \f$f(E,t)\f$, as elucidated in 
+<a href="https://arxiv.org/pdf/1211.3920.pdf">this paper</a>.
 
-\textbackslash{}item For the sampled time (t), the corresponding mean energy and mean squared energy are extracted from the models. These parameters contribute to the construction of the energy spectrum (f(\+E,t)), as elucidated in \href{https://arxiv.org/pdf/1211.3920.pdf}{\texttt{ this paper}}.
+4. The energy of the neutrino/antineutrino \f$E_\nu\f$ is sampled from \f$f(E,t)\f$. 
+If the energy falls below the IBD threshold, the algorithm reverts to the second step.
 
-\textbackslash{}item The energy of the neutrino/antineutrino (E\+\_\+\textbackslash{}nu) is sampled from (f(\+E,t)). If the energy falls below the IBD threshold, the algorithm reverts to the second step.
+5. From \f$E_\nu\f$, the angular cross section is devised. This informs the sampling 
+of the angle \f$\theta\f$ between the incoming neutrino and the resulting \f$e^-/e^+\f$. 
+The \(\phi\) direction is randomly generated within the range of \f$0\f$ to \f$2\pi\f$.
 
-\textbackslash{}item From (E\+\_\+\textbackslash{}nu), the angular cross section is devised. This informs the sampling of the angle (\textbackslash{}theta) between the incoming neutrino and the resulting (e$^\wedge$-\//e$^\wedge$+). The (\textbackslash{}phi) direction is randomly generated within the range of (0) to (2\textbackslash{}pi).
+6. The energy of \f$e^-/e^+\f$ is deduced from \f$\theta\f$ and \f$E_\nu\f$. The interaction 
+probability for such an event is ascertained using the total cross section, 
+facilitating the computation of the interaction weight, as further described below.
 
-\textbackslash{}item The energy of (e$^\wedge$-\//e$^\wedge$+) is deduced from (\textbackslash{}theta) and (E\+\_\+\textbackslash{}nu). The interaction probability for such an event is ascertained using the total cross section, facilitating the computation of the interaction weight, as further described below.
+7. The \f$e^-/e^+\f$ is manifested at a random position within the ice volume.
+\end{DoxyVerb}
 
-\textbackslash{}item The (e$^\wedge$-\//e$^\wedge$+) is manifested at a random position within the ice volume. \textbackslash{}end\{enumerate\}
 \end{DoxyItemize}\hypertarget{group__sngroup_Input}{}\doxysubsection{Parameters}\label{group__sngroup_Input}
 Execute {\ttfamily ./\+OMSim\+\_\+supernova -\/-\/help} to display all possible input parameters.
 
 A typical command to run the simulation is\+:
 
 \char`\"{}./\+OMSim\+\_\+supernova -\/n 100 -\/-\/wheight 20 -\/-\/wradius 20 -\/-\/depth\+\_\+pos 75 -\/o outputfilename -\/-\/\+SNgun 0 -\/-\/\+SNtype 0\char`\"{}\hypertarget{group__sngroup_General}{}\doxysubsubsection{Parameters}\label{group__sngroup_General}
-\textbackslash{}begin\{itemize\} \textbackslash{}item -\/n\+: Number of particles to be generated. \textbackslash{}item --depth\+\_\+pos\+: Index of the vector determining the depth of the simulated modules. Notable values include Dust\+Layer=65, Mean\+ICUProperties(approx)=75, and Cleanest\+Ice=88. The data is located in \char`\"{}common/data/\+Materials/\+Ice\+Cube\+ICE.\+dat\char`\"{}. The \char`\"{}j\+Depth\+\_\+spice\char`\"{} vector provides the depth, with depth\+\_\+pos serving as the index. This selection affects the effective scattering and absorption lengths of the ice at the specified depth. \textbackslash{}item -\/o\+: Output file name. By default, two output files are created\+: one containing the simulated event information, and another with detection data. \textbackslash{}end\{itemize\}\hypertarget{group__sngroup_SN}{}\doxysubsubsection{Framework Parameters}\label{group__sngroup_SN}
-\textbackslash{}begin\{itemize\} \textbackslash{}item --wheight\+: Height of the ice\textquotesingle{}s simulated world cylinder. \textbackslash{}item --wradius\+: Radius of the ice\textquotesingle{}s simulated world cylinder. \textbackslash{}item --SNgun\+: Chooses the interaction type (0 for IBD, 1 for ENES). \textbackslash{}item --SNtype\+: Selects the CCSN model. Two models are currently available, provided by the Garching group. These models represent the expected fluxes from two CCSNs resulting in neutron stars, with different progenitor masses (27 and 9.\+6 solar masses). Simulations yielding this data can be found at \href{https://arxiv.org/abs/1510.04643}{\texttt{ https\+://arxiv.\+org/abs/1510.\+04643}} \textbackslash{}end\{itemize\}\hypertarget{group__sngroup_Fixed}{}\doxysubsubsection{Energy Studies}\label{group__sngroup_Fixed}
+-\/n\+: Number of particles to be generated. --depth\+\_\+pos\+: Index of the vector determining the depth of the simulated modules. Notable values include Dust\+Layer=65, Mean\+ICUProperties(approx)=75, and Cleanest\+Ice=88. The data is located in \char`\"{}common/data/\+Materials/\+Ice\+Cube\+ICE.\+dat\char`\"{}. The \char`\"{}j\+Depth\+\_\+spice\char`\"{} vector provides the depth, with depth\+\_\+pos serving as the index. This selection affects the effective scattering and absorption lengths of the ice at the specified depth. -\/o\+: Output file name. By default, two output files are created\+: one containing the simulated event information, and another with detection data.\hypertarget{group__sngroup_SN}{}\doxysubsubsection{Framework Parameters}\label{group__sngroup_SN}
+--wheight\+: Height of the ice\textquotesingle{}s simulated world cylinder. --wradius\+: Radius of the ice\textquotesingle{}s simulated world cylinder. --SNgun\+: Chooses the interaction type (0 for IBD, 1 for ENES). --SNtype\+: Selects the CCSN model. Two models are currently available, provided by the Garching group. These models represent the expected fluxes from two CCSNs resulting in neutron stars, with different progenitor masses (27 and 9.\+6 solar masses). Simulations yielding this data can be found at \href{https://arxiv.org/abs/1510.04643}{\texttt{ https\+://arxiv.\+org/abs/1510.\+04643}}\hypertarget{group__sngroup_Fixed}{}\doxysubsubsection{Energy Studies}\label{group__sngroup_Fixed}
 This section allows users to manually set the mean energy of generated events by providing specific input parameters. For instance\+:
 
 \char`\"{}-\/-\/\+SNfix\+Energy -\/-\/\+SNmean\+E 10.\+0 -\/-\/\+SNalpha 3.\+0\char`\"{}
 
-\textbackslash{}begin\{itemize\} \textbackslash{}item --SNfix\+Energy\+: Acts as a flag parameter. When invoked, the simulation disregards the actual mean energy of neutrinos corresponding to the burst time. Instead, it adopts the mean energy and the pinching parameter specified by the subsequent two parameters. \textbackslash{}item --SNmeanE\+: Specifies the mean energy of the neutrinos. \textbackslash{}item --SNalpha\+: Defines the pinching parameter of the energy distribution (see \href{https://arxiv.org/pdf/1211.3920.pdf}{\texttt{ this paper}}). \textbackslash{}end\{itemize\}
+--SNfix\+Energy\+: Acts as a flag parameter. When invoked, the simulation disregards the actual mean energy of neutrinos corresponding to the burst time. Instead, it adopts the mean energy and the pinching parameter specified by the subsequent two parameters. --SNmeanE\+: Specifies the mean energy of the neutrinos. --SNalpha\+: Defines the pinching parameter of the energy distribution (see \href{https://arxiv.org/pdf/1211.3920.pdf}{\texttt{ this paper}}).
 
 Consequently, the neutrinos\textquotesingle{} energy is sampled from the distribution, derived from these two parameters and the previously mentioned model.\hypertarget{group__sngroup_Output}{}\doxysubsection{Files}\label{group__sngroup_Output}
 Information regarding the files that contain data outputs and insights derived from the simulated neutrino events.\hypertarget{_}{}\doxysubsubsection{}\label{_}
-This file encapsulates data concerning each generated neutrino event. Each entry contains\+:
-
-\textbackslash{}begin\{itemize\} \textbackslash{}item Time of the neutrino burst. \textbackslash{}item Corresponding mean energy derived from the model. \textbackslash{}item Sampled neutrino energy (E\+\_\+\textbackslash{}nu). \textbackslash{}item (\textbackslash{}cos(\textbackslash{}theta)), where (\textbackslash{}theta) is the angle between the incoming neutrino and the outgoing particle (e-\/ or e+). \textbackslash{}item Energy of the outgoing particle (e-\/ or e+). \textbackslash{}item Interaction weight, calculated using the formula\+: \mbox{[} W\+\_\+\{\textbackslash{}mathrm\{int\}\}(E\+\_\+\textbackslash{}nu) = \textbackslash{}sigma(E) \textbackslash{}cdot n\+\_\+\{\textbackslash{}mathrm\{target\}\} \textbackslash{}cdot l, \mbox{]} where\+:
-\begin{DoxyItemize}
-\item (\textbackslash{}sigma(E)) is the total cross section for the interaction,
-\item (n\+\_\+\{\textbackslash{}mathrm\{target\}\}) is the number of targets available for the interaction in the ice,
-\item (l) is the length of the simulated cylindrical world. \textbackslash{}end\{itemize\}
-\end{DoxyItemize}\hypertarget{_}{}\doxyparagraph{}\label{_}
+This file encapsulates data concerning each generated neutrino event. Each entry contains\+: \begin{DoxyVerb}- Time of the neutrino burst.
+- Corresponding mean energy derived from the model.
+- Sampled neutrino energy \f$E_\nu\f$.
+- \f$\cos(\theta)\f$, where \f$\theta\f$ is the angle between the incoming neutrino and the outgoing particle (e- or e+).
+- Energy of the outgoing particle (e- or e+).
+- Interaction weight, calculated using the formula:
+    \[
+    W_{\mathrm{int}}(E_\nu) = \sigma(E) \cdot n_{\mathrm{target}} \cdot l,
+    \]
+    where:
+    - \(\sigma(E)\) is the total cross section for the interaction,
+    - \(n_{\mathrm{target}}\) is the number of targets available for the interaction in the ice,
+    - \(l\) is the length of the simulated cylindrical world.
+\end{DoxyVerb}
+ \hypertarget{_}{}\doxyparagraph{}\label{_}
 This file contains the detection information. Its structure is designed to facilitate various trigger studies, allowing the examination of different time windows. Users might evaluate its structure for convenience, particularly if the trigger check is integrated within the simulation (requiring a predefined time window).
 
 The default content structure is as follows\+: \mbox{[} \textbackslash{}text\{Total hits $\vert$ Modules hit $\vert$ PMTs hit $\vert$ ...for each PMT hit...$\vert$ Module number $\vert$ PMT number $\vert$ Hits in that PMT $\vert$ \char`\"{}...\+for each Hit...\char`\"{} $<$$<$ \char`\"{} hit time $\vert$\char`\"{}\} \mbox{]}
@@ -77,19 +99,47 @@ The total weight is composed of 3 components\+: the interaction probability, the
 
 \textbackslash{}begin\{equation\} \textbackslash{}label\{eq\+:sn\+\_\+weights\} W = W\+\_\+\{\textbackslash{}mathrm\{int\}\}(E) \textbackslash{}cdot W\+\_\+\{\textbackslash{}mathrm\{flux\}\}(d) \textbackslash{}cdot W\+\_\+\{\textbackslash{}mathrm\{eff\}\}. \textbackslash{}end\{equation\}
 
-Each component is explained as follows\+:
+Each component is explained as follows\+: \begin{DoxyVerb}- Interaction Probability Weight:
+    \begin{equation}
+        \label{eq:sn_weight_int}
+        W_{\mathrm{int}}(E_\nu) = \sigma(E) \cdot n_{\mathrm{target}} \cdot l,
+    \end{equation}
+    where \(\sigma(E_\nu)\) is the total cross section for the interaction, \(n_{\mathrm{target}}\) is the 
+    number of targets per unit of volume for such interaction, and \(l=40\,m\) is the length of the generation 
+    volume along the neutrino direction axis. This is the length of the cylinder facing the CCSN.
 
-\textbackslash{}begin\{itemize\} \textbackslash{}item Interaction Probability Weight\+: \textbackslash{}begin\{equation\} \textbackslash{}label\{eq\+:sn\+\_\+weight\+\_\+int\} W\+\_\+\{\textbackslash{}mathrm\{int\}\}(E\+\_\+\textbackslash{}nu) = \textbackslash{}sigma(E) \textbackslash{}cdot n\+\_\+\{\textbackslash{}mathrm\{target\}\} \textbackslash{}cdot l, \textbackslash{}end\{equation\} where (\textbackslash{}sigma(E\+\_\+\textbackslash{}nu)) is the total cross section for the interaction, (n\+\_\+\{\textbackslash{}mathrm\{target\}\}) is the number of targets per unit of volume for such interaction, and (l=40\textbackslash{},m) is the length of the generation volume along the neutrino direction axis. This is the length of the cylinder facing the CCSN.
+- Flux Weight:
+    \begin{equation}
+        \label{eq:sn_weight_flux}
+        W_{\mathrm{flux}} =  \frac{1}{N_{\mathrm{gen}}} \cdot \frac{r^2}{d^2} \cdot \int \frac{L(t)}{\bar{E}(t)} dt,
+    \end{equation}
+    where \(r=20\,m\) is the cylindrical generation volume’s radius, \(d\) is the distance from Earth where the 
+    CCSN is assumed to occur, and \(N_{\mathrm{gen}}\) is the number of generated events.
 
-\textbackslash{}item Flux Weight\+: \textbackslash{}begin\{equation\} \textbackslash{}label\{eq\+:sn\+\_\+weight\+\_\+flux\} W\+\_\+\{\textbackslash{}mathrm\{flux\}\} = \textbackslash{}frac\{1\}\{N\+\_\+\{\textbackslash{}mathrm\{gen\}\}\} \textbackslash{}cdot \textbackslash{}frac\{r$^\wedge$2\}\{d$^\wedge$2\} \textbackslash{}cdot \textbackslash{}int \textbackslash{}frac\{L(t)\}\{\textbackslash{}bar\{E\}(t)\} dt, \textbackslash{}end\{equation\} where (r=20\textbackslash{},m) is the cylindrical generation volume’s radius, (d) is the distance from Earth where the CCSN is assumed to occur, and (N\+\_\+\{\textbackslash{}mathrm\{gen\}\}) is the number of generated events.
+- Effective Weight:
+    \begin{equation}
+        \label{eq:sn_weight_eff}
+        W_{\mathrm{eff}} = N_{\mathrm{modules}} \cdot \frac{\bar{V}_{\mathrm{eff}}(m)}{V_{\mathrm{eff}}(m,z_{\mathrm{sim}})},
+    \end{equation}
+    where \(N_{\mathrm{modules}}\) is the total modules in the simulated detector, \(V_{\mathrm{eff}}(m, 
+    z_{\mathrm{sim}})\) is the effective volume at the simulation depth, and \(\bar{V}_{\mathrm{eff}}(m)\) is 
+    the mean effective volume for all modules in the detector. The term \(m\) represents multiplicity, defined 
+    as the count of different PMTs within a single module that detected the event within a specific time window.
+\end{DoxyVerb}
+ The effective volume can be calculated in different ways. Old simulations of the \mbox{\hyperlink{classm_d_o_m}{m\+DOM}}, described in \href{https://zenodo.org/record/8107177}{\texttt{ this thesis, section 6.\+3}}, were used in past studies. A linear regression of the effective volume concerning the absorption length, derived from various depths, provides each depth\textquotesingle{}s effective volume. Although it is advisable to redo these simulations with a current \mbox{\hyperlink{classm_d_o_m}{m\+DOM}} model, users can temporarily use the old data with a regression line of $V_{\mathrm{eff}} = b \cdot x + c$, where $x = 1/a$ is the inverse of the absorption length. The coefficients $b$ and $c$, depending on the event\textquotesingle{}s multiplicity, were obtained as follows\+:
 
-\textbackslash{}item Effective Weight\+: \textbackslash{}begin\{equation\} \textbackslash{}label\{eq\+:sn\+\_\+weight\+\_\+eff\} W\+\_\+\{\textbackslash{}mathrm\{eff\}\} = N\+\_\+\{\textbackslash{}mathrm\{modules\}\} \textbackslash{}cdot \textbackslash{}frac\{\textbackslash{}bar\{V\}\+\_\+\{\textbackslash{}mathrm\{eff\}\}(m)\}\{V\+\_\+\{\textbackslash{}mathrm\{eff\}\}(m,z\+\_\+\{\textbackslash{}mathrm\{sim\}\})\}, \textbackslash{}end\{equation\} where (N\+\_\+\{\textbackslash{}mathrm\{modules\}\}) is the total modules in the simulated detector, (V\+\_\+\{\textbackslash{}mathrm\{eff\}\}(m, z\+\_\+\{\textbackslash{}mathrm\{sim\}\})) is the effective volume at the simulation depth, and (\textbackslash{}bar\{V\}\+\_\+\{\textbackslash{}mathrm\{eff\}\}(m)) is the mean effective volume for all modules in the detector. The term (m) represents multiplicity, defined as the count of different PMTs within a single module that detected the event within a specific time window. \textbackslash{}end\{itemize\}
+\begin{DoxyVerb}*  | multiplicity |     b (slope, m^2)         |      c (m^3)     |
+*  |--------------|----------------------------|------------------|
+*  |      1       |          15.1843           |   0.000 (imposed)|
+*  |      2       |           0.1352           |      47.005      |
+*  |      3       |           0.0306           |      16.170      |
+*  |      4       |           0.0095           |       8.680      |
+*  |      5       |           0.0039           |       5.105      |
+*  |     >= 6     |           0.0026           |       2.909      |
+*  \end{DoxyVerb}
 
-The effective volume can be calculated in different ways. Old simulations of the \mbox{\hyperlink{classm_d_o_m}{m\+DOM}}, described in \href{https://zenodo.org/record/8107177}{\texttt{ this thesis, section 6.\+3}}, were used in past studies. A linear regression of the effective volume concerning the absorption length, derived from various depths, provides each depth\textquotesingle{}s effective volume. Although it is advisable to redo these simulations with a current \mbox{\hyperlink{classm_d_o_m}{m\+DOM}} model, users can temporarily use the old data with a regression line of (V\+\_\+\{\textbackslash{}mathrm\{eff\}\} = b \textbackslash{}cdot x + c), where (x = 1/a) is the inverse of the absorption length. The coefficients (b) and (c), depending on the event\textquotesingle{}s multiplicity, were obtained as follows\+:
 
-\textbackslash{}begin\{center\} \textbackslash{}begin\{tabular\}\{$\vert$c$\vert$c$\vert$c$\vert$\} \textbackslash{}hline PMTs \& b (slope, units (m$^\wedge$2)) \& c (units (m$^\wedge$3)) \textbackslash{} \textbackslash{}hline 1 \& 15.\+184 \& 0.\+000 \textbackslash{} 2 \& 0.\+135 \& 47.\+005 \textbackslash{} 3 \& 0.\+031 \& 16.\+170 \textbackslash{} 4 \& 0.\+010 \& 8.\+680 \textbackslash{} 5 \& 0.\+004 \& 5.\+105 \textbackslash{} (\textbackslash{}geq6) \& 0.\+003 \& 2.\+909 \textbackslash{} \textbackslash{}hline \textbackslash{}end\{tabular\} \textbackslash{}end\{center\}
-
-Note that, for more than 5 PMTs, the same fit line is employed due to insufficient statistics at higher PMTs in the effective volume simulation. Additionally, since the absorption length depends on the wavelength, the fits above were obtained assuming a wavelength of (\textbackslash{}lambda = 400\textbackslash{},nm). \doxysubsection*{Files}
+Note that, for more than 5 PMTs, the same fit line is employed due to insufficient statistics at higher PMTs in the effective volume simulation. Additionally, since the absorption length depends on the wavelength, the fits above were obtained assuming a wavelength of $\lambda = 400\,nm$. \doxysubsection*{Files}
 \begin{DoxyCompactItemize}
 \item 
 file \mbox{\hyperlink{_o_m_sim__supernova_8cc}{OMSim\+\_\+supernova.\+cc}}
