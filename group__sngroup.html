@@ -131,9 +131,9 @@ $(document).ready(function(){initNavTree('group__sngroup.html',''); initResizabl
 <p>In the IBD case, the outgoing neutron is not simulated; hence, the neutron capture process that might be detected is not included in the simulation. Each event is assigned a weight based on the interaction probability, detailed later on this page. By default, the surrounding ice is represented as a cylinder facing the CCSN, simplifying the weight calculations.</p>
 <p>Although CCSN models incorporate neutrino oscillations, the default simulation does not include any oscillation scenario in the weight calculations.</p>
 <ul>
-<li><div style="width: 100%; text-align: center;"> <img src="SNsimDiagram.png" alt="" width="600" height="200" class="inline"/> <div style="width: 80%; margin: auto;"> <br  />
+<li><div style="width: 100%; text-align: center;"> <img src="SNsimDiagram.png" alt="" width="750" height="250" class="inline"/> <div style="width: 80%; margin: auto;"> <br  />
  Figure 1: <em>Diagram of the steps involved to generate the events for the simulation of CCSN neutrinos. The scheme is valid for both IBD and ENES, except for the threshold check. Here, stands for both electron from ENES or positron from IBD, and ν (este simbolo se vera bien?) for both electronic neutrino from ENES or electronic antineutrino from IBD.. Image from <a href="https://zenodo.org/record/8107177">this thesis</a>.</em> </div> </div><p class="startli">The detailed procedure for this simulation is comprehensively described in <a href="https://zenodo.org/record/8107177">this thesis</a>, specifically in section 6.4. Below is a summary extracted from this source, outlining the steps taken to generate the events: </p><pre class="fragment">1. Utilizing the models, the expected flux per area is calculated from the luminosity 
-\f$L(t)\f$ and the mean energy \f$\bar{E}(t)\f$ according to
+\f[L(t)\f] and the mean energy \f$\bar{E}(t)\f$ according to
 \begin{equation}
     \label{eq:fluxes}
     \Phi (t) = \frac{1}{4\pi d^2} \cdot \frac{L(t)}{\bar{E}(t)}.
@@ -166,7 +166,7 @@ facilitating the computation of the interaction weight, as further described bel
 Parameters</h1>
 <p>Execute <code>./OMSim_supernova --help</code> to display all possible input parameters.</p>
 <p>A typical command to run the simulation is:</p>
-<p>"./OMSim_supernova -n 100 --wheight 20 --wradius 20 --depth_pos 75 -o outputfilename --SNgun 0 --SNtype 0"</p>
+<p><code>./OMSim_supernova -n 100 --wheight 20 --wradius 20 --depth_pos 75 -o outputfilename --SNgun 0 --SNtype 0</code></p>
 <h2><a class="anchor" id="General"></a>
 Parameters</h2>
 <p>-n: Number of particles to be generated. &ndash;depth_pos: Index of the vector determining the depth of the simulated modules. Notable values include DustLayer=65, MeanICUProperties(approx)=75, and CleanestIce=88. The data is located in "common/data/Materials/IceCubeICE.dat". The "jDepth_spice" vector provides the depth, with depth_pos serving as the index. This selection affects the effective scattering and absorption lengths of the ice at the specified depth. -o: Output file name. By default, two output files are created: one containing the simulated event information, and another with detection data.</p>
@@ -176,7 +176,7 @@ Framework Parameters</h2>
 <h2><a class="anchor" id="Fixed"></a>
 Energy Studies</h2>
 <p>This section allows users to manually set the mean energy of generated events by providing specific input parameters. For instance:</p>
-<p>"--SNfixEnergy --SNmeanE 10.0 --SNalpha 3.0"</p>
+<p><code>--SNfixEnergy --SNmeanE 10.0 --SNalpha 3.0</code></p>
 <p>&ndash;SNfixEnergy: Acts as a flag parameter. When invoked, the simulation disregards the actual mean energy of neutrinos corresponding to the burst time. Instead, it adopts the mean energy and the pinching parameter specified by the subsequent two parameters. &ndash;SNmeanE: Specifies the mean energy of the neutrinos. &ndash;SNalpha: Defines the pinching parameter of the energy distribution (see <a href="https://arxiv.org/pdf/1211.3920.pdf">this paper</a>).</p>
 <p>Consequently, the neutrinos' energy is sampled from the distribution, derived from these two parameters and the previously mentioned model.</p>
 <h1><a class="anchor" id="Output"></a>
@@ -256,7 +256,7 @@ Files</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Fri Sep 29 2023 20:03:12 for OMSim by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Fri Sep 29 2023 20:06:49 for OMSim by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

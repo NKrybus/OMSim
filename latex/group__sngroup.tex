@@ -26,7 +26,7 @@ Although CCSN models incorporate neutrino oscillations, the default simulation d
  Figure 1\+: {\itshape Diagram of the steps involved to generate the events for the simulation of CCSN neutrinos. The scheme is valid for both IBD and ENES, except for the threshold check. Here, stands for both electron from ENES or positron from IBD, and ν (este simbolo se vera bien?) for both electronic neutrino from ENES or electronic antineutrino from IBD.. Image from \href{https://zenodo.org/record/8107177}{\texttt{ this thesis}}.}  
 
 The detailed procedure for this simulation is comprehensively described in \href{https://zenodo.org/record/8107177}{\texttt{ this thesis}}, specifically in section 6.\+4. Below is a summary extracted from this source, outlining the steps taken to generate the events\+: \begin{DoxyVerb}1. Utilizing the models, the expected flux per area is calculated from the luminosity 
-\f$L(t)\f$ and the mean energy \f$\bar{E}(t)\f$ according to
+\f[L(t)\f] and the mean energy \f$\bar{E}(t)\f$ according to
 \begin{equation}
     \label{eq:fluxes}
     \Phi (t) = \frac{1}{4\pi d^2} \cdot \frac{L(t)}{\bar{E}(t)}.
@@ -60,12 +60,12 @@ Execute {\ttfamily ./\+OMSim\+\_\+supernova -\/-\/help} to display all possible 
 
 A typical command to run the simulation is\+:
 
-\char`\"{}./\+OMSim\+\_\+supernova -\/n 100 -\/-\/wheight 20 -\/-\/wradius 20 -\/-\/depth\+\_\+pos 75 -\/o outputfilename -\/-\/\+SNgun 0 -\/-\/\+SNtype 0\char`\"{}\hypertarget{group__sngroup_General}{}\doxysubsubsection{Parameters}\label{group__sngroup_General}
+{\ttfamily ./\+OMSim\+\_\+supernova -\/n 100 -\/-\/wheight 20 -\/-\/wradius 20 -\/-\/depth\+\_\+pos 75 -\/o outputfilename -\/-\/SNgun 0 -\/-\/SNtype 0}\hypertarget{group__sngroup_General}{}\doxysubsubsection{Parameters}\label{group__sngroup_General}
 -\/n\+: Number of particles to be generated. --depth\+\_\+pos\+: Index of the vector determining the depth of the simulated modules. Notable values include Dust\+Layer=65, Mean\+ICUProperties(approx)=75, and Cleanest\+Ice=88. The data is located in \char`\"{}common/data/\+Materials/\+Ice\+Cube\+ICE.\+dat\char`\"{}. The \char`\"{}j\+Depth\+\_\+spice\char`\"{} vector provides the depth, with depth\+\_\+pos serving as the index. This selection affects the effective scattering and absorption lengths of the ice at the specified depth. -\/o\+: Output file name. By default, two output files are created\+: one containing the simulated event information, and another with detection data.\hypertarget{group__sngroup_SN}{}\doxysubsubsection{Framework Parameters}\label{group__sngroup_SN}
 --wheight\+: Height of the ice\textquotesingle{}s simulated world cylinder. --wradius\+: Radius of the ice\textquotesingle{}s simulated world cylinder. --SNgun\+: Chooses the interaction type (0 for IBD, 1 for ENES). --SNtype\+: Selects the CCSN model. Two models are currently available, provided by the Garching group. These models represent the expected fluxes from two CCSNs resulting in neutron stars, with different progenitor masses (27 and 9.\+6 solar masses). Simulations yielding this data can be found at \href{https://arxiv.org/abs/1510.04643}{\texttt{ https\+://arxiv.\+org/abs/1510.\+04643}}\hypertarget{group__sngroup_Fixed}{}\doxysubsubsection{Energy Studies}\label{group__sngroup_Fixed}
 This section allows users to manually set the mean energy of generated events by providing specific input parameters. For instance\+:
 
-\char`\"{}-\/-\/\+SNfix\+Energy -\/-\/\+SNmean\+E 10.\+0 -\/-\/\+SNalpha 3.\+0\char`\"{}
+{\ttfamily -\/-\/SNfix\+Energy -\/-\/SNmeanE 10.\+0 -\/-\/SNalpha 3.\+0}
 
 --SNfix\+Energy\+: Acts as a flag parameter. When invoked, the simulation disregards the actual mean energy of neutrinos corresponding to the burst time. Instead, it adopts the mean energy and the pinching parameter specified by the subsequent two parameters. --SNmeanE\+: Specifies the mean energy of the neutrinos. --SNalpha\+: Defines the pinching parameter of the energy distribution (see \href{https://arxiv.org/pdf/1211.3920.pdf}{\texttt{ this paper}}).
 
