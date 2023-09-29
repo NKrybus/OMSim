@@ -1,6 +1,5 @@
 var NAVTREEINDEX1 =
 {
-"_o_m_sim_tracking_action_8cc.html":[4,0,91],
 "_o_m_sim_tracking_action_8cc.html#a0c3c24dae9d87f31f312c13a734780ed":[4,0,91,0],
 "_o_m_sim_tracking_action_8cc.html#a98bca333230c874207e654a1c0988692":[4,0,91,1],
 "_o_m_sim_tracking_action_8hh.html":[4,0,92],
@@ -249,5 +248,6 @@ var NAVTREEINDEX1 =
 "class_d_egg_harness.html#afa139bcf866bd9c5fabc42d3d431af16":[5,0,8,5],
 "class_event_info_manager.html":[3,1,6],
 "class_event_info_manager.html":[3,2,14],
-"class_event_info_manager.html#a3f20e93e5648ed8361ac6919e261b2ca":[3,1,6,7]
+"class_event_info_manager.html#a3f20e93e5648ed8361ac6919e261b2ca":[3,1,6,7],
+"class_event_info_manager.html#a3f20e93e5648ed8361ac6919e261b2ca":[3,1,6,8]
 };

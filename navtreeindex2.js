@@ -1,6 +1,5 @@
 var NAVTREEINDEX2 =
 {
-"class_event_info_manager.html#a3f20e93e5648ed8361ac6919e261b2ca":[3,1,6,8],
 "class_event_info_manager.html#a3f20e93e5648ed8361ac6919e261b2ca":[3,1,6,6],
 "class_event_info_manager.html#a3f20e93e5648ed8361ac6919e261b2ca":[3,2,14,8],
 "class_event_info_manager.html#a3f20e93e5648ed8361ac6919e261b2ca":[3,2,14,7],
@@ -249,5 +248,6 @@ var NAVTREEINDEX2 =
 "class_o_m_sim.html#afdddb6d2392b131b35aae4f20a551a7c":[3,0,22,15],
 "class_o_m_sim_command_args_table.html":[3,0,23],
 "class_o_m_sim_command_args_table.html#a1a27862e2bad8372154ce2d88c31cc3c":[3,0,23,8],
-"class_o_m_sim_command_args_table.html#a2a6179839e4ed5f503e52fca917c84c2":[3,0,23,7]
+"class_o_m_sim_command_args_table.html#a2a6179839e4ed5f503e52fca917c84c2":[3,0,23,7],
+"class_o_m_sim_command_args_table.html#a3408ada2080a45388afe2a2640b35d79":[3,0,23,3]
 };
