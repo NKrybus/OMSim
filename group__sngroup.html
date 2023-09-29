@@ -131,35 +131,20 @@ $(document).ready(function(){initNavTree('group__sngroup.html',''); initResizabl
 <p>In the IBD case, the outgoing neutron is not simulated; hence, the neutron capture process that might be detected is not included in the simulation. Each event is assigned a weight based on the interaction probability, detailed later on this page. By default, the surrounding ice is represented as a cylinder facing the CCSN, simplifying the weight calculations.</p>
 <p>Although CCSN models incorporate neutrino oscillations, the default simulation does not include any oscillation scenario in the weight calculations.</p>
 <div style="width: 100%; text-align: center;"> <img src="SNsimDiagram.png" alt="" width="810" height="270" class="inline"/> <div style="width: 80%; margin: auto;"> <br  />
- Figure 1: <em>Diagram of the steps involved to generate the events for the simulation of CCSN neutrinos. The scheme is valid for both IBD and ENES, except for the threshold check. Here, stands for both electron from ENES or positron from IBD, and ν (este simbolo se vera bien?) for both electronic neutrino from ENES or electronic antineutrino from IBD.. Image from <a href="https://zenodo.org/record/8107177">this thesis</a>.</em> </div> </div><p>The detailed procedure for this simulation is comprehensively described in <a href="https://zenodo.org/record/8107177">this thesis</a>, specifically in section 6.4. Below is a summary extracted from this source, outlining the steps taken to generate the events: </p><pre class="fragment">1. Utilizing the models, the expected flux per area is calculated from the luminosity 
-\f[L(t)\f] and the mean energy \f$\bar{E}(t)\f$ according to
-\begin{equation}
-    \label{eq:fluxes}
-    \Phi (t) = \frac{1}{4\pi d^2} \cdot \frac{L(t)}{\bar{E}(t)}.
-\end{equation}
-
-2. The distribution of \f$\Phi (t)\f$ is used to sample a time \f$t\f$ of the burst via 
-the inverse CDF (Cumulative Distribution Function) method. All other sampling from distributions within this simulation 
-also employs the inverse CDF method.
-
-3. For the sampled time \f$t\f$, the corresponding mean energy and mean squared energy 
-are extracted from the models. These parameters contribute to the construction of the 
-energy spectrum \f$f(E,t)\f$, as elucidated in 
-&lt;a href="https://arxiv.org/pdf/1211.3920.pdf"&gt;this paper&lt;/a&gt;.
-
-4. The energy of the neutrino/antineutrino \f$E_\nu\f$ is sampled from \f$f(E,t)\f$. 
-If the energy falls below the IBD threshold, the algorithm reverts to the second step.
-
-5. From \f$E_\nu\f$, the angular cross section is devised. This informs the sampling 
-of the angle \f$\theta\f$ between the incoming neutrino and the resulting \f$e^-/e^+\f$. 
-The \&zwj;(\phi\&zwj;) direction is randomly generated within the range of \f$0\f$ to \f$2\pi\f$.
-
-6. The energy of \f$e^-/e^+\f$ is deduced from \f$\theta\f$ and \f$E_\nu\f$. The interaction 
-probability for such an event is ascertained using the total cross section, 
-facilitating the computation of the interaction weight, as further described below.
-
-7. The \f$e^-/e^+\f$ is manifested at a random position within the ice volume.
-</pre><h1><a class="anchor" id="Input"></a>
+ Figure 1: <em>Diagram of the steps involved to generate the events for the simulation of CCSN neutrinos. The scheme is valid for both IBD and ENES, except for the threshold check. Here, stands for both electron from ENES or positron from IBD, and ν (este simbolo se vera bien?) for both electronic neutrino from ENES or electronic antineutrino from IBD.. Image from <a href="https://zenodo.org/record/8107177">this thesis</a>.</em> </div> </div><p>The detailed procedure for this simulation is comprehensively described in <a href="https://zenodo.org/record/8107177">this thesis</a>, specifically in section 6.4. Below is a summary extracted from this source, outlining the steps taken to generate the events:</p>
+<ol type="1">
+<li>Utilizing the models, the expected flux per area is calculated from the luminosity <p class="formulaDsp">
+\[L(t)\]
+</p>
+ and the mean energy \(\bar{E}(t)\) according to \begin{equation} \label{eq:fluxes} \Phi (t) = \frac{1}{4\pi d^2} \cdot \frac{L(t)}{\bar{E}(t)}. \end{equation}</li>
+<li>The distribution of \(\Phi (t)\) is used to sample a time \(t\) of the burst via the inverse CDF (Cumulative Distribution Function) method. All other sampling from distributions within this simulation also employs the inverse CDF method.</li>
+<li>For the sampled time \(t\), the corresponding mean energy and mean squared energy are extracted from the models. These parameters contribute to the construction of the energy spectrum \(f(E,t)\), as elucidated in <a href="https://arxiv.org/pdf/1211.3920.pdf">this paper</a>.</li>
+<li>The energy of the neutrino/antineutrino \(E_\nu\) is sampled from \(f(E,t)\). If the energy falls below the IBD threshold, the algorithm reverts to the second step.</li>
+<li>From \(E_\nu\), the angular cross section is devised. This informs the sampling of the angle \(\theta\) between the incoming neutrino and the resulting \(e^-/e^+\). The (\phi) direction is randomly generated within the range of \(0\) to \(2\pi\).</li>
+<li>The energy of \(e^-/e^+\) is deduced from \(\theta\) and \(E_\nu\). The interaction probability for such an event is ascertained using the total cross section, facilitating the computation of the interaction weight, as further described below.</li>
+<li>The \(e^-/e^+\) is manifested at a random position within the ice volume.</li>
+</ol>
+<h1><a class="anchor" id="Input"></a>
 Parameters</h1>
 <p>Execute <code>./OMSim_supernova --help</code> to display all possible input parameters.</p>
 <p>A typical command to run the simulation is:</p>
@@ -181,20 +166,16 @@ Files</h1>
 <p>Information regarding the files that contain data outputs and insights derived from the simulated neutrino events.</p>
 <h2><a class="anchor" id=""></a>
 </h2>
-<p>This file encapsulates data concerning each generated neutrino event. Each entry contains: </p><pre class="fragment">- Time of the neutrino burst.
-- Corresponding mean energy derived from the model.
-- Sampled neutrino energy \f$E_\nu\f$.
-- \f$\cos(\theta)\f$, where \f$\theta\f$ is the angle between the incoming neutrino and the outgoing particle (e- or e+).
-- Energy of the outgoing particle (e- or e+).
-- Interaction weight, calculated using the formula:
-    \[
-    W_{\mathrm{int}}(E_\nu) = \sigma(E) \cdot n_{\mathrm{target}} \cdot l,
-    \]
-    where:
-    - \&zwj;(\sigma(E)\&zwj;) is the total cross section for the interaction,
-    - \&zwj;(n_{\mathrm{target}}\&zwj;) is the number of targets available for the interaction in the ice,
-    - \&zwj;(l\&zwj;) is the length of the simulated cylindrical world.
-</pre> <h3><a class="anchor" id=""></a>
+<p>This file encapsulates data concerning each generated neutrino event. Each entry contains:</p>
+<ul>
+<li>Time of the neutrino burst.</li>
+<li>Corresponding mean energy derived from the model.</li>
+<li>Sampled neutrino energy \(E_\nu\).</li>
+<li>\(\cos(\theta)\), where \(\theta\) is the angle between the incoming neutrino and the outgoing particle (e- or e+).</li>
+<li>Energy of the outgoing particle (e- or e+).</li>
+<li>Interaction weight, calculated using the formula: [ W_{\mathrm{int}}(E_\nu) = \sigma(E) \cdot n_{\mathrm{target}} \cdot l, ] where: ** (\sigma(E)) is the total cross section for the interaction, ** (n_{\mathrm{target}}) is the number of targets available for the interaction in the ice, ** (l) is the length of the simulated cylindrical world.</li>
+</ul>
+<h3><a class="anchor" id=""></a>
 </h3>
 <p>This file contains the detection information. Its structure is designed to facilitate various trigger studies, allowing the examination of different time windows. Users might evaluate its structure for convenience, particularly if the trigger check is integrated within the simulation (requiring a predefined time window).</p>
 <p>The default content structure is as follows: [ \text{Total hits | Modules hit | PMTs hit | ...for each PMT hit...| Module number | PMT number | Hits in that PMT | "...for each Hit..." &lt;&lt; " hit time |"} ]</p>
@@ -205,33 +186,13 @@ Weights</h1>
 <p>These weight factors can be added similarly as explained in <a href="https://zenodo.org/record/8107177">this thesis, section 6.4.2</a>.</p>
 <p>The total weight is composed of 3 components: the interaction probability, the SN flux through the simulated volume, and the different optical properties of the modules at different depths:</p>
 <p>\begin{equation} \label{eq:sn_weights} W = W_{\mathrm{int}}(E) \cdot W_{\mathrm{flux}}(d) \cdot W_{\mathrm{eff}}. \end{equation}</p>
-<p>Each component is explained as follows: </p><pre class="fragment">- Interaction Probability Weight:
-    \begin{equation}
-        \label{eq:sn_weight_int}
-        W_{\mathrm{int}}(E_\nu) = \sigma(E) \cdot n_{\mathrm{target}} \cdot l,
-    \end{equation}
-    where \&zwj;(\sigma(E_\nu)\&zwj;) is the total cross section for the interaction, \&zwj;(n_{\mathrm{target}}\&zwj;) is the 
-    number of targets per unit of volume for such interaction, and \&zwj;(l=40\,m\&zwj;) is the length of the generation 
-    volume along the neutrino direction axis. This is the length of the cylinder facing the CCSN.
-
-- Flux Weight:
-    \begin{equation}
-        \label{eq:sn_weight_flux}
-        W_{\mathrm{flux}} =  \frac{1}{N_{\mathrm{gen}}} \cdot \frac{r^2}{d^2} \cdot \int \frac{L(t)}{\bar{E}(t)} dt,
-    \end{equation}
-    where \&zwj;(r=20\,m\&zwj;) is the cylindrical generation volume’s radius, \&zwj;(d\&zwj;) is the distance from Earth where the 
-    CCSN is assumed to occur, and \&zwj;(N_{\mathrm{gen}}\&zwj;) is the number of generated events.
-
-- Effective Weight:
-    \begin{equation}
-        \label{eq:sn_weight_eff}
-        W_{\mathrm{eff}} = N_{\mathrm{modules}} \cdot \frac{\bar{V}_{\mathrm{eff}}(m)}{V_{\mathrm{eff}}(m,z_{\mathrm{sim}})},
-    \end{equation}
-    where \&zwj;(N_{\mathrm{modules}}\&zwj;) is the total modules in the simulated detector, \&zwj;(V_{\mathrm{eff}}(m, 
-    z_{\mathrm{sim}})\&zwj;) is the effective volume at the simulation depth, and \&zwj;(\bar{V}_{\mathrm{eff}}(m)\&zwj;) is 
-    the mean effective volume for all modules in the detector. The term \&zwj;(m\&zwj;) represents multiplicity, defined 
-    as the count of different PMTs within a single module that detected the event within a specific time window.
-</pre><p> The effective volume can be calculated in different ways. Old simulations of the <a class="el" href="classm_d_o_m.html">mDOM</a>, described in <a href="https://zenodo.org/record/8107177">this thesis, section 6.3</a>, were used in past studies. A linear regression of the effective volume concerning the absorption length, derived from various depths, provides each depth's effective volume. Although it is advisable to redo these simulations with a current <a class="el" href="classm_d_o_m.html">mDOM</a> model, users can temporarily use the old data with a regression line of \(V_{\mathrm{eff}} = b \cdot x + c\), where \(x = 1/a\) is the inverse of the absorption length. The coefficients \(b\) and \(c\), depending on the event's multiplicity, were obtained as follows:</p>
+<p>Each component is explained as follows:</p>
+<ul>
+<li>Interaction Probability Weight: \begin{equation} \label{eq:sn_weight_int} W_{\mathrm{int}}(E_\nu) = \sigma(E) \cdot n_{\mathrm{target}} \cdot l, \end{equation} where (\sigma(E_\nu)) is the total cross section for the interaction, (n_{\mathrm{target}}) is the number of targets per unit of volume for such interaction, and (l=40\,m) is the length of the generation volume along the neutrino direction axis. This is the length of the cylinder facing the CCSN.</li>
+<li>Flux Weight: \begin{equation} \label{eq:sn_weight_flux} W_{\mathrm{flux}} = \frac{1}{N_{\mathrm{gen}}} \cdot \frac{r^2}{d^2} \cdot \int \frac{L(t)}{\bar{E}(t)} dt, \end{equation} where (r=20\,m) is the cylindrical generation volume’s radius, (d) is the distance from Earth where the CCSN is assumed to occur, and (N_{\mathrm{gen}}) is the number of generated events.</li>
+<li>Effective Weight: \begin{equation} \label{eq:sn_weight_eff} W_{\mathrm{eff}} = N_{\mathrm{modules}} \cdot \frac{\bar{V}_{\mathrm{eff}}(m)}{V_{\mathrm{eff}}(m,z_{\mathrm{sim}})}, \end{equation} where (N_{\mathrm{modules}}) is the total modules in the simulated detector, (V_{\mathrm{eff}}(m, z_{\mathrm{sim}})) is the effective volume at the simulation depth, and (\bar{V}_{\mathrm{eff}}(m)) is the mean effective volume for all modules in the detector. The term (m) represents multiplicity, defined as the count of different PMTs within a single module that detected the event within a specific time window.</li>
+</ul>
+<p>The effective volume can be calculated in different ways. Old simulations of the <a class="el" href="classm_d_o_m.html">mDOM</a>, described in <a href="https://zenodo.org/record/8107177">this thesis, section 6.3</a>, were used in past studies. A linear regression of the effective volume concerning the absorption length, derived from various depths, provides each depth's effective volume. Although it is advisable to redo these simulations with a current <a class="el" href="classm_d_o_m.html">mDOM</a> model, users can temporarily use the old data with a regression line of \(V_{\mathrm{eff}} = b \cdot x + c\), where \(x = 1/a\) is the inverse of the absorption length. The coefficients \(b\) and \(c\), depending on the event's multiplicity, were obtained as follows:</p>
 <pre class="fragment">*  | multiplicity |     b (slope, m^2)         |      c (m^3)     |
 *  |--------------|----------------------------|------------------|
 *  |      1       |          15.1843           |       0.000      |
@@ -253,7 +214,7 @@ Files</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Fri Sep 29 2023 20:11:39 for OMSim by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Fri Sep 29 2023 20:17:50 for OMSim by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>
