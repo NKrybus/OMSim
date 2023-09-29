@@ -4,6 +4,7 @@ var group__radioactive =
     [ "radioactive_decays/include/OMSimEventAction.hh", "radioactive__decays_2include_2_o_m_sim_event_action_8hh.html", null ],
     [ "radioactive_decays/include/OMSimPhysicsList.hh", "radioactive__decays_2include_2_o_m_sim_physics_list_8hh.html", null ],
     [ "radioactive_decays/include/OMSimPrimaryGeneratorAction.hh", "radioactive__decays_2include_2_o_m_sim_primary_generator_action_8hh.html", null ],
+    [ "OMSim_radioactive_decays.cc", "_o_m_sim__radioactive__decays_8cc.html", null ],
     [ "DecayStats", "struct_decay_stats.html", [
       [ "decay_position", "struct_decay_stats.html#ac359be5448828a37fed75a9de0537cdd", null ],
       [ "decay_time", "struct_decay_stats.html#a0d8b961cbbf2f5944a703593356736c8", null ],

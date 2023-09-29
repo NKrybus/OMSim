@@ -513,7 +513,7 @@
 <!-- Node25 -->
 <g id="node25" class="node">
 <title>Node25</title>
-<g id="a_node25"><a xlink:href="_o_m_sim__radioactive__decays_8cc.html" target="_top" xlink:title="Main for the calculation of effective areas.">
+<g id="a_node25"><a xlink:href="_o_m_sim__radioactive__decays_8cc.html" target="_top" xlink:title="Main of the radioactive decay study.">
 <polygon fill="white" stroke="black" points="1021,-0.5 1021,-19.5 1186,-19.5 1186,-0.5 1021,-0.5"/>
 <text text-anchor="middle" x="1103.5" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">OMSim_radioactive_decays.cc</text>
 </a>

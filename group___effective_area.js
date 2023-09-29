@@ -2,7 +2,6 @@ var group___effective_area =
 [
     [ "OMSimAngularScan.hh", "_o_m_sim_angular_scan_8hh.html", null ],
     [ "OMSim_effective_area.cc", "_o_m_sim__effective__area_8cc.html", null ],
-    [ "OMSim_radioactive_decays.cc", "_o_m_sim__radioactive__decays_8cc.html", null ],
     [ "OMSim_effective_area.cc", "_o_m_sim__effective__area_8cc.html", null ],
     [ "AngularScan", "class_angular_scan.html", [
       [ "AngularScan", "class_angular_scan.html#af7d054657e56a97db60274f30ff737e6", null ],
