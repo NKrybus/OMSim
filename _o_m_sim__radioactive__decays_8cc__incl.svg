@@ -36,7 +36,7 @@
 <!-- Node27 -->
 <g id="node27" class="node">
 <title>Node27</title>
-<g id="a_node27"><a xlink:href="_o_m_sim_decays_g_p_s_8hh.html" target="_top" xlink:title=" ">
+<g id="a_node27"><a xlink:href="_o_m_sim_decays_g_p_s_8hh.html" target="_top" xlink:title="Defines the IsotopeDecays class for the radioactive decays simulation.">
 <polygon fill="white" stroke="black" points="1987,-291.5 1987,-310.5 2109,-310.5 2109,-291.5 1987,-291.5"/>
 <text text-anchor="middle" x="2048" y="-298.5" font-family="Helvetica,sans-Serif" font-size="10.00">OMSimDecaysGPS.hh</text>
 </a>
@@ -66,7 +66,7 @@
 <!-- Node49 -->
 <g id="node49" class="node">
 <title>Node49</title>
-<g id="a_node49"><a xlink:href="_o_m_sim_decays_analysis_8hh.html" target="_top" xlink:title=" ">
+<g id="a_node49"><a xlink:href="_o_m_sim_decays_analysis_8hh.html" target="_top" xlink:title="Defines the OMSimDecaysAnalysis class and DecayStats struct for the radioactive decays simulation.">
 <polygon fill="white" stroke="black" points="1686,-179.5 1686,-198.5 1830,-198.5 1830,-179.5 1686,-179.5"/>
 <text text-anchor="middle" x="1758" y="-186.5" font-family="Helvetica,sans-Serif" font-size="10.00">OMSimDecaysAnalysis.hh</text>
 </a>

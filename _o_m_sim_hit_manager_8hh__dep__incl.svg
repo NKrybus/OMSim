@@ -156,7 +156,7 @@
 <!-- Node12 -->
 <g id="node12" class="node">
 <title>Node12</title>
-<g id="a_node12"><a xlink:href="_o_m_sim__supernova_8cc.html" target="_top" xlink:title=" ">
+<g id="a_node12"><a xlink:href="_o_m_sim__supernova_8cc.html" target="_top" xlink:title="Main of the supernova study.">
 <polygon fill="white" stroke="black" points="1387,-56.5 1387,-75.5 1509,-75.5 1509,-56.5 1387,-56.5"/>
 <text text-anchor="middle" x="1448" y="-63.5" font-family="Helvetica,sans-Serif" font-size="10.00">OMSim_supernova.cc</text>
 </a>

@@ -1,7 +1,11 @@
 var group__radioactive =
 [
+    [ "OMSimDecaysAnalysis.hh", "_o_m_sim_decays_analysis_8hh.html", null ],
+    [ "OMSimDecaysGPS.hh", "_o_m_sim_decays_g_p_s_8hh.html", null ],
     [ "radioactive_decays/include/OMSimDetectorConstruction.hh", "radioactive__decays_2include_2_o_m_sim_detector_construction_8hh.html", null ],
     [ "radioactive_decays/include/OMSimEventAction.hh", "radioactive__decays_2include_2_o_m_sim_event_action_8hh.html", null ],
+    [ "OMSimG4RadioactiveDecay.hh", "_o_m_sim_g4_radioactive_decay_8hh.html", null ],
+    [ "OMSimG4Scintillation.hh", "_o_m_sim_g4_scintillation_8hh.html", null ],
     [ "radioactive_decays/include/OMSimPhysicsList.hh", "radioactive__decays_2include_2_o_m_sim_physics_list_8hh.html", null ],
     [ "radioactive_decays/include/OMSimPrimaryGeneratorAction.hh", "radioactive__decays_2include_2_o_m_sim_primary_generator_action_8hh.html", null ],
     [ "OMSim_radioactive_decays.cc", "_o_m_sim__radioactive__decays_8cc.html", null ],

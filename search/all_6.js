@@ -8,7 +8,7 @@ var searchData=
   ['abcmaterialdata_11',['abcMaterialData',['../classabc_material_data.html',1,'abcMaterialData'],['../classabc_material_data.html#ae30f0dc56953e39e0f5cb711c645d5a5',1,'abcMaterialData::abcMaterialData()']]],
   ['action_12',['Action',['../class_o_m_sim_primary_generator_messenger.html#a3187f4116274659228a6bd13599b1839',1,'OMSimPrimaryGeneratorMessenger']]],
   ['addmesh_13',['AddMesh',['../class_c_a_d_mesh_1_1_file_1_1_reader.html#a3485fbb3da05fcba3814469773fa9043',1,'CADMesh::File::Reader']]],
-  ['addsaturation_14',['AddSaturation',['../class_o_m_sim_g4_scintillation.html#a82af8cb0c28c55e8f2913aee8b5aa47f',1,'OMSimG4Scintillation::AddSaturation(G4EmSaturation *sat)'],['../class_o_m_sim_g4_scintillation.html#a82af8cb0c28c55e8f2913aee8b5aa47f',1,'OMSimG4Scintillation::AddSaturation(G4EmSaturation *sat)']]],
+  ['addsaturation_14',['AddSaturation',['../class_o_m_sim_g4_scintillation.html#a82af8cb0c28c55e8f2913aee8b5aa47f',1,'OMSimG4Scintillation']]],
   ['adduserdecaydatafile_15',['AddUserDecayDataFile',['../class_g4_radioactive_decay.html#ae61ed159f10454ea8eb4cfd109f47b93',1,'G4RadioactiveDecay']]],
   ['analyzeevent_16',['AnalyzeEvent',['../class_o_m_sim_s_n_analysis.html#ae6a94c32476b2b313505dbfbaca05809',1,'OMSimSNAnalysis']]],
   ['anavigator_17',['aNavigator',['../_o_m_sim_s_n_tools_8cc.html#ad63db5c25cc238ef5ccd9e8f866656ac',1,'aNavigator():&#160;OMSim_supernova.cc'],['../supernova_2src_2_o_m_sim_detector_construction_8cc.html#ad63db5c25cc238ef5ccd9e8f866656ac',1,'aNavigator():&#160;OMSim_supernova.cc'],['../_o_m_sim__supernova_8cc.html#ad63db5c25cc238ef5ccd9e8f866656ac',1,'aNavigator():&#160;OMSim_supernova.cc']]],
@@ -30,6 +30,6 @@ var searchData=
   ['applypermutation_33',['applyPermutation',['../_o_m_sim_hit_manager_8cc.html#ad237ff3b723de76457ed8ea2b0b89fed',1,'OMSimHitManager.cc']]],
   ['assembly_5f_34',['assembly_',['../class_c_a_d_mesh_1_1_c_a_d_mesh_template.html#aebb5f2c52db6b5b9f8739d165c64792b',1,'CADMesh::CADMeshTemplate']]],
   ['atendofline_35',['AtEndOfLine',['../_c_a_d_mesh_8hh.html#a95d14906166c75f8ce8f0d9b03100faa',1,'CADMesh.hh']]],
-  ['atrestdoit_36',['AtRestDoIt',['../class_o_m_sim_g4_scintillation.html#a067b14fb92df905cb6cc0ec14b1d22fb',1,'OMSimG4Scintillation::AtRestDoIt()'],['../class_g4_radioactive_decay.html#a0fb4257aca98bf87d751a0021dcf4639',1,'G4RadioactiveDecay::AtRestDoIt()'],['../class_o_m_sim_g4_scintillation.html#a1ab6f916bd26e5443d0f56238bc2df0e',1,'OMSimG4Scintillation::AtRestDoIt()']]],
+  ['atrestdoit_36',['AtRestDoIt',['../class_o_m_sim_g4_scintillation.html#a1ab6f916bd26e5443d0f56238bc2df0e',1,'OMSimG4Scintillation::AtRestDoIt()'],['../class_g4_radioactive_decay.html#a0fb4257aca98bf87d751a0021dcf4639',1,'G4RadioactiveDecay::AtRestDoIt(const G4Track &amp;theTrack, const G4Step &amp;theStep)']]],
   ['atrestgetphysicalinteractionlength_37',['AtRestGetPhysicalInteractionLength',['../class_g4_radioactive_decay.html#af23392c70746be540ba3b666cdac1114',1,'G4RadioactiveDecay']]]
 ];

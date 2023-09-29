@@ -96,7 +96,7 @@
 <!-- Node20 -->
 <g id="node20" class="node">
 <title>Node20</title>
-<g id="a_node20"><a xlink:href="_o_m_sim_decays_g_p_s_8hh.html" target="_top" xlink:title=" ">
+<g id="a_node20"><a xlink:href="_o_m_sim_decays_g_p_s_8hh.html" target="_top" xlink:title="Defines the IsotopeDecays class for the radioactive decays simulation.">
 <polygon fill="white" stroke="black" points="2009,-56.5 2009,-75.5 2131,-75.5 2131,-56.5 2009,-56.5"/>
 <text text-anchor="middle" x="2070" y="-63.5" font-family="Helvetica,sans-Serif" font-size="10.00">OMSimDecaysGPS.hh</text>
 </a>

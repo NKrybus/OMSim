@@ -465,7 +465,7 @@
 <!-- Node24 -->
 <g id="node24" class="node">
 <title>Node24</title>
-<g id="a_node24"><a xlink:href="_o_m_sim_decays_g_p_s_8hh.html" target="_top" xlink:title=" ">
+<g id="a_node24"><a xlink:href="_o_m_sim_decays_g_p_s_8hh.html" target="_top" xlink:title="Defines the IsotopeDecays class for the radioactive decays simulation.">
 <polygon fill="white" stroke="black" points="1042.5,-56.5 1042.5,-75.5 1164.5,-75.5 1164.5,-56.5 1042.5,-56.5"/>
 <text text-anchor="middle" x="1103.5" y="-63.5" font-family="Helvetica,sans-Serif" font-size="10.00">OMSimDecaysGPS.hh</text>
 </a>

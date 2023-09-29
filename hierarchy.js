@@ -58,7 +58,6 @@ var hierarchy =
     ] ],
     [ "G4VRestDiscreteProcess", null, [
       [ "G4RadioactiveDecay", "class_g4_radioactive_decay.html", null ],
-      [ "OMSimG4Scintillation", "class_o_m_sim_g4_scintillation.html", null ],
       [ "OMSimG4Scintillation", "class_o_m_sim_g4_scintillation.html", null ]
     ] ],
     [ "G4VUserDetectorConstruction", null, [

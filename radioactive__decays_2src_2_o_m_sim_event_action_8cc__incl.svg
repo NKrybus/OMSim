@@ -36,7 +36,7 @@
 <!-- Node3 -->
 <g id="node3" class="node">
 <title>Node3</title>
-<g id="a_node3"><a xlink:href="_o_m_sim_decays_analysis_8hh.html" target="_top" xlink:title=" ">
+<g id="a_node3"><a xlink:href="_o_m_sim_decays_analysis_8hh.html" target="_top" xlink:title="Defines the OMSimDecaysAnalysis class and DecayStats struct for the radioactive decays simulation.">
 <polygon fill="white" stroke="black" points="406.5,-112.5 406.5,-131.5 550.5,-131.5 550.5,-112.5 406.5,-112.5"/>
 <text text-anchor="middle" x="478.5" y="-119.5" font-family="Helvetica,sans-Serif" font-size="10.00">OMSimDecaysAnalysis.hh</text>
 </a>

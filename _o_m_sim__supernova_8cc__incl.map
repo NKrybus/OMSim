@@ -1,5 +1,5 @@
 <map id="OMSim_supernova.cc" name="OMSim_supernova.cc">
-<area shape="rect" id="node1" title=" " alt="" coords="2681,5,2843,32"/>
+<area shape="rect" id="node1" title="Main of the supernova study." alt="" coords="2681,5,2843,32"/>
 <area shape="rect" id="node2" href="$_o_m_sim_8hh.html" title="Main simulation class for the Optical Module (OM) simulation. This file defines the OMSim class,..." alt="" coords="1340,80,1429,107"/>
 <area shape="rect" id="node5" title=" " alt="" coords="5,155,252,181"/>
 <area shape="rect" id="node27" href="$_o_m_sim_s_n_analysis_8hh.html" title=" " alt="" coords="2681,80,2843,107"/>

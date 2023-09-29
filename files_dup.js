@@ -10,9 +10,6 @@ var files_dup =
       [ "Component", "structabc_detector_component_1_1_component.html", "structabc_detector_component_1_1_component" ]
     ] ],
     [ "CADMesh.hh", "_c_a_d_mesh_8hh.html", "_c_a_d_mesh_8hh" ],
-    [ "G4Scintillation.hh", "_g4_scintillation_8hh.html", [
-      [ "OMSimG4Scintillation", "class_o_m_sim_g4_scintillation.html", "class_o_m_sim_g4_scintillation" ]
-    ] ],
     [ "OMSim.cc", "_o_m_sim_8cc.html", null ],
     [ "OMSim.hh", "_o_m_sim_8hh.html", null ],
     [ "OMSim_effective_area.cc", "_o_m_sim__effective__area_8cc.html", "_o_m_sim__effective__area_8cc" ],

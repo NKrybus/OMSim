@@ -15,7 +15,7 @@ var searchData=
   ['decaystats_117',['DecayStats',['../struct_decay_stats.html',1,'']]],
   ['decaytablemap_118',['DecayTableMap',['../_o_m_sim_g4_radioactive_decay_8hh.html#a8d3a69544d741312b4836c149a7bbb06',1,'OMSimG4RadioactiveDecay.hh']]],
   ['degg_119',['DEGG',['../class_d_e_g_g.html',1,'DEGG'],['../class_d_e_g_g.html#a93dc17fd3d8523e54ad70a42925ff4f1',1,'DEGG::DEGG()']]],
-  ['deggharness_120',['DEggHarness',['../class_d_egg_harness.html',1,'DEggHarness'],['../class_d_egg_harness.html#a4eea1c387f801d7f30b1c7b447720190',1,'DEggHarness::DEggHarness()']]],
+  ['deggharness_120',['DEggHarness',['../class_d_egg_harness.html#a4eea1c387f801d7f30b1c7b447720190',1,'DEggHarness::DEggHarness()'],['../class_d_egg_harness.html',1,'DEggHarness']]],
   ['deletecomponent_121',['deleteComponent',['../classabc_detector_component.html#aba216e0e619ddc3810ab66700e05a04c',1,'abcDetectorComponent']]],
   ['delta_122',['Delta',['../class_o_m_sim_i_b_d.html#a34341db0cb842a795a18d52473f18e2e',1,'OMSimIBD']]],
   ['depth_5f_123',['depth_',['../class_c_a_d_mesh_1_1_file_1_1_lexer.html#adfbb0d0ea037b45418fd5aeffbb45ac2',1,'CADMesh::File::Lexer']]],
@@ -43,6 +43,6 @@ var searchData=
   ['doesnotmatchexactly_145',['DoesNotMatchExactly',['../_c_a_d_mesh_8hh.html#a37992436136e5076aa825d22091289cb',1,'CADMesh.hh']]],
   ['doubleellipsephotocathode_146',['doubleEllipsePhotocathode',['../class_o_m_sim_p_m_t_construction.html#ae3063f4ced2750fc98e74a2daf3bfc2b',1,'OMSimPMTConstruction']]],
   ['dry_5frun_5f_147',['dry_run_',['../class_c_a_d_mesh_1_1_file_1_1_lexer.html#aefb7987121e7bbb6f497f2e224fffdb8',1,'CADMesh::File::Lexer']]],
-  ['dumpinfo_148',['DumpInfo',['../class_o_m_sim_g4_scintillation.html#a5f629400ff4c836455b5841dad77ed23',1,'OMSimG4Scintillation::DumpInfo() const override'],['../class_o_m_sim_g4_scintillation.html#a5f629400ff4c836455b5841dad77ed23',1,'OMSimG4Scintillation::DumpInfo() const override']]],
-  ['dumpphysicstable_149',['DumpPhysicsTable',['../class_o_m_sim_g4_scintillation.html#a697ecdd386ee8628c4c95d2c79bd3506',1,'OMSimG4Scintillation::DumpPhysicsTable() const'],['../class_o_m_sim_g4_scintillation.html#a697ecdd386ee8628c4c95d2c79bd3506',1,'OMSimG4Scintillation::DumpPhysicsTable() const']]]
+  ['dumpinfo_148',['DumpInfo',['../class_o_m_sim_g4_scintillation.html#a5f629400ff4c836455b5841dad77ed23',1,'OMSimG4Scintillation']]],
+  ['dumpphysicstable_149',['DumpPhysicsTable',['../class_o_m_sim_g4_scintillation.html#a697ecdd386ee8628c4c95d2c79bd3506',1,'OMSimG4Scintillation']]]
 ];

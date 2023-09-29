@@ -1,8 +1,8 @@
 <map id="OMSimPhysicsList.cc" name="OMSimPhysicsList.cc">
 <area shape="rect" id="node1" title=" " alt="" coords="3640,5,3799,32"/>
 <area shape="rect" id="node2" title=" " alt="" coords="836,87,997,114"/>
-<area shape="rect" id="node3" href="$_o_m_sim_g4_scintillation_8hh.html" title=" " alt="" coords="1598,87,1782,114"/>
-<area shape="rect" id="node8" href="$_o_m_sim_g4_radioactive_decay_8hh.html" title=" " alt="" coords="1021,87,1244,114"/>
+<area shape="rect" id="node3" href="$_o_m_sim_g4_scintillation_8hh.html" title="Original Geant4 scintillation class modified to accept unlimited number of lifetimes." alt="" coords="1598,87,1782,114"/>
+<area shape="rect" id="node8" href="$_o_m_sim_g4_radioactive_decay_8hh.html" title="Modified version of the original Geant4 RadioactiveDecay class to define custom decay time." alt="" coords="1021,87,1244,114"/>
 <area shape="rect" id="node18" title=" " alt="" coords="1807,87,1973,114"/>
 <area shape="rect" id="node19" title=" " alt="" coords="1997,87,2143,114"/>
 <area shape="rect" id="node20" title=" " alt="" coords="2167,87,2325,114"/>

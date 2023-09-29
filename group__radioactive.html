@@ -145,11 +145,23 @@ Collaboration diagram for Radioactive decays:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="files"></a>
 Files</h2></td></tr>
+<tr class="memitem:_o_m_sim_decays_analysis_8hh"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_o_m_sim_decays_analysis_8hh.html">OMSimDecaysAnalysis.hh</a></td></tr>
+<tr class="memdesc:_o_m_sim_decays_analysis_8hh"><td class="mdescLeft">&#160;</td><td class="mdescRight">Defines the <a class="el" href="class_o_m_sim_decays_analysis.html" title="Singleton class responsible for managing, analysing, and saving decay-related data.">OMSimDecaysAnalysis</a> class and <a class="el" href="struct_decay_stats.html" title="A structure to store information about decays.">DecayStats</a> struct for the radioactive decays simulation. <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:_o_m_sim_decays_g_p_s_8hh"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_o_m_sim_decays_g_p_s_8hh.html">OMSimDecaysGPS.hh</a></td></tr>
+<tr class="memdesc:_o_m_sim_decays_g_p_s_8hh"><td class="mdescLeft">&#160;</td><td class="mdescRight">Defines the <a class="el" href="class_isotope_decays.html" title="A class for simulating isotope decays inside the pressure vessel and PMT glass.">IsotopeDecays</a> class for the radioactive decays simulation. <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:radioactive__decays_2include_2_o_m_sim_detector_construction_8hh"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="radioactive__decays_2include_2_o_m_sim_detector_construction_8hh.html">radioactive_decays/include/OMSimDetectorConstruction.hh</a></td></tr>
 <tr class="memdesc:radioactive__decays_2include_2_o_m_sim_detector_construction_8hh"><td class="mdescLeft">&#160;</td><td class="mdescRight">Defines the <a class="el" href="class_o_m_sim_detector_construction.html" title="Class for detector construction in the effective area simulation.">OMSimDetectorConstruction</a> class for the radioactive decays simulation. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:radioactive__decays_2include_2_o_m_sim_event_action_8hh"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="radioactive__decays_2include_2_o_m_sim_event_action_8hh.html">radioactive_decays/include/OMSimEventAction.hh</a></td></tr>
 <tr class="memdesc:radioactive__decays_2include_2_o_m_sim_event_action_8hh"><td class="mdescLeft">&#160;</td><td class="mdescRight">Defines the <a class="el" href="class_o_m_sim_event_action.html" title="Handles custom actions at the beginning and end of each event.">OMSimEventAction</a> and <a class="el" href="class_event_info_manager.html" title="Singleton class for managing event-specific information.">EventInfoManager</a> classes for the radioactive decays simulation. <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:_o_m_sim_g4_radioactive_decay_8hh"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_o_m_sim_g4_radioactive_decay_8hh.html">OMSimG4RadioactiveDecay.hh</a></td></tr>
+<tr class="memdesc:_o_m_sim_g4_radioactive_decay_8hh"><td class="mdescLeft">&#160;</td><td class="mdescRight">Modified version of the original Geant4 RadioactiveDecay class to define custom decay time. <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:_o_m_sim_g4_scintillation_8hh"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_o_m_sim_g4_scintillation_8hh.html">OMSimG4Scintillation.hh</a></td></tr>
+<tr class="memdesc:_o_m_sim_g4_scintillation_8hh"><td class="mdescLeft">&#160;</td><td class="mdescRight">Original Geant4 scintillation class modified to accept unlimited number of lifetimes. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:radioactive__decays_2include_2_o_m_sim_physics_list_8hh"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="radioactive__decays_2include_2_o_m_sim_physics_list_8hh.html">radioactive_decays/include/OMSimPhysicsList.hh</a></td></tr>
 <tr class="memdesc:radioactive__decays_2include_2_o_m_sim_physics_list_8hh"><td class="mdescLeft">&#160;</td><td class="mdescRight">Defines the <a class="el" href="class_o_m_sim_physics_list.html" title="Custom physics list for optical photon processes.">OMSimPhysicsList</a> class for the radioactive decays simulation. <br /></td></tr>
@@ -187,7 +199,7 @@ Classes</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Fri Sep 29 2023 14:14:33 for OMSim by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Fri Sep 29 2023 14:45:52 for OMSim by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

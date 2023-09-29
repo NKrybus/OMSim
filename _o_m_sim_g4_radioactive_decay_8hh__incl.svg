@@ -12,7 +12,7 @@
 <!-- Node1 -->
 <g id="node1" class="node">
 <title>Node1</title>
-<g id="a_node1"><a xlink:title=" ">
+<g id="a_node1"><a xlink:title="Modified version of the original Geant4 RadioactiveDecay class to define custom decay time.">
 <polygon fill="#bfbfbf" stroke="black" points="457,-56.5 457,-75.5 624,-75.5 624,-56.5 457,-56.5"/>
 <text text-anchor="middle" x="540.5" y="-63.5" font-family="Helvetica,sans-Serif" font-size="10.00">OMSimG4RadioactiveDecay.hh</text>
 </a>
