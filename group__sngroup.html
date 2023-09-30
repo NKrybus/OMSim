@@ -190,7 +190,7 @@ Flux Weight:</h2>
 <p>\begin{equation} \label{eq:sn_weight_flux} W_{\mathrm{flux}}(d) = \frac{1}{N_{\mathrm{gen}}} \cdot \frac{r^2}{d^2} \cdot \int \frac{L(t)}{&lt;E(t)&gt;} dt, \end{equation} where \(r\) is the cylindrical generation volume’s radius, \(d\) is the distance from Earth where the CCSN is assumed to occur, and \(N_{\mathrm{gen}}\) is the number of generated events.</p>
 <h2><a class="anchor" id="EffWeight"></a>
 Effective Weight:</h2>
-<p>\begin{equation} \label{eq:sn_weight_eff} W_{\mathrm{eff}} = N_{\mathrm{modules}} \cdot \frac{&lt;V_{\mathrm{eff}}&gt;(m)}{V_{\mathrm{eff}}(m,z_{\mathrm{sim}})}, \end{equation} where \(N_{\mathrm{modules}}\) is the total modules in the simulated detector, \(V_{\mathrm{eff}}(m, z_{\mathrm{sim}})\) is the effective volume at the simulation depth, and \(&lt;V&gt;_{\mathrm{eff}}(m)\) is the mean effective volume for all modules in the detector. The term \(m\) represents multiplicity, defined as the count of different PMTs within a single module that detected the event within a specific time window.</p>
+<p>\begin{equation} \label{eq:sn_weight_eff} W_{\mathrm{eff}} = N_{\mathrm{modules}} \cdot \frac{&lt;V_{\mathrm{eff}}(m)&gt;}{V_{\mathrm{eff}}(m,z_{\mathrm{sim}})}, \end{equation} where \(N_{\mathrm{modules}}\) is the total modules in the simulated detector, \(V_{\mathrm{eff}}(m, z_{\mathrm{sim}})\) is the effective volume at the simulation depth, and \(&lt;V_{\mathrm{eff}}(m)&gt;\) is the mean effective volume for all modules in simulated detector. The term \(m\) represents multiplicity, defined as the count of different PMTs within a single module that detected the event within a specific time window.</p>
 <p>The effective volume can be calculated in different ways. Old simulations of the <a class="el" href="classm_d_o_m.html">mDOM</a>, described in <a href="https://zenodo.org/record/8107177">this thesis, section 6.3</a>, were used in past studies. A linear regression of the effective volume concerning the absorption length, derived from various depths, provides each depth's effective volume. Although it is advisable to redo these simulations with a current <a class="el" href="classm_d_o_m.html">mDOM</a> model, users can temporarily use the old data with a regression line of \(V_{\mathrm{eff}} = b \cdot x + c\), where \(x = 1/a\) is the inverse of the absorption length. The coefficients \(b\) and \(c\), depending on the event's multiplicity, were obtained as follows:</p>
 <pre class="fragment">*  | multiplicity |     b (slope, m^2)         |      c (m^3)     |
 *  |--------------|----------------------------|------------------|
@@ -213,7 +213,7 @@ Files</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Sat Sep 30 2023 13:55:51 for OMSim by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sat Sep 30 2023 13:58:53 for OMSim by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>
