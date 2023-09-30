@@ -116,6 +116,7 @@ $(document).ready(function(){initNavTree('class_o_m_sim_hit_manager.html',''); i
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="#pri-methods">Private Member Functions</a> &#124;
 <a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="class_o_m_sim_hit_manager-members.html">List of all members</a>  </div>
@@ -159,6 +160,12 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memdesc:a50c9ec0b924aa860533de79aa6fd3a47"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the singleton instance of the <a class="el" href="class_o_m_sim_hit_manager.html" title="Manages detected photon information.">OMSimHitManager</a>.  <a href="class_o_m_sim_hit_manager.html#a50c9ec0b924aa860533de79aa6fd3a47">More...</a><br /></td></tr>
 <tr class="separator:a50c9ec0b924aa860533de79aa6fd3a47"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Public Attributes</h2></td></tr>
+<tr class="memitem:a5b5170bb63b04190829aeb79183a5d3f"><td class="memItemLeft" align="right" valign="top">std::map&lt; G4int, <a class="el" href="struct_hit_stats.html">HitStats</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_m_sim_hit_manager.html#a5b5170bb63b04190829aeb79183a5d3f">mModuleHits</a></td></tr>
+<tr class="memdesc:a5b5170bb63b04190829aeb79183a5d3f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Map of a <a class="el" href="struct_hit_stats.html" title="A structure to store information about detected photon hits.">HitStats</a> containing hit information for each simulated optical module.  <a href="class_o_m_sim_hit_manager.html#a5b5170bb63b04190829aeb79183a5d3f">More...</a><br /></td></tr>
+<tr class="separator:a5b5170bb63b04190829aeb79183a5d3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
 <tr class="memitem:a7590a8dd5b3b9df30c7ca92bdecf7277"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_m_sim_hit_manager.html#a7590a8dd5b3b9df30c7ca92bdecf7277">OMSimHitManager</a> ()=default</td></tr>
@@ -175,9 +182,6 @@ Private Attributes</h2></td></tr>
 <tr class="memitem:a68b3614293ca71096ff48c4fc5943de2"><td class="memItemLeft" align="right" valign="top">std::map&lt; G4int, G4int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_m_sim_hit_manager.html#a68b3614293ca71096ff48c4fc5943de2">mNumPMTs</a></td></tr>
 <tr class="memdesc:a68b3614293ca71096ff48c4fc5943de2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Map of number of PMTs in the used optical modules.  <a href="class_o_m_sim_hit_manager.html#a68b3614293ca71096ff48c4fc5943de2">More...</a><br /></td></tr>
 <tr class="separator:a68b3614293ca71096ff48c4fc5943de2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5b5170bb63b04190829aeb79183a5d3f"><td class="memItemLeft" align="right" valign="top">std::map&lt; G4int, <a class="el" href="struct_hit_stats.html">HitStats</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_m_sim_hit_manager.html#a5b5170bb63b04190829aeb79183a5d3f">mModuleHits</a></td></tr>
-<tr class="memdesc:a5b5170bb63b04190829aeb79183a5d3f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Map of a <a class="el" href="struct_hit_stats.html" title="A structure to store information about detected photon hits.">HitStats</a> containing hit information for each simulated optical module.  <a href="class_o_m_sim_hit_manager.html#a5b5170bb63b04190829aeb79183a5d3f">More...</a><br /></td></tr>
-<tr class="separator:a5b5170bb63b04190829aeb79183a5d3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a7590a8dd5b3b9df30c7ca92bdecf7277"></a>
@@ -582,19 +586,11 @@ Private Attributes</h2></td></tr>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">std::map&lt;G4int, <a class="el" href="struct_hit_stats.html">HitStats</a>&gt; OMSimHitManager::mModuleHits</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 </div>
@@ -631,7 +627,7 @@ Private Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="class_o_m_sim_hit_manager.html">OMSimHitManager</a></li>
-    <li class="footer">Generated on Sat Sep 30 2023 13:58:53 for OMSim by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sat Sep 30 2023 17:51:43 for OMSim by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

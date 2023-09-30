@@ -130,7 +130,7 @@ $(document).ready(function(){initNavTree('class_o_m_sim_s_n_analysis.html',''); 
   <tr><td class="entry"><a class="el" href="class_o_m_sim_s_n_analysis.html#aeb23ad0ec73c5450f824f2295c4db4b9">foundPhoton</a></td><td class="entry"><a class="el" href="class_o_m_sim_s_n_analysis.html">OMSimSNAnalysis</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="class_o_m_sim_s_n_analysis.html#a104b6afd769a07cdfc7b1583e4804fef">getInstance</a>()</td><td class="entry"><a class="el" href="class_o_m_sim_s_n_analysis.html">OMSimSNAnalysis</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">static</span></td></tr>
   <tr><td class="entry"><a class="el" href="class_o_m_sim_s_n_analysis.html#a7df627ffe5cfdbaeb0bb8e7ff8e26dd0">gQEweigh</a></td><td class="entry"><a class="el" href="class_o_m_sim_s_n_analysis.html">OMSimSNAnalysis</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="class_o_m_sim_s_n_analysis.html#a20a10b17b586043b7baaa3c3cc6837ba">Helper_AnalyzeEvent</a>(EvtStat &amp;this_evtStat)</td><td class="entry"><a class="el" href="class_o_m_sim_s_n_analysis.html">OMSimSNAnalysis</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_o_m_sim_s_n_analysis.html#a1e9cddc88758ff76f451a0f6dad95b0a">Helper_AnalyzeEvent</a>(EvtStat &amp;this_evtStat, std::map&lt; G4int, HitStats &gt; pModuleHits)</td><td class="entry"><a class="el" href="class_o_m_sim_s_n_analysis.html">OMSimSNAnalysis</a></td><td class="entry"></td></tr>
   <tr><td class="entry"><a class="el" href="class_o_m_sim_s_n_analysis.html#a88d07c584b066264402eb68249c73660">Helper_ResetEvent</a>(EvtStat &amp;this_evtStat)</td><td class="entry"><a class="el" href="class_o_m_sim_s_n_analysis.html">OMSimSNAnalysis</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="class_o_m_sim_s_n_analysis.html#a867995b1f1cae9cc7ad1fc69a2fa275a">hitStats</a></td><td class="entry"><a class="el" href="class_o_m_sim_s_n_analysis.html">OMSimSNAnalysis</a></td><td class="entry"></td></tr>
   <tr><td class="entry"><a class="el" href="class_o_m_sim_s_n_analysis.html#a00ba32c0956e438e15344982465b9992">InfoHeader</a>()</td><td class="entry"><a class="el" href="class_o_m_sim_s_n_analysis.html">OMSimSNAnalysis</a></td><td class="entry"></td></tr>
@@ -156,7 +156,7 @@ $(document).ready(function(){initNavTree('class_o_m_sim_s_n_analysis.html',''); 
   <tr><td class="entry"><a class="el" href="class_o_m_sim_s_n_analysis.html#aa68d0e90eb58b85e1d75ae8cf56dbb5e">TotHits</a></td><td class="entry"><a class="el" href="class_o_m_sim_s_n_analysis.html">OMSimSNAnalysis</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="class_o_m_sim_s_n_analysis.html#ab91bf3f7d5e88265557bfd815d922d76">weigh</a></td><td class="entry"><a class="el" href="class_o_m_sim_s_n_analysis.html">OMSimSNAnalysis</a></td><td class="entry"></td></tr>
   <tr><td class="entry"><a class="el" href="class_o_m_sim_s_n_analysis.html#a831d168d0555363c428ef757b9594f9d">WriteHeaders</a>()</td><td class="entry"><a class="el" href="class_o_m_sim_s_n_analysis.html">OMSimSNAnalysis</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="class_o_m_sim_s_n_analysis.html#aae4d06cf382a8b681ac6a4239a89b2fd">Writer_data</a>(std::fstream &amp;thisfile, EvtStat &amp;this_evtStat)</td><td class="entry"><a class="el" href="class_o_m_sim_s_n_analysis.html">OMSimSNAnalysis</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_o_m_sim_s_n_analysis.html#a377860961a569510c908d35f00d6051a">Writer_data</a>(EvtStat &amp;this_evtStat, std::map&lt; G4int, HitStats &gt; pModuleHits)</td><td class="entry"><a class="el" href="class_o_m_sim_s_n_analysis.html">OMSimSNAnalysis</a></td><td class="entry"></td></tr>
   <tr><td class="entry"><a class="el" href="class_o_m_sim_s_n_analysis.html#aa8b4bac60356048e3002c81669df2b6a">Writer_InfoFile</a>()</td><td class="entry"><a class="el" href="class_o_m_sim_s_n_analysis.html">OMSimSNAnalysis</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="class_o_m_sim_s_n_analysis.html#a2f41a78cd8405b6cca9d126178edb639">~OMSimSNAnalysis</a>()</td><td class="entry"><a class="el" href="class_o_m_sim_s_n_analysis.html">OMSimSNAnalysis</a></td><td class="entry"></td></tr>
 </table></div><!-- contents -->
@@ -164,7 +164,7 @@ $(document).ready(function(){initNavTree('class_o_m_sim_s_n_analysis.html',''); 
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Sat Sep 30 2023 13:58:53 for OMSim by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sat Sep 30 2023 17:51:43 for OMSim by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

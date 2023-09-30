@@ -30,6 +30,11 @@ std\+::vector$<$ int $>$ \mbox{\hyperlink{class_o_m_sim_hit_manager_ae6b66371cdf
 \item 
 static \mbox{\hyperlink{class_o_m_sim_hit_manager}{OMSim\+Hit\+Manager}} \& \mbox{\hyperlink{class_o_m_sim_hit_manager_a50c9ec0b924aa860533de79aa6fd3a47}{get\+Instance}} ()
 \begin{DoxyCompactList}\small\item\em Returns the singleton instance of the \mbox{\hyperlink{class_o_m_sim_hit_manager}{OMSim\+Hit\+Manager}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::map$<$ G4int, \mbox{\hyperlink{struct_hit_stats}{Hit\+Stats}} $>$ \mbox{\hyperlink{class_o_m_sim_hit_manager_a5b5170bb63b04190829aeb79183a5d3f}{m\+Module\+Hits}}
+\begin{DoxyCompactList}\small\item\em Map of a \mbox{\hyperlink{struct_hit_stats}{Hit\+Stats}} containing hit information for each simulated optical module. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Private Member Functions}
 \begin{DoxyCompactItemize}
 \item 
@@ -45,9 +50,7 @@ static \mbox{\hyperlink{class_o_m_sim_hit_manager}{OMSim\+Hit\+Manager}} \& \mbo
 \begin{DoxyCompactItemize}
 \item 
 std\+::map$<$ G4int, G4int $>$ \mbox{\hyperlink{class_o_m_sim_hit_manager_a68b3614293ca71096ff48c4fc5943de2}{m\+Num\+PMTs}}
-\begin{DoxyCompactList}\small\item\em Map of number of PMTs in the used optical modules. \end{DoxyCompactList}\item 
-std\+::map$<$ G4int, \mbox{\hyperlink{struct_hit_stats}{Hit\+Stats}} $>$ \mbox{\hyperlink{class_o_m_sim_hit_manager_a5b5170bb63b04190829aeb79183a5d3f}{m\+Module\+Hits}}
-\begin{DoxyCompactList}\small\item\em Map of a \mbox{\hyperlink{struct_hit_stats}{Hit\+Stats}} containing hit information for each simulated optical module. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Map of number of PMTs in the used optical modules. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{Constructor \& Destructor Documentation}
@@ -210,7 +213,7 @@ A reference to the singleton instance.
 \index{OMSimHitManager@{OMSimHitManager}!mModuleHits@{mModuleHits}}
 \index{mModuleHits@{mModuleHits}!OMSimHitManager@{OMSimHitManager}}
 \doxysubsubsection{\texorpdfstring{mModuleHits}{mModuleHits}}
-{\footnotesize\ttfamily std\+::map$<$G4int, \mbox{\hyperlink{struct_hit_stats}{Hit\+Stats}}$>$ OMSim\+Hit\+Manager\+::m\+Module\+Hits\hspace{0.3cm}{\ttfamily [private]}}
+{\footnotesize\ttfamily std\+::map$<$G4int, \mbox{\hyperlink{struct_hit_stats}{Hit\+Stats}}$>$ OMSim\+Hit\+Manager\+::m\+Module\+Hits}
 
 \mbox{\Hypertarget{class_o_m_sim_hit_manager_a68b3614293ca71096ff48c4fc5943de2}\label{class_o_m_sim_hit_manager_a68b3614293ca71096ff48c4fc5943de2}} 
 \index{OMSimHitManager@{OMSimHitManager}!mNumPMTs@{mNumPMTs}}

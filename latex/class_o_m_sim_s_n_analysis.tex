@@ -21,7 +21,7 @@ void \mbox{\hyperlink{class_o_m_sim_s_n_analysis_a6ec61f5bdd1b26a776aad2b39994ff
 \item 
 void \mbox{\hyperlink{class_o_m_sim_s_n_analysis_ae6a94c32476b2b313505dbfbaca05809}{Analyze\+Event}} ()
 \item 
-void \mbox{\hyperlink{class_o_m_sim_s_n_analysis_a20a10b17b586043b7baaa3c3cc6837ba}{Helper\+\_\+\+Analyze\+Event}} (\mbox{\hyperlink{struct_evt_stat}{Evt\+Stat}} \&this\+\_\+evt\+Stat)
+void \mbox{\hyperlink{class_o_m_sim_s_n_analysis_a1e9cddc88758ff76f451a0f6dad95b0a}{Helper\+\_\+\+Analyze\+Event}} (\mbox{\hyperlink{struct_evt_stat}{Evt\+Stat}} \&this\+\_\+evt\+Stat, std\+::map$<$ G4int, \mbox{\hyperlink{struct_hit_stats}{Hit\+Stats}} $>$ p\+Module\+Hits)
 \item 
 void \mbox{\hyperlink{class_o_m_sim_s_n_analysis_a831d168d0555363c428ef757b9594f9d}{Write\+Headers}} ()
 \item 
@@ -31,7 +31,7 @@ void \mbox{\hyperlink{class_o_m_sim_s_n_analysis_a8e7e4baec5f63e5f1a8a9576c11c02
 \item 
 void \mbox{\hyperlink{class_o_m_sim_s_n_analysis_aa8b4bac60356048e3002c81669df2b6a}{Writer\+\_\+\+Info\+File}} ()
 \item 
-void \mbox{\hyperlink{class_o_m_sim_s_n_analysis_aae4d06cf382a8b681ac6a4239a89b2fd}{Writer\+\_\+data}} (std\+::fstream \&thisfile, \mbox{\hyperlink{struct_evt_stat}{Evt\+Stat}} \&this\+\_\+evt\+Stat)
+void \mbox{\hyperlink{class_o_m_sim_s_n_analysis_a377860961a569510c908d35f00d6051a}{Writer\+\_\+data}} (\mbox{\hyperlink{struct_evt_stat}{Evt\+Stat}} \&this\+\_\+evt\+Stat, std\+::map$<$ G4int, \mbox{\hyperlink{struct_hit_stats}{Hit\+Stats}} $>$ p\+Module\+Hits)
 \item 
 void \mbox{\hyperlink{class_o_m_sim_s_n_analysis_a88d07c584b066264402eb68249c73660}{Helper\+\_\+\+Reset\+Event}} (\mbox{\hyperlink{struct_evt_stat}{Evt\+Stat}} \&this\+\_\+evt\+Stat)
 \end{DoxyCompactItemize}
@@ -136,11 +136,11 @@ G4double \mbox{\hyperlink{class_o_m_sim_s_n_analysis_ae5acef1901e5fa1e10f8d10583
 \begin{DoxyReturn}{Returns}
 A reference to the singleton instance. 
 \end{DoxyReturn}
-\mbox{\Hypertarget{class_o_m_sim_s_n_analysis_a20a10b17b586043b7baaa3c3cc6837ba}\label{class_o_m_sim_s_n_analysis_a20a10b17b586043b7baaa3c3cc6837ba}} 
+\mbox{\Hypertarget{class_o_m_sim_s_n_analysis_a1e9cddc88758ff76f451a0f6dad95b0a}\label{class_o_m_sim_s_n_analysis_a1e9cddc88758ff76f451a0f6dad95b0a}} 
 \index{OMSimSNAnalysis@{OMSimSNAnalysis}!Helper\_AnalyzeEvent@{Helper\_AnalyzeEvent}}
 \index{Helper\_AnalyzeEvent@{Helper\_AnalyzeEvent}!OMSimSNAnalysis@{OMSimSNAnalysis}}
 \doxysubsubsection{\texorpdfstring{Helper\_AnalyzeEvent()}{Helper\_AnalyzeEvent()}}
-{\footnotesize\ttfamily void OMSim\+SNAnalysis\+::\+Helper\+\_\+\+Analyze\+Event (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_evt_stat}{Evt\+Stat}} \&}]{this\+\_\+evt\+Stat }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void OMSim\+SNAnalysis\+::\+Helper\+\_\+\+Analyze\+Event (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_evt_stat}{Evt\+Stat}} \&}]{this\+\_\+evt\+Stat,  }\item[{std\+::map$<$ G4int, \mbox{\hyperlink{struct_hit_stats}{Hit\+Stats}} $>$}]{p\+Module\+Hits }\end{DoxyParamCaption})}
 
 \mbox{\Hypertarget{class_o_m_sim_s_n_analysis_a88d07c584b066264402eb68249c73660}\label{class_o_m_sim_s_n_analysis_a88d07c584b066264402eb68249c73660}} 
 \index{OMSimSNAnalysis@{OMSimSNAnalysis}!Helper\_ResetEvent@{Helper\_ResetEvent}}
@@ -166,11 +166,11 @@ A reference to the singleton instance.
 \doxysubsubsection{\texorpdfstring{WriteHeaders()}{WriteHeaders()}}
 {\footnotesize\ttfamily void OMSim\+SNAnalysis\+::\+Write\+Headers (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
-\mbox{\Hypertarget{class_o_m_sim_s_n_analysis_aae4d06cf382a8b681ac6a4239a89b2fd}\label{class_o_m_sim_s_n_analysis_aae4d06cf382a8b681ac6a4239a89b2fd}} 
+\mbox{\Hypertarget{class_o_m_sim_s_n_analysis_a377860961a569510c908d35f00d6051a}\label{class_o_m_sim_s_n_analysis_a377860961a569510c908d35f00d6051a}} 
 \index{OMSimSNAnalysis@{OMSimSNAnalysis}!Writer\_data@{Writer\_data}}
 \index{Writer\_data@{Writer\_data}!OMSimSNAnalysis@{OMSimSNAnalysis}}
 \doxysubsubsection{\texorpdfstring{Writer\_data()}{Writer\_data()}}
-{\footnotesize\ttfamily void OMSim\+SNAnalysis\+::\+Writer\+\_\+data (\begin{DoxyParamCaption}\item[{std\+::fstream \&}]{thisfile,  }\item[{\mbox{\hyperlink{struct_evt_stat}{Evt\+Stat}} \&}]{this\+\_\+evt\+Stat }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void OMSim\+SNAnalysis\+::\+Writer\+\_\+data (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_evt_stat}{Evt\+Stat}} \&}]{this\+\_\+evt\+Stat,  }\item[{std\+::map$<$ G4int, \mbox{\hyperlink{struct_hit_stats}{Hit\+Stats}} $>$}]{p\+Module\+Hits }\end{DoxyParamCaption})}
 
 \mbox{\Hypertarget{class_o_m_sim_s_n_analysis_aa8b4bac60356048e3002c81669df2b6a}\label{class_o_m_sim_s_n_analysis_aa8b4bac60356048e3002c81669df2b6a}} 
 \index{OMSimSNAnalysis@{OMSimSNAnalysis}!Writer\_InfoFile@{Writer\_InfoFile}}
