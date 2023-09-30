@@ -77,6 +77,7 @@ var searchData=
   ['substractflashers_939',['substractFlashers',['../classm_d_o_m.html#a7096fa5b925a0be159c56f415daf8f89',1,'mDOM']]],
   ['substractharnessplug_940',['substractHarnessPlug',['../classm_d_o_m.html#a3d936da0f23132258600d0825d3998f5',1,'mDOM']]],
   ['substracttovolume_941',['substractToVolume',['../classabc_detector_component.html#a53c7979298ef9eda66b44f0a3c4f2e6b',1,'abcDetectorComponent::substractToVolume(G4VSolid *pInputVolume, G4Transform3D pTrans, G4String pNewVolumeName)'],['../classabc_detector_component.html#aaf0d85ee9a57f6bda0d48c4dad2b6dc5',1,'abcDetectorComponent::substractToVolume(G4VSolid *pInputVolume, G4ThreeVector pSubstractionPos, G4RotationMatrix pSubstractionRot, G4String pNewVolumeName)']]],
-  ['supernovaneutrinosimulation_942',['SupernovaNeutrinoSimulation',['../_o_m_sim__supernova_8cc.html#a2ed660d3245a0d96041b77dfc92ba000',1,'OMSim_supernova.cc']]],
-  ['supportstructure_943',['supportStructure',['../classm_d_o_m.html#a1f14d2c150c096e608d244a125c5b33e',1,'mDOM']]]
+  ['supernova_20studies_942',['Supernova Studies',['../group__sngroup.html',1,'']]],
+  ['supernovaneutrinosimulation_943',['SupernovaNeutrinoSimulation',['../_o_m_sim__supernova_8cc.html#a2ed660d3245a0d96041b77dfc92ba000',1,'OMSim_supernova.cc']]],
+  ['supportstructure_944',['supportStructure',['../classm_d_o_m.html#a1f14d2c150c096e608d244a125c5b33e',1,'mDOM']]]
 ];

@@ -10,7 +10,7 @@ var indexSectionsWithContent =
   7: "t",
   8: "dopstu",
   9: "abcdefilmnoprstuw",
-  10: "beor",
+  10: "beors",
   11: "ot"
 };
 
