@@ -5,6 +5,17 @@
 Comprehensive analysis and simulations focusing on the detection of CCSN neutrinos with segmented sensors.  
 
 
+Collaboration diagram for Supernova Studies\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group__sngroup}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Detailed Description}
 This simulation is designed to emulate the detection of Core Collapse Supernova (CCSN or simply SN in the following) neutrinos using segmented sensors. It directly generates particles resulting from Inverse Beta Decay (IBD) and Electron Neutrino-\/\+Electron Elastic Scattering (ENES).
 
 
@@ -81,4 +92,21 @@ The effective volume can be calculated in different ways. Old simulations of the
 *  \end{DoxyVerb}
 
 
-Note that, for more than 5 PMTs, the same fit line is employed due to insufficient statistics at higher PMTs in the effective volume simulation. Additionally, since the absorption length depends on the wavelength, the fits above were obtained assuming a wavelength of $\lambda = 400\,nm$. 
+Note that, for more than 5 PMTs, the same fit line is employed due to insufficient statistics at higher PMTs in the effective volume simulation. Additionally, since the absorption length depends on the wavelength, the fits above were obtained assuming a wavelength of $\lambda = 400\,nm$. \doxysubsection*{Files}
+\begin{DoxyCompactItemize}
+\item 
+file \mbox{\hyperlink{_o_m_sim_s_n_tools_8hh}{OMSim\+SNTools.\+hh}}
+\begin{DoxyCompactList}\small\item\em Provides the definition for the {\ttfamily \mbox{\hyperlink{class_o_m_sim_s_n_tools}{OMSim\+SNTools}}} class, centralizing utility methods for Supernova (SN) neutrino interactions. \end{DoxyCompactList}\item 
+file \mbox{\hyperlink{_o_m_sim__supernova_8cc}{OMSim\+\_\+supernova.\+cc}}
+\begin{DoxyCompactList}\small\item\em Main of the supernova study. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_o_m_sim_detector_construction}{OMSim\+Detector\+Construction}}
+\begin{DoxyCompactList}\small\item\em Class for detector construction in the effective area simulation. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_o_m_sim_e_n_e_s}{OMSim\+ENES}}
+\begin{DoxyCompactList}\small\item\em Class in charge of generating electrons from Electron-\/electron\+\_\+\+Neutrino Elastic Scattering (ENES) nu\+\_\+e+e -\/$>$ nu\+\_\+e+e of supernova antineutrino interactions. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_o_m_sim_i_b_d}{OMSim\+IBD}}
+\begin{DoxyCompactList}\small\item\em Class in charge of generating positrons from IBD of supernova antineutrino interactions. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_o_m_sim_s_n_tools}{OMSim\+SNTools}}
+\begin{DoxyCompactList}\small\item\em Provides utility methods for generating ENES and IBD interactions. \end{DoxyCompactList}\end{DoxyCompactItemize}

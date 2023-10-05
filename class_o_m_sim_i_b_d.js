@@ -2,7 +2,7 @@ var class_o_m_sim_i_b_d =
 [
     [ "OMSimIBD", "class_o_m_sim_i_b_d.html#a5d6c43352e94f00acf16a4e27e2dff3a", null ],
     [ "~OMSimIBD", "class_o_m_sim_i_b_d.html#a876dcf3f85bd6b17b37ab2b81f08153e", null ],
-    [ "DistFunction", "class_o_m_sim_i_b_d.html#abeedcff1e45bb0e9fc98ea2e8b9ddea9", null ],
+    [ "AngularDistribution", "class_o_m_sim_i_b_d.html#a9768fd2b3c90aa8c05d988f4374e9e1a", null ],
     [ "GeneratePrimaries", "class_o_m_sim_i_b_d.html#a50ac39b481be2a879c73f94e201ef6da", null ],
     [ "PositronEnergy", "class_o_m_sim_i_b_d.html#ab6f7d3cfb6864c2c501e13744cab85fc", null ],
     [ "TotalCrossSection", "class_o_m_sim_i_b_d.html#a8e96874ed7339fb1861d1d69ce4b865e", null ],

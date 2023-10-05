@@ -41,9 +41,7 @@ var files_dup =
       [ "effectiveAreaResult", "structeffective_area_result.html", "structeffective_area_result" ]
     ] ],
     [ "OMSimENES.cc", "_o_m_sim_e_n_e_s_8cc.html", null ],
-    [ "OMSimENES.hh", "_o_m_sim_e_n_e_s_8hh.html", [
-      [ "OMSimENES", "class_o_m_sim_e_n_e_s.html", "class_o_m_sim_e_n_e_s" ]
-    ] ],
+    [ "OMSimENES.hh", "_o_m_sim_e_n_e_s_8hh.html", null ],
     [ "effective_area/src/OMSimEventAction.cc", "effective__area_2src_2_o_m_sim_event_action_8cc.html", null ],
     [ "radioactive_decays/src/OMSimEventAction.cc", "radioactive__decays_2src_2_o_m_sim_event_action_8cc.html", null ],
     [ "supernova/src/OMSimEventAction.cc", "supernova_2src_2_o_m_sim_event_action_8cc.html", null ],
