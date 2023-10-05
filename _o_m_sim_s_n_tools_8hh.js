@@ -1,6 +1,6 @@
 var _o_m_sim_s_n_tools_8hh =
 [
-    [ "GetSlopes", "_o_m_sim_s_n_tools_8hh.html#a201de1f13cd772baa18a6e5aa6b43e39", null ],
-    [ "MakeEnergyDistribution", "_o_m_sim_s_n_tools_8hh.html#a68633e240d3069acb607feb14123e5da", null ],
-    [ "NumberOfTargets", "_o_m_sim_s_n_tools_8hh.html#a81c5d05a6eeda1b946ebde8d7128f66b", null ]
+    [ "energyDistributionVector", "_o_m_sim_s_n_tools_8hh.html#aaaf1542788b56f15c5d5838c2580f98e", null ],
+    [ "getSlopes", "_o_m_sim_s_n_tools_8hh.html#a87bfae294d50a9d9ae33e1688d2e6496", null ],
+    [ "numberOfTargets", "_o_m_sim_s_n_tools_8hh.html#a6b7b84f1c8659b92c242768690a24ce8", null ]
 ];

@@ -1,7 +1,7 @@
 var searchData=
 [
   ['wavelengthinterpolatedvalue_1612',['wavelengthInterpolatedValue',['../class_o_m_sim_p_m_t_response.html#a39d958aa616a6bdd0c8a73211d834503',1,'OMSimPMTResponse']]],
-  ['weighme_1613',['WeighMe',['../class_o_m_sim_s_n_tools.html#a877d8502b2e5ac2c4ef03ba51860ba35',1,'OMSimSNTools']]],
+  ['weight_1613',['weight',['../class_o_m_sim_s_n_tools.html#a518a596145fbc96c4cfe153e60bd7f7e',1,'OMSimSNTools']]],
   ['weightlifetimesamplitudes_1614',['weightLifeTimesAmplitudes',['../class_scintillation_properties.html#a5e7da3437242c6c025edff017adf2c1b',1,'ScintillationProperties']]],
   ['writedecayinformation_1615',['writeDecayInformation',['../class_o_m_sim_decays_analysis.html#a6fa1755be622573173e625460f807201',1,'OMSimDecaysAnalysis']]],
   ['writeheader_1616',['writeHeader',['../class_o_m_sim_effective_area_analyisis.html#a8d49aa6cccb6e98ebb9a084284ce47b9',1,'OMSimEffectiveAreaAnalyisis']]],

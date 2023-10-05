@@ -1,6 +1,8 @@
 var searchData=
 [
-  ['sample_5ftime_1541',['sample_time',['../class_o_m_sim_g4_scintillation.html#a8039738ffd150682db6e5160cb0af1bf',1,'OMSimG4Scintillation']]],
+  ['sample_5ftime_1539',['sample_time',['../class_o_m_sim_g4_scintillation.html#a8039738ffd150682db6e5160cb0af1bf',1,'OMSimG4Scintillation']]],
+  ['sampleenergy_1540',['sampleEnergy',['../class_o_m_sim_s_n_tools.html#a48caade81da87bfc2a0ac9da94b57110',1,'OMSimSNTools']]],
+  ['samplevaluefromdistribution_1541',['sampleValueFromDistribution',['../class_o_m_sim_s_n_tools.html#afe3ad7c2e7664ff456a98e13b394d17d',1,'OMSimSNTools']]],
   ['scanndatadirectory_1542',['scannDataDirectory',['../class_input_data_manager.html#ac65312ce694a331615ba2d16bdddc78e',1,'InputDataManager']]],
   ['scintillationproperties_1543',['ScintillationProperties',['../class_scintillation_properties.html#a03dca72bd4861b8500283dc15c0864e0',1,'ScintillationProperties']]],
   ['searchfolders_1544',['searchFolders',['../class_input_data_manager.html#a7376d0446251d09973d90fb370a9373d',1,'InputDataManager']]],
@@ -21,7 +23,7 @@ var searchData=
   ['setnewvalue_1559',['SetNewValue',['../class_o_m_sim_primary_generator_messenger.html#a6c908ac645d5b08ad5ba2271272ac75f',1,'OMSimPrimaryGeneratorMessenger']]],
   ['setnucleuslimits_1560',['SetNucleusLimits',['../class_g4_radioactive_decay.html#adfc1885bba313fea9c5974dc280c0115',1,'G4RadioactiveDecay']]],
   ['setnumberofpmts_1561',['setNumberOfPMTs',['../class_o_m_sim_hit_manager.html#aeabbd61eeb69b719cbb2adc85e6e0d6b',1,'OMSimHitManager']]],
-  ['setoffset_1562',['SetOffset',['../class_c_a_d_mesh_1_1_c_a_d_mesh_template.html#a927ce172aa578d6cf232a788e8c30327',1,'CADMesh::CADMeshTemplate::SetOffset(G4double x, G4double y, G4double z)'],['../class_c_a_d_mesh_1_1_c_a_d_mesh_template.html#a6b0adece76056fe53ec1d7cdc3bd6895',1,'CADMesh::CADMeshTemplate::SetOffset(G4ThreeVector offset)']]],
+  ['setoffset_1562',['SetOffset',['../class_c_a_d_mesh_1_1_c_a_d_mesh_template.html#a6b0adece76056fe53ec1d7cdc3bd6895',1,'CADMesh::CADMeshTemplate::SetOffset(G4ThreeVector offset)'],['../class_c_a_d_mesh_1_1_c_a_d_mesh_template.html#a927ce172aa578d6cf232a788e8c30327',1,'CADMesh::CADMeshTemplate::SetOffset(G4double x, G4double y, G4double z)']]],
   ['setopticalmodule_1563',['setOpticalModule',['../class_isotope_decays.html#a864ca83f9126152936b99ef0e15a10a1',1,'IsotopeDecays']]],
   ['setoutputfilename_1564',['setOutputFileName',['../class_o_m_sim_decays_analysis.html#accb91a2a739e0a9d3aebd6256ef46de6',1,'OMSimDecaysAnalysis']]],
   ['setparameter_1565',['setParameter',['../class_o_m_sim_command_args_table.html#a763a528077ea65f06d7905c962a62587',1,'OMSimCommandArgsTable']]],

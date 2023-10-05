@@ -128,8 +128,8 @@ $(document).ready(function(){initNavTree('todo.html',''); initResizable(); });
 <li>Investigate why the gel does not reach the photocathode edge. (Should the photocathode edge end earlier? Gel, Vessel, and PMT shape are correct.)  </li>
 </ul>
 </dd>
-<dt>Member <a class="el" href="_o_m_sim_s_n_tools_8hh.html#a201de1f13cd772baa18a6e5aa6b43e39">GetSlopes</a>  (std::vector&lt; G4double &gt; xvals, std::vector&lt; G4double &gt; yvals, G4int nPoints, std::vector&lt; G4double &gt; &amp;x, std::vector&lt; G4double &gt; &amp;f, std::vector&lt; G4double &gt; &amp;a, std::vector&lt; G4double &gt; &amp;Fc)</dt>
-<dd><a class="anchor" id="_todo000015"></a>check whether the copy can just be eliminated  </dd>
+<dt>Member <a class="el" href="_o_m_sim_s_n_tools_8hh.html#a87bfae294d50a9d9ae33e1688d2e6496">getSlopes</a>  (std::vector&lt; G4double &gt; xvals, std::vector&lt; G4double &gt; yvals, G4int nPoints, std::vector&lt; G4double &gt; &amp;x, std::vector&lt; G4double &gt; &amp;f, std::vector&lt; G4double &gt; &amp;a, std::vector&lt; G4double &gt; &amp;Fc)</dt>
+<dd><a class="anchor" id="_todo000014"></a>check whether the copy can just be eliminated  </dd>
 <dt>Member <a class="el" href="class_l_o_m16.html#a93c141790620554394cdf9864096d011">LOM16::~LOM16</a>  ()</dt>
 <dd><a class="anchor" id="_todo000005"></a>- 18/07/22 Solve collisions of CAD with PMTs<ul>
 <li>Clean up magic number variables and comment their meaning</li>
@@ -165,14 +165,12 @@ $(document).ready(function(){initNavTree('todo.html',''); initResizable(); });
 </dd>
 <dt>Member <a class="el" href="class_o_m_sim_p_m_t_response.html#a0dd544847ff216a24aa8c528e76c9aed">OMSimPMTResponse::createHistogramFromData</a>  (const std::string &amp;pFilePath, const char *pTH2DName)</dt>
 <dd><a class="anchor" id="_todo000002"></a>Add PMT data of all PMT types  </dd>
-<dt>Member <a class="el" href="class_o_m_sim_s_n_tools.html#aa760cb3204e636696ce5be962409694e">OMSimSNTools::findtime</a>  (G4double time, std::vector&lt; G4double &gt; timearray)</dt>
+<dt>Member <a class="el" href="class_o_m_sim_s_n_tools.html#a704058ea142089a962a89b3dae706aa8">OMSimSNTools::findTime</a>  (G4double time, std::vector&lt; G4double &gt; timearray)</dt>
 <dd><a class="anchor" id="_todo000013"></a>Consider renaming 'time' to a more generic term.  </dd>
 <dt>Member <a class="el" href="class_o_m_sim_s_n_tools.html#a89a22f20d0aff91704cf6cab1b48d266">OMSimSNTools::getFileNames</a>  (int value)</dt>
 <dd><a class="anchor" id="_todo000011"></a>Handle error cases more robustly than just console output.  </dd>
-<dt>Member <a class="el" href="class_o_m_sim_s_n_tools.html#acd2197f87f712d54eff8e93b233e8478">OMSimSNTools::InverseCumul</a>  (std::vector&lt; G4double &gt; xvals, std::vector&lt; G4double &gt; yvals, G4int nPoints)</dt>
-<dd><a class="anchor" id="_todo000012"></a>Reconsider the requirement for the 'nPoints' parameter.  </dd>
-<dt>Member <a class="el" href="class_o_m_sim_s_n_tools.html#a296fba8cceca9892ab52ac9e18064b01">OMSimSNTools::InverseCumulAlgorithm</a>  (std::vector&lt; G4double &gt; x, std::vector&lt; G4double &gt; f, std::vector&lt; G4double &gt; a, std::vector&lt; G4double &gt; Fc, G4int nPoints)</dt>
-<dd><a class="anchor" id="_todo000014"></a>Re-evaluate the necessity of the 'nPoints' parameter. </dd>
+<dt>Member <a class="el" href="class_o_m_sim_s_n_tools.html#afe3ad7c2e7664ff456a98e13b394d17d">OMSimSNTools::sampleValueFromDistribution</a>  (std::vector&lt; G4double &gt; xvals, std::vector&lt; G4double &gt; yvals, G4int nPoints)</dt>
+<dd><a class="anchor" id="_todo000012"></a>Reconsider the requirement for the 'pNrPoints' parameter. </dd>
 </dl>
 </div></div><!-- contents -->
 </div><!-- PageDoc -->
@@ -180,7 +178,7 @@ $(document).ready(function(){initNavTree('todo.html',''); initResizable(); });
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Thu Oct 5 2023 12:37:18 for OMSim by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Thu Oct 5 2023 14:37:08 for OMSim by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

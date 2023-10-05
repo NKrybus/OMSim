@@ -15,7 +15,7 @@ var searchData=
   ['checkifexists_66',['checkIfExists',['../classabc_detector_component.html#a3d796bd0c3a6e22e8bbd11765b98d2e8',1,'abcDetectorComponent']]],
   ['checkifkeyintable_67',['checkIfKeyInTable',['../class_parameter_table.html#afd0aa495dfeeb68bf370c3ea8390192d',1,'ParameterTable']]],
   ['checkphotocathodethickness_68',['checkPhotocathodeThickness',['../class_o_m_sim_p_m_t_construction.html#aa850b229e2e9ab26afbe4e2e0d21683d',1,'OMSimPMTConstruction']]],
-  ['checkvolumeformdoms_69',['CheckVolumeFormDOMs',['../class_o_m_sim_s_n_tools.html#aeb66b9f28c43977a2741d62bd1cbd83c',1,'OMSimSNTools']]],
+  ['checkvolumeforoms_69',['checkVolumeForOMs',['../class_o_m_sim_s_n_tools.html#a0b663ee3b96216ee943a681a496dffc5',1,'OMSimSNTools']]],
   ['children_70',['children',['../struct_c_a_d_mesh_1_1_file_1_1_item.html#af40976040e7607ea486169343ed47720',1,'CADMesh::File::Item']]],
   ['choosecollimationdirection_71',['ChooseCollimationDirection',['../class_g4_radioactive_decay.html#a89d20ee694e4e4d88c465b4c4fc7a027',1,'G4RadioactiveDecay']]],
   ['collimatedecay_72',['CollimateDecay',['../class_g4_radioactive_decay.html#af5927ac94113c1dd369940177877a1d4',1,'G4RadioactiveDecay']]],

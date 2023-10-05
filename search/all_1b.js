@@ -5,7 +5,7 @@ var searchData=
   ['wavelen_993',['wavelen',['../struct_hit_stat.html#a66a724b7ef8ddfc0c47d182de5b2a56f',1,'HitStat']]],
   ['wavelengthinterpolatedvalue_994',['wavelengthInterpolatedValue',['../class_o_m_sim_p_m_t_response.html#a39d958aa616a6bdd0c8a73211d834503',1,'OMSimPMTResponse']]],
   ['weigh_995',['weigh',['../class_o_m_sim_s_n_analysis.html#ab91bf3f7d5e88265557bfd815d922d76',1,'OMSimSNAnalysis']]],
-  ['weighme_996',['WeighMe',['../class_o_m_sim_s_n_tools.html#a877d8502b2e5ac2c4ef03ba51860ba35',1,'OMSimSNTools']]],
+  ['weight_996',['weight',['../class_o_m_sim_s_n_tools.html#a518a596145fbc96c4cfe153e60bd7f7e',1,'OMSimSNTools']]],
   ['weightlifetimesamplitudes_997',['weightLifeTimesAmplitudes',['../class_scintillation_properties.html#a5e7da3437242c6c025edff017adf2c1b',1,'ScintillationProperties']]],
   ['width_5f_998',['width_',['../class_c_a_d_mesh_1_1_file_1_1_lexer.html#a373c4ea03241d264bf09efea323c4f41',1,'CADMesh::File::Lexer']]],
   ['wordtoken_999',['WordToken',['../namespace_c_a_d_mesh_1_1_file.html#a250ed8013d4c26e960ee00bfeace697d',1,'CADMesh::File']]],
