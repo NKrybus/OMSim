@@ -19,20 +19,14 @@ G4\+Three\+Vector \mbox{\hyperlink{class_o_m_sim_s_n_tools_a7e746f08979e8ead1300
 \begin{DoxyCompactList}\small\item\em Randomly determines a vertex position within the generation volume. \end{DoxyCompactList}\item 
 std\+::pair$<$ std\+::string, std\+::string $>$ \mbox{\hyperlink{class_o_m_sim_s_n_tools_a89a22f20d0aff91704cf6cab1b48d266}{get\+File\+Names}} (int value)
 \begin{DoxyCompactList}\small\item\em Retrieves file names for neutrino and antineutrino fluxes based on a specified supernova model. \end{DoxyCompactList}\item 
-G4double \mbox{\hyperlink{class_o_m_sim_s_n_tools_afe3ad7c2e7664ff456a98e13b394d17d}{sample\+Value\+From\+Distribution}} (std\+::vector$<$ G4double $>$ xvals, std\+::vector$<$ G4double $>$ yvals, G4int n\+Points)
-\begin{DoxyCompactList}\small\item\em Samples a value from a given distribution using the Inverse CDF method. \end{DoxyCompactList}\item 
-G4double \mbox{\hyperlink{class_o_m_sim_s_n_tools_a82b3eb18b59eba3907a73216050ca5a5}{inverse\+CDFmethod}} (const std\+::vector$<$ G4double $>$ \&pX, const std\+::vector$<$ G4double $>$ \&pY, const std\+::vector$<$ G4double $>$ \&p\+Slopes, const std\+::vector$<$ G4double $>$ \&p\+CDF)
-\begin{DoxyCompactList}\small\item\em Samples values from a given distribution using the Inverse CDF algorithm. \end{DoxyCompactList}\item 
-G4int \mbox{\hyperlink{class_o_m_sim_s_n_tools_a704058ea142089a962a89b3dae706aa8}{find\+Time}} (G4double time, std\+::vector$<$ G4double $>$ timearray)
-\begin{DoxyCompactList}\small\item\em Finds the nearest (or next largest) value in an array to a specified input. \end{DoxyCompactList}\item 
 G4double \mbox{\hyperlink{class_o_m_sim_s_n_tools_a48caade81da87bfc2a0ac9da94b57110}{sample\+Energy}} (G4double Emean, G4double Emean2, G4double \&alpha)
-\begin{DoxyCompactList}\small\item\em Determines the energy value using the inverse cumulative algorithm based on a given distribution. \end{DoxyCompactList}\item 
-G4double \mbox{\hyperlink{class_o_m_sim_s_n_tools_a86811883d92fdbaf0627b85fde379c43}{linear\+Interpolation}} (G4double x, G4double x1, G4double x2, G4double y1, G4double y2)
-\begin{DoxyCompactList}\small\item\em Performs linear interpolation between two points. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Randomly samle the energy depending on the properties of the energy spectrum. \end{DoxyCompactList}\item 
 G4double \mbox{\hyperlink{class_o_m_sim_s_n_tools_aeb59462c439834b0bb9c5a5be3ad612c}{get\+Alpha}} (G4double Emean, G4double Emean2)
 \begin{DoxyCompactList}\small\item\em Calculates pinching parameter of energy spectrum. \end{DoxyCompactList}\item 
-G4double \mbox{\hyperlink{class_o_m_sim_s_n_tools_a518a596145fbc96c4cfe153e60bd7f7e}{weight}} (G4double sigma, G4double NTargets)
-\begin{DoxyCompactList}\small\item\em Calculates the interaction weight based on the cross section and number of targets. \end{DoxyCompactList}\end{DoxyCompactItemize}
+G4double \mbox{\hyperlink{class_o_m_sim_s_n_tools_a7b3c3433f4c60bd5a48d97600b1e8496}{calculate\+Weight}} (G4double sigma, G4double NTargets)
+\begin{DoxyCompactList}\small\item\em Calculates the interaction weight based on the cross section and number of targets. \end{DoxyCompactList}\item 
+G4double \mbox{\hyperlink{class_o_m_sim_s_n_tools_a34d75fd490a03c6c6131c5ea8fbec3f2}{number\+Of\+Targets}} (G4int target\+Per\+Molecule)
+\begin{DoxyCompactList}\small\item\em Calculates the number of target particles in ice per cubic meter. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Private Member Functions}
 \begin{DoxyCompactItemize}
 \item 
@@ -63,6 +57,32 @@ G4double \mbox{\hyperlink{class_o_m_sim_s_n_tools_af908be289d086253893f327f7463d
 
 
 \doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_o_m_sim_s_n_tools_a7b3c3433f4c60bd5a48d97600b1e8496}\label{class_o_m_sim_s_n_tools_a7b3c3433f4c60bd5a48d97600b1e8496}} 
+\index{OMSimSNTools@{OMSimSNTools}!calculateWeight@{calculateWeight}}
+\index{calculateWeight@{calculateWeight}!OMSimSNTools@{OMSimSNTools}}
+\doxysubsubsection{\texorpdfstring{calculateWeight()}{calculateWeight()}}
+{\footnotesize\ttfamily G4double OMSim\+SNTools\+::calculate\+Weight (\begin{DoxyParamCaption}\item[{G4double}]{p\+Sigma,  }\item[{G4double}]{p\+Nr\+Targets }\end{DoxyParamCaption})}
+
+This method computes the interaction weight of neutrinos in the ice using the formula\+: {\ttfamily weight = p\+Sigma $\ast$ Nt $\ast$ r}, where\+:
+\begin{DoxyItemize}
+\item {\ttfamily p\+Sigma} is the cross section,
+\item {\ttfamily Nt} is the number of targets in the ice (considered as electrons),
+\item {\ttfamily r} is the distance the neutrino travels in the ice.
+\end{DoxyItemize}
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+Sigma} & The cross section value. \\
+\hline
+{\em p\+Nr\+Targets} & The number of targets present in the ice for the corresponding interaction. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyWarning}{Warning}
+It\textquotesingle{}s crucial to note that this formulation is specifically valid for SN neutrinos approaching from the Z axis in a world defined as a cylinder. For any other geometry or conditions, a different approach or adjustments might be required. 
+\end{DoxyWarning}
+\begin{DoxyReturn}{Returns}
+The computed interaction weight for the neutrinos based on the provided parameters. 
+\end{DoxyReturn}
 \mbox{\Hypertarget{class_o_m_sim_s_n_tools_a0b663ee3b96216ee943a681a496dffc5}\label{class_o_m_sim_s_n_tools_a0b663ee3b96216ee943a681a496dffc5}} 
 \index{OMSimSNTools@{OMSimSNTools}!checkVolumeForOMs@{checkVolumeForOMs}}
 \index{checkVolumeForOMs@{checkVolumeForOMs}!OMSimSNTools@{OMSimSNTools}}
@@ -81,26 +101,6 @@ This relies on the generation module being a single volume (generally, the ice) 
 \end{DoxyWarning}
 \begin{DoxyReturn}{Returns}
 True if the position is inside a module; otherwise, false. 
-\end{DoxyReturn}
-\mbox{\Hypertarget{class_o_m_sim_s_n_tools_a704058ea142089a962a89b3dae706aa8}\label{class_o_m_sim_s_n_tools_a704058ea142089a962a89b3dae706aa8}} 
-\index{OMSimSNTools@{OMSimSNTools}!findTime@{findTime}}
-\index{findTime@{findTime}!OMSimSNTools@{OMSimSNTools}}
-\doxysubsubsection{\texorpdfstring{findTime()}{findTime()}}
-{\footnotesize\ttfamily G4int OMSim\+SNTools\+::find\+Time (\begin{DoxyParamCaption}\item[{G4double}]{p\+Time,  }\item[{std\+::vector$<$ G4double $>$}]{p\+Time\+Array }\end{DoxyParamCaption})}
-
-This method is utilized to identify neutrino parameters corresponding to a randomly sampled time. These identified parameters are subsequently interpolated to ensure that the model doesn\textquotesingle{}t rely solely on fixed tabulated values from the input neutrino model.
-
-
-\begin{DoxyParams}{Parameters}
-{\em p\+Time} & The reference value for which a close match is sought in the array. \\
-\hline
-{\em p\+Time\+Array} & The array in which to search for the closest match. \\
-\hline
-\end{DoxyParams}
-\begin{DoxyRefDesc}{Todo}
-\item[\mbox{\hyperlink{todo__todo000013}{Todo}}]Consider renaming \textquotesingle{}time\textquotesingle{} to a more generic term. \end{DoxyRefDesc}
-\begin{DoxyReturn}{Returns}
-The index in the array that holds the value closest (or next largest) to the specified input. 
 \end{DoxyReturn}
 \mbox{\Hypertarget{class_o_m_sim_s_n_tools_aeb59462c439834b0bb9c5a5be3ad612c}\label{class_o_m_sim_s_n_tools_aeb59462c439834b0bb9c5a5be3ad612c}} 
 \index{OMSimSNTools@{OMSimSNTools}!getAlpha@{getAlpha}}
@@ -134,55 +134,25 @@ This function provides the corresponding file names for neutrino and antineutrin
 \hline
 \end{DoxyParams}
 \begin{DoxyRefDesc}{Todo}
-\item[\mbox{\hyperlink{todo__todo000011}{Todo}}]Handle error cases more robustly than just console output. \end{DoxyRefDesc}
+\item[\mbox{\hyperlink{todo__todo000009}{Todo}}]Handle error cases more robustly than just console output. \end{DoxyRefDesc}
 \begin{DoxyReturn}{Returns}
 A pair containing the neutrino and antineutrino flux file names. 
 \end{DoxyReturn}
-\mbox{\Hypertarget{class_o_m_sim_s_n_tools_a82b3eb18b59eba3907a73216050ca5a5}\label{class_o_m_sim_s_n_tools_a82b3eb18b59eba3907a73216050ca5a5}} 
-\index{OMSimSNTools@{OMSimSNTools}!inverseCDFmethod@{inverseCDFmethod}}
-\index{inverseCDFmethod@{inverseCDFmethod}!OMSimSNTools@{OMSimSNTools}}
-\doxysubsubsection{\texorpdfstring{inverseCDFmethod()}{inverseCDFmethod()}}
-{\footnotesize\ttfamily G4double OMSim\+SNTools\+::inverse\+CDFmethod (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ G4double $>$ \&}]{pX,  }\item[{const std\+::vector$<$ G4double $>$ \&}]{pY,  }\item[{const std\+::vector$<$ G4double $>$ \&}]{p\+Slopes,  }\item[{const std\+::vector$<$ G4double $>$ \&}]{p\+CDF }\end{DoxyParamCaption})}
+\mbox{\Hypertarget{class_o_m_sim_s_n_tools_a34d75fd490a03c6c6131c5ea8fbec3f2}\label{class_o_m_sim_s_n_tools_a34d75fd490a03c6c6131c5ea8fbec3f2}} 
+\index{OMSimSNTools@{OMSimSNTools}!numberOfTargets@{numberOfTargets}}
+\index{numberOfTargets@{numberOfTargets}!OMSimSNTools@{OMSimSNTools}}
+\doxysubsubsection{\texorpdfstring{numberOfTargets()}{numberOfTargets()}}
+{\footnotesize\ttfamily G4double OMSim\+SNTools\+::number\+Of\+Targets (\begin{DoxyParamCaption}\item[{G4int}]{p\+Nr\+Target\+Per\+Molecule }\end{DoxyParamCaption})}
 
-This method employs the inverse cumulative distribution function (Inverse CDF) technique to derive samples from a specified distribution. It\textquotesingle{}s useful for generating random values in accordance with the underlying distribution shape.
-
-
-\begin{DoxyParams}{Parameters}
-{\em pX} & The pX values representing the distribution\textquotesingle{}s domain. \\
-\hline
-{\em pY} & The corresponding y values, or f(p\+X), representing the distribution\textquotesingle{}s values. \\
-\hline
-{\em p\+Slopes} & The slopes of the f(p\+X) curve, usually derived from the get\+Slopes method. \\
-\hline
-{\em p\+CDF} & The cumulative values of f(p\+X), usually derived from the get\+Slopes method. \\
-\hline
-\end{DoxyParams}
-\begin{DoxyReturn}{Returns}
-A randomly selected p\+X-\/value sampled in line with the provided distribution. 
-\end{DoxyReturn}
-\mbox{\Hypertarget{class_o_m_sim_s_n_tools_a86811883d92fdbaf0627b85fde379c43}\label{class_o_m_sim_s_n_tools_a86811883d92fdbaf0627b85fde379c43}} 
-\index{OMSimSNTools@{OMSimSNTools}!linearInterpolation@{linearInterpolation}}
-\index{linearInterpolation@{linearInterpolation}!OMSimSNTools@{OMSimSNTools}}
-\doxysubsubsection{\texorpdfstring{linearInterpolation()}{linearInterpolation()}}
-{\footnotesize\ttfamily G4double OMSim\+SNTools\+::linear\+Interpolation (\begin{DoxyParamCaption}\item[{G4double}]{x,  }\item[{G4double}]{x1,  }\item[{G4double}]{x2,  }\item[{G4double}]{y1,  }\item[{G4double}]{y2 }\end{DoxyParamCaption})}
-
-This method calculates the y-\/value for a given x-\/value based on linear interpolation between two known data points (x1, y1) and (x2, y2).
+This function determines the number of target particles, given the number of targets per molecule, assuming the ice is pure H2O. The density and molar mass values are based on ice at -\/50°C.
 
 
 \begin{DoxyParams}{Parameters}
-{\em x} & The x-\/value for which the y-\/value is desired. \\
-\hline
-{\em x1} & The x-\/value of the first data point. \\
-\hline
-{\em x2} & The x-\/value of the second data point. \\
-\hline
-{\em y1} & The y-\/value corresponding to x1. \\
-\hline
-{\em y2} & The y-\/value corresponding to x2. \\
+{\em p\+Nr\+Target\+Per\+Molecule} & Number of target particles per H2O molecule. \\
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
-The interpolated y-\/value for the given pX based on the two provided data points. 
+Total number of target particles per cubic meter in ice. 
 \end{DoxyReturn}
 \mbox{\Hypertarget{class_o_m_sim_s_n_tools_a7e746f08979e8ead130088b7396871a1}\label{class_o_m_sim_s_n_tools_a7e746f08979e8ead130088b7396871a1}} 
 \index{OMSimSNTools@{OMSimSNTools}!randomPosition@{randomPosition}}
@@ -201,7 +171,7 @@ A valid vertex position within the ice.
 \doxysubsubsection{\texorpdfstring{sampleEnergy()}{sampleEnergy()}}
 {\footnotesize\ttfamily G4double OMSim\+SNTools\+::sample\+Energy (\begin{DoxyParamCaption}\item[{G4double}]{p\+Mean\+Energy,  }\item[{G4double}]{p\+Mean\+ESquared,  }\item[{G4double \&}]{p\+Alpha }\end{DoxyParamCaption})}
 
-Build the energy distribution Fe(\+E) given the input parameters, and uses the inverse CDF algorithm to sample a value for the neutrino energy from Fe(\+E). The method prepares the data to use \textquotesingle{}energy\+Distribution\+Vector\textquotesingle{}
+Build the energy distribution Fe(\+E) given the input parameters, and uses the inverse CDF algorithm to sample a value for the neutrino energy from Fe(\+E).
 
 
 \begin{DoxyParams}{Parameters}
@@ -214,54 +184,6 @@ Build the energy distribution Fe(\+E) given the input parameters, and uses the i
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
 The sampled energy value based on the given model. 
-\end{DoxyReturn}
-\mbox{\Hypertarget{class_o_m_sim_s_n_tools_afe3ad7c2e7664ff456a98e13b394d17d}\label{class_o_m_sim_s_n_tools_afe3ad7c2e7664ff456a98e13b394d17d}} 
-\index{OMSimSNTools@{OMSimSNTools}!sampleValueFromDistribution@{sampleValueFromDistribution}}
-\index{sampleValueFromDistribution@{sampleValueFromDistribution}!OMSimSNTools@{OMSimSNTools}}
-\doxysubsubsection{\texorpdfstring{sampleValueFromDistribution()}{sampleValueFromDistribution()}}
-{\footnotesize\ttfamily G4double OMSim\+SNTools\+::sample\+Value\+From\+Distribution (\begin{DoxyParamCaption}\item[{std\+::vector$<$ G4double $>$}]{p\+Xvals,  }\item[{std\+::vector$<$ G4double $>$}]{p\+Yvals,  }\item[{G4int}]{p\+Nr\+Points }\end{DoxyParamCaption})}
-
-This method preprocesses the provided data and leverages the inverse cumulative distribution function (Inverse CDF) to obtain samples from a specified distribution. It facilitates the generation of random values that adhere to the characteristics of the given distribution.
-
-
-\begin{DoxyParams}{Parameters}
-{\em p\+Xvals} & The pX values representing the domain of the distribution. \\
-\hline
-{\em p\+Yvals} & The corresponding y values representing the distribution\textquotesingle{}s actual values. \\
-\hline
-{\em p\+Nr\+Points} & The number of data points in the distribution. \\
-\hline
-\end{DoxyParams}
-\begin{DoxyRefDesc}{Todo}
-\item[\mbox{\hyperlink{todo__todo000012}{Todo}}]Reconsider the requirement for the \textquotesingle{}p\+Nr\+Points\textquotesingle{} parameter. \end{DoxyRefDesc}
-\begin{DoxyReturn}{Returns}
-A randomly chosen x-\/value that\textquotesingle{}s sampled based on the distribution\textquotesingle{}s profile. 
-\end{DoxyReturn}
-\mbox{\Hypertarget{class_o_m_sim_s_n_tools_a518a596145fbc96c4cfe153e60bd7f7e}\label{class_o_m_sim_s_n_tools_a518a596145fbc96c4cfe153e60bd7f7e}} 
-\index{OMSimSNTools@{OMSimSNTools}!weight@{weight}}
-\index{weight@{weight}!OMSimSNTools@{OMSimSNTools}}
-\doxysubsubsection{\texorpdfstring{weight()}{weight()}}
-{\footnotesize\ttfamily G4double OMSim\+SNTools\+::weight (\begin{DoxyParamCaption}\item[{G4double}]{p\+Sigma,  }\item[{G4double}]{p\+Nr\+Targets }\end{DoxyParamCaption})}
-
-This method computes the interaction weight of neutrinos in the ice using the formula\+: {\ttfamily weight = p\+Sigma $\ast$ Nt $\ast$ r}, where\+:
-\begin{DoxyItemize}
-\item {\ttfamily p\+Sigma} is the cross section,
-\item {\ttfamily Nt} is the number of targets in the ice (considered as electrons),
-\item {\ttfamily r} is the distance the neutrino travels in the ice.
-\end{DoxyItemize}
-
-
-\begin{DoxyParams}{Parameters}
-{\em p\+Sigma} & The cross section value. \\
-\hline
-{\em p\+Nr\+Targets} & The number of targets present in the ice for the corresponding interaction. \\
-\hline
-\end{DoxyParams}
-\begin{DoxyWarning}{Warning}
-It\textquotesingle{}s crucial to note that this formulation is specifically valid for SN neutrinos approaching from the Z axis in a world defined as a cylinder. For any other geometry or conditions, a different approach or adjustments might be required. 
-\end{DoxyWarning}
-\begin{DoxyReturn}{Returns}
-The computed interaction weight for the neutrinos based on the provided parameters. 
 \end{DoxyReturn}
 
 

@@ -1,5 +1,0 @@
-<map id="OMSimENES.hh" name="OMSimENES.hh">
-<area shape="rect" id="node1" title="This file contains the class in charge of generating electrons from Electron&#45;electron_Neutrino Elasti..." alt="" coords="107,5,230,32"/>
-<area shape="rect" id="node2" href="$_o_m_sim_e_n_e_s_8cc.html" title=" " alt="" coords="5,80,127,107"/>
-<area shape="rect" id="node3" href="$supernova_2src_2_o_m_sim_primary_generator_action_8cc.html" title="Main primary generator. Chooses between generators 0 (IBD), 1 (ENES), 2 (SN ibd)" alt="" coords="151,80,395,107"/>
-</map>

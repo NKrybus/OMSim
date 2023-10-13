@@ -1,9 +1,6 @@
 <map id="OMSimSNTools.hh" name="OMSimSNTools.hh">
-<area shape="rect" id="node1" title="Provides the definition for the OMSimSNTools class, centralizing utility methods for Supernova (SN) n..." alt="" coords="292,5,432,32"/>
-<area shape="rect" id="node2" href="$_o_m_sim_e_n_e_s_8hh.html" title="This file contains the class in charge of generating electrons from Electron&#45;electron_Neutrino Elasti..." alt="" coords="159,80,282,107"/>
-<area shape="rect" id="node3" href="$_o_m_sim_e_n_e_s_8cc.html" title=" " alt="" coords="5,155,127,181"/>
-<area shape="rect" id="node5" href="$_o_m_sim_i_b_d_8hh.html" title="This file contains the class in charge of generating positrons from IBD of supernova antineutrino int..." alt="" coords="306,80,418,107"/>
-<area shape="rect" id="node6" href="$_o_m_sim_i_b_d_8cc.html" title=" " alt="" coords="419,155,529,181"/>
-<area shape="rect" id="node7" href="$_o_m_sim_s_n_tools_8cc.html" title=" " alt="" coords="493,80,631,107"/>
-<area shape="rect" id="node4" href="$supernova_2src_2_o_m_sim_primary_generator_action_8cc.html" title="Main primary generator. Chooses between generators 0 (IBD), 1 (ENES), 2 (SN ibd)" alt="" coords="151,155,395,181"/>
+<area shape="rect" id="node1" title="Provides the definition for the OMSimSNTools class, centralizing utility methods for Supernova (SN) n..." alt="" coords="135,5,275,32"/>
+<area shape="rect" id="node2" href="$supernova_2include_2_o_m_sim_primary_generator_action_8hh.html" title=" " alt="" coords="5,155,252,181"/>
+<area shape="rect" id="node3" href="$_o_m_sim_s_n_particle_generators_8hh.html" title="This file contains the classes in charge of particle generation." alt="" coords="91,80,318,107"/>
+<area shape="rect" id="node4" href="$_o_m_sim_s_n_tools_8cc.html" title=" " alt="" coords="342,80,481,107"/>
 </map>

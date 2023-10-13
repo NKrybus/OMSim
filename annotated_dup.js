@@ -25,6 +25,7 @@ var annotated_dup =
     [ "DecayStats", "struct_decay_stats.html", "struct_decay_stats" ],
     [ "DEGG", "class_d_e_g_g.html", "class_d_e_g_g" ],
     [ "DEggHarness", "class_d_egg_harness.html", "class_d_egg_harness" ],
+    [ "DistributionSampler", "class_distribution_sampler.html", "class_distribution_sampler" ],
     [ "effectiveAreaResult", "structeffective_area_result.html", "structeffective_area_result" ],
     [ "EventInfoManager", "class_event_info_manager.html", "class_event_info_manager" ],
     [ "EvtStat", "struct_evt_stat.html", "struct_evt_stat" ],
@@ -68,5 +69,6 @@ var annotated_dup =
     [ "ReflectiveSurface", "class_reflective_surface.html", "class_reflective_surface" ],
     [ "RefractionAndAbsorption", "class_refraction_and_absorption.html", "class_refraction_and_absorption" ],
     [ "RefractionOnly", "class_refraction_only.html", "class_refraction_only" ],
-    [ "ScintillationProperties", "class_scintillation_properties.html", "class_scintillation_properties" ]
+    [ "ScintillationProperties", "class_scintillation_properties.html", "class_scintillation_properties" ],
+    [ "SNBaseParticleGenerator", "class_s_n_base_particle_generator.html", "class_s_n_base_particle_generator" ]
 ];

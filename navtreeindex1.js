@@ -1,14 +1,5 @@
 var NAVTREEINDEX1 =
 {
-"_o_m_sim_tracking_action_8cc.html#a0c3c24dae9d87f31f312c13a734780ed":[4,0,91,0],
-"_o_m_sim_tracking_action_8cc.html#a98bca333230c874207e654a1c0988692":[4,0,91,1],
-"_o_m_sim_tracking_action_8hh.html":[4,0,92],
-"_o_m_sim_tracking_action_8hh_source.html":[4,0,92],
-"_o_m_sim_u_iinterface_8hh.html":[4,0,93],
-"_o_m_sim_u_iinterface_8hh_source.html":[4,0,93],
-"abc_detector_component_8cc.html":[4,0,5],
-"abc_detector_component_8hh.html":[4,0,6],
-"abc_detector_component_8hh_source.html":[4,0,6],
 "annotated.html":[5,0],
 "class_angular_scan.html":[3,1,2],
 "class_angular_scan.html#a050c9c2066f662a1d7868b4dac0e5795":[3,1,2,1],
@@ -246,8 +237,17 @@ var NAVTREEINDEX1 =
 "class_d_egg_harness.html#ad333af59c4fdc85979f3e6d3def16a34":[5,0,8,10],
 "class_d_egg_harness.html#af7958ee15bf185a40a7d1e0cf1c6c550":[5,0,8,9],
 "class_d_egg_harness.html#afa139bcf866bd9c5fabc42d3d431af16":[5,0,8,5],
-"class_event_info_manager.html":[3,1,6],
-"class_event_info_manager.html":[3,2,14],
-"class_event_info_manager.html#a3f20e93e5648ed8361ac6919e261b2ca":[3,1,6,7],
-"class_event_info_manager.html#a3f20e93e5648ed8361ac6919e261b2ca":[3,1,6,8]
+"class_distribution_sampler.html":[3,3,6],
+"class_distribution_sampler.html#a0116490aae983d5e4a594f1724aba3b2":[3,3,6,0],
+"class_distribution_sampler.html#a0e5a3b5d614d0d0c8599ea0f2e470a33":[3,3,6,11],
+"class_distribution_sampler.html#a11d6ba97005fca66c123f6bf21fa342e":[3,3,6,9],
+"class_distribution_sampler.html#a236177102b7383642247b5f04355179a":[3,3,6,10],
+"class_distribution_sampler.html#a2e254930c735ca208b6d1b6c330cf64e":[3,3,6,3],
+"class_distribution_sampler.html#a352d00d44df3e54ec112dcba95e392ca":[3,3,6,13],
+"class_distribution_sampler.html#a41af8967d4226835925267fd7a261188":[3,3,6,12],
+"class_distribution_sampler.html#a62407876667af623ba546ef60b9fca3a":[3,3,6,6],
+"class_distribution_sampler.html#a677f4153eceb6c90587c38000d559b4d":[3,3,6,14],
+"class_distribution_sampler.html#a8c589167286b401aba541dcee1f5872b":[3,3,6,8],
+"class_distribution_sampler.html#a8f214e2ac1b2c557f1120c42081205a6":[3,3,6,1],
+"class_distribution_sampler.html#aa0b62effce220e28d3a08c8904c6ee76":[3,3,6,2]
 };

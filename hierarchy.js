@@ -36,6 +36,7 @@ var hierarchy =
     ] ],
     [ "abcDetectorComponent::Component", "structabc_detector_component_1_1_component.html", null ],
     [ "DecayStats", "struct_decay_stats.html", null ],
+    [ "DistributionSampler", "class_distribution_sampler.html", null ],
     [ "effectiveAreaResult", "structeffective_area_result.html", null ],
     [ "EventInfoManager", "class_event_info_manager.html", null ],
     [ "EvtStat", "struct_evt_stat.html", null ],
@@ -71,11 +72,13 @@ var hierarchy =
       [ "OMSimPhysicsList", "class_o_m_sim_physics_list.html", null ]
     ] ],
     [ "G4VUserPrimaryGeneratorAction", null, [
-      [ "OMSimENES", "class_o_m_sim_e_n_e_s.html", null ],
-      [ "OMSimIBD", "class_o_m_sim_i_b_d.html", null ],
       [ "OMSimPrimaryGeneratorAction", "class_o_m_sim_primary_generator_action.html", null ],
       [ "OMSimPrimaryGeneratorAction", "class_o_m_sim_primary_generator_action.html", null ],
-      [ "OMSimPrimaryGeneratorAction", "class_o_m_sim_primary_generator_action.html", null ]
+      [ "OMSimPrimaryGeneratorAction", "class_o_m_sim_primary_generator_action.html", null ],
+      [ "SNBaseParticleGenerator", "class_s_n_base_particle_generator.html", [
+        [ "OMSimENES", "class_o_m_sim_e_n_e_s.html", null ],
+        [ "OMSimIBD", "class_o_m_sim_i_b_d.html", null ]
+      ] ]
     ] ],
     [ "GlobalPosition", "struct_global_position.html", null ],
     [ "HitStat", "struct_hit_stat.html", null ],
