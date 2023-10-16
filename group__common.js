@@ -175,6 +175,17 @@ var group__common =
       [ "parseKeyContentToVector", "class_parameter_table.html#a9862489604c6a5b4683709dc6bdc5799", null ],
       [ "mTable", "class_parameter_table.html#a749bc840cf2aea18fb5b63da8b68c23c", null ]
     ] ],
+    [ "InputDataManager", "class_input_data_manager.html", [
+      [ "InputDataManager", "class_input_data_manager.html#a425e28ed0c8675fc0deb04779171a9d6", null ],
+      [ "getMaterial", "class_input_data_manager.html#a05b5637e4b31dbaaede67d40a139528e", null ],
+      [ "getOpticalSurface", "class_input_data_manager.html#ae6ae987535a442a42ad47d53394ade56", null ],
+      [ "loadtxt", "class_input_data_manager.html#a3a233522b61c65875ebb7b274ff31507", null ],
+      [ "processFile", "class_input_data_manager.html#aaa51bcbd29214afb735bb7657bee05de", null ],
+      [ "scannDataDirectory", "class_input_data_manager.html#ac65312ce694a331615ba2d16bdddc78e", null ],
+      [ "searchFolders", "class_input_data_manager.html#a7376d0446251d09973d90fb370a9373d", null ],
+      [ "mDataDirectory", "class_input_data_manager.html#ae31826093d7c8092d0251ca296e6065e", null ],
+      [ "mOpticalSurfaceMap", "class_input_data_manager.html#a48e36f6062300c12d0787b1005c0d7ec", null ]
+    ] ],
     [ "OMSimUIinterface", "class_o_m_sim_u_iinterface.html", [
       [ "OMSimUIinterface", "class_o_m_sim_u_iinterface.html#a71034bda00b1648e8368f78431c4e0e9", null ],
       [ "OMSimUIinterface", "class_o_m_sim_u_iinterface.html#a1b3d6760eea8af428a9766d716bf875b", null ],

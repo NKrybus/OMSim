@@ -110,7 +110,7 @@
 <!-- Node6 -->
 <g id="node6" class="node">
 <title>Node6</title>
-<g id="a_node6"><a xlink:href="class_input_data_manager.html" target="_top" xlink:title=" ">
+<g id="a_node6"><a xlink:href="class_input_data_manager.html" target="_top" xlink:title="Manages the input data, including parsing and storing material properties.">
 <polygon fill="white" stroke="black" points="232,-325.5 232,-344.5 339,-344.5 339,-325.5 232,-325.5"/>
 <text text-anchor="middle" x="285.5" y="-332.5" font-family="Helvetica,sans-Serif" font-size="10.00">InputDataManager</text>
 </a>
