@@ -8,7 +8,7 @@
 <area shape="rect" id="node16" title=" " alt="" coords="844,155,933,181"/>
 <area shape="rect" id="node4" href="$abc_detector_component_8hh.html" title="Provides helper base class abcDetectorComponent for constructing and managing detector components in ..." alt="" coords="441,304,637,331"/>
 <area shape="rect" id="node13" href="$_o_m_sim_p_m_t_construction_8hh.html" title="Construction of the PMTs." alt="" coords="628,229,827,256"/>
-<area shape="rect" id="node5" href="$_o_m_sim_input_data_8hh.html" title="Input data from external files are read and saved to memory." alt="" coords="121,379,275,405"/>
+<area shape="rect" id="node5" href="$_o_m_sim_input_data_8hh.html" title="Definition of ParameterTable and InputDataManager." alt="" coords="121,379,275,405"/>
 <area shape="rect" id="node9" title=" " alt="" coords="299,379,441,405"/>
 <area shape="rect" id="node10" title=" " alt="" coords="466,379,610,405"/>
 <area shape="rect" id="node11" title=" " alt="" coords="635,379,801,405"/>

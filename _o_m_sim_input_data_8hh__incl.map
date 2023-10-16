@@ -1,5 +1,5 @@
 <map id="OMSimInputData.hh" name="OMSimInputData.hh">
-<area shape="rect" id="node1" title="Input data from external files are read and saved to memory." alt="" coords="223,5,376,32"/>
+<area shape="rect" id="node1" title="Definition of ParameterTable and InputDataManager." alt="" coords="223,5,376,32"/>
 <area shape="rect" id="node2" title=" " alt="" coords="5,87,196,114"/>
 <area shape="rect" id="node3" title=" " alt="" coords="220,87,379,114"/>
 <area shape="rect" id="node4" title=" " alt="" coords="403,80,553,121"/>

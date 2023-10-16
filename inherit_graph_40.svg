@@ -21,7 +21,7 @@
 <!-- Node1 -->
 <g id="node2" class="node">
 <title>Node1</title>
-<g id="a_node2"><a xlink:href="class_input_data_manager.html" target="_top" xlink:title="Manages the input data, including parsing and storing material properties.">
+<g id="a_node2"><a xlink:href="class_input_data_manager.html" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="black" points="128,-0.5 128,-19.5 235,-19.5 235,-0.5 128,-0.5"/>
 <text text-anchor="middle" x="181.5" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">InputDataManager</text>
 </a>

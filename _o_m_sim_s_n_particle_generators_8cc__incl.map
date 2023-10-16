@@ -5,7 +5,7 @@
 <area shape="rect" id="node16" href="$_o_m_sim_command_args_table_8hh.html" title="Definition of the OMSimCommandArgsTable singleton class, which controls user args." alt="" coords="572,80,791,107"/>
 <area shape="rect" id="node22" title=" " alt="" coords="815,80,950,107"/>
 <area shape="rect" id="node23" title=" " alt="" coords="974,80,1117,107"/>
-<area shape="rect" id="node24" href="$_o_m_sim_input_data_8hh.html" title="Input data from external files are read and saved to memory." alt="" coords="1141,80,1294,107"/>
+<area shape="rect" id="node24" href="$_o_m_sim_input_data_8hh.html" title="Definition of ParameterTable and InputDataManager." alt="" coords="1141,80,1294,107"/>
 <area shape="rect" id="node4" title=" " alt="" coords="29,319,126,345"/>
 <area shape="rect" id="node5" title=" " alt="" coords="32,162,131,189"/>
 <area shape="rect" id="node6" title=" " alt="" coords="67,244,205,271"/>

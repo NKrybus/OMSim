@@ -1,6 +1,6 @@
 <map id="OMSimInputData.cc" name="OMSimInputData.cc">
 <area shape="rect" id="node1" title=" " alt="" coords="543,5,693,32"/>
-<area shape="rect" id="node2" href="$_o_m_sim_input_data_8hh.html" title="Input data from external files are read and saved to memory." alt="" coords="223,80,376,107"/>
+<area shape="rect" id="node2" href="$_o_m_sim_input_data_8hh.html" title="Definition of ParameterTable and InputDataManager." alt="" coords="223,80,376,107"/>
 <area shape="rect" id="node6" href="$_o_m_sim_command_args_table_8hh.html" title="Definition of the OMSimCommandArgsTable singleton class, which controls user args." alt="" coords="745,162,963,189"/>
 <area shape="rect" id="node13" href="$_o_m_sim_data_file_types_8hh.html" title="Collection of classes and methods to handle material creation from user data in json files." alt="" coords="400,80,580,107"/>
 <area shape="rect" id="node15" title=" " alt="" coords="655,80,783,107"/>

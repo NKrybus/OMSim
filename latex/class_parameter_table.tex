@@ -22,17 +22,17 @@ The \mbox{\hyperlink{class_parameter_table}{Parameter\+Table}} class provides an
 
 Internally, this class leverages the {\ttfamily boost\+::property\+\_\+tree\+::ptree} to represent and manage the JSON data structure, which makes it easy to traverse and fetch desired parameters.
 
-Its main use is as base class of \mbox{\hyperlink{class_input_data_manager}{Input\+Data\+Manager}}, but you may use it as needed (see \mbox{\hyperlink{class_parameter_table_ExampleUsage}{Example usage}}).\hypertarget{class_parameter_table_ExampleUsage}{}\doxysubsection{Example usage}\label{class_parameter_table_ExampleUsage}
+Its main use is as base class of \mbox{\hyperlink{class_input_data_manager}{Input\+Data\+Manager}}, but you may use it as needed (see \mbox{\hyperlink{class_parameter_table_ExampleUsageParameterTable}{Minimal example}}).\hypertarget{class_parameter_table_ExampleUsageParameterTable}{}\doxysubsubsection{Minimal example}\label{class_parameter_table_ExampleUsageParameterTable}
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{\textcolor{comment}{// Create an instance of the table}}
-\DoxyCodeLine{\mbox{\hyperlink{class_parameter_table}{ParameterTable}} lTable;}
+\DoxyCodeLine{\mbox{\hyperlink{class_parameter_table}{ParameterTable}} lTable; \textcolor{comment}{// Create an instance of the table}}
+\DoxyCodeLine{lTable.\mbox{\hyperlink{class_parameter_table_a131ddfbbf38d27b59f454a4ec96b2b9e}{appendAndReturnTree}}(\textcolor{stringliteral}{"{}path/to/file.json"{}}); \textcolor{comment}{// Load a JSON file into the table. The key of this file (in the following "{}SomeKey"{}) is contained within the file under the variable "{}jName"{}}}
+\DoxyCodeLine{G4double lValue = lTable.\mbox{\hyperlink{class_parameter_table_adb1234ccb47c9e44ecd7f8c5cb9e0407}{getValue}}<G4double>(\textcolor{stringliteral}{"{}SomeKey"{}}, \textcolor{stringliteral}{"{}SomeParameter"{}}); \textcolor{comment}{// Fetch a specific value using its key and parameter name}}
 \DoxyCodeLine{}
-\DoxyCodeLine{\textcolor{comment}{// Load a JSON file into the table}}
-\DoxyCodeLine{lTable.\mbox{\hyperlink{class_parameter_table_a131ddfbbf38d27b59f454a4ec96b2b9e}{appendAndReturnTree}}(\textcolor{stringliteral}{"{}path/to/file.json"{}});}
-\DoxyCodeLine{}
-\DoxyCodeLine{\textcolor{comment}{// Fetch a specific value using its key and parameter name}}
-\DoxyCodeLine{G4double lValue = lTable.\mbox{\hyperlink{class_parameter_table_adb1234ccb47c9e44ecd7f8c5cb9e0407}{getValue}}<G4double>(\textcolor{stringliteral}{"{}SomeKey"{}}, \textcolor{stringliteral}{"{}SomeParameter"{}});}
+\DoxyCodeLine{\textcolor{comment}{// Parsing array content from a JSON subtree into a vector using parseKeyContentToVector}}
+\DoxyCodeLine{std::vector<G4double> lVector;}
+\DoxyCodeLine{pt::ptree lSubtree = lTable.\mbox{\hyperlink{class_parameter_table_a042ee0eca2c9daa755d7a472608e6d66}{getJSONTree}}(\textcolor{stringliteral}{"{}SomeKey"{}}); \textcolor{comment}{// Retrieving the subtree of the file}}
+\DoxyCodeLine{lTable.\mbox{\hyperlink{class_parameter_table_a3c2a94b50a41341c104b5b1585d15efc}{parseKeyContentToVector}}(lVector, lSubtree, \textcolor{stringliteral}{"{}keyOfArray"{}}, 1.0, \textcolor{keyword}{false}); \textcolor{comment}{// parsing array into vector}}
 
 \end{DoxyCode}
 

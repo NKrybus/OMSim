@@ -96,7 +96,7 @@
 <!-- Node24 -->
 <g id="node24" class="node">
 <title>Node24</title>
-<g id="a_node24"><a xlink:href="_o_m_sim_input_data_8hh.html" target="_top" xlink:title="Input data from external files are read and saved to memory.">
+<g id="a_node24"><a xlink:href="_o_m_sim_input_data_8hh.html" target="_top" xlink:title="Definition of ParameterTable and InputDataManager.">
 <polygon fill="white" stroke="black" points="851.61,-179.5 851.61,-198.5 966.61,-198.5 966.61,-179.5 851.61,-179.5"/>
 <text text-anchor="middle" x="909.11" y="-186.5" font-family="Helvetica,sans-Serif" font-size="10.00">OMSimInputData.hh</text>
 </a>
