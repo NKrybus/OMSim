@@ -111,7 +111,7 @@
 <!-- Node5 -->
 <g id="node5" class="node">
 <title>Node5</title>
-<g id="a_node5"><a xlink:href="class_parameter_table.html" target="_top" xlink:title="A helper class that provides functionalities for handling JSON&#45;based data tables.">
+<g id="a_node5"><a xlink:href="class_parameter_table.html" target="_top" xlink:title="A utility class for managing JSON&#45;based data tables.">
 <polygon fill="white" stroke="black" points="71,-372.5 71,-391.5 163,-391.5 163,-372.5 71,-372.5"/>
 <text text-anchor="middle" x="117" y="-379.5" font-family="Helvetica,sans-Serif" font-size="10.00">ParameterTable</text>
 </a>
