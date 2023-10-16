@@ -40,7 +40,7 @@ In the complex PMT model the photocathode has an absorption length that matches 
 \begin{DoxyNote}{Note}
 It\textquotesingle{}s important to note that the present methodology stems from historical design decisions. In the future, it would be probably advisable to align this mechanism with the standard Geant4 methodology, utilizing tools such as G4\+SDManager, G4\+VHit, and similar constructs.
 \end{DoxyNote}
-To detect photons in both simple and complex geometries, the photons must be absorbed within the photocathode volume. This absorption check is performed at the end of each track in the \mbox{\hyperlink{class_o_m_sim_tracking_action_a734f854a881bd97fa2cd056d98566421}{OMSim\+Tracking\+Action\+::\+Post\+User\+Tracking\+Action}} method. The relevant code snippet is as follows\+:
+To detect photons in both simple and complex geometries, the photons must be absorbed within the photocathode volume. This absorption check is performed at the end of each track in the \textquotesingle{}\mbox{\hyperlink{class_o_m_sim_tracking_action_a734f854a881bd97fa2cd056d98566421}{OMSim\+Tracking\+Action\+::\+Post\+User\+Tracking\+Action}}\textquotesingle{} method. The relevant code snippet is as follows\+:
 
 
 \begin{DoxyCode}{0}
@@ -125,7 +125,7 @@ class \mbox{\hyperlink{class_scintillation_properties}{Scintillation\+Properties
 class \mbox{\hyperlink{class_custom_properties}{Custom\+Properties}}
 \begin{DoxyCompactList}\small\item\em This class adds user defined properties to already defined materials. \end{DoxyCompactList}\item 
 struct \mbox{\hyperlink{struct_hit_stats}{Hit\+Stats}}
-\begin{DoxyCompactList}\small\item\em A structure to store information about detected photon hits. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em A structure of vectors to store information about detected photons. \end{DoxyCompactList}\item 
 class \mbox{\hyperlink{class_o_m_sim_hit_manager}{OMSim\+Hit\+Manager}}
 \begin{DoxyCompactList}\small\item\em Manages detected photon information. \end{DoxyCompactList}\item 
 class \mbox{\hyperlink{class_parameter_table}{Parameter\+Table}}

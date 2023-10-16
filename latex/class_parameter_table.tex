@@ -85,7 +85,7 @@ std\+::map$<$ G4\+String, boost\+::property\+\_\+tree\+::ptree $>$ \mbox{\hyperl
 \doxysubsubsection{\texorpdfstring{appendAndReturnTree()}{appendAndReturnTree()}}
 {\footnotesize\ttfamily pt\+::ptree Parameter\+Table\+::append\+And\+Return\+Tree (\begin{DoxyParamCaption}\item[{G4\+String}]{p\+File\+Name }\end{DoxyParamCaption})}
 
-Appends information of json-\/file containing PMT/\+OM parameters to a vector of ptrees 
+Appends information of json-\/file containing PMT/\+OM parameters to a dictionary of ptrees 
 \begin{DoxyParams}{Parameters}
 {\em p\+File\+Name} & Name of file containing json \\
 \hline
@@ -110,15 +110,13 @@ true if the key exists, false otherwise.
 \doxysubsubsection{\texorpdfstring{getJSONTree()}{getJSONTree()}}
 {\footnotesize\ttfamily pt\+::ptree Parameter\+Table\+::get\+JSONTree (\begin{DoxyParamCaption}\item[{G4\+String}]{p\+Key }\end{DoxyParamCaption})}
 
-Get values from a p\+Tree with its unit, transforming it to a G4double 
+Get tree object saved in table 
 \begin{DoxyParams}{Parameters}
-{\em p\+Key} & Name of json tree in file \\
-\hline
-{\em p\+Parameter} & Name of parameter in json tree \\
+{\em p\+Key} & Key of tree (\char`\"{}j\+Name\char`\"{} in corresponding json file) \\
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
-G4double of the value and its unit 
+pt\+::ptree 
 \end{DoxyReturn}
 \mbox{\Hypertarget{class_parameter_table_adb1234ccb47c9e44ecd7f8c5cb9e0407}\label{class_parameter_table_adb1234ccb47c9e44ecd7f8c5cb9e0407}} 
 \index{ParameterTable@{ParameterTable}!getValue@{getValue}}

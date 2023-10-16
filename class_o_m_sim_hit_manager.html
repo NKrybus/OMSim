@@ -128,7 +128,8 @@ $(document).ready(function(){initNavTree('class_o_m_sim_hit_manager.html',''); i
 <p>Manages detected photon information.  
  <a href="class_o_m_sim_hit_manager.html#details">More...</a></p>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>This class is responsible for storing, managing, and providing access to the hit information related to detected photons across multiple optical modules. The manager can be accessed via a singleton pattern, ensuring a unified access point for photon hit data. </p>
+<div class="textblock"><p>This class is responsible for storing, managing, and providing access to the hit information related to detected photons across multiple optical modules. The manager can be accessed via a singleton pattern, ensuring a unified access point for photon hit data.</p>
+<p>The hits are stored using '<a class="el" href="class_o_m_sim_hit_manager.html#a004f73261c6ef3e30ff27b0e13da0a1b" title="Appends hit information for a detected photon to the corresponding module&#39;s hit data.">OMSimHitManager::appendHitInfo</a>' in '<a class="el" href="class_o_m_sim_tracking_action.html#a734f854a881bd97fa2cd056d98566421">OMSimTrackingAction::PostUserTrackingAction</a>'. The analysis manager of each study is in charge of writing the stored information into a file (see for example '<a class="el" href="class_o_m_sim_effective_area_analyisis.html#ad9b76bc60e5f3629a9c693c2a30f539d" title="Writes a scan result to the output file.">OMSimEffectiveAreaAnalyisis::writeScan</a>' or '<a class="el" href="class_o_m_sim_decays_analysis.html#ae35ea36c7616b45b3ca49fff54e2862a" title="Write data of the hits to the output file.">OMSimDecaysAnalysis::writeHitInformation</a>'). Once the data is written, do not forget calling '<a class="el" href="class_o_m_sim_hit_manager.html#a00bb034e7751905f8a8229de3f8a39b1" title="Deletes hit information in memory for all modules.">OMSimHitManager::reset</a>'!. </p>
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -145,7 +146,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:aeabbd61eeb69b719cbb2adc85e6e0d6b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stores the number of PMTs in a module for correct data handling.  <a href="class_o_m_sim_hit_manager.html#aeabbd61eeb69b719cbb2adc85e6e0d6b">More...</a><br /></td></tr>
 <tr class="separator:aeabbd61eeb69b719cbb2adc85e6e0d6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a50074acb44cd2a8bacffe00599add044"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_hit_stats.html">HitStats</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_m_sim_hit_manager.html#a50074acb44cd2a8bacffe00599add044">getHitsOfModule</a> (int moduleIndex=0)</td></tr>
-<tr class="memdesc:a50074acb44cd2a8bacffe00599add044"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves the <a class="el" href="struct_hit_stats.html" title="A structure to store information about detected photon hits.">HitStats</a> structure for the specified module.  <a href="class_o_m_sim_hit_manager.html#a50074acb44cd2a8bacffe00599add044">More...</a><br /></td></tr>
+<tr class="memdesc:a50074acb44cd2a8bacffe00599add044"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves the <a class="el" href="struct_hit_stats.html" title="A structure of vectors to store information about detected photons.">HitStats</a> structure for the specified module.  <a href="class_o_m_sim_hit_manager.html#a50074acb44cd2a8bacffe00599add044">More...</a><br /></td></tr>
 <tr class="separator:a50074acb44cd2a8bacffe00599add044"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a853b6fb70a189840b7ffa42c74af5b09"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_m_sim_hit_manager.html#a853b6fb70a189840b7ffa42c74af5b09">sortHitStatsByTime</a> (<a class="el" href="struct_hit_stats.html">HitStats</a> &amp;lHits)</td></tr>
 <tr class="memdesc:a853b6fb70a189840b7ffa42c74af5b09"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sorts the hit statistics by the hit time.  <a href="class_o_m_sim_hit_manager.html#a853b6fb70a189840b7ffa42c74af5b09">More...</a><br /></td></tr>
@@ -163,7 +164,7 @@ Static Public Member Functions</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
 <tr class="memitem:a5b5170bb63b04190829aeb79183a5d3f"><td class="memItemLeft" align="right" valign="top">std::map&lt; G4int, <a class="el" href="struct_hit_stats.html">HitStats</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_m_sim_hit_manager.html#a5b5170bb63b04190829aeb79183a5d3f">mModuleHits</a></td></tr>
-<tr class="memdesc:a5b5170bb63b04190829aeb79183a5d3f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Map of a <a class="el" href="struct_hit_stats.html" title="A structure to store information about detected photon hits.">HitStats</a> containing hit information for each simulated optical module.  <a href="class_o_m_sim_hit_manager.html#a5b5170bb63b04190829aeb79183a5d3f">More...</a><br /></td></tr>
+<tr class="memdesc:a5b5170bb63b04190829aeb79183a5d3f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Map of a <a class="el" href="struct_hit_stats.html" title="A structure of vectors to store information about detected photons.">HitStats</a> containing hit information for each simulated optical module.  <a href="class_o_m_sim_hit_manager.html#a5b5170bb63b04190829aeb79183a5d3f">More...</a><br /></td></tr>
 <tr class="separator:a5b5170bb63b04190829aeb79183a5d3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
@@ -340,7 +341,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>This method appends hit information to the corresponding module's <code><a class="el" href="struct_hit_stats.html" title="A structure to store information about detected photon hits.">HitStats</a></code> structure in the manager. If the specified module number is not yet in the manager, a new <code><a class="el" href="struct_hit_stats.html" title="A structure to store information about detected photon hits.">HitStats</a></code> structure is created for it.</p>
+<p>This method appends hit information to the corresponding module's <code><a class="el" href="struct_hit_stats.html" title="A structure of vectors to store information about detected photons.">HitStats</a></code> structure in the manager. If the specified module number is not yet in the manager, a new <code><a class="el" href="struct_hit_stats.html" title="A structure of vectors to store information about detected photons.">HitStats</a></code> structure is created for it.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">globalTime</td><td>Time of detection. </td></tr>
@@ -448,7 +449,7 @@ Private Attributes</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>A <a class="el" href="struct_hit_stats.html" title="A structure to store information about detected photon hits.">HitStats</a> structure containing hit information of specified module. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>A <a class="el" href="struct_hit_stats.html" title="A structure of vectors to store information about detected photons.">HitStats</a> structure containing hit information of specified module. </dd></dl>
 
 </div>
 </div>
@@ -627,7 +628,7 @@ Private Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="class_o_m_sim_hit_manager.html">OMSimHitManager</a></li>
-    <li class="footer">Generated on Mon Oct 16 2023 12:10:32 for OMSim by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Mon Oct 16 2023 14:24:48 for OMSim by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>
