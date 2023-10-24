@@ -48,6 +48,7 @@ G4bool OMSimSensitiveDetector::ProcessHits(G4Step *aStep, G4TouchableHistory *)
   G4Track *aTrack = aStep->GetTrack();
   if (aTrack->GetDefinition() == G4OpticalPhoton::Definition())
   {
+
     if (!aStep->IsLastStepInVolume() && aTrack->GetTrackStatus() == fStopAndKill)
     {
 
@@ -57,9 +58,7 @@ G4bool OMSimSensitiveDetector::ProcessHits(G4Step *aStep, G4TouchableHistory *)
 
       G4double h = 4.135667696E-15 * eV * s;
       G4double c = 2.99792458E17 * nm / s;
-
-      std::vector<G4String> lPMTnrinfo = splitStringByDelimiter(aTrack->GetStep()->GetPreStepPoint()->GetTouchableHandle()->GetVolume(2)->GetName(), '_');
-
+      G4int lPMTnr = 0;
       G4ThreeVector lGlobalPosition = aTrack->GetPosition();
       G4ThreeVector lLocalPosition = aTrack->GetStep()->GetPostStepPoint()->GetTouchableHandle()->GetHistory()->GetTopTransform().TransformPoint(lGlobalPosition);
 
@@ -72,14 +71,13 @@ G4bool OMSimSensitiveDetector::ProcessHits(G4Step *aStep, G4TouchableHistory *)
       // if the QE cut is enabled and the photon doesn't pass the QE check, the function will exit early without further processing.
       if (OMSimCommandArgsTable::getInstance().get<bool>("QE_cut") && !mPMTResponse->passQE(lWavelength)) return false;
         
-
       OMSimHitManager &lHitManager = OMSimHitManager::getInstance();
       lHitManager.appendHitInfo(
           aTrack->GetGlobalTime(),
           aTrack->GetLocalTime(),
           aTrack->GetTrackLength() / m,
           lEkin / eV,
-          atoi(lPMTnrinfo.at(1)),
+          lPMTnr,
           aTrack->GetMomentumDirection(),
           aTrack->GetPosition(),
           lLocalPosition,
