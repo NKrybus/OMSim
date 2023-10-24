@@ -205,7 +205,7 @@ std::tuple<G4SubtractionSolid *, G4UnionSolid *> mDOM::supportStructure()
     G4double lRefConeOuterNegRad = mRefConeIdealInRad + mRefConeToHolder / cos(mRefConeAngle);
     G4double lRefConeOuterPosRad = mRefConeIdealInRad + mRefConeToHolder / cos(mRefConeAngle) + 2 * 1.5 * mRefConeHalfZ * tan(mRefConeAngle);
     G4Cons *lRefConeNestConeSolid = new G4Cons("RefConeNestCone", 0, lRefConeOuterNegRad, 0, lRefConeOuterPosRad, 1.5 * mRefConeHalfZ, 0, 2 * CLHEP::pi);
-    G4UnionSolid *lRefConeNestSolid = new G4UnionSolid("RefConeNest", lPMTsolid, lRefConeNestConeSolid, 0, G4ThreeVector(0, 0, 1.5 * mRefConeHalfZ));
+    G4UnionSolid *lRefConeNestSolid = new G4UnionSolid("RefConeNest", -1.5*m lPMTsolid, lRefConeNestConeSolid, 0, G4ThreeVector(0, 0, 1.5 * mRefConeHalfZ));
 
     // Support structure substraction
     G4SubtractionSolid *lSupStructureSolid;
