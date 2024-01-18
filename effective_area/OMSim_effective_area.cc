@@ -9,6 +9,8 @@
 #include "OMSimEffectiveAreaAnalyisis.hh"
 #include "OMSimEffectiveAreaDetector.hh"
 
+std::shared_ptr<spdlog::logger> global_logger;
+
 namespace po = boost::program_options;
 
 void effectiveAreaSimulation()
@@ -85,7 +87,7 @@ int main(int argc, char *argv[])
 		if (lVariablesMap.count("help"))
 		{
 			std::cout << lAllargs << "\n";
-			return 1;
+			return 0;
 		}
 
 		OMSimCommandArgsTable &lArgs = OMSimCommandArgsTable::getInstance();
