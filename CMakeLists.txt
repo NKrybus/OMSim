@@ -16,7 +16,7 @@ else()
 endif()
 
 # Set path to Geant4 libraries
-set (CMAKE_MODULE_PATH /data/geant4/geant4-v11.1.1/install/lib/Geant4-10.7.1/Modules/)
+set (CMAKE_MODULE_PATH /data/n_kryb02/geant4-v11.1.1/install/lib/Geant4-11.1.1)
 
 # Set paths for OpenSSL
 set(OPENSSL_ROOT_DIR /usr/lib/x86_64-linux-gnu)

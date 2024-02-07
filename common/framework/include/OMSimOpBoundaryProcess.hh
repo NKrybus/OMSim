@@ -229,6 +229,10 @@ class G4OpBoundaryProcess : public G4VDiscreteProcess
   G4double fAbsorptionLength2;
   G4double fCoatedAbsLength;
 
+  G4double fImagRIndex1;
+  G4double fImagRIndex2;
+  G4double fCoatedImagRIndex;
+
   G4complex fComplexRindex1;     
   G4complex fComplexRindex2;     
   G4complex fComplexCoatedRindex;

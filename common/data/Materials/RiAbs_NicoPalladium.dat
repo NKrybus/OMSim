@@ -1,5 +1,5 @@
 {
-   "jName": "RiAbs_NicoPalladium_",
+   "jName": "RiAbs_NicoPalladium",
    "jDataType": "RiAbs",
    "jComponentName": [
       "G4_Sb",
@@ -25,8 +25,8 @@
       730
    ],
    "jAbsLength": [
-      10.4937e+6,
-      10.4937e+6
+      10.4937e-6,
+      10.4937e-6
    ],
    "jAbsLengthWavelength": [
       350,

@@ -13,13 +13,13 @@ void OMSimEffectiveAreaAnalyisis::writeHeader()
 			  << "\t"
 			  << "Theta(deg)"
 			  << "\t"
-			  << "hits[1perPMT]"
+			  << "hits_PhotCat"
 			  << "\t"
-			  << "total_hits"		
+			  << "hits_Top"		
 			  << "\t"
-			  << "EA_Total(cm^2)"
-			  << "\t"
-			  << "EA_Total_error(cm^2)"
+			  << "hits_Bot"
+			  //<< "\t"
+			  //<< "EA_Total_error(cm^2)"
 			  << "\t" << G4endl;
 	mDatafile.close();
 }
@@ -54,15 +54,16 @@ void OMSimEffectiveAreaAnalyisis::writeScan(G4double pPhi, G4double pTheta)
 	std::vector<double> lHits_2 = OMSimHitManager::getInstance().countHits(2);
 
 	mDatafile.open(mOutputFileName.c_str(), std::ios::out | std::ios::app);
-	mDatafile << pPhi << "\t" << pTheta << "\t";
+	mDatafile << "\t" << pPhi << "\t\t" << pTheta << "\t\t\t";
 
-	mDatafile << lHits_0.at(1) << "\t";
-	mDatafile << lHits_1.at(1) << "\t";
-	mDatafile << lHits_2.at(1) << "\t";
+	mDatafile << lHits_0.at(1) << "\t\t\t\t";
+	mDatafile << lHits_1.at(1) << "\t\t\t";
+	mDatafile << lHits_2.at(1) << "\t\t\t";
 
 
 	//effectiveAreaResult lEffectiveArea = calculateEffectiveArea(lTotalHits);
 	//mDatafile << lEffectiveArea.EA << "\t" << lEffectiveArea.EAError << "\t";
 	mDatafile << G4endl;
 	mDatafile.close();
+	
 }

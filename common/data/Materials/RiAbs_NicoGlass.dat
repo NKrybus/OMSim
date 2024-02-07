@@ -1,5 +1,5 @@
 {
-   "jName": "RiAbs_NicoGlass_",
+   "jName": "RiAbs_NicoGlass",
    "jComponents": {
       "G4_Pyrex_Glass": 1.0
    },
@@ -18,8 +18,8 @@
       730.0
    ],
    "jAbsLength": [
-      100,
-      100
+      400.0,
+      400.0
    ],
    "jAbsLengthWavelength": [
       200.0,

@@ -8,6 +8,7 @@
 #include "OMSimAngularScan.hh"
 #include "OMSimEffectiveAreaAnalyisis.hh"
 #include "OMSimEffectiveAreaDetector.hh"
+#include "OMSimLogger.hh"
 
 std::shared_ptr<spdlog::logger> global_logger;
 

@@ -169,9 +169,13 @@ void OMSim::initialiseSimulation(OMSimDetectorConstruction* pDetectorConstructio
 
 OMSim::~OMSim()
 {
+    //log_critical("Destructor");
     delete mNavigator;
+    //log_critical("Destructor2");
     delete mVisManager;
+    //log_critical("Destructor3");
     delete mRunManager;
+    //log_critical("Destructor4");
     double lFinishtime = clock() / CLOCKS_PER_SEC;
     G4cout << "Computation time: " << lFinishtime - mStartingTime << " seconds." << G4endl;
 }

@@ -87,7 +87,8 @@ void OMSimEffectiveAreaDetector::constructDetector()
 
     OMSimSensitiveDetector *lSensitiveDetector = new OMSimSensitiveDetector("/Phot/0", DetectorType::BoundaryPhotonDetector);
     lSensitiveDetector->setPMTResponse(&NoResponse::getInstance());
-    //setSensitiveDetector(GlassLog, lSensitiveDetector);
+    setSensitiveDetector(GlassLog, lSensitiveDetector);
+    setSensitiveDetector(VacuumLog, lSensitiveDetector);
     lHitManager.setNumberOfPMTs(1, 0);
 
     OMSimSensitiveDetector *lSensitiveDetector1 = new OMSimSensitiveDetector("/TopAbs/1", DetectorType::VolumePhotonDetector);
