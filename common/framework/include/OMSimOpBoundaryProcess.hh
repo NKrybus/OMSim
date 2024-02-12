@@ -238,7 +238,7 @@ class G4OpBoundaryProcess : public G4VDiscreteProcess
   G4complex fComplexCoatedRindex;
 
 
-  G4double fSint1;
+  G4double sint1;
 
   G4double fReflectivity;
   G4double fEfficiency;

@@ -122,7 +122,7 @@ G4OpBoundaryProcess::G4OpBoundaryProcess(const G4String &processName,
   f_iTE = f_iTM = 0;
   fPhotonMomentum = 0.;
   fRindex1 = fRindex2 = 1.;
-  fSint1 = 0.;
+  sint1 = 0.;
   fDichroicVector = nullptr;
 
   fNumWarnings = 0;
@@ -816,7 +816,7 @@ void G4OpBoundaryProcess::DielectricMetal()
           }
           else if (f_iTE > 0)
           {
-            A_trans = (fSint1 > 0.0) ? fOldMomentum.cross(fFacetNormal).unit()
+            A_trans = (sint1 > 0.0) ? fOldMomentum.cross(fFacetNormal).unit()
                                      : fOldPolarization;
             fNewPolarization = -A_trans;
           }
@@ -1152,13 +1152,13 @@ leap:
     cost1 = -fOldMomentum * fFacetNormal;
     if (std::abs(cost1) < 1.0 - fCarTolerance)
     {
-      fSint1 = std::sqrt(1. - cost1 * cost1);
-      sint2 = fSint1 * fRindex1 / fRindex2; // *** Snell's Law ***
+      sint1 = std::sqrt(1. - cost1 * cost1);
+      sint2 = sint1 * fRindex1 / fRindex2; // *** Snell's Law ***
       // this isn't a sine as we might expect from the name; can be > 1 !!!
     }
     else
     {
-      fSint1 = 0.0;
+      sint1 = 0.0;
       sint2 = 0.0;
     }
 
@@ -1202,7 +1202,7 @@ leap:
         cost2 = -std::sqrt(1. - sint2 * sint2);
       }
 
-      if (fSint1 > 0.0)
+      if (sint1 > 0.0)
       {
         A_trans = (fOldMomentum.cross(fFacetNormal)).unit();
         E1_perp = fOldPolarization * A_trans;
@@ -1255,7 +1255,7 @@ leap:
         {
           fNewMomentum =
               fOldMomentum - 2. * fOldMomentum * fFacetNormal * fFacetNormal;
-          if (fSint1 > 0.0)
+          if (sint1 > 0.0)
           { // incident ray oblique
             E2_parl = fRindex2 * E2_parl / fRindex1 - E1_parl;
             E2_perp = E2_perp - E1_perp;
@@ -1287,7 +1287,7 @@ leap:
         through = true;
         fStatus = FresnelRefraction;
 
-        if (fSint1 > 0.0)
+        if (sint1 > 0.0)
         { // incident ray oblique
           alpha = cost1 - cost2 * (fRindex2 / fRindex1);
           fNewMomentum = (fOldMomentum + alpha * fFacetNormal).unit();
@@ -1483,17 +1483,17 @@ void G4OpBoundaryProcess::CalculateReflectivity()
   G4double cost1 = -fOldMomentum * fFacetNormal;
   if (std::abs(cost1) < 1.0 - fCarTolerance)
   {
-    fSint1 = std::sqrt(1. - cost1 * cost1);
+    sint1 = std::sqrt(1. - cost1 * cost1);
   }
   else
   {
-    fSint1 = 0.0;
+    sint1 = 0.0;
   }
 
   G4ThreeVector A_trans, A_paral, E1pp, E1pl;
   G4double E1_perp, E1_parl;
 
-  if (fSint1 > 0.0)
+  if (sint1 > 0.0)
   {
     A_trans = (fOldMomentum.cross(fFacetNormal)).unit();
     E1_perp = fOldPolarization * A_trans;
@@ -1613,18 +1613,18 @@ void G4OpBoundaryProcess::CoatedDielectricDielectric()
 
     if (std::abs(cost1) < 1.0 - fCarTolerance)
     {
-      fSint1 = std::sqrt(1. - cost1 * cost1);
-      sint2 = fSint1 * fRindex1 / fRindex2;
-      sintTL = fSint1 * fRindex1 / fCoatedRindex;
+      sint1 = std::sqrt(1. - cost1 * cost1);
+      sint2 = sint1 * fRindex1 / fRindex2;
+      sintTL = sint1 * fRindex1 / fCoatedRindex;
     }
     else
     {
-      fSint1 = 0.0;
+      sint1 = 0.0;
       sint2 = 0.0;
       sintTL = 0.0;
     }
 
-    if (fSint1 > 0.0)
+    if (sint1 > 0.0)
     {
       A_trans = fOldMomentum.cross(fFacetNormal);
       A_trans = A_trans.unit();
@@ -1684,7 +1684,7 @@ void G4OpBoundaryProcess::CoatedDielectricDielectric()
       PdotN = fOldMomentum * fFacetNormal;
       fNewMomentum = fOldMomentum - (2. * PdotN) * fFacetNormal;
 
-      if (fSint1 > 0.0)
+      if (sint1 > 0.0)
       { // incident ray oblique
 
         E2_parl = fRindex2 * E2_parl / fRindex1 - E1_parl;
@@ -1735,7 +1735,7 @@ void G4OpBoundaryProcess::CoatedDielectricDielectric()
           fStatus = CoatedDielectricRefraction;
         }
 
-        if (fSint1 > 0.0)
+        if (sint1 > 0.0)
         { // incident ray oblique
 
           alpha = cost1 - cost2 * (fRindex2 / fRindex1);
@@ -1793,12 +1793,12 @@ G4double G4OpBoundaryProcess::GetReflectivityThroughThinLayer(G4double sinTL,
 
       if (cost1 > 0.0)
       {
-        gammaTL = std::sqrt(fRindex1 * fRindex1 * fSint1 * fSint1 -
+        gammaTL = std::sqrt(fRindex1 * fRindex1 * sint1 * sint1 -
                             fCoatedRindex * fCoatedRindex);
       }
       else
       {
-        gammaTL = -std::sqrt(fRindex1 * fRindex1 * fSint1 * fSint1 -
+        gammaTL = -std::sqrt(fRindex1 * fRindex1 * sint1 * sint1 -
                              fCoatedRindex * fCoatedRindex);
       }
 
@@ -1933,6 +1933,11 @@ void G4OpBoundaryProcess::PhotocathodeCoated()
   G4bool through = false;
   G4bool done = false;
 
+  G4complex Sint1complex(sint1, 0);
+  G4complex fComplexRindex1(fRindex1, fImagRIndex1);
+  G4complex fComplexRindex2(fRindex2, fImagRIndex2);
+  G4complex fComplexCoatedRindex(fCoatedRindex, fCoatedImagRIndex);
+
   // convert absorption length to complex refractive index: k(λ) = λ/(4pi*abslength(λ)) for abslength != 0 (which would correspont to "undefined")
   if (fAbsorptionLength1 != 0.)
   {
@@ -1988,18 +1993,29 @@ void G4OpBoundaryProcess::PhotocathodeCoated()
 
     if (std::abs(cost1) < 1.0 - fCarTolerance)
     {
-      fSint1 = std::sqrt(1. - cost1 * cost1);
-      sint2 = fSint1 * fRindex1 / fRindex2; // Snell's Law
-      sintTL = fSint1 * fRindex1 / fCoatedRindex;
+      sint1 = std::sqrt(1. - cost1 * cost1);
+      Sint1complex = G4complex(sint1, Sint1complex.imag());
+      sintTL = std::real(Sint1complex * fComplexRindex1 / fComplexCoatedRindex);
+      //sint2 = std::real(sintTL * fComplexCoatedRindex / fComplexRindex2);
+      sint2 = std::real(Sint1complex * fComplexRindex1 / fComplexRindex2); // Snell's Law
+
+     /*  log_info("fComplexRindex1 = {}+{}i", std::real(fComplexRindex1), std::imag(fComplexRindex1));
+      log_info("fComplexCoatedRindex = {}+{}i", std::real(fComplexCoatedRindex), std::imag(fComplexCoatedRindex));
+      log_info("fComplexRindex2 = {}+{}i", std::real(fComplexRindex2), std::imag(fComplexRindex2));
+      log_info("Sint1complex = {}+{}i", std::real(Sint1complex), std::imag(Sint1complex));
+      log_info("cost1 = {}", cost1);
+      log_info("sint1 = {}", sint1);
+      log_info("sintTL = {}", sintTL);
+      log_info("sint2 = {}", sint2); */
     }
     else // If cost1 is close to 1.0, indicating total internal reflection, some values are set to zero
     {
-      fSint1 = 0.0;
+      sint1 = 0.0;
       sint2 = 0.0;
       sintTL = 0.0;
     }
 
-    if (fSint1 > 0.0) // incident ray is oblique
+    if (sint1 > 0.0) // incident ray is oblique
     {
       A_trans = fOldMomentum.cross(fFacetNormal);
       A_trans = A_trans.unit();
@@ -2028,10 +2044,10 @@ void G4OpBoundaryProcess::PhotocathodeCoated()
 
     transCoeff = 0.0;
 
-    if (sintTL >= 1.0) // Check for total internal reflection --> Angle > Angle Limit
+    /* if (sintTL >= 1.0) // Check for total internal reflection down below --> Angle > Angle Limit
     {
       // Swap = false;
-    }
+    } */
     E2_perp = 2. * s1 * E1_perp / (fRindex1 * cost1 + fRindex2 * cost2);
     E2_parl = 2. * s1 * E1_parl / (fRindex2 * cost1 + fRindex1 * cost2);
     E2_total = E2_perp * E2_perp + E2_parl * E2_parl;
@@ -2058,7 +2074,7 @@ void G4OpBoundaryProcess::PhotocathodeCoated()
       if (verboseLevel > 2)
         G4cout << "Reflection from " << fMaterial1->GetName() << " to "
                << fMaterial2->GetName() << G4endl;
-      // If the random number generated is below the transmission coefficient, it means the photon is reflected.
+      // If the random number generated is below the reflection coefficient, it means the photon is reflected.
 
       // Swap = false;
 
@@ -2075,7 +2091,7 @@ void G4OpBoundaryProcess::PhotocathodeCoated()
       fNewMomentum = fOldMomentum - (2. * PdotN) * fFacetNormal;
       // The status is set to CoatedDielectricReflection, and the new momentum and polarization are determined for reflection
 
-      if (fSint1 > 0.0)
+      if (sint1 > 0.0)
       { // incident ray oblique
 
         E2_parl = fRindex2 * E2_parl / fRindex1 - E1_parl;
@@ -2129,7 +2145,7 @@ void G4OpBoundaryProcess::PhotocathodeCoated()
         fStatus = CoatedDielectricRefraction;
       }
 
-      if (fSint1 > 0.0)
+      if (sint1 > 0.0)
       { // incident ray oblique
 
         alpha = cost1 - cost2 * (fRindex2 / fRindex1);
@@ -2189,7 +2205,7 @@ void G4OpBoundaryProcess::PhotocathodeCoated()
 }
 
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
-OpticalLayerResult G4OpBoundaryProcess::GetFresnelThroughThinLayer(G4double sinTL,
+OpticalLayerResult G4OpBoundaryProcess::GetFresnelThroughThinLayer(G4double pSintTL,
                                                                    G4double E1_perp,
                                                                    G4double E1_parl,
                                                                    G4double wavelength, G4double cost1, G4double cost2)
@@ -2211,7 +2227,7 @@ OpticalLayerResult G4OpBoundaryProcess::GetFresnelThroughThinLayer(G4double sinT
   G4complex fComplexCoatedRindex(fCoatedRindex, fCoatedImagRIndex);
 
   // Angle > Angle limit (relevant for n1>n2, not the case here)
-  if (sinTL >= 1.0)
+  if (pSintTL >= 1.0)
   {
     log_critical("sinTL >= 1");
     if (fCoatedFrustratedTransmission)
@@ -2219,12 +2235,12 @@ OpticalLayerResult G4OpBoundaryProcess::GetFresnelThroughThinLayer(G4double sinT
 
       if (cost1 > 0.0)
       {
-        gammaTL = std::sqrt(fRindex1 * fRindex1 * fSint1 * fSint1 -
+        gammaTL = std::sqrt(fRindex1 * fRindex1 * sint1 * sint1 -
                             fCoatedRindex * fCoatedRindex);
       }
       else
       {
-        gammaTL = -std::sqrt(fRindex1 * fRindex1 * fSint1 * fSint1 -
+        gammaTL = -std::sqrt(fRindex1 * fRindex1 * sint1 * sint1 -
                              fCoatedRindex * fCoatedRindex);
       }
 
@@ -2244,20 +2260,10 @@ OpticalLayerResult G4OpBoundaryProcess::GetFresnelThroughThinLayer(G4double sinT
                (fRindex1 * i * gammaTL + fCoatedRindex * fCoatedRindex * cost1);
       rTLto2 = (fCoatedRindex * fCoatedRindex * cost2 - fRindex2 * i * gammaTL) /
                (fCoatedRindex * fCoatedRindex * cost2 + fRindex2 * i * gammaTL);
-      // log_critical("fRindex1 = {}", fRindex1);
-      // log_critical("gammaTL = {}", gammaTL);
-      // log_critical("fCoatedRindex = {}", fCoatedRindex);
-      // log_critical("cost1 = {}", cost1);
-      // log_critical("TM: r1toTL ={}", std::real(r1toTL));
-      // log_critical("TM: rTLto2 ={}", std::real(rTLto2));
       if (cost1 != 0.0)
       {
         rTM = (r1toTL + rTLto2 * std::exp(-2 * k0 * fCoatedThickness * gammaTL)) /
               (1.0 + r1toTL * rTLto2 * std::exp(-2 * k0 * fCoatedThickness * gammaTL));
-        // log_critical("rTM_Zähler ={}", std::real(r1toTL + rTLto2 * std::exp(-2 * k0 * fCoatedThickness * gammaTL)));
-        // log_critical("rTM_Nenner ={}", std::real(1.0 + r1toTL * rTLto2 * std::exp(-2 * k0 * fCoatedThickness * gammaTL)));
-        // log_critical("exp() = {}", std::real(std::exp(-2 * k0 * fCoatedThickness * gammaTL)));
-        // log_critical("rTM ={}", std::real(rTM));
       }
     }
     else
@@ -2274,26 +2280,34 @@ OpticalLayerResult G4OpBoundaryProcess::GetFresnelThroughThinLayer(G4double sinT
 
     if (cost1 > 0.0)
     {
-      costTL = std::sqrt(1. - sinTL * sinTL);
+      costTL = std::sqrt(1. - pSintTL * pSintTL);
     }
     else
     {
-      costTL = -std::sqrt(1. - sinTL * sinTL);
+      costTL = -std::sqrt(1. - pSintTL * pSintTL);
+      costTL = 0.9962662464393258;
     }
 
     G4complex beta = k0 * fComplexCoatedRindex * fCoatedThickness * costTL;
+    //log_info("fCoatedImagRIndex = {}", fCoatedImagRIndex);
 
     // TE (s)
-    r1toTL = (fComplexRindex1 * cost1 - fComplexCoatedRindex * costTL) / (fComplexRindex1 * cost1 + fComplexCoatedRindex * costTL);
+    r1toTL = (fComplexRindex1 * std::real(cost1) - fComplexCoatedRindex * std::real(costTL)) / 
+             (fComplexRindex1 * std::real(cost1) + fComplexCoatedRindex * std::real(costTL));
     rTLto2 = (fComplexCoatedRindex * costTL - fComplexRindex2 * cost2) / (fComplexCoatedRindex * costTL + fComplexRindex2 * cost2);
     r1toTL_TE = r1toTL;
     rTLto2_TE = rTLto2;
-    log_info("TE: r1toTL_TE ={}", std::real(r1toTL_TE));
-    log_info("TE: rTLto2_TE ={}", std::real(rTLto2_TE));
-
+    
     t1toTL_TE = 2.0 * fComplexRindex1 * cost1 / (fComplexRindex1 * cost1 + fComplexCoatedRindex * costTL);
     tTLto2_TE = 2.0 * fComplexCoatedRindex * costTL / (fComplexCoatedRindex * costTL + fComplexRindex2 * cost2);
+    log_info("fComplexRindex1 = {} + {}i", std::real(fComplexRindex1), std::imag(fComplexRindex1));
+    log_info("fComplexCoatedRindex = {} + {}i", std::real(fComplexCoatedRindex), std::imag(fComplexCoatedRindex));
+    log_info("cost1 = {}", std::real(cost1));
+    log_info("costTL = {}", std::real(costTL));
+    log_info("cost2 = {}", std::real(cost2));
+    log_info("TE: r1toTL_TE ={} + {}i", std::real(r1toTL_TE), std::imag(r1toTL_TE));
     log_info("TE: t1toTL_TE ={}", std::real(t1toTL_TE));
+    log_info("TE: rTLto2_TE ={}", std::real(rTLto2_TE));
     log_info("TE: tTLto2_TE ={}", std::real(tTLto2_TE));
 
     if (cost1 != 0.0)
@@ -2312,12 +2326,12 @@ OpticalLayerResult G4OpBoundaryProcess::GetFresnelThroughThinLayer(G4double sinT
     rTLto2 = (fComplexRindex2 * costTL - fComplexCoatedRindex * cost2) / (fComplexCoatedRindex * cost2 + fComplexRindex2 * costTL);
     r1toTL_TM = r1toTL;
     rTLto2_TM = rTLto2;
-    log_info("TM: r1toTL_TM = {}", std::real(r1toTL_TM));
-    log_info("TM: rTLto2_TM = {}", std::real(rTLto2_TM));
 
     t1toTL_TM = 2.0 * fComplexRindex1 * cost1 / (fComplexRindex1 * costTL + fComplexCoatedRindex * cost1);
     tTLto2_TM = 2.0 * fComplexCoatedRindex * costTL / (fComplexCoatedRindex * cost2 + fComplexRindex2 * costTL);
+    log_info("TM: r1toTL_TM = {}", std::real(r1toTL_TM));
     log_info("TM: t1toTL_TM = {}", std::real(t1toTL_TM));
+    log_info("TM: rTLto2_TM = {}", std::real(rTLto2_TM));
     log_info("TM: tTLto2_TM = {}", std::real(tTLto2_TM));
 
     if (cost1 != 0.0)
@@ -2328,6 +2342,8 @@ OpticalLayerResult G4OpBoundaryProcess::GetFresnelThroughThinLayer(G4double sinT
             (1.0 + r1toTL_TM * rTLto2_TM * std::exp(2.0 * i * beta));
       log_info("rTM = {}", std::real(rTM));
       log_info("tTM = {}", std::real(tTM));
+      // log_info("R_PHC = {}", (std::real(rTM) + std::real(rTE)/2.));
+      // log_info("T_PHC = {}", (std::real(tTM) + std::real(tTE)/2.));
     }
   }
 
@@ -2343,14 +2359,14 @@ OpticalLayerResult G4OpBoundaryProcess::GetFresnelThroughThinLayer(G4double sinT
   Trans_TE = (fRindex2 * cost2) / (fRindex1 * cost1) * std::abs(tTE) * std::abs(tTE);
   Trans_TM = (fRindex2 * cost2) / (fRindex1 * cost1) * std::abs(tTM) * std::abs(tTM);
   Transmittance = (Trans_TE + Trans_TM) / 2.0;
-  log_info("fRindex1 = {}", fRindex1);
-  log_info("cost1 = {}", cost1);
-  log_info("fRindex2 = {}", fRindex2);
-  log_info("cost2 = {}", cost2);
+  //log_info("fRindex1 = {}", fRindex1);
+  //log_info("cost1 = {}", cost1);
+  //log_info("fRindex2 = {}", fRindex2);
+  //log_info("cost2 = {}", cost2);
 
   Abs = 1.0 - std::real(Reflectivity) - std::real(Transmittance);
 
-  /* Reflectance + Transmittance but for a explicit 4-Layer system - 4L=4Layer
+  /* Reflectance + Transmittance but for and explicit 4-Layer system - 4L=4Layer
     (The old function is still above and returns the "Reflectivity" without considering a four layer system)
 
     R4L_TE = r1toTL_TE*r1toTL_TE + rTE*rTE  * (1.0 - r1toTL_TE*r1toTL_TE) * (1.0 -r1toTL_TE*r1toTL_TE) / (1.0 - r1toTL_TE*r1toTL_TE * rTE*rTE);
