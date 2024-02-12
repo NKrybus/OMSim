@@ -2292,11 +2292,10 @@ OpticalLayerResult G4OpBoundaryProcess::GetFresnelThroughThinLayer(G4double pSin
     //log_info("fCoatedImagRIndex = {}", fCoatedImagRIndex);
 
     // TE (s)
-    r1toTL = (fComplexRindex1 * std::real(cost1) - fComplexCoatedRindex * std::real(costTL)) / 
+    r1toTL_TE = (fComplexRindex1 * std::real(cost1) - fComplexCoatedRindex * std::real(costTL)) / 
              (fComplexRindex1 * std::real(cost1) + fComplexCoatedRindex * std::real(costTL));
-    rTLto2 = (fComplexCoatedRindex * costTL - fComplexRindex2 * cost2) / (fComplexCoatedRindex * costTL + fComplexRindex2 * cost2);
-    r1toTL_TE = r1toTL;
-    rTLto2_TE = rTLto2;
+    rTLto2_TE = (fComplexCoatedRindex * costTL - fComplexRindex2 * cost2) /
+             (fComplexCoatedRindex * costTL + fComplexRindex2 * cost2);
     
     t1toTL_TE = 2.0 * fComplexRindex1 * cost1 / (fComplexRindex1 * cost1 + fComplexCoatedRindex * costTL);
     tTLto2_TE = 2.0 * fComplexCoatedRindex * costTL / (fComplexCoatedRindex * costTL + fComplexRindex2 * cost2);
@@ -2313,8 +2312,8 @@ OpticalLayerResult G4OpBoundaryProcess::GetFresnelThroughThinLayer(G4double pSin
     if (cost1 != 0.0)
     {
       // beta = k0 * fComplexCoatedRindex * fCoatedThickness * costTL
-      rTE = (r1toTL + rTLto2 * std::exp(2.0 * i * beta)) /
-            (1.0 + r1toTL * rTLto2 * std::exp(2.0 * i * beta));
+      rTE = (r1toTL_TE + rTLto2_TE * std::exp(2.0 * i * beta)) /
+            (1.0 + r1toTL_TE * rTLto2_TE * std::exp(2.0 * i * beta));
       tTE = (t1toTL_TE * tTLto2_TE * std::exp(i * beta)) /
             (1.0 + r1toTL_TE * rTLto2_TE * std::exp(2.0 * i * beta));
       log_info("rTE = {}", std::real(rTE));
@@ -2322,11 +2321,9 @@ OpticalLayerResult G4OpBoundaryProcess::GetFresnelThroughThinLayer(G4double pSin
     }
 
     // TM (p)
-    r1toTL = (fComplexCoatedRindex * cost1 - fComplexRindex1 * costTL) / (fComplexRindex1 * costTL + fComplexCoatedRindex * cost1);
-    rTLto2 = (fComplexRindex2 * costTL - fComplexCoatedRindex * cost2) / (fComplexCoatedRindex * cost2 + fComplexRindex2 * costTL);
-    r1toTL_TM = r1toTL;
-    rTLto2_TM = rTLto2;
-
+    r1toTL_TM = (fComplexCoatedRindex * cost1 - fComplexRindex1 * costTL) / (fComplexRindex1 * costTL + fComplexCoatedRindex * cost1);
+    rTLto2_TM = (fComplexRindex2 * costTL - fComplexCoatedRindex * cost2) / (fComplexCoatedRindex * cost2 + fComplexRindex2 * costTL);
+   
     t1toTL_TM = 2.0 * fComplexRindex1 * cost1 / (fComplexRindex1 * costTL + fComplexCoatedRindex * cost1);
     tTLto2_TM = 2.0 * fComplexCoatedRindex * costTL / (fComplexCoatedRindex * cost2 + fComplexRindex2 * costTL);
     log_info("TM: r1toTL_TM = {}", std::real(r1toTL_TM));
@@ -2336,8 +2333,8 @@ OpticalLayerResult G4OpBoundaryProcess::GetFresnelThroughThinLayer(G4double pSin
 
     if (cost1 != 0.0)
     {
-      rTM = (r1toTL + rTLto2 * std::exp(2.0 * i * beta)) /
-            (1.0 + r1toTL * rTLto2 * std::exp(2.0 * i * beta));
+      rTM = (r1toTL_TM + tTLto2_TM * std::exp(2.0 * i * beta)) /
+            (1.0 + r1toTL_TM * tTLto2_TM * std::exp(2.0 * i * beta));
       tTM = (t1toTL_TM * tTLto2_TM * std::exp(i * beta)) /
             (1.0 + r1toTL_TM * rTLto2_TM * std::exp(2.0 * i * beta));
       log_info("rTM = {}", std::real(rTM));
