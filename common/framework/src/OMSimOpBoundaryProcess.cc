@@ -2255,6 +2255,7 @@ OpticalLayerResult G4OpBoundaryProcess::GetFresnelThroughThinLayer(G4double pSin
               (1.0 + r1toTL * rTLto2 * std::exp(-2 * k0 * fCoatedThickness * gammaTL));
         // log_critical("rTE ={}", std::real(rTE));
       }
+
       // TM
       r1toTL = (fRindex1 * i * gammaTL - fCoatedRindex * fCoatedRindex * cost1) /
                (fRindex1 * i * gammaTL + fCoatedRindex * fCoatedRindex * cost1);
@@ -2285,29 +2286,35 @@ OpticalLayerResult G4OpBoundaryProcess::GetFresnelThroughThinLayer(G4double pSin
     else
     {
       costTL = -std::sqrt(1. - pSintTL * pSintTL);
-      costTL = 0.9962662464393258;
     }
 
+
     G4complex beta = k0 * fComplexCoatedRindex * fCoatedThickness * costTL;
-    //log_info("fCoatedImagRIndex = {}", fCoatedImagRIndex);
+    log_info("beta = {} + {}i", std::real(beta), std::imag(beta));
 
     // TE (s)
-    r1toTL_TE = (fComplexRindex1 * std::real(cost1) - fComplexCoatedRindex * std::real(costTL)) / 
-             (fComplexRindex1 * std::real(cost1) + fComplexCoatedRindex * std::real(costTL));
-    rTLto2_TE = (fComplexCoatedRindex * costTL - fComplexRindex2 * cost2) /
-             (fComplexCoatedRindex * costTL + fComplexRindex2 * cost2);
     
-    t1toTL_TE = 2.0 * fComplexRindex1 * cost1 / (fComplexRindex1 * cost1 + fComplexCoatedRindex * costTL);
-    tTLto2_TE = 2.0 * fComplexCoatedRindex * costTL / (fComplexCoatedRindex * costTL + fComplexRindex2 * cost2);
+    r1toTL_TE = (fComplexRindex1 * cost1 - fComplexCoatedRindex * costTL) / 
+                (fComplexRindex1 * cost1 + fComplexCoatedRindex * costTL);
+    rTLto2_TE = (fComplexCoatedRindex * costTL - fComplexRindex2 * cost2) /
+                (fComplexCoatedRindex * costTL + fComplexRindex2 * cost2);
+    
+    t1toTL_TE = (2.0 * fComplexRindex1 * cost1) / (fComplexRindex1 * cost1 + fComplexCoatedRindex * costTL);
+    tTLto2_TE = (2.0 * fComplexCoatedRindex * costTL) / (fComplexCoatedRindex * costTL + fComplexRindex2 * cost2);
+  
     log_info("fComplexRindex1 = {} + {}i", std::real(fComplexRindex1), std::imag(fComplexRindex1));
     log_info("fComplexCoatedRindex = {} + {}i", std::real(fComplexCoatedRindex), std::imag(fComplexCoatedRindex));
     log_info("cost1 = {}", std::real(cost1));
     log_info("costTL = {}", std::real(costTL));
+    //log_info("\n");
     log_info("cost2 = {}", std::real(cost2));
+    
     log_info("TE: r1toTL_TE ={} + {}i", std::real(r1toTL_TE), std::imag(r1toTL_TE));
     log_info("TE: t1toTL_TE ={}", std::real(t1toTL_TE));
-    log_info("TE: rTLto2_TE ={}", std::real(rTLto2_TE));
+    log_info("TE: rTLto2_TE ={} + {}i", std::real(rTLto2_TE), std::imag(rTLto2_TE));
+
     log_info("TE: tTLto2_TE ={}", std::real(tTLto2_TE));
+
 
     if (cost1 != 0.0)
     {
@@ -2326,15 +2333,16 @@ OpticalLayerResult G4OpBoundaryProcess::GetFresnelThroughThinLayer(G4double pSin
    
     t1toTL_TM = 2.0 * fComplexRindex1 * cost1 / (fComplexRindex1 * costTL + fComplexCoatedRindex * cost1);
     tTLto2_TM = 2.0 * fComplexCoatedRindex * costTL / (fComplexCoatedRindex * cost2 + fComplexRindex2 * costTL);
-    log_info("TM: r1toTL_TM = {}", std::real(r1toTL_TM));
+
+    log_info("TE: r1toTL_TM ={} + {}i", std::real(r1toTL_TM), std::imag(r1toTL_TM));
     log_info("TM: t1toTL_TM = {}", std::real(t1toTL_TM));
     log_info("TM: rTLto2_TM = {}", std::real(rTLto2_TM));
     log_info("TM: tTLto2_TM = {}", std::real(tTLto2_TM));
 
     if (cost1 != 0.0)
     {
-      rTM = (r1toTL_TM + tTLto2_TM * std::exp(2.0 * i * beta)) /
-            (1.0 + r1toTL_TM * tTLto2_TM * std::exp(2.0 * i * beta));
+      rTM = (r1toTL_TM + rTLto2_TM * std::exp(2.0 * i * beta)) /
+            (1.0 + r1toTL_TM * rTLto2_TM * std::exp(2.0 * i * beta));
       tTM = (t1toTL_TM * tTLto2_TM * std::exp(i * beta)) /
             (1.0 + r1toTL_TM * rTLto2_TM * std::exp(2.0 * i * beta));
       log_info("rTM = {}", std::real(rTM));
@@ -2363,7 +2371,7 @@ OpticalLayerResult G4OpBoundaryProcess::GetFresnelThroughThinLayer(G4double pSin
 
   Abs = 1.0 - std::real(Reflectivity) - std::real(Transmittance);
 
-  /* Reflectance + Transmittance but for and explicit 4-Layer system - 4L=4Layer
+  /* Reflectance + Transmittance but for an explicit 4-Layer system - 4L=4Layer
     (The old function is still above and returns the "Reflectivity" without considering a four layer system)
 
     R4L_TE = r1toTL_TE*r1toTL_TE + rTE*rTE  * (1.0 - r1toTL_TE*r1toTL_TE) * (1.0 -r1toTL_TE*r1toTL_TE) / (1.0 - r1toTL_TE*r1toTL_TE * rTE*rTE);
