@@ -178,7 +178,7 @@ G4VParticleChange *G4OpBoundaryProcess::PostStepDoIt(const G4Track &aTrack,
 
   G4VPhysicalVolume *thePrePV = pStep->GetPreStepPoint()->GetPhysicalVolume();
   G4VPhysicalVolume *thePostPV = pStep->GetPostStepPoint()->GetPhysicalVolume();
-  log_critical("New");
+  //log_critical("New");
   if (verboseLevel >= 2)
   {
     G4cout << " Photon at Boundary! " << G4endl;
@@ -1866,7 +1866,7 @@ G4double G4OpBoundaryProcess::GetReflectivityThroughThinLayer(G4double sinTL,
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
 void G4OpBoundaryProcess::PhotocathodeCoated()
 {
-  log_info("Material1 = {}, Material2 = {}", fMaterial1->GetName(), fMaterial2->GetName());
+  //log_info("Material1 = {}, Material2 = {}", fMaterial1->GetName(), fMaterial2->GetName());
 
   // replace with "PhotocathodeLog"-Volume later
   G4Material *lPhotocathodeMaterial = G4Material::GetMaterial("RiAbs_NicoPalladium");
@@ -1964,6 +1964,8 @@ void G4OpBoundaryProcess::PhotocathodeCoated()
     fImagRIndex1 = 0.;
   }
 
+  fComplexCoatedRindex = G4complex(fCoatedRindex, fCoatedImagRIndex);
+
   // log_critical("fAbsorptionLength1 = {}, fAbsorptionLength2 = {}, fCoatedAbsLength = {}", fAbsorptionLength1, fAbsorptionLength2, fCoatedAbsLength);
   // log_critical("fImagRIndex1 = {}, fImagRIndex2 = {}, fCoatedImagRIndex = {}", fImagRIndex1, fImagRIndex2, fCoatedImagRIndex);
 
@@ -1994,19 +1996,20 @@ void G4OpBoundaryProcess::PhotocathodeCoated()
     if (std::abs(cost1) < 1.0 - fCarTolerance)
     {
       sint1 = std::sqrt(1. - cost1 * cost1);
-      Sint1complex = G4complex(sint1, Sint1complex.imag());
-      sintTL = std::real(Sint1complex * fComplexRindex1 / fComplexCoatedRindex);
+      //Sint1complex = G4complex(sint1, Sint1complex.imag());
+      sintTL = std::real(sint1 * (fComplexRindex1 / fComplexCoatedRindex));
       //sint2 = std::real(sintTL * fComplexCoatedRindex / fComplexRindex2);
-      sint2 = std::real(Sint1complex * fComplexRindex1 / fComplexRindex2); // Snell's Law
-
-     /*  log_info("fComplexRindex1 = {}+{}i", std::real(fComplexRindex1), std::imag(fComplexRindex1));
+      sint2 = std::real(sint1 * fComplexRindex1 / fComplexRindex2); // Snell's Law
+      log_info("/n");
+      log_info("fComplexRindex1 = {}+{}i", std::real(fComplexRindex1), std::imag(fComplexRindex1));
       log_info("fComplexCoatedRindex = {}+{}i", std::real(fComplexCoatedRindex), std::imag(fComplexCoatedRindex));
       log_info("fComplexRindex2 = {}+{}i", std::real(fComplexRindex2), std::imag(fComplexRindex2));
-      log_info("Sint1complex = {}+{}i", std::real(Sint1complex), std::imag(Sint1complex));
+      //log_info("Sint1complex = {}+{}i", std::real(Sint1complex), std::imag(Sint1complex));
       log_info("cost1 = {}", cost1);
       log_info("sint1 = {}", sint1);
       log_info("sintTL = {}", sintTL);
-      log_info("sint2 = {}", sint2); */
+      log_info("sint2 = {}", sint2);
+      log_info("/n");
     }
     else // If cost1 is close to 1.0, indicating total internal reflection, some values are set to zero
     {
@@ -2052,7 +2055,7 @@ void G4OpBoundaryProcess::PhotocathodeCoated()
     E2_parl = 2. * s1 * E1_parl / (fRindex2 * cost1 + fRindex1 * cost2);
     E2_total = E2_perp * E2_perp + E2_parl * E2_parl;
 
-    log_critical("Start GetFresnelThroughThinLayer");
+    //log_critical("Start GetFresnelThroughThinLayer");
 
     OpticalLayerResult lResults = GetFresnelThroughThinLayer(sintTL, E1_perp, E1_parl, wavelength, cost1, cost2);
     refCoeff = lResults.Reflectivity;
@@ -2069,7 +2072,7 @@ void G4OpBoundaryProcess::PhotocathodeCoated()
     if (random < (refCoeff))
     { // Photon is reflected
 
-      log_critical("Photon is reflected");
+      //log_critical("Photon is reflected");
 
       if (verboseLevel > 2)
         G4cout << "Reflection from " << fMaterial1->GetName() << " to "
@@ -2120,7 +2123,7 @@ void G4OpBoundaryProcess::PhotocathodeCoated()
     else if (random < transCoeff+refCoeff)
     { // Photon is transmitted
 
-      log_critical("Photon is transmitted");
+      //log_critical("Photon is transmitted");
 
       if (verboseLevel > 2)
         G4cout << "Transmission from " << fMaterial1->GetName() << " to "
@@ -2169,7 +2172,7 @@ void G4OpBoundaryProcess::PhotocathodeCoated()
     else
     { // Photon is absorbed
 
-      log_critical("Photon is absorbed");
+      //log_critical("Photon is absorbed");
       if (verboseLevel > 2)
         G4cout << "Absorption in " << fMaterial1->GetName() << G4endl;
 
@@ -2229,7 +2232,7 @@ OpticalLayerResult G4OpBoundaryProcess::GetFresnelThroughThinLayer(G4double pSin
   // Angle > Angle limit (relevant for n1>n2, not the case here)
   if (pSintTL >= 1.0)
   {
-    log_critical("sinTL >= 1");
+    //log_critical("sinTL >= 1");
     if (fCoatedFrustratedTransmission)
     { // Frustrated transmission
 
@@ -2287,13 +2290,14 @@ OpticalLayerResult G4OpBoundaryProcess::GetFresnelThroughThinLayer(G4double pSin
     {
       costTL = -std::sqrt(1. - pSintTL * pSintTL);
     }
-
+    //costTL = 0.997908529229221;
 
     G4complex beta = k0 * fComplexCoatedRindex * fCoatedThickness * costTL;
     log_info("beta = {} + {}i", std::real(beta), std::imag(beta));
+    log_info("wavelength = {}", wavelength);
+    log_info("fCoatedThickness = {}", fCoatedThickness);
 
     // TE (s)
-    
     r1toTL_TE = (fComplexRindex1 * cost1 - fComplexCoatedRindex * costTL) / 
                 (fComplexRindex1 * cost1 + fComplexCoatedRindex * costTL);
     rTLto2_TE = (fComplexCoatedRindex * costTL - fComplexRindex2 * cost2) /
@@ -2306,13 +2310,13 @@ OpticalLayerResult G4OpBoundaryProcess::GetFresnelThroughThinLayer(G4double pSin
     log_info("fComplexCoatedRindex = {} + {}i", std::real(fComplexCoatedRindex), std::imag(fComplexCoatedRindex));
     log_info("cost1 = {}", std::real(cost1));
     log_info("costTL = {}", std::real(costTL));
-    //log_info("\n");
     log_info("cost2 = {}", std::real(cost2));
+    //log_info("\n");
+    
     
     log_info("TE: r1toTL_TE ={} + {}i", std::real(r1toTL_TE), std::imag(r1toTL_TE));
     log_info("TE: t1toTL_TE ={}", std::real(t1toTL_TE));
     log_info("TE: rTLto2_TE ={} + {}i", std::real(rTLto2_TE), std::imag(rTLto2_TE));
-
     log_info("TE: tTLto2_TE ={}", std::real(tTLto2_TE));
 
 
@@ -2328,8 +2332,10 @@ OpticalLayerResult G4OpBoundaryProcess::GetFresnelThroughThinLayer(G4double pSin
     }
 
     // TM (p)
-    r1toTL_TM = (fComplexCoatedRindex * cost1 - fComplexRindex1 * costTL) / (fComplexRindex1 * costTL + fComplexCoatedRindex * cost1);
-    rTLto2_TM = (fComplexRindex2 * costTL - fComplexCoatedRindex * cost2) / (fComplexCoatedRindex * cost2 + fComplexRindex2 * costTL);
+    r1toTL_TM = (fComplexCoatedRindex * cost1 - fComplexRindex1 * costTL) / 
+                (fComplexRindex1 * costTL + fComplexCoatedRindex * cost1);
+    rTLto2_TM = (fComplexRindex2 * costTL - fComplexCoatedRindex * cost2) /
+                (fComplexCoatedRindex * cost2 + fComplexRindex2 * costTL);
    
     t1toTL_TM = 2.0 * fComplexRindex1 * cost1 / (fComplexRindex1 * costTL + fComplexCoatedRindex * cost1);
     tTLto2_TM = 2.0 * fComplexCoatedRindex * costTL / (fComplexCoatedRindex * cost2 + fComplexRindex2 * costTL);
@@ -2347,8 +2353,8 @@ OpticalLayerResult G4OpBoundaryProcess::GetFresnelThroughThinLayer(G4double pSin
             (1.0 + r1toTL_TM * rTLto2_TM * std::exp(2.0 * i * beta));
       log_info("rTM = {}", std::real(rTM));
       log_info("tTM = {}", std::real(tTM));
-      // log_info("R_PHC = {}", (std::real(rTM) + std::real(rTE)/2.));
-      // log_info("T_PHC = {}", (std::real(tTM) + std::real(tTE)/2.));
+      log_info("R_PHC = {}", (std::abs(std::real(rTM)) + std::abs(std::real(rTE)))/2.);
+      log_info("T_PHC = {}", (std::abs(std::real(tTM)) + std::abs(std::real(tTE)))/2.);
     }
   }
 
@@ -2364,6 +2370,7 @@ OpticalLayerResult G4OpBoundaryProcess::GetFresnelThroughThinLayer(G4double pSin
   Trans_TE = (fRindex2 * cost2) / (fRindex1 * cost1) * std::abs(tTE) * std::abs(tTE);
   Trans_TM = (fRindex2 * cost2) / (fRindex1 * cost1) * std::abs(tTM) * std::abs(tTM);
   Transmittance = (Trans_TE + Trans_TM) / 2.0;
+  
   //log_info("fRindex1 = {}", fRindex1);
   //log_info("cost1 = {}", cost1);
   //log_info("fRindex2 = {}", fRindex2);
