@@ -2273,7 +2273,7 @@ OpticalLayerResult G4OpBoundaryProcess::GetFresnelThroughThinLayer(G4double pSin
     else
     { // Total reflection
       lResult.Reflectivity = 1.0;
-      log_critical("Total Reflection");
+      //log_critical("Total Reflection");
       // return(1.0);
     }
   }
@@ -2293,9 +2293,9 @@ OpticalLayerResult G4OpBoundaryProcess::GetFresnelThroughThinLayer(G4double pSin
     //costTL = 0.997908529229221;
 
     G4complex beta = k0 * fComplexCoatedRindex * fCoatedThickness * costTL;
-    log_info("beta = {} + {}i", std::real(beta), std::imag(beta));
+    /* log_info("beta = {} + {}i", std::real(beta), std::imag(beta));
     log_info("wavelength = {}", wavelength);
-    log_info("fCoatedThickness = {}", fCoatedThickness);
+    log_info("fCoatedThickness = {}", fCoatedThickness); */
 
     // TE (s)
     r1toTL_TE = (fComplexRindex1 * cost1 - fComplexCoatedRindex * costTL) / 
@@ -2306,18 +2306,18 @@ OpticalLayerResult G4OpBoundaryProcess::GetFresnelThroughThinLayer(G4double pSin
     t1toTL_TE = (2.0 * fComplexRindex1 * cost1) / (fComplexRindex1 * cost1 + fComplexCoatedRindex * costTL);
     tTLto2_TE = (2.0 * fComplexCoatedRindex * costTL) / (fComplexCoatedRindex * costTL + fComplexRindex2 * cost2);
   
-    log_info("fComplexRindex1 = {} + {}i", std::real(fComplexRindex1), std::imag(fComplexRindex1));
+    /* log_info("fComplexRindex1 = {} + {}i", std::real(fComplexRindex1), std::imag(fComplexRindex1));
     log_info("fComplexCoatedRindex = {} + {}i", std::real(fComplexCoatedRindex), std::imag(fComplexCoatedRindex));
     log_info("cost1 = {}", std::real(cost1));
     log_info("costTL = {}", std::real(costTL));
-    log_info("cost2 = {}", std::real(cost2));
+    log_info("cost2 = {}", std::real(cost2)); */
     //log_info("\n");
     
     
-    log_info("TE: r1toTL_TE ={} + {}i", std::real(r1toTL_TE), std::imag(r1toTL_TE));
+    /* log_info("TE: r1toTL_TE ={} + {}i", std::real(r1toTL_TE), std::imag(r1toTL_TE));
     log_info("TE: t1toTL_TE ={}", std::real(t1toTL_TE));
     log_info("TE: rTLto2_TE ={} + {}i", std::real(rTLto2_TE), std::imag(rTLto2_TE));
-    log_info("TE: tTLto2_TE ={}", std::real(tTLto2_TE));
+    log_info("TE: tTLto2_TE ={}", std::real(tTLto2_TE)); */
 
 
     if (cost1 != 0.0)
@@ -2327,8 +2327,8 @@ OpticalLayerResult G4OpBoundaryProcess::GetFresnelThroughThinLayer(G4double pSin
             (1.0 + r1toTL_TE * rTLto2_TE * std::exp(2.0 * i * beta));
       tTE = (t1toTL_TE * tTLto2_TE * std::exp(i * beta)) /
             (1.0 + r1toTL_TE * rTLto2_TE * std::exp(2.0 * i * beta));
-      log_info("rTE = {}", std::real(rTE));
-      log_info("tTE = {}", std::real(tTE));
+      /* log_info("rTE = {}", std::real(rTE));
+      log_info("tTE = {}", std::real(tTE)); */
     }
 
     // TM (p)
@@ -2340,10 +2340,10 @@ OpticalLayerResult G4OpBoundaryProcess::GetFresnelThroughThinLayer(G4double pSin
     t1toTL_TM = 2.0 * fComplexRindex1 * cost1 / (fComplexRindex1 * costTL + fComplexCoatedRindex * cost1);
     tTLto2_TM = 2.0 * fComplexCoatedRindex * costTL / (fComplexCoatedRindex * cost2 + fComplexRindex2 * costTL);
 
-    log_info("TE: r1toTL_TM ={} + {}i", std::real(r1toTL_TM), std::imag(r1toTL_TM));
+    /* log_info("TE: r1toTL_TM ={} + {}i", std::real(r1toTL_TM), std::imag(r1toTL_TM));
     log_info("TM: t1toTL_TM = {}", std::real(t1toTL_TM));
     log_info("TM: rTLto2_TM = {}", std::real(rTLto2_TM));
-    log_info("TM: tTLto2_TM = {}", std::real(tTLto2_TM));
+    log_info("TM: tTLto2_TM = {}", std::real(tTLto2_TM)); */
 
     if (cost1 != 0.0)
     {
@@ -2351,10 +2351,10 @@ OpticalLayerResult G4OpBoundaryProcess::GetFresnelThroughThinLayer(G4double pSin
             (1.0 + r1toTL_TM * rTLto2_TM * std::exp(2.0 * i * beta));
       tTM = (t1toTL_TM * tTLto2_TM * std::exp(i * beta)) /
             (1.0 + r1toTL_TM * rTLto2_TM * std::exp(2.0 * i * beta));
-      log_info("rTM = {}", std::real(rTM));
+      /* log_info("rTM = {}", std::real(rTM));
       log_info("tTM = {}", std::real(tTM));
       log_info("R_PHC = {}", (std::abs(std::real(rTM)) + std::abs(std::real(rTE)))/2.);
-      log_info("T_PHC = {}", (std::abs(std::real(tTM)) + std::abs(std::real(tTE)))/2.);
+      log_info("T_PHC = {}", (std::abs(std::real(tTM)) + std::abs(std::real(tTE)))/2.); */
     }
   }
 
