@@ -152,7 +152,34 @@ G4VParticleChange *G4OpBoundaryProcess::PostStepDoIt(const G4Track &aTrack,
   fStatus = Undefined;
   aParticleChange.Initialize(aTrack);
   aParticleChange.ProposeVelocity(aTrack.GetVelocity());
-  
+
+// Little tool to track how often beta is being factored to the Fresnel coefficients
+  G4VUserTrackInformation *test = aTrack.GetUserInformation();
+  if (test != nullptr)
+  {
+    PhotonPhaseDifference *myInfo = dynamic_cast<PhotonPhaseDifference *>(test);
+    if (myInfo) // Check if the cast is successful
+    {
+      myInfo->Set(myInfo->Get() + 1);
+      log_debug("It exists +1", myInfo->Get());
+      G4cout << myInfo->Get() << G4endl;
+    }
+    else
+    {
+      log_debug("New beta badly casted");
+      PhotonPhaseDifference *myInfo = new PhotonPhaseDifference();
+      myInfo->Set(1);
+      aTrack.SetUserInformation(myInfo);
+    }
+  }
+  else
+  {
+    log_debug("New beta");
+    PhotonPhaseDifference *myInfo = new PhotonPhaseDifference();
+    myInfo->Set(1);
+    aTrack.SetUserInformation(myInfo);
+  }
+
   // Get hyperStep from  G4ParallelWorldProcess
   //  NOTE: PostSetpDoIt of this process to be invoked after
   //  G4ParallelWorldProcess!
@@ -178,7 +205,7 @@ G4VParticleChange *G4OpBoundaryProcess::PostStepDoIt(const G4Track &aTrack,
 
   G4VPhysicalVolume *thePrePV = pStep->GetPreStepPoint()->GetPhysicalVolume();
   G4VPhysicalVolume *thePostPV = pStep->GetPostStepPoint()->GetPhysicalVolume();
-  //log_critical("New");
+  // log_critical("New");
   if (verboseLevel >= 2)
   {
     G4cout << " Photon at Boundary! " << G4endl;
@@ -529,7 +556,7 @@ G4VParticleChange *G4OpBoundaryProcess::PostStepDoIt(const G4Track &aTrack,
   else if (type == coated)
   {
     // CoatedDielectricDielectric(); //<- old type
-    PhotocathodeCoated(); //<- Nico type
+    PhotocathodeCoated(aTrack); //<- Nico type
   }
   else
   {
@@ -817,7 +844,7 @@ void G4OpBoundaryProcess::DielectricMetal()
           else if (f_iTE > 0)
           {
             A_trans = (sint1 > 0.0) ? fOldMomentum.cross(fFacetNormal).unit()
-                                     : fOldPolarization;
+                                    : fOldPolarization;
             fNewPolarization = -A_trans;
           }
           else if (f_iTM > 0)
@@ -1864,9 +1891,9 @@ G4double G4OpBoundaryProcess::GetReflectivityThroughThinLayer(G4double sinTL,
 }
 
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
-void G4OpBoundaryProcess::PhotocathodeCoated()
+void G4OpBoundaryProcess::PhotocathodeCoated(G4Track pTrack)
 {
-  //log_info("Material1 = {}, Material2 = {}", fMaterial1->GetName(), fMaterial2->GetName());
+  // log_info("Material1 = {}, Material2 = {}", fMaterial1->GetName(), fMaterial2->GetName());
 
   // replace with "PhotocathodeLog"-Volume later
   G4Material *lPhotocathodeMaterial = G4Material::GetMaterial("RiAbs_NicoPalladium");
@@ -1996,15 +2023,15 @@ void G4OpBoundaryProcess::PhotocathodeCoated()
     if (std::abs(cost1) < 1.0 - fCarTolerance)
     {
       sint1 = std::sqrt(1. - cost1 * cost1);
-      //Sint1complex = G4complex(sint1, Sint1complex.imag());
+      // Sint1complex = G4complex(sint1, Sint1complex.imag());
       sintTL = std::real(sint1 * (fComplexRindex1 / fComplexCoatedRindex));
-      //sint2 = std::real(sintTL * fComplexCoatedRindex / fComplexRindex2);
+      // sint2 = std::real(sintTL * fComplexCoatedRindex / fComplexRindex2);
       sint2 = std::real(sint1 * fComplexRindex1 / fComplexRindex2); // Snell's Law
       log_info("/n");
       log_info("fComplexRindex1 = {}+{}i", std::real(fComplexRindex1), std::imag(fComplexRindex1));
       log_info("fComplexCoatedRindex = {}+{}i", std::real(fComplexCoatedRindex), std::imag(fComplexCoatedRindex));
       log_info("fComplexRindex2 = {}+{}i", std::real(fComplexRindex2), std::imag(fComplexRindex2));
-      //log_info("Sint1complex = {}+{}i", std::real(Sint1complex), std::imag(Sint1complex));
+      // log_info("Sint1complex = {}+{}i", std::real(Sint1complex), std::imag(Sint1complex));
       log_info("cost1 = {}", cost1);
       log_info("sint1 = {}", sint1);
       log_info("sintTL = {}", sintTL);
@@ -2055,9 +2082,9 @@ void G4OpBoundaryProcess::PhotocathodeCoated()
     E2_parl = 2. * s1 * E1_parl / (fRindex2 * cost1 + fRindex1 * cost2);
     E2_total = E2_perp * E2_perp + E2_parl * E2_parl;
 
-    //log_critical("Start GetFresnelThroughThinLayer");
+    log_critical("Start GetFresnelThroughThinLayerV2");
 
-    OpticalLayerResult lResults = GetFresnelThroughThinLayer(sintTL, E1_perp, E1_parl, wavelength, cost1, cost2);
+    OpticalLayerResult lResults = GetFresnelThroughThinLayerV3(sintTL, E1_perp, E1_parl, wavelength, cost1, cost2, pTrack);
     refCoeff = lResults.Reflectivity;
     transCoeff = lResults.Transmittance;
     absCoeff = lResults.Absorption;
@@ -2072,7 +2099,7 @@ void G4OpBoundaryProcess::PhotocathodeCoated()
     if (random < (refCoeff))
     { // Photon is reflected
 
-      //log_critical("Photon is reflected");
+      // log_critical("Photon is reflected");
 
       if (verboseLevel > 2)
         G4cout << "Reflection from " << fMaterial1->GetName() << " to "
@@ -2120,10 +2147,10 @@ void G4OpBoundaryProcess::PhotocathodeCoated()
         }
       }
     }
-    else if (random < transCoeff+refCoeff)
+    else if (random < transCoeff + refCoeff)
     { // Photon is transmitted
 
-      //log_critical("Photon is transmitted");
+      // log_critical("Photon is transmitted");
 
       if (verboseLevel > 2)
         G4cout << "Transmission from " << fMaterial1->GetName() << " to "
@@ -2172,7 +2199,7 @@ void G4OpBoundaryProcess::PhotocathodeCoated()
     else
     { // Photon is absorbed
 
-      //log_critical("Photon is absorbed");
+      // log_critical("Photon is absorbed");
       if (verboseLevel > 2)
         G4cout << "Absorption in " << fMaterial1->GetName() << G4endl;
 
@@ -2186,7 +2213,8 @@ void G4OpBoundaryProcess::PhotocathodeCoated()
       done = fStatus == Detection;
     }
 
-    if (fStatus != Detection) {
+    if (fStatus != Detection)
+    {
       fOldMomentum = fNewMomentum.unit();
       fOldPolarization = fNewPolarization.unit();
       if ((fStatus == CoatedDielectricFrustratedTransmission) || (fStatus == CoatedDielectricRefraction))
@@ -2201,8 +2229,8 @@ void G4OpBoundaryProcess::PhotocathodeCoated()
         // Checks if the dot product is greater than or equal to -fCarTolerance.
         // This is done to ensure that the new momentum is not almost parallel to the surface
       }
-    // For frustrated transmission or refraction, the loop continues until the photon goes into or away from the material
-    // For other cases, the loop continues until the photon deviates significantly from being parallel to the surface
+      // For frustrated transmission or refraction, the loop continues until the photon goes into or away from the material
+      // For other cases, the loop continues until the photon deviates significantly from being parallel to the surface
     }
   } while (!done);
 }
@@ -2232,7 +2260,7 @@ OpticalLayerResult G4OpBoundaryProcess::GetFresnelThroughThinLayer(G4double pSin
   // Angle > Angle limit (relevant for n1>n2, not the case here)
   if (pSintTL >= 1.0)
   {
-    //log_critical("sinTL >= 1");
+    // log_critical("sinTL >= 1");
     if (fCoatedFrustratedTransmission)
     { // Frustrated transmission
 
@@ -2273,8 +2301,8 @@ OpticalLayerResult G4OpBoundaryProcess::GetFresnelThroughThinLayer(G4double pSin
     else
     { // Total reflection
       lResult.Reflectivity = 1.0;
-      //log_critical("Total Reflection");
-      // return(1.0);
+      // log_critical("Total Reflection");
+      //  return(1.0);
     }
   }
 
@@ -2290,7 +2318,7 @@ OpticalLayerResult G4OpBoundaryProcess::GetFresnelThroughThinLayer(G4double pSin
     {
       costTL = -std::sqrt(1. - pSintTL * pSintTL);
     }
-    //costTL = 0.997908529229221;
+    // costTL = 0.997908529229221;
 
     G4complex beta = k0 * fComplexCoatedRindex * fCoatedThickness * costTL;
     /* log_info("beta = {} + {}i", std::real(beta), std::imag(beta));
@@ -2298,27 +2326,25 @@ OpticalLayerResult G4OpBoundaryProcess::GetFresnelThroughThinLayer(G4double pSin
     log_info("fCoatedThickness = {}", fCoatedThickness); */
 
     // TE (s)
-    r1toTL_TE = (fComplexRindex1 * cost1 - fComplexCoatedRindex * costTL) / 
+    r1toTL_TE = (fComplexRindex1 * cost1 - fComplexCoatedRindex * costTL) /
                 (fComplexRindex1 * cost1 + fComplexCoatedRindex * costTL);
     rTLto2_TE = (fComplexCoatedRindex * costTL - fComplexRindex2 * cost2) /
                 (fComplexCoatedRindex * costTL + fComplexRindex2 * cost2);
-    
+
     t1toTL_TE = (2.0 * fComplexRindex1 * cost1) / (fComplexRindex1 * cost1 + fComplexCoatedRindex * costTL);
     tTLto2_TE = (2.0 * fComplexCoatedRindex * costTL) / (fComplexCoatedRindex * costTL + fComplexRindex2 * cost2);
-  
+
     /* log_info("fComplexRindex1 = {} + {}i", std::real(fComplexRindex1), std::imag(fComplexRindex1));
     log_info("fComplexCoatedRindex = {} + {}i", std::real(fComplexCoatedRindex), std::imag(fComplexCoatedRindex));
     log_info("cost1 = {}", std::real(cost1));
     log_info("costTL = {}", std::real(costTL));
     log_info("cost2 = {}", std::real(cost2)); */
-    //log_info("\n");
-    
-    
+    // log_info("\n");
+
     /* log_info("TE: r1toTL_TE ={} + {}i", std::real(r1toTL_TE), std::imag(r1toTL_TE));
     log_info("TE: t1toTL_TE ={}", std::real(t1toTL_TE));
     log_info("TE: rTLto2_TE ={} + {}i", std::real(rTLto2_TE), std::imag(rTLto2_TE));
     log_info("TE: tTLto2_TE ={}", std::real(tTLto2_TE)); */
-
 
     if (cost1 != 0.0)
     {
@@ -2332,11 +2358,11 @@ OpticalLayerResult G4OpBoundaryProcess::GetFresnelThroughThinLayer(G4double pSin
     }
 
     // TM (p)
-    r1toTL_TM = (fComplexCoatedRindex * cost1 - fComplexRindex1 * costTL) / 
+    r1toTL_TM = (fComplexCoatedRindex * cost1 - fComplexRindex1 * costTL) /
                 (fComplexRindex1 * costTL + fComplexCoatedRindex * cost1);
     rTLto2_TM = (fComplexRindex2 * costTL - fComplexCoatedRindex * cost2) /
                 (fComplexCoatedRindex * cost2 + fComplexRindex2 * costTL);
-   
+
     t1toTL_TM = 2.0 * fComplexRindex1 * cost1 / (fComplexRindex1 * costTL + fComplexCoatedRindex * cost1);
     tTLto2_TM = 2.0 * fComplexCoatedRindex * costTL / (fComplexCoatedRindex * cost2 + fComplexRindex2 * costTL);
 
@@ -2370,11 +2396,11 @@ OpticalLayerResult G4OpBoundaryProcess::GetFresnelThroughThinLayer(G4double pSin
   Trans_TE = (fRindex2 * cost2) / (fRindex1 * cost1) * std::abs(tTE) * std::abs(tTE);
   Trans_TM = (fRindex2 * cost2) / (fRindex1 * cost1) * std::abs(tTM) * std::abs(tTM);
   Transmittance = (Trans_TE + Trans_TM) / 2.0;
-  
-  //log_info("fRindex1 = {}", fRindex1);
-  //log_info("cost1 = {}", cost1);
-  //log_info("fRindex2 = {}", fRindex2);
-  //log_info("cost2 = {}", cost2);
+
+  // log_info("fRindex1 = {}", fRindex1);
+  // log_info("cost1 = {}", cost1);
+  // log_info("fRindex2 = {}", fRindex2);
+  // log_info("cost2 = {}", cost2);
 
   Abs = 1.0 - std::real(Reflectivity) - std::real(Transmittance);
 
@@ -2394,6 +2420,328 @@ OpticalLayerResult G4OpBoundaryProcess::GetFresnelThroughThinLayer(G4double pSin
     A4L = (A4L_TE + A4L_TM) / 2.0;
   */
 
+  lResult.Reflectivity = std::real(Reflectivity);
+  lResult.Transmittance = std::real(Transmittance);
+  lResult.Absorption = std::real(Abs);
+
+  return lResult;
+}
+
+//....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
+OpticalLayerResult G4OpBoundaryProcess::GetFresnelThroughThinLayerV2(G4double pSintTL,
+                                                                     G4double E1_perp,
+                                                                     G4double E1_parl,
+                                                                     G4double wavelength, G4double cost1, G4double cost2, G4Track pTrack)
+{
+
+  G4complex Reflectivity, Refl_TE, Refl_TM, Transmittance, Trans_TE, Trans_TM, Abs;
+  G4complex R4L, R4L_TE, R4L_TM, T4L, T4L_TE, T4L_TM, A4L, A4L_TE, A4L_TM; // Reflection, Transmittance and Absorption for a 4-Layer system
+  G4double gammaTL, costTL;
+
+  G4complex i(0, 1);
+  G4complex rTM, rTE, tTE, tTM;
+  G4complex r1toTL, rTLto2;
+  G4complex r1toTL_TE, rTLto2_TE, r1toTL_TM, rTLto2_TM, t1toTL_TE, tTLto2_TE, t1toTL_TM, tTLto2_TM;
+  G4double k0 = 2 * pi / wavelength;
+  OpticalLayerResult lResult;
+
+  G4complex fComplexRindex1(fRindex1, fImagRIndex1);
+  G4complex fComplexRindex2(fRindex2, fImagRIndex2);
+  G4complex fComplexCoatedRindex(fCoatedRindex, fCoatedImagRIndex);
+
+  // Angle > Angle limit (relevant for n1>n2, not the case here)
+  if (pSintTL >= 1.0)
+  {
+    // log_critical("sinTL >= 1");
+    if (fCoatedFrustratedTransmission) // Frustrated transmission
+    {
+      if (cost1 > 0.0)
+      {
+        gammaTL = std::sqrt(fRindex1 * fRindex1 * sint1 * sint1 -
+                            fCoatedRindex * fCoatedRindex);
+      }
+      else
+      {
+        gammaTL = -std::sqrt(fRindex1 * fRindex1 * sint1 * sint1 -
+                             fCoatedRindex * fCoatedRindex);
+      }
+
+      // TE
+      r1toTL = (fRindex1 * cost1 - i * gammaTL) /
+               (fRindex1 * cost1 + i * gammaTL);
+      rTLto2 = (i * gammaTL - fRindex2 * cost2) /
+               (i * gammaTL + fRindex2 * cost2);
+
+      // TM
+      r1toTL = (fRindex1 * i * gammaTL - fCoatedRindex * fCoatedRindex * cost1) /
+               (fRindex1 * i * gammaTL + fCoatedRindex * fCoatedRindex * cost1);
+      rTLto2 = (fCoatedRindex * fCoatedRindex * cost2 - fRindex2 * i * gammaTL) /
+               (fCoatedRindex * fCoatedRindex * cost2 + fRindex2 * i * gammaTL);
+
+      // log_critical("TE: r1toTL ={}", std::real(r1toTL));
+      // log_critical("TE: rTLto2 ={}", std::real(rTLto2));
+    }
+    else
+    { // Total reflection
+      lResult.Reflectivity = 1.0;
+      // log_critical("Total Reflection");
+      //  return(1.0);
+    }
+  }
+
+  // Angle <= Angle limit # ---> The interesting part
+  else // if (sinTL < 1.0)
+  {
+
+    if (cost1 > 0.0)
+    {
+      costTL = std::sqrt(1. - pSintTL * pSintTL);
+    }
+    else
+    {
+      costTL = -std::sqrt(1. - pSintTL * pSintTL);
+    }
+    // costTL = 0.997908529229221;
+
+    G4complex beta = k0 * fComplexCoatedRindex * fCoatedThickness * costTL;
+    G4complex expbeta = std::exp(-i * beta); // phase variation every time the photon passes the thin layer
+
+    log_info("wavelength = {}", std::real(wavelength) / nm);
+    log_info("k0 = {}", std::real(k0));
+    log_info("costTL = {}", std::real(costTL));
+    log_info("fCoatedThickness = {}", fCoatedThickness / nm);
+    log_info("fComplexCoatedRindex = {} + {}i", std::real(fComplexCoatedRindex), std::imag(fComplexCoatedRindex));
+    log_info("beta = {} + {}i", std::real(beta), std::imag(beta));
+    log_info("expbeta = {} + {}i", std::real(expbeta), std::imag(expbeta));
+
+    // log_info("wavelength = {}", wavelength);
+    // log_info("fCoatedThickness = {}", fCoatedThickness);
+
+    // TE (s)
+    r1toTL_TE = (fComplexRindex1 * cost1 - fComplexCoatedRindex * costTL) /
+                (fComplexRindex1 * cost1 + fComplexCoatedRindex * costTL);
+    rTLto2_TE = (fComplexCoatedRindex * costTL - fComplexRindex2 * cost2) /
+                (fComplexCoatedRindex * costTL + fComplexRindex2 * cost2) * expbeta;
+
+    t1toTL_TE = (2.0 * fComplexRindex1 * cost1) /
+                (fComplexRindex1 * cost1 + fComplexCoatedRindex * costTL) * expbeta;
+    tTLto2_TE = (2.0 * fComplexCoatedRindex * costTL) /
+                (fComplexCoatedRindex * costTL + fComplexRindex2 * cost2);
+
+    /* log_info("fComplexRindex1 = {} + {}i", std::real(fComplexRindex1), std::imag(fComplexRindex1));
+    log_info("fComplexCoatedRindex = {} + {}i", std::real(fComplexCoatedRindex), std::imag(fComplexCoatedRindex));
+    log_info("cost1 = {}", std::real(cost1));
+    log_info("costTL = {}", std::real(costTL));
+    log_info("cost2 = {}", std::real(cost2)); */
+    // log_info("\n");
+
+    /* log_info("TE: r1toTL_TE ={} + {}i", std::real(r1toTL_TE), std::imag(r1toTL_TE));
+    log_info("TE: t1toTL_TE ={}", std::real(t1toTL_TE));
+    log_info("TE: rTLto2_TE ={} + {}i", std::real(rTLto2_TE), std::imag(rTLto2_TE));
+    log_info("TE: tTLto2_TE ={}", std::real(tTLto2_TE)); */
+
+    // TM (p)
+    r1toTL_TM = (fComplexCoatedRindex * cost1 - fComplexRindex1 * costTL) /
+                (fComplexRindex1 * costTL + fComplexCoatedRindex * cost1);
+    rTLto2_TM = (fComplexRindex2 * costTL - fComplexCoatedRindex * cost2) /
+                (fComplexCoatedRindex * cost2 + fComplexRindex2 * costTL) * expbeta;
+
+    t1toTL_TM = 2.0 * fComplexRindex1 * cost1 /
+                (fComplexRindex1 * costTL + fComplexCoatedRindex * cost1) * expbeta;
+    tTLto2_TM = 2.0 * fComplexCoatedRindex * costTL /
+                (fComplexCoatedRindex * cost2 + fComplexRindex2 * costTL);
+
+    /* log_info("TE: r1toTL_TM ={} + {}i", std::real(r1toTL_TM), std::imag(r1toTL_TM));
+    log_info("TM: t1toTL_TM = {}", std::real(t1toTL_TM));
+    log_info("TM: rTLto2_TM = {}", std::real(rTLto2_TM));
+    log_info("TM: tTLto2_TM = {}", std::real(tTLto2_TM)); */
+  }
+
+  Refl_TE = std::abs(r1toTL_TE) * std::abs(r1toTL_TE);
+  Refl_TM = std::abs(r1toTL_TM) * std::abs(r1toTL_TM);
+  Reflectivity = (Refl_TE + Refl_TM) / 2.0;
+
+  Trans_TE = (fRindex2 * cost2) / (fRindex1 * cost1) * std::abs(tTLto2_TE) * std::abs(tTLto2_TE);
+  Trans_TM = (fRindex2 * cost2) / (fRindex1 * cost1) * std::abs(tTLto2_TM) * std::abs(tTLto2_TM);
+  Transmittance = (Trans_TE + Trans_TM) / 2.0;
+
+  // log_info("fRindex1 = {}", fRindex1);
+  // log_info("cost1 = {}", cost1);
+  // log_info("fRindex2 = {}", fRindex2);
+  // log_info("cost2 = {}", cost2);
+
+  Abs = 1.0 - std::real(Reflectivity) - std::real(Transmittance);
+
+  lResult.Reflectivity = std::real(Reflectivity);
+  lResult.Transmittance = std::real(Transmittance);
+  lResult.Absorption = std::real(Abs);
+
+  return lResult;
+}
+
+
+
+//....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
+OpticalLayerResult G4OpBoundaryProcess::GetFresnelThroughThinLayerV3(G4double pSintTL,
+                                                                     G4double E1_perp,
+                                                                     G4double E1_parl,
+                                                                     G4double wavelength, G4double cost1, G4double cost2, G4Track pTrack)
+{
+
+  G4complex Reflectivity, Refl_TE, Refl_TM, Transmittance, Trans_TE, Trans_TM, Abs;
+  G4complex R4L, R4L_TE, R4L_TM, T4L, T4L_TE, T4L_TM, A4L, A4L_TE, A4L_TM; // Reflection, Transmittance and Absorption for a 4-Layer system
+  G4double gammaTL, costTL;
+
+  G4complex i(0, 1);
+  G4complex rTM, rTE, tTE, tTM;
+  G4complex r1toTL, rTLto2;
+  G4complex r1toTL_TE, rTLto1_TE, rTLto2_TE, r1toTL_TM, rTLto1_TM, rTLto2_TM, t1toTL_TE, tTLto2_TE, t1toTL_TM, tTLto2_TM;
+  G4double k0 = 2 * pi / wavelength;
+  OpticalLayerResult lResult;
+
+  G4complex fComplexRindex1(fRindex1, fImagRIndex1);
+  G4complex fComplexRindex2(fRindex2, fImagRIndex2);
+  G4complex fComplexCoatedRindex(fCoatedRindex, fCoatedImagRIndex);
+
+  G4complex beta = k0 * fComplexCoatedRindex * fCoatedThickness * costTL;
+  G4complex expbeta = std::exp(-i * beta); // phase variation every time the photon passes the thin layer
+
+  // Angle > Angle limit (relevant for n1>n2, not the case here)
+  if (pSintTL >= 1.0)
+  {
+    // log_critical("sinTL >= 1");
+    if (fCoatedFrustratedTransmission) // Frustrated transmission
+    {
+      if (cost1 > 0.0)
+      {
+        gammaTL = std::sqrt(fRindex1 * fRindex1 * sint1 * sint1 -
+                            fCoatedRindex * fCoatedRindex);
+      }
+      else
+      {
+        gammaTL = -std::sqrt(fRindex1 * fRindex1 * sint1 * sint1 -
+                             fCoatedRindex * fCoatedRindex);
+      }
+
+      // TE
+      r1toTL = (fRindex1 * cost1 - i * gammaTL) /
+               (fRindex1 * cost1 + i * gammaTL);
+      rTLto2 = (i * gammaTL - fRindex2 * cost2) /
+               (i * gammaTL + fRindex2 * cost2);
+
+      // TM
+      r1toTL = (fRindex1 * i * gammaTL - fCoatedRindex * fCoatedRindex * cost1) /
+               (fRindex1 * i * gammaTL + fCoatedRindex * fCoatedRindex * cost1);
+      rTLto2 = (fCoatedRindex * fCoatedRindex * cost2 - fRindex2 * i * gammaTL) /
+               (fCoatedRindex * fCoatedRindex * cost2 + fRindex2 * i * gammaTL);
+
+      // log_critical("TE: r1toTL ={}", std::real(r1toTL));
+      // log_critical("TE: rTLto2 ={}", std::real(rTLto2));
+    }
+    else
+    { // Total reflection
+      lResult.Reflectivity = 1.0;
+      // log_critical("Total Reflection");
+      //  return(1.0);
+    }
+  }
+
+  // Angle <= Angle limit # ---> The interesting part
+  else // if (sinTL < 1.0)
+  {
+
+    if (cost1 > 0.0)
+    {
+      costTL = std::sqrt(1. - pSintTL * pSintTL);
+    }
+    else
+    {
+      costTL = -std::sqrt(1. - pSintTL * pSintTL);
+    }
+     // costTL should be the only relevant angle in these calculations
+
+
+    // log_info("wavelength = {}", std::real(wavelength) / nm);
+    // log_info("k0 = {}", std::real(k0));
+    // log_info("costTL = {}", std::real(costTL));
+    // log_info("fCoatedThickness = {}", fCoatedThickness / nm);
+    // log_info("fComplexCoatedRindex = {} + {}i", std::real(fComplexCoatedRindex), std::imag(fComplexCoatedRindex));
+    // log_info("beta = {} + {}i", std::real(beta), std::imag(beta));
+    // log_info("expbeta = {} + {}i", std::real(expbeta), std::imag(expbeta));
+
+    // TE (s)
+    // r_ij = (n_i * cost_i - n_j * cost_j) / (n_i * cost_i + n_j * cost_j)
+    r1toTL_TE = (fComplexRindex1 * cost1 - fComplexCoatedRindex * costTL) /
+                (fComplexRindex1 * cost1 + fComplexCoatedRindex * costTL);
+    rTLto1_TE = (fComplexCoatedRindex * costTL - fComplexRindex1 * cost1) /
+                (fComplexCoatedRindex * costTL + fComplexRindex1 * cost1 );
+    rTLto2_TE = (fComplexCoatedRindex * costTL - fComplexRindex2 * cost2) * expbeta /
+                (fComplexCoatedRindex * costTL + fComplexRindex2 * cost2);
+
+    // t_ij = (2.0 * n_i * cost_i) / (n_i * cost_i + n_j * cost_j)
+    t1toTL_TE = (2.0 * fComplexRindex1 * cost1) * expbeta /
+                (fComplexRindex1 * cost1 + fComplexCoatedRindex * costTL);
+    tTLto2_TE = (2.0 * fComplexCoatedRindex * costTL) /
+                (fComplexCoatedRindex * costTL + fComplexRindex2 * cost2);
+
+    log_info("tTLto2_TE ={}", std::real(tTLto2_TE)); 
+
+    // TM (p)
+    // r_ij = (n_i * cost_j - n_j * cost_i) / (n_i * cost_j + n_j * cost_i)
+    r1toTL_TM = (fComplexCoatedRindex * cost1 - fComplexRindex1 * costTL) /
+                (fComplexRindex1 * costTL + fComplexCoatedRindex * cost1);
+    r1toTL_TM = (fComplexRindex1 * costTL - fComplexCoatedRindex * cost1) /
+                (fComplexCoatedRindex * cost1 + fComplexRindex1 * costTL);            
+    rTLto2_TM = (fComplexRindex2 * costTL - fComplexCoatedRindex * cost2) /
+                (fComplexCoatedRindex * cost2 + fComplexRindex2 * costTL) * expbeta;
+    
+    // t_ij = (2.0 * n_i * cost_i) / (n_i * cost_j + n_j * cost_i)
+    t1toTL_TM = 2.0 * fComplexRindex1 * cost1 /
+                (fComplexRindex1 * costTL + fComplexCoatedRindex * cost1) * expbeta;
+    tTLto2_TM = 2.0 * fComplexCoatedRindex * costTL /
+                (fComplexCoatedRindex * cost2 + fComplexRindex2 * costTL);
+
+    log_info("tTLto2_TM = {}", std::real(tTLto2_TM)); 
+  }
+
+  G4complex advancedFresnel_TE = 1.0; // Initialize to 1 for multiplication
+  G4complex advancedFresnel_TM = 1.0; // Initialize to 1 for multiplication
+
+  // Check where the photon is coming from and update the coefficients accordingly
+  bool fromMaterial1 = true; // Example initial condition
+
+  if (fromMaterial1) {
+      // Photon transmits into the thin layer
+      advancedFresnel_TE *= t1toTL_TE * expbeta;
+      advancedFresnel_TM *= t1toTL_TM * expbeta;
+  }
+
+  // reflection from the Material1/TL interface
+  bool reflectionFromMaterial1TL = true;
+  if (reflectionFromMaterial1TL) {
+      advancedFresnel_TE *= rTLto1_TE * expbeta;
+      advancedFresnel_TM *= rTLto1_TM * expbeta;
+  }
+
+  // reflection from the TL/Material2 interface
+  bool reflectionFromTLMaterial2 = true;
+  if (reflectionFromTLMaterial2) {
+      advancedFresnel_TE *= rTLto2_TE * expbeta;
+      advancedFresnel_TM *= rTLto2_TM * expbeta;
+  }
+
+// calculation Fresnel coefficients -> actual probabilities
+  Refl_TE = std::abs(r1toTL_TE) * std::abs(r1toTL_TE);
+  Refl_TM = std::abs(r1toTL_TM) * std::abs(r1toTL_TM);
+  Reflectivity = (Refl_TE + Refl_TM) / 2.0;
+
+  Trans_TE = (fRindex2 * cost2) / (fRindex1 * cost1) * std::abs(tTLto2_TE) * std::abs(tTLto2_TE);
+  Trans_TM = (fRindex2 * cost2) / (fRindex1 * cost1) * std::abs(tTLto2_TM) * std::abs(tTLto2_TM);
+  Transmittance = (Trans_TE + Trans_TM) / 2.0;
+
+  Abs = 1.0 - std::real(Reflectivity) - std::real(Transmittance);
+
+// real probabilities:
   lResult.Reflectivity = std::real(Reflectivity);
   lResult.Transmittance = std::real(Transmittance);
   lResult.Absorption = std::real(Abs);

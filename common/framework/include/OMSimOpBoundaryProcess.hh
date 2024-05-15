@@ -68,6 +68,18 @@
 #include "G4OpticalSurface.hh"
 #include "G4RandomTools.hh"
 #include "G4VDiscreteProcess.hh"
+#include "G4VUserTrackInformation.hh"
+
+class PhotonPhaseDifference : public G4VUserTrackInformation {
+public:
+ PhotonPhaseDifference(){};
+ virtual ~PhotonPhaseDifference(){};
+ void Set (G4int id) { mBetaIndex = id; }
+ G4double Get() const { return mBetaIndex; }
+private:
+ G4int mBetaIndex;
+};
+
 
 struct OpticalLayerResult {
     G4double Reflectivity;
@@ -173,7 +185,7 @@ class G4OpBoundaryProcess : public G4VDiscreteProcess
 
   void DielectricDichroic();
   void CoatedDielectricDielectric();
-  void PhotocathodeCoated();
+  void PhotocathodeCoated(G4Track pTrack);
 
   void ChooseReflection();
   void DoAbsorption();
@@ -195,6 +207,16 @@ class G4OpBoundaryProcess : public G4VDiscreteProcess
                                            G4double E1_parl, G4double wavelength,
                                            G4double cost1, G4double cost2);
   // Returns the Reflectivity on a coated surface
+
+  OpticalLayerResult GetFresnelThroughThinLayerV2(G4double sinTL, G4double E1_perp,
+                                           G4double E1_parl, G4double wavelength,
+                                           G4double cost1, G4double cost2, G4Track pTrack);
+  // Returns the Reflectivity on a coated surface (Version 2)
+
+  OpticalLayerResult GetFresnelThroughThinLayerV3(G4double sinTL, G4double E1_perp,
+                                           G4double E1_parl, G4double wavelength,
+                                           G4double cost1, G4double cost2, G4Track pTrack);
+  // Returns the Reflectivity on a coated surface (Version 3)
 
   void CalculateReflectivity();
 
